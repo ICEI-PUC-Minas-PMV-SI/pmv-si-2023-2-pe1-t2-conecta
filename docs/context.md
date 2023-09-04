@@ -33,9 +33,11 @@ Apresente também alguns (pelo menos 2) objetivos específicos dependendo de ond
 
 ## Justificativa
 
-Descreva a importância ou a motivação para trabalhar com esta aplicação que você escolheu. Indique as razões pelas quais você escolheu seus objetivos específicos ou as razões para aprofundar em certos aspectos do software.
+Este projeto surge da necessidade de atender às variadas demandas das ONG's, utilizando o conhecimento e as habilidades dos profissionais de TI para melhorar os processos e impactar positivamente suas operações. O seu propósito fundamental é criar uma ponte entre as ONG's e os profissionais de TI dispostos a contribuir com suas habilidades para resolver os desafios específicos enfrentados por essas organizações. O foco é capacitar as ONGs por meio da tecnologia, permitindo que elas alcancem seus objetivos com mais eficiência e eficácia. Ao mesmo tempo, oferecendo aos profissionais de TI uma oportunidade valiosa de aplicar seus conhecimentos em um contexto de impacto social, contribuindo para causas significativas e promovendo o desenvolvimento pessoal e profissional dos envolvidos.
 
-O grupo de trabalho pode fazer uso de questionários, entrevistas e dados estatísticos, que podem ser apresentados, com o objetivo de esclarecer detalhes do problema que será abordado pelo grupo.
+>Descreva a importância ou a motivação para trabalhar com esta aplicação que você escolheu. Indique as razões pelas quais você escolheu seus objetivos específicos ou as razões para aprofundar em certos aspectos do software.
+
+>O grupo de trabalho pode fazer uso de questionários, entrevistas e dados estatísticos, que podem ser apresentados, com o objetivo de esclarecer detalhes do problema que será abordado pelo grupo.
 
 > **Links Úteis**:
 > - [Como montar a justificativa](https://guiadamonografia.com.br/como-montar-justificativa-do-tcc/)
