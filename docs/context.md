@@ -11,6 +11,13 @@ Escreva de 2 a 3 parágrafos para contetualizar o seu projeto.
 
 ## Problema
 
+
+
+
+* Indentificar as necessidades das ONGs na área de Tecnologia da informação (TI);
+* Verificar como os membros da area de TI podem contribuir sendo voluntarios;
+* Definir um meio de conexão pratico para quem quer se voluntariar com as ONGs que precisam de voluntários;
+
 Nesse momento você deve apresentar o problema que a sua aplicação deve  resolver. No entanto, não é a hora de comentar sobre a aplicação.
 
 Descreva também o contexto em que essa aplicação será usada, se  houver: empresa, tecnologias, etc. Novamente, descreva apenas o que de  fato existir, pois ainda não é a hora de apresentar requisitos  detalhados ou projetos.
