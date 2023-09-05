@@ -24,7 +24,7 @@ Nesse momento, o grupo pode optar por fazer uso  de ferramentas como Design Thin
 
 ## Objetivos
 
-Conectar ONG's que demandam trabalhos de tecnologia da informação com pessoas voluntárias disponíveis e com conhecimento técnico.
+Conectar ONGs que demandam trabalhos de tecnologia da informação com voluntários disponíveis e com conhecimento técnico.
 
 
 
