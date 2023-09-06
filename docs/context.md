@@ -16,7 +16,10 @@ De que forma é possível conectar profissionais de TI e ONGs para fortalecer se
 ## Objetivos
 
 Conectar ONGs que demandam trabalhos de tecnologia da informação com voluntários disponíveis e com conhecimento técnico.
-
+- Receber a solicitação das ONGs interessadas em resolver seus problemas tecnológicos;
+- Atender as necessidades das ONGs na área de Tecnologia da Informação (TI);
+- Verificar como os membros da área de TI podem contribuir sendo voluntários;
+- Definir um meio de conexão prático para quem quer se voluntariar às ONGs que precisam de voluntários.
 
 
 >Aqui você deve descrever os objetivos do trabalho indicando que o objetivo geral é desenvolver um software para solucionar o problema apresentado acima. 
