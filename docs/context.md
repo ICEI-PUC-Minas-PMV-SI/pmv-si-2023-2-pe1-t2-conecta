@@ -42,6 +42,8 @@ Este projeto surge da necessidade de atender às variadas demandas das ONGs, uti
 
 ## Público-Alvo
 
+Profissionais e estudantes da área de tecnologia que queiram voluntariar, aplicando e desenvolvendo seus conhecimentos e habilidades, bem como ONGs que buscam esse serviço, propondo suas demandas.
+
 Descreva quem serão as pessoas que usarão a sua aplicação indicando os diferentes perfis. O objetivo aqui não é definir quem serão os clientes ou quais serão os papéis dos usuários na aplicação. A ideia é, dentro do possível, conhecer um pouco mais sobre o perfil dos usuários: conhecimentos prévios, relação com a tecnologia, relações
 hierárquicas, etc.
 
