@@ -25,7 +25,8 @@ Nesse momento, o grupo pode optar por fazer uso  de ferramentas como Design Thin
 ## Objetivos
 
 Conectar ONGs que demandam trabalhos de tecnologia da informação com voluntários disponíveis e com conhecimento técnico.
-- Identificar as necessidades das ONGs na área de Tecnologia da Informação (TI);
+- Receber a solicitação das ONGs interessadas em resolver seus problemas tecnológicos;
+- Atender as necessidades das ONGs na área de Tecnologia da Informação (TI);
 - Verificar como os membros da área de TI podem contribuir sendo voluntários;
 - Definir um meio de conexão prático para quem quer se voluntariar às ONGs que precisam de voluntários.
 
