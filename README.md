@@ -1,4 +1,4 @@
-# XXXXXXX
+# Conecta
 
 `CURSO: Sistemas de Informação`
 
@@ -6,19 +6,20 @@
 
 `SEMESTRE: 1º`
 
-Descrever resumidamente, em um ou dois parágrafos, o projeto que está sendo desenvolvido.
+Formar uma ponte entre ONGs e pessoas com conhecimento em TI dispostas a contribuir para solucionar as demandas dessas organizações.
 
 ## Integrantes
 
-* Nome completo do aluno 1
-* Nome completo do aluno 2
-* Nome completo do aluno 3
-* Nome completo do aluno 4
-* Nome completo do aluno 5
+* [Alice Abreu dos Reis](https://github.com/aliceabreu)
+* [Gabriel dos Reis Nascimento](https://github.com/gabrielrnascimento)
+* [João Luiz Zarate Teixeira](https://github.com/joaozarate)
+* [Marcos Aurélio Marinho Melgaço Filho](https://github.com/marcossxj)
+* [Omar Petronílio Martins de Abreu](https://github.com/arondightt)
+* Pedro Cordeiro Ventura
 
-## Orientador
+## Orientadora
 
-* Nome completo do professor 1
+* Luciana de Nardin
 
 # Planejamento
 
