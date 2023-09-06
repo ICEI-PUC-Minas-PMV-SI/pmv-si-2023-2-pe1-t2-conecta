@@ -48,6 +48,10 @@ Este projeto surge da necessidade de atender às variadas demandas das ONGs, uti
 
 ## Público-Alvo
 
+Para fazer o bem, como apoiar uma ONG, qualquer ajuda é sempre bem vinda. Então, desde de um estudante junior de TI, que queira desenvolver e aprimorar suas habilidades, à um Sênior, que ja tem anos de carreira e quer apenas ajudar, possuirá grande importância aqui. 
+
+Esses profissionais são destinados à ONGS sem fins lucrativos.
+
 Descreva quem serão as pessoas que usarão a sua aplicação indicando os diferentes perfis. O objetivo aqui não é definir quem serão os clientes ou quais serão os papéis dos usuários na aplicação. A ideia é, dentro do possível, conhecer um pouco mais sobre o perfil dos usuários: conhecimentos prévios, relação com a tecnologia, relações
 hierárquicas, etc.
 
