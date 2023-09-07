@@ -18,7 +18,7 @@ Conectar ONGs que demandam trabalhos de tecnologia da informação com voluntár
 
 ### Objetivos específicos
 
-- Reduzir significativamente o tempo necessário para resolver problemas tecnológicos nas ONGs, garantindo que elas possam focar mais em suas missões essenciais em vez de lidar com obstáculos tecnológicos;
+- Reduzir significativamente o tempo necessário para resolver problemas tecnológicos nas ONGs, garantindo que elas possam focar mais em suas missões essenciais ao invés de lidar com obstáculos tecnológicos;
 - Atender as necessidades das ONGs na área de Tecnologia da Informação (TI);
 - Destacar como a colaboração entre voluntários de TI e ONGs pode resultar em um impacto social positivo, resolvendo problemas tecnológicos que poderiam atrasar ou até impedir o progresso das atividades da ONG;
 - Definir um meio de conexão prático para quem quer se voluntariar às ONGs que precisam de voluntários;
@@ -26,7 +26,7 @@ Conectar ONGs que demandam trabalhos de tecnologia da informação com voluntár
 - Permitir que os voluntários escolham projetos que estejam alinhados com suas habilidades e paixões, tornando o envolvimento mais significativo e gratificante;
 - Oferecer oportunidades de aprendizado e desenvolvimento para voluntários, permitindo que eles aprimorem suas habilidades técnicas enquanto contribuem para causas sociais;
 - Incentivar a colaboração entre voluntários de TI, promovendo um ambiente de trabalho em equipe que aproveite ao máximo a diversidade de habilidades e experiências;
-- Facilitar assistência tecnológica a ONGs que podem não ter recursos para contratar profissionais de TI;
+- Facilitar assistência tecnológica às ONGs que podem não ter recursos para contratar profissionais de TI.
 
 ## Justificativa
 
