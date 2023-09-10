@@ -6,7 +6,7 @@ Apresente uma visão geral do que será abordado nesta parte do documento, enume
 
 ## Personas
 
-![Alt text](<Elisa Persona.jpg>)
+![Alt text](<img/Elisa Persona.jpg>)
 
 ## Histórias de Usuários
 
