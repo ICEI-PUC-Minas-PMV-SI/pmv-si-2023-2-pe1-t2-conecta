@@ -11,8 +11,6 @@ Apresente uma visão geral do que será abordado nesta parte do documento, enume
 ### Persona Gustavo Silva
 ![Persona Gustavo Silva](./img/personas/persona-gustavo-silva.jpg)
 
-### Persona Heitor Santos
-![Persona Heitor Santos](./img/personas/heitor-persona.jpg).
 
 ## Histórias de Usuários
 
@@ -20,8 +18,9 @@ Com base na análise das personas forma identificadas as seguintes histórias de
 
 |EU COMO... `PERSONA`| QUERO/PRECISO ... `FUNCIONALIDADE` |PARA ... `MOTIVO/VALOR`                 |
 |--------------------|------------------------------------|----------------------------------------|
-|Usuário do sistema  | Registrar minhas tarefas           | Não esquecer de fazê-las               |
-|Administrador       | Alterar permissões                 | Permitir que possam administrar contas |
+|Gustavo Silva  | Encontrar uma ONG           | Poder ser voluntário aplicando meus conhecimento de como engenheiro de software               |
+|Gustavo Silva       | De um posição remota                 | Permitir que eu possa trabalhar de minha casa ou dos locais onde eu estiver viajando a trabalho |
+|Gustavo Silva       | Saber os detalhes da posição antes de me cadastrar                 | Para que eu aplique a candidatura somente às posições que de encontro ao meu interesse e habilidades |
 
 Apresente aqui as histórias de usuário que são relevantes para o projeto de sua solução. As Histórias de Usuário consistem em uma ferramenta poderosa para a compreensão e elicitação dos requisitos funcionais e não funcionais da sua aplicação. Se possível, agrupe as histórias de usuário por contexto, para facilitar consultas recorrentes à essa parte do documento.
 
@@ -74,6 +73,8 @@ O projeto está restrito pelos itens apresentados na tabela a seguir.
 |--|-------------------------------------------------------|
 |01| O projeto deverá ser entregue até o final do semestre |
 |02| Não pode ser desenvolvido um módulo de backend        |
+|03| Não será possível efetuar pagamentos pelo site        |
+|03| Cada ONG poderá cadastrar no máximo 1 conta por CNPJ  |
 
 
 Enumere as restrições à sua solução. Lembre-se de que as restrições geralmente limitam a solução candidata.
