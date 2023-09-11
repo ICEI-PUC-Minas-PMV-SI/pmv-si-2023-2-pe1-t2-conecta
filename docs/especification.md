@@ -7,11 +7,10 @@ Apresente uma visão geral do que será abordado nesta parte do documento, enume
 ## Personas
 ![Alt text](<img/Elisa Persona.jpg>)
 
-
-### Persona Gustavo Silva
 ![Persona Gustavo Silva](./img/personas/persona-gustavo-silva.jpg)
 
-### Persona Heitor Santos
+![Persona Ana](<./img/Ana Lucia Persona.jpg>)
+
 ![Persona Heitor Santos](./img/personas/heitor-persona.jpg).
 
 ## Histórias de Usuários
