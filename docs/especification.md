@@ -5,8 +5,12 @@ Definição do problema e ideia de solução a partir da perspectiva do usuário
 Apresente uma visão geral do que será abordado nesta parte do documento, enumerando as técnicas e/ou ferramentas utilizadas para realizar a especificações do projeto
 
 ## Personas
-
 ![Alt text](<img/Elisa Persona.jpg>)
+
+
+### Persona Gustavo Silva
+![Persona Gustavo Silva](./img/personas/persona-gustavo-silva.jpg)
+
 
 ## Histórias de Usuários
 
