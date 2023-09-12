@@ -5,13 +5,17 @@ Definição do problema e ideia de solução a partir da perspectiva do usuário
 Apresente uma visão geral do que será abordado nesta parte do documento, enumerando as técnicas e/ou ferramentas utilizadas para realizar a especificações do projeto
 
 ## Personas
+
 ![Alt text](<img/Elisa Persona.jpg>)
 
 ![Alt Text](./img/personas/persona-gustavo-silva.jpg)
 
 ![Alt Text](<./img/Ana Lucia Persona.jpg>)
 
-![Alt text](./img/personas/heitor-persona.jpg)
+![Alt text](./img/personas/heitor-persona.jpg).
+
+![Persona Heitor Santos](./img/personas/heitor-santos-persona.jpg)
+
 
 ## Histórias de Usuários
 
@@ -19,6 +23,7 @@ Com base na análise das personas forma identificadas as seguintes histórias de
 
 |EU COMO... `PERSONA`| QUERO/PRECISO ... `FUNCIONALIDADE` |PARA ... `MOTIVO/VALOR`                 |
 |--------------------|------------------------------------|----------------------------------------|
+
 |Gustavo Silva  | Encontrar uma ONG.  | Poder ser voluntário aplicando meus conhecimentos como engenheiro de software.  |
 |Gustavo Silva  | Poder me voluntariar de forma remota.  | Permitir que eu possa ser voluntário da minha casa ou dos locais onde eu estiver viajando a trabalho.  |
 |Gustavo Silva  | Saber os detalhes da posição antes de me cadastrar.  | Para que eu me candidate somente às posições que são de meu interesse e que correspondem às minhas habilidades.  |
@@ -26,7 +31,6 @@ Com base na análise das personas forma identificadas as seguintes histórias de
 |Elisa Andrade  | Quero encontrar ONGs de acordo com meu interesse e minha disponibilidade.  | Para me voluntariar em áreas do meu interesse com flexibilidade de horário.  |
 |Ana Lucia  | Preciso encontrar pessoas que possam se voluntariar.  | Para ajudar com as necessidades tecnológicas da ONG.  |
 |Ana Lucia  | Quero poder encontrar voluntários remotamente.  | Para conseguir aumentar a quantidade de pessoas que se conectam à ONG.  |
-
 
 ## Requisitos
 
@@ -66,10 +70,15 @@ todos os aspectos capturados nas Histórias de Usuário foram cobertos.
 
 O projeto está restrito pelos itens apresentados na tabela a seguir.
 
-|ID| Restrição                                             |
-|--|-------------------------------------------------------|
-|01| O projeto deverá ser entregue até o final do semestre |
-|02| Não pode ser desenvolvido um módulo de backend        |
+|ID| Restrição                                                                                                                |
+|--|--------------------------------------------------------------------------------------------------------------------------|
+|01| O projeto deverá ser entregue até o final do semestre.                                                                   |
+|02| Não pode ser desenvolvido um módulo de backend.                                                                          |
+|03| Não será possível efetuar pagamentos pelo site.                                                                          |
+|04| Cada ONG poderá cadastrar no máximo 1 conta por CNPJ.                                                                    |
+|05| Cada ONG poderá ter apenas 2 demandas ativas por vez.                                                                    |
+|06| Cada voluntário poderá se candidatar a apenas 2 demandas por vez.                                                        |
+|07| A ONG deve aceitar ou recusar a candidatura do voluntário em até 3 dias, caso contrário será recusada automaticamente.   |
 
 
 Enumere as restrições à sua solução. Lembre-se de que as restrições geralmente limitam a solução candidata.
