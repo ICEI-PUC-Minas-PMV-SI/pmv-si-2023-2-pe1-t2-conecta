@@ -7,17 +7,11 @@ Apresente uma visão geral do que será abordado nesta parte do documento, enume
 ## Personas
 ![Alt text](<img/Elisa Persona.jpg>)
 
-![Persona Gustavo Silva](./img/personas/persona-gustavo-silva.jpg)
+![Alt Text](./img/personas/persona-gustavo-silva.jpg)
 
-<<<<<<< Updated upstream
-![Persona Ana](<./img/Ana Lucia Persona.jpg>)
-=======
-![Alt text](<./img/Ana Lucia Persona.jpg>)
+![Alt Text](<./img/Ana Lucia Persona.jpg>)
 
 ![Alt text](./img/personas/heitor-persona.jpg)
->>>>>>> Stashed changes
-
-![Persona Heitor Santos](./img/personas/heitor-persona.jpg).
 
 ## Histórias de Usuários
 
