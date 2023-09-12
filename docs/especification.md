@@ -9,7 +9,13 @@ Apresente uma visão geral do que será abordado nesta parte do documento, enume
 
 ![Persona Gustavo Silva](./img/personas/persona-gustavo-silva.jpg)
 
+<<<<<<< Updated upstream
 ![Persona Ana](<./img/Ana Lucia Persona.jpg>)
+=======
+![Alt text](<./img/Ana Lucia Persona.jpg>)
+
+![Alt text](./img/personas/heitor-persona.jpg)
+>>>>>>> Stashed changes
 
 ![Persona Heitor Santos](./img/personas/heitor-persona.jpg).
 
@@ -19,6 +25,7 @@ Com base na análise das personas forma identificadas as seguintes histórias de
 
 |EU COMO... `PERSONA`| QUERO/PRECISO ... `FUNCIONALIDADE` |PARA ... `MOTIVO/VALOR`                 |
 |--------------------|------------------------------------|----------------------------------------|
+<<<<<<< Updated upstream
 |Usuário do sistema  | Registrar minhas tarefas           | Não esquecer de fazê-las               |
 |Administrador       | Alterar permissões                 | Permitir que possam administrar contas |
 
@@ -30,6 +37,15 @@ Apresente aqui as histórias de usuário que são relevantes para o projeto de s
 > - [User Stories: requisitos que humanos entendem](https://www.luiztools.com.br/post/user-stories-descricao-de-requisitos-que-humanos-entendem/)
 > - [Histórias de Usuários: mais exemplos](https://www.reqview.com/doc/user-stories-example.html)
 > - [9 Common User Story Mistakes](https://airfocus.com/blog/user-story-mistakes/)
+=======
+|Gustavo Silva  | Encontrar uma ONG.           | Poder ser voluntário aplicando meus conhecimentos como engenheiro de software.               |
+|Gustavo Silva       | Poder me voluntariar de forma remota.                 | Permitir que eu possa ser voluntário da minha casa ou dos locais onde eu estiver viajando a trabalho. |
+|Gustavo Silva       | Saber os detalhes da posição antes de me cadastrar.                 | Para que eu me candidate somente às posições que são de meu interesse e que correspondem às minhas habilidades. |
+|Elisa Andrade       | Quero me cadastrar para ser voluntária em ONGs.           | Aplicar os conhecimentos que estou adquirindo como estudante de Sistemas de Informação.               |
+|Elisa Andrade      | Quero encontrar ONGs de acordo com meu interesse e minha disponibilidade.                | Para me voluntariar em áreas do meu interesse com flexibilidade de horário. |
+|Ana Lucia      | Preciso encontrar pessoas que possam se voluntariar.        | Para ajudar com as necessidades tecnológicas da ONG. |
+|Ana Lucia      | Quero poder encontrar voluntários remotamente.        | Para conseguir aumentar a quantidade de pessoas que se conectam a ONG. |
+>>>>>>> Stashed changes
 
 ## Requisitos
 
@@ -69,6 +85,7 @@ todos os aspectos capturados nas Histórias de Usuário foram cobertos.
 
 O projeto está restrito pelos itens apresentados na tabela a seguir.
 
+<<<<<<< Updated upstream
 |ID| Restrição                                             |
 |--|-------------------------------------------------------|
 |01| O projeto deverá ser entregue até o final do semestre |
@@ -80,3 +97,14 @@ Enumere as restrições à sua solução. Lembre-se de que as restrições geral
 > **Links Úteis**:
 > - [O que são Requisitos Funcionais e Requisitos Não Funcionais?](https://codificar.com.br/requisitos-funcionais-nao-funcionais/)
 > - [O que são requisitos funcionais e requisitos não funcionais?](https://analisederequisitos.com.br/requisitos-funcionais-e-requisitos-nao-funcionais-o-que-sao/)
+=======
+|ID| Restrição                                                                                                                |
+|--|--------------------------------------------------------------------------------------------------------------------------|
+|01| O projeto deverá ser entregue até o final do semestre.                                                                   |
+|02| Não pode ser desenvolvido um módulo de backend.                                                                          |
+|03| Não será possível efetuar pagamentos pelo site.                                                                          |
+|04| Cada ONG poderá cadastrar no máximo 1 conta por CNPJ.                                                                    |
+|05| Cada ONG poderá ter apenas 2 demandas ativas por vez.                                                                    |
+|06| Cada voluntário poderá se candidatar a apenas 2 demandas por vez.                                                        |
+|07| A ONG deve aceitar ou recusar a candidatura do voluntário em até 3 dias, caso contrário será recusada automaticamente.   |
+>>>>>>> Stashed changes
