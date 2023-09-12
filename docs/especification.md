@@ -12,18 +12,13 @@ Apresente uma visão geral do que será abordado nesta parte do documento, enume
 
 ![Alt Text](<./img/Ana Lucia Persona.jpg>)
 
-![Alt text](./img/personas/heitor-persona.jpg).
-
-![Persona Heitor Santos](./img/personas/heitor-santos-persona.jpg)
-
-
+![Alt text](./img/personas/heitor-persona.jpg)
 ## Histórias de Usuários
 
 Com base na análise das personas forma identificadas as seguintes histórias de usuários:
 
 |EU COMO... `PERSONA`| QUERO/PRECISO ... `FUNCIONALIDADE` |PARA ... `MOTIVO/VALOR`                 |
 |--------------------|------------------------------------|----------------------------------------|
-
 |Gustavo Silva  | Encontrar uma ONG.  | Poder ser voluntário aplicando meus conhecimentos como engenheiro de software.  |
 |Gustavo Silva  | Poder me voluntariar de forma remota.  | Permitir que eu possa ser voluntário da minha casa ou dos locais onde eu estiver viajando a trabalho.  |
 |Gustavo Silva  | Saber os detalhes da posição antes de me cadastrar.  | Para que eu me candidate somente às posições que são de meu interesse e que correspondem às minhas habilidades.  |
@@ -79,22 +74,3 @@ O projeto está restrito pelos itens apresentados na tabela a seguir.
 |05| Cada ONG poderá ter apenas 2 demandas ativas por vez.                                                                    |
 |06| Cada voluntário poderá se candidatar a apenas 2 demandas por vez.                                                        |
 |07| A ONG deve aceitar ou recusar a candidatura do voluntário em até 3 dias, caso contrário será recusada automaticamente.   |
-
-
-Enumere as restrições à sua solução. Lembre-se de que as restrições geralmente limitam a solução candidata.
-
-> **Links Úteis**:
-> - [O que são Requisitos Funcionais e Requisitos Não Funcionais?](https://codificar.com.br/requisitos-funcionais-nao-funcionais/)
-> - [O que são requisitos funcionais e requisitos não funcionais?](https://analisederequisitos.com.br/requisitos-funcionais-e-requisitos-nao-funcionais-o-que-sao/)
-
-|ID| Restrição                                                                                                                |
-|--|--------------------------------------------------------------------------------------------------------------------------|
-|01| O projeto deverá ser entregue até o final do semestre.                                                                   |
-|02| Não pode ser desenvolvido um módulo de backend.                                                                          |
-|03| Não será possível efetuar pagamentos pelo site.                                                                          |
-|04| Cada ONG poderá cadastrar no máximo 1 conta por CNPJ.                                                                    |
-|05| Cada ONG poderá ter apenas 2 demandas ativas por vez.                                                                    |
-|06| Cada voluntário poderá se candidatar a apenas 2 demandas por vez.                                                        |
-|07| A ONG deve aceitar ou recusar a candidatura do voluntário em até 3 dias, caso contrário será recusada automaticamente.   |
-|
-
