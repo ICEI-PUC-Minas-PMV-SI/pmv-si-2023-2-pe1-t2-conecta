@@ -44,7 +44,7 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 |RF-003| A aplicação deve possibilitar que as ONGs postem solicitações de ajuda técnica, descrevendo os projetos ou desafios específicos que precisam ser abordados. | ALTA |  |
 |RF-004| A aplicação deve permitir que os profissionais de TI visualizem as solicitações de ajuda técnica feitas pelas ONGs. | ALTA |  |
 |RF-005| Os profissionais de TI devem poder se voluntariar por meio de formulário de contato para trabalhar em projetos específicos das ONGs, indicando seu interesse e disponibilidade. | ALTA |  |
-|RF-006| A aplicação deve permitir que as ONGs marquem projetos como concluídos ou encerrados. | ALTA |  |
+|RF-006| A aplicação deve permitir que as ONGs marquem solicitações como concluídos ou encerrados. | ALTA |  |
 |RF-007| A aplicação deve apresentar página com *feed* com as últimas demandas criadas pelas ONGs. | ALTA |  |
 |RF-008| ONGs devem responder às condidaturas de usuários em até 3 dias | ALTA |  |
 |RF-009| Funcionalidade de email para que as ONGs e os profissionais de TI possam se comunicar. | ALTA |  |
