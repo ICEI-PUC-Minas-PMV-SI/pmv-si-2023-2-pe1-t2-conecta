@@ -48,13 +48,13 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 
 |ID     | Descrição do Requisito  |Prioridade |
 |-------|-------------------------|----|
-|RNF-001| A aplicação deve oferecer uma interface com design responsivo que se adapte a dispositivos móveis e desktops. | ALTA |
+|RNF-001| A aplicação deve oferecer uma interface com design responsivo que se adapte aos dispositivos móveis e desktops. | ALTA |
 |RNF-002| A aplicação deve apresentar um layout simples e de fácil utilização. |  ALTA |
 |RNF-003| As senhas dos usuários devem ser criptografadas antes de serem armazenadas. |  ALTA |
 |RNF-004| A aplicação deve fornecer feedback visual claro para ações do usuário, como confirmações de envio e mensagens de erro. |  ALTA |
 |RNF-005| A aplicação deve responder às solicitações dos usuários com um tempo limite máximo de 3 segundos para carregar páginas ou processar ações. |  ALTA |
 |RNF-006| O sistema deve ser capaz de estar disponível 99,9% do tempo, que se traduz em cerca de 8,76 horas de inatividade não planejada por ano. |  ALTA |
-|RNF-007| O sistema deve ser capaz de ser executado nas versões mais recentes dos principais navegadores do mercado, a saber: Chrome, Firefox, Edge e Safari |  ALTA |
+|RNF-007| O sistema deve ser capaz de ser executado nas versões mais recentes dos principais navegadores do mercado, como: Chrome, Firefox, Edge e Safari. |  ALTA |
 
 
 Com base nas Histórias de Usuário, enumere os requisitos da sua solução. Classifique esses requisitos em dois grupos:
