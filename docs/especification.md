@@ -14,6 +14,8 @@ Apresente uma visão geral do que será abordado nesta parte do documento, enume
 
 ![Alt text](./img/personas/heitor-persona.jpg).
 
+### Persona Heitor Santos
+![Persona Heitor Santos](./img/personas/heitor-santos-persona.jpg)
 
 ## Histórias de Usuários
 
