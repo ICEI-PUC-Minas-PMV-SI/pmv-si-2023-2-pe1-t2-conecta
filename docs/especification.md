@@ -25,7 +25,7 @@ Com base na análise das personas forma identificadas as seguintes histórias de
 |Elisa Andrade  | Quero me cadastrar para ser voluntária em ONGs.  | Aplicar os conhecimentos que estou adquirindo como estudante de Sistemas de Informação.  |
 |Elisa Andrade  | Quero encontrar ONGs de acordo com meu interesse e minha disponibilidade.  | Para me voluntariar em áreas do meu interesse com flexibilidade de horário.  |
 |Ana Lucia  | Preciso encontrar pessoas que possam se voluntariar.  | Para ajudar com as necessidades tecnológicas da ONG.  |
-|Ana Lucia  | Quero poder encontrar voluntários remotamente.  | Para conseguir aumentar a quantidade de pessoas que se conectam a ONG.  |
+|Ana Lucia  | Quero poder encontrar voluntários remotamente.  | Para conseguir aumentar a quantidade de pessoas que se conectam à ONG.  |
 
 
 ## Requisitos
@@ -87,4 +87,5 @@ Enumere as restrições à sua solução. Lembre-se de que as restrições geral
 |05| Cada ONG poderá ter apenas 2 demandas ativas por vez.                                                                    |
 |06| Cada voluntário poderá se candidatar a apenas 2 demandas por vez.                                                        |
 |07| A ONG deve aceitar ou recusar a candidatura do voluntário em até 3 dias, caso contrário será recusada automaticamente.   |
->>>>>>> Stashed changes
+|
+
