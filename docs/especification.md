@@ -12,7 +12,7 @@ Apresente uma visão geral do que será abordado nesta parte do documento, enume
 ![Persona Gustavo Silva](./img/personas/persona-gustavo-silva.jpg)
 
 ### Persona Heitor Santos
-![Persona Heitor Santos](./img/personas/heitor-persona.jpg).
+![Persona Heitor Santos](./img/personas/heitor-santos-persona.jpg).
 
 ## Histórias de Usuários
 
