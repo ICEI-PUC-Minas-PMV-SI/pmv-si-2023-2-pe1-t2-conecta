@@ -39,9 +39,27 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 
 |ID    | Descrição do Requisito  | Prioridade | Responsável |
 |------|-----------------------------------------|----| ----|
-|RF-001| Permitir que o usuário cadastre tarefas | ALTA |  |
-|RF-002| Emitir um relatório de tarefas no mês   | MÉDIA | |
-
+|RF-001| A aplicação deve permitir que as ONGs se cadastrem | ALTA |  |
+|RF-002| A aplicação deve permitir que as ONGs atualizem suas informações de perfil, como contato e missão, a qualquer momento. | ALTA |  |
+|RF-003| A aplicação deve possibilitar que as ONGs postem solicitações de ajuda técnica, descrevendo os projetos ou desafios específicos que precisam ser abordados. | ALTA |  |
+|RF-004| A aplicação deve permitir que os profissionais de TI visualizem as solicitações de ajuda técnica feitas pelas ONGs. | ALTA |  |
+|RF-005| Os profissionais de TI devem poder se voluntariar por meio de formulário de contato para trabalhar em projetos específicos das ONGs, indicando seu interesse e disponibilidade. | ALTA |  |
+|RF-006| A aplicação deve permitir que as ONGs marquem projetos como concluídos ou encerrados. | ALTA |  |
+|RF-007| A aplicação deve apresentar página com *feed* com as últimas demandas criadas pelas ONGs. | ALTA |  |
+|RF-008| ONGs devem responder às condidaturas de usuários em até 3 dias | ALTA |  |
+|RF-009| Funcionalidade de email para que as ONGs e os profissionais de TI possam se comunicar. | ALTA |  |
+|RF-010| A aplicação deve ter um sistema de notificações (e-mail) para informar os possíveis voluntários sobre novas solicitações de ajuda técnica criadas. | ALTA |  |
+|RF-011| Os profissionais de TI devem receber notificações quando uma ONG expressa interesse em seu perfil. | ALTA |  |
+|RF-012| A aplicação deve fornecer um mecanismo de pesquisa para que os usuários possam encontrar ONGs com base em critérios como área de atuação, localização geográfica e necessidades específicas. | ALTA |  |
+|RF-013| Os profissionais de TI devem poder avaliar as ONGs e projetos com os quais colaboraram, fornecendo feedback e classificações. | ALTA |  |
+|RF-014| Deve existir uma página inicial (landing page) informativa que apresenta o propósito da plataforma e incentiva tanto as ONGs quanto os profissionais de TI a se cadastrarem. | ALTA |  |
+|RF-015| A aplicação deve conter páginas "Perguntas Frequentes" que aborda as dúvidas mais comuns dos visitantes em relação ao voluntariado e ao uso da plataforma. | ALTA |  |
+|RF-016| A aplicação deve permitir que as ONGs publiquem informações sobre suas conquistas e projetos bem-sucedidos, a fim de promover suas causas. | ALTA |  |
+|RF-017| A aplicação deve apresentar página "Sobre o Voluntariado" que fornece informações detalhadas sobre o conceito de trabalho voluntário, destacando seu impacto positivo na sociedade e nas comunidades. | ALTA |  |
+|RF-018| A aplicação deve apresentar Página "Por Que Ser Voluntário?" que apresenta histórias inspiradoras de voluntários e os benefícios pessoais que podem ser obtidos ao se envolver em ações voluntárias. | ALTA |  |
+|RF-019| A aplicação deve apresentar página "Como Começar" que orienta os visitantes sobre os passos necessários para se tornarem voluntários registrados na aplicação. | ALTA |  |
+|RF-020| A aplicação deve apresentar Página "Histórias de Sucesso" que destaca projetos anteriores realizados por meio da plataforma, com resultados, depoimento de voluntários e impacto positivo alcançados. | ALTA |  |
+|RF-021| A aplicação deve apresentar página de recursos interativos, como quizzes ou testes de personalidade, que ajudam os visitantes a descobrir em que áreas podem ser mais eficazes. | ALTA |  |
 
 ### Requisitos não Funcionais
 
