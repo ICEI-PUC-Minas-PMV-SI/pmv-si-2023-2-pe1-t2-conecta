@@ -14,6 +14,7 @@ Apresente uma visão geral do que será abordado nesta parte do documento, enume
 
 ![Alt text](./img/personas/heitor-persona.jpg).
 
+
 ## Histórias de Usuários
 
 Com base na análise das personas forma identificadas as seguintes histórias de usuários:
@@ -64,10 +65,15 @@ todos os aspectos capturados nas Histórias de Usuário foram cobertos.
 
 O projeto está restrito pelos itens apresentados na tabela a seguir.
 
-|ID| Restrição                                             |
-|--|-------------------------------------------------------|
-|01| O projeto deverá ser entregue até o final do semestre |
-|02| Não pode ser desenvolvido um módulo de backend        |
+|ID| Restrição                                                                                                                |
+|--|--------------------------------------------------------------------------------------------------------------------------|
+|01| O projeto deverá ser entregue até o final do semestre.                                                                   |
+|02| Não pode ser desenvolvido um módulo de backend.                                                                          |
+|03| Não será possível efetuar pagamentos pelo site.                                                                          |
+|04| Cada ONG poderá cadastrar no máximo 1 conta por CNPJ.                                                                    |
+|05| Cada ONG poderá ter apenas 2 demandas ativas por vez.                                                                    |
+|06| Cada voluntário poderá se candidatar a apenas 2 demandas por vez.                                                        |
+|07| A ONG deve aceitar ou recusar a candidatura do voluntário em até 3 dias, caso contrário será recusada automaticamente.   |
 
 
 Enumere as restrições à sua solução. Lembre-se de que as restrições geralmente limitam a solução candidata.
