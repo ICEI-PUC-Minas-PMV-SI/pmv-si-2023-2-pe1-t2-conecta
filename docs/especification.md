@@ -5,12 +5,14 @@ Definição do problema e ideia de solução a partir da perspectiva do usuário
 Apresente uma visão geral do que será abordado nesta parte do documento, enumerando as técnicas e/ou ferramentas utilizadas para realizar a especificações do projeto
 
 ## Personas
+
 ![Alt text](<img/Elisa Persona.jpg>)
 
+![Alt text](./img/personas/persona-gustavo-silva.jpg)
 
-### Persona Gustavo Silva
-![Persona Gustavo Silva](./img/personas/persona-gustavo-silva.jpg)
+![Alt text](<./img/Ana Lucia Persona.jpg>)
 
+![Alt text](./img/personas/heitor-persona.jpg).
 
 ## Histórias de Usuários
 
@@ -21,15 +23,8 @@ Com base na análise das personas forma identificadas as seguintes histórias de
 |Gustavo Silva  | Encontrar uma ONG.           | Poder ser voluntário aplicando meus conhecimentos como engenheiro de software.               |
 |Gustavo Silva       | Poder me voluntariar de forma remota.                 | Permitir que eu possa ser voluntário da minha casa ou dos locais onde eu estiver viajando a trabalho. |
 |Gustavo Silva       | Saber os detalhes da posição antes de me cadastrar.                 | Para que eu me candidate somente às posições que são de meu interesse e que correspondem às minhas habilidades. |
-
-Apresente aqui as histórias de usuário que são relevantes para o projeto de sua solução. As Histórias de Usuário consistem em uma ferramenta poderosa para a compreensão e elicitação dos requisitos funcionais e não funcionais da sua aplicação. Se possível, agrupe as histórias de usuário por contexto, para facilitar consultas recorrentes à essa parte do documento.
-
-> **Links Úteis**:
-> - [Histórias de usuários com exemplos e template](https://www.atlassian.com/br/agile/project-management/user-stories)
-> - [Como escrever boas histórias de usuário (User Stories)](https://medium.com/vertice/como-escrever-boas-users-stories-hist%C3%B3rias-de-usu%C3%A1rios-b29c75043fac)
-> - [User Stories: requisitos que humanos entendem](https://www.luiztools.com.br/post/user-stories-descricao-de-requisitos-que-humanos-entendem/)
-> - [Histórias de Usuários: mais exemplos](https://www.reqview.com/doc/user-stories-example.html)
-> - [9 Common User Story Mistakes](https://airfocus.com/blog/user-story-mistakes/)
+|Elisa Andrade       | Quero me cadastrar para ser voluntária em ONGs.           | Aplicar os conhecimentos que estou adquirindo como estudante de Sistemas de Informação.               |
+|Elisa Andrade      | Quero encontrar ONGs de acordo com meu interesse e minha disponibilidade.                | Para me voluntariar em áreas do meu interesse com flexibilidade de horário. |
 
 ## Requisitos
 
