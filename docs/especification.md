@@ -6,13 +6,15 @@ Apresente uma visão geral do que será abordado nesta parte do documento, enume
 
 ## Personas
 
-![Alt text](<img/Elisa Persona.jpg>)
+![Persona Elisa Andrade](./img/personas/persona-elisa-andrade.jpg)
 
-![Alt text](./img/personas/persona-gustavo-silva.jpg)
+![Persona Gustavo Silva](./img/personas/persona-gustavo-silva.jpg)
 
-![Alt text](<./img/Ana Lucia Persona.jpg>)
+![Persona Ana Lúcia](./img/personas/persona-ana-lucia.jpg)
 
-![Persona Heitor Santos](./img/personas/heitor-santos-persona.jpg)
+![Persona Ana Silva](./img/personas/persona-ana-silva.jpg)
+
+![Persona Heitor Santos](./img/personas/persona-heitor-santos.jpg)
 
 ## Histórias de Usuários
 
@@ -24,10 +26,11 @@ Com base na análise das personas forma identificadas as seguintes histórias de
 |Gustavo Silva       | Poder me voluntariar de forma remota.                 | Permitir que eu possa ser voluntário da minha casa ou dos locais onde eu estiver viajando a trabalho. |
 |Gustavo Silva       | Saber os detalhes da posição antes de me cadastrar.                 | Para que eu me candidate somente às posições que são de meu interesse e que correspondem às minhas habilidades. |
 |Elisa Andrade       | Quero me cadastrar para ser voluntária em ONGs.           | Aplicar os conhecimentos que estou adquirindo como estudante de Sistemas de Informação.               |
-|Elisa Andrade      | Quero encontrar ONGs de acordo com meu interesse e minha disponibilidade.                | Para me voluntariar em áreas do meu interesse com flexibilidade de horário. |
+|Elisa Andrade      | Quero encontrar ONGs de acordo com meu interesse e minha disponibilidade.                | Para me voluntariar em áreas do meu interesse com flexibilidade de horário.|
 |Ana Lucia  | Preciso encontrar pessoas que possam se voluntariar.  | Para ajudar com as necessidades tecnológicas da ONG.  |
 |Ana Lucia  | Quero poder encontrar voluntários remotamente.  | Para conseguir aumentar a quantidade de pessoas que se conectam à ONG.  |
-
+|Ana Silva  | Se voluntariar para ONGs de todo o brasil  | Para causar impacto positivo nas comunidades e ONGs de todo o Brasil  |
+|Ana Silva  | Saber dos desafios das ONGs  | Para aprimorar suas habilidades profissionais. |
 
 ## Requisitos
 
