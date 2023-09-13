@@ -1,8 +1,10 @@
 # Especificações do Projeto
 
-Definição do problema e ideia de solução a partir da perspectiva do usuário. É composta pela definição do  diagrama de personas, histórias de usuários, requisitos funcionais e não funcionais além das restrições do projeto.
+Pensando em como os profissionais e estudantes da área de tecnologia podem contribuir com suas habilidades e conhecimentos em prol da comunidade, está sendo criada esta aplicação com o principal foco em conectar estes profissionais com ONGs de todo Brasil.
 
-Apresente uma visão geral do que será abordado nesta parte do documento, enumerando as técnicas e/ou ferramentas utilizadas para realizar a especificações do projeto
+No processo de planejamento do projeto foram utilizados os seguintes passos: definição das personas mais coerentes para aplicação, mapeamento das necessidades e dores dos usuários e a criação dos requisitos que norteiam e definem o desenvolvimento do projeto.
+
+Com os dados abaixo levantados será possível a elaboração da aplicação, cujo intuito é atender as demandas das ONGs aplicando os conhecimentos na área de tecnologia.
 
 ## Personas
 
