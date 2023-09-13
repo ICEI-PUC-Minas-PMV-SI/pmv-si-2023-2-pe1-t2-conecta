@@ -12,6 +12,8 @@ Apresente uma visão geral do que será abordado nesta parte do documento, enume
 
 ![Alt text](<./img/Ana Lucia Persona.jpg>)
 
+![Alt text](<./img/personas/Ana Silva Persona.jpg>)
+
 ![Alt text](./img/personas/heitor-persona.jpg).
 
 ### Persona Heitor Santos
@@ -28,6 +30,8 @@ Com base na análise das personas forma identificadas as seguintes histórias de
 |Gustavo Silva       | Saber os detalhes da posição antes de me cadastrar.                 | Para que eu me candidate somente às posições que são de meu interesse e que correspondem às minhas habilidades. |
 |Elisa Andrade       | Quero me cadastrar para ser voluntária em ONGs.           | Aplicar os conhecimentos que estou adquirindo como estudante de Sistemas de Informação.               |
 |Elisa Andrade      | Quero encontrar ONGs de acordo com meu interesse e minha disponibilidade.                | Para me voluntariar em áreas do meu interesse com flexibilidade de horário. |
+|Ana Silva  | Se voluntariar para ONGs de todo o brasil  | Para causar impacto positivo nas comunidades e ONGs de todo o Brasil  |
+|Ana Silva  | Saber dos desafios das ONGs  | Para aprimorar suas habilidades profissionais. |
 
 ## Requisitos
 
