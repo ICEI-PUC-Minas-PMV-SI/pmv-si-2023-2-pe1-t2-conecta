@@ -51,20 +51,18 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 |RF-005| Os voluntários devem poder se voluntariar por meio de formulário de contato para trabalhar em projetos específicos das ONGs, indicando seu interesse e disponibilidade. | ALTA |  |
 |RF-006| A aplicação deve permitir que as ONGs marquem as solicitações como concluídas ou encerradas. | ALTA |  |
 |RF-007| A aplicação deve apresentar página com *feed* com as últimas demandas criadas pelas ONGs. | ALTA |  |
-|RF-008| As ONGs devem responder às candidaturas de usuários em até 3 dias. | ALTA |  |
-|RF-009| Deve ter funcionalidade de e-mail para que as ONGs e os voluntários possam se comunicar. | ALTA |  |
-|RF-010| A aplicação deve ter um sistema de notificações (e-mail) para informar os possíveis voluntários sobre novas solicitações de ajuda técnica criadas. | ALTA |  |
-|RF-011| Os voluntários devem receber notificações quando uma ONG expressa interesse em seu perfil. | ALTA |  |
+|RF-008| As ONGs devem responder às candidaturas de usuários em até 3 dias. | BAIXA |  |
+|RF-011| Os voluntários devem receber um email quando uma ONG expressa interesse em seu perfil. | MÉDIA |  |
 |RF-012| A aplicação deve fornecer um mecanismo de pesquisa para que os usuários possam encontrar ONGs com base em critérios como área de atuação, localização geográfica e necessidades específicas. | ALTA |  |
-|RF-013| Os voluntários devem poder avaliar as ONGs e projetos com os quais colaboraram, fornecendo feedback e classificações. | ALTA |  |
-|RF-014| Deve existir uma página inicial (*landing page*) informativa que apresenta o propósito da plataforma e incentiva tanto as ONGs quanto os voluntários a se cadastrarem. | ALTA |  |
+|RF-013| Os voluntários devem poder avaliar as ONGs e projetos com os quais colaboraram, fornecendo feedback e classificações. | MÉDIA |  |
+|RF-014| Deve existir uma página inicial (*landing page*) informativa que apresenta o propósito da plataforma e incentiva tanto as ONGs quanto os voluntários a utilizar a aplicação. | ALTA |  |
 |RF-015| A aplicação deve conter a página “Perguntas Frequentes” que aborda as dúvidas mais comuns dos visitantes em relação ao voluntariado e ao uso da plataforma. | ALTA |  |
 |RF-016| A aplicação deve permitir que as ONGs publiquem informações sobre suas conquistas e projetos bem-sucedidos, a fim de promover suas causas. | ALTA |  |
 |RF-017| A aplicação deve apresentar a página “Sobre o Voluntariado”  que fornece informações detalhadas sobre o conceito de trabalho voluntário, destacando seu impacto positivo na sociedade e nas comunidades. | ALTA |  |
 |RF-018| A aplicação deve apresentar a página “Por Que Ser Voluntário?” que apresenta histórias inspiradoras de voluntários e os benefícios pessoais que podem ser obtidos ao se envolver em ações voluntárias. | ALTA |  |
 |RF-019| A aplicação deve apresentar a página “Como Começar” que orienta os visitantes sobre os passos necessários para se tornarem voluntários registrados na aplicação. | ALTA |  |
 |RF-020| A aplicação deve apresentar a página “Histórias de Sucesso” que destaca projetos anteriores realizados por meio da plataforma, com resultados, depoimento de voluntários e o impacto positivo alcançado. | ALTA |  |
-|RF-021| A aplicação deve apresentar páginas de recursos interativos, como quizzes ou testes de personalidade, que ajudem os visitantes a descobrirem em que áreas podem ser mais eficazes. | ALTA |  |
+|RF-021| A aplicação deve apresentar páginas de recursos interativos, como quizzes ou testes de personalidade, que ajudem os visitantes a descobrirem em que áreas podem ser mais eficazes. | BAIXA |  |
 
 ### Requisitos não Funcionais
 
@@ -77,6 +75,7 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 |RNF-005| A aplicação deve responder às solicitações dos usuários com um tempo limite máximo de 3 segundos para carregar páginas ou processar ações. |  ALTA |
 |RNF-006| O sistema deve ser capaz de estar disponível 99,9% do tempo, que se traduz em cerca de 8,76 horas de inatividade não planejada por ano. |  ALTA |
 |RNF-007| O sistema deve ser capaz de ser executado nas versões mais recentes dos principais navegadores do mercado, como: Chrome, Firefox, Edge e Safari. |  ALTA |
+|RNF-008| A comunicação entre voluntários e ONGs ocorrerá através de emails |  ALTA |
 
 ## Restrições
 
@@ -91,4 +90,3 @@ O projeto está restrito pelos itens apresentados na tabela a seguir.
 |05| Cada ONG poderá ter apenas 2 demandas ativas por vez.                                                                    |
 |06| Cada voluntário poderá se candidatar a apenas 2 demandas por vez.                                                        |
 |07| A ONG deve aceitar ou recusar a candidatura do voluntário em até 3 dias, caso contrário será recusada automaticamente.   |
-
