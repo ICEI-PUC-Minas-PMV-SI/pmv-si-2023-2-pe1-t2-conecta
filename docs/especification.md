@@ -12,6 +12,8 @@ Apresente uma visão geral do que será abordado nesta parte do documento, enume
 
 ![Alt text](<./img/Ana Lucia Persona.jpg>)
 
+![Alt text](<./img/personas/Ana Silva Persona.jpg>)
+
 ![Alt text](./img/personas/heitor-persona.jpg).
 
 ### Persona Heitor Santos
