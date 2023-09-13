@@ -31,6 +31,8 @@ Com base na análise das personas forma identificadas as seguintes histórias de
 |Ana Lucia  | Quero poder encontrar voluntários remotamente.  | Para conseguir aumentar a quantidade de pessoas que se conectam à ONG.  |
 |Ana Silva  | Se voluntariar para ONGs de todo o brasil  | Para causar impacto positivo nas comunidades e ONGs de todo o Brasil  |
 |Ana Silva  | Saber dos desafios das ONGs  | Para aprimorar suas habilidades profissionais. |
+|Heitor Santos       | Saber a localização da ONG.        | Para que eu possa conciliar com minhas viagens.|
+|Heitor Santos       | Datas de disponibilidade da ONG.   | Para que eu possa alinhar com meus projetos.|
 
 ## Requisitos
 
