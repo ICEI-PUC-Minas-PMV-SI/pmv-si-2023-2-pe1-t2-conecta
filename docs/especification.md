@@ -56,12 +56,12 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 |RF-012| A aplicação deve fornecer um mecanismo de pesquisa para que os usuários possam encontrar ONGs com base em critérios como área de atuação, localização geográfica e necessidades específicas. | ALTA |  |
 |RF-013| Os voluntários devem poder avaliar as ONGs e projetos com os quais colaboraram, fornecendo feedback e classificações. | MÉDIA |  |
 |RF-014| Deve existir uma página inicial (*landing page*) informativa que apresenta o propósito da plataforma e incentiva tanto as ONGs quanto os voluntários a utilizar a aplicação. | ALTA |  |
-|RF-015| A aplicação deve conter a página “Perguntas Frequentes” que aborda as dúvidas mais comuns dos visitantes em relação ao voluntariado e ao uso da plataforma. | ALTA |  |
-|RF-016| A aplicação deve permitir que as ONGs publiquem informações sobre suas conquistas e projetos bem-sucedidos, a fim de promover suas causas. | ALTA |  |
-|RF-017| A aplicação deve apresentar a página “Sobre o Voluntariado”  que fornece informações detalhadas sobre o conceito de trabalho voluntário, destacando seu impacto positivo na sociedade e nas comunidades. | ALTA |  |
-|RF-018| A aplicação deve apresentar a página “Por Que Ser Voluntário?” que apresenta histórias inspiradoras de voluntários e os benefícios pessoais que podem ser obtidos ao se envolver em ações voluntárias. | ALTA |  |
+|RF-015| A aplicação deve conter a página “Perguntas Frequentes” que aborda as dúvidas mais comuns dos visitantes em relação ao voluntariado e ao uso da plataforma. | MÉDIA |  |
+|RF-016| A aplicação deve permitir que as ONGs publiquem informações sobre suas conquistas e projetos bem-sucedidos, a fim de promover suas causas. | MÉDIA |  |
+|RF-017| A aplicação deve apresentar a página “Sobre o Voluntariado”  que fornece informações detalhadas sobre o conceito de trabalho voluntário, destacando seu impacto positivo na sociedade e nas comunidades. | MÉDIA |  |
+|RF-018| A aplicação deve apresentar a página “Por Que Ser Voluntário?” que apresenta histórias inspiradoras de voluntários e os benefícios pessoais que podem ser obtidos ao se envolver em ações voluntárias. | MÉDIA |  |
 |RF-019| A aplicação deve apresentar a página “Como Começar” que orienta os visitantes sobre os passos necessários para se tornarem voluntários registrados na aplicação. | ALTA |  |
-|RF-020| A aplicação deve apresentar a página “Histórias de Sucesso” que destaca projetos anteriores realizados por meio da plataforma, com resultados, depoimento de voluntários e o impacto positivo alcançado. | ALTA |  |
+|RF-020| A aplicação deve apresentar a página “Histórias de Sucesso” que destaca projetos anteriores realizados por meio da plataforma, com resultados, depoimento de voluntários e o impacto positivo alcançado. | MÉDIA |  |
 |RF-021| A aplicação deve apresentar páginas de recursos interativos, como quizzes ou testes de personalidade, que ajudem os visitantes a descobrirem em que áreas podem ser mais eficazes. | BAIXA |  |
 
 ### Requisitos não Funcionais
