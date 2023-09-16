@@ -62,7 +62,7 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 |RF-016| A aplicação deve permitir que as ONGs publiquem informações sobre suas conquistas e projetos bem-sucedidos, a fim de promover suas causas. | MÉDIA | Dinâmico |
 |RF-017| A aplicação deve apresentar páginas de recursos interativos, como quizzes ou testes de personalidade, que ajudem os visitantes a descobrirem em que áreas podem ser mais eficazes. | BAIXA | Dinâmico |
 |RF-018| A página da demanda cadastrada pela ONG deve exibir uma lista de todos os voluntários que tiveram a candidatura aceita. | BAIXA | Dinâmico |
-|RF-019| Na página da demanda cadastrada pela ONG, deve haver um botão para solicitar depoimentos aos voluntários que envia um e-mail contendo um link a cada voluntário, solicitando que eles compartilhem um depoimento sobre sua experiência de participação | BAIXA | Dinâmico |
+|RF-019| Na página da demanda cadastrada pela ONG, deve ter um botão com a finalidade de enviar um link via e-mail aos voluntários solicitando a eles que deixem um comentário sobre sua experiência. | BAIXA | Dinâmico |
 |RF-020| A aplicação deve apresentar uma página para depoimento da solicitação que o voluntário participou, que só poderá ser acessada através do link recebido via e-mail, com um formulário para preenchimento. | BAIXA | Dinâmico |
 |RF-021| Os depoimentos dos voluntários devem ser disponibilizados no perfil da ONG que fez a solicitação. | BAIXA | Dinâmico |
 
