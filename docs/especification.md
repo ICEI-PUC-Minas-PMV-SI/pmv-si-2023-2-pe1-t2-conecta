@@ -24,17 +24,14 @@ Com base na análise das personas forma identificadas as seguintes histórias de
 
 |EU COMO... `PERSONA`| QUERO/PRECISO ... `FUNCIONALIDADE` |PARA ... `MOTIVO/VALOR`                 |
 |--------------------|------------------------------------|----------------------------------------|
-|Ana Silva  | Conectar profissionais e estudantes da área de tecnologia com ONGs de todo Brasil. | Para causar impacto positivo na sociedade. |
-|Ana Silva  | Entender os desafios das ONGs.  | Para aprimorar suas habilidades profissionais. |
-|Ana Lucia  | Preciso encontrar pessoas que possam se voluntariar.  | Para ajudar com as necessidades tecnológicas da ONG.  |
-|Ana Lucia  | Quero poder encontrar voluntários remotamente.  | Para conseguir aumentar a quantidade de pessoas que se conectam à ONG.  |
-|Elisa Andrade       | Quero me cadastrar para ser voluntária em ONGs.           | Aplicar os conhecimentos que estou adquirindo como estudante de Sistemas de Informação. |
+|Ana Silva  | Desejo uma forma eficiente de unir pessoas que queiram se voluntariar, com as ONGs com demandas em que posso contribuir. | Para causar impacto positivo na sociedade. |
+|Ana Silva   | Entender os desafios das ONGs.  | Para aprimorar suas habilidades profissionais. |
+|Ana Lucia  | Preciso encontrar pessoas que possam se voluntariar em minha ONG de forma remota ou de forma presencial, para que eu consiga resolver os problemas com mais eficiência.  | Para ajudar com as necessidades tecnológicas da ONG.|
+|Elisa Andrade  | Quero me cadastrar para ser voluntária em ONGs. | Aplicar os conhecimentos que estou adquirindo como estudante de Sistemas de Informação. |
 |Elisa Andrade      | Quero encontrar ONGs de acordo com meu interesse e minha disponibilidade.                | Para me voluntariar em áreas do meu interesse com flexibilidade de horário.|
-|Gustavo Silva  | Encontrar uma ONG.           | Poder ser voluntário aplicando meus conhecimentos como engenheiro de software.               |
-|Gustavo Silva       | Poder me voluntariar de forma remota.                 | Permitir que eu possa ser voluntário da minha casa ou dos locais onde eu estiver viajando a trabalho. |
+|Gustavo Silva  | Saber as necessidades das ONGs para que eu possa atender de forma remota. | Poder ser voluntário aplicando meus conhecimentos como engenheiro de software.   Permitindo também que eu possa ser voluntário da minha casa ou dos locais onde eu estiver viajando a trabalho. |
 |Gustavo Silva       | Saber os detalhes da posição antes de me cadastrar.                 | Para que eu me candidate somente às posições que são de meu interesse e que correspondem às minhas habilidades. |
-|Heitor Santos       | Saber a localização da ONG.        | Para que eu possa conciliar com minhas viagens.|
-|Heitor Santos       | Datas de disponibilidade da ONG.   | Para que eu possa alinhar com meus projetos.|
+|Heitor Santos       | Conhecer as ONGs no Brasil e as necessidades delas, para que eu possa me mobilizar para ajudar.        | Para que eu possa conciliar com as minhas viagens e projetos.|              |
 
 ## Requisitos
 

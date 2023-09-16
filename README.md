@@ -15,7 +15,7 @@ Formar uma ponte entre ONGs e pessoas com conhecimento em TI dispostas a contrib
 * [João Luiz Zarate Teixeira](https://github.com/joaozarate)
 * [Marcos Aurélio Marinho Melgaço Filho](https://github.com/marcossxj)
 * [Omar Petronílio Martins de Abreu](https://github.com/arondightt)
-* Pedro Cordeiro Ventura
+* [Pedro Cordeiro Ventura](https://github.com/pedrocventurapuc)
 
 ## Orientadora
 
