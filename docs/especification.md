@@ -75,9 +75,9 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 |RNF-003| As senhas dos usuários devem ser criptografadas antes de serem armazenadas. |  ALTA |
 |RNF-004| A aplicação deve fornecer feedback visual claro para ações do usuário, como confirmações de envio e mensagens de erro. |  ALTA |
 |RNF-005| A aplicação deve responder às solicitações dos usuários com um tempo limite máximo de 3 segundos para carregar páginas ou processar ações. |  ALTA |
-|RNF-008| A comunicação entre voluntários e ONGs ocorrerá de forma externa à aplicação (e-mail, telefone, mensagens de texto). |  ALTA |
+|RNF-006| A comunicação entre voluntários e ONGs ocorrerá de forma externa à aplicação (e-mail, telefone, mensagens de texto). |  ALTA |
 |RNF-007| O sistema deve ser capaz de ser executado nas versões mais recentes dos principais navegadores do mercado, como: Chrome, Firefox, Edge e Safari. |  ALTA |
-|RNF-006| O sistema deve ser capaz de estar disponível 99,9% do tempo, que se traduz em cerca de 8,76 horas de inatividade não planejada por ano. |  BAIXA |
+|RNF-008| O sistema deve ser capaz de estar disponível 99,9% do tempo, que se traduz em cerca de 8,76 horas de inatividade não planejada por ano. |  BAIXA |
 
 ## Restrições
 
