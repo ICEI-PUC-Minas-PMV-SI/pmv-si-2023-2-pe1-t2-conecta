@@ -22,6 +22,9 @@ Fluxo de usuário (User Flow) é uma técnica que permite ao desenvolvedor mapea
 - Wireframe que atende ao RF-008:
 A aplicação deve apresentar a página “Como Começar” que orienta os visitantes sobre os passos necessários para se tornarem voluntários registrados na aplicação.
 ![wireframe-como-comecar](./img/wireframes/como-comecar.png)
+- Wireframe que atende ao RF-021:
+Os depoimentos dos voluntários devem ser disponibilizados no perfil da ONG que fez a solicitação.
+![wireframe-pagina-da-ong](./img/wireframes/pagina-da-ong.png)
 
 ### Exemplo
 
