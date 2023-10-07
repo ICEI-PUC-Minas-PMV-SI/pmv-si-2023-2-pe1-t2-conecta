@@ -29,4 +29,4 @@ A tipografia utilizada para o site é a Open Sans para os textos e Montserrat Mo
 
 Estes são os ícones utilizados no site. 
 
-![Iconografia](./imagens_template/iconografia-template.png)
+![Iconografia](./imagens_template/iconografia.png)
