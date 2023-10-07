@@ -29,6 +29,8 @@ RF-002 - A aplicação deve permitir que as ONGs atualizem suas informações de
 
 ![wireframe-como-comecar](./img/wireframes/cadastro-da-ONG.png)
 
+![wireframe-como-comecar](./img/wireframes/cadastro-da-ONG-perfil.png)
+
 ### Cadastrar demanda da ONG:
 
 Wireframe que atende ao: 
@@ -86,6 +88,14 @@ Wireframe que atende ao:
 RF-011 - A aplicação deve apresentar a página “Sobre o Voluntariado” que fornece informações detalhadas sobre o conceito de trabalho voluntário, destacando seu impacto positivo na sociedade e nas comunidades.
 
 ![wireframe-sobre-o-voluntariado](./img/wireframes/sobre-o-voluntariado.png)
+
+### Por Que Ser Voluntário:
+
+Wireframe que atende ao: 
+
+RF-012	A aplicação deve apresentar a página “Por Que Ser Voluntário?” que apresenta histórias inspiradoras de voluntários e os benefícios pessoais que podem ser obtidos ao se envolver em ações voluntárias.
+
+![wireframe-sobre-o-voluntariado](./img/wireframes/por-que-ser-voluntário_.png)
 
 ### Histórias de Sucesso:
 
