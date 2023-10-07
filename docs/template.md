@@ -7,8 +7,7 @@ A aplicação é projetada com o usuário em mente, apresentando um visual minim
 
 ## Design
 
-O logo foi feito pensando no conceito de conectar pessoas, utilizando as cores escolhidas para o desenvolvimento do site. 
-
+O design do nosso projeto, centrado na conexão de pessoas, é cuidadosamente concebido para transmitir uma experiência agradável e intuitiva. Utiliza uma paleta de cores calmas e claras, com destaque para tons pastéis, e adota cantos arredondados em seus elementos, proporcionando uma estética suave e amigável. Ícones minimalistas, representando funcionalidades de forma simplificada, são integrados. A logo é composta de duas setas, reforçando a ideia central de conexão, mantendo coerência com as cores e a simplicidade visual do design global. Esperamos que esse design proporcione uma experiência envolvente e harmoniosa, enfatizando a importância da interligação entre as pessoas. 
 
 ![Logo](./imagens_template/logo-conecta.png)
 
