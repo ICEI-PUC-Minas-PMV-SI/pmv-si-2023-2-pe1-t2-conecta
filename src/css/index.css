@@ -1,0 +1,158 @@
+/* Importar as fontes Open Sans e Montserrat Mono */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Mono&display=swap');
+
+/* Definir cores personalizadas */
+:root {
+    --cor-background: #E7ECEF;
+    --cor-titulo: #274C77;
+    --cor-link1: #6086BA;
+    --cor-link2: #A3CEF1;
+    --cor-texto: #8B8C89;
+}
+
+/* Estilos gerais da página */
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: var(--cor-background);
+    margin: 0;
+    padding: 0;
+    background: #FFF;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+    /* Aumenta a altura do menu */
+    background-color: white;
+    border-bottom: 1px solid var(--cor-texto);
+    /* Adiciona a borda inferior */
+
+}
+
+img {
+    max-width: 30%;
+    /* Defina o tamanho máximo desejado */
+    height: auto;
+    background: lightgray 50% / cover no-repeat;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    /* Cria duas colunas para os botões */
+    gap: 20px;
+    /* Espaçamento entre os botões */
+    align-items: center;
+    /* Alinha os botões verticalmente */
+}
+
+
+.button {
+    padding: 15px 30px;
+    margin-left: 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    color: #FFF;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* Cor do botão esquerdo */
+.button:nth-child(1) {
+    background-color: var(--cor-texto);
+    /* 8B8C89 */
+    color: white;
+}
+
+/* Cor do botão direito */
+.button:nth-child(2) {
+    background-color: var(--cor-titulo);
+    /* 274C77 */
+    color: white;
+}
+
+.content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* Cria duas colunas iguais para a imagem e o texto */
+    background: #E7ECEF;
+    /* Background color */
+    margin-top: 20px;
+    padding: 0;
+    height: auto;
+}
+
+.image img {
+    max-width: 100%;
+    height: auto;
+    width: 90%;
+    /* A imagem ocupa toda a coluna */
+}
+
+.text {
+    text-align: left;
+    /* Centraliza o texto horizontalmente */
+    grid-column: span 1;
+    /* Ocupa ambas as colunas */
+}
+
+.text {
+    color: #000;
+    font-family: Open Sans;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 5% 20% 5% 20%
+}
+
+/* Estilos do footer */
+footer {
+    background: #A3CEF1;
+    /* Background color do footer */
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    /* Cria 5 colunas iguais */
+    gap: 20px;
+    /* Espaçamento entre as partições */
+}
+
+.footer-item {
+    color: #000;
+    /* Cor do texto */
+    font-family: 'Open Sans', sans-serif;
+    /* Fonte do texto */
+    text-align: center;
+    padding: 10px;
+    border: 1px solid transparent;
+}
+
+/* Estilos responsivos */
+@media screen and (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .buttons {
+        margin-top: 10px;
+        margin-left: 0;
+    }
+
+    .content {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 20px;
+    }
+
+    .text {
+        margin-left: 0;
+        margin-top: 20px;
+    }
+}
