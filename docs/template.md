@@ -7,7 +7,7 @@ A aplicação é projetada com o usuário em mente, apresentando um visual minim
 
 ## Design
 
-Definimos as cores de tons de azul como cores principais do produto, pois comumente esta ligada a confiança, calma, estabilidade e confiabilidade. Essas são qualidades essenciais para qualquer plataforma que lida com organizações sem fins lucrativos e voluntários, uma vez que a confiança é fundamental para o sucesso dessas parcerias. O azul é uma cor que também evoca a natureza, como o céu e a água. Isso pode ser interpretado como uma conexão com o ambiente natural e a sustentabilidade, valores que muitas ONGs promovem. Heller(2021)[[5]](../docs/references.md) também sugere que o azul está relacionado à tecnologia e sendo uma plataforma digital que liga pessoas de tecnologia a ONGs que necessitam desta demanda, a predominação do azul e uma escolha assertiva.
+O logo foi feito pensando no conceito de conectar pessoas, utilizando as cores escolhidas para o desenvolvimento do site. 
 
 
 ![Logo](./imagens_template/logo-conecta.png)
@@ -15,7 +15,7 @@ Definimos as cores de tons de azul como cores principais do produto, pois comume
 
 ## Cores
 
-A paleta de cores utilizada na aplicação contém tons predominantemente de azul e cinza. 
+Definimos as cores de tons de azul como cores principais do produto, pois comumente esta ligada a confiança, calma, estabilidade e confiabilidade. Essas são qualidades essenciais para qualquer plataforma que lida com organizações sem fins lucrativos e voluntários, uma vez que a confiança é fundamental para o sucesso dessas parcerias. O azul é uma cor que também evoca a natureza, como o céu e a água. Isso pode ser interpretado como uma conexão com o ambiente natural e a sustentabilidade, valores que muitas ONGs promovem. Heller(2021)[[5]](../docs/references.md) também sugere que o azul está relacionado à tecnologia e sendo uma plataforma digital que liga pessoas de tecnologia a ONGs que necessitam desta demanda, a predominação do azul e uma escolha assertiva.
 
 ![Paleta de Cores](./imagens_template/paleta-de-cores.png)
 
