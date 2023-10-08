@@ -85,7 +85,7 @@ RF-011 - A aplicação deve apresentar a página “Sobre o Voluntariado” que 
 
 Wireframe que atende ao: 
 
-RF-012	A aplicação deve apresentar a página “Por Que Ser Voluntário?” que apresenta histórias inspiradoras de voluntários e os benefícios pessoais que podem ser obtidos ao se envolver em ações voluntárias.
+RF-012	A aplicação deve apresentar a página “Por Que Ser Voluntário?” que apresenta os benefícios pessoais que podem ser obtidos ao se envolver em ações voluntárias.
 
 ![wireframe-sobre-o-voluntariado](./img/wireframes/por-que-ser-voluntário_.png)
 
