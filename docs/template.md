@@ -1,6 +1,6 @@
 # Template padrão do site
 
-O layout da aplicação apresentado possui visual simples com cores neutras e com aparência amigável.
+A aplicação é projetada com o usuário em mente, apresentando um visual minimalista, uma paleta de cores neutras e uma interface simples e amigável para garantir uma interação intuitiva e agradavel.
 
 ![Layout](./imagens_template/layout.png)
 
