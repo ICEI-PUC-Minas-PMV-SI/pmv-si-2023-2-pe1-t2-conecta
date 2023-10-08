@@ -6,16 +6,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sua Landing Page</title>
     <link rel="stylesheet" href="./css/index.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
 </head>
 
 <body>
-    <header>
+    <header class="header">       
         <img src="../docs/imagens_template/logo-conecta.png" alt="Logo Conecta">
         <div class="buttons">
             <a href="#" class="button">ÁREA DA ONG</a>
             <a href="#" class="button">OPORTUNIDADES</a>
         </div>
+        
     </header>
+    <header class="header-mobile">
+        
+        <div class="menu-toggle open-menu" id="">
+            <img src="../docs/imagens_template/menu-mobile.png" alt="Menu">
+        </div>
+        
+        <div class="logo">
+            <img src="../docs/imagens_template/logo-conecta.png" alt="Logo">
+        </div>
+    </header>
+    
     <section class="content">
         <div class="image">
             <img src="../docs/imagens_template/img-layout.png" alt="Imagem">
@@ -24,6 +38,26 @@
             <p>Juntos, podemos utilizar a tecnologia para criar um mundo mais solidário!</p>
         </div>
     </section>
+    <nav class="mobile-menu" id="mobile-menu">
+        <div class="header-menu">
+            <img src="../docs/imagens_template/search-11.png" alt="Search">
+            <img class="menu-toggle open-menu" src="../docs/imagens_template/close-button.png" alt="Close menu">
+        </div>
+        <div class="buttons-mobile">
+            <div class="text-buttons">área da ong</div>
+            <a href="">CADASTRE-SE</a>
+            <a href="">LOGIN</a>
+        </div>
+        <div class="oportunidades">OPORTUNIDADES</div>
+        <ul>
+            <li><a href="#">Como começar?</a></li>
+            <li><a href="#">Sobre o voluntariado</a></li>
+            <li><a href="#">Por que ser volutário?</a></li>
+            <li><a href="">Perguntas frequentes</a></li>
+            <li><a href="">Histórias de sucesso</a></li>
+        </ul>
+    </nav>
+    
 </body>
 <footer>
     <div class="footer-item">Como começar?</div>
@@ -32,5 +66,5 @@
     <div class="footer-item">Perguntas frequentes</div>
     <div class="footer-item">Histórias de sucesso</div>
 </footer>
-
+<script src="./js/index.js"></script>
 </html>
