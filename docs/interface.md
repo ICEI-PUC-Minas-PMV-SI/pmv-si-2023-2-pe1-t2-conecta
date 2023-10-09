@@ -17,7 +17,7 @@ Wireframe que atende aos:
 
 RF-001 - A aplicação deve permitir que as ONGs se cadastrem.
 
-RF-002 - A aplicação deve permitir que as ONGs atualizem suas informações de perfil, como contato, a qualquer momento.
+RF-002 - A aplicação deve permitir que as ONGs gerenciem suas informações de perfil (alterar, excluir e consultar os dados) a qualquer momento.
 
 ![wireframe-como-comecar](./img/wireframes/cadastro-da-ONG.png)
 
