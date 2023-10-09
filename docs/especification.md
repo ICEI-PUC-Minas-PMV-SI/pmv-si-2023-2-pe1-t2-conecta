@@ -42,7 +42,7 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 |ID    | Descrição do Requisito  | Prioridade | Tipo |
 |------|-----------------------------------------|----| ----|
 |RF-001| A aplicação deve permitir que as ONGs se cadastrem. | ALTA | Dinâmico |
-|RF-002| A aplicação deve permitir que as ONGs atualizem suas informações de perfil, como contato, a qualquer momento. | ALTA | Dinâmico |
+|RF-002| A aplicação deve permitir que as ONGs gerenciem suas informações de perfil (alterar, excluir e consultar os dados) a qualquer momento. | ALTA | Dinâmico |
 |RF-003| A aplicação deve possibilitar que as ONGs divulguem solicitações de ajuda técnica, descrevendo os projetos ou desafios específicos que precisam ser abordados. | ALTA | Dinâmico |
 |RF-004| A aplicação deve permitir que os voluntários visualizem as solicitações de ajuda técnica feitas pelas ONGs. | ALTA | Dinâmico |
 |RF-005| Os voluntários devem poder se voluntariar por meio de formulário de contato para trabalhar em projetos específicos das ONGs, indicando seu interesse e disponibilidade. | ALTA | Dinâmico |
@@ -72,9 +72,8 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 |RNF-003| As senhas dos usuários devem ser criptografadas antes de serem armazenadas. |  ALTA |
 |RNF-004| A aplicação deve fornecer feedback visual claro para ações do usuário, como confirmações de envio e mensagens de erro. |  ALTA |
 |RNF-005| A aplicação deve responder às solicitações dos usuários com um tempo limite máximo de 3 segundos para carregar páginas ou processar ações. |  ALTA |
-|RNF-006| A comunicação entre voluntários e ONGs ocorrerá de forma externa à aplicação (e-mail, telefone, mensagens de texto). |  ALTA |
-|RNF-007| O sistema deve ser capaz de ser executado nas versões mais recentes dos principais navegadores do mercado, como: Chrome, Firefox, Edge e Safari. |  ALTA |
-|RNF-008| O sistema deve ser capaz de estar disponível 99,9% do tempo, que se traduz em cerca de 8,76 horas de inatividade não planejada por ano. |  BAIXA |
+|RNF-006| O sistema deve ser capaz de ser executado nas versões mais recentes dos principais navegadores do mercado, como: Chrome, Firefox, Edge e Safari. |  ALTA |
+|RNF-007| O sistema deve ser capaz de estar disponível 99,9% do tempo, que se traduz em cerca de 8,76 horas de inatividade não planejada por ano. |  BAIXA |
 
 ## Restrições
 
@@ -89,3 +88,4 @@ O projeto está restrito pelos itens apresentados na tabela a seguir.
 |05| Cada ONG poderá ter apenas 2 demandas ativas por vez.                                                                    |
 |06| Cada voluntário poderá se candidatar a apenas 2 demandas por vez.                                                        |
 |07| A ONG deve aceitar ou recusar a candidatura do voluntário em até 3 dias, caso contrário será recusada automaticamente.   |
+|08| A comunicação entre voluntários e ONGs ocorrerá de forma externa à aplicação (e-mail, telefone, mensagens de texto). |  ALTA |
