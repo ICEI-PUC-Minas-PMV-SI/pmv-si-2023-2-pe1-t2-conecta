@@ -1,0 +1,87 @@
+* {
+    z-index: 2;
+    margin: 0;
+}
+
+@media screen and (max-width: 768px) {
+
+    .rounded-background {
+        position: absolute;
+        top: 90px;
+        background-color: #274C77;
+        height: 100vh;
+        width: 100%;
+        border-radius: 40px 40px 0 0;
+        z-index: 2;
+    }
+
+    .header-mobile {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        justify-items: start;
+        align-items: center;
+        padding: 20px;
+        background-color: white;
+        border-bottom: none;
+        z-index: 1;
+    }
+
+    .logo-button {
+        justify-self: center;
+    }
+
+    .close-button {
+        justify-self: end;
+    }
+
+    .content {
+        margin: 0;
+    }
+
+    .title {
+        color: #FFFFFF;
+        padding: 16px 24px 0 24px;
+        font-size: 40px;
+        width: 298px;
+    }
+
+    .subtitle {
+        padding: 8px 24px 0 24px;
+        color: #FFFFFF;
+        font-size: 20px;
+    }
+
+    .image-wrapper {
+        padding: 8px 16px 0 16px;
+        display: flex;
+    }
+    .image {
+        flex-grow: 1;
+        flex-shrink: 1;
+        border-radius: 40px;
+        max-width: 100%;
+    }
+
+    .list-title {
+        padding: 8px 24px 0 24px;
+        color: #FFFFFF;
+        font-size: 32px;
+    }
+
+    .list-content li {
+        color: #FFFFFF;
+        font-size: 16px;
+        margin: 0;
+    }
+
+    .list-content a {
+        color: #FFFFFF;
+        font-size: 16px;
+        margin: 0;
+        text-decoration: underline;
+    }
+
+    .instructions-list {
+        padding-bottom: 16px;
+    }
+}
