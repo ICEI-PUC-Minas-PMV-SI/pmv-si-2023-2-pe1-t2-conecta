@@ -56,7 +56,8 @@ body {
     align-items: center;
     padding: 30px;
     background-color: white;
-    width: 90%;
+    width: 99%;
+    border-bottom: 1px solid var(--cor-texto);
 }
 
 .home-logo-wrapper {
@@ -130,12 +131,12 @@ body {
     margin: 0;
     padding: 0;
     height: auto;
+    max-width: 1280px;
 }
 
 .home-image img {
-    min-width: 100%;
-    min-height: 100%;
-    flex-shrink: 0;
+    width: 100%;
+    height: 100%;
 }
 
 .landing-page-text {
