@@ -1,19 +1,100 @@
-* {
-    z-index: 2;
+/** {*/
+/*    z-index: 2;*/
+/*    margin: 0;*/
+/*}*/
+
+/*html, body {*/
+/*    overflow-x:hidden;*/
+/*    height: 100%;*/
+/*}*/
+
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+/*.header {*/
+/*    display: flex;*/
+/*    justify-content: space-between;*/
+/*    align-items: center;*/
+/*    padding: 30px;*/
+/*    background-color: white;*/
+/*    border-bottom: 1px solid var(--cor-texto);*/
+/*    border-bottom: none;*/
+/*}*/
+
+.header-desktop {
+    border-bottom: none;
+}
+
+/*.content {*/
+/*    background-color: #274C77;*/
+/*    border-radius: 40px 40px 0 0;*/
+/*    display: flex;*/
+/*    flex-direction: column;*/
+/*    align-items: center;*/
+/*    justify-items: center;*/
+/*    flex-grow: 1;*/
+/*    margin: 0;*/
+/*}*/
+
+.content > .title {
+    color: #FFFFFF;
+    padding: 16px 24px 0 24px;
+    font-size: 40px;
+}
+
+.content > .subtitle {
+    padding: 8px 24px 0 24px;
+    color: #FFFFFF;
+    font-size: 20px;
+    align-self: center;
+    max-width: 500px;
+    text-align: center;
+}
+
+.content > .image-wrapper {
+    padding: 16px 16px 16px 16px;
+    display: flex;
+    justify-content: center;
+}
+
+.content > .image-wrapper > .image {
+    flex-grow: 1;
+    flex-shrink: 1;
+    border-radius: 40px;
+    max-width: 60%;
+}
+
+.content > .instructions-wrapper {
+    display: flex;
+}
+
+.content > .instructions-wrapper > .instructions-list {
+    padding: 16px;
+}
+
+.instructions-list > .list-title {
+    padding: 8px 24px 0 24px;
+    color: #FFFFFF;
+    font-size: 32px;
+}
+
+.instructions-list > .list-content li {
+    color: #FFFFFF;
+    font-size: 16px;
     margin: 0;
 }
 
-@media screen and (max-width: 768px) {
+.instructions-list > .list-content a {
+    color: #FFFFFF;
+    font-size: 16px;
+    margin: 0;
+    text-decoration: underline;
+}
 
-    .rounded-background {
-        position: absolute;
-        top: 90px;
-        background-color: #274C77;
-        height: 100vh;
-        width: 100%;
-        border-radius: 40px 40px 0 0;
-        z-index: 2;
-    }
+@media screen and (max-width: 768px) {
 
     .header-mobile {
         display: grid;
@@ -24,64 +105,52 @@
         background-color: white;
         border-bottom: none;
         z-index: 1;
+        width: 100%;
     }
 
-    .logo-button {
+    .header-mobile > .menu-toggle {
+        justify-self: start;
+        padding-left: 24px;
+    }
+
+    .header-mobile > .logo-button {
         justify-self: center;
     }
 
-    .close-button {
+    .header-mobile > .close-button {
         justify-self: end;
+        padding-right: 24px;
     }
 
     .content {
-        margin: 0;
+        align-items: start;
+        height: 100%;
     }
 
-    .title {
-        color: #FFFFFF;
-        padding: 16px 24px 0 24px;
-        font-size: 40px;
-        width: 298px;
+    .content > .title {
+        max-width: 298px;
+        align-self: start;
     }
 
-    .subtitle {
+    .content > .subtitle {
+        text-align: start;
+        align-self: start;
         padding: 8px 24px 0 24px;
         color: #FFFFFF;
         font-size: 20px;
+        max-width: 500px;
     }
 
-    .image-wrapper {
+    .content > .image-wrapper {
         padding: 8px 16px 0 16px;
-        display: flex;
     }
-    .image {
-        flex-grow: 1;
-        flex-shrink: 1;
-        border-radius: 40px;
+
+    .content > .image-wrapper > .image {
         max-width: 100%;
     }
 
-    .list-title {
-        padding: 8px 24px 0 24px;
-        color: #FFFFFF;
-        font-size: 32px;
+    .content > .instructions-wrapper {
+        flex-direction: column;
     }
 
-    .list-content li {
-        color: #FFFFFF;
-        font-size: 16px;
-        margin: 0;
-    }
-
-    .list-content a {
-        color: #FFFFFF;
-        font-size: 16px;
-        margin: 0;
-        text-decoration: underline;
-    }
-
-    .instructions-list {
-        padding-bottom: 16px;
-    }
 }
