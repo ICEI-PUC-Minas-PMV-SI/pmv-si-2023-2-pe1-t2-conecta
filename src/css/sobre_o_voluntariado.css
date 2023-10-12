@@ -1,0 +1,343 @@
+/* Importar as fontes Open Sans e Montserrat Mono */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Mono&display=swap');
+
+/* Definir cores personalizadas */
+:root {
+    --cor-background: #E7ECEF;
+    --cor-titulo: #274C77;
+    --cor-link1: #6086BA;
+    --cor-link2: #A3CEF1;
+    --cor-texto: #8B8C89;
+}
+
+/* Estilos gerais da página */
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: var(--cor-background);
+    margin: 0;
+    padding: 0;
+    background: #FFF;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+    /* Aumenta a altura do menu */
+    background-color: white;
+    /* border-bottom: 1px solid var(--cor-texto); */
+    /* Adiciona a borda inferior */
+
+}
+
+img {
+    max-width: 30%;
+    /* Defina o tamanho máximo desejado */
+    height: auto;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    /* Cria duas colunas para os botões */
+    gap: 20px;
+    /* Espaçamento entre os botões */
+    align-items: center;
+    /* Alinha os botões verticalmente */
+}
+
+
+.button {
+    padding: 15px 30px;
+    margin-left: 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    color: #FFF;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* Cor do botão esquerdo */
+.button:nth-child(1) {
+    background-color: var(--cor-texto);
+    /* 8B8C89 */
+    color: white;
+}
+
+/* Cor do botão direito */
+.button:nth-child(2) {
+    background-color: var(--cor-titulo);
+    /* 274C77 */
+    color: white;
+}
+
+.content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* Cria duas colunas iguais para a imagem e o texto */
+    background: #274c77;
+    /* Background color */
+    /* margin-top: 20px; */
+    padding: 0;
+    height: auto;
+    border-radius: 40px 40px 0px 0px;
+}
+
+.image img {
+    border-radius: 40px;
+    max-width: 100%;
+    height: auto;
+    width: 90%;
+    /* A imagem ocupa toda a coluna */
+}
+
+.image {
+    margin-left: 40px;
+}
+
+.content h2 {
+    color: #fff;
+    font-family: 'Open Sans';
+    font-size: 40px;
+}
+
+.text {
+    text-align: left;
+    /* Centraliza o texto horizontalmente */
+    grid-column: span 1;
+    /* Ocupa ambas as colunas */
+}
+
+.text {
+    color: #FFF;
+    font-family: Open Sans;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 12% 15% 5% 15%;
+    text-align: left;
+}
+
+/* Estilos do footer */
+footer {
+    background: #A3CEF1;
+    /* Background color do footer */
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    /* Cria 5 colunas iguais */
+    gap: 20px;
+    /* Espaçamento entre as partições */
+}
+
+.header-mobile{
+    display: none;
+}
+
+.mobile-menu{
+    display: none;
+}
+
+.footer-item {
+    color: #000;
+    /* Cor do texto */
+    font-family: 'Open Sans', sans-serif;
+    /* Fonte do texto */
+    text-align: center;
+    padding: 10px;
+    border: 1px solid transparent;
+}
+
+
+/* Estilos para dispositivos móveis */
+@media screen and (max-width: 768px) {
+    .header {
+        display: none; /* Oculta o cabeçalho normal na versão mobile */
+    }
+
+
+    .content {
+        display: grid;
+        grid-template-columns: 1fr;
+        background: #E7ECEF;
+        /* Background color */
+        margin-top: 20px;
+        padding: 0;
+        height: auto;
+    }
+    
+    .logo img {
+        max-width: 100%;
+        height: auto;
+        width: 100%;
+        /* A imagem ocupa toda a coluna */
+    }
+    
+    .text {
+        text-align: left;
+        /* Centraliza o texto horizontalmente */
+        grid-column: span 1;
+        /* Ocupa ambas as colunas */
+    }
+    
+    .text {
+        color: #000;
+        font-family: Open Sans;
+        font-size: 35px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        margin: 5% 20% 5% 20%
+    }
+
+    .logo {
+        grid-column: 2; /* A logo na coluna 1 (lado esquerdo) */
+    }
+
+
+    .menu-toggle img {
+        width: 100%; /* Tamanho do ícone do menu */
+        height: auto;
+        cursor: pointer;
+    }
+
+    .image img {
+        max-width: 100%;
+        height: auto;
+        width: 100%;
+        /* A imagem ocupa toda a coluna */
+    }
+
+
+
+    .header-mobile {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-items: start;
+        align-items: center;
+        padding: 20px;
+        background-color: white;
+        border-bottom: 1px solid var(--cor-texto);
+    }
+
+    .menu-toggle img {
+        display: block;
+        width: 100%; /* Certifique-se de que a imagem do ícone do menu ocupe toda a largura */
+        height: auto;
+        cursor: pointer;
+    }
+
+    .mobile-menu {
+        display: none;
+        position: fixed;
+        left: -250px; /* Define a posição à esquerda da tela */
+        top: 0;
+        bottom: 0;
+        width: 250px; /* Largura do menu móvel */
+        background: white;
+        z-index: 1000; /* Certifica-se de que está acima do conteúdo */
+        transition: left 0.3s; /* Adicione uma transição suave para a animação de abertura/fechamento */
+    }
+
+
+    /* ... Outros estilos ... */
+
+    /* Estilos para o cabeçalho móvel */
+    .header-mobile {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-items: start;
+        align-items: center;
+        padding: 20px;
+        background-color: white;
+        border-bottom: 1px solid var(--cor-texto);
+    }
+
+    /* Estilo para o cabeçalho do menu */
+.header-menu {
+    display: grid;
+    grid-template-columns: 1fr auto; /* Duas colunas, a primeira ocupa 1fr e a segunda se ajusta automaticamente */
+    align-items: center; /* Centraliza verticalmente */
+    padding: 10px 20px; /* Espaçamento interno */
+    background-color: white;
+}
+
+.header-menu img:first-child {
+    justify-self: start; /* Alinha a imagem à esquerda */
+}
+
+
+.buttons-mobile {
+    display: grid;
+    grid-template-rows: auto auto; /* Duas linhas, ambas com altura automática */
+    align-items: center; /* Centraliza verticalmente os itens */
+    text-align: left; /* Centraliza horizontalmente o texto */
+    border-bottom: 1px solid var(--cor-texto);
+}
+
+.buttons-mobile a {
+    text-decoration: none; /* Remove sublinhado dos links */
+    padding: 10px 20px; /* Espaçamento interno dos links */
+    border-radius: 5px; /* Borda arredondada nos links */
+    font-family: 'Open Sans', sans-serif; /* Fonte dos links */
+    font-weight: bold; /* Peso da fonte negrito */
+}
+
+.text-buttons{
+    margin-left: 20px;
+}
+.buttons-mobile a:first-child {
+    margin-bottom: 10px; /* Espaçamento inferior entre os links */
+}
+
+
+li {
+    margin-bottom: 10px; /* Espaçamento inferior entre os itens da lista */
+}
+
+li a {
+    text-decoration: none; /* Remove sublinhado dos links */
+    color: var(--cor-titulo); /* Define a cor do texto dos links */
+    font-weight: bold; /* Define o peso da fonte em negrito */
+    font-family: 'Open Sans', sans-serif; /* Define a fonte dos links */
+}
+
+li a:hover {
+    text-decoration: underline; /* Adiciona sublinhado ao passar o mouse sobre os links */
+}
+
+img {
+    max-width: 100%;
+}
+
+
+    footer {
+        display: none;
+    }
+
+    .buttons-mobile {
+        margin-top: 2rem; /* Espaçamento superior de 2 rem */
+        margin-bottom: 2rem; /* Espaçamento inferior de 2 rem */
+    }
+    
+    .text-buttons {
+        margin-bottom: 1rem; /* Espaçamento inferior de 1 rem entre textos e links */
+    }
+    
+    ul {
+        margin-bottom: 2rem; /* Espaçamento inferior de 2 rem entre a lista de itens e o conteúdo inferior */
+    }
+
+    .oportunidades{
+        margin-bottom: 1rem;
+        margin-left: 1rem;
+        font-size: larger;
+    }
+}
+
+
