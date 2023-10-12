@@ -181,6 +181,10 @@ footer {
         border-bottom: none;
     }
 
+    .header-desktop > .buttons-header-wrapper > .header-button {
+        margin: 0 10px 0 0;
+    }
+
     #mobile-menu {
         display: none;
     }
@@ -189,7 +193,6 @@ footer {
         background: #E7ECEF;
         width: 100vw;
         height: 100%;
-        border-radius: 40px 40px 0 0;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -199,8 +202,6 @@ footer {
     }
 
     .landing-page-text {
-        order: -1;
-
         text-align: center;
         font-size: 24px;
         margin: 0;
@@ -209,9 +210,14 @@ footer {
         max-width: 500px;
     }
 
+    .home-image {
+        width: 100%;
+    }
+
     .home-image img {
-        border-radius: 20px;
         padding-bottom: 24px;
+        width: 100%;
+        height: auto;
     }
 }
 
