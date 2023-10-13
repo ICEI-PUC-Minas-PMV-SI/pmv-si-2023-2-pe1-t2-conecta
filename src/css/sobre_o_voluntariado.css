@@ -122,6 +122,10 @@ body {
     margin: 0;
 }
 
+.primeiro-paragrafo {
+    margin-bottom: 40px!important;
+}
+
 .home-content {
     /* max-width: 1280px; */
     display: grid;
@@ -130,18 +134,19 @@ body {
     margin: 0;
     padding: 0;
     height: auto;
-    border-radius: 40px 40px 0px 0px;
+    border-radius: 0px 0px 0px 0px;
 }
 
 .home-image{
     margin-left: 10%;
-    margin-top: 7%;
+    margin-top: 10%;
     color:  white;
 }
 
 .home-content h2 {
     margin-bottom: 5%;
-    font-size: 40px;
+    font-size: 55px;
+
 }
 
 .home-image img {
@@ -160,7 +165,7 @@ body {
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    margin: 20% 10% 20% 10%;
+    margin: 10% 10% 20% 10%;
 }
 
 .sobre-voluntariado-text p {
@@ -215,7 +220,7 @@ footer {
     .sobre-voluntariado-text {
         text-align: left;
         font-size: 30px;
-        margin: 0;
+        margin: 0px;
         padding: 200px;
         align-self: center;
         max-width: 500px;
@@ -342,7 +347,7 @@ footer {
 
     .home-content {
         background: #274c77;
-        border-radius: 40px;
+        border-radius: 0px;
     }
 
     .home-content {
@@ -361,10 +366,11 @@ footer {
         order: 1;
         text-align: left;
         grid-column: span 1;
-        font-size: 34px;
+        font-size: 25px;
         padding: 24px 40px 24px 40px;
         background: #274C77;
         max-width: 100%;
+
     }
 
     .header-menu img:first-child {
