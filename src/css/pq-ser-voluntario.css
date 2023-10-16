@@ -175,7 +175,10 @@ footer {
     padding: 20px;
     display: flex;
 }
-
+.footer-item a {
+    text-decoration: none; 
+    color: black;       
+}
 .footer-wrapper {
     width: 100vw;
     display: flex;
