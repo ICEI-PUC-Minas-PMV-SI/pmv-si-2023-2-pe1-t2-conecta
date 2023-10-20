@@ -123,7 +123,7 @@ body {
 }
 
 .primeiro-paragrafo {
-    margin-bottom: 40px!important;
+    margin-bottom: 40px;
 }
 
 .home-content {
@@ -146,9 +146,12 @@ body {
     order:2;
 }
 .home-image img {
-    width: 600px;
-    height: 500px;
+    border-radius: 50px;
     flex-shrink: 0;
+    height: auto;
+    width: 750px;
+    margin-left: -15%;
+    margin-bottom: 10%;
 }
 .home-content h2 {
     margin-bottom: 5%;
@@ -226,10 +229,10 @@ footer {
         align-self: center;
         max-width: 500px;
     }
-    .conteudo h2{
-        white-space: nowrap;
-    }
 
+    .conteudo p{
+    margin-bottom: -100px;
+    }
     .home-image {
         width: 85%;
     }
@@ -237,6 +240,8 @@ footer {
     .home-image img {
         width: 90%;
         height: 90%;
+        margin-top: 0px;
+        margin-left: auto;
     }
 }
 
@@ -361,6 +366,11 @@ footer {
         width: 100%;
         height: 100%;
         align-items: center;
+        margin-top: 20%;
+    }
+    .home-image img{
+        margin-top: 10px;
+        margin-bottom: auto;
     }
   
     .conteudo {
