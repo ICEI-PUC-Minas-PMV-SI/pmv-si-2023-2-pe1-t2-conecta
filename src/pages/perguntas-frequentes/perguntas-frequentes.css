@@ -1,0 +1,111 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.header-desktop {
+    border-bottom: none;
+}
+
+.content {
+    background-color: #274C77;
+    border-radius: 0;
+    max-width: 940px;
+}
+
+.content > .title {
+    color: #FFFFFF;
+    padding: 16px 24px;
+    font-size: 40px;
+}
+
+.collapsible {
+    color: #716F6F;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 17px;
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+.active {
+    background-color: #E8ECEF;
+    border-radius: 10px 10px 0 0;
+}
+
+.collapsible:after {
+    content: '\276C';
+    rotate: 90deg;
+    color: #716F6F;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+}
+
+.active:after {
+    content: "\276C";
+    rotate: 270deg;
+}
+
+.collapsible-wrapper {
+    padding: 0 24px 24px 24px;
+    gap: 16px;
+}
+
+.collapsible-wrapper > .collapsible-content {
+    padding: 0 18px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    background-color: #E8ECEF;
+    color: #716F6F;
+    font-size: 15px;
+    width: fit-content;
+    border-radius: 0 0 10px 10px;
+}
+
+@media screen and (max-width: 768px) {
+
+    .header-mobile {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        justify-items: start;
+        align-items: center;
+        padding: 20px;
+        background-color: white;
+        border-bottom: none;
+        z-index: 1;
+        width: 100%;
+    }
+
+    .header-mobile > .menu-toggle {
+        justify-self: start;
+        padding-left: 24px;
+    }
+
+    .header-mobile > .logo-button {
+        justify-self: center;
+    }
+
+    .header-mobile > .close-button {
+        justify-self: end;
+        padding-right: 24px;
+    }
+
+    .content {
+        border-radius: 40px 40px 0 0;
+        align-items: center;
+        height: 100%;
+    }
+
+    .content > .title {
+        max-width: 298px;
+        align-self: start;
+    }
+
+}
