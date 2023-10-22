@@ -1,0 +1,201 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    background-color: #E7ECEF;
+}
+
+.header-desktop {
+    border-bottom: none;
+}
+
+.content {
+    background-color: #E7ECEF;
+    border-radius: 0;
+    display: block;
+}
+
+.content > .title {
+    color: #274C77;
+    padding: 16px 24px 0 24px;
+    font-size: 40px;
+    text-align: left;
+}
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    border-radius: 15px;
+    margin: 20px;
+    background-color: #6096BA;
+    max-width: 250px;
+    max-height: 420px;
+    padding: 10px;
+    display: grid;
+}
+
+.card-conteudo {
+    max-height: 150px;
+    min-height: 120px;
+}
+
+.container-imagem {
+    border-radius: 50%;
+    max-width: 32%;
+    float: right;
+}
+
+.card:hover {
+    box-shadow: 0 8px 30px 0 rgba(0,0,0,0.5);
+}
+
+.container-cards { 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 auto;
+    max-width: 90%;
+    height: 100%;
+    gap: 16px;
+    background: #E7ECEF;
+}
+
+.container-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.container-text > .text {
+    color: black;
+    max-width: 220px;
+    padding: 10px;
+    text-align: auto;
+}
+
+.container-text > .title {
+    padding: 5px;
+    font-size: 20px;
+    text-align: left;
+    margin-top: 10px;
+    max-width: 150px;
+}
+
+.container-text > .subtitle {
+    padding: 5px;
+    font-size: 10px;
+    text-align: left;
+    max-width: 150px;
+}
+
+.buttons-card {
+    display: block;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    text-align: right;
+    padding: 10px;
+}
+
+.button-quero-ajudar {
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    color: #FFF;
+    font-family: Open Sans, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    text-transform: uppercase;
+    background-color: #274C77;
+    font-size: 10px;
+   
+}
+
+.content > .image-wrapper {
+    padding: 16px 16px 16px 16px;
+    display: flex;
+    justify-content: center;
+}
+
+.content > .image-wrapper > .image {
+    flex-grow: 1;
+    flex-shrink: 1;
+    border-radius: 40px;
+    max-width: 60%;
+}
+
+.content > .instructions-wrapper {
+    display: flex;
+}
+
+.content > .instructions-wrapper > .instructions-list {
+    padding: 16px;
+}
+
+.instructions-list > .list-title {
+    padding: 8px 24px 0 24px;
+    color: #FFFFFF;
+    font-size: 32px;
+}
+
+.instructions-list > .list-content li {
+    color: #FFFFFF;
+    font-size: 16px;
+    margin: 0;
+}
+
+.instructions-list > .list-content a {
+    color: #FFFFFF;
+    font-size: 16px;
+    margin: 0;
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 768px) {
+
+    .header-mobile {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        justify-items: start;
+        align-items: center;
+        padding: 20px;
+        background-color: white;
+        border-bottom: none;
+        z-index: 1;
+        width: 100%;
+    }
+
+    .header-mobile > .menu-toggle {
+        justify-self: start;
+        padding-left: 24px;
+    }
+
+    .header-mobile > .logo-button {
+        justify-self: center;
+    }
+
+    .header-mobile > .close-button {
+        justify-self: end;
+        padding-right: 24px;
+    }
+
+    .content {
+        border-radius: 0px;
+        align-items: start;
+        height: auto;
+    }
+
+    .content > .title {
+        max-width: 298px;
+        align-self: start;
+        font-size: 40px;
+    }
+
+    .content > .image-wrapper {
+        padding: 8px 16px 0 16px;
+    }
+
+    .content > .image-wrapper > .image {
+        max-width: 100%;
+    }
+
+    .content > .instructions-wrapper {
+        flex-direction: column;
+    }
+}
