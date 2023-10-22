@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastrar ONG</title>
+    <link rel="stylesheet" href="../../css/index.css">
+    <link rel="stylesheet" href="cadastrar-ong.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+
+<body>
+
+<div class="container">
+
+    <div id="page-overlay"></div>
+
+    <header class="header-desktop">
+        <div class="home-logo-wrapper">
+            <img src="../../assets/images/logo-conecta.png" alt="Logo Conecta">
+        </div>
+        <div class="buttons-header-wrapper">
+            <a href="#" class="header-button area-da-ong-button">ÁREA DA ONG</a>
+            <a href="#" class="header-button oportunidades-button">OPORTUNIDADES</a>
+        </div>
+
+    </header>
+
+    <header class="header-mobile">
+
+        <div class="menu-toggle open-menu" id="">
+            <img src="../../assets/components/menu-mobile-button.png" alt="Menu">
+        </div>
+
+        <div class="logo-button">
+            <img src="../../assets/icons/icon-conecta.svg" alt="Menu">
+        </div>
+
+        <div class="close-button">
+            <img src="../../assets/components/close-button.png" alt="Menu">
+        </div>
+    </header>
+
+    <nav class="mobile-menu" id="mobile-menu">
+        <div class="header-menu">
+            <img src="../../assets/components/search-button.png" alt="Search">
+            <img class="menu-toggle open-menu" src="../../assets/components/close-button.png" alt="Close menu">
+        </div>
+
+        <div class="mobile-menu-content">
+            <div class="authentication-area">
+                <p class="text">área da ong</p>
+                <a class="authentication-button" href="">CADASTRE-SE</a>
+                <a class="authentication-button" href="">LOGIN</a>
+            </div>
+
+            <div class="divider-line"></div>
+
+            <a class="navigation-button" href="#">OPORTUNIDADES</a>
+            <ul>
+                <li><a class="navigation-button" href="#">sobre o voluntariado</a></li>
+                <li><a class="navigation-button" href="#">como começar?</a></li>
+                <li><a class="navigation-button" href="#">por que ser voluntário?</a></li>
+                <li><a class="navigation-button" href="">histórias de sucesso</a></li>
+                <li><a class="navigation-button" href="">perguntas frequentes</a></li>
+            </ul>
+        </div>
+
+    </nav>
+
+    <div class="content">
+        <h1 class="title" id="organization-name">Cadastrar ONG</h1>
+
+        <div class="section-wrapper">
+
+            <div class="row">
+                <div class="col-25">
+                    <label for="foto">Foto do perfil</label>
+                </div>
+                <div class="col-75">
+                    <input type="file" id="foto" name="foto">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="sobre">Sobre</label>
+                </div>
+                <div class="col-75">
+                    <textarea id="sobre" name="sobre"></textarea>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="facebook">Facebook</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="facebook" name="facebook">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="instagram">Instagram</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="instagram" name="instagram">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="twitter">Twitter(X)</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="twitter" name="twitter">
+                </div>
+            </div>
+            <div class="row-button">
+                <div><input type="submit" name="cadastrar" value="Cadastrar"></div>
+                <div><a href="cadastrar-ong-1.html"><input type="submit" name="voltar" value="Voltar"></a></div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-wrapper">
+            <a href="#" class="footer-item">Como começar?</a>
+            <a href="#" class="footer-item">Sobre o voluntariado</a>
+            <a href="#" class="footer-item">Por que ser voluntário?</a>
+            <a href="#" class="footer-item">Perguntas frequentes</a>
+            <a href="#" class="footer-item">Histórias de sucesso</a>
+        </div>
+    </footer>
+</div>
+
+<script src="../../js/index.js"></script>
+
+</body>
+
+</html>

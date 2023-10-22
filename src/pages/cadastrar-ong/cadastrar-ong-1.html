@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastrar ONG</title>
+    <link rel="stylesheet" href="../../css/index.css">
+    <link rel="stylesheet" href="cadastrar-ong.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+
+<body>
+
+<div class="container">
+
+    <div id="page-overlay"></div>
+
+    <header class="header-desktop">
+        <div class="home-logo-wrapper">
+            <img src="../../assets/images/logo-conecta.png" alt="Logo Conecta">
+        </div>
+        <div class="buttons-header-wrapper">
+            <a href="#" class="header-button area-da-ong-button">ÁREA DA ONG</a>
+            <a href="#" class="header-button oportunidades-button">OPORTUNIDADES</a>
+        </div>
+
+    </header>
+
+    <header class="header-mobile">
+
+        <div class="menu-toggle open-menu" id="">
+            <img src="../../assets/components/menu-mobile-button.png" alt="Menu">
+        </div>
+
+        <div class="logo-button">
+            <img src="../../assets/icons/icon-conecta.svg" alt="Menu">
+        </div>
+
+        <div class="close-button">
+            <img src="../../assets/components/close-button.png" alt="Menu">
+        </div>
+    </header>
+
+    <nav class="mobile-menu" id="mobile-menu">
+        <div class="header-menu">
+            <img src="../../assets/components/search-button.png" alt="Search">
+            <img class="menu-toggle open-menu" src="../../assets/components/close-button.png" alt="Close menu">
+        </div>
+
+        <div class="mobile-menu-content">
+            <div class="authentication-area">
+                <p class="text">área da ong</p>
+                <a class="authentication-button" href="">CADASTRE-SE</a>
+                <a class="authentication-button" href="">LOGIN</a>
+            </div>
+
+            <div class="divider-line"></div>
+
+            <a class="navigation-button" href="#">OPORTUNIDADES</a>
+            <ul>
+                <li><a class="navigation-button" href="#">sobre o voluntariado</a></li>
+                <li><a class="navigation-button" href="#">como começar?</a></li>
+                <li><a class="navigation-button" href="#">por que ser voluntário?</a></li>
+                <li><a class="navigation-button" href="">histórias de sucesso</a></li>
+                <li><a class="navigation-button" href="">perguntas frequentes</a></li>
+            </ul>
+        </div>
+
+    </nav>
+
+    <div class="content">
+        <h1 class="title" id="organization-name">Cadastrar ONG</h1>
+
+        <div class="section-wrapper">
+
+            <div class="row">
+                <div class="col-25">
+                    <label for="cnpj">CNPJ</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="cnpj" name="CNPJ">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="nome">Nome da ONG</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="nome" name="nome">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="email">Email</label>
+                </div>
+                <div class="col-75">
+                    <input type="email" id="email" name="email">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="phone">Telefone</label>
+                </div>
+                <div class="col-75">
+                    <input type="tel" id="phone" name="phone">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="senha">Senha</label>
+                </div>
+                <div class="col-75">
+                    <input type="password" id="senha" name="senha">
+                </div>
+            </div>
+            <div class="row">
+                <div class="row row-left">
+                    <div class="col-25">
+                        <label for="cep">CEP</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="cep" name="cep">
+                    </div>
+                </div>
+                <div class="row row-right">
+                    <div class="col-25">
+                        <label for="numero">Número</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="numero" name="numero">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="endereco">Endereço</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="endereco" name="endereco">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="cidade">Cidade</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="cidade" name="cidade">
+                </div>
+            </div>
+            <div class="row-button">
+                <div><a href="cadastrar-ong-2.html"><input type="submit" name="proximo" value="Próximo"></a></div>
+                <div><a href="../../index.html"><input type="submit" name="cancelar" value="Cancelar"></a></div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-wrapper">
+            <a href="#" class="footer-item">Como começar?</a>
+            <a href="#" class="footer-item">Sobre o voluntariado</a>
+            <a href="#" class="footer-item">Por que ser voluntário?</a>
+            <a href="#" class="footer-item">Perguntas frequentes</a>
+            <a href="#" class="footer-item">Histórias de sucesso</a>
+        </div>
+    </footer>
+</div>
+
+<script src="../../js/index.js"></script>
+<script src="pagina-da-ong.js"></script>
+</body>
+
+</html>
