@@ -1,8 +1,6 @@
-/* Importar as fontes Open Sans e Montserrat Mono */
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat+Mono&display=swap');
 
-/* Definir cores personalizadas */
 :root {
     --cor-background: #E7ECEF;
     --cor-titulo: #274C77;
@@ -11,230 +9,316 @@
     --cor-texto: #8B8C89;
 }
 
-/* Estilos gerais da página */
+* {
+    z-index: 2;
+    margin: 0;
+}
+
+html, body {
+    overflow-x:hidden;
+    height: 100%;
+}
+
 body {
     font-family: 'Open Sans', sans-serif;
-    background-color: var(--cor-background);
     margin: 0;
     padding: 0;
     background: #FFF;
 }
 
-header {
+#page-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent gray background */
+    z-index: 999; /* Place it on top of other elements */
+}
+
+.container {
     display: flex;
+}
+
+.header-mobile {
+    display: none;
+}
+
+.mobile-menu {
+    display: none;
+}
+
+.header-desktop {
+    display: flex;
+    flex-shrink: 1;
     justify-content: space-between;
     align-items: center;
     padding: 30px;
-    /* Aumenta a altura do menu */
     background-color: white;
+    width: 99%;
     border-bottom: 1px solid var(--cor-texto);
-    /* Adiciona a borda inferior */
-
 }
 
-img {
-    max-width: 30%;
-    /* Defina o tamanho máximo desejado */
-    height: auto;
+.home-logo-wrapper {
+    display: flex;
+    justify-content: start;
+    flex: 1;
+    flex-shrink: 0;
+    height: 100%;
+    max-width: 60%;
 }
 
-.buttons {
-    display: grid;
-    grid-template-columns: repeat(2, auto);
-    /* Cria duas colunas para os botões */
-    gap: 20px;
-    /* Espaçamento entre os botões */
+.home-logo-wrapper img {
+    min-width: 300px;
+    min-height: 70px;
+    max-width: 60%;
+}
+
+.buttons-header-wrapper {
+    display: flex;
+    grid-template-columns: 1fr 1fr;
     align-items: center;
-    /* Alinha os botões verticalmente */
+    margin-right: 20px;
+    /*gap: 20px;*/
 }
 
-
-.button {
+.header-button {
     padding: 15px 30px;
     margin-left: 20px;
     text-decoration: none;
     border-radius: 5px;
     color: #FFF;
-    font-family: Open Sans;
+    font-family: Open Sans, sans-serif;
     font-style: normal;
     font-weight: bold;
     text-transform: uppercase;
 }
 
-/* Cor do botão esquerdo */
-.button:nth-child(1) {
+.area-da-ong-button {
     background-color: var(--cor-texto);
-    /* 8B8C89 */
     color: white;
 }
 
-/* Cor do botão direito */
-.button:nth-child(2) {
+.oportunidades-button {
     background-color: var(--cor-titulo);
-    /* 274C77 */
     color: white;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-items: center;
+    align-items: center;
 }
 
 .content {
+    border-radius: 40px 40px 0 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    flex-grow: 1;
+    margin: 0;
+    width: 100%;
+}
+
+.home-content {
+    border-top: 1px solid var(--cor-texto);
     display: grid;
     grid-template-columns: 1fr 1fr;
-    /* Cria duas colunas iguais para a imagem e o texto */
     background: #E7ECEF;
-    /* Background color */
-    margin-top: 20px;
+    margin: 0;
     padding: 0;
     height: auto;
+    max-width: 1280px;
 }
 
-.image img {
-    max-width: 100%;
-    height: auto;
-    width: 90%;
-    /* A imagem ocupa toda a coluna */
+.home-image img {
+    width: 100%;
+    height: 100%;
 }
 
-.text {
+.landing-page-text {
+    align-items: center;
+    justify-items: center;
+    font-family: Open Sans, sans-serif;
     text-align: left;
-    /* Centraliza o texto horizontalmente */
     grid-column: span 1;
-    /* Ocupa ambas as colunas */
-}
-
-.text {
     color: #000;
-    font-family: Open Sans;
-    font-size: 60px;
+    font-size: 40px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    margin: 5% 20% 5% 20%
+    margin: 20% 20% 20% 20%;
+    align-self: center;
 }
 
-/* Estilos do footer */
+.landing-page-text p {
+    margin: 0;
+}
+
 footer {
     background: #A3CEF1;
-    /* Background color do footer */
     padding: 20px;
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    /* Cria 5 colunas iguais */
-    gap: 20px;
-    /* Espaçamento entre as partições */
+    display: flex;
 }
 
-.header-mobile{
-    display: none;
-}
-
-.mobile-menu{
-    display: none;
+.footer-wrapper {
+    width: 100vw;
+    display: flex;
+    justify-content: space-evenly;
 }
 
 .footer-item {
     color: #000;
-    /* Cor do texto */
     font-family: 'Open Sans', sans-serif;
-    /* Fonte do texto */
     text-align: center;
     padding: 10px;
     border: 1px solid transparent;
+    text-decoration: none;
 }
 
-
-/* Estilos para dispositivos móveis */
-@media screen and (max-width: 768px) {
-    .header {
-        display: none; /* Oculta o cabeçalho normal na versão mobile */
+@media screen and (max-width: 1149px) {
+    .header-desktop {
+        border-bottom: none;
     }
 
+    .header-desktop > .buttons-header-wrapper > .header-button {
+        margin: 0 10px 0 0;
+    }
 
-    .content {
-        display: grid;
-        grid-template-columns: 1fr;
+    #mobile-menu {
+        display: none;
+    }
+
+    .home-content {
         background: #E7ECEF;
-        /* Background color */
-        margin-top: 20px;
-        padding: 0;
-        height: auto;
-    }
-    
-    .logo img {
-        max-width: 100%;
-        height: auto;
-        width: 100%;
-        /* A imagem ocupa toda a coluna */
-    }
-    
-    .text {
-        text-align: left;
-        /* Centraliza o texto horizontalmente */
-        grid-column: span 1;
-        /* Ocupa ambas as colunas */
-    }
-    
-    .text {
-        color: #000;
-        font-family: Open Sans;
-        font-size: 35px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: normal;
-        margin: 5% 20% 5% 20%
-    }
-
-    .logo {
-        grid-column: 2; /* A logo na coluna 1 (lado esquerdo) */
-    }
-
-
-    .menu-toggle img {
-        width: 100%; /* Tamanho do ícone do menu */
-        height: auto;
-        cursor: pointer;
-    }
-
-    .image img {
-        max-width: 100%;
-        height: auto;
-        width: 100%;
-        /* A imagem ocupa toda a coluna */
-    }
-
-
-
-    .header-mobile {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        justify-items: start;
+        width: 100vw;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
         align-items: center;
-        padding: 20px;
-        background-color: white;
-        border-bottom: 1px solid var(--cor-texto);
+        justify-items: center;
+        flex-grow: 1;
+        margin: 0;
     }
 
-    .menu-toggle img {
-        display: block;
-        width: 100%; /* Certifique-se de que a imagem do ícone do menu ocupe toda a largura */
+    .landing-page-text {
+        text-align: center;
+        font-size: 24px;
+        margin: 0;
+        padding: 24px;
+        align-self: center;
+        max-width: 500px;
+    }
+
+    .home-image {
+        width: 100%;
+    }
+
+    .home-image img {
+        padding-bottom: 24px;
+        width: 100%;
         height: auto;
-        cursor: pointer;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .header-desktop {
+        display: none;
     }
 
     .mobile-menu {
         display: none;
         position: fixed;
-        left: -250px; /* Define a posição à esquerda da tela */
+        left: -250px;
         top: 0;
         bottom: 0;
-        width: 250px; /* Largura do menu móvel */
+        width: 60vw;
         background: white;
-        z-index: 1000; /* Certifica-se de que está acima do conteúdo */
-        transition: left 0.3s; /* Adicione uma transição suave para a animação de abertura/fechamento */
+        z-index: 1000;
+        transition: left 0.3s;
+        border-right: solid 1px var(--cor-texto);
+        padding: 25px;
     }
 
+    .mobile-menu > .header-menu {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 8px 0 8px 0;
+        margin: 0;
+    }
 
-    /* ... Outros estilos ... */
+    .mobile-menu-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+        padding: 32px 0 8px 0;
+        margin: 0;
+    }
 
-    /* Estilos para o cabeçalho móvel */
+    .authentication-area {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .authentication-area > .text {
+        margin: 0;
+        color: rgba(0, 0, 0, 0.80);
+        font-family: Open Sans, sans-serif;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 150%;
+        letter-spacing: -0.154px;
+        padding-bottom: 24px;
+    }
+
+    .authentication-area > .authentication-button {
+        color: rgba(0, 0, 0, 0.80);
+        font-family: Open Sans, sans-serif;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 150%;
+        letter-spacing: -0.22px;
+        text-decoration: none;
+        padding-bottom: 24px;
+    }
+
+    .divider-line {
+        border-top: solid 1px #716F6F;
+        width: 100%;
+        height: 1px;
+        padding-bottom: 24px;
+    }
+
+    .navigation-button {
+        color: rgba(0, 0, 0, 0.80);
+        font-family: Open Sans, sans-serif;
+        font-size: 20px;
+        font-style: normal;
+        text-decoration: none;
+        padding: 16px 0 8px 0;
+    }
+
+    .mobile-menu-content > ul {
+        padding: 24px 0 24px 0;
+    }
+
+    .mobile-menu-content > ul > li {
+        padding: 0 0 24px 0;
+        list-style: none;
+    }
+
+    footer {
+        display: none;
+    }
+
     .header-mobile {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -242,89 +326,49 @@ footer {
         align-items: center;
         padding: 20px;
         background-color: white;
-        border-bottom: 1px solid var(--cor-texto);
     }
 
-    /* Estilo para o cabeçalho do menu */
-.header-menu {
-    display: grid;
-    grid-template-columns: 1fr auto; /* Duas colunas, a primeira ocupa 1fr e a segunda se ajusta automaticamente */
-    align-items: center; /* Centraliza verticalmente */
-    padding: 10px 20px; /* Espaçamento interno */
-    background-color: white;
-}
-
-.header-menu img:first-child {
-    justify-self: start; /* Alinha a imagem à esquerda */
-}
-
-
-.buttons-mobile {
-    display: grid;
-    grid-template-rows: auto auto; /* Duas linhas, ambas com altura automática */
-    align-items: center; /* Centraliza verticalmente os itens */
-    text-align: left; /* Centraliza horizontalmente o texto */
-    border-bottom: 1px solid var(--cor-texto);
-}
-
-.buttons-mobile a {
-    text-decoration: none; /* Remove sublinhado dos links */
-    padding: 10px 20px; /* Espaçamento interno dos links */
-    border-radius: 5px; /* Borda arredondada nos links */
-    font-family: 'Open Sans', sans-serif; /* Fonte dos links */
-    font-weight: bold; /* Peso da fonte negrito */
-}
-
-.text-buttons{
-    margin-left: 20px;
-}
-.buttons-mobile a:first-child {
-    margin-bottom: 10px; /* Espaçamento inferior entre os links */
-}
-
-
-li {
-    margin-bottom: 10px; /* Espaçamento inferior entre os itens da lista */
-}
-
-li a {
-    text-decoration: none; /* Remove sublinhado dos links */
-    color: var(--cor-titulo); /* Define a cor do texto dos links */
-    font-weight: bold; /* Define o peso da fonte em negrito */
-    font-family: 'Open Sans', sans-serif; /* Define a fonte dos links */
-}
-
-li a:hover {
-    text-decoration: underline; /* Adiciona sublinhado ao passar o mouse sobre os links */
-}
-
-img {
-    max-width: 100%;
-}
-
-
-    footer {
-        display: none;
+    .header-mobile-logo img {
+        max-width: 100%;
+        height: auto;
+        width: 100%;
     }
 
-    .buttons-mobile {
-        margin-top: 2rem; /* Espaçamento superior de 2 rem */
-        margin-bottom: 2rem; /* Espaçamento inferior de 2 rem */
-    }
-    
-    .text-buttons {
-        margin-bottom: 1rem; /* Espaçamento inferior de 1 rem entre textos e links */
-    }
-    
-    ul {
-        margin-bottom: 2rem; /* Espaçamento inferior de 2 rem entre a lista de itens e o conteúdo inferior */
+    .home-content {
+        background: #FFFFFF;
+        border-radius: 0 0 0 0;
     }
 
-    .oportunidades{
-        margin-bottom: 1rem;
-        margin-left: 1rem;
-        font-size: larger;
+    .home-content {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .home-image img {
+        width: 100%;
+        height: 100%;
+        border-radius: 0;
+    }
+
+    .landing-page-text {
+        order: 1;
+        text-align: left;
+        grid-column: span 1;
+        font-size: 34px;
+        padding: 24px 40px 24px 40px;
+        background: #E7ECEF;
+        max-width: 100%;
+        align-self: start;
+    }
+
+    .header-menu img:first-child {
+        justify-self: start;
+    }
+
+    .menu-toggle img {
+        width: 100%;
+        height: auto;
+        cursor: pointer;
     }
 }
-
-
