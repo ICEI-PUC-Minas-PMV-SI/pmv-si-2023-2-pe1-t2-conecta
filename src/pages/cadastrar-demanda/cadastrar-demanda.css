@@ -17,7 +17,11 @@
     padding: 16px 24px 0 24px;
     max-width: 940px;
 }
-
+.title {
+    margin-bottom: 50px;
+    border-bottom: 1px solid #000; 
+    padding-bottom: 20px; 
+}
 .content > .title {
     color: #324B75;
     padding: 16px 24px 0 24px;
