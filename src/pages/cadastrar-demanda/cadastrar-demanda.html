@@ -4,9 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>por que ser voluntário?</title>
+    <title>cadastrar demanda</title>
     <link rel="stylesheet" href="/src/css/index.css">
-    <link rel="stylesheet" href="/src/pages/por-que-ser-voluntario/por-que-ser-voluntario.css">
+    <link rel="stylesheet" href="/src/pages/cadastrar-demanda/cadastrar-demanda.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
 </head>
@@ -67,41 +67,41 @@
     <div class="content">
         <h1 class="title" id="organization-name">cadastrar demanda</h1>
 
+
             <div class="row">
                 <div class="col-25">
-                    <label for="sobre">Sobre</label>
+                    <label for="nome-demanda">Nome da demanda:</label>
                 </div>
                 <div class="col-75">
-                    <textarea id="sobre" name="sobre"></textarea>
+                    <input type="text" id="nome-demanda" name="nome-demanda">
                 </div>
             </div>
             <div class="row">
                 <div class="col-25">
-                    <label for="facebook">Facebook</label>
+                    <label for="tipo-demanda">Tipo de demanda:</label>
                 </div>
                 <div class="col-75">
-                    <input type="text" id="facebook" name="facebook">
+                    <input type="radio" id="presencial" name="tipo-demanda" value="presencial">
+                    <label for="presencial">Presencial</label>
+            
+                    <input type="radio" id="remoto" name="tipo-demanda" value="remoto">
+                    <label for="remoto">Remoto</label>
+            
+                    <input type="radio" id="hibrido" name="tipo-demanda" value="hibrido">
+                    <label for="hibrido">Híbrido</label>
                 </div>
             </div>
             <div class="row">
                 <div class="col-25">
-                    <label for="instagram">Instagram</label>
+                    <label for="sobre-demanda">Sobre:</label>
                 </div>
                 <div class="col-75">
-                    <input type="text" id="instagram" name="instagram">
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-25">
-                    <label for="twitter">Twitter(X)</label>
-                </div>
-                <div class="col-75">
-                    <input type="text" id="twitter" name="twitter">
+                    <textarea id="sobre-demanda" name="sobre-demanda"></textarea>
                 </div>
             </div>
             <div class="row-button">
                 <div><input type="submit" name="cadastrar" value="Cadastrar"></div>
-                <div><a href="cadastrar-ong-1.html"><input type="submit" name="voltar" value="Voltar"></a></div>
+                <div><a href="#"><input type="submit" name="voltar" value="Voltar"></a></div>
             </div>
         </div>
     </div>
