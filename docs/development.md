@@ -25,10 +25,11 @@ As tabelas que se seguem apresentam os requisitos funcionais e não-funcionais q
 
 ### Requisitos Funcionais
 
-|ID    | Descrição do Requisito | Prioridade | Artefato Criado |
-|------|------------------------|------------|-----------------|
-|RF-001| O sistema deve exibir as notícias mais populares. | ALTA | index.html |
-|RF-002| Usuários autenticados podem registrar novas notícias. | ALTA | cadastro-noticia.html |
+| ID     | Descrição do Requisito                                                                            | Prioridade | Artefato Criado       |
+|--------|---------------------------------------------------------------------------------------------------|------------|-----------------------|
+| RF-001 | O sistema deve exibir as notícias mais populares.                                                 | ALTA       | index.html            |
+| RF-002 | Usuários autenticados podem registrar novas notícias.                                             | ALTA       | cadastro-noticia.html |
+| RF-021 | Os depoimentos dos voluntários devem ser disponibilizados no perfil da ONG que fez a solicitação. | BAIXA      | pagina-da-ong.html    |
 
 ## Descrição das estruturas:
 
