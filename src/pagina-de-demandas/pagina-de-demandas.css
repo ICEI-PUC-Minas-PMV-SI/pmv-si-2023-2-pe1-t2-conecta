@@ -22,46 +22,6 @@
     text-align: left;
 }
 
-.content > .image-wrapper {
-    padding: 16px 16px 16px 16px;
-    display: flex;
-    justify-content: center;
-}
-
-.content > .image-wrapper > .image {
-    flex-grow: 1;
-    flex-shrink: 1;
-    border-radius: 40px;
-    max-width: 60%;
-}
-
-.content > .instructions-wrapper {
-    display: flex;
-}
-
-.content > .instructions-wrapper > .instructions-list {
-    padding: 16px;
-}
-
-.instructions-list > .list-title {
-    padding: 8px 24px 0 24px;
-    color: #FFFFFF;
-    font-size: 32px;
-}
-
-.instructions-list > .list-content li {
-    color: #FFFFFF;
-    font-size: 16px;
-    margin: 0;
-}
-
-.instructions-list > .list-content a {
-    color: #FFFFFF;
-    font-size: 16px;
-    margin: 0;
-    text-decoration: underline;
-}
-
 .filter {
     margin-top: 20px;
     justify-content: center;
@@ -259,18 +219,6 @@
         align-self: start;
         font-size: 40px;
     }
-
-    .content > .image-wrapper {
-        padding: 8px 16px 0 16px;
-    }
-
-    .content > .image-wrapper > .image {
-        max-width: 100%;
-    }
-
-    .content > .instructions-wrapper {
-        flex-direction: column;
-    }
     
     .vertical-task-card {
         display: none;
@@ -282,6 +230,7 @@
 
     .horizontal-task-card {
         display: flex;
+
     }
 
     .horizontal-task-card {
@@ -328,6 +277,7 @@
 }
 
 @media screen and (max-width: 535px) {
+    
     .task-description > p {
         display: -webkit-box;
         -webkit-box-orient: vertical;
@@ -338,6 +288,7 @@
 }
 
 @media screen and (max-width: 425px) {
+    
     .task-description > p {
         display: -webkit-box;
         -webkit-box-orient: vertical;
