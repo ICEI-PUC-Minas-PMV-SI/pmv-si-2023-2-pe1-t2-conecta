@@ -125,14 +125,12 @@ body {
 }
 
 .home-content {
-    border-top: 1px solid var(--cor-texto);
     display: grid;
     grid-template-columns: 1fr 1fr;
     background: #E7ECEF;
     margin: 0;
     padding: 0;
     height: auto;
-    max-width: 1280px;
 }
 
 .home-image img {
@@ -372,3 +370,193 @@ footer {
         cursor: pointer;
     }
 }
+
+.flex-container {
+    display: flex;
+    border-radius: 10px;
+    padding: 5rem 10rem 5rem 10rem;
+    width: 65%;
+    justify-content: space-between; /* Alinha os elementos horizontalmente */
+  }
+  
+  /* Estiliza as caixas individuais */
+  .box {
+    background-color: #6096BA;
+    margin: 0rem 4.5rem;
+    padding: 20px ;
+    border-radius: 10px; 
+    font-size: 30px;
+    flex: 1; /* Todas as caixas ocupam espaço igualmente */
+    text-align: center;
+  }
+  
+  /* Estiliza a imagem dentro da caixa */
+  .box img {
+    display: block; /* Remove margens extras que imagens podem ter por padrão */
+    flex: 1; /* A imagem ocupa metade do espaço da caixa */
+  }
+  
+  /* Estiliza o conteúdo (título e texto) dentro da caixa */
+  .box .content {
+    flex: 1; /* O conteúdo ocupa a outra metade do espaço da caixa */
+  }
+  
+  /* Estiliza o título dentro do conteúdo */
+  .box .title {
+    font-size: 20px;
+    text-align: left;
+    font-weight: bold;
+  }
+
+.box .subtitle {
+    font-size: 10px;
+    color: #000; 
+  }
+  
+  .box .text {
+    font-size: 14px;
+    padding: 1rem; 
+  }
+  .img-title{
+    display: flex;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-between
+  }
+
+
+    .button-container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+  }
+  
+
+  button{
+    text-decoration: none;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    background-color: var(--cor-titulo);
+    font-family: Open Sans, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 0.5rem;
+    
+  }
+
+  .image img {
+    border-radius: 20px;
+  }
+
+  .titulo-oportunidade{
+
+    align-items: left;
+ 
+    width: 90%;
+    padding: 5rem 2rem 2rem 2rem
+  }
+
+  .titulo-oportunidade p{
+    width: 50%;
+  }
+
+  .main-title {
+    font-size: 3rem;
+    color: var(--cor-titulo);
+    font-family: Open Sans, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    text-align: left; /* Alinha o título à esquerda */
+    margin-bottom: 20px; /* Adiciona espaço entre o título e as flex-box */
+  }
+
+  .saiba-voluntariar{
+    display: grid;
+    background-color: var(--cor-background);
+    width: 100%;
+    grid-template-columns: 1.30fr 0.70fr;
+    padding: 2rem;
+  }
+
+  .title-saiba-como{
+    font-size: 3rem;
+    color: var(--cor-titulo);
+    font-family: Open Sans, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    text-align: center; /* Alinha o título à esquerda */
+    margin-bottom: 20px; /* Adiciona espaço entre o título e as flex-box */
+  }
+  
+  .container-img-saiba{
+    max-width: 70%;
+  }
+
+  .container-img-saiba img{
+    max-width: 100%;
+    border-radius: 10px;
+  }
+
+  .title-voluntariar{
+    display: grid;
+    justify-content: end;
+    padding: 1rem 6rem;
+    p{
+        padding-right: 2rem;
+    }
+  }
+  .texto-saiba-como{
+    padding: 0rem 10rem
+  }
+
+/* Media query para telas menores (por exemplo, telas menores que 768px) */
+@media (max-width: 768px) {
+    .flex-container {
+      flex-direction: column;
+      padding: 2rem;
+      width: 100%;
+    }
+  
+    .box {
+        margin: 2rem 2rem;
+      text-align: center;
+    }
+  
+    .titulo-oportunidade {
+      padding: 2rem;
+    }
+  
+    .titulo-oportunidade p {
+      width: 100%;
+    }
+  
+    .saiba-voluntariar {
+      grid-template-columns: 1fr;
+      width: auto;
+    }
+  
+    .container-img-saiba {
+      max-width: 100%;
+    }
+  
+    .title-voluntariar {
+      justify-content: center;
+      padding: 2rem;
+    }
+
+    .button-container {
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+    }
+
+    .box-button{
+        width: 100%;
+    }
+
+    .text-saiba-como{
+        padding: 0rem;
+        padding-bottom: 1rem;
+    }
+  }
