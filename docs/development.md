@@ -30,7 +30,7 @@ As tabelas que se seguem apresentam os requisitos funcionais e não-funcionais q
 | RF-001 | O sistema deve exibir as notícias mais populares.                                                                                                                | ALTA       | index.html            |
 | RF-002 | Usuários autenticados podem registrar novas notícias.                                                                                                            | ALTA       | cadastro-noticia.html |
 | RF-008 | A aplicação deve apresentar a página “Como Começar” que orienta os visitantes sobre os passos necessários para se tornarem voluntários registrados na aplicação. | ALTA       | como-comecar.html     |
-
+| RF-021 | Os depoimentos dos voluntários devem ser disponibilizados no perfil da ONG que fez a solicitação.                                                                | BAIXA      | pagina-da-ong.html    |
 
 ## Descrição das estruturas:
 
