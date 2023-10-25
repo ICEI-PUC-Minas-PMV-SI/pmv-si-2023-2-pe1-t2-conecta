@@ -1,7 +1,6 @@
 .container {
     display: flex;
     flex-direction: column;
-    height: auto;
     background-color: #E7ECEF;
 }
 
@@ -15,19 +14,23 @@
     display: block;
 }
 
-.content > .title {
+.content > .headline > .title {
     color: #274C77;
     padding: 16px 24px 0 24px;
     font-size: 40px;
     text-align: left;
+    justify-items: center;
+    max-width: 1300px;
+    margin: 0 auto;
 }
 
 .filter {
-    margin-top: 20px;
-    justify-content: center;
-    max-width: 100%;
+    justify-items: center;
     background: #E7ECEF;
     padding: 0px 0px 10px 25px;
+    max-width: 1320px;
+    padding: 0px 0px 10px 25px;
+    margin: 20px auto;
 }
 
 .icon_white {
@@ -60,10 +63,12 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    max-width: 100%;
+    max-width: 1600px;
     gap: 40px;
     background: #E7ECEF;
-    margin: 8px 0 16px 0;
+    margin: 0 auto;
+    justify-items: center;
+    align-items: center;
 }
 
 .vertical-task-card {
@@ -119,7 +124,7 @@
 .task-info > .task-owner {
     font-size: 12px;
     font-weight: 700;
-    padding-top: 10px;
+    padding-top: 5px;
 }
 
 .task-description {
