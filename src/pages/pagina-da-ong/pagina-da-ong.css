@@ -79,10 +79,9 @@
 }
 
 .feedback-text {
-    font-size: 12px;
+    font-size: 15px;
 }
 
-/* CARDS */
 .tasks-wrapper {
     display: flex;
     flex-wrap: wrap;
@@ -142,6 +141,7 @@
 .task-info > .task-owner {
     font-size: 12px;
     font-weight: 700;
+    padding-top: 5px;
 }
 
 .task-description {
@@ -201,8 +201,6 @@
     max-width: 100%;
     max-height: 100%;
 }
-
-/*CARDS*/
 
 @media screen and (max-width: 768px) {
 
