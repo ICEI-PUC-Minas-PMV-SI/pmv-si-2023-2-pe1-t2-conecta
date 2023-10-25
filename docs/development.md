@@ -50,14 +50,23 @@ As tabelas que se seguem apresentam os requisitos funcionais e não-funcionais q
 |  Imagem  | URL (Texto)      | URL da imagem representando a ONG         | docs/img/personas/persona-ana-lucia.jpg         |
 
 ## Demanda
-|     **Nome**      | **Tipo**          | **Descrição**                                                             | **Exemplo**                                                                         |
-|:-----------------:|-------------------|---------------------------------------------------------------------------|-------------------------------------------------------------------------------------|
-|        Id         | Número (Inteiro)  | Identificador único da demanda                                            | 1                                                                                   |
-|     Id da ONG     | Número (Inteiro)  | Identificador da ONG relacionada                                          | 1                                                                                   |
-|       Nome        | Texto             | Nome da demanda                                                           | Criar um site                                                                       |
-|     Descrição     | Texto             | Descrição da demanda                                                      | Precisamos de um site que recolha doações e cadastre locais de coleta               |
-|     Criado em     | Data (YYYY-MM-DD) | Data de criação da demanda                                                | 2022-03-01                                                                          |
-|      Status       | Texto             | Status da demanda (aberto, fechado)                                       | Aberto                                                                              |
-|       Tipo        | Texto             | Tipo da demanda (local, remoto, híbrido)                                  | Remoto                                                                              |
-| Dados de Pesquisa | Texto             | Dados utilizados para pesquisa (nome e descrição da demanda concatenados) | Criar um site Precisamos de um site que recolha doações e cadastre locais de coleta |
-|    Voluntários    | Lista de Objetos  | Lista de voluntários associados à demanda                                 | `[{ "email": "voluntario1@email.com" }, { "email": "voluntario2@email.com" }]`      |
+|     **Nome**      | **Tipo**                   | **Descrição**                                                             | **Exemplo**                                                                         |
+|:-----------------:|----------------------------|---------------------------------------------------------------------------|-------------------------------------------------------------------------------------|
+|        Id         | Número (Inteiro)           | Identificador único da demanda                                            | 1                                                                                   |
+|     Id da ONG     | Número (Inteiro)           | Identificador da ONG relacionada                                          | 1                                                                                   |
+|       Nome        | Texto                      | Nome da demanda                                                           | Criar um site                                                                       |
+|     Descrição     | Texto                      | Descrição da demanda                                                      | Precisamos de um site que recolha doações e cadastre locais de coleta               |
+|     Criado em     | Data (YYYY-MM-DD)          | Data de criação da demanda                                                | 2022-03-01                                                                          |
+|      Status       | Texto                      | Status da demanda (aberto, fechado)                                       | Aberto                                                                              |
+|       Tipo        | Texto                      | Tipo da demanda (local, remoto, híbrido)                                  | Remoto                                                                              |
+| Dados de Pesquisa | Texto                      | Dados utilizados para pesquisa (nome e descrição da demanda concatenados) | Criar um site Precisamos de um site que recolha doações e cadastre locais de coleta |
+|    Candidatos     | Lista de Ids de candidatos | Lista com identificador de candidatos associados à demanda                | `[1, 2, 3, 4, 5]`                                                                   |
+
+## Candidatos
+|   **Nome**    | **Tipo**         | **Descrição**                              | **Exemplo**    |
+|:-------------:|------------------|--------------------------------------------|----------------|
+|      Id       | Número (Inteiro) | Identificador único do candidato           | 1              |
+| Id da demanda | Número (Inteiro) | Identificador único da demanda relacionada | 1              |
+|     Nome      | Texto            | Nome do candidato                          | João           |
+|     Email     | Texto            | Endereço de e-mail do candidato            | joao@email.com |
+|    Status     | Texto            | Status do candidato (aprovado, reprovado)  | Aprovado       |
