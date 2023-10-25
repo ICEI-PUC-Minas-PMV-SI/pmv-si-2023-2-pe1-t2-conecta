@@ -32,11 +32,32 @@ As tabelas que se seguem apresentam os requisitos funcionais e não-funcionais q
 
 ## Descrição das estruturas:
 
-## Notícia
-|  **Nome**      | **Tipo**          | **Descrição**                             | **Exemplo**                                    |
-|:--------------:|-------------------|-------------------------------------------|------------------------------------------------|
-| Id             | Numero (Inteiro)  | Identificador único da notícia            | 1                                              |
-| Título         | Texto             | Título da notícia                         | Sistemas de Informação PUC Minas é o melhor                                   |
-| Conteúdo       | Texto             | Conteúdo da notícia                       | Sistemas de Informação da PUC Minas é eleito o melhor curso do Brasil                            |
-| Id do usuário  | Numero (Inteiro)  | Identificador do usuário autor da notícia | 1                                              |
+## ONG
+| **Nome** | **Tipo**         | **Descrição**                             | **Exemplo**                                     |
+|:--------:|------------------|-------------------------------------------|-------------------------------------------------|
+|    Id    | Número (Inteiro) | Identificador único da ONG                | 1                                               |
+|   CNPJ   | Texto            | Número de CNPJ da ONG                     | 51.948.129/0001-67                              |
+|  Email   | Texto            | Endereço de e-mail da ONG                 | ong@email.com                                   |
+| Telefone | Texto            | Número de telefone da ONG                 | 3132700120                                      |
+|  Senha   | Texto            | Senha de acesso à conta da ONG            | senha123                                        |
+|   CEP    | Texto            | Código de Endereçamento Postal (CEP)      | 30170-131                                       |
+|   Rua    | Texto            | Nome da rua onde está localizada a ONG    | Rua dos Tupis                                   |
+|  Número  | Texto            | Número do endereço da ONG                 | 646                                             |
+|  Cidade  | Texto            | Cidade onde está localizada a ONG         | Belo Horizonte                                  |
+|  Estado  | Texto            | Nome do estado onde está localizada a ONG | Minas Gerais                                    |
+|   Nome   | Texto            | Nome da ONG                               | Organização 4 patinhas                          |
+|  Sobre   | Texto            | Descrição sobre a ONG                     | Ajudamos animais abandonados a encontrar um lar |
+|  Imagem  | URL (Texto)      | URL da imagem representando a ONG         | docs/img/personas/persona-ana-lucia.jpg         |
 
+## Demanda
+|     **Nome**      | **Tipo**          | **Descrição**                                                             | **Exemplo**                                                                         |
+|:-----------------:|-------------------|---------------------------------------------------------------------------|-------------------------------------------------------------------------------------|
+|        Id         | Número (Inteiro)  | Identificador único da demanda                                            | 1                                                                                   |
+| Id da Organização | Número (Inteiro)  | Identificador da organização relacionada                                  | 1                                                                                   |
+|       Nome        | Texto             | Nome da demanda                                                           | Criar um site                                                                       |
+|     Descrição     | Texto             | Descrição da demanda                                                      | Precisamos de um site que recolha doações e cadastre locais de coleta               |
+|     Criado em     | Data (YYYY-MM-DD) | Data de criação da demanda                                                | 2022-03-01                                                                          |
+|      Status       | Texto             | Status da demanda (aberto, fechado)                                       | Aberto                                                                              |
+|       Tipo        | Texto             | Tipo da demanda (local, remoto, híbrido)                                  | Remoto                                                                              |
+| Dados de Pesquisa | Texto             | Dados utilizados para pesquisa (nome e descrição da demanda concatenados) | Criar um site Precisamos de um site que recolha doações e cadastre locais de coleta |
+|    Voluntários    | Lista de Objetos  | Lista de voluntários associados à demanda                                 | `[{ "email": "voluntario1@email.com" }, { "email": "voluntario2@email.com" }]`      |
