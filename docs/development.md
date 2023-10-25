@@ -53,7 +53,7 @@ As tabelas que se seguem apresentam os requisitos funcionais e não-funcionais q
 |     **Nome**      | **Tipo**          | **Descrição**                                                             | **Exemplo**                                                                         |
 |:-----------------:|-------------------|---------------------------------------------------------------------------|-------------------------------------------------------------------------------------|
 |        Id         | Número (Inteiro)  | Identificador único da demanda                                            | 1                                                                                   |
-| Id da Organização | Número (Inteiro)  | Identificador da organização relacionada                                  | 1                                                                                   |
+|     Id da ONG     | Número (Inteiro)  | Identificador da ONG relacionada                                          | 1                                                                                   |
 |       Nome        | Texto             | Nome da demanda                                                           | Criar um site                                                                       |
 |     Descrição     | Texto             | Descrição da demanda                                                      | Precisamos de um site que recolha doações e cadastre locais de coleta               |
 |     Criado em     | Data (YYYY-MM-DD) | Data de criação da demanda                                                | 2022-03-01                                                                          |
