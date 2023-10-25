@@ -57,13 +57,14 @@
 
 .instructions-list > .list-content li {
     color: #FFFFFF;
-    font-size: 16px;
+    font-size: 20px;
+    line-height: 30px;
     margin: 0;
 }
 
 .instructions-list > .list-content a {
     color: #FFFFFF;
-    font-size: 16px;
+    font-size: 20px;
     margin: 0;
     text-decoration: underline;
 }
@@ -99,7 +100,6 @@
     .content {
         border-radius: 40px 40px 0 0;
         align-items: start;
-        height: 100%;
     }
 
     .content > .title {
