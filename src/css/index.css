@@ -330,11 +330,28 @@ footer {
 
     .header-mobile {
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
         justify-items: start;
         align-items: center;
         padding: 20px;
         background-color: white;
+        border-bottom: none;
+        z-index: 1;
+        width: 100%;
+    }
+
+    .header-mobile > .menu-toggle {
+        justify-self: start;
+        padding-left: 24px;
+    }
+
+    .header-mobile > .logo-button {
+        justify-self: center;
+    }
+
+    .header-mobile > .close-button {
+        justify-self: end;
+        padding-right: 24px;
     }
 
     .header-mobile-logo img {
