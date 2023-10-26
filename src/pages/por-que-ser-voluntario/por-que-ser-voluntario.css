@@ -71,10 +71,6 @@ body {
         padding-top: 2%;
     }
 
-    .conteudo p {
-        margin 0;
-    }
-
     .home-image {
         width: 85%;
         margin-right: 30%;
@@ -91,6 +87,7 @@ body {
 }
 
 @media screen and (max-width: 768px) {
+    
     .home-content {
         background: #274c77;
     }
@@ -103,10 +100,7 @@ body {
         padding-top: 6%;
         padding-bottom: 0%;
     }
-    .conteudo p {
-        margin 0;
-    }
-   
+
     .home-image {
         margin-top: 0;        
         width: 85%;
