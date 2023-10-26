@@ -1,4 +1,4 @@
-.primeiro-paragrafo {
+.paragrafo {
     margin-bottom: 40px;
 }
 
@@ -7,6 +7,10 @@ body {
 }
 
 .home-content {
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
     justify-content: space-between;
     background: #274c77;
     word-wrap: break-word;
@@ -24,14 +28,15 @@ body {
     border-radius: 50px;
     flex-shrink: 0;
     height: auto;
-    width: 750px;
+    width: 500px;
     margin-right: 10px;
     margin-bottom: 10%;
 }
 
 .home-content h2 {
     margin-bottom: 5%;
-    font-size: 55px;
+    font-size: 40px;
+    
 }
 
 .conteudo {
@@ -39,9 +44,9 @@ body {
     justify-items: center;
     font-family: Open Sans, sans-serif;
     text-align: left;
-    grid-column: span 1;
+    line-height: 30px;
     color: #fff;
-    font-size: 30px;
+    font-size:20px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -54,9 +59,12 @@ body {
 }
 
 @media screen and (max-width: 1149px) {
+    .home-content{
+        display: flex;
+    }
     .conteudo {
         text-align: left;
-        font-size: 30px;
+        
         margin: 0px;
         padding-left: 15%;
         padding-right: 2%;
@@ -88,7 +96,7 @@ body {
     }
     .conteudo {
         text-align: left;
-        font-size: 30px;
+     
         margin: 0px;
         padding-left: 10%;
         padding-right: 4%;
@@ -96,13 +104,9 @@ body {
         padding-bottom: 0%;
     }
     .conteudo p {
-        font-size: 20px;
         margin 0;
     }
-    h2{
-        font-size: 40px;
-    }
-
+   
     .home-image {
         margin-top: 0;        
         width: 85%;
