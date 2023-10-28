@@ -7,6 +7,7 @@
     <title>Cadastrar ONG</title>
     <link rel="stylesheet" href="../../css/index.css">
     <link rel="stylesheet" href="cadastrar-ong.css">
+    <script type="module" src="../../components/header/header.js" ></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 
@@ -16,58 +17,9 @@
 
     <div id="page-overlay"></div>
 
-    <header class="header-desktop">
-        <div class="home-logo-wrapper">
-            <img src="../../assets/images/logo-conecta.png" alt="Logo Conecta">
-        </div>
-        <div class="buttons-header-wrapper">
-            <a href="#" class="header-button area-da-ong-button">ÁREA DA ONG</a>
-            <a href="#" class="header-button oportunidades-button">OPORTUNIDADES</a>
-        </div>
-
+    <header>
+        <header-component action="toggleOverlay"></header-component>
     </header>
-
-    <header class="header-mobile">
-
-        <div class="menu-toggle open-menu" id="">
-            <img src="../../assets/components/menu-mobile-button.png" alt="Menu">
-        </div>
-
-        <div class="logo-button">
-            <img src="../../assets/icons/icon-conecta.svg" alt="Menu">
-        </div>
-
-        <div class="close-button">
-            <img src="../../assets/components/close-button.png" alt="Menu">
-        </div>
-    </header>
-
-    <nav class="mobile-menu" id="mobile-menu">
-        <div class="header-menu">
-            <img src="../../assets/components/search-button.png" alt="Search">
-            <img class="menu-toggle open-menu" src="../../assets/components/close-button.png" alt="Close menu">
-        </div>
-
-        <div class="mobile-menu-content">
-            <div class="authentication-area">
-                <p class="text">área da ong</p>
-                <a class="authentication-button" href="">CADASTRE-SE</a>
-                <a class="authentication-button" href="">LOGIN</a>
-            </div>
-
-            <div class="divider-line"></div>
-
-            <a class="navigation-button" href="#">OPORTUNIDADES</a>
-            <ul>
-                <li><a class="navigation-button" href="#">sobre o voluntariado</a></li>
-                <li><a class="navigation-button" href="#">como começar?</a></li>
-                <li><a class="navigation-button" href="#">por que ser voluntário?</a></li>
-                <li><a class="navigation-button" href="">histórias de sucesso</a></li>
-                <li><a class="navigation-button" href="">perguntas frequentes</a></li>
-            </ul>
-        </div>
-
-    </nav>
 
     <div class="content">
         <h1 class="title" id="organization-name">Cadastrar ONG</h1>
@@ -75,76 +27,90 @@
         <div class="section-wrapper">
 
             <div class="row">
-                <div class="col-25">
+                <div class="col-15">
                     <label for="cnpj">CNPJ</label>
                 </div>
-                <div class="col-75">
+                <div class="col-85">
                     <input type="text" id="cnpj" name="CNPJ">
                 </div>
             </div>
             <div class="row">
-                <div class="col-25">
+                <div class="col-15">
                     <label for="nome">Nome da ONG</label>
                 </div>
-                <div class="col-75">
+                <div class="col-85">
                     <input type="text" id="nome" name="nome">
                 </div>
             </div>
             <div class="row">
-                <div class="col-25">
+                <div class="col-15">
                     <label for="email">Email</label>
                 </div>
-                <div class="col-75">
+                <div class="col-85">
                     <input type="email" id="email" name="email">
                 </div>
             </div>
             <div class="row">
-                <div class="col-25">
+                <div class="col-15">
                     <label for="phone">Telefone</label>
                 </div>
-                <div class="col-75">
+                <div class="col-85">
                     <input type="tel" id="phone" name="phone">
                 </div>
             </div>
             <div class="row">
-                <div class="col-25">
+                <div class="col-15">
                     <label for="senha">Senha</label>
                 </div>
-                <div class="col-75">
+                <div class="col-85">
                     <input type="password" id="senha" name="senha">
                 </div>
             </div>
             <div class="row">
-                <div class="row row-left">
-                    <div class="col-25">
-                        <label for="cep">CEP</label>
-                    </div>
-                    <div class="col-75">
-                        <input type="text" id="cep" name="cep">
-                    </div>
+                <div class="col-15">
+                    <label for="confirmar-senha">Confirmar senha</label>
                 </div>
-                <div class="row row-right">
-                    <div class="col-25">
-                        <label for="numero">Número</label>
-                    </div>
-                    <div class="col-75">
-                        <input type="text" id="numero" name="numero">
-                    </div>
+                <div class="col-85">
+                    <input type="password" id="confirmar-senha" name="confirmar-senha">
                 </div>
             </div>
             <div class="row">
-                <div class="col-25">
-                    <label for="endereco">Endereço</label>
+                <div class="col-15">
+                    <label for="cep">CEP</label>
                 </div>
-                <div class="col-75">
-                    <input type="text" id="endereco" name="endereco">
+                <div class="col-85">
+                    <input type="text" id="cep" name="cep">
                 </div>
             </div>
             <div class="row">
-                <div class="col-25">
+                <div class="col-15">
+                    <label for="logradouro">Logradouro</label>
+                </div>
+                <div class="col-85">
+                    <input type="text" id="logradouro" name="logradouro">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-15">
+                    <label for="numero">Número</label>
+                </div>
+                <div class="col-85">
+                    <input type="text" id="numero" name="numero">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-15">
+                    <label for="estado">Estado</label>
+                </div>
+                <div class="col-85">
+                    <input type="text" id="estado" name="estado">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-15">
                     <label for="cidade">Cidade</label>
                 </div>
-                <div class="col-75">
+                <div class="col-85">
                     <input type="text" id="cidade" name="cidade">
                 </div>
             </div>

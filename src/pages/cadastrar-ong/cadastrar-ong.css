@@ -4,10 +4,6 @@
     height: 100%;
 }
 
-.header-desktop {
-    border-bottom: none;
-}
-
 .content {
     background-color: #E8ECEF;
     border-radius: 0;
@@ -16,14 +12,6 @@
 .content > * {
     padding: 16px 24px 0 24px;
     max-width: 940px;
-}
-
-.content > .title {
-    color: #324B75;
-    padding: 16px 24px 0 24px;
-    font-size: 40px;
-    align-self: center;
-    font-weight: 700;
 }
 
 .section-wrapper {
@@ -52,13 +40,6 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="tel"]:focus, in
     outline: none;
 }
 
-label {
-    padding: 12px 12px 12px 0;
-    display: inline-block;
-    color: #716F6F;
-}
-
-/* input[type=submit] para o botão com name 'cancel' { */
 input[type=submit][name=cancelar], input[type=submit][name=voltar] {
     background-color: #FFFFFF;
     color: #274C77;}
@@ -101,30 +82,6 @@ textarea {
     color: #716F6F;
 }
 
-.col-25 {
-    float: left;
-    width: 25%;
-    margin-top: 6px;
-    min-width: 60px;
-}
-
-.col-75 {
-    float: left;
-    width: 75%;
-    margin-top: 6px;
-}
-
-.row-left {
-    width: 40%;
-    float: left;
-}
-
-.row-right {
-    width: 40%;
-    float: right;
-}
-
-/* Clear floats after the columns */
 .row:after {
     content: "";
     display: table;
@@ -141,77 +98,36 @@ textarea {
     padding-top: 40px;
 }
 
+.col-15 {
+    float: left;
+    width: 140px;
+    margin-top: 6px;
+    min-width: 60px;
+}
+
+.col-85 {
+    float: left;
+    width: 85%;
+    margin-top: 6px;
+}
+
+label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+    color: #716F6F;
+}
+
 @media screen and (max-width: 600px) {
-    .col-25, .col-75, input[type=submit] {
+    .col-15, .col-85, input[type=submit] {
         width: 100%;
         margin-top: 0;
     }
 }
 
-@media screen and (max-width: 768px) {
-
-    .header-mobile {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        justify-items: start;
-        align-items: center;
-        padding: 20px;
-        background-color: white;
-        border-bottom: none;
-        z-index: 1;
+@media screen and (max-width: 1170px) {
+    .col-85 {
+        float: left;
         width: 100%;
-    }
-
-    .header-mobile > .menu-toggle {
-        justify-self: start;
-        padding-left: 24px;
-    }
-
-    .header-mobile > .logo-button {
-        justify-self: center;
-    }
-
-    .header-mobile > .close-button {
-        justify-self: end;
-        padding-right: 24px;
-    }
-
-    .content {
-        align-items: center;
-        display: flex;
-    }
-
-    .content > .title {
-        padding: 16px 24px 0 32px;
-    }
-
-    .section-wrapper {
-        display: flex;
-        flex-direction: column;
-        gap: 16px;
-    }
-
-    .content > .section {
-        padding: 16px 24px 0 24px;
-    }
-}
-
-@media screen and (max-width: 535px) {
-    .task-description > p {
-        display: -webkit-box;
-        -webkit-box-orient: vertical;
-        -webkit-line-clamp: 4;
-        overflow: hidden;
-        text-overflow: ellipsis;
-    }
-}
-
-@media screen and (max-width: 425px) {
-    .task-description > p {
-        display: -webkit-box;
-        -webkit-box-orient: vertical;
-        -webkit-line-clamp: 3;
-        overflow: hidden;
-        text-overflow: ellipsis;
+        margin-top: 6px;
     }
 }
