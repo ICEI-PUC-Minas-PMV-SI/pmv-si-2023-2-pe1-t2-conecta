@@ -4,10 +4,6 @@
     height: 100%;
 }
 
-.header-desktop {
-    border-bottom: none;
-}
-
 .content {
     background-color: #E8ECEF;
     border-radius: 0;
@@ -204,32 +200,6 @@
 
 @media screen and (max-width: 768px) {
 
-    .header-mobile {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        justify-items: start;
-        align-items: center;
-        padding: 20px;
-        background-color: white;
-        border-bottom: none;
-        z-index: 1;
-        width: 100%;
-    }
-
-    .header-mobile > .menu-toggle {
-        justify-self: start;
-        padding-left: 24px;
-    }
-
-    .header-mobile > .logo-button {
-        justify-self: center;
-    }
-
-    .header-mobile > .close-button {
-        justify-self: end;
-        padding-right: 24px;
-    }
-
     .content {
         align-items: start;
         display: flex;
@@ -249,7 +219,6 @@
         padding: 16px 24px 0 24px;
     }
 
-    /* CARDS */
     .vertical-task-card {
         display: none;
     }
@@ -298,7 +267,6 @@
         width: fit-content;
         justify-self: end;
     }
-    /* CARDS */
 }
 
 @media screen and (max-width: 535px) {

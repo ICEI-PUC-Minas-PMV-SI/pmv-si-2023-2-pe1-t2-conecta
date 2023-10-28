@@ -4,10 +4,6 @@
     height: 100%;
 }
 
-.header-desktop {
-    border-bottom: none;
-}
-
 .content {
     background-color: #274C77;
     border-radius: 0;
@@ -70,32 +66,6 @@
 }
 
 @media screen and (max-width: 768px) {
-
-    .header-mobile {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        justify-items: start;
-        align-items: center;
-        padding: 20px;
-        background-color: white;
-        border-bottom: none;
-        z-index: 1;
-        width: 100%;
-    }
-
-    .header-mobile > .menu-toggle {
-        justify-self: start;
-        padding-left: 24px;
-    }
-
-    .header-mobile > .logo-button {
-        justify-self: center;
-    }
-
-    .header-mobile > .close-button {
-        justify-self: end;
-        padding-right: 24px;
-    }
 
     .content {
         border-radius: 40px 40px 0 0;

@@ -4,10 +4,6 @@
     background-color: #E7ECEF;
 }
 
-.header-desktop {
-    border-bottom: none;
-}
-
 .content {
     background-color: #E7ECEF;
     border-radius: 0;
@@ -187,32 +183,6 @@
 
 @media screen and (max-width: 768px) {
 
-    .header-mobile {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        justify-items: start;
-        align-items: center;
-        padding: 20px;
-        background-color: white;
-        border-bottom: none;
-        z-index: 1;
-        width: 100%;
-    }
-
-    .header-mobile > .menu-toggle {
-        justify-self: start;
-        padding-left: 24px;
-    }
-
-    .header-mobile > .logo-button {
-        justify-self: center;
-    }
-
-    .header-mobile > .close-button {
-        justify-self: end;
-        padding-right: 24px;
-    }
-
     .content {
         border-radius: 0px;
         align-items: start;
@@ -224,7 +194,7 @@
         align-self: start;
         font-size: 40px;
     }
-    
+
     .vertical-task-card {
         display: none;
     }
@@ -278,11 +248,11 @@
         width: fit-content;
         justify-self: end;
     }
-    
+
 }
 
 @media screen and (max-width: 535px) {
-    
+
     .task-description > p {
         display: -webkit-box;
         -webkit-box-orient: vertical;
@@ -293,7 +263,7 @@
 }
 
 @media screen and (max-width: 425px) {
-    
+
     .task-description > p {
         display: -webkit-box;
         -webkit-box-orient: vertical;
