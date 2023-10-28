@@ -26,6 +26,11 @@ body {
     background: #FFF;
 }
 
+header {
+    width: 100%;
+    z-index: 3;
+}
+
 #page-overlay {
     display: none;
     position: fixed;
@@ -33,12 +38,17 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.5); /* Semi-transparent gray background */
-    z-index: 999; /* Place it on top of other elements */
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 3;
 }
 
 .container {
-    display: flex;
+    justify-items: center;
+    align-items: center;
+    max-width: 1920px;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
 }
 
 .header-mobile {
@@ -54,9 +64,9 @@ body {
     flex-shrink: 1;
     justify-content: space-between;
     align-items: center;
-    padding: 30px;
+    padding: 20px;
     background-color: white;
-    width: 99%;
+    width: 100%;
     border-bottom: 1px solid var(--cor-texto);
 }
 
@@ -72,7 +82,8 @@ body {
 .home-logo-wrapper img {
     min-width: 300px;
     min-height: 70px;
-    max-width: 60%;
+    max-width: 50%;
+    margin-left: 15px;
 }
 
 .buttons-header-wrapper {
@@ -84,7 +95,7 @@ body {
 }
 
 .header-button {
-    padding: 15px 30px;
+    padding: 12px 20px;
     margin-left: 20px;
     text-decoration: none;
     border-radius: 5px;
@@ -98,11 +109,14 @@ body {
 .area-da-ong-button {
     background-color: var(--cor-texto);
     color: white;
+    font-size: 15px;
 }
 
 .oportunidades-button {
     background-color: var(--cor-titulo);
     color: white;
+    margin-right: 20px;
+    font-size: 15px;
 }
 
 .container {
