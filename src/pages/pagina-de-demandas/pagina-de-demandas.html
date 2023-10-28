@@ -5,8 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Explore as Oportunidades</title>
-    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../../css/index.css">
     <link rel="stylesheet" href="pagina-de-demandas.css">
+    <script type="module" src="../../components/header/header.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 
@@ -16,60 +17,9 @@
 
         <div id="page-overlay"></div>
 
-        <header class="header-desktop">
-            <div class="home-logo-wrapper">
-                <img src="../../docs/imagens_template/logo-conecta.png" alt="Logo Conecta">
-            </div>
-            <div class="buttons-header-wrapper">
-                <div>
-                    <a href="#" class="header-button area-da-ong-button">ÁREA DA ONG</a>
-                    <a href="#" class="header-button oportunidades-button">OPORTUNIDADES</a>
-                </div>
-            </div>
-
+        <header>
+            <header-component action="toggleOverlay"></header-component>
         </header>
-
-        <header class="header-mobile">
-
-            <div class="menu-toggle open-menu" id="">
-                <img src="../../docs/imagens_template/menu-mobile.png" alt="Menu">
-            </div>
-
-            <div class="logo-button">
-                <img src="../../docs/img/icons/icon-conecta.svg" alt="Menu">
-            </div>
-
-            <div class="close-button">
-
-                <img src="../../docs/imagens_template/close-button.png" alt="Menu">
-            </div>
-        </header>
-
-        <nav class="mobile-menu" id="mobile-menu">
-            <div class="header-menu">
-                <img class="menu-toggle open-menu" src="../../docs/imagens_template/close-button.png" alt="Close menu">
-            </div>
-
-            <div class="mobile-menu-content">
-                <div class="authentication-area">
-                    <p class="text">área da ong</p>
-                    <a class="authentication-button" href="">CADASTRE-SE</a>
-                    <a class="authentication-button" href="">LOGIN</a>
-                </div>
-
-                <div class="divider-line"></div>
-
-                <a class="navigation-button" href="#">OPORTUNIDADES</a>
-                <ul>
-                    <li><a class="navigation-button" href="#">sobre o voluntariado</a></li>
-                    <li><a class="navigation-button" href="#">como começar?</a></li>
-                    <li><a class="navigation-button" href="#">por que ser voluntário?</a></li>
-                    <li><a class="navigation-button" href="">histórias de sucesso</a></li>
-                    <li><a class="navigation-button" href="">perguntas frequentes</a></li>
-                </ul>
-            </div>
-
-        </nav>
 
         <div class="content">
             <div class="headline">
@@ -79,8 +29,8 @@
             </div>
             <div class="filter">
                 <label  id="filtroSelect">
-                    <img class="icon_white" src="../../docs/img/icons/filter.png" alt="">
-                    <img class="icon_black" src="../../docs/img/icons/filter-filled.png" alt="">
+                    <img class="icon_white" src="../../../docs/img/icons/filter.png" alt="">
+                    <img class="icon_black" src="../../../docs/img/icons/filter-filled.png" alt="">
                 </label>
                 <select class="filterButton" style="display: none;">
                     <option value="todos">Todos</option>
@@ -99,7 +49,7 @@
                                 <p class="task-owner">TeachTech</p>
                             </div>
                             <div class="profile-image-card-container">
-                                <img src="../../docs/img/logo_ONGs/techteach-logo.png" alt="Profile image">
+                                <img src="../../../docs/img/logo_ONGs/techteach-logo.png" alt="Profile image">
                             </div>
                         </div>
                         <div class="task-description">
@@ -123,7 +73,7 @@
                                 <p class="task-owner">WeHelp</p>
                             </div>
                             <div class="profile-image-card-container">
-                                <img src="../../docs/img/logo_ONGs/we-help-logo.png" alt="Profile image">
+                                <img src="../../../docs/img/logo_ONGs/we-help-logo.png" alt="Profile image">
                             </div>
                         </div>
                         <div class="task-description">
@@ -147,7 +97,7 @@
                                 <p class="task-owner">Ajuda Senior</p>
                             </div>
                             <div class="profile-image-card-container">
-                                <img src="../../docs/img/logo_ONGs/ajuda-senior-logo.png" alt="Profile image">
+                                <img src="../../../docs/img/logo_ONGs/ajuda-senior-logo.png" alt="Profile image">
                             </div>
                         </div>
                         <div class="task-description">
@@ -172,7 +122,7 @@
                                 <p class="task-owner">Happy Kids</p>
                             </div>
                             <div class="profile-image-card-container">
-                                <img src="../../docs/img/logo_ONGs/happy-kids-logo.png" alt="Profile image">
+                                <img src="../../../docs/img/logo_ONGs/happy-kids-logo.png" alt="Profile image">
                             </div>
                         </div>
                         <div class="task-description">
@@ -197,7 +147,7 @@
                                 <p class="task-owner">Ensina Tech</p>
                             </div>
                             <div class="profile-image-card-container">
-                                <img src="../../docs/img/logo_ONGs/ensinatech-logo.png" alt="Profile image">
+                                <img src="../../../docs/img/logo_ONGs/ensinatech-logo.png" alt="Profile image">
                             </div>
                         </div>
                         <div class="task-description">
@@ -220,7 +170,7 @@
                                 <p class="task-owner">Ajuda Pet</p>
                             </div>
                             <div class="profile-image-card-container">
-                                <img src="../../docs/img/logo_ONGs/ajuda-pet-logo.png" alt="Profile image">
+                                <img src="../../../docs/img/logo_ONGs/ajuda-pet-logo.png" alt="Profile image">
                             </div>
                         </div>
                         <div class="task-description">
@@ -245,7 +195,7 @@
                                 <p class="task-owner">ONG Florescer</p>
                             </div>
                             <div class="profile-image-card-container">
-                                <img src="../../docs/img/logo_ONGs/ong-florescer-logo.png" alt="Profile image">
+                                <img src="../../../docs/img/logo_ONGs/ong-florescer-logo.png" alt="Profile image">
                             </div>
                         </div>
                         <div class="task-description">
@@ -269,7 +219,7 @@
                                 <p class="task-owner">Leia Livros</p>
                             </div>
                             <div class="profile-image-card-container">
-                                <img src="../../docs/img/logo_ONGs/leia-livros-logo.png" alt="Profile image">
+                                <img src="../../../docs/img/logo_ONGs/leia-livros-logo.png" alt="Profile image">
                             </div>
                         </div>
                         <div class="task-description">
@@ -303,7 +253,7 @@
                     </div>
                     <div class="right-side">
                         <div class="profile-image-card-container">
-                            <img src="../../docs/img/logo_ONGs/techteach-logo.png" alt="Profile image">
+                            <img src="../../../docs/img/logo_ONGs/techteach-logo.png" alt="Profile image">
                         </div>
                         <div class="help-button-wrapper">
                             <a href="#" class="help-button">QUERO AJUDAR</a>
@@ -327,7 +277,7 @@
                     </div>
                     <div class="right-side">
                         <div class="profile-image-card-container">
-                            <img src="../../docs/img/logo_ONGs/we-help-logo.png" alt="Profile image">
+                            <img src="../../../docs/img/logo_ONGs/we-help-logo.png" alt="Profile image">
                         </div>
                         <div class="help-button-wrapper">
                             <a href="#" class="help-button">QUERO AJUDAR</a>
@@ -352,7 +302,7 @@
                     </div>
                     <div class="right-side">
                         <div class="profile-image-card-container">
-                            <img src="../../docs/img/logo_ONGs/ajuda-senior-logo.png" alt="Profile image">
+                            <img src="../../../docs/img/logo_ONGs/ajuda-senior-logo.png" alt="Profile image">
                         </div>
                         <div class="help-button-wrapper">
                             <a href="#" class="help-button">QUERO AJUDAR</a>
@@ -376,7 +326,7 @@
                     </div>
                     <div class="right-side">
                         <div class="profile-image-card-container">
-                            <img src="../../docs/img/logo_ONGs/happy-kids-logo.png" alt="Profile image">
+                            <img src="../../../docs/img/logo_ONGs/happy-kids-logo.png" alt="Profile image">
                         </div>
                         <div class="help-button-wrapper">
                             <a href="#" class="help-button">QUERO AJUDAR</a>
@@ -399,7 +349,7 @@
                     </div>
                     <div class="right-side">
                         <div class="profile-image-card-container">
-                            <img src="../../docs/img/logo_ONGs/ensinatech-logo.png" alt="Profile image">
+                            <img src="../../../docs/img/logo_ONGs/ensinatech-logo.png" alt="Profile image">
                         </div>
                         <div class="help-button-wrapper">
                             <a href="#" class="help-button">QUERO AJUDAR</a>
@@ -424,7 +374,7 @@
                     </div>
                     <div class="right-side">
                         <div class="profile-image-card-container">
-                            <img src="../../docs/img/logo_ONGs/ajuda-pet-logo.png" alt="Profile image">
+                            <img src="../../../docs/img/logo_ONGs/ajuda-pet-logo.png" alt="Profile image">
                         </div>
                         <div class="help-button-wrapper">
                             <a href="#" class="help-button">QUERO AJUDAR</a>
@@ -448,7 +398,7 @@
                     </div>
                     <div class="right-side">
                         <div class="profile-image-card-container">
-                            <img src="../../docs/img/logo_ONGs/ong-florescer-logo.png" alt="Profile image">
+                            <img src="../../../docs/img/logo_ONGs/ong-florescer-logo.png" alt="Profile image">
                         </div>
                         <div class="help-button-wrapper">
                             <a href="#" class="help-button">QUERO AJUDAR</a>
@@ -472,7 +422,7 @@
                     </div>
                     <div class="right-side">
                         <div class="profile-image-card-container">
-                            <img src="../../docs/img/logo_ONGs/leia-livros-logo.png" alt="Profile image">
+                            <img src="../../../docs/img/logo_ONGs/leia-livros-logo.png" alt="Profile image">
                         </div>
                         <div class="help-button-wrapper">
                             <a href="#" class="help-button">QUERO AJUDAR</a>
@@ -492,7 +442,7 @@
                 </div>
             </footer>
 
-            <script src="../js/index.js"></script>
+            <script src="../../js/index.js"></script>
             <script>
                 $("#filtroSelect").click(function(){
                     if ($('.filterButton').hasClass('visible')) {
