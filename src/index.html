@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sua Landing Page</title>
     <link rel="stylesheet" href="./css/index.css">
+    <script type="module" src="components/header/header.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
 </head>
@@ -15,54 +16,10 @@
 
     <div id="page-overlay"></div>
 
-    <header class="header-desktop">
-        <div class="home-logo-wrapper">
-            <img src="../docs/imagens_template/logo-conecta.png" alt="Logo Conecta">
-        </div>
-        <div class="buttons-header-wrapper">
-            <a href="#" class="header-button area-da-ong-button">ÁREA DA ONG</a>
-            <a href="#" class="header-button oportunidades-button">OPORTUNIDADES</a>
-        </div>
-
+    <header>
+        <header-component action="toggleOverlay" variant="home"></header-component>
     </header>
 
-    <header class="header-mobile">
-
-        <div class="menu-toggle open-menu" id="">
-            <img src="../docs/imagens_template/menu-mobile.png" alt="Menu">
-        </div>
-
-        <div class="header-mobile-logo">
-            <img src="../docs/imagens_template/logo-conecta.png" alt="Logo">
-        </div>
-    </header>
-
-    <nav class="mobile-menu" id="mobile-menu">
-        <div class="header-menu">
-            <img src="../docs/imagens_template/search-11.png" alt="Search">
-            <img class="menu-toggle open-menu" src="../docs/imagens_template/close-button.png" alt="Close menu">
-        </div>
-
-        <div class="mobile-menu-content">
-            <div class="authentication-area">
-                <p class="text">área da ong</p>
-                <a class="authentication-button" href="">CADASTRE-SE</a>
-                <a class="authentication-button" href="">LOGIN</a>
-            </div>
-
-            <div class="divider-line"></div>
-
-            <a class="navigation-button" href="#">OPORTUNIDADES</a>
-            <ul>
-                <li><a class="navigation-button" href="#">sobre o voluntariado</a></li>
-                <li><a class="navigation-button" href="pages/como-comecar/como-comecar.html">como começar?</a></li>
-                <li><a class="navigation-button" href="#">por que ser voluntário?</a></li>
-                <li><a class="navigation-button" href="">histórias de sucesso</a></li>
-                <li><a class="navigation-button" href="">perguntas frequentes</a></li>
-            </ul>
-        </div>
-
-    </nav>
 
     <div class="content">
         <div class="home-content">

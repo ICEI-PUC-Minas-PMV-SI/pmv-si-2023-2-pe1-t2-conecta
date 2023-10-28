@@ -26,6 +26,11 @@ body {
     background: #FFF;
 }
 
+header {
+    width: 100%;
+    z-index: 3;
+}
+
 #page-overlay {
     display: none;
     position: fixed;
@@ -33,8 +38,8 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.5); /* Semi-transparent gray background */
-    z-index: 999; /* Place it on top of other elements */
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 3;
 }
 
 .container {
