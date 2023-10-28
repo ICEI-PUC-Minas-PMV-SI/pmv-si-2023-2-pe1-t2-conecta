@@ -33,40 +33,40 @@ As tabelas que se seguem apresentam os requisitos funcionais e não-funcionais q
 ## Descrição das estruturas:
 
 ## ONG
-| **Nome** | **Tipo**         | **Descrição**                             | **Exemplo**                                     |
-|:--------:|------------------|-------------------------------------------|-------------------------------------------------|
-|    Id    | Número (Inteiro) | Identificador único da ONG                | 1                                               |
-|   CNPJ   | Texto            | Número de CNPJ da ONG                     | 51.948.129/0001-67                              |
-|  Email   | Texto            | Endereço de e-mail da ONG                 | ong@email.com                                   |
-| Telefone | Texto            | Número de telefone da ONG                 | 3132700120                                      |
-|  Senha   | Texto            | Senha de acesso à conta da ONG            | senha123                                        |
-|   CEP    | Texto            | Código de Endereçamento Postal (CEP)      | 30170-131                                       |
-|   Rua    | Texto            | Nome da rua onde está localizada a ONG    | Rua dos Tupis                                   |
-|  Número  | Texto            | Número do endereço da ONG                 | 646                                             |
-|  Cidade  | Texto            | Cidade onde está localizada a ONG         | Belo Horizonte                                  |
-|  Estado  | Texto            | Nome do estado onde está localizada a ONG | Minas Gerais                                    |
-|   Nome   | Texto            | Nome da ONG                               | Organização 4 patinhas                          |
-|  Sobre   | Texto            | Descrição sobre a ONG                     | Ajudamos animais abandonados a encontrar um lar |
-|  Imagem  | URL (Texto)      | URL da imagem representando a ONG         | docs/img/personas/persona-ana-lucia.jpg         |
+| **Nome** | **Tipo**         | **Descrição**                                   | **Exemplo**                                                      |
+|:--------:|------------------|-------------------------------------------------|------------------------------------------------------------------|
+|    Id    | UUID             | Identificador único da ONG                      | 95ddad92-c441-4e92-a34d-fcf328c69b78                             |
+|   CNPJ   | Texto            | Número de CNPJ da ONG                           | 51948129000167                                                   |
+|  Email   | Texto            | Endereço de e-mail da ONG                       | ong@email.com                                                    |
+| Telefone | Texto            | Número de telefone da ONG                       | 3132700120                                                       |
+|  Senha   | Texto(SHA-256)   | Senha de acesso à conta da ONG                  | bdcebd4f01d7024696ba685eefc1c5dd446071b0c89f858aae7ef136c439e09e |
+|   CEP    | Texto            | Código de Endereçamento Postal (CEP)            | 30170131                                                         |
+|   Rua    | Texto            | Nome da rua onde está localizada a ONG          | Rua dos Tupis                                                    |
+|  Número  | Texto            | Número do endereço da ONG                       | 646                                                              |
+|  Cidade  | Texto            | Cidade onde está localizada a ONG               | Belo Horizonte                                                   |
+|  Estado  | Texto            | Abreviação do estado onde está localizada a ONG | MG (ISO 3166-2: BR)                                              |
+|   Nome   | Texto            | Nome da ONG                                     | Organização 4 patinhas                                           |
+|  Sobre   | Texto            | Descrição sobre a ONG                           | Ajudamos animais abandonados a encontrar um lar                  |
+|  Imagem  | binary           | URL da imagem representando a ONG               | `[/9j/4ASKUHINNCVDXL/OIJVNVSMDKM6846V86SD5V]`                    |
 
 ## Demanda
-|     **Nome**      | **Tipo**                   | **Descrição**                                                             | **Exemplo**                                                                         |
-|:-----------------:|----------------------------|---------------------------------------------------------------------------|-------------------------------------------------------------------------------------|
-|        Id         | Número (Inteiro)           | Identificador único da demanda                                            | 1                                                                                   |
-|     Id da ONG     | Número (Inteiro)           | Identificador da ONG relacionada                                          | 1                                                                                   |
-|       Nome        | Texto                      | Nome da demanda                                                           | Criar um site                                                                       |
-|     Descrição     | Texto                      | Descrição da demanda                                                      | Precisamos de um site que recolha doações e cadastre locais de coleta               |
-|     Criado em     | Data (YYYY-MM-DD)          | Data de criação da demanda                                                | 2022-03-01                                                                          |
-|      Status       | Texto                      | Status da demanda (aberto, fechado)                                       | Aberto                                                                              |
-|       Tipo        | Texto                      | Tipo da demanda (local, remoto, híbrido)                                  | Remoto                                                                              |
-| Dados de Pesquisa | Texto                      | Dados utilizados para pesquisa (nome e descrição da demanda concatenados) | Criar um site Precisamos de um site que recolha doações e cadastre locais de coleta |
-|    Candidatos     | Lista de Ids de candidatos | Lista com identificador de candidatos associados à demanda                | `[1, 2, 3, 4, 5]`                                                                   |
+|     **Nome**      | **Tipo**                     | **Descrição**                                                             | **Exemplo**                                                                         |
+|:-----------------:|------------------------------|---------------------------------------------------------------------------|-------------------------------------------------------------------------------------|
+|        Id         | UUID                         | Identificador único da demanda                                            | 95ddad92-c441-4e92-a34d-fcf328c69b78                                                |
+|     Id da ONG     | UUID                         | Identificador da ONG relacionada                                          | 95ddad92-c441-4e92-a34d-fcf328c69b78                                                |
+|       Nome        | Texto                        | Nome da demanda                                                           | Criar um site                                                                       |
+|     Descrição     | Texto                        | Descrição da demanda                                                      | Precisamos de um site que recolha doações e cadastre locais de coleta               |
+|     Criado em     | Timestamp                    | Data de criação da demanda                                                | 2023-10-28T22:41:38+00:00                                                           |
+|      Status       | Boolean                      | Status da demanda (aberto, fechado)                                       | `true ou false`                                                                     |
+|       Tipo        | Texto                        | Tipo da demanda (local, remoto, híbrido)                                  | Remoto                                                                              |
+| Dados de Pesquisa | Texto                        | Dados utilizados para pesquisa (nome e descrição da demanda concatenados) | Criar um site Precisamos de um site que recolha doações e cadastre locais de coleta |
+|    Candidatos     | Lista de UUIDs de candidatos | Lista com identificador de candidatos associados à demanda                | `[95ddad92-c441-4e92-a34d-fcf328c69b78, 95ddad92-c441-4e92-a34d-fcf328c69b78]`      |
 
 ## Candidatos
-|   **Nome**    | **Tipo**         | **Descrição**                              | **Exemplo**    |
-|:-------------:|------------------|--------------------------------------------|----------------|
-|      Id       | Número (Inteiro) | Identificador único do candidato           | 1              |
-| Id da demanda | Número (Inteiro) | Identificador único da demanda relacionada | 1              |
-|     Nome      | Texto            | Nome do candidato                          | João           |
-|     Email     | Texto            | Endereço de e-mail do candidato            | joao@email.com |
-|    Status     | Texto            | Status do candidato (aprovado, reprovado)  | Aprovado       |
+|   **Nome**    | **Tipo**         | **Descrição**                              | **Exemplo**                                       |
+|:-------------:|------------------|--------------------------------------------|---------------------------------------------------|
+|      Id       | UUID             | Identificador único do candidato           | 95ddad92-c441-4e92-a34d-fcf328c69b78              |
+| Id da demanda | UUID             | Identificador único da demanda relacionada | 95ddad92-c441-4e92-a34d-fcf328c69b78              |
+|     Nome      | Texto            | Nome do candidato                          | João                                              |
+|     Email     | Texto            | Endereço de e-mail do candidato            | joao@email.com                                    |
+|    Status     | Boolean          | Status do candidato (aprovado, reprovado)  | `true ou false`                                    |
