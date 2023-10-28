@@ -2,8 +2,9 @@
     margin-bottom: 40px;
 }
 
-body {
+.content{
     background-color: #274c77;
+    max-width: 100%;
 }
 
 .home-content {
