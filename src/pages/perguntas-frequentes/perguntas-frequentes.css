@@ -71,7 +71,6 @@
 @media screen and (max-width: 768px) {
 
     .content {
-        border-radius: 40px 40px 0 0;
         align-items: center;
         height: 100%;
     }
