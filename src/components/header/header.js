@@ -1,4 +1,5 @@
 import stylesheet from './header.css' assert { type: 'css' };
+import homeVariantStylesheet from './header-variant-home.css' assert { type: 'css' };
 
 const template = document.createElement('template');
 template.innerHTML = `
@@ -17,15 +18,7 @@ template.innerHTML = `
 
     </header>
     
-    <header class="header-mobile">
-        <div class="menu-toggle open-menu" id="">
-            <img src="../../../docs/imagens_template/menu-mobile.png" alt="Menu">
-        </div>
-
-        <div class="header-mobile-logo">
-            <img src="../../../docs/imagens_template/logo-conecta.png" alt="Logo">
-        </div>
-    </header>
+    <header class="header-mobile"></header>
     
     <nav class="mobile-menu" id="mobile-menu">
     
@@ -56,14 +49,57 @@ template.innerHTML = `
     </div>
 `;
 
+const defaultHeaderMobileTemplate = document.createElement('template');
+defaultHeaderMobileTemplate.innerHTML = `
+    <header class="header-mobile">
+        <div class="menu-toggle open-menu" id="">
+            <img src="../../assets/components/menu-mobile-button.png" alt="Menu">
+        </div>
+
+        <div class="logo-button">
+            <img src="../../assets/icons/icon-conecta.svg" alt="Menu">
+        </div>
+
+        <div class="close-button">
+            <img src="../../assets/components/close-button.png" alt="Menu">
+        </div>
+    </header>
+`
+
+const variantHeaderMobileTemplate = document.createElement('template');
+variantHeaderMobileTemplate.innerHTML = `
+    <header class="header-mobile">
+        <div class="menu-toggle open-menu" id="">
+            <img src="../../../docs/imagens_template/menu-mobile.png" alt="Menu">
+        </div>
+
+        <div class="header-mobile-logo">
+            <img src="../../../docs/imagens_template/logo-conecta.png" alt="Logo">
+        </div>
+    </header>
+`
+
+
+
 class HeaderComponent extends HTMLElement {
     constructor() {
         super();
         this.root = this.attachShadow({ mode: 'closed' });
+
         this.root.adoptedStyleSheets = [stylesheet];
 
-        let clone = template.content.cloneNode(true);
+        const clone = template.content.cloneNode(true);
         this.root.append(clone);
+
+        if (this.variant === 'home') {
+            const defaultVariant = this.root.querySelector('.header-mobile');
+            defaultVariant.replaceWith(variantHeaderMobileTemplate.content.cloneNode(true));
+            this.root.adoptedStyleSheets = [stylesheet, homeVariantStylesheet]
+        } else {
+            const defaultVariant = this.root.querySelector('.header-mobile');
+            defaultVariant.replaceWith(defaultHeaderMobileTemplate.content.cloneNode(true));
+            this.root.adoptedStyleSheets = [stylesheet]
+        }
 
         let menuToggleButtons = this.root.querySelectorAll('.menu-toggle');
         menuToggleButtons.forEach((button) => {
@@ -92,13 +128,21 @@ class HeaderComponent extends HTMLElement {
     }
 
     static get observedAttributes() {
-        return ['action'];
+        return ['action', 'variant'];
     }
     get action() {
         return this.getAttribute('action');
     }
     set action(value) {
         this.setAttribute('action', value);
+    }
+
+    get variant() {
+        return this.getAttribute('variant');
+    }
+
+    set variant(value) {
+        this.setAttribute('variant', value);
     }
 }
 

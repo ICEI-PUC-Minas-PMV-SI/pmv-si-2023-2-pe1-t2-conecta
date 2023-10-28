@@ -97,14 +97,30 @@ header .buttons-header-wrapper .oportunidades-button {
 
     header.header-mobile {
         display: grid;
-        grid-template-columns: 1fr auto;
+        grid-template-columns: 1fr 1fr 1fr;
         justify-items: start;
         align-items: center;
         padding: 20px;
         background-color: white;
         border-bottom: none;
-        gap: 40px;
+        z-index: 1;
+        width: 100%;
     }
+
+    .header-mobile > .menu-toggle {
+        justify-self: start;
+        padding-left: 24px;
+    }
+
+    .header-mobile > .logo-button {
+        justify-self: center;
+    }
+
+    .header-mobile > .close-button {
+        justify-self: end;
+        padding-right: 24px;
+    }
+
 
     .header-mobile-logo img {
         width: 100%;
