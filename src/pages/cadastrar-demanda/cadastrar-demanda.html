@@ -7,6 +7,7 @@
     <title>cadastrar demanda</title>
     <link rel="stylesheet" href="../../css/index.css">
     <link rel="stylesheet" href="cadastrar-demanda.css">
+    <script type="module" src="../../components/header/header.js" ></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 
@@ -16,31 +17,8 @@
 
         <div id="page-overlay"></div>
 
-        <header class="header-desktop">
-            <div class="home-logo-wrapper">
-                <img src="../../../docs/imagens_template/logo-conecta.png" alt="Logo Conecta">
-            </div>
-            <div class="buttons-header-wrapper">
-                <a href="#" class="header-button area-da-ong-button">ÁREA DA ONG</a>
-                <a href="#" class="header-button oportunidades-button">OPORTUNIDADES</a>
-            </div>
-
-        </header>
-
-        <header class="header-mobile">
-
-            <div class="menu-toggle open-menu" id="">
-                <img src="../../../docs/imagens_template/menu-mobile.png" alt="Menu">
-            </div>
-
-            <div class="logo-button">
-                <img src="../../../docs/img/icons/icon-conecta.svg" alt="Menu">
-            </div>
-
-            <div class="close-button">
-
-                <img src="../../../docs/imagens_template/close-button.png" alt="Menu">
-            </div>
+        <header>
+            <header-component action="toggleOverlay"></header-component>
         </header>
 
         <nav class="mobile-menu" id="mobile-menu">
