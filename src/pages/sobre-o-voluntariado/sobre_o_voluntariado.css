@@ -1,7 +1,6 @@
 .container {
     display: flex;
     flex-direction: column;
-    height: auto;
     background-color: #E7ECEF;
 }
 
@@ -15,6 +14,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
+    height: 100%;
 }
 
 .image-content {
@@ -63,36 +63,14 @@
 }
 
 @media screen and (max-width: 768px) {
-
-    .header-mobile {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        justify-items: start;
-        align-items: center;
-        padding: 20px;
-        background-color: white;
-        border-bottom: none;
-        z-index: 1;
-        width: 100%;
-    }
-
-    .header-mobile > .menu-toggle {
-        justify-self: start;
-        padding-left: 24px;
-    }
-
-    .header-mobile > .logo-button {
-        justify-self: center;
-    }
-
-    .header-mobile > .close-button {
-        justify-self: end;
-        padding-right: 24px;
-    }
-
+    
     .content {
         border-radius: 0px;
         align-items: start;
+        height: auto;
+    }
+
+    .container {
         height: auto;
     }
 
