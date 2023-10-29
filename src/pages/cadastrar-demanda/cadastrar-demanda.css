@@ -74,8 +74,8 @@ textarea{
     outline: none;
     margin-top: 10px;
 }
-/* estilo para o botão voltar*/
-input[type=submit][name=voltar] {
+/* estilo para o botão cancelar*/
+input[type=submit][name=cancelar] {
     background-color: #FFFFFF;
     color: #274C77;
     margin-bottom: 30px;
