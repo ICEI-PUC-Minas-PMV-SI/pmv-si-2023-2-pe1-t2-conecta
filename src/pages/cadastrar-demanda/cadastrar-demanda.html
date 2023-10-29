@@ -7,98 +7,71 @@
     <title>cadastrar demanda</title>
     <link rel="stylesheet" href="../../css/index.css">
     <link rel="stylesheet" href="cadastrar-demanda.css">
-    <script type="module" src="../../components/header/header.js" ></script>
+    <script type="module" src="../../components/header/header.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 
 <body>
 
     <div class="container">
-
         <div id="page-overlay"></div>
-
         <header>
             <header-component action="toggleOverlay"></header-component>
         </header>
 
-        <nav class="mobile-menu" id="mobile-menu">
-            <div class="header-menu">
-                <img class="menu-toggle open-menu" src="../../../docs/imagens_template/close-button.png"
-                    alt="Close menu">
-            </div>
-
-            <div class="mobile-menu-content">
-                <div class="authentication-area">
-                    <p class="text">área da ong</p>
-                    <a class="authentication-button" href="">CADASTRE-SE</a>
-                    <a class="authentication-button" href="">LOGIN</a>
-                </div>
-
-                <div class="divider-line"></div>
-
-                <a class="navigation-button" href="#">OPORTUNIDADES</a>
-                <ul>
-                    <li><a class="navigation-button" href="#">sobre o voluntariado</a></li>
-                    <li><a class="navigation-button" href="#">como começar?</a></li>
-                    <li><a class="navigation-button" href="#">por que ser voluntário?</a></li>
-                    <li><a class="navigation-button" href="">histórias de sucesso</a></li>
-                    <li><a class="navigation-button" href="">perguntas frequentes</a></li>
-                </ul>
-            </div>
-
-        </nav>
-        <div class="content">
+        <main class="content">
             <h1 class="title" id="cadastrar-demanda">cadastrar demanda</h1>
 
+            <form action="/demandas" method="post">
 
-            <div class="row">
-                <div class="col-25">
-                    <label for="nome-demanda">Nome da demanda:</label>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="nome-demanda">Nome da demanda:</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="nome-demanda" name="nome-demanda" required>
+                    </div>
                 </div>
-                <div class="col-75">
-                    <input type="text" id="nome-demanda" name="nome-demanda" required>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-25">
-                    <label for="tipo-demanda">Tipo de demanda:</label>
-                </div>
-                <div class="col-75">
-                    <input type="radio" id="presencial" name="tipo-demanda" value="presencial" required>
-                    <label for="presencial">Presencial</label>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="tipo-demanda">Tipo de demanda:</label>
+                    </div>
+                    <div class="custom-radio">
+                        <input type="radio" id="presencial" name="tipo-demanda" value="presencial" required>
+                        <label for="presencial">Presencial</label>
 
-                    <input type="radio" id="remoto" name="tipo-demanda" value="remoto">
-                    <label for="remoto">Remoto</label>
+                        <input type="radio" id="remota" name="tipo-demanda" value="remota">
+                        <label for="remota">Remota</label>
 
-                    <input type="radio" id="hibrido" name="tipo-demanda" value="hibrido">
-                    <label for="hibrido">Híbrido</label>
+                        <input type="radio" id="hibrido" name="tipo-demanda" value="hibrida">
+                        <label for="hibrida">Híbrida</label>
+                    </div>
                 </div>
-            </div>
-            <div class="row">
-                <div class="col-25">
-                    <label for="sobre-demanda">Sobre:</label>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="sobre-demanda">Descreva sua nescessidade:</label>
+                    </div>
+                    <div class="col-75">
+                        <textarea id="sobre-demanda" name="sobre-demanda" minlength="20" maxlength="400" required></textarea>
+                    </div>
                 </div>
-                <div class="col-75">
-                    <textarea id="sobre-demanda" name="sobre-demanda" required></textarea>
+                <div class="row-button">
+                    <div><input type="submit" name="cadastrar" value="Cadastrar"></div>
+                    <div><a href="#"><input type="submit" name="voltar" value="Voltar"></a></div>
                 </div>
-            </div>
-            <div class="row-button">
-                <div><input type="submit" name="cadastrar" value="Cadastrar"></div>
-                <div><a href="#"><input type="submit" name="voltar" value="Voltar"></a></div>
-            </div>
-        </div>
+            </form>
+        </main>
     </div>
 
     <footer>
         <div class="footer-wrapper">
-            <a href="#" class="footer-item">Como começar?</a>
+            <a href="../como-comecar/como-comecar.html" class="footer-item">Como começar?</a>
             <a href="#" class="footer-item">Sobre o voluntariado</a>
             <a href="#" class="footer-item">Por que ser voluntário?</a>
             <a href="#" class="footer-item">Perguntas frequentes</a>
             <a href="#" class="footer-item">Histórias de sucesso</a>
         </div>
     </footer>
-    </div>
 
     <script src="../../js/index.js"></script>
 
