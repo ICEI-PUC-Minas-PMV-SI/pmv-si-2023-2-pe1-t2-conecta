@@ -29,6 +29,10 @@
     border-radius: 10px;
 }
 
+.collapsible-content p {
+    padding: 8px;
+}
+
 .active {
     background-color: #E8ECEF;
     border-radius: 10px 10px 0 0;
