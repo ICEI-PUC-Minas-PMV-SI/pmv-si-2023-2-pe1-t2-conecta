@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastrar ONG</title>
+    <link rel="stylesheet" href="../../css/index.css">
+    <link rel="stylesheet" href="cadastrar-ong.css">
+    <script type="module" src="../../components/header/header.js" ></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+
+<body>
+
+<div class="container">
+
+    <div id="page-overlay"></div>
+
+    <header>
+        <header-component action="toggleOverlay"></header-component>
+    </header>
+
+    <div class="content">
+
+        <div class="headline">
+            <h1 class="title">cadastrar ONG</h1>
+        </div>
+
+        <div class="section-wrapper">
+
+            <div class="row">
+                <div class="col-15">
+                    <label for="cnpj">CNPJ</label>
+                </div>
+                <div class="col-85">
+                    <input type="text" id="cnpj" name="CNPJ">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-15">
+                    <label for="nome">Nome da ONG</label>
+                </div>
+                <div class="col-85">
+                    <input type="text" id="nome" name="nome">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-15">
+                    <label for="email">E-mail</label>
+                </div>
+                <div class="col-85">
+                    <input type="email" id="email" name="email">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-15">
+                    <label for="phone">Telefone</label>
+                </div>
+                <div class="col-85">
+                    <input type="tel" id="phone" name="phone">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-15">
+                    <label for="senha">Senha</label>
+                </div>
+                <div class="col-85">
+                    <input type="password" id="senha" name="senha">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-15">
+                    <label for="confirmar-senha">Confirmar senha</label>
+                </div>
+                <div class="col-85">
+                    <input type="password" id="confirmar-senha" name="confirmar-senha">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-15">
+                    <label for="cep">CEP</label>
+                </div>
+                <div class="col-85">
+                    <input type="text" id="cep" name="cep">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-15">
+                    <label for="logradouro">Logradouro</label>
+                </div>
+                <div class="col-85">
+                    <input type="text" id="logradouro" name="logradouro">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-15">
+                    <label for="numero">Número</label>
+                </div>
+                <div class="col-85">
+                    <input type="text" id="numero" name="numero">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-15">
+                    <label for="estado">Estado</label>
+                </div>
+                <div class="col-85">
+                    <input type="text" id="estado" name="estado">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-15">
+                    <label for="cidade">Cidade</label>
+                </div>
+                <div class="col-85">
+                    <input type="text" id="cidade" name="cidade">
+                </div>
+            </div>
+            <div class="row-button">
+                <div><a href="cadastrar-ong-2.html"><input type="submit" name="proximo" value="Próximo"></a></div>
+                <div><a href="../../index.html"><input type="submit" name="cancelar" value="Cancelar"></a></div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-wrapper">
+            <a href="#" class="footer-item">Como começar?</a>
+            <a href="#" class="footer-item">Sobre o voluntariado</a>
+            <a href="#" class="footer-item">Por que ser voluntário?</a>
+            <a href="#" class="footer-item">Perguntas frequentes</a>
+            <a href="#" class="footer-item">Histórias de sucesso</a>
+        </div>
+    </footer>
+</div>
+
+<script src="../../js/index.js"></script>
+<script src="pagina-da-ong.js"></script>
+</body>
+
+</html>
