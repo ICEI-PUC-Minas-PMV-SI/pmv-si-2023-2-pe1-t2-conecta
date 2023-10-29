@@ -14,6 +14,16 @@
     max-width: 940px;
 }
 
+.content > .headline > .title {
+    color: #274C77;
+    padding: 16px 24px 0 24px;
+    font-size: 40px;
+    text-align: left;
+    justify-items: center;
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
 .section-wrapper {
     display: flex;
     flex-direction: column;
