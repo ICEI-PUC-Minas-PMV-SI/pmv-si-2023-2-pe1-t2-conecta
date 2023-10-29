@@ -1,10 +1,93 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastrar ONG</title>
+    <link rel="stylesheet" href="../../css/index.css">
+    <link rel="stylesheet" href="candidatar-a-demanda.css">
+    <script type="module" src="../../components/header/header.js" ></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
+
 <body>
 
+<div class="container">
+
+    <div id="page-overlay"></div>
+
+    <header>
+        <header-component action="toggleOverlay"></header-component>
+    </header>
+
+    <div class="content">
+
+        <div class="headline">
+            <h1 class="title">[NOME DA ONG AQUI]</h1>
+        </div>
+
+        <div class="section-wrapper">
+
+            <div class="row">
+                <div class="col-20">
+                    <label for="cpf">CPF</label>
+                </div>
+                <div class="col-80">
+                    <input type="text" id="cpf" name="cpf">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-20">
+                    <label for="nome">Nome do Candidato</label>
+                </div>
+                <div class="col-80">
+                    <input type="text" id="nome" name="nome">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-20">
+                    <label for="email">E-mail</label>
+                </div>
+                <div class="col-80">
+                    <input type="email" id="email" name="email">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-20">
+                    <label for="phone">Telefone</label>
+                </div>
+                <div class="col-80">
+                    <input type="tel" id="phone" name="phone">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-20">
+                    <label for="como">Como posso ajudar</label>
+                </div>
+                <div class="col-80">
+                    <textarea id="como" name="como"></textarea>
+                </div>
+            </div>
+            <div class="row-button">
+                <div><input onclick="alert('Candidatura enviada com sucesso.')" type="submit" name="enviar" value="Enviar"></div>
+                <div><a href="../../index.html"><input type="submit" name="cancelar" value="Cancelar"></a></div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-wrapper">
+            <a href="#" class="footer-item">Como começar?</a>
+            <a href="#" class="footer-item">Sobre o voluntariado</a>
+            <a href="#" class="footer-item">Por que ser voluntário?</a>
+            <a href="#" class="footer-item">Perguntas frequentes</a>
+            <a href="#" class="footer-item">Histórias de sucesso</a>
+        </div>
+    </footer>
+</div>
+
+<script src="../../js/index.js"></script>
 </body>
+
 </html>
