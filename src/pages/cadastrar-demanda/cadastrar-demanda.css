@@ -8,21 +8,19 @@
     background-color: #E8ECEF;
     border-radius: 0;
     align-self: center;
-    font-weight: 700;
+    
 }
 .title {
     position:relative;
     color: #274c77;
     font-size: 40px;
-    margin-bottom: 20px;
-    border-bottom: 1px dotted #716F6F; 
+    margin-bottom: 20px; 
     padding-top: 20px;
     padding-bottom: 20px;
 }
 label{
     display: inline-block;
     color: #716F6F;
-    font-size: 20px;
     margin-bottom: 0px;
     padding: 12px 12px 12px 0;
 
@@ -56,7 +54,7 @@ input[type=text]{
     vertical-align: middle;
 }
 .custom-radio > input[type="radio"]:checked + label::before {
-    background-color: rgba(0, 0, 0, 0.772);
+    background-color: rgba(0, 0, 0, 1);
     box-shadow: 0px 5px 5px rgba(100, 100, 100, 0.60);
 }
 .custom-radio > input[type="radio"]:checked + label {
