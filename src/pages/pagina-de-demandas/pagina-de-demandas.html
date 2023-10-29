@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore as Oportunidades</title>
+    <link rel="stylesheet" href="../../css/index.css">
+    <link rel="stylesheet" href="pagina-de-demandas.css">
+    <script type="module" src="../../components/header/header.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div id="page-overlay"></div>
+
+        <header>
+            <header-component action="toggleOverlay"></header-component>
+        </header>
+
+        <div class="content">
+            <div class="headline">
+                <h1 class="title">
+                    explore as oportunidades
+                </h1>
+            </div>
+            <div class="filter">
+                <label  id="filtroSelect">
+                    <img class="icon_white" src="../../../docs/img/icons/filter.png" alt="">
+                    <img class="icon_black" src="../../../docs/img/icons/filter-filled.png" alt="">
+                </label>
+                <select class="filterButton" style="display: none;">
+                    <option value="todos">Todos</option>
+                    <option value="opcao1">Remoto</option>
+                    <option value="opcao2">Presencial</option>
+                    <option value="opcao3">Híbidro</option>
+                </select>
+            </div>
+
+            <div class="tasks-wrapper">
+                <div class="vertical-task-card">
+                    <div class="card-section-wrapper">
+                        <div class="card-header">
+                            <div class="task-info">
+                                <p class="task-name">Ensinar HTML</p>
+                                <p class="task-owner">TeachTech</p>
+                            </div>
+                            <div class="profile-image-card-container">
+                                <img src="../../../docs/img/logo_ONGs/techteach-logo.png" alt="Profile image">
+                            </div>
+                        </div>
+                        <div class="task-description">
+                            <p class="task-description-text">
+                                Procuramos voluntários para ensinar HTML a jovens interessados em tecnologia. Sua
+                                contribuição pode abrir portas para o mundo da programação. Junte-se a nós e inspire o
+                                futuro digital!
+                            </p>
+                            <p class="show-more">saber mais</p>
+                        </div>
+                        <div class="help-button-wrapper">
+                            <a href="#" class="help-button">QUERO AJUDAR</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="vertical-task-card">
+                    <div class="card-section-wrapper">
+                        <div class="card-header">
+                            <div class="task-info">
+                                <p class="task-name">Criar Website</p>
+                                <p class="task-owner">WeHelp</p>
+                            </div>
+                            <div class="profile-image-card-container">
+                                <img src="../../../docs/img/logo_ONGs/we-help-logo.png" alt="Profile image">
+                            </div>
+                        </div>
+                        <div class="task-description">
+                            <p class="task-description-text">
+                                Procuramos ajuda para criar um site impactante. Se você tem habilidades em
+                                design, programação ou conteúdo, junte-se a nós e seja parte da construção deste projeto
+                                online emocionante.
+                            </p>
+                            <p class="show-more">saber mais</p>
+                        </div>
+                        <div class="help-button-wrapper">
+                            <a href="#" class="help-button">QUERO AJUDAR</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="vertical-task-card">
+                    <div class="card-section-wrapper">
+                        <div class="card-header">
+                            <div class="task-info">
+                                <p class="task-name">Conectar idosos com a tecnologia</p>
+                                <p class="task-owner">Ajuda Senior</p>
+                            </div>
+                            <div class="profile-image-card-container">
+                                <img src="../../../docs/img/logo_ONGs/ajuda-senior-logo.png" alt="Profile image">
+                            </div>
+                        </div>
+                        <div class="task-description">
+                            <p class="task-description-text">
+                                Buscamos voluntários para ajudar idosos a usar a tecnologia, promovendo a
+                                conexão e independência. Sua ajuda é essencial para tornar suas vidas mais
+                                enriquecedoras e
+                                inclusivas.
+                            </p>
+                            <p class="show-more">saber mais</p>
+                        </div>
+                        <div class="help-button-wrapper">
+                            <a href="#" class="help-button">QUERO AJUDAR</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="vertical-task-card">
+                    <div class="card-section-wrapper">
+                        <div class="card-header">
+                            <div class="task-info">
+                                <p class="task-name">Professor de Informática</p>
+                                <p class="task-owner">Happy Kids</p>
+                            </div>
+                            <div class="profile-image-card-container">
+                                <img src="../../../docs/img/logo_ONGs/happy-kids-logo.png" alt="Profile image">
+                            </div>
+                        </div>
+                        <div class="task-description">
+                            <p class="task-description-text">
+                                Estamos em busca de voluntários entusiastas e dedicados para ensinar informática
+                                para as crianças. Ajude-nos a inspirar os nossos pequenos curiosos! Junte-se a nós e
+                                faça a
+                                diferença.
+                            </p>
+                            <p class="show-more">saber mais</p>
+                        </div>
+                        <div class="help-button-wrapper">
+                            <a href="#" class="help-button">QUERO AJUDAR</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="vertical-task-card">
+                    <div class="card-section-wrapper">
+                        <div class="card-header">
+                            <div class="task-info">
+                                <p class="task-name">Ajudar alunos a programar</p>
+                                <p class="task-owner">Ensina Tech</p>
+                            </div>
+                            <div class="profile-image-card-container">
+                                <img src="../../../docs/img/logo_ONGs/ensinatech-logo.png" alt="Profile image">
+                            </div>
+                        </div>
+                        <div class="task-description">
+                            <p class="task-description-text">
+                                Você é apaixonado por programação e quer inspirar a nova geração? Junte-se a nós
+                                na jornada da educação tecnológica e compartilhe seu conhecimento com os nossos alunos!
+                            </p>
+                            <p class="show-more">saber mais</p>
+                        </div>
+                        <div class="help-button-wrapper">
+                            <a href="#" class="help-button">QUERO AJUDAR</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="vertical-task-card">
+                    <div class="card-section-wrapper">
+                        <div class="card-header">
+                            <div class="task-info">
+                                <p class="task-name">Criar conteúdo para Web</p>
+                                <p class="task-owner">Ajuda Pet</p>
+                            </div>
+                            <div class="profile-image-card-container">
+                                <img src="../../../docs/img/logo_ONGs/ajuda-pet-logo.png" alt="Profile image">
+                            </div>
+                        </div>
+                        <div class="task-description">
+                            <p class="task-description-text">
+                                Procuramos voluntários com habilidades em criação de conteúdo web. Junte-se a
+                                nossa ONG e colabore na criação de conteúdo significativo e ajude nossos amigos de
+                                quatro
+                                patas.
+                            </p>
+                            <p class="show-more">saber mais</p>
+                        </div>
+                        <div class="help-button-wrapper">
+                            <a href="#" class="help-button">QUERO AJUDAR</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="vertical-task-card">
+                    <div class="card-section-wrapper">
+                        <div class="card-header">
+                            <div class="task-info">
+                                <p class="task-name">Ajudar na manutenção do site</p>
+                                <p class="task-owner">ONG Florescer</p>
+                            </div>
+                            <div class="profile-image-card-container">
+                                <img src="../../../docs/img/logo_ONGs/ong-florescer-logo.png" alt="Profile image">
+                            </div>
+                        </div>
+                        <div class="task-description">
+                            <p class="task-description-text">
+                                Estamos buscando voluntárias com habilidades para fazer manutenção no nosso
+                                site. Sua contribuição é valiosa e fortalece a representatividade feminina na
+                                tecnologia.
+                            </p>
+                            <p class="show-more">saber mais</p>
+                        </div>
+                        <div class="help-button-wrapper">
+                            <a href="#" class="help-button">QUERO AJUDAR</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="vertical-task-card">
+                    <div class="card-section-wrapper">
+                        <div class="card-header">
+                            <div class="task-info">
+                                <p class="task-name">Assistente de inclusão digital</p>
+                                <p class="task-owner">Leia Livros</p>
+                            </div>
+                            <div class="profile-image-card-container">
+                                <img src="../../../docs/img/logo_ONGs/leia-livros-logo.png" alt="Profile image">
+                            </div>
+                        </div>
+                        <div class="task-description">
+                            <p class="task-description-text">
+                                Apoiar, à distância, pessoas +60 anos para que possam ler eBooks e ouvir
+                                audiolivros, no celular, computador ou tablet e participar de reuniões virtuais para
+                                conversar em grupo sobre o livro lido.
+                            </p>
+                            <p class="show-more">saber mais</p>
+                        </div>
+                        <div class="help-button-wrapper">
+                            <a href="#" class="help-button">QUERO AJUDAR</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="horizontal-task-card">
+                    <div class="left-side">
+                        <div class="task-info">
+                            <p class="task-name">Ensinar HTML</p>
+                            <p class="task-owner">TeachTech</p>
+                        </div>
+                        <div class="task-description">
+                            <p>
+                                Procuramos voluntários para ensinar HTML a jovens interessados em tecnologia.
+                                Sua contribuição pode abrir portas para o mundo da programação. Junte-se a nós e inspire
+                                o futuro digital!
+                            </p>
+                            <p class="show-more">saber mais</p>
+                        </div>
+                    </div>
+                    <div class="right-side">
+                        <div class="profile-image-card-container">
+                            <img src="../../../docs/img/logo_ONGs/techteach-logo.png" alt="Profile image">
+                        </div>
+                        <div class="help-button-wrapper">
+                            <a href="#" class="help-button">QUERO AJUDAR</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="horizontal-task-card">
+                    <div class="left-side">
+                        <div class="task-info">
+                            <p class="task-name">Criar Website</p>
+                            <p class="task-owner">WeHelp</p>
+                        </div>
+                        <div class="task-description">
+                            <p>
+                                Procuramos ajuda para criar um site impactante. Se você tem habilidades em
+                                design, programação ou conteúdo, junte-se a nós e seja parte da construção deste projeto
+                                online emocionante.
+                            </p>
+                            <p class="show-more">saber mais</p>
+                        </div>
+                    </div>
+                    <div class="right-side">
+                        <div class="profile-image-card-container">
+                            <img src="../../../docs/img/logo_ONGs/we-help-logo.png" alt="Profile image">
+                        </div>
+                        <div class="help-button-wrapper">
+                            <a href="#" class="help-button">QUERO AJUDAR</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="horizontal-task-card">
+                    <div class="left-side">
+                        <div class="task-info">
+                            <p class="task-name">Conectar idosos com a tecnologia</p>
+                            <p class="task-owner">Ajuda Senior</p>
+                        </div>
+                        <div class="task-description">
+                            <p>
+                                Buscamos voluntários para ajudar idosos a usar a tecnologia, promovendo a
+                                conexão e independência. Sua ajuda é essencial para tornar suas vidas mais
+                                enriquecedoras e
+                                inclusivas.
+                            </p>
+                            <p class="show-more">saber mais</p>
+                        </div>
+                    </div>
+                    <div class="right-side">
+                        <div class="profile-image-card-container">
+                            <img src="../../../docs/img/logo_ONGs/ajuda-senior-logo.png" alt="Profile image">
+                        </div>
+                        <div class="help-button-wrapper">
+                            <a href="#" class="help-button">QUERO AJUDAR</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="horizontal-task-card">
+                    <div class="left-side">
+                        <div class="task-info">
+                            <p class="task-name">Professor de Informática</p>
+                            <p class="task-owner">Happy Kids</p>
+                        </div>
+                        <div class="task-description">
+                            <p>
+                                Estamos em busca de voluntários entusiastas e dedicados para ensinar informática
+                                para as crianças. Ajude-nos a inspirar os nossos pequenos curiosos! Junte-se a nós e
+                                faça a diferença.
+                            </p>
+                            <p class="show-more">saber mais</p>
+                        </div>
+                    </div>
+                    <div class="right-side">
+                        <div class="profile-image-card-container">
+                            <img src="../../../docs/img/logo_ONGs/happy-kids-logo.png" alt="Profile image">
+                        </div>
+                        <div class="help-button-wrapper">
+                            <a href="#" class="help-button">QUERO AJUDAR</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="horizontal-task-card">
+                    <div class="left-side">
+                        <div class="task-info">
+                            <p class="task-name">Ajudar alunos a programar</p>
+                            <p class="task-owner">Ensina Tech</p>
+                        </div>
+                        <div class="task-description">
+                            <p>
+                                Você é apaixonado por programação e quer inspirar a nova geração? Junte-se a nós
+                                na jornada da educação tecnológica e compartilhe seu conhecimento com os nossos alunos!
+                            </p>
+                            <p class="show-more">saber mais</p>
+                        </div>
+                    </div>
+                    <div class="right-side">
+                        <div class="profile-image-card-container">
+                            <img src="../../../docs/img/logo_ONGs/ensinatech-logo.png" alt="Profile image">
+                        </div>
+                        <div class="help-button-wrapper">
+                            <a href="#" class="help-button">QUERO AJUDAR</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="horizontal-task-card">
+                    <div class="left-side">
+                        <div class="task-info">
+                            <p class="task-name">Criar conteúdo para Web</p>
+                            <p class="task-owner">Ajuda Pet</p>
+                        </div>
+                        <div class="task-description">
+                            <p>
+                                Procuramos voluntários com habilidades em criação de conteúdo web. Junte-se a
+                                nossa ONG e colabore na criação de conteúdo significativo e ajude nossos amigos de
+                                quatro
+                                patas.
+                            </p>
+                            <p class="show-more">saber mais</p>
+                        </div>
+                    </div>
+                    <div class="right-side">
+                        <div class="profile-image-card-container">
+                            <img src="../../../docs/img/logo_ONGs/ajuda-pet-logo.png" alt="Profile image">
+                        </div>
+                        <div class="help-button-wrapper">
+                            <a href="#" class="help-button">QUERO AJUDAR</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="horizontal-task-card">
+                    <div class="left-side">
+                        <div class="task-info">
+                            <p class="task-name">Ajudar na manutenção do site</p>
+                            <p class="task-owner">ONG Florescer</p>
+                        </div>
+                        <div class="task-description">
+                            <p>
+                                Estamos buscando voluntárias com habilidades para fazer manutenção no nosso
+                                site. Sua contribuição é valiosa e fortalece a representatividade feminina na
+                                tecnologia.
+                            </p>
+                            <p class="show-more">saber mais</p>
+                        </div>
+                    </div>
+                    <div class="right-side">
+                        <div class="profile-image-card-container">
+                            <img src="../../../docs/img/logo_ONGs/ong-florescer-logo.png" alt="Profile image">
+                        </div>
+                        <div class="help-button-wrapper">
+                            <a href="#" class="help-button">QUERO AJUDAR</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="horizontal-task-card">
+                    <div class="left-side">
+                        <div class="task-info">
+                            <p class="task-name">Assistente de inclusão digital</p>
+                            <p class="task-owner">Leia Livros</p>
+                        </div>
+                        <div class="task-description">
+                            <p>
+                                Apoiar, à distância, pessoas +60 anos para que possam ler eBooks e ouvir
+                                audiolivros, no celular, computador ou tablet e participar de reuniões virtuais para
+                                conversar em grupo sobre o livro lido.
+                            </p>
+                            <p class="show-more">saber mais</p>
+                        </div>
+                    </div>
+                    <div class="right-side">
+                        <div class="profile-image-card-container">
+                            <img src="../../../docs/img/logo_ONGs/leia-livros-logo.png" alt="Profile image">
+                        </div>
+                        <div class="help-button-wrapper">
+                            <a href="#" class="help-button">QUERO AJUDAR</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+            <footer>
+                <div class="footer-wrapper">
+                    <a href="#" class="footer-item">Como começar?</a>
+                    <a href="#" class="footer-item">Sobre o voluntariado</a>
+                    <a href="#" class="footer-item">Por que ser voluntário?</a>
+                    <a href="#" class="footer-item">Perguntas frequentes</a>
+                    <a href="#" class="footer-item">Histórias de sucesso</a>
+                </div>
+            </footer>
+
+            <script src="../../js/index.js"></script>
+            <script>
+                $("#filtroSelect").click(function(){
+                    if ($('.filterButton').hasClass('visible')) {
+                        $('.filterButton').addClass('invisible')
+                        $('.filterButton').removeClass('visible')
+                        $('.filterButton').css('display', 'none')
+                        $('.icon_black').css('display', 'none')
+                        $('.icon_white').css('display', 'block')
+                    } else {
+                        $('.filterButton').addClass('visible')
+                        $('.filterButton').removeClass('invisible')
+                        $('.filterButton').css('display', 'block')
+                        $('.icon_black').css('display', 'block')
+                        $('.icon_white').css('display', 'none')
+                    }
+                });
+            </script>
+</body>
+
+</html>
