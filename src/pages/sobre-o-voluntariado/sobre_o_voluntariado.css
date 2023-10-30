@@ -1,0 +1,132 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    background-color: #E7ECEF;
+}
+
+.header-desktop {
+    border-bottom: none;
+}
+
+.main-content {
+    background-color:#274c77;
+    border-radius: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+
+.image-content {
+    max-width: 100%;
+}
+
+.image { 
+    border-radius: 40px;
+    max-width: 100%;
+    margin: 10% 10% 10% 20%;
+}
+
+.conteudo {
+    position: relative;
+    margin: 0% 10% 10% 0%;
+}
+
+.title {
+    font-size: 40px;
+    color: #fff;
+    margin: 10% 0% 0% 10%;
+    padding: 0px 10px 10px 0px;
+}
+
+.first-paragraph {
+    color: #fff;
+    font-size: 20px;
+    line-height: 30px;
+    margin: 5% 10% 5% 10%;
+}
+
+.second-paragraph {
+    color: #fff;
+    font-size: 20px;
+    line-height: 30px;
+    margin: 0% 10% 0% 10%;
+}
+
+.sobre-o-vountariado-footer {
+    cursor: pointer;
+    color: #000;
+    text-align: center;
+    padding: 10px;
+    border: 1px solid transparent;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 1580px) {
+    
+    .content {
+        border-radius: 0px;
+        align-items: start;
+        height: auto;
+    }
+    
+    .conteudo {
+        position: relative;
+        margin: 0% 10% 10% 0%;
+    }
+
+    .main-content {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .image { 
+        border-radius: 40px;
+        max-width: 100%;
+        margin: 10% 0% 10% 10%;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    
+    .content {
+        border-radius: 0px;
+        align-items: start;
+        height: auto;
+    }
+
+    .container {
+        height: auto;
+    }
+
+    .main-content {
+        grid-template-columns: 1fr;
+    }
+
+    .image { 
+        border-radius: 40px;
+        max-width: 100%;
+        margin: 10% 0% 10% 0%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    
+    .content {
+        border-radius: 0px;
+        align-items: start;
+        height: auto;
+    }
+
+    .container {
+        height: auto;
+    }
+
+    .main-content {
+        grid-template-columns: 1fr;
+    }
+
+    .image { 
+        border-radius: 40px;
+        max-width: 80%;
+        margin: 10% 10% 10% 10%
+    }
+}

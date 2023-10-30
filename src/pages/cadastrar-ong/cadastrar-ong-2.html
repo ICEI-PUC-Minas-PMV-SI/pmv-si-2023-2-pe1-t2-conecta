@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastrar ONG</title>
+    <link rel="stylesheet" href="../../css/index.css">
+    <link rel="stylesheet" href="cadastrar-ong.css">
+    <script type="module" src="../../components/header/header.js" ></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+
+<body>
+
+<div class="container">
+
+    <div id="page-overlay"></div>
+
+    <header>
+        <header-component action="toggleOverlay"></header-component>
+    </header>
+
+    <div class="content">
+
+        <div class="headline">
+            <h1 class="title">cadastrar ONG</h1>
+        </div>
+
+        <div class="section-wrapper">
+
+            <div class="row">
+                <div class="col-15">
+                    <label for="foto">Foto do perfil</label>
+                </div>
+                <div class="col-85">
+                    <input type="file" id="foto" name="foto">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-15">
+                    <label for="sobre">Sobre</label>
+                </div>
+                <div class="col-85">
+                    <textarea id="sobre" name="sobre"></textarea>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-15">
+                    <label for="facebook">Facebook</label>
+                </div>
+                <div class="col-85">
+                    <input type="text" id="facebook" name="facebook">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-15">
+                    <label for="instagram">Instagram</label>
+                </div>
+                <div class="col-85">
+                    <input type="text" id="instagram" name="instagram">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-15">
+                    <label for="twitter">Twitter(X)</label>
+                </div>
+                <div class="col-85">
+                    <input type="text" id="twitter" name="twitter">
+                </div>
+            </div>
+            <div class="row-button">
+                <div><input type="submit" name="cadastrar" value="Cadastrar"></div>
+                <div><a href="cadastrar-ong-1.html"><input type="submit" name="voltar" value="Voltar"></a></div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-wrapper">
+            <a href="#" class="footer-item">Como começar?</a>
+            <a href="#" class="footer-item">Sobre o voluntariado</a>
+            <a href="#" class="footer-item">Por que ser voluntário?</a>
+            <a href="#" class="footer-item">Perguntas frequentes</a>
+            <a href="#" class="footer-item">Histórias de sucesso</a>
+        </div>
+    </footer>
+</div>
+
+<script src="../../js/index.js"></script>
+
+
+</body>
+
+</html>
