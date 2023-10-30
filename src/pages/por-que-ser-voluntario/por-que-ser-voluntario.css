@@ -17,6 +17,7 @@
     word-wrap: break-word;
     max-width: 100%;
     border-radius: 0px 0px 0px 0px;
+    justify-items: center;
 }
 
 .home-image {
