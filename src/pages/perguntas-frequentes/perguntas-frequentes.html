@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perguntas Frequentes</title>
+    <link rel="stylesheet" href="../../css/index.css">
+    <link rel="stylesheet" href="perguntas-frequentes.css">
+    <script type="module" src="../../components/header/header.js" ></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+
+<body>
+
+<div class="container">
+
+    <div id="page-overlay"></div>
+
+    <header>
+        <header-component action="toggleOverlay"></header-component>
+    </header>
+
+    <div class="content">
+        <div class="collapsible-content">
+            <h1 class="title">
+                perguntas frequentes
+            </h1>
+            <div class="collapsible-wrapper">
+                <button class="collapsible">Como posso me inscrever como voluntário na plataforma?</button>
+                <div class="collapsible-content">
+                    <p>Para se inscrever como voluntário, você pode ir ao menu "Oportunidades". Lá irá encontrar diversas
+                        oportunidades de acordo com suas habilidades, interesses e disponibilidade. Depois disso, você poderá
+                        clicar em "Quero ajudar" e em seguida  preencher o formulário com seus dados e sendo ou não selecionado
+                        receberá uma notificação por email.</p>
+                </div>
+            </div>
+            <div class="collapsible-wrapper">
+                <button class="collapsible">Como as ONGs são verificadas na plataforma?</button>
+                <div class="collapsible-content">
+                    <p>Para garantir a integridade e confiabilidade das ONGs listadas em nossa plataforma de conexão entre
+                        ONGs e voluntários, implementamos um processo de verificação rigoroso. Aqui estão algumas etapas
+                        comuns envolvidas na verificação de ONGs em uma plataforma desse tipo: documentação legal,
+                        avaliação da missão e causa, referências e histórico, transparência financeira.</p>
+                </div>
+            </div>
+            <div class="collapsible-wrapper">
+                <button class="collapsible">Posso escolher o tipo de trabalho voluntário que desejo fazer?</button>
+                <div class="collapsible-content">
+                    <p>Sim, você pode escolher o tipo de trabalho voluntário que deseja fazer. Você pode explorar as
+                        oportunidades na sua áreas de interesse e habilidades, e nossa plataforma mostrará oportunidades de
+                        voluntariado que correspondem a esses critérios. Você é livre para escolher as oportunidades
+                        que mais se adequam a você.</p>
+                </div>
+            </div>
+            <div class="collapsible-wrapper">
+                <button class="collapsible">Como entro em contato com uma ONG após me candidatar a uma oportunidade?</button>
+                <div class="collapsible-content">
+                    <p>Após se candidatar a uma oportunidade de voluntariado, a ONG receberá sua candidatura e entrará em
+                        contato com você através dos dados fornecidos na candidatura.</p>
+                </div>
+            </div>
+            <div class="collapsible-wrapper">
+                <button class="collapsible">Quais são os requisitos para ser voluntário em uma ONG?</button>
+                <div class="collapsible-content">
+                    <p>Os requisitos para ser voluntário podem variar de acordo com a ONG e a oportunidade específica.
+                        Alguns projetos podem exigir habilidades específicas ou um compromisso de tempo mínimo,
+                        enquanto outros podem ser mais flexíveis. Você pode encontrar informações detalhadas sobre os
+                        requisitos em cada oportunidade de voluntariado listada na plataforma. Certifique-se de ler
+                        atentamente antes de se candidatar.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-wrapper">
+            <a href="#" class="footer-item">Como começar?</a>
+            <a href="#" class="footer-item">Sobre o voluntariado</a>
+            <a href="#" class="footer-item">Por que ser voluntário?</a>
+            <a href="perguntas-frequentes.html" class="footer-item">Perguntas frequentes</a>
+            <a href="#" class="footer-item">Histórias de sucesso</a>
+        </div>
+    </footer>
+</div>
+
+<script src="../../js/index.js"></script>
+<script>
+    let coll = document.getElementsByClassName("collapsible");
+    let i;
+
+    for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function () {
+            this.classList.toggle("active");
+            let content = this.nextElementSibling;
+            if (content.style.maxHeight) {
+                content.style.maxHeight = null;
+            } else {
+                content.style.maxHeight = content.scrollHeight + "px";
+            }
+        });
+    }
+</script>
+</body>
+
+</html>
