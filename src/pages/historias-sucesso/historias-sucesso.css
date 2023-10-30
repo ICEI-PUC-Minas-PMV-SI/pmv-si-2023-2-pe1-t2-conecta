@@ -4,17 +4,14 @@
     background-color: #E7ECEF;
 }
 
-.header-desktop {
-    border-bottom: none;
-}
-
 .main-content {
     background-color:#274c77;
     border-radius: 0;
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
-    padding-bottom: 8rem;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
 }
 
 .image-content {
@@ -25,7 +22,13 @@
 .image {
     border-radius: 40px;
     max-width: 100%;
+    height: 350px;
+    width: 555px;
+    transition: transform 0.2s;
 }
+ .image:hover { 
+    transform: scale(1.1);
+ }
 
 .conteudo {
     position: relative;
@@ -35,40 +38,28 @@
 .container > .headline {
     background-color: #274C77;
     width: 100%;
-    padding-bottom: 8rem;
 }
 
 .container > .headline > .title {
     color: #ffffff;
-    padding: 16px 24px 0 24px;
+    padding: 30px 24px 0 24px;
     font-size: 40px;
     text-align: center;
     margin: 0 auto;
 }
 
-.title {
-    font-size: 40px;
+.subtitle {
+    font-size: 20px;
     color: #fff;
     text-align: center;
+    margin-bottom: 20px;
+    font-style: italic;
 }
 
-.first-paragraph {
+.statement {
     color: #fff;
     font-size: 20px;
     line-height: 30px;
-}
-
-.sobre-o-vountariado-footer {
-    cursor: pointer;
-    color: #000;
-    text-align: center;
-    padding: 10px;
-    border: 1px solid transparent;
-    text-decoration: none;
-}
-
-p {
-    padding-top: 20px;
 }
 
 @media screen and (max-width: 1580px) {
@@ -139,6 +130,8 @@ p {
 
     .image {
         border-radius: 40px;
-        object-fit: cover;
+        max-width: 80%;
+        max-height: 80%;
+        margin: 10% 10% 10% 10%;
     }
 }
