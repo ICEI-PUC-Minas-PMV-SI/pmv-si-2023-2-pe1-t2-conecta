@@ -1,0 +1,115 @@
+.content {
+    background-color: #E8ECEF;
+    border-radius: 0;
+}
+
+.content > * {
+    padding: 16px 24px 0 24px;
+    max-width: 940px;
+}
+
+.content > .headline > .title {
+    color: #274C77;
+    padding: 16px 24px 0 24px;
+    font-size: 40px;
+    text-align: left;
+    justify-items: center;
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+.section-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 80%;
+    padding: 20px;
+}
+
+input[type=password] {
+    width: 100%;
+    padding: 12px;
+    resize: vertical;
+    border-bottom: 2px solid #716F6F;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    background-color: #E8ECEF;
+    font-size: large;
+    color: #716F6F;
+}
+
+input[type="password"]:focus {
+    outline: none;
+}
+
+input[type=submit][name=cancelar] {
+    background-color: #FFFFFF;
+    color: #274C77;}
+
+input[type=submit][name=redefinir] {
+    background-color: #274C77;
+    color: #FFFFFF;
+}
+
+
+input[type=submit] {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    float: right;
+    width: 150px;
+    height: 50px;
+    font-size: 1.2em;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.row-button {
+    display: flex;
+    flex-direction: row-reverse;
+    margin-top: 40px;
+}
+
+.row-button > input {
+    margin-left: 24px;
+}
+
+.col-15 {
+    float: left;
+    width: 140px;
+    margin-top: 6px;
+    min-width: 60px;
+}
+
+.col-85 {
+    float: left;
+    width: 85%;
+    margin-top: 6px;
+}
+
+label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+    color: #716F6F;
+}
+
+@media screen and (max-width: 600px) {
+    .col-15, .col-85, input[type=submit] {
+        width: 100%;
+        margin-top: 0;
+    }
+}
+
+@media screen and (max-width: 1170px) {
+    .col-85 {
+        float: left;
+        width: 100%;
+        margin-top: 6px;
+    }
+}
