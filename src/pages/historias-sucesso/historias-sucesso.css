@@ -4,9 +4,12 @@
     background-color: #E7ECEF;
 }
 
-.main-content {
+main {
     background-color:#274c77;
     border-radius: 0;
+}
+
+.main-content {
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
@@ -25,6 +28,7 @@
     height: 350px;
     width: 555px;
     transition: transform 0.2s;
+    object-fit: cover;
 }
  .image:hover { 
     transform: scale(1.1);
@@ -35,12 +39,12 @@
     margin: 0% 10% 0% 0%;
 }
 
-.container > .headline {
+.container main  .headline {
     background-color: #274C77;
     width: 100%;
 }
 
-.container > .headline > .title {
+.container main .headline .title {
     color: #ffffff;
     padding: 30px 24px 0 24px;
     font-size: 40px;
