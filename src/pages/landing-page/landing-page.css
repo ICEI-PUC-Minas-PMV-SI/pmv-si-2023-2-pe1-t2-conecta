@@ -35,13 +35,16 @@
 * {box-sizing:border-box}
 
 .slideshow-container {
-  max-width: 1920px;
   position: relative;
   margin: auto;
 }
 
 .mySlides {
   display: none;
+}
+
+.image {
+    width: 100%;
 }
 
 .prev, .next {
@@ -93,7 +96,7 @@
   to {opacity: 1}
 }
 
-.text-wraper {
+.text-wrapper {
     text-align: left;
     margin: 40px 35px 40px 35px;
     
@@ -109,17 +112,15 @@
     text-transform: uppercase;
     font: 20px;
     margin-top: 10px;
-
 }
-
 
 .tasks-wrapper {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     max-width: 1600px;
-    gap: 40px;
-    background: #E7ECEF;
+    gap: 80px;
+    background: #ffffff;
     margin: 0 auto;
     justify-items: center;
     align-items: center;
@@ -253,6 +254,22 @@
         font-size: 40px;
     }
 
+    .prev, .next {
+        font-size: 30px;
+    }
+
+    .subtitle{
+        font-size: 35px;
+        color: #274C77
+    }
+
+    .description {
+        width: 50%;
+        text-transform: uppercase;
+        font-size: 15px;
+        margin-top: 10px;
+    }
+    
     .vertical-task-card {
         display: none;
     }
