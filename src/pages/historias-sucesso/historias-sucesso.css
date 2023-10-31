@@ -30,6 +30,7 @@ main {
     transition: transform 0.2s;
     object-fit: cover;
 }
+
  .image:hover { 
     transform: scale(1.1);
  }
