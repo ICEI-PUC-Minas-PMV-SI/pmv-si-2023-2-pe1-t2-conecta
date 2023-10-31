@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="../../css/index.css">
+    <link rel="stylesheet" href="landing-page.css">
+    <script type="module" src="../../components/header/header.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <div id="page-overlay"></div>
+
+    <header>
+        <header-component action="toggleOverlay" variant="home"></header-component>
+    </header>
+
+    <div class="content">
+        <div class="home-content">
+
+            <div class="slideshow-container">
+                <div class="mySlides fade">
+                  <div class="numbertext"></div>
+                  <img src="/src/assets/images/home-image-one.png">
+                </div>
+              
+                <div class="mySlides fade">
+                  <div class="numbertext"></div>
+                  <img src="/src/assets/images/home-image-two.jpg">
+                </div>
+              
+                <div class="mySlides fade">
+                  <div class="numbertext"></div>
+                  <img src="/src/assets/images/home-image-three.jpg">
+                </div>
+              
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+            <br>
+            
+            <div class="dots-wrapper">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
+
+            <div class="text-wrapper">
+                <h1 class="subtitle">
+                    Conheça as oportunidades de voluntariado
+                </h1>
+                <div class="description">
+                    Clique no card para conhecer a lista de oportunidades das ONGs e se voluntariar.
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <footer>
+        <div class="footer-wrapper">
+            <a href="pages/como-comecar/como-comecar.html" class="footer-item">Como começar?</a>
+            <a href="#" class="footer-item">Sobre o voluntariado</a>
+            <a href="#" class="footer-item">Por que ser voluntário?</a>
+            <a href="#" class="footer-item">Perguntas frequentes</a>
+            <a href="#" class="footer-item">Histórias de sucesso</a>
+        </div>
+    </footer>
+
+</div>
+<script src="../../js/index.js"></script>
+
+<script>
+
+    let slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+
+</script>
+</body>
+
+</html>
