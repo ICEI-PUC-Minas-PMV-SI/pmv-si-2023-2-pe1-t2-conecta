@@ -1,4 +1,6 @@
-
+*{
+    box-sizing: border-box;
+}
 .container{
     display: flex;
     flex-direction: column;
@@ -108,13 +110,6 @@ input[type=submit]{
     margin-left: 24px;
     padding-top: 40px;
 }
-/* estilo para o rodapé */
-.footer-wrapper{
-    margin-top: 100px;
-    font-size: 1.2em;
-    text-align: center;
-}
-/* estilo para rows e cols */
 .row{
     display:flex;
     align-items: baseline;
@@ -135,11 +130,29 @@ input[type=submit]{
     .content{
         align-self: center;
     }
+    form {
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        align-self: center;
+        align-items: start;
+    }
+    .row {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+    }
     textarea{
         border-radius: 15px;
     }
     .row, .col-25, .col-75{
         clear: both;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+    .row-button {
+        align-self: center;
     }
 }
 
