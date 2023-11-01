@@ -81,9 +81,11 @@ textarea {
     padding: 12px;
     resize: vertical;
     outline: none;
-    background-color: #E8ECEF;
+    background-color: white;
+    border-radius: 15px;
     font-size: large;
     color: #716F6F;
+    border: 1px solid #716F6F
 }
 
 .row:after {
