@@ -69,4 +69,4 @@ As tabelas que se seguem apresentam os requisitos funcionais e não-funcionais q
 | Id da demanda | UUID             | Identificador único da demanda relacionada | 95ddad92-c441-4e92-a34d-fcf328c69b78              |
 |     Nome      | Texto            | Nome do candidato                          | João                                              |
 |     Email     | Texto            | Endereço de e-mail do candidato            | joao@email.com                                    |
-|    Status     | Boolean          | Status do candidato (aprovado, reprovado)  | `true ou false`                                    |
+|    Active     | Boolean          | Status do candidato (aprovado, reprovado)  | `true ou false`                                    |
