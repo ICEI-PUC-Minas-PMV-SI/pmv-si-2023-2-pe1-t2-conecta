@@ -24,6 +24,15 @@
     margin: 0 auto;
 }
 
+.content > .headline > .subtitle {
+    padding: 8px 24px 0 24px;
+    color: #000000;
+    font-size: 20px;
+    align-self: center;
+    max-width: 500px;
+    text-align: center;
+}
+
 .section-wrapper {
     display: flex;
     flex-direction: column;
@@ -76,9 +85,11 @@ textarea {
     padding: 12px;
     resize: vertical;
     outline: none;
-    background-color: #E8ECEF;
+    background-color: white;
     font-size: large;
     color: #716F6F;
+    border: 1px solid #716F6F;
+    border-radius: 15px;
 }
 
 .row:after {
