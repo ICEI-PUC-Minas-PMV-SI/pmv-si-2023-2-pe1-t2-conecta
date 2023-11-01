@@ -287,7 +287,14 @@
     justify-content: center;
 }
 
-.bottom-button {
+.como-comecar-button {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    width: 90%;
+}
+
+.bottom-button-text {
     color: #FFFFFF;
     text-decoration: none;
     font-weight: 700;
@@ -326,7 +333,6 @@
 
     .description {
         width: 100%;
-        text-transform: uppercase;
         font-size: 15px;
         margin-top: 10px;
     }
@@ -349,7 +355,7 @@
         background: #6096BA;
         padding: 16px 24px 16px 24px;
         grid-template-columns: 3fr minmax(100px, 1fr);
-        max-height: 170px;
+        max-height: 202px;
         min-height: 202px;
         column-gap: 24px;
         filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
