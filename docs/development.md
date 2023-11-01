@@ -57,8 +57,8 @@ As tabelas que se seguem apresentam os requisitos funcionais e não-funcionais q
 |       Nome        | Texto                        | Nome da demanda                                                           | Criar um site                                                                       |
 |     Descrição     | Texto                        | Descrição da demanda                                                      | Precisamos de um site que recolha doações e cadastre locais de coleta               |
 |     Criado em     | Timestamp                    | Data de criação da demanda                                                | 2023-10-28T22:41:38+00:00                                                           |
-|      Status       | Boolean                      | Status da demanda (aberto, fechado)                                       | `true ou false`                                                                     |
-|       Tipo        | Texto                        | Tipo da demanda (local, remoto, híbrido)                                  | Remoto                                                                              |
+|      Status       | Texto                        | Status da demanda (aberto, fechado, finalizada) Enum                      | Aberta                                                                              |
+|       Tipo        | Texto                        | Tipo da demanda (local, remoto, híbrido)                                  | Remota                                                                              |
 | Dados de Pesquisa | Texto                        | Dados utilizados para pesquisa (nome e descrição da demanda concatenados) | Criar um site Precisamos de um site que recolha doações e cadastre locais de coleta |
 |    Candidatos     | Lista de UUIDs de candidatos | Lista com identificador de candidatos associados à demanda                | `[95ddad92-c441-4e92-a34d-fcf328c69b78, 95ddad92-c441-4e92-a34d-fcf328c69b78]`      |
 
