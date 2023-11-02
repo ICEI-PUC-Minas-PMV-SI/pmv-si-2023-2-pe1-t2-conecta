@@ -144,7 +144,7 @@ header .buttons-header-wrapper .oportunidades-button {
 
     .mobile-menu > .header-menu {
         display: flex;
-        justify-content: space-between;
+        justify-content: end;
         align-items: center;
         padding: 8px 0 8px 0;
         margin: 0;
