@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adminstrar Demandas</title>
+    <link rel="stylesheet" href="../../css/index.css">
+    <link rel="stylesheet" href="administrar-demandas.css">
+    <script type="module" src="../../components/header/header.js"></script>
+    <script type="module" src="../../components/footer/footer.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div id="page-overlay"></div>
+
+        <header>
+            <header-component action="toggleOverlay"></header-component>
+        </header>
+
+        <div class="content">
+            <div class="headline">
+                <h1 class="title">
+                    administrar demandas
+                </h1>
+            </div>
+
+            <div class="filter">
+                <label id="filtroSelect">
+                    <img class="icon_white" src="../../assets/icons/filter.png" alt="">
+                    <img class="icon_black" src="../../assets/icons/filter-filled.png" alt="">
+                </label>
+                <select class="filterButton" style="display: none;">
+                    <option value="todos">Todos</option>
+                    <option value="opcao1">Remoto</option>
+                    <option value="opcao2">Presencial</option>
+                    <option value="opcao3">Híbrido</option>
+                </select>
+            </div>
+
+            <div class="tasks-wrapper">
+                <div class="vertical-task-card">
+                    <div class="card-section-wrapper">
+                        <div class="card-header">
+                            <div class="task-info">
+                                <p class="task-name">Ensinar HTML</p>
+                                <p class="task-owner">TeachTech</p>
+                            </div>
+                        </div>
+                        <div class="task-description">
+                            <p class="task-description-text">
+                                Procuramos voluntários para ensinar HTML a jovens interessados em tecnologia. Sua
+                                contribuição pode abrir portas para o mundo da programação. Junte-se a nós e inspire o
+                                futuro digital!
+                            </p>
+                            <p class="show-more">saber mais</p>
+                        </div>
+                        <div class="cards-button">
+                            <div class="edit-delete-button-wrapper">
+                                <a href="#"><img class="edit-button" src="../../assets/icons/edit.png"
+                                        alt="Edit"></a>
+                            </div>
+                            <div class="edit-delete-button-wrapper">
+                                <a href="#"><img class="delete-button" src="../../assets/icons/delete.png"
+                                        alt="Delete"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="vertical-task-card">
+                    <div class="card-section-wrapper">
+                        <div class="card-header">
+                            <div class="task-info">
+                                <p class="task-name">Criação de Software</p>
+                                <p class="task-owner">TeachTech</p>
+                            </div>
+                        </div>
+                        <div class="task-description">
+                            <p class="task-description-text">
+                                A nossa ONG, se dedica a promover a educação infantil em comunidades carentes e busca
+                                apoio no desenvolvimento de um software educacional interativo. O objetivo é fornecer
+                                uma plataforma online que permita o acesso a conteúdo educacional de qualidade.
+                            </p>
+                            <p class="show-more">saber mais</p>
+                        </div>
+                        <div class="cards-button">
+                            <div class="edit-delete-button-wrapper">
+                                <a href="#"><img class="edit-button" src="../../assets/icons/edit.png"
+                                        alt="Edit"></a>
+                            </div>
+                            <div class="edit-delete-button-wrapper">
+                                <a href="#"><img class="delete-button" src="../../assets/icons/delete.png"
+                                        alt="Delete"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="vertical-task-card">
+                    <div class="card-section-wrapper">
+                        <div class="card-header">
+                            <div class="task-info">
+                                <p class="task-name">Mentoria para Jovens</p>
+                                <p class="task-owner">TeachTech</p>
+                            </div>
+                        </div>
+                        <div class="task-description">
+                            <p class="task-description-text">
+                                Estamos buscando apoiadores e parceiros para desenvolver um programa de mentoria em
+                                tecnologia que irá ajudar esses jovens a adquirir habilidades relevantes, orientação e
+                                inspiração.
+                            </p>
+                            <p class="show-more">saber mais</p>
+                        </div>
+                        <div class="cards-button">
+                            <div class="edit-delete-button-wrapper">
+                                <a href="#"><img class="edit-button" src="../../assets/icons/edit.png"
+                                        alt="Edit"></a>
+                            </div>
+                            <div class="edit-delete-button-wrapper">
+                                <a href="#"><img class="delete-button" src="../../assets/icons/delete.png"
+                                        alt="Delete"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="vertical-task-card">
+                    <div class="card-section-wrapper">
+                        <div class="card-header">
+                            <div class="task-info">
+                                <p class="task-name">Professor de Informática</p>
+                                <p class="task-owner">TeachTech</p>
+                            </div>
+                        </div>
+                        <div class="task-description">
+                            <p class="task-description-text">
+                                Precisamos de professor voluntário para dar início à oficina de informática ministrando
+                                aulas em nível iniciante. O principal objetivo da oficina é a inclusão digital,
+                                permitindo a essas crianças o
+                                acesso às tecnologias.
+                            </p>
+                            <p class="show-more">saber mais</p>
+                        </div>
+                        <div class="cards-button">
+                            <div class="edit-delete-button-wrapper">
+                                <a href="#"><img class="edit-button" src="../../assets/icons/edit.png"
+                                        alt="Edit"></a>
+                            </div>
+                            <div class="edit-delete-button-wrapper">
+                                <a href="#"><img class="delete-button" src="../../assets/icons/delete.png"
+                                        alt="Delete"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="horizontal-task-card">
+                    <div class="left-side">
+                        <div class="task-info">
+                            <p class="task-name">Ensinar HTML</p>
+                            <p class="task-owner">TeachTech</p>
+                        </div>
+                        <div class="task-description">
+                            <p>
+                                Procuramos voluntários para ensinar HTML a jovens interessados em tecnologia.
+                                Sua contribuição pode abrir portas para o mundo da programação. Junte-se a nós e inspire
+                                o futuro digital!
+                            </p>
+                            <p class="show-more">saber mais</p>
+                        </div>
+                    </div>
+                    <div class="right-side">
+                        <div class="cards-button">
+                            <div class="edit-delete-button-wrapper">
+                                <a href="#"><img class="edit-button" src="../../assets/icons/edit.png"
+                                        alt="Edit"></a>
+                            </div>
+                            <div class="edit-delete-button-wrapper">
+                                <a href="#"><img class="delete-button" src="../../assets/icons/delete.png"
+                                        alt="Delete"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="horizontal-task-card">
+                    <div class="left-side">
+                        <div class="task-info">
+                            <p class="task-name">Criação de Software</p>
+                            <p class="task-owner">TeachTech</p>
+                        </div>
+                        <div class="task-description">
+                            <p>
+                                A nossa ONG, se dedica a promover a educação infantil em comunidades carentes e busca
+                                apoio no desenvolvimento de um software educacional interativo. O objetivo é fornecer
+                                uma plataforma online que permita o acesso a conteúdo educacional de qualidade.
+                            </p>
+                            <p class="show-more">saber mais</p>
+                        </div>
+                    </div>
+                    <div class="right-side">
+                        <div class="cards-button">
+                            <div class="edit-delete-button-wrapper">
+                                <a href="#"><img class="edit-button" src="../../assets/icons/edit.png"
+                                        alt="Edit"></a>
+                            </div>
+                            <div class="edit-delete-button-wrapper">
+                                <a href="#"><img class="delete-button" src="../../assets/icons/delete.png"
+                                        alt="Delete"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="horizontal-task-card">
+                    <div class="left-side">
+                        <div class="task-info">
+                            <p class="task-name">Mentoria para Jovens</p>
+                            <p class="task-owner">TeachTech</p>
+                        </div>
+                        <div class="task-description">
+                            <p>
+                                Estamos buscando apoiadores e parceiros para desenvolver um programa de mentoria em
+                                tecnologia que irá ajudar esses jovens a adquirir habilidades relevantes, orientação e
+                                inspiração.
+                            </p>
+                            <p class="show-more">saber mais</p>
+                        </div>
+                    </div>
+                    <div class="right-side">
+                        <div class="cards-button">
+                            <div class="edit-delete-button-wrapper">
+                                <a href="#"><img class="edit-button" src="../../assets/icons/edit.png"
+                                        alt="Edit"></a>
+                            </div>
+                            <div class="edit-delete-button-wrapper">
+                                <a href="#"><img class="delete-button" src="../../assets/icons/delete.png"
+                                        alt="Delete"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="horizontal-task-card">
+                    <div class="left-side">
+                        <div class="task-info">
+                            <p class="task-name">Professor de Informática</p>
+                            <p class="task-owner">TeachTech</p>
+                        </div>
+                        <div class="task-description">
+                            <p>
+                                Precisamos de professor voluntário para dar início à oficina de informática ministrando
+                                aulas em nível iniciante. O principal objetivo da oficina é a inclusão digital,
+                                permitindo a essas crianças o
+                                acesso às tecnologias.
+                            </p>
+                            <p class="show-more">saber mais</p>
+                        </div>
+                    </div>
+                    <div class="right-side">
+                        <div class="cards-button">
+                            <div class="edit-delete-button-wrapper">
+                                <a href="#"><img class="edit-button" src="../../assets/icons/edit.png"
+                                        alt="Edit"></a>
+                            </div>
+                            <div class="edit-delete-button-wrapper">
+                                <a href="#"><img class="delete-button" src="../../assets/icons/delete.png"
+                                        alt="Delete"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="button-cadastrar-demanda">
+                <div class="page-button-wrapper">
+                    <a href="#" class="page-button">CADASTRAR DEMANDA</a>
+                </div>
+            </div>
+        </div>
+
+        <footer-component></footer-component>
+    </div>
+
+    <script src="../../js/index.js"></script>
+    <script>
+        $("#filtroSelect").click(function () {
+            if ($('.filterButton').hasClass('visible')) {
+                $('.filterButton').addClass('invisible')
+                $('.filterButton').removeClass('visible')
+                $('.filterButton').css('display', 'none')
+                $('.icon_black').css('display', 'none')
+                $('.icon_white').css('display', 'block')
+            } else {
+                $('.filterButton').addClass('visible')
+                $('.filterButton').removeClass('invisible')
+                $('.filterButton').css('display', 'block')
+                $('.icon_black').css('display', 'block')
+                $('.icon_white').css('display', 'none')
+            }
+        });
+    </script>
+</body>
+
+</html>
