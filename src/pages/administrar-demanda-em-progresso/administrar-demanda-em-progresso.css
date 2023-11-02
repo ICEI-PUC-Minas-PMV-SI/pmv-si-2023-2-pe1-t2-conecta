@@ -159,7 +159,7 @@
     max-height: 100%;
 }
 
-.page-button-wrapper {
+.page-button-finish {
     display: flex;
     max-width: 180px;
     height: 50px;
@@ -171,7 +171,20 @@
     align-items: center;
     justify-content: center;
     float: right;
-    margin: 0% 9% 2% 0%;
+}
+
+.page-button-edit {
+    display: flex;
+    max-width: 180px;
+    height: 50px;
+    border-radius: 5px;
+    background: #8B8C89;
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.07);
+    color: #FFFFFF;
+    font-weight: 700;
+    align-items: center;
+    justify-content: center;
+    float: right;
 }
 
 .page-button {
@@ -183,10 +196,7 @@
     text-align: center;
 }
 
-.button-cadastrar-demanda {
-    max-width: 1600px;
-    margin: 0 auto;
-}
+
 
 @media screen and (max-width: 768px) {
 
