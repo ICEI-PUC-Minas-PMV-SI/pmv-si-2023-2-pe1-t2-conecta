@@ -59,7 +59,6 @@ const cssStyle = `
         font-family: 'Open Sans', sans-serif;
         margin: 0;
         padding: 0;
-        background: #FFF;
     }
     
     .horizontal-task-card {
@@ -202,7 +201,7 @@ const cssStyle = `
         .horizontal-task-card > .left-side > .task-description > .task-description-text {
             display: -webkit-box;
             -webkit-box-orient: vertical;
-            -webkit-line-clamp: 5;
+            -webkit-line-clamp: 3;
             overflow: hidden;
             text-overflow: ellipsis;
         }

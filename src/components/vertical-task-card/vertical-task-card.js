@@ -63,7 +63,6 @@ const cssStyle = `
         font-family: 'Open Sans', sans-serif;
         margin: 0;
         padding: 0;
-        background: #FFF;
     }
     
     .vertical-task-card {
