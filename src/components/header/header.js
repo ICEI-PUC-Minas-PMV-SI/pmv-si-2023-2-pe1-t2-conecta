@@ -1,6 +1,7 @@
 import stylesheet from './header.css' assert { type: 'css' };
 import homeVariantStylesheet from './header-variant-home.css' assert { type: 'css' };
 
+const makeTemplate = (assetsFolderPath) => {
 const template = document.createElement('template');
 template.innerHTML = `
     <div class="root">
@@ -9,8 +10,7 @@ template.innerHTML = `
     
     <header class="header-desktop">
         <div class="home-logo-wrapper">
-            <img src="../../../docs/imagens_template/logo-conecta.png" alt="Logo Conecta">
-        </div>
+        <img src="${assetsFolderPath}/images/logo-conecta.png" alt="Logo Conecta">        </div>
         <div class="buttons-header-wrapper">
             <a href="#" class="header-button area-da-ong-button">ÁREA DA ONG</a>
             <a href="#" class="header-button oportunidades-button">OPORTUNIDADES</a>
@@ -23,7 +23,7 @@ template.innerHTML = `
     <nav class="mobile-menu" id="mobile-menu">
     
     <div class="header-menu">
-        <img class="menu-toggle open-menu" src="../../../docs/imagens_template/close-button.png" alt="Close menu">
+        <img class="menu-toggle open-menu" src="${assetsFolderPath}/components/close-button.png" alt="Close menu">
     </div>
 
     <div class="mobile-menu-content">
@@ -38,7 +38,7 @@ template.innerHTML = `
         <a class="navigation-button" href="#">OPORTUNIDADES</a>
         <ul>
             <li><a class="navigation-button" href="#">sobre o voluntariado</a></li>
-            <li><a class="navigation-button" href="pages/como-comecar/como-comecar.html">como começar?</a></li>
+            <li><a class="navigation-button" href="../../pages/como-comecar/como-comecar.html">como começar?</a></li>
             <li><a class="navigation-button" href="#">por que ser voluntário?</a></li>
             <li><a class="navigation-button" href="">histórias de sucesso</a></li>
             <li><a class="navigation-button" href="">perguntas frequentes</a></li>
@@ -49,37 +49,43 @@ template.innerHTML = `
     </div>
 `;
 
+return template;
+}
+
+const makeDefaultHeaderDesktopTemplate = (assetsFolderPath) => {
 const defaultHeaderMobileTemplate = document.createElement('template');
 defaultHeaderMobileTemplate.innerHTML = `
     <header class="header-mobile">
         <div class="menu-toggle open-menu" id="">
-            <img src="../../assets/components/menu-mobile-button.png" alt="Menu">
+            <img src="${assetsFolderPath}/components/menu-mobile-button.png" alt="Menu">
         </div>
 
         <div class="logo-button">
-            <img src="../../assets/icons/icon-conecta.svg" alt="Menu">
+            <img src="${assetsFolderPath}/icons/icon-conecta.svg" alt="Menu">
         </div>
 
         <div class="close-button">
-            <img src="../../assets/components/close-button.png" alt="Menu">
+            <img src="${assetsFolderPath}/components/close-button.png" alt="Menu">
         </div>
     </header>
 `
-
-const variantHeaderMobileTemplate = document.createElement('template');
-variantHeaderMobileTemplate.innerHTML = `
+    return defaultHeaderMobileTemplate;
+}
+const makeVariantHeaderMobileTemplate = (assetsFolderPath) => {
+    const variantHeaderMobileTemplate = document.createElement('template');
+    variantHeaderMobileTemplate.innerHTML = `
     <header class="header-mobile">
         <div class="menu-toggle open-menu" id="">
-            <img src="../../../docs/imagens_template/menu-mobile.png" alt="Menu">
+            <img src="${assetsFolderPath}/components/menu-mobile-button.png" alt="Menu">
         </div>
 
         <div class="header-mobile-logo">
-            <img src="../../../docs/imagens_template/logo-conecta.png" alt="Logo">
+            <img src="${assetsFolderPath}/images/logo-conecta.png" alt="Logo Conecta">
         </div>
     </header>
 `
-
-
+    return variantHeaderMobileTemplate;
+}
 
 class HeaderComponent extends HTMLElement {
     constructor() {
@@ -88,15 +94,21 @@ class HeaderComponent extends HTMLElement {
 
         this.root.adoptedStyleSheets = [stylesheet];
 
+        const assetsPath = this.variant === 'home' ? './assets' : '../../assets';
+        const template = makeTemplate(assetsPath);
+
         const clone = template.content.cloneNode(true);
+
         this.root.append(clone);
 
         if (this.variant === 'home') {
             const defaultVariant = this.root.querySelector('.header-mobile');
+            const variantHeaderMobileTemplate = makeVariantHeaderMobileTemplate(assetsPath);
             defaultVariant.replaceWith(variantHeaderMobileTemplate.content.cloneNode(true));
             this.root.adoptedStyleSheets = [stylesheet, homeVariantStylesheet]
         } else {
             const defaultVariant = this.root.querySelector('.header-mobile');
+            const defaultHeaderMobileTemplate = makeDefaultHeaderDesktopTemplate(assetsPath);
             defaultVariant.replaceWith(defaultHeaderMobileTemplate.content.cloneNode(true));
             this.root.adoptedStyleSheets = [stylesheet]
         }
