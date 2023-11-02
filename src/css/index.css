@@ -173,26 +173,6 @@ header {
     margin: 0;
 }
 
-footer {
-    background: #A3CEF1;
-    padding: 20px;
-    display: flex;
-}
-
-.footer-wrapper {
-    width: 100vw;
-    display: flex;
-    justify-content: space-evenly;
-}
-
-.footer-item {
-    color: #000;
-    font-family: 'Open Sans', sans-serif;
-    text-align: center;
-    padding: 10px;
-    border: 1px solid transparent;
-    text-decoration: none;
-}
 
 @media screen and (max-width: 1149px) {
     .header-desktop {
@@ -327,10 +307,6 @@ footer {
     .mobile-menu-content > ul > li {
         padding: 0 0 24px 0;
         list-style: none;
-    }
-
-    footer {
-        display: none;
     }
 
     .header-mobile {
