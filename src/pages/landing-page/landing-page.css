@@ -37,6 +37,11 @@
   margin: auto;
 }
 
+.slideshow-container.mobile {
+    display: none;
+}
+  
+
 .mySlides {
   display: none;
 }
@@ -107,7 +112,7 @@
 
 .description {
     width: 50%;
-    font: 20px;
+    font-size: 20px;
     margin-top: 10px;
 }
 
@@ -129,6 +134,7 @@
     padding: 16px 24px 16px 24px;
     width: 298px;
     height: 452px;
+    cursor: pointer;
 }
 
 .vertical-task-card:hover {
@@ -420,6 +426,14 @@
         border-radius: 40px;
         max-width: 100%;
         margin: 10% 0% 10% 0%;
+    }
+
+    .slideshow-container.mobile {
+        display: block;
+    }
+
+    .slideshow-container.web {
+        display: none;
     }
 
 }
