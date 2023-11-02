@@ -4,9 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sua Landing Page</title>
+    <title>Conecta</title>
     <link rel="stylesheet" href="./css/index.css">
     <script type="module" src="components/header/header.js"></script>
+    <script type="module" src="components/footer/footer.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
 </head>
@@ -20,11 +21,10 @@
         <header-component action="toggleOverlay" variant="home"></header-component>
     </header>
 
-
     <div class="content">
         <div class="home-content">
             <div class="home-image">
-                <img src="../docs/imagens_template/img-layout.png" alt="Imagem">
+                <img src="./assets/images/img-layout.png" alt="Imagem">
             </div>
             <div class="landing-page-text">
                 <p>Juntos, podemos utilizar a tecnologia para criar um mundo mais solidário!</p>
@@ -32,15 +32,7 @@
         </div>
     </div>
 
-    <footer>
-        <div class="footer-wrapper">
-            <a href="pages/como-comecar/como-comecar.html" class="footer-item">Como começar?</a>
-            <a href="#" class="footer-item">Sobre o voluntariado</a>
-            <a href="#" class="footer-item">Por que ser voluntário?</a>
-            <a href="pages/perguntas-frequentes/perguntas-frequentes.html" class="footer-item">Perguntas frequentes</a>
-            <a href="#" class="footer-item">Histórias de sucesso</a>
-        </div>
-    </footer>
+    <footer-component variant="home"></footer-component>
 
 </div>
 <script src="./js/index.js"></script>
