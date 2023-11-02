@@ -25,7 +25,7 @@ const makeTemplate = () => {
                         </div>
                     </div>
                     <div class="location-button-wrapper">
-                        <img class="image-location" src="/docs/img/icons/location.png" alt="Location">
+                        <img class="image-location" src="../../assets/icons/location.png" alt="Location">
                         <div class="location-tag"></div>
                     </div>
                 </div>
