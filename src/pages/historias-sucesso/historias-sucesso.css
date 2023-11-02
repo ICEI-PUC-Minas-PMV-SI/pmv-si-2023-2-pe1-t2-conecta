@@ -31,13 +31,17 @@ main {
     object-fit: cover;
 }
 
- .image:hover { 
+ .image:hover {
     transform: scale(1.1);
  }
 
 .conteudo {
-    position: relative;
-    margin: 0% 10% 0% 0%;
+    margin: 0% 10% 0% 5%;
+    max-width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: justify;
 }
 
 .container main  .headline {
@@ -108,7 +112,13 @@ main {
     }
 
     .main-content {
-        grid-template-columns: 1fr;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .conteudo {
+        order: 1;
     }
 
     .image {
@@ -130,7 +140,7 @@ main {
     }
 
     .main-content {
-        grid-template-columns: 1fr;
+        align-items: center;
     }
 
     .image {
