@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="../../css/index.css">
     <link rel="stylesheet" href="landing-page.css">
     <script type="module" src="../../components/header/header.js"></script>
+    <script type="module" src="../../components/footer/footer.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
 </head>
@@ -28,17 +29,17 @@
                 <div class="slideshow-container web">
                     <div class="mySlides fade">
                         <div class="numbertext"></div>
-                        <img class="image" src="/src/assets/images/home-image-one.jpg">
+                        <img class="image" src="../../assets/images/home-image-one.jpg">
                     </div>
 
                     <div class="mySlides fade">
                         <div class="numbertext"></div>
-                        <img class="image" src="/src/assets/images/home-image-two.jpg">
+                        <img class="image" src="../..//assets/images/home-image-two.jpg">
                     </div>
 
                     <div class="mySlides fade">
                         <div class="numbertext"></div>
-                        <img class="image" src="/src/assets/images/home-image-three.jpg">
+                        <img class="image" src="../../assets/images/home-image-three.jpg">
                     </div>
 
                     <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
@@ -48,17 +49,17 @@
                 <div class="slideshow-container mobile">
                     <div class="mySlides-mobile fade">
                         <div class="numbertext"></div>
-                        <img class="image" src="/src/assets/images/home-image-one-mobile.jpg">
+                        <img class="image" src="../../assets/images/home-image-one-mobile.jpg">
                     </div>
 
                     <div class="mySlides-mobile fade">
                         <div class="numbertext"></div>
-                        <img class="image" src="/src/assets/images/home-image-two-mobile.jpg">
+                        <img class="image" src="../../assets/images/home-image-two-mobile.jpg">
                     </div>
 
                     <div class="mySlides-mobile fade">
                         <div class="numbertext"></div>
-                        <img class="image" src="/src/assets/images/home-image-three-mobile.jpg">
+                        <img class="image" src="../../assets/images/home-image-three-mobile.jpg">
                     </div>
 
                     <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
@@ -315,17 +316,9 @@
 
         </div>
 
-        <footer>
-            <div class="footer-wrapper">
-                <a href="pages/como-comecar/como-comecar.html" class="footer-item">Como começar?</a>
-                <a href="#" class="footer-item">Sobre o voluntariado</a>
-                <a href="#" class="footer-item">Por que ser voluntário?</a>
-                <a href="#" class="footer-item">Perguntas frequentes</a>
-                <a href="#" class="footer-item">Histórias de sucesso</a>
-            </div>
-        </footer>
-
+        <footer-component></footer-component>
     </div>
+    
     <script src="../../js/index.js"></script>
     <script  src="../../js/landing-page.js"></script>
 </body>
