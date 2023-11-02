@@ -118,7 +118,7 @@ textarea {
 
 .col-78 {
     float: left;
-    width: 78%;
+    width: 100%;
 }
 
 label {
@@ -139,13 +139,5 @@ label {
     .col-22, .col-78, input[type=submit] {
         width: 100%;
         margin-top: 0;
-    }
-}
-
-@media screen and (max-width: 1170px) {
-    .col-78 {
-        float: left;
-        width: 100%;
-        margin-top: 6px;
     }
 }
