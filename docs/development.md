@@ -34,11 +34,41 @@ As tabelas que se seguem apresentam os requisitos funcionais e não-funcionais q
 
 ## Descrição das estruturas:
 
-## Notícia
-|  **Nome**      | **Tipo**          | **Descrição**                             | **Exemplo**                                    |
-|:--------------:|-------------------|-------------------------------------------|------------------------------------------------|
-| Id             | Numero (Inteiro)  | Identificador único da notícia            | 1                                              |
-| Título         | Texto             | Título da notícia                         | Sistemas de Informação PUC Minas é o melhor                                   |
-| Conteúdo       | Texto             | Conteúdo da notícia                       | Sistemas de Informação da PUC Minas é eleito o melhor curso do Brasil                            |
-| Id do usuário  | Numero (Inteiro)  | Identificador do usuário autor da notícia | 1                                              |
+## ONG
+| **Nome** | **Tipo**         | **Descrição**                                   | **Exemplo**                                                      |
+|:--------:|------------------|-------------------------------------------------|------------------------------------------------------------------|
+|    Id    | UUID             | Identificador único da ONG                      | 95ddad92-c441-4e92-a34d-fcf328c69b78                             |
+|   CNPJ   | Texto            | Número de CNPJ da ONG                           | 51948129000167                                                   |
+|  Email   | Texto            | Endereço de e-mail da ONG                       | ong@email.com                                                    |
+| Telefone | Texto            | Número de telefone da ONG                       | 3132700120                                                       |
+|  Senha   | Texto(SHA-256)   | Senha de acesso à conta da ONG                  | bdcebd4f01d7024696ba685eefc1c5dd446071b0c89f858aae7ef136c439e09e |
+|   CEP    | Texto            | Código de Endereçamento Postal (CEP)            | 30170131                                                         |
+|   Rua    | Texto            | Nome da rua onde está localizada a ONG          | Rua dos Tupis                                                    |
+|  Número  | Texto            | Número do endereço da ONG                       | 646                                                              |
+|  Cidade  | Texto            | Cidade onde está localizada a ONG               | Belo Horizonte                                                   |
+|  Estado  | Texto            | Abreviação do estado onde está localizada a ONG | MG (ISO 3166-2: BR)                                              |
+|   Nome   | Texto            | Nome da ONG                                     | Organização 4 patinhas                                           |
+|  Sobre   | Texto            | Descrição sobre a ONG                           | Ajudamos animais abandonados a encontrar um lar                  |
+|  Imagem  | binary           | URL da imagem representando a ONG               | `[/9j/4ASKUHINNCVDXL/OIJVNVSMDKM6846V86SD5V]`                    |
 
+## Demanda
+|     **Nome**      | **Tipo**                     | **Descrição**                                                             | **Exemplo**                                                                         |
+|:-----------------:|------------------------------|---------------------------------------------------------------------------|-------------------------------------------------------------------------------------|
+|        Id         | UUID                         | Identificador único da demanda                                            | 95ddad92-c441-4e92-a34d-fcf328c69b78                                                |
+|     Id da ONG     | UUID                         | Identificador da ONG relacionada                                          | 95ddad92-c441-4e92-a34d-fcf328c69b78                                                |
+|       Nome        | Texto                        | Nome da demanda                                                           | Criar um site                                                                       |
+|     Descrição     | Texto                        | Descrição da demanda                                                      | Precisamos de um site que recolha doações e cadastre locais de coleta               |
+|     Criado em     | Timestamp                    | Data de criação da demanda                                                | 2023-10-28T22:41:38+00:00                                                           |
+|      Status       | Texto                        | Status da demanda (aberto, fechado, finalizada) Enum                      | Aberta                                                                              |
+|       Tipo        | Texto                        | Tipo da demanda (local, remoto, híbrido)                                  | Remota                                                                              |
+| Dados de Pesquisa | Texto                        | Dados utilizados para pesquisa (nome e descrição da demanda concatenados) | Criar um site Precisamos de um site que recolha doações e cadastre locais de coleta |
+|    Candidatos     | Lista de UUIDs de candidatos | Lista com identificador de candidatos associados à demanda                | `[95ddad92-c441-4e92-a34d-fcf328c69b78, 95ddad92-c441-4e92-a34d-fcf328c69b78]`      |
+
+## Candidatos
+|   **Nome**    | **Tipo**         | **Descrição**                              | **Exemplo**                                       |
+|:-------------:|------------------|--------------------------------------------|---------------------------------------------------|
+|      Id       | UUID             | Identificador único do candidato           | 95ddad92-c441-4e92-a34d-fcf328c69b78              |
+| Id da demanda | UUID             | Identificador único da demanda relacionada | 95ddad92-c441-4e92-a34d-fcf328c69b78              |
+|     Nome      | Texto            | Nome do candidato                          | João                                              |
+|     Email     | Texto            | Endereço de e-mail do candidato            | joao@email.com                                    |
+|    Active     | Boolean          | Status do candidato (aprovado, reprovado)  | `true ou false`                                    |

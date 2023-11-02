@@ -1,0 +1,152 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    background-color: #E7ECEF;
+}
+
+main {
+    background-color:#274c77;
+    border-radius: 0;
+}
+
+.main-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+
+.image-content {
+    width: 100%;
+    display: contents;
+}
+
+.image {
+    border-radius: 40px;
+    max-width: 100%;
+    height: 350px;
+    width: 555px;
+    transition: transform 0.2s;
+    object-fit: cover;
+}
+
+ .image:hover {
+    transform: scale(1.1);
+ }
+
+.conteudo {
+    margin: 0% 10% 0% 5%;
+    max-width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: justify;
+}
+
+.container main  .headline {
+    background-color: #274C77;
+    width: 100%;
+}
+
+.container main .headline .title {
+    color: #ffffff;
+    padding: 30px 24px 0 24px;
+    font-size: 40px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.subtitle {
+    font-size: 20px;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 20px;
+    font-style: italic;
+}
+
+.statement {
+    color: #fff;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+@media screen and (max-width: 1580px) {
+
+    .content {
+        border-radius: 0px;
+        align-items: start;
+        height: auto;
+    }
+
+    .conteudo {
+        position: relative;
+        margin: 0% 10% 0% 5%;
+    }
+
+    .main-content {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .image {
+        border-radius: 40px;
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+
+    .content {
+        border-radius: 0px;
+        align-items: start;
+        height: auto;
+    }
+
+    .conteudo {
+        position: relative;
+        margin: 5% 10% 0% 5%;
+    }
+
+    .container {
+        height: auto;
+    }
+
+    .main-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .conteudo {
+        order: 1;
+    }
+
+    .image {
+        border-radius: 40px;
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    .content {
+        border-radius: 0px;
+        align-items: start;
+        height: auto;
+    }
+
+    .container {
+        height: auto;
+    }
+
+    .main-content {
+        align-items: center;
+    }
+
+    .image {
+        border-radius: 40px;
+        max-width: 80%;
+        max-height: 80%;
+        margin: 10% 10% 10% 10%;
+    }
+}
