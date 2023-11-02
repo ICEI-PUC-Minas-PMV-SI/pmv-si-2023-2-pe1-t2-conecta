@@ -31,7 +31,7 @@ main {
     object-fit: cover;
 }
 
- .image:hover { 
+ .image:hover {
     transform: scale(1.1);
  }
 
@@ -112,7 +112,13 @@ main {
     }
 
     .main-content {
-        grid-template-columns: 1fr;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .conteudo {
+        order: 1;
     }
 
     .image {
@@ -134,7 +140,7 @@ main {
     }
 
     .main-content {
-        grid-template-columns: 1fr;
+        align-items: center;
     }
 
     .image {
