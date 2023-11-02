@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adminstrar Demanda em Progresso</title>
+    <link rel="stylesheet" href="../../css/index.css">
+    <link rel="stylesheet" href="administrar-demanda-em-progresso.css">
+    <script type="module" src="../../components/header/header.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div id="page-overlay"></div>
+
+        <header>
+            <header-component action="toggleOverlay"></header-component>
+        </header>
+
+        <div class="content">
+            <div class="headline">
+                <h1 class="title">
+                    Professor de Informática
+                </h1>
+            </div>
+            <div class="headline">
+                <h2 class="subtitle">
+                    Voluntários
+                </h2>
+            </div>
+
+            <div class="tasks-wrapper">
+                <div class="vertical-task-card">
+                    <div class="card-section-wrapper">
+                        <div class="card-header">
+                            <div class="person-info">
+                                <p class="person-name">Marcelo Alves</p>
+                            </div>
+                        </div>
+                        <div class="person-description">
+                            <p class="person-description-text">
+                                Sou um entusiasta da tecnologia e estou interessado em compartilhar meu conhecimento
+                                como voluntário na área de informática. Acredito que a educação em informática é
+                                fundamental no mundo atual e quero contribuir para capacitar outras pessoas a adquirirem
+                                habilidades digitais essenciais.
+                            </p>
+                            <p class="show-more">saber mais</p>
+                        </div>
+                        <div class="cards-button">
+                            <div class="accept-remove-button-wrapper">
+                                <a href="#"><img class="accept-button" src="../../../docs/img/icons/accept.png"
+                                        alt="Accept"></a>
+                            </div>
+                            <div class="accept-remove-button-wrapper">
+                                <a href="#"><img class="remove-button" src="../../../docs/img/icons/remove.png"
+                                        alt="Remove"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="vertical-task-card">
+                    <div class="card-section-wrapper">
+                        <div class="card-header">
+                            <div class="person-info">
+                                <p class="person-name">Elisa Silva</p>
+                            </div>
+                        </div>
+                        <div class="person-description">
+                            <p class="person-description-text">
+                                Sou apaixonada por tecnologia e estou interessada em compartilhar meu conhecimento como
+                                voluntária na área. Tenho uma sólida formação em Sistemas de Informação e estou
+                                ansiosa para inspirar e capacitar outras pessoas a explorar o mundo da tecnologia.
+                            </p>
+                            <p class="show-more">saber mais</p>
+                        </div>
+                        <div class="cards-button">
+                            <div class="accept-remove-button-wrapper">
+                                <a href="#"><img class="accept-button" src="../../../docs/img/icons/accept.png"
+                                        alt="Accept"></a>
+                            </div>
+                            <div class="accept-remove-button-wrapper">
+                                <a href="#"><img class="remove-button" src="../../../docs/img/icons/remove.png"
+                                        alt="Remove"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="vertical-task-card">
+                    <div class="card-section-wrapper">
+                        <div class="card-header">
+                            <div class="person-info">
+                                <p class="person-name">Heitor Santos</p>
+                            </div>
+                        </div>
+                        <div class="person-description">
+                            <p class="person-description-text">
+                                Me considero um profissional experiente em desenvolvimento de software, estou
+                                interessado em contribuir como voluntário na vaga "professor de informática".
+                            </p>
+                            <p class="show-more">saber mais</p>
+                        </div>
+                        <div class="cards-button">
+                            <div class="accept-remove-button-wrapper">
+                                <a href="#"><img class="accept-button" src="../../../docs/img/icons/accept.png"
+                                        alt="Accept"></a>
+                            </div>
+                            <div class="accept-remove-button-wrapper">
+                                <a href="#"><img class="remove-button" src="../../../docs/img/icons/remove.png"
+                                        alt="Remove"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="vertical-task-card">
+                    <div class="card-section-wrapper">
+                        <div class="card-header">
+                            <div class="person-info">
+                                <p class="person-name">Carla Machado</p>
+                            </div>
+                        </div>
+                        <div class="person-description">
+                            <p class="person-description-text">
+                                Possuo uma sólida formação acadêmica em Ciência da Computação e mais de 5 anos de
+                                experiência em desenvolvimento de software, incluindo aplicações web, móveis e sistemas
+                                de grande escala.
+                            </p>
+                            <p class="show-more">saber mais</p>
+                        </div>
+                        <div class="cards-button">
+                            <div class="accept-remove-button-wrapper">
+                                <a href="#"><img class="accept-button" src="../../../docs/img/icons/accept.png"
+                                        alt="Accept"></a>
+                            </div>
+                            <div class="accept-remove-button-wrapper">
+                                <a href="#"><img class="remove-button" src="../../../docs/img/icons/remove.png"
+                                        alt="Remove"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="horizontal-task-card">
+                    <div class="left-side">
+                        <div class="person-info">
+                            <p class="person-name">Marcelo Alves</p>
+                        </div>
+                        <div class="person-description">
+                            <p>
+                                Sou um entusiasta da tecnologia e estou interessado em compartilhar meu conhecimento
+                                como voluntário na área de informática. Acredito que a educação em informática é
+                                fundamental no mundo atual e quero contribuir para capacitar outras pessoas a adquirirem
+                                habilidades digitais essenciais.
+                            </p>
+                            <p class="show-more">saber mais</p>
+                        </div>
+                    </div>
+                    <div class="right-side">
+                        <div class="cards-button">
+                            <div class="accept-remove-button-wrapper">
+                                <a href="#"><img class="accept-button" src="../../../docs/img/icons/accept.png"
+                                        alt="Accept"></a>
+                            </div>
+                            <div class="accept-remove-button-wrapper">
+                                <a href="#"><img class="remove-button" src="../../../docs/img/icons/remove.png"
+                                        alt="Remove"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="horizontal-task-card">
+                    <div class="left-side">
+                        <div class="person-info">
+                            <p class="person-name">Elisa Silva</p>
+                        </div>
+                        <div class="person-description">
+                            <p>
+                                Sou apaixonada por tecnologia e estou interessada em compartilhar meu conhecimento como
+                                voluntária na área. Tenho uma sólida formação em Sistemas de Informação e estou
+                                ansiosa para inspirar e capacitar outras pessoas a explorar o mundo da tecnologia.
+                            </p>
+                            <p class="show-more">saber mais</p>
+                        </div>
+                    </div>
+                    <div class="right-side">
+                        <div class="cards-button">
+                            <div class="accept-remove-button-wrapper">
+                                <a href="#"><img class="accept-button" src="../../../docs/img/icons/accept.png"
+                                        alt="Accept"></a>
+                            </div>
+                            <div class="accept-remove-button-wrapper">
+                                <a href="#"><img class="remove-button" src="../../../docs/img/icons/remove.png"
+                                        alt="Remove"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="horizontal-task-card">
+                    <div class="left-side">
+                        <div class="person-info">
+                            <p class="person-name">Heitor Santos</p>
+                        </div>
+                        <div class="person-description">
+                            <p>
+                                Me considero um profissional experiente em desenvolvimento de software, estou
+                                interessado em contribuir como voluntário na vaga "professor de informática".
+                            </p>
+                            <p class="show-more">saber mais</p>
+                        </div>
+                    </div>
+                    <div class="right-side">
+                        <div class="cards-button">
+                            <div class="accept-remove-button-wrapper">
+                                <a href="#"><img class="accept-button" src="../../../docs/img/icons/accept.png"
+                                        alt="Accept"></a>
+                            </div>
+                            <div class="accept-remove-button-wrapper">
+                                <a href="#"><img class="remove-button" src="../../../docs/img/icons/remove.png"
+                                        alt="Remove"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="horizontal-task-card">
+                    <div class="left-side">
+                        <div class="person-info">
+                            <p class="person-name">Carla Machado</p>
+                        </div>
+                        <div class="person-description">
+                            <p>
+                                Precisamos de professor voluntário para dar início à oficina de informática ministrando
+                                aulas em nível iniciante. O principal objetivo da oficina é a inclusão digital,
+                                permitindo a essas crianças o
+                                acesso às tecnologias.
+                            </p>
+                            <p class="show-more">saber mais</p>
+                        </div>
+                    </div>
+                    <div class="right-side">
+                        <div class="cards-button">
+                            <div class="accept-remove-button-wrapper">
+                                <a href="#"><img class="accept-button" src="../../../docs/img/icons/accept.png"
+                                        alt="Accept"></a>
+                            </div>
+                            <div class="accept-remove-button-wrapper">
+                                <a href="#"><img class="remove-button" src="../../../docs/img/icons/remove.png"
+                                        alt="Remove"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <div class="button-cadastrar-demanda">
+                    <div class="page-button-wrapper">
+                        <a href="#" class="page-button">CADASTRAR DEMANDA</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <footer>
+            <div class="footer-wrapper">
+                <a href="#" class="footer-item">Como começar?</a>
+                <a href="#" class="footer-item">Sobre o voluntariado</a>
+                <a href="#" class="footer-item">Por que ser voluntário?</a>
+                <a href="#" class="footer-item">Perguntas frequentes</a>
+                <a href="#" class="footer-item">Histórias de sucesso</a>
+            </div>
+        </footer>
+    </div>
+
+    <script src="../../js/index.js"></script>
+    <script>
+        $("#filtroSelect").click(function () {
+            if ($('.filterButton').hasClass('visible')) {
+                $('.filterButton').addClass('invisible')
+                $('.filterButton').removeClass('visible')
+                $('.filterButton').css('display', 'none')
+                $('.icon_black').css('display', 'none')
+                $('.icon_white').css('display', 'block')
+            } else {
+                $('.filterButton').addClass('visible')
+                $('.filterButton').removeClass('invisible')
+                $('.filterButton').css('display', 'block')
+                $('.icon_black').css('display', 'block')
+                $('.icon_white').css('display', 'none')
+            }
+        });
+    </script>
+</body>
+
+</html>
