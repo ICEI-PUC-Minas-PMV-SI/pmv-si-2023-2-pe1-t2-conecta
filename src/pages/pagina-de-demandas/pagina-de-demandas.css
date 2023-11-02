@@ -154,6 +154,7 @@
     font-weight: 700;
     align-items: center;
     justify-content: center;
+    float: right;
 }
 
 .help-button {
@@ -163,6 +164,35 @@
     font-size: 12px;
     padding: 8px;
     text-align: center;
+}
+
+.location-button-wrapper {
+    display: flex;
+    max-width: 120px;
+    height: 50px;
+    flex-shrink: 0;
+    border-radius: 5px;
+    background: none;
+    color: #FFFFFF;
+    text-decoration: none;
+    font-weight: 700;
+    align-items: center;
+    justify-content: center;
+    float: left;
+}
+
+.location-tag {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 12px;
+    padding: 8px;
+    text-align: center;
+}
+
+.image-location {
+    width: 20px;
+    height: 20px;
 }
 
 .profile-image-card-container {
@@ -180,7 +210,16 @@
     max-width: 100%;
     max-height: 100%;
 }
+@media screen and (max-width: 768px) {
+    
+    .task-info {
+        max-width: 100%;
+    }
 
+    .location-button-wrapper {
+        height: 30px;
+    }
+}
 @media screen and (max-width: 768px) {
 
     .content {
@@ -192,7 +231,11 @@
     .content > .title {
         max-width: 298px;
         align-self: start;
-        font-size: 40px;
+    }
+
+    .content > .headline > .title {
+        font-size: 30px;
+
     }
 
     .vertical-task-card {
@@ -205,7 +248,6 @@
 
     .horizontal-task-card {
         display: flex;
-
     }
 
     .horizontal-task-card {
@@ -239,6 +281,10 @@
         overflow: hidden;
         text-overflow: ellipsis;
     }
+    
+    .task-info {
+        max-width: 100%;
+    }
 
     .horizontal-task-card > .right-side {
         display: flex;
@@ -249,9 +295,12 @@
         justify-self: end;
     }
 
+    .location-button-wrapper {
+        height: 30px;
+    }
 }
 
-@media screen and (max-width: 535px) {
+@media screen and (max-width: 660px) {
 
     .task-description > p {
         display: -webkit-box;
@@ -259,6 +308,13 @@
         -webkit-line-clamp: 4;
         overflow: hidden;
         text-overflow: ellipsis;
+    }
+    .task-info {
+        max-width: 100%;
+    }
+
+    .location-button-wrapper {
+        height: 30px;
     }
 }
 
@@ -270,5 +326,12 @@
         -webkit-line-clamp: 3;
         overflow: hidden;
         text-overflow: ellipsis;
+    }
+    .task-info {
+        max-width: 100%;
+    }
+
+    .location-button-wrapper {
+        height: 30px;
     }
 }
