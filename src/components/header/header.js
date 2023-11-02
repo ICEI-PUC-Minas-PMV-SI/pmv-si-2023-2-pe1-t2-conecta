@@ -233,6 +233,7 @@ const cssStyle = `
             transition: left 0.3s;
             border-right: solid 1px var(--cor-texto);
             padding: 25px;
+            overflow-y: auto;
         }
     
         .mobile-menu > .header-menu {
