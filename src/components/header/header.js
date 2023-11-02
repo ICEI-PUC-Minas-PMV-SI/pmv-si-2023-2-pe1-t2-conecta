@@ -202,7 +202,6 @@ const cssStyle = `
     
         .header-mobile > .menu-toggle {
             justify-self: start;
-            padding-left: 24px;
         }
     
         .header-mobile > .logo-button {
