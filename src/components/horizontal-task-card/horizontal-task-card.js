@@ -1,4 +1,5 @@
 const makeTemplate = () => {
+    const rootPath = window.location.pathname.includes('index.html') ? './' : '../../';
     const template = document.createElement('template');
     template.innerHTML = `
     <div class="root">
@@ -14,7 +15,7 @@ const makeTemplate = () => {
             <p class="show-more">saber mais</p>
         </div>
         <div class="location-button-wrapper">
-            <img class="image-location" src="/docs/img/icons/location.png" alt="Location">
+            <img class="image-location" src="${rootPath}/assets/icons/location.png" alt="Location">
             <div class="location-tag"></div>
         </div>
     </div>
