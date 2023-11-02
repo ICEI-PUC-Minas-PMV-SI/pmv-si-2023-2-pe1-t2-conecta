@@ -63,7 +63,3 @@ function showSlidesMobile(n) {
     dots[slideIndex - 1].className += " active";
 }
 
-function paginaDemandas() {
-    // $(location).prop('href', window.location.origin+'/src/pages/pagina-de-demandas/pagina-de-demandas.html','_blank')
-    window.open(window.location.origin+'/src/pages/pagina-de-demandas/pagina-de-demandas.html', '_blank');
-}

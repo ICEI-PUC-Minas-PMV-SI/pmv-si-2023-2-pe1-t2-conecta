@@ -115,6 +115,12 @@
     font-size: 20px;
     margin-top: 10px;
 }
+.link-here{
+    font-size: 20px;
+    text-decoration: none;
+    color: black;
+
+}
 
 .tasks-wrapper {
     display: flex;
@@ -134,7 +140,6 @@
     padding: 16px 24px 16px 24px;
     width: 298px;
     height: 452px;
-    cursor: pointer;
 }
 
 .vertical-task-card:hover {
