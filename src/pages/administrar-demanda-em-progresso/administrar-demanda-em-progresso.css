@@ -159,6 +159,16 @@
     max-height: 100%;
 }
 
+.buttons-wrapper {
+    display: flex;
+    justify-content: right;
+    gap: 20px;
+    margin-bottom: 20px;
+    padding: 40px;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
 .page-button-finish {
     display: flex;
     max-width: 180px;
