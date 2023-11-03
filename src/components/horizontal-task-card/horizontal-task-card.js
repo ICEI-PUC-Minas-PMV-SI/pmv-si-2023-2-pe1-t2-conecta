@@ -1,5 +1,6 @@
 const makeTemplate = () => {
-    const rootPath = window.location.pathname.includes('index.html') ? './' : '../../';
+    const pathName = window.location.pathname;
+    const rootPath = pathName.includes('index.html') || pathName.endsWith("pmv-si-2023-2-pe1-t2-conecta/") ? "./" : "../../";
     const template = document.createElement('template');
     template.innerHTML = `
     <div class="root">
