@@ -255,6 +255,14 @@ const cssStyle = `
         .task-info {
             max-width: 100%;
         }
+        
+    .task-info > .task-name {
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
     
         .location-button-wrapper {
             height: 30px;
