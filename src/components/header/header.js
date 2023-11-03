@@ -2,7 +2,7 @@ const getPagePath = (pageName) => {
     const currentPath = window.location.pathname;
 
     if (pageName === 'index') {
-        if (currentPath.includes(`index.html`)) return `./index.html`
+        if (currentPath.includes(`index.html`) || currentPath.endsWith("pmv-si-2023-2-pe1-t2-conecta/") ) return `./index.html`
         return `../../index.html`
     }
 
