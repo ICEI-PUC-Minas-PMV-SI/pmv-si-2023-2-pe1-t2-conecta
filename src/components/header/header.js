@@ -2,7 +2,7 @@ const getPagePath = (pageName) => {
     const currentPath = window.location.pathname;
 
     if (pageName === 'index') {
-        if (currentPath.includes(`index.html`)) return `./index.html`
+        if (currentPath.includes(`index.html`) || currentPath.endsWith("pmv-si-2023-2-pe1-t2-conecta/") ) return `./index.html`
         return `../../index.html`
     }
 
@@ -54,7 +54,7 @@ const makeTemplate = (variant) => {
         <div class="authentication-area">
             <p class="text">área da ong</p>
             <a class="authentication-button" href=${getPagePath("cadastrar-ong")} >CADASTRE-SE</a>
-            <a class="authentication-button" href="">LOGIN</a>
+            <a class="authentication-button" href=${getPagePath("login")}>LOGIN</a>
         </div>
 
         <div class="divider-line"></div>
