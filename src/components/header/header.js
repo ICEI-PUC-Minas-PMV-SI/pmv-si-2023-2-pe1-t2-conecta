@@ -1,3 +1,28 @@
+const getPagePath = (pageName) => {
+    const currentPath = window.location.pathname;
+
+    if (pageName === 'index') {
+        if (currentPath.includes(`index.html`)) return `./index.html`
+        return `../../index.html`
+    }
+
+    if (pageName === 'cadastrar-ong') {
+        if (currentPath.includes(`cadastrar-ong.html`)) return `./cadastrar-ong-1.html`
+        if (currentPath.includes("/pages")) return `../cadastrar-ong/cadastrar-ong-1.html`
+        return `./pages/cadastrar-ong/cadastrar-ong-1.html`
+    }
+
+    if (currentPath.includes(`${pageName}.html`)) {
+        return `./${pageName}.html`
+    }
+
+    if (currentPath.includes('/pages')) {
+        return `../${pageName}/${pageName}.html`;
+    }
+
+    return `./pages/${pageName}/${pageName}.html`;
+}
+
 const makeTemplate = (variant) => {
     const rootPath = variant === 'home' ? './' : '../../';
 
@@ -9,10 +34,10 @@ const makeTemplate = (variant) => {
     
     <header class="header-desktop">
         <div class="home-logo-wrapper">
-        <a href="${rootPath}/index.html"><img src="${rootPath}/assets/images/logo-conecta.png" alt="Logo Conecta"></div></a>
+        <a href=${getPagePath("index")}><img src="${rootPath}/assets/images/logo-conecta.png" alt="Logo Conecta"></div></a>
         <div class="buttons-header-wrapper">
-            <a href="#" class="header-button area-da-ong-button">ÁREA DA ONG</a>
-            <a href="${rootPath}/pages/pagina-de-demandas/pagina-de-demandas.html" class="header-button oportunidades-button">OPORTUNIDADES</a>
+            <a href=${getPagePath("cadastrar-ong")}  class="header-button area-da-ong-button">ÁREA DA ONG</a>
+            <a href=${getPagePath("pagina-de-demandas")} class="header-button oportunidades-button">OPORTUNIDADES</a>
         </div>
 
     </header>
@@ -28,19 +53,19 @@ const makeTemplate = (variant) => {
     <div class="mobile-menu-content">
         <div class="authentication-area">
             <p class="text">área da ong</p>
-            <a class="authentication-button" href="${rootPath}/pages/cadastrar-ong/cadastrar-ong-1.html">CADASTRE-SE</a>
+            <a class="authentication-button" href=${getPagePath("cadastrar-ong")} >CADASTRE-SE</a>
             <a class="authentication-button" href="">LOGIN</a>
         </div>
 
         <div class="divider-line"></div>
 
-        <a class="navigation-button" href="${rootPath}/pages/pagina-de-demandas/pagina-de-demandas.html">OPORTUNIDADES</a>
+        <a class="navigation-button" href=${getPagePath("pagina-de-demandas")} >OPORTUNIDADES</a>
         <ul>
-            <li><a class="navigation-button" href="${rootPath}pages/sobre-o-voluntariado/sobre_o_voluntariado.html">sobre o voluntariado</a></li>
-            <li><a class="navigation-button" href="${rootPath}pages/como-comecar/como-comecar.html">como começar?</a></li>
+            <li><a class="navigation-button" href=${getPagePath("sobre-o-voluntariado")} >sobre o voluntariado</a></li>
+            <li><a class="navigation-button" href=${getPagePath("como-comecar")} >como começar?</a></li>
             <li><a class="navigation-button" href="#">por que ser voluntário?</a></li>
-            <li><a class="navigation-button" href="${rootPath}pages/historias-sucesso/historias-sucesso.html">histórias de sucesso</a></li>
-            <li><a class="navigation-button" href="${rootPath}pages/perguntas-frequentes/perguntas-frequentes.html">perguntas frequentes</a></li>
+            <li><a class="navigation-button" href=${getPagePath("historias-sucesso")} >histórias de sucesso</a></li>
+            <li><a class="navigation-button" href=${getPagePath("perguntas-frequentes")} >perguntas frequentes</a></li>
         </ul>
     </div>
     </nav>
@@ -66,7 +91,7 @@ const makeDefaultHeaderDesktopTemplate = (variant) => {
         </div>
 
         <div class="close-button">
-            <a href="${rootPath}/index.html"><img src="${rootPath}/assets/components/close-button.png" alt="Menu"></a>
+            <a href=${getPagePath("index")}><img src="${rootPath}/assets/components/close-button.png" alt="Menu"></a>
         </div>
     </header>
 `
@@ -83,7 +108,7 @@ const makeVariantHeaderMobileTemplate = (variant) => {
         </div>
 
         <div class="header-mobile-logo">
-            <a href="${rootPath}/index.html"><img src="${rootPath}/assets/images/logo-conecta.png" alt="Logo Conecta"></a>
+            <a href=${getPagePath("index")}><img src="${rootPath}/assets/images/logo-conecta.png" alt="Logo Conecta"></a>
         </div>
     </header>
 `
@@ -202,7 +227,6 @@ const cssStyle = `
     
         .header-mobile > .menu-toggle {
             justify-self: start;
-            padding-left: 24px;
         }
     
         .header-mobile > .logo-button {
