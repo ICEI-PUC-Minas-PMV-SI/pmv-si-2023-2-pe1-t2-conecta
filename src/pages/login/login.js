@@ -20,8 +20,9 @@ function handleGetIn(event) {
     const email = document.getElementById("email").value;
     const password = document.getElementById("senha").value;
 
-    if (email.length <= 0) {
-        alert("Email não pode ser vazio");
+    const regex = /\S+@\S+\.\S+/;
+    if (!regex.test(email)) {
+        alert("Email inválido.");
         return;
     }
 
