@@ -107,7 +107,7 @@ div > label {
 @media screen and (max-width: 1170px) {
     .col-85 {
         float: left;
-        width: 90%;
+        width: 94%;
         margin-top: 6px;
     }
 }
