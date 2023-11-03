@@ -235,7 +235,6 @@ const cssStyle = `
     
         .header-mobile > .close-button {
             justify-self: end;
-            padding-right: 24px;
         }
     
     

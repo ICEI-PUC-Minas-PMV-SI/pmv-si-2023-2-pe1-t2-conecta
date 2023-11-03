@@ -155,7 +155,7 @@ const cssStyle = `
     
     .profile-image-card-container {
         max-width: 80px;
-        height: 80px;
+        height: 70px;
         overflow: hidden;
         border-radius: 50%;
     }
@@ -255,7 +255,12 @@ const cssStyle = `
         .task-info {
             max-width: 100%;
         }
-    
+        .task-info > .task-name {
+            font-size: 15px;
+        }
+        .task-description {
+            font-size: 13px;
+        }
         .location-button-wrapper {
             height: 30px;
         }
