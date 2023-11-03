@@ -1,3 +1,6 @@
+*{
+    box-sizing: border-box;
+}
 .content {
     background-color: #E8ECEF;
     border-radius: 0;
@@ -102,4 +105,16 @@ label {
 
 div > label {
     padding: 0 5px 0 0;
+}
+@media screen and (max-width: 600px ){
+    .section-wrapper{
+        min-width: 80%;
+        padding: 0px;
+    }
+    form{
+        width: 100%;
+    }
+    .col-85 {
+        width: 100%;
+    }
 }
