@@ -36,7 +36,7 @@ const makeTemplate = (variant) => {
         <div class="home-logo-wrapper">
         <a href=${getPagePath("index")}><img src="${rootPath}/assets/images/logo-conecta.png" alt="Logo Conecta"></div></a>
         <div class="buttons-header-wrapper">
-            <a href=${getPagePath("cadastrar-ong")}  class="header-button area-da-ong-button">ÁREA DA ONG</a>
+            <a href=${getPagePath("login")}  class="header-button area-da-ong-button">ÁREA DA ONG</a>
             <a href=${getPagePath("pagina-de-demandas")} class="header-button oportunidades-button">OPORTUNIDADES</a>
         </div>
 
