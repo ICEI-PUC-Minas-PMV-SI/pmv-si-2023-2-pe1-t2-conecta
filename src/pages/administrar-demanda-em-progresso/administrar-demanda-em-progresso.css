@@ -21,39 +21,14 @@
     margin: 0 auto;
 }
 
-.filter {
+.content > .headline > .subtitle {
+    color: #000000;
+    padding: 16px 24px 30px 24px;
+    font-size: 30px;
+    text-align: center;
     justify-items: center;
-    background: #E7ECEF;
-    padding: 0px 0px 10px 25px;
-    max-width: 1320px;
-    padding: 0px 0px 10px 25px;
-    margin: 20px auto;
-}
-
-.icon_white {
-    width: 30px;
-    display: block;
-    cursor: pointer;
-}
-
-.icon_black {
-    width: 30px;
-    display: none;
-    cursor: pointer;
-}
-
-.filterButton {
-    background-color: #FFFFFF;
-    border-radius: 15px;
-    border-color: white;
-    color: rgb(0, 0, 0);
-    padding: 10px 60px;
-    text-align: left;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 15px;
-    margin: 8px 2px;
-    cursor: pointer;
+    max-width: 1300px;
+    margin: 0 auto;
 }
 
 .tasks-wrapper {
@@ -71,7 +46,7 @@
 
 .vertical-task-card {
     border-radius: 15px;
-    background: white;
+    background: rgba(163, 206, 241, 0.2);
     padding: 16px 24px 16px 24px;
     width: 250px;
     height: 420px;
@@ -99,7 +74,7 @@
     align-self: end;
 }
 
-.vertical-task-card > .card-section-wrapper > .task-description > .task-description-text {
+.vertical-task-card > .card-section-wrapper > .person-description > .person-description-text {
     display: -webkit-box;
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 13;
@@ -111,23 +86,23 @@
     display: none;
 }
 
-.task-info {
-    max-width: 60%;
+.person-info {
+    max-width: 100%;
 }
 
-.task-info > .task-name {
+.person-info > .person-name {
     font-size: 20px;
     font-weight: 700;
     width: 250px;
 }
 
-.task-info > .task-owner {
+.person-info > .task-owner {
     font-size: 12px;
     font-weight: 700;
     padding-top: 5px;
 }
 
-.task-description {
+.person-description {
     color: #1E1E1E;
     font-size: 15px;
     font-style: normal;
@@ -136,7 +111,7 @@
     padding-right: 8px;
 }
 
-.task-description > .show-more {
+.person-description > .show-more {
     display: none;
     color: black;
     font-size: 10px;
@@ -147,62 +122,27 @@
 
 .cards-button {
     display: flex;
-    justify-content: space-between;
 }
 
-.card-button-wrapper {
-    display: flex;
-}
-
-.manage-delete-button-wrapper {
+.accept-remove-button-wrapper {
     display: flex;
     max-width: 120px;
     flex-shrink: 0;
 }
 
-.manage-button {
-    height: 20px;
-    width: 20px;
+.accept-button {
+    height: 25px;
+    width: 25px;
     padding: 8px;
 }
 
-.delete-button {
-    height: 20px;
-    width: 20px;
+.remove-button {
+    height: 25px;
+    width: 25px;
     padding: 8px;
+
 }
 
-.card-button-wrapper {
-    display: flex;
-}
-
-.location-button-wrapper {
-    display: flex;
-    max-width: 120px;
-    flex-shrink: 0;
-    border-radius: 5px;
-    background: none;
-    color: #000000;
-    text-decoration: none;
-    font-weight: 700;
-    align-items: center;
-    justify-content: center;
-    float: right;
-}
-
-.location-tag {
-    color: #000000;
-    text-decoration: none;
-    font-weight: 700;
-    font-size: 12px;
-    padding: 8px;
-    text-align: center;
-}
-
-.image-location {
-    width: 20px;
-    height: 20px;
-}
 .profile-image-card-container {
     max-width: 80px;
     height: 80px;
@@ -219,7 +159,14 @@
     max-height: 100%;
 }
 
-.page-button-wrapper {
+.buttons-wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 2%;
+}
+
+.page-button-finish {
     display: flex;
     max-width: 180px;
     height: 50px;
@@ -230,7 +177,21 @@
     font-weight: 700;
     align-items: center;
     justify-content: center;
-    margin-bottom: 2%;
+    float: right;
+}
+
+.page-button-edit {
+    display: flex;
+    max-width: 180px;
+    height: 50px;
+    border-radius: 5px;
+    background: #8B8C89;
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.07);
+    color: #FFFFFF;
+    font-weight: 700;
+    align-items: center;
+    justify-content: center;
+    float: right;
 }
 
 .page-button {
@@ -242,14 +203,7 @@
     text-align: center;
 }
 
-.button-cadastrar-demanda {
-    max-width: 1600px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    margin-bottom: 2%;
-}
+
 
 @media screen and (max-width: 768px) {
 
@@ -275,6 +229,7 @@
 
     .horizontal-task-card {
         display: flex;
+
     }
 
     .horizontal-task-card {
@@ -292,14 +247,15 @@
         flex-direction: column;
         justify-content: space-between;
         width: 100%;
-        height: inherit;
+        height: 100%;
     }
 
     .horizontal-task-card > .left-side > .task-description {
         margin-bottom: 24px;
+        margin-top: 24px;
     }
 
-    .horizontal-task-card > .left-side > .task-description > .task-description-text {
+    .horizontal-task-card > .left-side > .person-description > .person-description-text {
         display: -webkit-box;
         -webkit-box-orient: vertical;
         -webkit-line-clamp: 5;
@@ -317,26 +273,36 @@
 
     .cards-button {
         display: block;
-        justify-content: space-between;
     }
 
-    .manage-button {
-        height: 20px;
-        width: 20px;
+    .accept-button {
+        height: 25px;
+        width: 25px;
         padding: 0px 0px 10px 0px;
     }
 
-    .delete-button {
-        height: 20px;
-        width: 20px;
+    .remove-button {
+        height: 25px;
+        width: 25px;
         padding: 8px;
         padding: 30px 0px 0px 0px;
+    }
+
+    .buttons-wrapper {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        margin: 0% 10% 10% 10%;
+    }
+
+    .person-info > .person-name {
+        margin-bottom: 5px;
     }
 }
 
 @media screen and (max-width: 535px) {
 
-    .task-description > p {
+    .person-description > p {
         display: -webkit-box;
         -webkit-box-orient: vertical;
         -webkit-line-clamp: 4;
@@ -347,7 +313,7 @@
 
 @media screen and (max-width: 425px) {
 
-    .task-description > p {
+    .person-description > p {
         display: -webkit-box;
         -webkit-box-orient: vertical;
         -webkit-line-clamp: 3;
