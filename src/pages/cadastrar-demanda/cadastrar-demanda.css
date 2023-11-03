@@ -5,27 +5,32 @@
 .container {
     display: flex;
     flex-direction: column;
-    height: auto;
 }
 
 .content {
     background-color: #E8ECEF;
     border-radius: 0;
-    align-items: center;
-
+}
+.content > * {
+    padding: 16px 24px 0 24px;
+    max-width: 940px;
 }
 
 .title {
-    display: flex;
     position: relative;
     color: #274c77;
     font-size: 40px;
-    margin-bottom: 20px;
     padding-top: 20px;
     padding-bottom: 20px;
     justify-content: center;
 }
-
+form{
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 20px;
+}
 label {
     display: inline-block;
     color: #716F6F;
@@ -34,8 +39,9 @@ label {
 
 }
 
-input[type=text] {
+input[type=text], input[type="text"]:focus {
     width: 100%;
+    padding: 12px;
     border-bottom: 2px solid #716F6F;
     border-top: 0;
     border-left: 0;
@@ -76,14 +82,13 @@ input[type=text] {
 
 /* estilo do textarea */
 textarea {
-    display: block;
     width: 100%;
     height: 200px;
+    padding: 12px;
     border-radius: 15px;
     border: 2px solid #716F6F;
     font-size: large;
     outline: none;
-    margin-top: 10px;
 }
 
 /* estilo para o botão cancelar*/
@@ -105,15 +110,12 @@ input[type=submit] {
     padding: 12px 20px;
     border: none;
     border-radius: 5px;
-    margin-top: 20px;
-    margin-bottom: 20px;
     cursor: pointer;
     float: right;
     width: 150px;
     height: 50px;
     font-size: 1.2em;
 }
-
 .row-button {
     display: flex;
     flex-direction: row-reverse;
@@ -124,47 +126,18 @@ input[type=submit] {
     padding-top: 40px;
 }
 
-.row {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
 
-}
-
-
-@media screen and (max-width: 768px) {
-
+@media screen and (max-width: 600px ) {
     .title{
         font-size: 30px;
     }
     form {
-        display: flex;
-        flex-direction: column;
-        width: 60%;
-        align-self: center;
-        align-items: start;
+        min-width: 80%;
+        padding: 0px;   
     }
-
-    .row {
-        display: flex;
-        flex-direction: column;
-        align-items: start;
-    }
-
-    .row, .col-25, .col-75 {
-        clear: both;
+    .col-25, .col-75 {
         margin: 0;
         padding: 0;
         width: 100%;
-    }
-
-    .row-button {
-        align-self: center;
-    }
-}
-@media screen and (max-width: 600px ) {
-    form {
-        min-width: 80%;
-        
     }
 }
