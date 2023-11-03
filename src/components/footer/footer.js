@@ -1,17 +1,29 @@
-const makeTemplate = (variant) => {
-    const rootPath = variant === 'home' ? './' : '../../';
+const getPagePath = (pageName) => {
+    const currentPath = window.location.pathname;
 
+    if (currentPath.includes(`${pageName}.html`)) {
+        return `./${pageName}.html`
+    }
+
+    if (currentPath.includes('/pages')) {
+        return `../${pageName}/${pageName}.html`;
+    }
+
+    return `./pages/${pageName}/${pageName}.html`;
+}
+
+const makeTemplate = (variant) => {
     const template = document.createElement('template');
     template.innerHTML = `
     <div class="root">
    
     <footer>
         <div class="footer-wrapper">
-            <a href="${rootPath}/pages/como-comecar/como-comecar.html" class="footer-item">Como começar?</a>
-            <a href="${rootPath}/pages/sobre-o-voluntariado/sobre_o_voluntariado.html" class="footer-item">Sobre o voluntariado</a>
+            <a href=${getPagePath("como-comecar")} class="footer-item">Como começar?</a>
+            <a href=${getPagePath("sobre-o-voluntariado")} class="footer-item">Sobre o voluntariado</a>
             <a href="#" class="footer-item">Por que ser voluntário?</a>
-            <a href="${rootPath}/pages/perguntas-frequentes/perguntas-frequentes.html" class="footer-item">Perguntas frequentes</a>
-            <a href="${rootPath}/pages/historias-sucesso/historias-sucesso.html" class="footer-item">Histórias de sucesso</a>
+            <a href=${getPagePath("perguntas-frequentes")} class="footer-item">Perguntas frequentes</a>
+            <a href=${getPagePath("historias-sucesso")} class="footer-item">Histórias de sucesso</a>
         </div>
     </footer>
     
