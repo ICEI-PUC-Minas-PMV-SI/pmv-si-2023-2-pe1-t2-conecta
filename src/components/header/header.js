@@ -63,7 +63,7 @@ const makeTemplate = (variant) => {
         <ul>
             <li><a class="navigation-button" href=${getPagePath("sobre-o-voluntariado")} >sobre o voluntariado</a></li>
             <li><a class="navigation-button" href=${getPagePath("como-comecar")} >como começar?</a></li>
-            <li><a class="navigation-button" href="#">por que ser voluntário?</a></li>
+            <li><a class="navigation-button" href=${getPagePath("por-que-ser-voluntario")} >por que ser voluntario</a></li>
             <li><a class="navigation-button" href=${getPagePath("historias-sucesso")} >histórias de sucesso</a></li>
             <li><a class="navigation-button" href=${getPagePath("perguntas-frequentes")} >perguntas frequentes</a></li>
         </ul>
@@ -235,7 +235,6 @@ const cssStyle = `
     
         .header-mobile > .close-button {
             justify-self: end;
-            padding-right: 24px;
         }
     
     

@@ -149,13 +149,13 @@
     display: flex;
 }
 
-.edit-delete-button-wrapper {
+.manage-delete-button-wrapper {
     display: flex;
     max-width: 120px;
     flex-shrink: 0;
 }
 
-.edit-button {
+.manage-button {
     height: 20px;
     width: 20px;
     padding: 8px;
@@ -283,7 +283,7 @@
         display: block;
     }
 
-    .edit-button {
+    .manage-button {
         height: 20px;
         width: 20px;
         padding: 0px 0px 10px 0px;
