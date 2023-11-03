@@ -20,8 +20,7 @@
     position: relative;
     color: #274c77;
     font-size: 40px;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding: 16px 24px 0 24px;
     justify-content: center;
 }
 form{
@@ -50,7 +49,6 @@ input[type=text], input[type="text"]:focus {
     font-size: large;
     color: #716F6F;
     outline: none;
-    margin-bottom: 20px;
 }
 
 /* estilo para os botões radio*/
@@ -129,12 +127,11 @@ input[type=submit] {
 
 @media screen and (max-width: 600px ) {
     form {
-        min-width: 80%;
+        min-width: 90%;
         padding: 0px;   
     }
-    .col-25, .col-75 {
+    .col-25, .col-75, input[type=submit] {
         margin: 0;
-        padding: 0;
         width: 100%;
     }
 }
