@@ -111,6 +111,6 @@ label {
 
 @media screen and (max-width: 600px) {
     .col-85 {
-        width: 90%;
+        width: 100%;
     }
 }

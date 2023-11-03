@@ -136,7 +136,6 @@ label {
 
 @media screen and (max-width: 600px) {
     .content > .headline > .title {
-        font-size: 30px;
         margin-bottom: 20px;
     }
     .section-wrapper{
