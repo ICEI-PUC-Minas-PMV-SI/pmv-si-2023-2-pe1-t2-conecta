@@ -90,7 +90,7 @@ input[type=submit] {
 
 .col-85 {
     float: left;
-    width: 85%;
+    width: 94%;
     margin-top: 6px;
 }
 
@@ -102,18 +102,4 @@ label {
 
 div > label {
     padding: 0 5px 0 0;
-}
-
-@media screen and (max-width: 1170px) {
-    .col-85 {
-        float: left;
-        width: 94%;
-        margin-top: 6px;
-    }
-}
-
-@media screen and (max-width: 600px) {
-    .col-85 {
-        width: 90%;
-    }
 }
