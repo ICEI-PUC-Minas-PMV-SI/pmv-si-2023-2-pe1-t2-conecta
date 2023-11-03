@@ -155,7 +155,7 @@ const cssStyle = `
     
     .profile-image-card-container {
         max-width: 80px;
-        height: 80px;
+        height: 70px;
         overflow: hidden;
         border-radius: 50%;
     }
@@ -187,7 +187,6 @@ const cssStyle = `
             max-height: 170px;
             min-height: 170px;
             column-gap: 24px;
-            filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
         }
     
         .horizontal-task-card > .left-side {
@@ -255,11 +254,19 @@ const cssStyle = `
         .task-info {
             max-width: 100%;
         }
-    
-        .location-button-wrapper {
-            height: 30px;
+        
+        .task-info > .task-name {
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 2;
+            overflow: hidden;
+            text-overflow: ellipsis;
         }
-    }
+
+        .location-button-wrapper {
+             height: 30px;
+         }
+     }
 
 `
 

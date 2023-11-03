@@ -1,0 +1,105 @@
+.content {
+    background-color: #E8ECEF;
+    border-radius: 0;
+}
+
+.content > * {
+    padding: 16px 24px 0 24px;
+    max-width: 940px;
+}
+
+.content > .headline > .title {
+    color: #274C77;
+    padding: 16px 24px 0 24px;
+    font-size: 40px;
+    text-align: left;
+    justify-items: center;
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+.section-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    max-width: 400px;
+    padding: 20px;
+}
+
+input[type=password], input[type=text] {
+    width: 100%;
+    padding: 8px 12px 0 12px;
+    resize: vertical;
+    border-bottom: 2px solid #716F6F;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    background-color: #E8ECEF;
+    font-size: large;
+    color: #716F6F;
+}
+
+input[type="password"]:focus, input[type="text"]:focus {
+    outline: none;
+}
+
+input[type=submit][name=entrar] {
+    background-color: #274C77;
+    color: #FFFFFF;
+}
+input[type=checkbox] {
+    margin-right: 5px;
+}
+
+input[type=submit] {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    float: right;
+    width: 100%;
+    height: 50px;
+    font-size: 1.2em;
+}
+
+.row {
+    margin-top: 12px;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.row-button {
+    padding-top: 120px;
+}
+
+.col {
+    float: left;
+    padding-top: 5px;
+}
+
+.col-15 {
+    float: left;
+    width: 140px;
+    margin-top: 6px;
+    min-width: 60px;
+}
+
+.col-85 {
+    float: left;
+    width: 94%;
+    margin-top: 6px;
+}
+
+label {
+    padding: 12px 12px 0 0;
+    display: inline-block;
+    color: #716F6F;
+}
+
+div > label {
+    padding: 0 5px 0 0;
+}
