@@ -1,10 +1,75 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="../../css/index.css">
+    <link rel="stylesheet" href="login.css">
+    <script type="module" src="../../components/header/header.js"></script>
+    <script type="module" src="../../components/footer/footer.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
+
 <body>
 
+<div class="container">
+
+    <div id="page-overlay"></div>
+
+    <header>
+        <header-component action="toggleOverlay"></header-component>
+    </header>
+
+    <div class="content">
+
+        <div class="headline">
+            <h1 class="title">entrar</h1>
+        </div>
+
+        <div class="section-wrapper">
+
+            <form method="post" id="login-form">
+                <div class="row">
+                    <div class="col-15">
+                        <label for="email">E-mail</label>
+                    </div>
+                    <div class="col-85">
+                        <input type="text" id="email" name="email">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-15">
+                        <label for="senha">Senha</label>
+                    </div>
+                    <div class="col-85">
+                        <input type="password" id="senha" name="senha">
+                    </div>
+                </div>
+                <div style="font-size: smaller;">
+                    <div class="col">
+                        <input type="checkbox" id="lembrar" name="lembrar"><label for="lembrar">Lembre de mim.</label>
+                    </div>
+                    <div class="col">
+                        <a href="../recuperar-senha/recuperar-senha.html">Esqueceu a senha?</a>
+                    </div>
+                </div>
+                <div class="row-button">
+                    <input id="entrar" type="submit" name="entrar" value="Entrar">
+                </div>
+                <div>
+                    <label>Não tem uma conta?</label><a href="../cadastrar-ong/cadastrar-ong-1.html">Cadastrar</a>
+                </div>
+            </form>
+
+        </div>
+    </div>
+
+    <footer-component></footer-component>
+</div>
+
+<script src="../../js/index.js"></script>
 </body>
+
 </html>
