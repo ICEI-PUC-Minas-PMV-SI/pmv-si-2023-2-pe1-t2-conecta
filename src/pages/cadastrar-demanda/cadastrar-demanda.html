@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cadastrar demanda</title>
+    <link rel="stylesheet" href="../../css/index.css">
+    <link rel="stylesheet" href="cadastrar-demanda.css">
+    <script type="module" src="../../components/header/header.js"></script>
+    <script type="module" src="../../components/footer/footer.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+
+<body>
+
+    <div class="container">
+        <div id="page-overlay"></div>
+        <header>
+            <header-component action="toggleOverlay"></header-component>
+        </header>
+
+        <main class="content">
+            <h1 class="title" id="cadastrar-demanda">cadastrar demanda</h1>
+
+            <form action="/demandas" method="post">
+
+                <div class="row">
+                    <div class="col-25">
+                        <label for="nome-demanda">Nome da demanda:</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="nome-demanda" name="nome-demanda"  maxlength="30" required>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="tipo-demanda">Tipo da demanda:</label>
+                    </div>
+                    <div class="custom-radio">
+                        <input type="radio" id="presencial" name="tipo-demanda" value="presencial" required>
+                        <label for="presencial">Presencial</label>
+
+                        <input type="radio" id="remoto" name="tipo-demanda" value="remoto">
+                        <label for="remoto">Remoto</label>
+
+                        <input type="radio" id="hibrido" name="tipo-demanda" value="hibrido">
+                        <label for="hibrido">Híbrido</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="sobre-demanda">Descreva sua necessidade:</label>
+                    </div>
+                    <div class="col-75">
+                        <textarea id="sobre-demanda" name="sobre-demanda" minlength="100" maxlength="300" required></textarea>
+                    </div>
+                </div>
+                <div class="row-button">
+                    <div><input type="submit" name="cadastrar" value="Cadastrar"></div>
+                    <div><a href="#"><input type="submit" name="cancelar" value="Cancelar"></a></div>
+                </div>
+            </form>
+        </main>
+        <footer-component></footer-component>   
+    </div>
+    <script src="../../js/index.js"></script>
+
+</body>
+
+</html>

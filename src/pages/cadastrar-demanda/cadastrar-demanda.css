@@ -1,0 +1,170 @@
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+}
+
+.content {
+    background-color: #E8ECEF;
+    border-radius: 0;
+    align-items: center;
+
+}
+
+.title {
+    display: flex;
+    position: relative;
+    color: #274c77;
+    font-size: 40px;
+    margin-bottom: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    justify-content: center;
+}
+
+label {
+    display: inline-block;
+    color: #716F6F;
+    margin-bottom: 0px;
+    padding: 12px 12px 12px 0;
+
+}
+
+input[type=text] {
+    width: 100%;
+    border-bottom: 2px solid #716F6F;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    background-color: #E8ECEF;
+    font-size: large;
+    color: #716F6F;
+    outline: none;
+    margin-bottom: 20px;
+}
+
+/* estilo para os botões radio*/
+.custom-radio > input[type="radio"] {
+    display: none;
+}
+
+.custom-radio > input[type="radio"] + label::before {
+    content: '';
+    height: 10px;
+    width: 10px;
+    margin-right: 5px;
+    margin-bottom: 1px;
+    border-radius: 10px;
+    display: inline-block;
+    background-color: white;
+    border: 1px solid #716F6F;
+    vertical-align: middle;
+}
+
+.custom-radio > input[type="radio"]:checked + label::before {
+    background-color: rgba(0, 0, 0, 1);
+    box-shadow: 0px 5px 5px rgba(100, 100, 100, 0.60);
+}
+
+.custom-radio > input[type="radio"]:checked + label {
+    color: #4d4848;
+}
+
+/* estilo do textarea */
+textarea {
+    display: block;
+    width: 100%;
+    height: 200px;
+    border-radius: 15px;
+    border: 2px solid #716F6F;
+    font-size: large;
+    outline: none;
+    margin-top: 10px;
+}
+
+/* estilo para o botão cancelar*/
+input[type=submit][name=cancelar] {
+    background-color: #FFFFFF;
+    color: #274C77;
+    margin-bottom: 30px;
+}
+
+/* estilo para o botão cadastrar*/
+input[type=submit][name=cadastrar] {
+    background-color: #274C77;
+    color: #FFFFFF;
+
+}
+
+/* estilo para o botão tipo submit*/
+input[type=submit] {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    float: right;
+    width: 150px;
+    height: 50px;
+    font-size: 1.2em;
+}
+
+.row-button {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.row-button > div {
+    margin-left: 24px;
+    padding-top: 40px;
+}
+
+.row {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+
+@media screen and (max-width: 768px) {
+
+    .title{
+        font-size: 30px;
+    }
+    form {
+        display: flex;
+        flex-direction: column;
+        width: 60%;
+        align-self: center;
+        align-items: start;
+    }
+
+    .row {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+    }
+
+    .row, .col-25, .col-75 {
+        clear: both;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+
+    .row-button {
+        align-self: center;
+    }
+}
+@media screen and (max-width: 600px ) {
+    form {
+        min-width: 80%;
+        
+    }
+}
