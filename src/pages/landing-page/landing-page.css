@@ -111,7 +111,7 @@
 }
 
 .description {
-    width: 50%;
+    width: 100%;
     font-size: 20px;
     margin-top: 10px;
 }
@@ -119,14 +119,13 @@
     font-size: 20px;
     text-decoration: none;
     color: black;
-
 }
 
 .tasks-wrapper {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    max-width: 1600px;
+    max-width: 1460px;
     gap: 40px;
     background: #ffffff;
     margin: 0 auto;
@@ -231,6 +230,35 @@
     padding: 8px;
     text-align: center;
 }
+.see-more-button{
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.more-button-wrapper {
+    display: flex;
+    width: 130px;
+    height: 50px;
+    border-radius: 5px;
+    background: rgb(255, 255, 255);
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.07);
+    color: #FFFFFF;
+    text-decoration: none;
+    font-weight: 700;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black;
+}
+
+.more-button {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 12px;
+    padding: 8px;
+    text-align: center;
+}
 
 .profile-image-card-container {
     max-width: 80px;
@@ -253,7 +281,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
-    margin-top: 5%;
+    margin-top: 40px;
     margin-bottom: 5%;
     padding: 35px 35px 35px 70px;
 }
