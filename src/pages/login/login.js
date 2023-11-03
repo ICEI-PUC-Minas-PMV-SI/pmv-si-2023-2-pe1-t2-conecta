@@ -1,4 +1,5 @@
 document.getElementById("entrar").addEventListener("click", handleGetIn);
+document.getElementById("esqueceu-senha").addEventListener("click", handleForgotPassword);
 
 function handleForgotPassword() {
     const email = document.getElementById("email").value;
@@ -10,10 +11,8 @@ function handleForgotPassword() {
     }
 
     alert("Recuperação de senha realizado com sucesso. Verifique seu e-mail.");
-    window.location.href = "../../index.html";
+    window.location.href = "../login/login.html";
 }
-
-document.getElementById("esqueceu-senha").addEventListener("click", handleForgotPassword);
 
 function handleGetIn(event) {
     event.preventDefault();
