@@ -4,37 +4,329 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Conecta</title>
+    <title>Landing Page</title>
     <link rel="stylesheet" href="./css/index.css">
-    <script type="module" src="components/header/header.js"></script>
-    <script type="module" src="components/footer/footer.js"></script>
+    <link rel="stylesheet" href="./pages/landing-page/landing-page.css">
+    <script type="module" src="./components/header/header.js"></script>
+    <script type="module" src="./components/footer/footer.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
 </head>
 
 <body>
-<div class="container">
 
-    <div id="page-overlay"></div>
+    <div class="container">
 
-    <header>
-        <header-component action="toggleOverlay" variant="home"></header-component>
-    </header>
+        <div id="page-overlay"></div>
 
-    <div class="content">
-        <div class="home-content">
-            <div class="home-image">
-                <img src="./assets/images/img-layout.png" alt="Imagem">
+        <header>
+            <header-component action="toggleOverlay" variant="home"></header-component>
+        </header>
+
+        <div class="content">
+            <div class="home-content">
+
+                <div class="slideshow-container web">
+                    <div class="mySlides fade">
+                        <div class="numbertext"></div>
+                        <img class="image" src="./assets/images/home-image-one.jpg">
+                    </div>
+
+                    <div class="mySlides fade">
+                        <div class="numbertext"></div>
+                        <img class="image" src="./assets/images/home-image-two.jpg">
+                    </div>
+
+                    <div class="mySlides fade">
+                        <div class="numbertext"></div>
+                        <img class="image" src="./assets/images/home-image-three.jpg">
+                    </div>
+
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                </div>
+
+                <div class="slideshow-container mobile">
+                    <div class="mySlides-mobile fade">
+                        <div class="numbertext"></div>
+                        <img class="image" src="./assets/images/home-image-one-mobile.jpg">
+                    </div>
+
+                    <div class="mySlides-mobile fade">
+                        <div class="numbertext"></div>
+                        <img class="image" src="./assets/images/home-image-two-mobile.jpg">
+                    </div>
+
+                    <div class="mySlides-mobile fade">
+                        <div class="numbertext"></div>
+                        <img class="image" src="./assets/images/home-image-three-mobile.jpg">
+                    </div>
+
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                </div>
+                <br>
+
+                <div class="dots-wrapper">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                </div>
+
+                <div class="text-wrapper">
+                    <h1 class="subtitle">
+                        Conheça as oportunidades de voluntariado
+                    </h1>
+                    <div class="description">
+                       Clique em saber mais para conhecer a lista de oportunidades das ONGs e se voluntariar.
+                    </div>
+                </div>
+
+                <div class="tasks-wrapper">
+                    <div class="vertical-task-card">
+                        <div class="card-section-wrapper">
+                            <div class="card-header">
+                                <div class="task-info">
+                                    <p class="task-name">Ensinar HTML</p>
+                                    <p class="task-owner">TeachTech</p>
+                                </div>
+                                <div class="profile-image-card-container">
+                                    <img src="./assets/logos/ensinatech-logo.png" alt="Profile image">
+                                </div>
+                            </div>
+                            <div class="task-description">
+                                <p class="task-description-text">
+                                    Procuramos voluntários para ensinar HTML a jovens interessados em tecnologia. Sua
+                                    contribuição pode abrir portas para o mundo da programação. Junte-se a nós e inspire
+                                    o
+                                    futuro digital!
+                                </p>
+                                <p class="show-more">saber mais</p>
+                            </div>
+                            <div class="help-button-wrapper">
+                                <a href="#" class="help-button">QUERO AJUDAR</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="vertical-task-card">
+                        <div class="card-section-wrapper">
+                            <div class="card-header">
+                                <div class="task-info">
+                                    <p class="task-name">Criar Website</p>
+                                    <p class="task-owner">WeHelp</p>
+                                </div>
+                                <div class="profile-image-card-container">
+                                    <img src="./assets/logos//we-help-logo.png" alt="Profile image">
+                                </div>
+                            </div>
+                            <div class="task-description">
+                                <p class="task-description-text">
+                                    Procuramos ajuda para criar um site impactante. Se você tem habilidades em
+                                    design, programação ou conteúdo, junte-se a nós e seja parte da construção deste
+                                    projeto
+                                    online emocionante.
+                                </p>
+                                <p class="show-more">saber mais</p>
+                            </div>
+                            <div class="help-button-wrapper">
+                                <a href="#" class="help-button">QUERO AJUDAR</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="vertical-task-card">
+                        <div class="card-section-wrapper">
+                            <div class="card-header">
+                                <div class="task-info">
+                                    <p class="task-name">Conectar idosos com a tecnologia</p>
+                                    <p class="task-owner">Ajuda Senior</p>
+                                </div>
+                                <div class="profile-image-card-container">
+                                    <img src="./assets/logos/ajuda-senior-logo.png" alt="Profile image">
+                                </div>
+                            </div>
+                            <div class="task-description">
+                                <p class="task-description-text">
+                                    Buscamos voluntários para ajudar idosos a usar a tecnologia, promovendo a
+                                    conexão e independência. Sua ajuda é essencial para tornar suas vidas mais
+                                    enriquecedoras e
+                                    inclusivas.
+                                </p>
+                                <p class="show-more">saber mais</p>
+                            </div>
+                            <div class="help-button-wrapper">
+                                <a href="#" class="help-button">QUERO AJUDAR</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="vertical-task-card">
+                        <div class="card-section-wrapper">
+                            <div class="card-header">
+                                <div class="task-info">
+                                    <p class="task-name">Professor de Informática</p>
+                                    <p class="task-owner">Happy Kids</p>
+                                </div>
+                                <div class="profile-image-card-container">
+                                    <img src="./assets/logos/happy-kids-logo.png" alt="Profile image">
+                                </div>
+                            </div>
+                            <div class="task-description">
+                                <p class="task-description-text">
+                                    Estamos em busca de voluntários entusiastas e dedicados para ensinar informática
+                                    para as crianças. Ajude-nos a inspirar os nossos pequenos curiosos! Junte-se a nós e
+                                    faça a
+                                    diferença.
+                                </p>
+                                <p class="show-more">saber mais</p>
+                            </div>
+                            <div class="help-button-wrapper">
+                                <a href="#" class="help-button">QUERO AJUDAR</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="horizontal-task-card">
+                        <div class="left-side">
+                            <div class="task-info">
+                                <p class="task-name">Ensinar HTML</p>
+                                <p class="task-owner">TeachTech</p>
+                            </div>
+                            <div class="task-description">
+                                <p>
+                                    Procuramos voluntários para ensinar HTML a jovens interessados em tecnologia.
+                                    Sua contribuição pode abrir portas para o mundo da programação. Junte-se a nós e
+                                    inspire
+                                    o futuro digital!
+                                </p>
+                                <p class="show-more">saber mais</p>
+                            </div>
+                        </div>
+                        <div class="right-side">
+                            <div class="profile-image-card-container">
+                                <img src="./assets/logos/techteach-logo.png" alt="Profile image">
+                            </div>
+                            <div class="help-button-wrapper">
+                                <a href="#" class="help-button">QUERO AJUDAR</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="horizontal-task-card">
+                        <div class="left-side">
+                            <div class="task-info">
+                                <p class="task-name">Criar Website</p>
+                                <p class="task-owner">WeHelp</p>
+                            </div>
+                            <div class="task-description">
+                                <p>
+                                    Procuramos ajuda para criar um site impactante. Se você tem habilidades em
+                                    design, programação ou conteúdo, junte-se a nós e seja parte da construção deste
+                                    projeto
+                                    online emocionante.
+                                </p>
+                                <p class="show-more">saber mais</p>
+                            </div>
+                        </div>
+                        <div class="right-side">
+                            <div class="profile-image-card-container">
+                                <img src="./assets/logos/we-help-logo.png" alt="Profile image">
+                            </div>
+                            <div class="help-button-wrapper">
+                                <a href="#" class="help-button">QUERO AJUDAR</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="horizontal-task-card">
+                        <div class="left-side">
+                            <div class="task-info">
+                                <p class="task-name">Conectar idosos com a tecnologia</p>
+                                <p class="task-owner">Ajuda Senior</p>
+                            </div>
+                            <div class="task-description">
+                                <p>
+                                    Buscamos voluntários para ajudar idosos a usar a tecnologia, promovendo a
+                                    conexão e independência. Sua ajuda é essencial para tornar suas vidas mais
+                                    enriquecedoras e
+                                    inclusivas.
+                                </p>
+                                <p class="show-more">saber mais</p>
+                            </div>
+                        </div>
+                        <div class="right-side">
+                            <div class="profile-image-card-container">
+                                <img src="./assets/logos/ajuda-senior-logo.png" alt="Profile image">
+                            </div>
+                            <div class="help-button-wrapper">
+                                <a href="#" class="help-button">QUERO AJUDAR</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="horizontal-task-card">
+                        <div class="left-side">
+                            <div class="task-info">
+                                <p class="task-name">Professor de Informática</p>
+                                <p class="task-owner">Happy Kids</p>
+                            </div>
+                            <div class="task-description">
+                                <p>
+                                    Estamos em busca de voluntários entusiastas e dedicados para ensinar informática
+                                    para as crianças. Ajude-nos a inspirar os nossos pequenos curiosos! Junte-se a nós e
+                                    faça a diferença.
+                                </p>
+                                <p class="show-more">saber mais</p>
+                            </div>
+                        </div>
+                        <div class="right-side">
+                            <div class="profile-image-card-container">
+                                <img src="./assets/logos/happy-kids-logo.png" alt="Profile image">
+                            </div>
+                            <div class="help-button-wrapper">
+                                <a href="#" class="help-button">QUERO AJUDAR</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="see-more-button">
+                    <div class="more-button-wrapper">
+                        <a href="./pages/pagina-de-demandas/pagina-de-demandas.html" class="more-button">VER MAIS</a> 
+                    </div>
+                </div>
+                
+                <div class="bottomContent">
+                    <div class="bottom-wrapper">
+                        <div>
+                            <h2 class="bottomTitle">
+                                Saiba como se voluntariar
+                            </h2>
+                        </div>
+                        <div>
+                            <p class="bottomText">
+                                Descubra diversas formas de fazer a diferença em sua comunidade. No nosso site Conecta você
+                                tem a chance de participar de projetos significativos, do seu interesse. Transforme vidas,
+                                desenvolva suas habilidades e crie laços duradouros. Junte-se a nós e contribua para um
+                                mundo mais unido e solidário. Inspire-se, atue e transforme.
+                            </p>
+                        </div>
+                        <div class="como-comecar-button">
+                            <div class="buttonBottom">
+                                <a href="#" class="bottom-button-text">COMO COMEÇAR</a>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div>
+                        <img class="imageBottom" src="./assets/images/team-working.png">
+                    </div>
+                </div>
+
             </div>
-            <div class="landing-page-text">
-                <p>Juntos, podemos utilizar a tecnologia para criar um mundo mais solidário!</p>
-            </div>
+
         </div>
+
+        <footer-component></footer-component>
     </div>
-
-    <footer-component variant="home"></footer-component>
-
-</div>
-<script src="./js/index.js"></script>
+    
+    <script src="./js/index.js"></script>
+    <script  src="./js/landing-page.js"></script>
 </body>
+
 </html>
