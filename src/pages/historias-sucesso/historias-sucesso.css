@@ -140,7 +140,9 @@ main {
     }
 
     .main-content {
-        align-items: center;
+        align-items: center; 
+        padding-top: 0;
+        padding-bottom: 10px;
     }
 
     .image {
