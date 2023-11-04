@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="cadastrar-demanda.css">
     <script type="module" src="../../components/header/header.js"></script>
     <script type="module" src="../../components/footer/footer.js"></script>
+    <script type="module" src="../../js/constants.js"></script>
+    <script type="module" src="cadastrar-demanda.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 
@@ -23,22 +25,22 @@
         <main class="content">
             <h1 class="title" id="cadastrar-demanda">cadastrar demanda</h1>
 
-            <form action="/demandas" method="post">
+            <form id="form" action="cadastrar-demanda.js">
 
                 <div class="row">
                     <div class="col-25">
-                        <label for="nome-demanda">Nome da demanda:</label>
+                        <label for="nome">Nome da demanda:</label>
                     </div>
                     <div class="col-75">
-                        <input type="text" id="nome-demanda" name="nome-demanda"  maxlength="30" required>
+                        <input type="text" id="nome" name="nome-demanda"  maxlength="30">
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-25">
-                        <label for="tipo-demanda">Tipo da demanda:</label>
+                        <label>Tipo da demanda:</label>
                     </div>
                     <div class="custom-radio">
-                        <input type="radio" id="presencial" name="tipo-demanda" value="presencial" required>
+                        <input type="radio" id="presencial" name="tipo-demanda" value="presencial" checked>
                         <label for="presencial">Presencial</label>
 
                         <input type="radio" id="remoto" name="tipo-demanda" value="remoto">
@@ -50,22 +52,21 @@
                 </div>
                 <div class="row">
                     <div class="col-25">
-                        <label for="sobre-demanda">Descreva sua necessidade:</label>
+                        <label for="descricao">Descreva sua necessidade:</label>
                     </div>
                     <div class="col-75">
-                        <textarea id="sobre-demanda" name="sobre-demanda" minlength="100" maxlength="300" required></textarea>
+                        <textarea id="descricao" name="descricao" minlength="100" maxlength="300"></textarea>
                     </div>
                 </div>
                 <div class="row-button">
-                    <div><input type="submit" name="cadastrar" value="Cadastrar"></div>
-                    <div><a href="#"><input type="submit" name="cancelar" value="Cancelar"></a></div>
+                    <div><input id="cadastrar" type="submit" name="cadastrar" value="Cadastrar"></div>
+                    <div><input id="cancelar" type="submit" name="cancelar" value="Cancelar"></div>
                 </div>
             </form>
         </main>
         <footer-component></footer-component>   
     </div>
     <script src="../../js/index.js"></script>
-
 </body>
 
 </html>
