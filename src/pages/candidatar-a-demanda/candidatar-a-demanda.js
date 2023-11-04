@@ -1,7 +1,7 @@
 import {
     Required,
     SUCESSO_ENVIAR_CANDIDATURA,
-    CONFIRM_CANCELAR_CADASTRO,
+    CONFIRM_CANCELAR_CANDIDATURA,
     LOCATION_REF_PAGINA_DEMANDAS
 } from "../../js/constants.js";
 
@@ -9,7 +9,7 @@ document.getElementById("cancelar").addEventListener("click", handleCancel);
 document.getElementById("enviar").addEventListener("click", handleSend);
 
 function handleCancel() {
-    if (confirm(CONFIRM_CANCELAR_CADASTRO)) {
+    if (confirm(CONFIRM_CANCELAR_CANDIDATURA)) {
         window.location.href = LOCATION_REF_PAGINA_DEMANDAS;
     }
 }
