@@ -1,24 +1,5 @@
 # Programação de Funcionalidades
 
-Implementação do sistema descritas por meio dos requisitos funcionais e/ou não funcionais. Deve relacionar os requisitos atendidos os artefatos criados (código fonte) além das estruturas de dados utilizadas e as instruções para acesso e verificação da implementação que deve estar funcional no ambiente de hospedagem.
-
-Para cada requisito funcional, pode ser entregue um artefato desse tipo.
-
-O professor Rommel Carneiro apresenta alguns exemplos prontos para serem utilizados como referência:
-- Login do sistema: [https://repl.it/@rommelpuc/LoginApp](https://repl.it/@rommelpuc/LoginApp) 
-- Cadastro de Contatos: [https://repl.it/@rommelpuc/Cadastro-de-Contatos](https://repl.it/@rommelpuc/Cadastro-de-Contatos)
-
-
-> **Links Úteis**:
->
-> - [Trabalhando com HTML5 Local Storage e JSON](https://www.devmedia.com.br/trabalhando-com-html5-local-storage-e-json/29045)
-> - [JSON Tutorial](https://www.w3resource.com/JSON)
-> - [JSON Data Set Sample](https://opensource.adobe.com/Spry/samples/data_region/JSONDataSetSample.html)
-> - [JSON - Introduction (W3Schools)](https://www.w3schools.com/js/js_json_intro.asp)
-> - [JSON Tutorial (TutorialsPoint)](https://www.tutorialspoint.com/json/index.htm)
-
-## Exemplo
-
 ## Requisitos Atendidos
 
 As tabelas que se seguem apresentam os requisitos funcionais e não-funcionais que relacionam o escopo do projeto com os artefatos criados:
@@ -30,6 +11,16 @@ As tabelas que se seguem apresentam os requisitos funcionais e não-funcionais q
 | RF-001 | O sistema deve exibir as notícias mais populares.                                                                                                                | ALTA       | index.html            |
 | RF-002 | Usuários autenticados podem registrar novas notícias.                                                                                                            | ALTA       | cadastro-noticia.html |
 | RF-008 | A aplicação deve apresentar a página “Como Começar” que orienta os visitantes sobre os passos necessários para se tornarem voluntários registrados na aplicação. | ALTA       | como-comecar.html     |
+| RF-004 | A aplicação deve permitir que os voluntários visualizem as solicitações de ajuda técnica feitas pelas ONGs. | ALTA       | pagina-de-demandas.html     |
+| RF-006 | A aplicação deve permitir que as ONGs marquem as solicitações como concluídas ou encerradas. | ALTA       |administrar-demanda-em-pogresso.html    / administrar-demanda-finalizada.html   |
+| RF-008 | A aplicação deve apresentar a página “Como Começar” que orienta os visitantes sobre os passos necessários para se tornarem voluntários registrados na aplicação. | ALTA       | como-comecar.html     |
+| RF-009 | Deve existir uma página inicial (landing page) informativa que apresenta o propósito da plataforma e incentiva tanto as ONGs quanto os voluntários a utilizar a aplicação. | ALTA       | landing-page.html     |
+| RF-011 | A aplicação deve apresentar a página “Sobre o Voluntariado” que fornece informações detalhadas sobre o conceito de trabalho voluntário, destacando seu impacto positivo na sociedade e nas comunidades. | ALTA       |sobre-o-voluntariado.html     |
+| RF-013 | A aplicação deve apresentar a página “Histórias de Sucesso” que destaca projetos anteriores realizados por meio da plataforma, com resultados, depoimentos de voluntários e o impacto positivo alcançado. | ALTA       |historias-de-sucesso.html     |
+| RF-014 | A aplicação deve fornecer um mecanismo de filtro para que os usuários possam encontrar demandas com base em critérios como: remoto, presencial, estado do Brasil e palavras-chave. | MÉDIA       |administrar-demandas.html     |
+| RF-015 | Os voluntários devem receber um e-mail quando uma ONG expressa interesse em seu perfil. | MÉDIA       | administrar-demanda-em-pogresso.html    / administrar-demanda-finalizada.html     |
+| RF-018 | A página da demanda cadastrada pela ONG deve exibir uma lista de todos os voluntários que tiveram a candidatura aceita. | BAIXA       | administrar-demanda-em-pogresso.html    / administrar-demanda-finalizada.html      |
+| RF-019 | Na página da demanda cadastrada pela ONG, deve ter um botão com a finalidade de enviar um link via e-mail aos voluntários solicitando a eles que deixem um comentário sobre sua experiência. | BAIXA       | administrar-demanda-em-pogresso.html    / administrar-demanda-finalizada.html      |
 | RF-021 | Os depoimentos dos voluntários devem ser disponibilizados no perfil da ONG que fez a solicitação.                                                                | BAIXA      | pagina-da-ong.html    |
 
 ## Descrição das estruturas:
