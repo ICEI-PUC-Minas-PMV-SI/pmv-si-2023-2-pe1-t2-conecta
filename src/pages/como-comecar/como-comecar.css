@@ -22,6 +22,7 @@
     align-self: center;
     max-width: 500px;
     text-align: center;
+    margin-bottom: 5px;
 }
 
 .content > .image-wrapper {
@@ -39,6 +40,7 @@
 
 .content > .instructions-wrapper {
     display: flex;
+    margin-bottom: 30px;
 }
 
 .content > .instructions-wrapper > .instructions-list {
