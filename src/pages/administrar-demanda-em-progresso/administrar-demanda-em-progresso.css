@@ -168,7 +168,7 @@
 
 .page-button-finish {
     display: flex;
-    max-width: 180px;
+    width: 150px;
     height: 50px;
     border-radius: 5px;
     background: #274C77;
@@ -182,7 +182,7 @@
 
 .page-button-edit {
     display: flex;
-    max-width: 180px;
+    width: 150px;
     height: 50px;
     border-radius: 5px;
     background: #8B8C89;

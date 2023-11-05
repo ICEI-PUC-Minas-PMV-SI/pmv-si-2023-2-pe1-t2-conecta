@@ -21,15 +21,14 @@
     color: #274c77;
     font-size: 40px;
     padding: 16px 24px 0 24px;
-    justify-content: center;
-    white-space: nowrap;
+    text-align: center;
+   
 }
 .section-wrapper {
-    max-width: 400px;
+    width: 400px;
     display: flex;
     flex-direction: column;
     gap: 16px;
-    width: 80%;
     padding: 20px;
 }
 label {
@@ -136,10 +135,18 @@ input[type=submit] {
 @media screen and (max-width: 600px ) {
     .title {
         margin-bottom: 20px;
+        margin-left: 40px;
+        margin-right: 40px;
+        text-align: center;
+        white-space: normal;
     }
     .section-wrapper{
-        min-width: 80%;
         padding: 0px;
+        width: 400px;
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        padding: 20px;
     }
     .col-25, .col-75{
         margin: 0;
