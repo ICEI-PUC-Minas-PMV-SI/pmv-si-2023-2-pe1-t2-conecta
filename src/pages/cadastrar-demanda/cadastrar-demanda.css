@@ -136,6 +136,10 @@ input[type=submit] {
 @media screen and (max-width: 600px ) {
     .title {
         margin-bottom: 20px;
+        margin-left: 40px;
+        margin-right: 40px;
+        text-align: center;
+        white-space: normal;
     }
     .section-wrapper{
         min-width: 80%;

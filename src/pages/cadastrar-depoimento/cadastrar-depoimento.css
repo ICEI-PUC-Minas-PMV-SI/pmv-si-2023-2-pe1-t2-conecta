@@ -138,6 +138,7 @@ label {
 @media screen and (max-width: 600px) {
     .content > .headline > .title {
         margin-bottom: 20px;
+        text-align: center;
     }
     .section-wrapper{
         min-width: 80%;
