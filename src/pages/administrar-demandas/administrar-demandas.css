@@ -251,7 +251,7 @@
 
 .page-button-wrapper {
     display: flex;
-    max-width: 180px;
+    width: 180px;
     height: 50px;
     border-radius: 5px;
     background: #274C77;
