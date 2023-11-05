@@ -22,8 +22,8 @@
     font-size: 40px;
     padding: 16px 24px 0 24px;
     text-align: center;
-   
 }
+
 .section-wrapper {
     width: 400px;
     display: flex;
@@ -141,15 +141,39 @@ input[type=submit] {
         white-space: normal;
     }
     .section-wrapper{
-        padding: 0px;
-        width: 400px;
         display: flex;
         flex-direction: column;
         gap: 16px;
+        width: 80%;
         padding: 20px;
+        max-width: 400px;
     }
+    
     .col-25, .col-75{
         margin: 0;
         width: 100%;
     }
+}
+
+@media screen and (max-width: 400px) {
+
+    .row-button > div {
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-top: 40px;
+    }
+
+    .title {
+        position: relative;
+        color: #274c77;
+        font-size: 30px;
+        padding: 16px 24px 0 24px;
+        text-align: center;
+       
+    }
+
+    label {
+        white-space: normal;
+    }
+
 }

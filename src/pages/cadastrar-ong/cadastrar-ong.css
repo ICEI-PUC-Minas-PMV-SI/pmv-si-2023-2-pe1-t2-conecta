@@ -146,21 +146,35 @@ label {
 
 @media screen and (max-width: 600px) {
     .content > .headline > .title {
-        margin-bottom: 20px;
+        color: #274C77;
+        padding: 16px 24px 0 24px;
+        font-size: 40px;
         text-align: center;
+        justify-items: center;
+        max-width: 1300px;
+        margin: 0 auto;
     }
     
     .section-wrapper{
-        width: 400px;
         display: flex;
         flex-direction: column;
         gap: 16px;
+        width: 80%;
         padding: 20px;
+        max-width: 400px;
     }
 
     .col-15, .col-85{
         width: 100%;
-        margin-top: 0;
+        margin-top: 6px;
     }
 }
 
+@media screen and (max-width: 400px) {
+
+    .row-button > div {
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-top: 40px;
+    }
+}

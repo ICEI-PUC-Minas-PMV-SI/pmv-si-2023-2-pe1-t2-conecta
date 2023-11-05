@@ -140,14 +140,35 @@ label {
         text-align: center;
     }
     .section-wrapper{
-        width: 400px;
         display: flex;
         flex-direction: column;
         gap: 16px;
+        width: 80%;
         padding: 20px;
+        max-width: 400px;
     }
     .col-22, .col-78{
         width: 100%;
         margin-top: 0;
+    }
+}
+
+@media screen and (max-width: 400px) {
+
+    .row-button > div {
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-top: 40px;
+    }
+
+    label {
+        white-space: normal;
+    }
+}
+
+@media screen and (max-width: 450px) {
+
+    input[type=text], input[type="text"]:focus {
+        font-size: 14px;
     }
 }
