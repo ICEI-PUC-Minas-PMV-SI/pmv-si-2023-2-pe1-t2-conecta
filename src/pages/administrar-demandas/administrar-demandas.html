@@ -35,12 +35,19 @@
                     <img class="icon_white" src="../../assets/icons/filter.png" alt="">
                     <img class="icon_black" src="../../assets/icons/filter-filled.png" alt="">
                 </label>
-                <select class="filterButton" style="display: none;">
-                    <option value="todos">Todos</option>
-                    <option value="opcao1">Remoto</option>
-                    <option value="opcao2">Presencial</option>
-                    <option value="opcao3">Híbrido</option>
-                </select>
+                <div class="filter-wrapper">
+                    <select class="filterButton" style="display: none;">
+                        <option value="todos">Tipo</option>
+                        <option value="opcao1">Remoto</option>
+                        <option value="opcao2">Presencial</option>
+                        <option value="opcao3">Híbrido</option>
+                    </select>
+                    <select class="filterButton" style="display: none;">
+                        <option value="todos">Status</option>
+                        <option value="todos">Aberta</option>
+                        <option value="opcao1">Finalizada</option>
+                    </select>
+                </div>
             </div>
 
             <div class="tasks-wrapper">
@@ -52,6 +59,14 @@
                                 <p class="task-owner">TeachTech</p>
                             </div>
                         </div>
+                        <div class="status-wrapper">
+                            <div class="status-info">
+                                <img class="status-image" src="../../assets/icons/red-dot.png" alt="">
+                            </div>
+                            <div>
+                                <p class="status-name">Finalizada</p>
+                            </div>
+                        </div> 
                         <div class="task-description">
                             <p class="task-description-text">
                                 Procuramos voluntários para ensinar HTML a jovens interessados em tecnologia. Sua
@@ -85,6 +100,14 @@
                                 <p class="task-owner">TeachTech</p>
                             </div>
                         </div>
+                        <div class="status-wrapper">
+                            <div class="status-info">
+                                <img class="status-image" src="../../assets/icons/green-dot.png" alt="">
+                            </div>
+                            <div>
+                                <p class="status-name">Aberta</p>
+                            </div>
+                        </div> 
                         <div class="task-description">
                             <p class="task-description-text">
                                 A nossa ONG busca apoio no desenvolvimento de um software educacional interativo. O objetivo é fornecer
@@ -103,7 +126,7 @@
                             </div> 
                             <div class="location-button-wrapper">
                                 <img class="image-location" src="../../assets/icons/location-black.png" alt="Location">
-                                <div class="location-tag">PRESENCIAL
+                                <div class="location-tag">REMOTO
                                 </div>
                             </div>
                         </div>
@@ -117,6 +140,14 @@
                                 <p class="task-owner">TeachTech</p>
                             </div>
                         </div>
+                        <div class="status-wrapper">
+                            <div class="status-info">
+                                <img class="status-image" src="../../assets/icons/green-dot.png" alt="">
+                            </div>
+                            <div>
+                                <p class="status-name">Aberta</p>
+                            </div>
+                        </div> 
                         <div class="task-description">
                             <p class="task-description-text">
                                 Estamos buscando apoiadores e parceiros para desenvolver um programa de mentoria em
@@ -136,7 +167,7 @@
                             </div> 
                             <div class="location-button-wrapper">
                                 <img class="image-location" src="../../assets/icons/location-black.png" alt="Location">
-                                <div class="location-tag">PRESENCIAL
+                                <div class="location-tag">HÍBRIDO
                                 </div>
                             </div>
                         </div>
@@ -150,12 +181,19 @@
                                 <p class="task-owner">TeachTech</p>
                             </div>
                         </div>
+                        <div class="status-wrapper">
+                            <div class="status-info">
+                                <img class="status-image" src="../../assets/icons/red-dot.png" alt="">
+                            </div>
+                            <div>
+                                <p class="status-name">Finalizada</p>
+                            </div>
+                        </div> 
                         <div class="task-description">
                             <p class="task-description-text">
                                 Precisamos de professor voluntário para dar início à oficina de informática ministrando
                                 aulas em nível iniciante. O principal objetivo da oficina é a inclusão digital,
-                                permitindo a essas crianças o
-                                acesso às tecnologias.
+                                permitindo as crianças o acesso às tecnologias.
                             </p>
                             <p class="show-more">saber mais</p>
                         </div>
@@ -191,9 +229,19 @@
                             </p>
                             <p class="show-more">saber mais</p>
                         </div>
-                        <div class="location-button-wrapper">
-                            <img class="image-location" src="../../assets/icons/location-black.png" alt="Location">
-                            <div class="location-tag">PRESENCIAL
+                        <div class="bottom-info">
+                            <div class="location-button-wrapper">
+                                <img class="image-location" src="../../assets/icons/location-black.png" alt="Location">
+                                <div class="location-tag">PRESENCIAL
+                                </div>
+                            </div>
+                            <div class="status-wrapper">
+                                <div class="status-info">
+                                    <img class="status-image" src="../../assets/icons/red-dot.png" alt="">
+                                </div>
+                                <div>
+                                    <p class="status-name">Finalizada</p>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -223,9 +271,19 @@
                             </p>
                             <p class="show-more">saber mais</p>
                         </div>
-                        <div class="location-button-wrapper">
-                            <img class="image-location" src="../../assets/icons/location-black.png" alt="Location">
-                            <div class="location-tag">REMOTO
+                        <div class="bottom-info">
+                            <div class="location-button-wrapper">
+                                <img class="image-location" src="../../assets/icons/location-black.png" alt="Location">
+                                <div class="location-tag">REMOTO
+                                </div>
+                            </div>
+                            <div class="status-wrapper">
+                                <div class="status-info">
+                                    <img class="status-image" src="../../assets/icons/green-dot.png" alt="">
+                                </div>
+                                <div>
+                                    <p class="status-name">Aberta</p>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -256,9 +314,19 @@
                             </p>
                             <p class="show-more">saber mais</p>
                         </div>
-                        <div class="location-button-wrapper">
-                            <img class="image-location" src="../../assets/icons/location-black.png" alt="Location">
-                            <div class="location-tag">PRESENCIAL
+                        <div class="bottom-info">
+                            <div class="location-button-wrapper">
+                                <img class="image-location" src="../../assets/icons/location-black.png" alt="Location">
+                                <div class="location-tag">HÍBRIDO
+                                </div>
+                            </div>
+                            <div class="status-wrapper">
+                                <div class="status-info">
+                                    <img class="status-image" src="../../assets/icons/green-dot.png" alt="">
+                                </div>
+                                <div>
+                                    <p class="status-name">Aberta</p>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -285,14 +353,23 @@
                             <p>
                                 Precisamos de professor voluntário para dar início à oficina de informática ministrando
                                 aulas em nível iniciante. O principal objetivo da oficina é a inclusão digital,
-                                permitindo a essas crianças o
-                                acesso às tecnologias.
+                                permitindo aS crianças o acesso às tecnologias.
                             </p>
                             <p class="show-more">saber mais</p>
                         </div>
-                        <div class="location-button-wrapper">
-                            <img class="image-location" src="../../assets/icons/location-black.png" alt="Location">
-                            <div class="location-tag">PRESENCIAL
+                        <div class="bottom-info">
+                            <div class="location-button-wrapper">
+                                <img class="image-location" src="../../assets/icons/location-black.png" alt="Location">
+                                <div class="location-tag">PRESENCIAL
+                                </div>
+                            </div>
+                            <div class="status-wrapper">
+                                <div class="status-info">
+                                    <img class="status-image" src="../../assets/icons/red-dot.png" alt="">
+                                </div>
+                                <div>
+                                    <p class="status-name">Finalizada</p>
+                                </div>
                             </div>
                         </div>
                     </div>
