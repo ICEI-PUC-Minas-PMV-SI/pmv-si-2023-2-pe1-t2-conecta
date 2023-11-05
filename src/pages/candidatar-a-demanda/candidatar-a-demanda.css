@@ -1,3 +1,6 @@
+*{
+    box-sizing: border-box;
+}
 .container {
     display: flex;
     flex-direction: column;
@@ -25,7 +28,6 @@
 }
 
 .content > .headline > .subtitle {
-    padding: 8px 24px 0 24px;
     color: #000000;
     font-size: 20px;
     align-self: center;
@@ -39,6 +41,7 @@
     gap: 16px;
     width: 80%;
     padding: 20px;
+    max-width: 400px;
 }
 
 input[type=text], input[type=tel], input[type=email], input[type="text"]:focus {
@@ -61,7 +64,9 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="tel"]:focus {
 
 input[type=submit][name=cancelar] {
     background-color: #FFFFFF;
-    color: #274C77;}
+    color: #274C77;
+    margin-bottom: 20px;
+}
 
 input[type=submit][name=enviar] {
     background-color: #274C77;
@@ -81,14 +86,14 @@ input[type=submit] {
 
 textarea {
     width: 100%;
-    height: 150px;
+    height: 200px;
     padding: 12px;
     resize: vertical;
     outline: none;
     background-color: white;
     font-size: large;
     color: #716F6F;
-    border: 1px solid #716F6F;
+    border: 2px solid #716F6F;
     border-radius: 15px;
 }
 
@@ -101,10 +106,12 @@ textarea {
 .row-button {
     display: flex;
     flex-direction: row-reverse;
+    justify-content: center;
 }
 
 .row-button > div {
     margin-left: 24px;
+    margin-right: 24px;
     padding-top: 40px;
 }
 
@@ -117,18 +124,30 @@ textarea {
 
 .col-80 {
     float: left;
-    width: 80%;
+    width: 100%;
     margin-top: 6px;
 }
 
 label {
+    display: inline-block;
+    margin-bottom: 0px;
     padding: 12px 12px 12px 0;
     display: inline-block;
     color: #716F6F;
+    font-size: 20px;
+    white-space: nowrap;
 }
 
 @media screen and (max-width: 600px) {
-    .col-20, .col-80, input[type=submit] {
+    .content > .headline > .title {
+        margin-bottom: 20px;
+    }
+    .section-wrapper{
+        min-width: 80%;
+        padding: 0px;
+    }
+
+    .col-20, .col-80{
         width: 100%;
         margin-top: 0;
     }
@@ -137,7 +156,6 @@ label {
 @media screen and (max-width: 1170px) {
     .col-80 {
         float: left;
-        width: 100%;
         margin-top: 6px;
     }
 }
