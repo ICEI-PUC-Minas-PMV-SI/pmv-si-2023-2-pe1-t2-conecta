@@ -1,3 +1,17 @@
+const getPagePath = (pageName) => {
+    const currentPath = window.location.pathname;
+
+    if (currentPath.includes(`${pageName}.html`)) {
+        return `./${pageName}.html`
+    }
+
+    if (currentPath.includes('/pages')) {
+        return `../${pageName}/${pageName}.html`;
+    }
+
+    return `./pages/${pageName}/${pageName}.html`;
+}
+
 const makeTemplate = () => {
     const pathName = window.location.pathname;
     const rootPath = pathName.includes('index.html') || pathName.endsWith("pmv-si-2023-2-pe1-t2-conecta/") ? "./" : "../../";
@@ -21,9 +35,11 @@ const makeTemplate = () => {
         </div>
     </div>
     <div class="right-side">
+    <a href=${getPagePath("pagina-da-ong")}>
         <div class="profile-image-card-container">
             <img src="" alt="Profile image">
         </div>
+    </a>
         <div class="help-button-wrapper">
             <a href="" class="help-button">QUERO AJUDAR</a>
         </div>
