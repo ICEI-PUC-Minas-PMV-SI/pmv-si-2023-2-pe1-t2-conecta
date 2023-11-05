@@ -67,4 +67,14 @@ As tabelas que se seguem apresentam os requisitos funcionais e não-funcionais q
 | Id da demanda | UUID             | Identificador único da demanda relacionada | 95ddad92-c441-4e92-a34d-fcf328c69b78              |
 |     Nome      | Texto            | Nome do candidato                          | João                                              |
 |     Email     | Texto            | Endereço de e-mail do candidato            | joao@email.com                                    |
-|    Active     | Boolean          | Status do candidato (aprovado, reprovado)  | `true ou false`                                    |
+|    Active     | Boolean          | Status do candidato (aprovado, reprovado)  | `true ou false`                                   |
+
+## Depoimentos
+|      **Nome**      | **Tipo**  | **Descrição**                                           | **Exemplo**                          |
+|:------------------:|-----------|---------------------------------------------------------|--------------------------------------|
+|         Id         | UUID      | Identificador único do depoimento                       | 95ddad92-c441-4e92-a34d-fcf328c69b78 |
+|   Id da demanda    | UUID      | Identificador único da demanda relacionada              | 95ddad92-c441-4e92-a34d-fcf328c69b78 |
+|  Id do voluntario  | UUID      | Identificador único do voluntário relacionada           | 95ddad92-c441-4e92-a34d-fcf328c69b78 |
+|     Depoimento     | Texto     | Depoimento escrito pelo candidato                       | Minha experiência sendo ....         |
+|       token        | Texto     | Seguimento que faz parte do link e o torna seguro       | e10adc3949ba59abbe56e057f20f883e     |
+|     expiração      | Timestamp | Data e hora limite em que o depoimento pode ser enviado | 2023-10-28T22:41:38+00:00            |
