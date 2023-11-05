@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="candidatar-a-demanda.css">
     <script type="module" src="../../components/header/header.js" ></script>
     <script type="module" src="../../components/footer/footer.js"></script>
+    <script type="module" src="candidatar-a-demanda.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 
@@ -75,8 +76,8 @@
                 </div>
             </div>
             <div class="row-button">
-                <div><input onclick="alert('Candidatura enviada com sucesso.')" type="submit" name="enviar" value="Enviar"></div>
-                <div><a href="../../index.html"><input type="submit" name="cancelar" value="Cancelar"></a></div>
+                <div><input id="enviar" type="submit" name="enviar" value="Enviar"></div>
+                <div><input id="cancelar" type="submit" name="cancelar" value="Cancelar"></div>
             </div>
         </div>
     </div>

@@ -25,7 +25,7 @@ const makeTemplate = () => {
             <img src="" alt="Profile image">
         </div>
         <div class="help-button-wrapper">
-            <a href="#" class="help-button">QUERO AJUDAR</a>
+            <a href="" class="help-button">QUERO AJUDAR</a>
         </div>
     </div>
 </div>
