@@ -92,6 +92,7 @@ input[type=submit] {
     flex-direction: row;
     margin-top: 50px;
     justify-content: space-evenly;
+    gap: 24px;
 }
 
 .col-15 {

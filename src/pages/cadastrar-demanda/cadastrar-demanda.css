@@ -13,7 +13,7 @@
 }
 .content > * {
     padding: 16px 24px 0 24px;
-    max-width: 940px;
+    max-width: 940px;
 }
 
 .title {
@@ -22,12 +22,14 @@
     font-size: 40px;
     padding: 16px 24px 0 24px;
     justify-content: center;
+    white-space: nowrap;
 }
-form{
+.section-wrapper {
     max-width: 400px;
     display: flex;
     flex-direction: column;
     gap: 16px;
+    width: 80%;
     padding: 20px;
 }
 label {
@@ -36,7 +38,7 @@ label {
     margin-bottom: 0px;
     padding: 12px 12px 12px 0;
     font-size: 20px;
-
+    white-space: nowrap;
 }
 
 input[type=text], input[type="text"]:focus {
@@ -132,9 +134,12 @@ input[type=submit] {
 
 
 @media screen and (max-width: 600px ) {
-    form {
-        min-width: 100%;
-        padding: 0px;   
+    .title {
+        margin-bottom: 20px;
+    }
+    .section-wrapper{
+        min-width: 80%;
+        padding: 0px;
     }
     .col-25, .col-75{
         margin: 0;

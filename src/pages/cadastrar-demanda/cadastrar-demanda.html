@@ -24,12 +24,12 @@
 
         <main class="content">
             <h1 class="title" id="cadastrar-demanda">cadastrar demanda</h1>
-
+            <div class="section-wrapper">
             <form id="form" method="post">
 
                 <div class="row">
                     <div class="col-25">
-                        <label for="nome">Nome da demanda:</label>
+                        <label for="nome">Nome da demanda</label>
                     </div>
                     <div class="col-75">
                         <input type="text" id="nome" name="nome-demanda"  maxlength="30">
@@ -37,7 +37,7 @@
                 </div>
                 <div class="row">
                     <div class="col-25">
-                        <label>Tipo da demanda:</label>
+                        <label>Tipo da demanda</label>
                     </div>
                     <div class="custom-radio">
                         <input type="radio" id="presencial" name="tipo-demanda" value="presencial" checked>
@@ -52,7 +52,7 @@
                 </div>
                 <div class="row">
                     <div class="col-25">
-                        <label for="descricao">Descreva sua necessidade:</label>
+                        <label for="descricao">Descreva sua necessidade</label>
                     </div>
                     <div class="col-75">
                         <textarea id="descricao" name="descricao" minlength="100" maxlength="300"></textarea>
@@ -63,6 +63,7 @@
                     <div><input id="cancelar" type="submit" name="cancelar" value="Cancelar"></div>
                 </div>
             </form>
+             </div>
         </main>
         <footer-component></footer-component>   
     </div>
