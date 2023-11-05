@@ -21,18 +21,17 @@
     color: #274C77;
     padding: 16px 24px 0 24px;
     font-size: 40px;
-    text-align: left;
+    text-align: center;
     justify-items: center;
     max-width: 1300px;
     margin: 0 auto;
 }
 
 .section-wrapper {
-    max-width: 400px;
+    width: 400px;
     display: flex;
     flex-direction: column;
     gap: 16px;
-    width: 80%;
     padding: 20px;
 }
 
@@ -141,8 +140,11 @@ label {
         text-align: center;
     }
     .section-wrapper{
-        min-width: 80%;
-        padding: 0px;
+        width: 400px;
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        padding: 20px;
     }
     .col-22, .col-78{
         width: 100%;
