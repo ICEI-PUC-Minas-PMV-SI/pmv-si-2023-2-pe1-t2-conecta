@@ -23,7 +23,9 @@
         </header>
 
         <main class="content">
-            <h1 class="title" id="cadastrar-demanda">cadastrar demanda</h1>
+
+            <h1 class="title" id="cadastrar-demanda">[cadastrar|editar] demanda</h1>
+
             <div class="section-wrapper">
             <form id="form" method="post">
 
@@ -60,7 +62,7 @@
                 </div>
                 <div class="row-button">
                     <div><input id="cadastrar" type="submit" name="cadastrar" value="Cadastrar"></div>
-                    <div><input id="cancelar" type="submit" name="cancelar" value="Cancelar"></div>
+                    <div><input id="cancelar" type="submit" name="cancelar" value="Cancelar" onclick="if(confirm('Deseja cancelar o cadastro?')) window.history.go(-1); return false;"></div>
                 </div>
             </form>
              </div>

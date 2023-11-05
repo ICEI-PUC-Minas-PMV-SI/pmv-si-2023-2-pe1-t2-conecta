@@ -1,18 +1,10 @@
 import {
     Required,
     SUCESSO_CADASTRO_DEMANDA,
-    CONFIRM_CANCELAR_CADASTRO,
     LOCATION_REF_ADMINISTRAR_DEMANDAS
 } from "../../js/constants.js";
 
-document.getElementById("cancelar").addEventListener("click", handleCancel);
 document.getElementById("cadastrar").addEventListener("click", handleSave);
-
-function handleCancel() {
-    if (confirm(CONFIRM_CANCELAR_CADASTRO)) {
-        window.location.href = LOCATION_REF_ADMINISTRAR_DEMANDAS;
-    }
-}
 
 function handleSave(event) {
     event.preventDefault();
