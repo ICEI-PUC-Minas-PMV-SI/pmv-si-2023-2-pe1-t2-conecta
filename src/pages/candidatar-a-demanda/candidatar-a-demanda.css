@@ -28,7 +28,6 @@
 }
 
 .content > .headline > .subtitle {
-    padding: 8px 24px 0 24px;
     color: #000000;
     font-size: 20px;
     align-self: center;
@@ -107,10 +106,12 @@ textarea {
 .row-button {
     display: flex;
     flex-direction: row-reverse;
+    justify-content: center;
 }
 
 .row-button > div {
     margin-left: 24px;
+    margin-right: 24px;
     padding-top: 40px;
 }
 
@@ -128,9 +129,13 @@ textarea {
 }
 
 label {
+    display: inline-block;
+    margin-bottom: 0px;
     padding: 12px 12px 12px 0;
     display: inline-block;
     color: #716F6F;
+    font-size: 20px;
+    white-space: nowrap;
 }
 
 @media screen and (max-width: 600px) {
@@ -142,7 +147,7 @@ label {
         padding: 0px;
     }
 
-    .col-20, .col-80, input[type=submit] {
+    .col-20, .col-80{
         width: 100%;
         margin-top: 0;
     }

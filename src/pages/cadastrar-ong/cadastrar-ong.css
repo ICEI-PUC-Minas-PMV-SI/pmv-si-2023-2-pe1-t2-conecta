@@ -57,11 +57,15 @@ input[type=submit][name=cancelar], input[type=submit][name=voltar] {
     background-color: #FFFFFF;
     color: #274C77;
     margin-bottom: 30px;
+    width: 150px;
+    height: 50px;
 }
 
 input[type=submit][name=proximo], input[type=submit][name=cadastrar] {
     background-color: #274C77;
     color: #FFFFFF;
+    width: 150px;
+    height: 50px;
 }
 
 input[type=file] {
@@ -108,10 +112,12 @@ textarea {
 .row-button {
     display: flex;
     flex-direction: row-reverse;
+    justify-content: center;
 }
 
 .row-button > div {
     margin-left: 24px;
+    margin-right: 24px;
     padding-top: 40px;
 }
 
@@ -129,9 +135,12 @@ textarea {
 }
 
 label {
+    color: #716F6F;
+    margin-bottom: 0px;
     padding: 12px 12px 12px 0;
     display: inline-block;
     color: #716F6F;
+    font-size: 20px;
 }
 
 @media screen and (max-width: 600px) {
@@ -142,7 +151,7 @@ label {
         min-width: 80%;
         padding: 0px;
     }
-    .col-15, .col-85, input[type=submit] {
+    .col-15, .col-85{
         width: 100%;
         margin-top: 0;
     }

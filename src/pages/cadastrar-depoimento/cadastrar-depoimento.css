@@ -58,11 +58,14 @@ input[type=submit][name=cancelar] {
     background-color: #FFFFFF;
     color: #274C77;
     margin-bottom: 30px;
+    width: 150px;
+    height: 50px;
 }
 
 input[type=submit][name=enviar] {
     background-color: #274C77;
     color: #FFFFFF;
+    
 }
 
 input[type=submit] {
@@ -103,10 +106,12 @@ textarea {
 .row-button {
     display: flex;
     flex-direction: row-reverse;
+    justify-content: center;
 }
 
 .row-button > div {
     margin-left: 24px;
+    margin-right: 24px;
     padding-top: 40px;
 }
 
@@ -123,8 +128,11 @@ textarea {
 
 label {
     padding: 12px 12px 12px 0;
+    margin-bottom: 0px;
     display: inline-block;
     color: #716F6F;
+    font-size: 20px;
+    white-space: nowrap;
 }
 
 @media screen and (max-width: 600px) {
@@ -136,7 +144,7 @@ label {
         min-width: 80%;
         padding: 0px;
     }
-    .col-22, .col-78, input[type=submit] {
+    .col-22, .col-78{
         width: 100%;
         margin-top: 0;
     }

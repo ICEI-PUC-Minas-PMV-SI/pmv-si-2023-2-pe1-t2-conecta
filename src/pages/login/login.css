@@ -27,8 +27,11 @@
     gap: 16px;
     max-width: 400px;
     padding: 20px;
+    margin-bottom: 40px;
 }
-
+form{
+    width: 100%;
+}
 input[type=password], input[type=text] {
     width: 100%;
     padding: 8px 12px 0 12px;
@@ -76,7 +79,7 @@ input[type=submit] {
 }
 
 .row-button {
-    padding-top: 120px;
+    padding-top: 80px;
 }
 
 .col {
@@ -93,26 +96,24 @@ input[type=submit] {
 
 .col-85 {
     float: left;
-    width: 94%;
+    width: 100%;
     margin-top: 6px;
 }
 
 label {
-    padding: 12px 12px 0 0;
+    margin-bottom: 0px;
+    padding: 12px 12px 12px 0;
+    font-size: 20px;
     display: inline-block;
     color: #716F6F;
 }
 
 div > label {
-    padding: 0 5px 0 0;
+    padding: 20px 30px 0 0px;
 }
 @media screen and (max-width: 600px ){
     .section-wrapper{
         min-width: 80%;
-        padding: 0px;
-    }
-    form{
-        width: 100%;
     }
     .col-85 {
         width: 100%;
