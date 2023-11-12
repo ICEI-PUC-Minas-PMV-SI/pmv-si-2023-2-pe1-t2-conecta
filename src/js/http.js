@@ -1,4 +1,4 @@
-import { LOCAL_JSON_SERVER_URL } from './constants.js'
+import {PRODUCTION_JSON_SERVER_URL} from './constants.js'
 
 export async function makeRequest(url, method, data) {
     const upperCaseMethod = method.toUpperCase();
@@ -24,5 +24,5 @@ export async function makeRequest(url, method, data) {
 }
 
 export function getURL(route) {
-    return `${LOCAL_JSON_SERVER_URL}/${route}`;
+    return `${PRODUCTION_JSON_SERVER_URL}/${route}`;
 }
