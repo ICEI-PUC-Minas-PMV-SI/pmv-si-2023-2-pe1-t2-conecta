@@ -2,7 +2,7 @@ import { LOCAL_JSON_SERVER_URL } from './constants.js'
 
 export async function makeRequest(url, method, data) {
     const upperCaseMethod = method.toUpperCase();
-    if (!['GET', 'POST', 'PUT', 'DELETE'].includes(upperCaseMethod)) {
+    if (!['GET', 'POST', 'PUT', 'DELETE', 'PATCH'].includes(upperCaseMethod)) {
         throw new Error('Method not allowed');
     }
 
