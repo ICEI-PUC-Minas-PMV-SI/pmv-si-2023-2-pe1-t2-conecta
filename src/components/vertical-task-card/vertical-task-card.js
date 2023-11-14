@@ -24,6 +24,10 @@ const makeTemplate = () => {
                     <div class="task-info">
                         <p class="task-name"></p>
                         <p class="task-owner"></p>
+                        <div class="location-button-wrapper">
+                            <img class="image-location" src="${rootPath}/assets/icons/location.png" alt="Location">
+                            <div class="location-tag"></div>
+                        </div>
                     </div>
                     <a href=${getPagePath("pagina-da-ong")}>
                         <div class="profile-image-card-container">
@@ -42,10 +46,7 @@ const makeTemplate = () => {
                             <a href="" class="help-button">QUERO AJUDAR</a>
                         </div>
                     </div>
-                    <div class="location-button-wrapper">
-                        <img class="image-location" src="${rootPath}/assets/icons/location.png" alt="Location">
-                        <div class="location-tag"></div>
-                    </div>
+                    
                 </div>
             </div>
         </div>
@@ -107,6 +108,14 @@ const cssStyle = `
         flex-direction: row;
         justify-content: space-between;
     }
+
+    .task-info > .task-name {
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 1;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
     
     .vertical-task-card > .card-section-wrapper > .help-button-wrapper {
         align-self: end;
@@ -122,6 +131,7 @@ const cssStyle = `
     
     .task-info {
         max-width: 60%;
+        margin-top: 10px;
     }
     
     .task-info > .task-name {
@@ -180,7 +190,7 @@ const cssStyle = `
     
     .location-button-wrapper {
         display: flex;
-        max-width: 120px;
+        max-width: 150px;
         height: 50px;
         flex-shrink: 0;
         border-radius: 5px;
@@ -189,7 +199,7 @@ const cssStyle = `
         text-decoration: none;
         font-weight: 700;
         align-items: center;
-        justify-content: center;
+        justify-content: left;
         float: left;
     }
     
