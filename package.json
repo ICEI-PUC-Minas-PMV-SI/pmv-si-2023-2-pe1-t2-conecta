@@ -1,0 +1,27 @@
+{
+  "name": "conecta",
+  "version": "1.0.0",
+  "description": "`CURSO: Sistemas de Informação`",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "json-server --watch db.json --port 3001"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2023-2-pe1-t2-conecta.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2023-2-pe1-t2-conecta/issues"
+  },
+  "homepage": "https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2023-2-pe1-t2-conecta#readme",
+  "dependencies": {
+    "json-server": "^0.17.4"
+  }
+}
