@@ -26,6 +26,9 @@ export class Organization {
     phoneNumber;
     password;
     address;
+    facebook;
+    instagram;
+    twitter;
 
     async create() {
         const data = {
@@ -40,7 +43,10 @@ export class Organization {
             street: this.address.street,
             number: this.address.buildingNumber,
             city: this.address.city,
-            state: this.address.state
+            state: this.address.state,
+            facebook: this.facebook,
+            instagram: this.instagram,
+            twitter: this.twitter
         }
 
         return await makeRequest(getURL('organizations'), 'POST', data);
@@ -63,7 +69,10 @@ export class Organization {
             street: this.address.street,
             number: this.address.buildingNumber,
             city: this.address.city,
-            state: this.address.state
+            state: this.address.state,
+            facebook: this.facebook,
+            instagram: this.instagram,
+            twitter: this.twitter
         }
 
         return await makeRequest(getURL(`organizations/${id}`), 'PUT', data);

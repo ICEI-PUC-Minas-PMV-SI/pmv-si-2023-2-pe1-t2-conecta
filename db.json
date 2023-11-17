@@ -13,6 +13,9 @@
       "number": "125",
       "city": "Belo Horizonte",
       "state": "MG",
+      "facebook": "www.facebook.com/wehelp1",
+      "instagram": "www.instagram.com/wehelp1",
+      "twitter": "www.twitter.com/wehelp1",
       "id": 1
     },
     {
@@ -28,6 +31,9 @@
       "number": "125",
       "city": "Belo Horizonte",
       "state": "MG",
+      "facebook": "www.facebook.com/wehelp2",
+      "instagram": "www.instagram.com/wehelp2",
+      "twitter": "www.twitter.com/wehelp2",
       "id": 2
     }
   ],
