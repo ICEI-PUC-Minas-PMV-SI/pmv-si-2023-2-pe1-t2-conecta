@@ -31,21 +31,24 @@ As tabelas que se seguem apresentam os requisitos funcionais e não-funcionais q
 ## Descrição das estruturas:
 
 ## ONG
-| **Nome** | **Tipo**         | **Descrição**                                   | **Exemplo**                                                      |
-|:--------:|------------------|-------------------------------------------------|------------------------------------------------------------------|
-|    Id    | UUID             | Identificador único da ONG                      | 95ddad92-c441-4e92-a34d-fcf328c69b78                             |
-|   CNPJ   | Texto            | Número de CNPJ da ONG                           | 51948129000167                                                   |
-|  Email   | Texto            | Endereço de e-mail da ONG                       | ong@email.com                                                    |
-| Telefone | Texto            | Número de telefone da ONG                       | 3132700120                                                       |
-|  Senha   | Texto(SHA-256)   | Senha de acesso à conta da ONG                  | bdcebd4f01d7024696ba685eefc1c5dd446071b0c89f858aae7ef136c439e09e |
-|   CEP    | Texto            | Código de Endereçamento Postal (CEP)            | 30170131                                                         |
-|   Rua    | Texto            | Nome da rua onde está localizada a ONG          | Rua dos Tupis                                                    |
-|  Número  | Texto            | Número do endereço da ONG                       | 646                                                              |
-|  Cidade  | Texto            | Cidade onde está localizada a ONG               | Belo Horizonte                                                   |
-|  Estado  | Texto            | Abreviação do estado onde está localizada a ONG | MG (ISO 3166-2: BR)                                              |
-|   Nome   | Texto            | Nome da ONG                                     | Organização 4 patinhas                                           |
-|  Sobre   | Texto            | Descrição sobre a ONG                           | Ajudamos animais abandonados a encontrar um lar                  |
-|  Imagem  | binary           | URL da imagem representando a ONG               | `[/9j/4ASKUHINNCVDXL/OIJVNVSMDKM6846V86SD5V]`                    |
+| **Nome**  | **Tipo**       | **Descrição**                                            | **Exemplo**                                                      |
+|:---------:|----------------|----------------------------------------------------------|------------------------------------------------------------------|
+|    Id     | UUID           | Identificador único da ONG                               | 95ddad92-c441-4e92-a34d-fcf328c69b78                             |
+|   CNPJ    | Texto          | Número de CNPJ da ONG                                    | 51948129000167                                                   |
+|   Email   | Texto          | Endereço de e-mail da ONG                                | ong@email.com                                                    |
+| Telefone  | Texto          | Número de telefone da ONG                                | 3132700120                                                       |
+|   Senha   | Texto(SHA-256) | Senha de acesso à conta da ONG                           | bdcebd4f01d7024696ba685eefc1c5dd446071b0c89f858aae7ef136c439e09e |
+|    CEP    | Texto          | Código de Endereçamento Postal (CEP)                     | 30170131                                                         |
+|    Rua    | Texto          | Nome da rua onde está localizada a ONG                   | Rua dos Tupis                                                    |
+|  Número   | Texto          | Número do endereço da ONG                                | 646                                                              |
+|  Cidade   | Texto          | Cidade onde está localizada a ONG                        | Belo Horizonte                                                   |
+|  Estado   | Texto          | Abreviação do estado onde está localizada a ONG          | MG (ISO 3166-2: BR)                                              |
+|   Nome    | Texto          | Nome da ONG                                              | Organização 4 patinhas                                           |
+|   Sobre   | Texto          | Descrição sobre a ONG                                    | Ajudamos animais abandonados a encontrar um lar                  |
+|  Imagem   | Texto          | Texto representando a imagem da ONG convertida em base64 | `data:image/jpeg;base64,/9j/4AAQSkZJRgABAQEFFAUUAAD/...`         |
+| Facebook  | Texto          | URL da página da ONG no Facebook                         | `https://www.facebook.com/organizacao4patinhas`                  |
+| Instagram | Texto          | URL da página da ONG no Instagram                        | `https://www.instagram.com/organizacao4patinhas`                 |
+|  Twitter  | Texto          | URL da página da ONG no Twitter                          | `https://www.twitter.com/organizacao4patinhas`                   |
 
 ## Demanda
 |     **Nome**      | **Tipo**                     | **Descrição**                                                             | **Exemplo**                                                                         |
