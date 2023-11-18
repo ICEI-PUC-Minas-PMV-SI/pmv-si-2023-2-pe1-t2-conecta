@@ -95,8 +95,27 @@ function validateEmail(input) {
         alert("Email inválido");
         return;
     }
-    
+
     return email;
+}
+
+function validatePassword(input, inputConfirmation) {
+    if (input.length <= 0) {
+        alert("Senha não pode ser vazia");
+        return;
+    }
+
+    if (input.length <= 6) {
+        alert("Senha deve ter mais de 6 caracteres");
+        return;
+    }
+
+    if (input !== inputConfirmation) {
+        alert("Senhas não conferem");
+        return;
+    }
+
+    return input;
 }
 
 function handleCreateOrganizationFirstForm(event) {
@@ -105,7 +124,7 @@ function handleCreateOrganizationFirstForm(event) {
     const cnpjInput = document.getElementById("cnpj").value;
     const name = document.getElementById("nome").value;
     const emailInput = document.getElementById("email").value;
-    const password = document.getElementById("senha").value;
+    const passwordInput = document.getElementById("senha").value;
     const passwordConfirmation = document.getElementById("confirmar-senha").value;
     const phone = document.getElementById("phone").value;
     const street = document.getElementById("logradouro").value;
@@ -116,19 +135,19 @@ function handleCreateOrganizationFirstForm(event) {
 
 
     const cnpj = validateCNPJ(cnpjInput);
-    
+
     if (!cnpj) {
         return;
     }
-    
+
     if (name.length <= 0) {
         alert("Nome não pode ser vazio");
         return;
     }
 
-    const emailValidated = validateEmail(emailInput);
-    
-    if (!emailValidated) {
+    const email = validateEmail(emailInput);
+
+    if (!email) {
         return;
     }
 
@@ -137,13 +156,9 @@ function handleCreateOrganizationFirstForm(event) {
         return;
     }
 
-    if (password.length <= 0) {
-        alert("Senha não pode ser vazia");
-        return;
-    }
+    const password = validatePassword(passwordInput, passwordConfirmation);
 
-    if (password !== passwordConfirmation) {
-        alert("Senhas não conferem");
+    if (!password) {
         return;
     }
 
