@@ -81,12 +81,30 @@ function validateCNPJ(input) {
     return cnpj;
 }
 
+function validateEmail(input) {
+    if (input.length <= 0) {
+        alert("Email não pode ser vazio");
+        return;
+    }
+
+    const email = input.trim();
+
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+    if (!emailRegex.test(email)) {
+        alert("Email inválido");
+        return;
+    }
+    
+    return email;
+}
+
 function handleCreateOrganizationFirstForm(event) {
     event.preventDefault();
 
-    const cnpjFormatted = document.getElementById("cnpj").value;
+    const cnpjInput = document.getElementById("cnpj").value;
     const name = document.getElementById("nome").value;
-    const email = document.getElementById("email").value;
+    const emailInput = document.getElementById("email").value;
     const password = document.getElementById("senha").value;
     const passwordConfirmation = document.getElementById("confirmar-senha").value;
     const phone = document.getElementById("phone").value;
@@ -97,7 +115,7 @@ function handleCreateOrganizationFirstForm(event) {
     const zipCode = document.getElementById("cep").value;
 
 
-    const cnpj = validateCNPJ(cnpjFormatted);
+    const cnpj = validateCNPJ(cnpjInput);
     
     if (!cnpj) {
         return;
@@ -108,8 +126,9 @@ function handleCreateOrganizationFirstForm(event) {
         return;
     }
 
-    if (email.length <= 0) {
-        alert("Email não pode ser vazio");
+    const emailValidated = validateEmail(emailInput);
+    
+    if (!emailValidated) {
         return;
     }
 
