@@ -1,9 +1,90 @@
 document.getElementById("next-page-signup-button").addEventListener("click", handleCreateOrganizationFirstForm);
+const cnpjInput = document.getElementById("cnpj");
+
+cnpjInput.addEventListener("input", function () {
+    formatCnpjInput(this);
+});
+
+cnpjInput.addEventListener("keydown", function (event) {
+    if (isSpecialKey(event)) {
+        return;
+    }
+
+    if (isNumericInput(event)) {
+        return;
+    }
+
+    event.preventDefault();
+});
+
+function isNumericInput(event) {
+    const key = event.key;
+    return /\d/.test(key);
+}
+
+function isSpecialKey(event) {
+    return (
+        event.key === "Backspace" ||
+        event.key === "Delete" ||
+        event.key === "ArrowLeft" ||
+        event.key === "ArrowRight"
+    );
+}
+
+function formatCnpjInput(input) {
+    const value = input.value.replace(/\D/g, "");
+
+    if (value.length > 2 && value.length <= 5) {
+        input.value = value.substring(0, 2) + "." + value.substring(2);
+    } else if (value.length > 5 && value.length <= 8) {
+        input.value =
+            value.substring(0, 2) +
+            "." +
+            value.substring(2, 5) +
+            "." +
+            value.substring(5);
+    } else if (value.length > 8 && value.length <= 12) {
+        input.value =
+            value.substring(0, 2) +
+            "." +
+            value.substring(2, 5) +
+            "." +
+            value.substring(5, 8) +
+            "/" +
+            value.substring(8);
+    } else if (value.length > 12) {
+        input.value =
+            value.substring(0, 2) +
+            "." +
+            value.substring(2, 5) +
+            "." +
+            value.substring(5, 8) +
+            "/" +
+            value.substring(8, 12) +
+            "-" +
+            value.substring(12, 14);
+    }
+}
+
+function validateCNPJ(input) {
+    if (input.length <= 0) {
+        alert("CNPJ não pode ser vazio");
+        return;
+    }
+
+    const cnpj = input.replace(/\D/g, "");
+    if (cnpj.length !== 14) {
+        alert("CNPJ inválido");
+        return;
+    }
+
+    return cnpj;
+}
 
 function handleCreateOrganizationFirstForm(event) {
     event.preventDefault();
 
-    const cnpj = document.getElementById("cnpj").value;
+    const cnpjFormatted = document.getElementById("cnpj").value;
     const name = document.getElementById("nome").value;
     const email = document.getElementById("email").value;
     const password = document.getElementById("senha").value;
@@ -15,11 +96,13 @@ function handleCreateOrganizationFirstForm(event) {
     const state = document.getElementById("estado").value;
     const zipCode = document.getElementById("cep").value;
 
-    if (cnpj.length <= 0) {
-        alert("CNPJ não pode ser vazio");
+
+    const cnpj = validateCNPJ(cnpjFormatted);
+    
+    if (!cnpj) {
         return;
     }
-
+    
     if (name.length <= 0) {
         alert("Nome não pode ser vazio");
         return;
