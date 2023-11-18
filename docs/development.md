@@ -14,7 +14,6 @@ As tabelas que se seguem apresentam os requisitos funcionais e não-funcionais q
 | RF-004 | A aplicação deve permitir que as ONGs gerenciem suas informações de perfil (alterar, excluir e consultar os dados) a qualquer momento.                           | ALTA       | cadastrar-ong-1.html / cadastrar-ong-2.html                                   |
 | RF-005 | A aplicação deve possibilitar que as ONGs divulguem solicitações de ajuda técnica, descrevendo os projetos ou desafios específicos que precisam ser abordados.   | ALTA       | cadastrar-demanda.html                                                        |
 | RF-006 | As ONGs devem poder editar suas demandas (alterar, excluir e editar os dados) a qualquer momento.   | ALTA       | editar-demanda.html                                   |
-
 | RF-007 | A aplicação deve permitir que os voluntários visualizem as solicitações de ajuda técnica feitas pelas ONGs.   | ALTA       | index.html / pagina-de-demandas.html                                           |
 | RF-008 | Os voluntários devem poder se voluntariar por meio de formulário de contato para trabalhar em projetos específicos das ONGs, indicando seu interesse e disponibilidade.   | ALTA       | candidatar-a-demanda.html                                                     |
 | RF-009 | A aplicação deve permitir que as ONGs marquem as solicitações como concluídas ou encerradas.   | ALTA       | administrar-demanda-em-progresso.html                                                     |
