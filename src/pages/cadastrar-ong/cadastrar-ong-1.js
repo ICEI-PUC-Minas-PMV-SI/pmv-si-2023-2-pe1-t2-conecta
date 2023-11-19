@@ -1,4 +1,43 @@
 document.getElementById("next-page-signup-button").addEventListener("click", handleCreateOrganizationFirstForm);
+
+const phoneInput = document.getElementById("phone");
+
+phoneInput.addEventListener("input", function () {
+    formatPhoneInput(this);
+});
+
+phoneInput.addEventListener("keydown", function (event) {
+    if (isSpecialKey(event) || isNumericInput(event)) {
+        return;
+    }
+    
+    event.preventDefault();
+});
+
+function formatPhoneInput(input) {
+    const value = input.value.replace(/\D/g, "");
+    
+    if (value.length > 2 && value.length <= 6) {
+        input.value = "(" + value.substring(0, 2) + ") " + value.substring(2);
+    } else if (value.length > 6 && value.length <= 10) {
+        input.value =
+        "(" +
+        value.substring(0, 2) +
+        ") " +
+        value.substring(2, 6) +
+        "-" +
+        value.substring(6);
+    } else if (value.length > 10) {
+        input.value =
+        "(" +
+        value.substring(0, 2) +
+        ") " +
+        value.substring(2, 7) +
+        "-" +
+        value.substring(7, 11);
+    }
+}
+
 const cnpjInput = document.getElementById("cnpj");
 
 cnpjInput.addEventListener("input", function () {
@@ -6,11 +45,7 @@ cnpjInput.addEventListener("input", function () {
 });
 
 cnpjInput.addEventListener("keydown", function (event) {
-    if (isSpecialKey(event)) {
-        return;
-    }
-
-    if (isNumericInput(event)) {
+    if (isSpecialKey(event) || isNumericInput(event)) {
         return;
     }
 
@@ -120,6 +155,22 @@ function validatePassword(input, inputConfirmation) {
     return input;
 }
 
+function validatePhone(input) {
+    if (input.length <= 0) {
+        alert("Telefone não pode ser vazio");
+        return;
+    }
+
+    const phone = input.replace(/\D/g, "");
+
+    if (phone.length !== 11) {
+        alert("Telefone inválido, insira uma número com 11 dígitos");
+        return;
+    }
+
+    return phone;
+}
+
 function handleCreateOrganizationFirstForm(event) {
     event.preventDefault();
 
@@ -137,9 +188,7 @@ function handleCreateOrganizationFirstForm(event) {
 
     const cnpj = validateCNPJ(cnpjInput);
 
-    if (!cnpj) {
-        return;
-    }
+    if (!cnpj) return;
 
     if (name.length <= 0) {
         alert("Nome não pode ser vazio");
@@ -148,20 +197,15 @@ function handleCreateOrganizationFirstForm(event) {
 
     const email = validateEmail(emailInput);
 
-    if (!email) {
-        return;
-    }
+    if (!email) return;
 
-    if (phone.length <= 0) {
-        alert("Telefone não pode ser vazio");
-        return;
-    }
+    const phoneValidated = validatePhone(phone);
+    
+    if (!phoneValidated) return;
 
     const password = validatePassword(passwordInput, passwordConfirmation);
 
-    if (!password) {
-        return;
-    }
+    if (!password) return;
 
     if (zipCode.length <= 0) {
         alert("CEP não pode ser vazio");
