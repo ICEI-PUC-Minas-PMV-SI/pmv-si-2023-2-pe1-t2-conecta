@@ -1,5 +1,4 @@
 import { Address, Organization } from "../../js/models/organization.js";
-import { makeRequest } from "../../js/http.js";
 
 document.getElementById("submit-button").addEventListener("click", handleCreateOrganizationSecondForm);
 
@@ -67,6 +66,5 @@ async function handleCreateOrganizationSecondForm(event) {
     organization.twitter = data.twitter;
     
 
-    const created = await organization.create();
-    console.log({created});
+    await organization.create();
 }
