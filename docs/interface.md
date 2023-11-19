@@ -127,7 +127,7 @@ Wireframe que atende ao:
 
 RF-007 A aplicação deve permitir que as ONG vejam e administrem suas demandas, podendo filtrar por status (aberta, finalizada), cadastrar ou excluir.
 
-RF-019	A aplicação deve fornecer um mecanismo de filtro para que os usuários possam encontrar demandas com base em critérios como: remoto, presencial, híbrido e estado do Brasil.
+RF-019	A aplicação deve fornecer um mecanismo de filtro para que os usuários possam encontrar demandas com base em critérios como: remoto, presencial e estado do Brasil.
 
 ![wireframe-sobre-o-voluntariado](./img/wireframes/filtro.png)
 
