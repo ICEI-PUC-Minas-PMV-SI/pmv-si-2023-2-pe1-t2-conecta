@@ -48,7 +48,13 @@ export class Organization {
             instagram: this.instagram,
             twitter: this.twitter
         }
-
+        
+        const searchCNPJ = await makeRequest(getURL(`organizations?cnpj=${this.cnpj}`), 'GET');
+        if (searchCNPJ.length > 0) throw new Error("CNPJ já cadastrado")
+        
+        const searchEmail = await makeRequest(getURL(`organizations?email=${this.email}`), 'GET');
+        if (searchEmail.length > 0) throw new Error("Email já cadastrado")
+        
         return await makeRequest(getURL('organizations'), 'POST', data);
     }
 
