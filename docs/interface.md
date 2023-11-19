@@ -51,7 +51,7 @@ RF-006 - A aplicação deve possibilitar que as ONGs divulguem solicitações de
 
 Wireframe que atende ao:
 
-RF-007 - As ONGs devem poder editar suas demandas (alterar, excluir e editar os dados) a qualquer momento.
+RF-008 - As ONGs devem poder editar suas demandas (alterar, excluir e editar os dados) a qualquer momento.
 
 ![wireframe-editar-demanda](./img/wireframes/editar-demanda.png)
 
@@ -125,7 +125,7 @@ RF-018 - A aplicação deve apresentar a página “Histórias de Sucesso” que
 
 Wireframe que atende ao:
 
-RF-004 A aplicação deve apresentar uma página exclusiva para cada ONG, contendo informações sobre a organização, depoimentos dos voluntários e últimas demandas.
+RF-007 A aplicação deve permitir que as ONG vejam e administrem suas demandas, podendo filtrar por status (aberta, finalizada), cadastrar ou excluir.
 
 RF-019	A aplicação deve fornecer um mecanismo de filtro para que os usuários possam encontrar demandas com base em critérios como: remoto, presencial, híbrido e estado do Brasil.
 
