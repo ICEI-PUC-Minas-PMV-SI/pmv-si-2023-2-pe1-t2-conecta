@@ -1,4 +1,5 @@
 let slideIndex = 1;
+let slideIndex2 = 0;
 $(window).resize(function() {
     if ($('body').width() < 768) {
         showSlidesMobile(slideIndex);
@@ -63,3 +64,31 @@ function showSlidesMobile(n) {
     dots[slideIndex - 1].className += " active";
 }
 
+
+// muda sozinho
+function showSlidesMobile_auto() {
+    let i;
+    let slides = document.getElementsByClassName("mySlides-mobile");
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+    }
+    slideIndex2++;
+    if (slideIndex2 > slides.length) {slideIndex2 = 1}
+    slides[slideIndex2-1].style.display = "block";
+    setTimeout(showSlidesMobile_auto, 4000); // Change image every 2 seconds
+}
+
+showSlides_auto();
+showSlidesMobile_auto()
+
+function showSlides_auto() {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slideIndex2++;
+  if (slideIndex2 > slides.length) {slideIndex2 = 1}
+  slides[slideIndex2-1].style.display = "block";
+  setTimeout(showSlides_auto, 4000); // Change image every 2 seconds
+}
