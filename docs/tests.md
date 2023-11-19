@@ -24,22 +24,254 @@ Nesta seção o grupo deverá documentar os testes de software que verificam a c
 
 Preencha a tabela com o plano dos testes. Para cada Caso de Teste (CT), associe qual o Requisito  Funcional ou não funcional que ele está verificando. Associe também a página (ou artefato) onde o teste será realizado e descreva o cenário do teste. Veja a tabela de exemplo.
 
-
-**Caso de Teste** | **CT01 - Criar conta parte 1**
+**Caso de Teste** | **CT01 - Cadastrar ONG parte 1**
  :--------------: | ------------
-**Procedimento**  | 1) Usuário informa nome, sobrenome, email, senha, Estado e Cidade e clica no botão "Continuar".<br>2) A aplicação verifica se os dados são válidos e informa ao usuário caso não sejam.
+**Procedimento**  | 1) #<br> 2) #
 **Requisitos associados** | RF-001
 **Resultado esperado** | Prosseguir para a parte 2 do cadastro.
 **Dados de entrada** | Inserção de dados válidos no formulário de cadastro.
 **Resultado obtido** | Sucesso.
 
-**Caso de Teste** | **CT02 - Criar conta parte 2**
+**Caso de Teste** | **CT02 - Cadastrar ONG parte 2**
  :--------------: | ------------
-**Procedimento**  | 1) Usuário informa gênero, seu tipo de usuário (cuidador ou comum), data de nascimento e clica em criar.<br>2) A aplicação verifica se os dados são válidos e informa ao usuário caso não sejam.<br> 3) A aplicação armazena os dados e direciona o usuário para a tela de login.
+**Procedimento**  | 1) # <br> 2) # <br> 3) #
 **Requisitos associados** | RF-001
 **Resultado esperado** | Criação de cadastro
 **Dados de entrada** | Inserção de dados válidos no formulário de cadastro.
-**Resultado obtido** | Sucesso.
+**Resultado obtido** | #
+
+**Caso de Teste** | **CT03 - Autenticação de ONG (login)**
+ :--------------: | ------------
+**Procedimento**  | 1) # <br> 2) # <br> 3) #
+**Requisitos associados** | RF-002
+**Resultado esperado** | #
+**Dados de entrada** | #
+**Resultado obtido** | #
+
+**Caso de Teste** | **CT04 - Recuperação de Senha**
+ :--------------: | ------------
+**Procedimento**  | 1) # <br> 2) # <br> 3) #
+**Requisitos associados** | RF-003
+**Resultado esperado** | #
+**Dados de entrada** | #
+**Resultado obtido** | #
+
+**Caso de Teste** | **CT05 - Página da ONG**
+ :--------------: | ------------
+**Procedimento**  | 1) # <br> 2) # <br> 3) #
+**Requisitos associados** | RF-004
+**Resultado esperado** | #
+**Dados de entrada** | #
+**Resultado obtido** | #
+
+**Caso de Teste** | **CT06 - Gerenciamento de Perfil da ONG**
+ :--------------: | ------------
+**Procedimento**  | 1) # <br> 2) # <br> 3) #
+**Requisitos associados** | RF-005
+**Resultado esperado** | #
+**Dados de entrada** | #
+**Resultado obtido** | #
+
+**Caso de Teste** | **CT07 - Divulgação de Solicitações de Ajuda pelas ONGs**
+ :--------------: | ------------
+**Procedimento**  | 1) # <br> 2) # <br> 3) #
+**Requisitos associados** | RF-006
+**Resultado esperado** | #
+**Dados de entrada** | #
+**Resultado obtido** | #
+
+**Caso de Teste** | **CT08 - Administrar Demandas**
+ :--------------: | ------------
+**Procedimento**  | 1) # <br> 2) # <br> 3) #
+**Requisitos associados** | RF-007
+**Resultado esperado** | #
+**Dados de entrada** | #
+**Resultado obtido** | #
+
+**Caso de Teste** | **CT09 - Edição de Demandas pelas ONGs**
+ :--------------: | ------------
+**Procedimento**  | 1) # <br> 2) # <br> 3) #
+**Requisitos associados** | RF-008
+**Resultado esperado** | #
+**Dados de entrada** | #
+**Resultado obtido** | #
+
+**Caso de Teste** | **CT10 - Visualização de Solicitações por Voluntários**
+ :--------------: | ------------
+**Procedimento**  | 1) # <br> 2) # <br> 3) #
+**Requisitos associados** | RF-009
+**Resultado esperado** | #
+**Dados de entrada** | #
+**Resultado obtido** | #
+
+**Caso de Teste** | **CT11 - Voluntariar-se em Projetos Específicos**
+ :--------------: | ------------
+**Procedimento**  | 1) # <br> 2) # <br> 3) #
+**Requisitos associados** | RF-010
+**Resultado esperado** | #
+**Dados de entrada** | #
+**Resultado obtido** | #
+
+**Caso de Teste** | **CT12 - Marcar Solicitações como Concluídas ou Encerradas**
+ :--------------: | ------------
+**Procedimento**  | 1) # <br> 2) # <br> 3) #
+**Requisitos associados** | RF-011
+**Resultado esperado** | #
+**Dados de entrada** | #
+**Resultado obtido** | #
+
+**Caso de Teste** | **CT13 - Página com Últimas Demandas**
+ :--------------: | ------------
+**Procedimento**  | 1) # <br> 2) # <br> 3) #
+**Requisitos associados** | RF-012
+**Resultado esperado** | #
+**Dados de entrada** | #
+**Resultado obtido** | #
+
+**Caso de Teste** | **CT14 - Página "Como Começar"**
+ :--------------: | ------------
+**Procedimento**  | 1) # <br> 2) # <br> 3) #
+**Requisitos associados** | RF-013
+**Resultado esperado** | #
+**Dados de entrada** | #
+**Resultado obtido** | #
+
+**Caso de Teste** | **CT15 - Página Inicial (Landing Page)**
+ :--------------: | ------------
+**Procedimento**  | 1) # <br> 2) # <br> 3) #
+**Requisitos associados** | RF-014
+**Resultado esperado** | #
+**Dados de entrada** | #
+**Resultado obtido** | #
+
+**Caso de Teste** | **CT16 - Página "Perguntas Frequentes"**
+ :--------------: | ------------
+**Procedimento**  | 1) # <br> 2) # <br> 3) #
+**Requisitos associados** | RF-015
+**Resultado esperado** | #
+**Dados de entrada** | #
+**Resultado obtido** | #
+
+**Caso de Teste** | **CT17 - Página "Sobre o Voluntariado"**
+ :--------------: | ------------
+**Procedimento**  | 1) # <br> 2) # <br> 3) #
+**Requisitos associados** | RF-016
+**Resultado esperado** | #
+**Dados de entrada** | #
+**Resultado obtido** | #
+
+**Caso de Teste** | **CT18 - Página "Por Que Ser Voluntário?"**
+ :--------------: | ------------
+**Procedimento**  | 1) # <br> 2) # <br> 3) #
+**Requisitos associados** | RF-017
+**Resultado esperado** | #
+**Dados de entrada** | #
+**Resultado obtido** | #
+
+**Caso de Teste** | **CT19 - Página "Histórias de Sucesso"**
+ :--------------: | ------------
+**Procedimento**  | 1) # <br> 2) # <br> 3) #
+**Requisitos associados** | RF-018
+**Resultado esperado** | #
+**Dados de entrada** | #
+**Resultado obtido** | #
+
+**Caso de Teste** | **CT20 - Filtro de Demandas por Critérios**
+ :--------------: | ------------
+**Procedimento**  | 1) # <br> 2) # <br> 3) #
+**Requisitos associados** | RF-019
+**Resultado esperado** | #
+**Dados de entrada** | #
+**Resultado obtido** | #
+
+**Caso de Teste** | **CT21 - E-mail de Notificação para Voluntários**
+ :--------------: | ------------
+**Procedimento**  | 1) # <br> 2) # <br> 3) #
+**Requisitos associados** | RF-020
+**Resultado esperado** | #
+**Dados de entrada** | #
+**Resultado obtido** | #
+
+**Caso de Teste** | **CT22 - Lista de Voluntários Aceitos na Demanda**
+ :--------------: | ------------
+**Procedimento**  | 1) # <br> 2) # <br> 3) #
+**Requisitos associados** | RF-023
+**Resultado esperado** | #
+**Dados de entrada** | #
+**Resultado obtido** | #
+
+**Caso de Teste** | **CT23 - Envio de Link para Comentários por E-mail**
+ :--------------: | ------------
+**Procedimento**  | 1) # <br> 2) # <br> 3) #
+**Requisitos associados** | RF-024
+**Resultado esperado** | #
+**Dados de entrada** | #
+**Resultado obtido** | #
+
+**Caso de Teste** | **CT24 - Página para Depoimentos de Voluntários**
+ :--------------: | ------------
+**Procedimento**  | 1) # <br> 2) # <br> 3) #
+**Requisitos associados** | RF-025
+**Resultado esperado** | #
+**Dados de entrada** | #
+**Resultado obtido** | #
+
+**Caso de Teste** | **CT25 - Disponibilização de Depoimentos no Perfil da ONG**
+ :--------------: | ------------
+**Procedimento**  | 1) # <br> 2) # <br> 3) #
+**Requisitos associados** | RF-026
+**Resultado esperado** | #
+**Dados de entrada** | #
+**Resultado obtido** | #
+
+
+**Caso de Teste** | **CT26 - Responsividade**
+ :--------------: | ------------
+**Procedimento**  | 1) # <br> 2) # <br> 3) #
+**Requisitos associados** | RNF-001
+**Resultado esperado** | #
+**Dados de entrada** | #
+**Resultado obtido** | #
+
+**Caso de Teste** | **CT27 - Interface simples**
+ :--------------: | ------------
+**Procedimento**  | 1) # <br> 2) # <br> 3) #
+**Requisitos associados** | RNF-002
+**Resultado esperado** | #
+**Dados de entrada** | #
+**Resultado obtido** | #
+
+**Caso de Teste** | **CT28 - Criptografia de senha**
+ :--------------: | ------------
+**Procedimento**  | 1) # <br> 2) # <br> 3) #
+**Requisitos associados** | RNF-003
+**Resultado esperado** | #
+**Dados de entrada** | #
+**Resultado obtido** | #
+
+**Caso de Teste** | **CT29 - Feedback visual**
+ :--------------: | ------------
+**Procedimento**  | 1) # <br> 2) # <br> 3) #
+**Requisitos associados** | RNF-004
+**Resultado esperado** | #
+**Dados de entrada** | #
+**Resultado obtido** | #
+
+**Caso de Teste** | **CT30 - Tempo de carregamento**
+ :--------------: | ------------
+**Procedimento**  | 1) # <br> 2) # <br> 3) #
+**Requisitos associados** | RNF-005
+**Resultado esperado** | #
+**Dados de entrada** | #
+**Resultado obtido** | #
+
+**Caso de Teste** | **CT31 - Compatibilidade com Navegadores**
+ :--------------: | ------------
+**Procedimento**  | 1) # <br> 2) # <br> 3) #
+**Requisitos associados** | RNF-006
+**Resultado esperado** | #
+**Dados de entrada** | #
+**Resultado obtido** | #
 
 ## Registro dos Testes de Software
 
