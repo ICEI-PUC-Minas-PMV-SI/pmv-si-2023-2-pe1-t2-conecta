@@ -1,84 +1,37 @@
 document.getElementById("next-page-signup-button").addEventListener("click", handleCreateOrganizationFirstForm);
 
-const zipCodeInput = document.getElementById("cep");
-
-zipCodeInput.addEventListener("input", function () {
-    formatZipCodeInput(this);
-});
-
-zipCodeInput.addEventListener("keydown", function (event) {
-    if (isSpecialKey(event) || isNumericInput(event)) {
-        return;
-    }
-
-    event.preventDefault();
-});
-
-function formatZipCodeInput(input) {
+function formatInput(input, format) {
     const value = input.value.replace(/\D/g, "");
+    let formattedValue = "";
 
-    if (value.length > 5) {
-        input.value = value.substring(0, 5) + "-" + value.substring(5, 8);
-    } else {
-        input.value = value;
+    for (let i = 0, j = 0; i < format.length && j < value.length; i++) {
+        if (format[i] === "#") {
+            formattedValue += value[j++];
+        } else {
+            formattedValue += format[i];
+        }
     }
+
+    input.value = formattedValue;
 }
 
-const phoneInput = document.getElementById("phone");
+function addInputFormatListener(inputId, format) {
+    const input = document.getElementById(inputId);
 
-phoneInput.addEventListener("input", function () {
-    formatPhoneInput(this);
-});
+    input.addEventListener("input", () => {
+        formatInput(input, format);
+    });
 
-phoneInput.addEventListener("keydown", function (event) {
-    if (isSpecialKey(event) || isNumericInput(event)) {
-        return;
-    }
-    
-    event.preventDefault();
-});
-
-function formatPhoneInput(input) {
-    const value = input.value.replace(/\D/g, "");
-    
-    if (value.length > 2 && value.length <= 6) {
-        input.value = "(" + value.substring(0, 2) + ") " + value.substring(2);
-    } else if (value.length > 6 && value.length <= 10) {
-        input.value =
-        "(" +
-        value.substring(0, 2) +
-        ") " +
-        value.substring(2, 6) +
-        "-" +
-        value.substring(6);
-    } else if (value.length > 10) {
-        input.value =
-        "(" +
-        value.substring(0, 2) +
-        ") " +
-        value.substring(2, 7) +
-        "-" +
-        value.substring(7, 11);
-    }
+    input.addEventListener("keydown", (event) => {
+        if (isNumericInput(event) || isSpecialKey(event)) {
+            return;
+        }
+        event.preventDefault();
+    });
 }
-
-const cnpjInput = document.getElementById("cnpj");
-
-cnpjInput.addEventListener("input", function () {
-    formatCnpjInput(this);
-});
-
-cnpjInput.addEventListener("keydown", function (event) {
-    if (isSpecialKey(event) || isNumericInput(event)) {
-        return;
-    }
-
-    event.preventDefault();
-});
 
 function isNumericInput(event) {
-    const key = event.key;
-    return /\d/.test(key);
+    return /\d/.test(event.key);
 }
 
 function isSpecialKey(event) {
@@ -87,45 +40,15 @@ function isSpecialKey(event) {
         event.key === "Delete" ||
         event.key === "ArrowLeft" ||
         event.key === "ArrowRight" ||
+        event.key === "Tab" ||
         (event.ctrlKey && event.key === "v") ||
         (event.ctrlKey && event.key === "V")
     );
 }
 
-function formatCnpjInput(input) {
-    const value = input.value.replace(/\D/g, "");
-
-    if (value.length > 2 && value.length <= 5) {
-        input.value = value.substring(0, 2) + "." + value.substring(2);
-    } else if (value.length > 5 && value.length <= 8) {
-        input.value =
-            value.substring(0, 2) +
-            "." +
-            value.substring(2, 5) +
-            "." +
-            value.substring(5);
-    } else if (value.length > 8 && value.length <= 12) {
-        input.value =
-            value.substring(0, 2) +
-            "." +
-            value.substring(2, 5) +
-            "." +
-            value.substring(5, 8) +
-            "/" +
-            value.substring(8);
-    } else if (value.length > 12) {
-        input.value =
-            value.substring(0, 2) +
-            "." +
-            value.substring(2, 5) +
-            "." +
-            value.substring(5, 8) +
-            "/" +
-            value.substring(8, 12) +
-            "-" +
-            value.substring(12, 14);
-    }
-}
+addInputFormatListener("cnpj", "##.###.###/####-##");
+addInputFormatListener("phone", "(##) #####-####");
+addInputFormatListener("cep", "#####-###");
 
 function validateCNPJ(input) {
     if (input.length <= 0) {
@@ -200,18 +123,18 @@ function validateZipCode(input) {
         alert("CEP não pode ser vazio");
         return;
     }
-    
+
     const zipCode = input.replace(/\D/g, "");
-    
+
     if (zipCode.length !== 8) {
         alert("CEP inválido, forneça um CEP com 8 dígitos");
         return;
     }
-    
+
     return zipCode;
 }
 
-    
+
 function handleCreateOrganizationFirstForm(event) {
     event.preventDefault();
 
@@ -241,7 +164,7 @@ function handleCreateOrganizationFirstForm(event) {
     if (!email) return;
 
     const phoneValidated = validatePhone(phone);
-    
+
     if (!phoneValidated) return;
 
     const password = validatePassword(passwordInput, passwordConfirmation);
@@ -249,7 +172,7 @@ function handleCreateOrganizationFirstForm(event) {
     if (!password) return;
 
     const zipCodeValidated = validateZipCode(zipCode);
-    
+
     if (!zipCodeValidated) return;
 
     if (street.length <= 0) {
