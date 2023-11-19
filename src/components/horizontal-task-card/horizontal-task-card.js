@@ -143,7 +143,7 @@ const cssStyle = `
     
     .location-button-wrapper {
         display: flex;
-        max-width: 120px;
+        max-width: 150px;
         height: 50px;
         flex-shrink: 0;
         border-radius: 5px;
@@ -152,7 +152,7 @@ const cssStyle = `
         text-decoration: none;
         font-weight: 700;
         align-items: center;
-        justify-content: center;
+        justify-content: left;
         float: left;
     }
     
