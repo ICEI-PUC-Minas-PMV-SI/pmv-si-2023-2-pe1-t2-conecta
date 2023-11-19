@@ -65,6 +65,11 @@ async function handleCreateOrganizationSecondForm(event) {
     organization.instagram = data.instagram;
     organization.twitter = data.twitter;
     
-
-    await organization.create();
+    try {
+        await organization.create();
+        window.location.href = "../login/login.html";
+    } catch (error) {
+        alert(error.message);
+        window.location.href = "cadastrar-ong-1.html";
+    }
 }

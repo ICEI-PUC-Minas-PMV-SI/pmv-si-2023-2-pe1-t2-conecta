@@ -135,7 +135,6 @@ function handleCreateOrganizationFirstForm(event) {
     const state = document.getElementById("estado").value;
     const zipCode = document.getElementById("cep").value;
 
-
     const cnpj = validateCNPJ(cnpjInput);
 
     if (!cnpj) {
