@@ -67,6 +67,7 @@ async function handleCreateOrganizationSecondForm(event) {
     
     try {
         await organization.create();
+        alert("Cadastro realizado com sucesso!");
         window.location.href = "../login/login.html";
     } catch (error) {
         alert(error.message);
