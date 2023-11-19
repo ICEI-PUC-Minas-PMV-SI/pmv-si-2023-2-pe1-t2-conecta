@@ -1,5 +1,29 @@
 document.getElementById("next-page-signup-button").addEventListener("click", handleCreateOrganizationFirstForm);
 
+const zipCodeInput = document.getElementById("cep");
+
+zipCodeInput.addEventListener("input", function () {
+    formatZipCodeInput(this);
+});
+
+zipCodeInput.addEventListener("keydown", function (event) {
+    if (isSpecialKey(event) || isNumericInput(event)) {
+        return;
+    }
+
+    event.preventDefault();
+});
+
+function formatZipCodeInput(input) {
+    const value = input.value.replace(/\D/g, "");
+
+    if (value.length > 5) {
+        input.value = value.substring(0, 5) + "-" + value.substring(5, 8);
+    } else {
+        input.value = value;
+    }
+}
+
 const phoneInput = document.getElementById("phone");
 
 phoneInput.addEventListener("input", function () {
@@ -171,6 +195,23 @@ function validatePhone(input) {
     return phone;
 }
 
+function validateZipCode(input) {
+    if (input.length <= 0) {
+        alert("CEP não pode ser vazio");
+        return;
+    }
+    
+    const zipCode = input.replace(/\D/g, "");
+    
+    if (zipCode.length !== 8) {
+        alert("CEP inválido, forneça um CEP com 8 dígitos");
+        return;
+    }
+    
+    return zipCode;
+}
+
+    
 function handleCreateOrganizationFirstForm(event) {
     event.preventDefault();
 
@@ -207,10 +248,9 @@ function handleCreateOrganizationFirstForm(event) {
 
     if (!password) return;
 
-    if (zipCode.length <= 0) {
-        alert("CEP não pode ser vazio");
-        return;
-    }
+    const zipCodeValidated = validateZipCode(zipCode);
+    
+    if (!zipCodeValidated) return;
 
     if (street.length <= 0) {
         alert("Logradouro não pode ser vazio");
