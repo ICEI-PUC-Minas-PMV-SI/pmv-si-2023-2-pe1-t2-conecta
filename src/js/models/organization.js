@@ -1,5 +1,17 @@
 import {getURL, makeRequest} from "../http.js";
 
+async function hashPassword(password) {
+    const encoder = new TextEncoder();
+    const data = encoder.encode(password);
+    const hash = await window.crypto.subtle.digest('SHA-256', data);
+    return Array.from(new Uint8Array(hash)).map(b => b.toString(16).padStart(2, '0')).join('');
+}
+
+async function isPasswordCorrect(providedPassword, storedHashedPassword) {
+    const hashedProvidedPassword = await hashPassword(providedPassword);
+    return hashedProvidedPassword === storedHashedPassword;
+}
+
 export class Address {
     cep;
     street;
@@ -38,7 +50,7 @@ export class Organization {
             image: this.image,
             cnpj: this.cnpj,
             phone: this.phoneNumber,
-            password: this.password,
+            password: await hashPassword(this.password),
             cep: this.address.cep,
             street: this.address.street,
             number: this.address.buildingNumber,
@@ -48,13 +60,13 @@ export class Organization {
             instagram: this.instagram,
             twitter: this.twitter
         }
-        
+
         const searchCNPJ = await makeRequest(getURL(`organizations?cnpj=${this.cnpj}`), 'GET');
         if (searchCNPJ.length > 0) throw new Error("CNPJ já cadastrado")
-        
+
         const searchEmail = await makeRequest(getURL(`organizations?email=${this.email}`), 'GET');
         if (searchEmail.length > 0) throw new Error("Email já cadastrado")
-        
+
         return await makeRequest(getURL('organizations'), 'POST', data);
     }
 
