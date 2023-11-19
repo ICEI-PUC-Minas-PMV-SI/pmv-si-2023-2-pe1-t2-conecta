@@ -56,7 +56,7 @@ Preencha a tabela com o plano dos testes. Para cada Caso de Teste (CT), associe 
 **Dados de entrada** | #
 **Resultado obtido** | #
 
-**Caso de Teste** | **CT05 - Gerenciamento de Perfil da ONG**
+**Caso de Teste** | **CT05 - Página da ONG**
  :--------------: | ------------
 **Procedimento**  | 1) # <br> 2) # <br> 3) #
 **Requisitos associados** | RF-004
@@ -64,7 +64,7 @@ Preencha a tabela com o plano dos testes. Para cada Caso de Teste (CT), associe 
 **Dados de entrada** | #
 **Resultado obtido** | #
 
-**Caso de Teste** | **CT06 - Divulgação de Solicitações de Ajuda pelas ONGs**
+**Caso de Teste** | **CT06 - Gerenciamento de Perfil da ONG**
  :--------------: | ------------
 **Procedimento**  | 1) # <br> 2) # <br> 3) #
 **Requisitos associados** | RF-005
@@ -72,7 +72,7 @@ Preencha a tabela com o plano dos testes. Para cada Caso de Teste (CT), associe 
 **Dados de entrada** | #
 **Resultado obtido** | #
 
-**Caso de Teste** | **CT07 - Edição de Demandas pelas ONGs**
+**Caso de Teste** | **CT07 - Divulgação de Solicitações de Ajuda pelas ONGs**
  :--------------: | ------------
 **Procedimento**  | 1) # <br> 2) # <br> 3) #
 **Requisitos associados** | RF-006
@@ -80,7 +80,7 @@ Preencha a tabela com o plano dos testes. Para cada Caso de Teste (CT), associe 
 **Dados de entrada** | #
 **Resultado obtido** | #
 
-**Caso de Teste** | **CT08 - Visualização de Solicitações por Voluntários**
+**Caso de Teste** | **CT08 - Administrar Demandas**
  :--------------: | ------------
 **Procedimento**  | 1) # <br> 2) # <br> 3) #
 **Requisitos associados** | RF-007
@@ -88,7 +88,7 @@ Preencha a tabela com o plano dos testes. Para cada Caso de Teste (CT), associe 
 **Dados de entrada** | #
 **Resultado obtido** | #
 
-**Caso de Teste** | **CT09 - Voluntariar-se em Projetos Específicos**
+**Caso de Teste** | **CT09 - Edição de Demandas pelas ONGs**
  :--------------: | ------------
 **Procedimento**  | 1) # <br> 2) # <br> 3) #
 **Requisitos associados** | RF-008
@@ -96,7 +96,7 @@ Preencha a tabela com o plano dos testes. Para cada Caso de Teste (CT), associe 
 **Dados de entrada** | #
 **Resultado obtido** | #
 
-**Caso de Teste** | **CT10 - Marcar Solicitações como Concluídas ou Encerradas**
+**Caso de Teste** | **CT10 - Visualização de Solicitações por Voluntários**
  :--------------: | ------------
 **Procedimento**  | 1) # <br> 2) # <br> 3) #
 **Requisitos associados** | RF-009
@@ -104,7 +104,7 @@ Preencha a tabela com o plano dos testes. Para cada Caso de Teste (CT), associe 
 **Dados de entrada** | #
 **Resultado obtido** | #
 
-**Caso de Teste** | **CT11 - Página com Últimas Demandas**
+**Caso de Teste** | **CT11 - Voluntariar-se em Projetos Específicos**
  :--------------: | ------------
 **Procedimento**  | 1) # <br> 2) # <br> 3) #
 **Requisitos associados** | RF-010
@@ -112,7 +112,7 @@ Preencha a tabela com o plano dos testes. Para cada Caso de Teste (CT), associe 
 **Dados de entrada** | #
 **Resultado obtido** | #
 
-**Caso de Teste** | **CT12 - Página "Como Começar"**
+**Caso de Teste** | **CT12 - Marcar Solicitações como Concluídas ou Encerradas**
  :--------------: | ------------
 **Procedimento**  | 1) # <br> 2) # <br> 3) #
 **Requisitos associados** | RF-011
@@ -120,7 +120,7 @@ Preencha a tabela com o plano dos testes. Para cada Caso de Teste (CT), associe 
 **Dados de entrada** | #
 **Resultado obtido** | #
 
-**Caso de Teste** | **CT13 - Página Inicial (Landing Page)**
+**Caso de Teste** | **CT13 - Página com Últimas Demandas**
  :--------------: | ------------
 **Procedimento**  | 1) # <br> 2) # <br> 3) #
 **Requisitos associados** | RF-012
@@ -128,7 +128,7 @@ Preencha a tabela com o plano dos testes. Para cada Caso de Teste (CT), associe 
 **Dados de entrada** | #
 **Resultado obtido** | #
 
-**Caso de Teste** | **CT14 - Página "Perguntas Frequentes"**
+**Caso de Teste** | **CT14 - Página "Como Começar"**
  :--------------: | ------------
 **Procedimento**  | 1) # <br> 2) # <br> 3) #
 **Requisitos associados** | RF-013
@@ -136,7 +136,7 @@ Preencha a tabela com o plano dos testes. Para cada Caso de Teste (CT), associe 
 **Dados de entrada** | #
 **Resultado obtido** | #
 
-**Caso de Teste** | **CT15 - Página "Sobre o Voluntariado"**
+**Caso de Teste** | **CT15 - Página Inicial (Landing Page)**
  :--------------: | ------------
 **Procedimento**  | 1) # <br> 2) # <br> 3) #
 **Requisitos associados** | RF-014
@@ -144,7 +144,7 @@ Preencha a tabela com o plano dos testes. Para cada Caso de Teste (CT), associe 
 **Dados de entrada** | #
 **Resultado obtido** | #
 
-**Caso de Teste** | **CT16 - Página "Por Que Ser Voluntário?"**
+**Caso de Teste** | **CT16 - Página "Perguntas Frequentes"**
  :--------------: | ------------
 **Procedimento**  | 1) # <br> 2) # <br> 3) #
 **Requisitos associados** | RF-015
@@ -152,7 +152,7 @@ Preencha a tabela com o plano dos testes. Para cada Caso de Teste (CT), associe 
 **Dados de entrada** | #
 **Resultado obtido** | #
 
-**Caso de Teste** | **CT17 - Página "Histórias de Sucesso"**
+**Caso de Teste** | **CT17 - Página "Sobre o Voluntariado"**
  :--------------: | ------------
 **Procedimento**  | 1) # <br> 2) # <br> 3) #
 **Requisitos associados** | RF-016
@@ -160,7 +160,7 @@ Preencha a tabela com o plano dos testes. Para cada Caso de Teste (CT), associe 
 **Dados de entrada** | #
 **Resultado obtido** | #
 
-**Caso de Teste** | **CT18 - Filtro de Demandas por Critérios**
+**Caso de Teste** | **CT18 - Página "Por Que Ser Voluntário?"**
  :--------------: | ------------
 **Procedimento**  | 1) # <br> 2) # <br> 3) #
 **Requisitos associados** | RF-017
@@ -168,7 +168,7 @@ Preencha a tabela com o plano dos testes. Para cada Caso de Teste (CT), associe 
 **Dados de entrada** | #
 **Resultado obtido** | #
 
-**Caso de Teste** | **CT19 - E-mail de Notificação para Voluntários**
+**Caso de Teste** | **CT19 - Página "Histórias de Sucesso"**
  :--------------: | ------------
 **Procedimento**  | 1) # <br> 2) # <br> 3) #
 **Requisitos associados** | RF-018
@@ -176,23 +176,23 @@ Preencha a tabela com o plano dos testes. Para cada Caso de Teste (CT), associe 
 **Dados de entrada** | #
 **Resultado obtido** | #
 
-**Caso de Teste** | **CT20 - Lista de Voluntários Aceitos na Demanda**
+**Caso de Teste** | **CT20 - Filtro de Demandas por Critérios**
  :--------------: | ------------
 **Procedimento**  | 1) # <br> 2) # <br> 3) #
-**Requisitos associados** | RF-021
+**Requisitos associados** | RF-019
 **Resultado esperado** | #
 **Dados de entrada** | #
 **Resultado obtido** | #
 
-**Caso de Teste** | **CT21 - Envio de Link para Comentários por E-mail**
+**Caso de Teste** | **CT21 - E-mail de Notificação para Voluntários**
  :--------------: | ------------
 **Procedimento**  | 1) # <br> 2) # <br> 3) #
-**Requisitos associados** | RF-022
+**Requisitos associados** | RF-020
 **Resultado esperado** | #
 **Dados de entrada** | #
 **Resultado obtido** | #
 
-**Caso de Teste** | **CT22 - Página para Depoimentos de Voluntários**
+**Caso de Teste** | **CT22 - Lista de Voluntários Aceitos na Demanda**
  :--------------: | ------------
 **Procedimento**  | 1) # <br> 2) # <br> 3) #
 **Requisitos associados** | RF-023
@@ -200,7 +200,7 @@ Preencha a tabela com o plano dos testes. Para cada Caso de Teste (CT), associe 
 **Dados de entrada** | #
 **Resultado obtido** | #
 
-**Caso de Teste** | **CT23 - Disponibilização de Depoimentos no Perfil da ONG**
+**Caso de Teste** | **CT23 - Envio de Link para Comentários por E-mail**
  :--------------: | ------------
 **Procedimento**  | 1) # <br> 2) # <br> 3) #
 **Requisitos associados** | RF-024
@@ -208,8 +208,24 @@ Preencha a tabela com o plano dos testes. Para cada Caso de Teste (CT), associe 
 **Dados de entrada** | #
 **Resultado obtido** | #
 
+**Caso de Teste** | **CT24 - Página para Depoimentos de Voluntários**
+ :--------------: | ------------
+**Procedimento**  | 1) # <br> 2) # <br> 3) #
+**Requisitos associados** | RF-025
+**Resultado esperado** | #
+**Dados de entrada** | #
+**Resultado obtido** | #
 
-**Caso de Teste** | **CT24 - Responsividade**
+**Caso de Teste** | **CT25 - Disponibilização de Depoimentos no Perfil da ONG**
+ :--------------: | ------------
+**Procedimento**  | 1) # <br> 2) # <br> 3) #
+**Requisitos associados** | RF-026
+**Resultado esperado** | #
+**Dados de entrada** | #
+**Resultado obtido** | #
+
+
+**Caso de Teste** | **CT26 - Responsividade**
  :--------------: | ------------
 **Procedimento**  | 1) # <br> 2) # <br> 3) #
 **Requisitos associados** | RNF-001
@@ -217,7 +233,7 @@ Preencha a tabela com o plano dos testes. Para cada Caso de Teste (CT), associe 
 **Dados de entrada** | #
 **Resultado obtido** | #
 
-**Caso de Teste** | **CT25 - Interface simples**
+**Caso de Teste** | **CT27 - Interface simples**
  :--------------: | ------------
 **Procedimento**  | 1) # <br> 2) # <br> 3) #
 **Requisitos associados** | RNF-002
@@ -225,7 +241,7 @@ Preencha a tabela com o plano dos testes. Para cada Caso de Teste (CT), associe 
 **Dados de entrada** | #
 **Resultado obtido** | #
 
-**Caso de Teste** | **CT26 - Criptografia de senha**
+**Caso de Teste** | **CT28 - Criptografia de senha**
  :--------------: | ------------
 **Procedimento**  | 1) # <br> 2) # <br> 3) #
 **Requisitos associados** | RNF-003
@@ -233,7 +249,7 @@ Preencha a tabela com o plano dos testes. Para cada Caso de Teste (CT), associe 
 **Dados de entrada** | #
 **Resultado obtido** | #
 
-**Caso de Teste** | **CT27 - Feedback visual**
+**Caso de Teste** | **CT29 - Feedback visual**
  :--------------: | ------------
 **Procedimento**  | 1) # <br> 2) # <br> 3) #
 **Requisitos associados** | RNF-004
@@ -241,7 +257,7 @@ Preencha a tabela com o plano dos testes. Para cada Caso de Teste (CT), associe 
 **Dados de entrada** | #
 **Resultado obtido** | #
 
-**Caso de Teste** | **CT28 - Tempo de carregamento**
+**Caso de Teste** | **CT30 - Tempo de carregamento**
  :--------------: | ------------
 **Procedimento**  | 1) # <br> 2) # <br> 3) #
 **Requisitos associados** | RNF-005
@@ -249,7 +265,7 @@ Preencha a tabela com o plano dos testes. Para cada Caso de Teste (CT), associe 
 **Dados de entrada** | #
 **Resultado obtido** | #
 
-**Caso de Teste** | **CT29 - Compatibilidade com Navegadores**
+**Caso de Teste** | **CT31 - Compatibilidade com Navegadores**
  :--------------: | ------------
 **Procedimento**  | 1) # <br> 2) # <br> 3) #
 **Requisitos associados** | RNF-006
