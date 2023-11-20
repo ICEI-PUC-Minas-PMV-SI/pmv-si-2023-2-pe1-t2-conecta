@@ -2,7 +2,7 @@ import {
     Required,
     SUCESSO_ENVIAR_CANDIDATURA,
     CONFIRM_CANCELAR_CANDIDATURA,
-    LOCATION_REF_PAGINA_DEMANDAS
+    LOCATION_REF_ADMINISTRAR_DEMANDAS,
 } from "../../js/constants.js";
 
 document.getElementById("cancelar").addEventListener("click", handleCancel);
@@ -10,7 +10,7 @@ document.getElementById("enviar").addEventListener("click", handleSend);
 
 function handleCancel() {
     if (confirm(CONFIRM_CANCELAR_CANDIDATURA)) {
-        window.location.href = LOCATION_REF_PAGINA_DEMANDAS;
+        window.location.href = LOCATION_REF_ADMINISTRAR_DEMANDAS;
     }
 }
 
@@ -62,5 +62,5 @@ function handleSend(event) {
     }
 
     alert(SUCESSO_ENVIAR_CANDIDATURA);
-    window.location.href = LOCATION_REF_PAGINA_DEMANDAS;
+    window.location.href = LOCATION_REF_ADMINISTRAR_DEMANDAS;
 }
