@@ -5,6 +5,52 @@ import {
     LOCATION_REF_ADMINISTRAR_DEMANDAS,
 } from "../../js/constants.js";
 import {Candidate}from "../../js/models/candidate.js";
+
+function formatInput(input, format) {
+    const value = input.value.replace(/\D/g, "");
+    let formattedValue = "";
+
+    for (let i = 0, j = 0; i < format.length && j < value.length; i++) {
+        if (format[i] === "#") {
+            formattedValue += value[j++];
+        } else {
+            formattedValue += format[i];
+        }
+    }
+
+    input.value = formattedValue;
+}
+function addInputFormatListener(inputId, format) {
+    const input = document.getElementById(inputId);
+
+    input.addEventListener("input", () => {
+        formatInput(input, format);
+    });
+
+    input.addEventListener("keydown", (event) => {
+        if (isNumericInput(event) || isSpecialKey(event)) {
+            return;
+        }
+        event.preventDefault();
+    });
+}
+function isNumericInput(event) {
+    return /\d/.test(event.key);
+}
+function isSpecialKey(event) {
+    return (
+        event.key === "Backspace" ||
+        event.key === "Delete" ||
+        event.key === "ArrowLeft" ||
+        event.key === "ArrowRight" ||
+        event.key === "Tab" ||
+        (event.ctrlKey && event.key === "v") ||
+        (event.ctrlKey && event.key === "V")
+    );
+}
+addInputFormatListener("cpf", "###.###.###-##");
+addInputFormatListener("phone", "(##) # ####-####");
+
 document.getElementById("cancelar").addEventListener("click", handleCancel);
 document.getElementById("enviar").addEventListener("click", handleSend);
 
@@ -75,6 +121,4 @@ async function handleSend(event) {
     } catch (error) {
         alert("Erro ao enviar candidatura." + error.message);
     }
-
-    
 }
