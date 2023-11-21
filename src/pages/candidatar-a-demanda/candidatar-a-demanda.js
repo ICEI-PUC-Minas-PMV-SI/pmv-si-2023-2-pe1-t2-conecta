@@ -4,7 +4,7 @@ import {
     CONFIRM_CANCELAR_CANDIDATURA,
     LOCATION_REF_ADMINISTRAR_DEMANDAS,
 } from "../../js/constants.js";
-
+import {Candidate}from "../../js/models/candidate.js";
 document.getElementById("cancelar").addEventListener("click", handleCancel);
 document.getElementById("enviar").addEventListener("click", handleSend);
 
@@ -14,7 +14,7 @@ function handleCancel() {
     }
 }
 
-function handleSend(event) {
+async function handleSend(event) {
     event.preventDefault();
 
     const candidatura = {
@@ -60,7 +60,21 @@ function handleSend(event) {
         alert(Required("Como posso ajudar"));
         return;
     }
+    const taskID= 3;
+    try{
+        const candidate= new Candidate();
+        candidate.name = candidatura.nome;
+        candidate.email = candidatura.email;
+        candidate.taskId = taskID;
+        candidate.active = true;
+        
+        await candidate.create();
 
-    alert(SUCESSO_ENVIAR_CANDIDATURA);
-    window.location.href = LOCATION_REF_ADMINISTRAR_DEMANDAS;
+        alert(SUCESSO_ENVIAR_CANDIDATURA);
+        window.location.href = LOCATION_REF_ADMINISTRAR_DEMANDAS;
+    } catch (error) {
+        alert("Erro ao enviar candidatura." + error.message);
+    }
+
+    
 }
