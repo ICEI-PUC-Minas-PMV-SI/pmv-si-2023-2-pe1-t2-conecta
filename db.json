@@ -58,6 +58,9 @@
       "taskId": 1,
       "name": "John Doe",
       "email": "john.doe@email.com",
+      "cpf": "123.456.789-00",
+      "phone": "(31) 9 9999-9999",
+      "about":"Sou designer gráfico com 5 anos de experiência. Estou interessado em ajudar a criar um site impactante que transmita a mensagem da ONG de forma clara e eficaz.",
       "active": true,
       "id": 1
     },
@@ -65,6 +68,9 @@
       "taskId": 1,
       "name": "Mark Colt",
       "email": "mark.colt@email.com",
+      "cpf": "987.654.321-00",
+      "phone": "(31) 9 8888-8888",
+      "about":"Sou programador com 10 anos de experiência. Tenho expertise em desenvolvimento web e mobile. Estou interessado em ajudar a criar um site impactante que seja funcional e responsivo.",
       "active": true,
       "id": 2
     },
@@ -72,6 +78,9 @@
       "taskId": 2,
       "name": "Jane Smith",
       "email": "jane.smith@email.com",
+      "cpf": "123.456.789-12",
+      "phone": "(31) 9 7777-7777",
+      "about":"Sou estudante na area de T.I. Estou interessado em ajudar no desenvolvimento do site para ajudar a ONG e ter novas experiencias.",
       "active": true,
       "id": 3
     }

@@ -73,6 +73,9 @@ As tabelas que se seguem apresentam os requisitos funcionais e não-funcionais q
 | Id da demanda | UUID             | Identificador único da demanda relacionada | 95ddad92-c441-4e92-a34d-fcf328c69b78              |
 |     Nome      | Texto            | Nome do candidato                          | João                                              |
 |     Email     | Texto            | Endereço de e-mail do candidato            | joao@email.com                                    |
+|     CPF     | Number            | Número do cadastro de pessoa física            | 123.456.78-90                                    |
+|     Telefone     | Number            | Número de contato do candidato            | (47) 9 8765-4321                                    |
+|     Descrição     | Texto            | Descrição de como ajudar.            | "Sou designer gráfico com 5 anos de experiência. Estou interessado em ajudar a criar um site impactante que transmita a mensagem da ONG de forma clara e eficaz."                                    |
 |    Active     | Boolean          | Status do candidato (aprovado, reprovado)  | `true ou false`                                   |
 
 ## Depoimentos

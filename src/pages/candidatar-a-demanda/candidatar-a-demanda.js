@@ -111,6 +111,9 @@ async function handleSend(event) {
         const candidate= new Candidate();
         candidate.name = candidatura.nome;
         candidate.email = candidatura.email;
+        candidate.cpf = candidatura.cpf;
+        candidate.phone = candidatura.phone;
+        candidate.about = candidatura.como;
         candidate.taskId = taskID;
         candidate.active = true;
         

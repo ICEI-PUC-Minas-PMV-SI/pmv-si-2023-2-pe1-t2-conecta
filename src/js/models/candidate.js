@@ -4,6 +4,9 @@ export class Candidate {
     taskId;
     name;
     email;
+    cpf;
+    phone;
+    about;
     active;
     
     async create() {
@@ -11,7 +14,11 @@ export class Candidate {
             taskId: this.taskId,
             name: this.name,
             email: this.email,
-            active: this.active
+            cpf: this.cpf,
+            phone: this.phone,
+            about: this.about,
+            active: this.active,
+            
         }
 
         return await makeRequest(getURL('candidates'), 'POST', data);
@@ -34,6 +41,9 @@ export class Candidate {
             taskId: this.taskId,
             name: this.name,
             email: this.email,
+            cpf: this.cpf,
+            phone: this.phone,
+            about: this.about,
             active: this.active
         }
         
