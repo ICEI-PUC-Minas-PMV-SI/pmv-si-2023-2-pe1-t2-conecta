@@ -106,7 +106,11 @@ async function handleSend(event) {
         alert(Required("Como posso ajudar"));
         return;
     }
-    const taskID= 3;
+    const getTaskId = () =>{
+        const urlParams = new URLSearchParams(window.location.search);
+       return urlParams.get('taskId');
+       }
+    const taskID= getTaskId(); 
     try{
         const candidate= new Candidate();
         candidate.name = candidatura.nome;
