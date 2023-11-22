@@ -18,18 +18,18 @@ const makeTemplate = () => {
     const template = document.createElement('template');
     template.innerHTML = `
     <div class="root">
-        <div class="vertical-task-card">
+        <div class="vertical-task-card" onclick="modal($(this), event);">
             <div class="card-section-wrapper">
                 <div class="card-header">
                     <div class="task-info">
-                        <p class="task-name"></p>
-                        <p class="task-owner"></p>
-                        <div class="location-button-wrapper">
+                        <p class="task-name" onclick="fotoClick(event)"></p>
+                        <p class="task-owner" onclick="fotoClick(event)"></p>
+                        <div class="location-button-wrapper" onclick="fotoClick(event)">
                             <img class="image-location" src="${rootPath}/assets/icons/location.png" alt="Location">
                             <div class="location-tag"></div>
                         </div>
                     </div>
-                    <a href=${getPagePath("pagina-da-ong")}>
+                    <a href=${getPagePath("pagina-da-ong")} onclick="fotoClick(event)">
                         <div class="profile-image-card-container">
                             <img src="" alt="Profile image">
                         </div>
@@ -43,7 +43,7 @@ const makeTemplate = () => {
                 <div>
                     <div class="help-button-wrapper">
                         <div>
-                            <a href="" class="help-button">QUERO AJUDAR</a>
+                            <a href="" class="help-button" onclick="fotoClick(event)">QUERO AJUDAR</a>
                         </div>
                     </div>
                     
@@ -124,9 +124,10 @@ const cssStyle = `
     .vertical-task-card > .card-section-wrapper > .task-description > .task-description-text {
         display: -webkit-box;
         -webkit-box-orient: vertical;
-        -webkit-line-clamp: 13;
+        -webkit-line-clamp: 10;
         overflow: hidden;
         text-overflow: ellipsis;
+        cursor: pointer;
     }
     
     .task-info {
