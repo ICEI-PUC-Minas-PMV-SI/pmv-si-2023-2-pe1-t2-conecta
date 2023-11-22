@@ -18,7 +18,7 @@ const makeTemplate = () => {
     const template = document.createElement('template');
     template.innerHTML = `
     <div class="root">
-    <div class="horizontal-task-card">
+    <div class="horizontal-task-card" onclick="modal($(this))">
     <div class="left-side">
         <div class="task-info">
             <p class="task-name"></p>
@@ -90,6 +90,11 @@ const cssStyle = `
     .task-info > .task-name {
         font-size: 20px;
         font-weight: 700;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 1;
+        overflow: hidden;
+        text-overflow: ellipsis;
     }
     
     .task-info > .task-owner {
@@ -275,7 +280,7 @@ const cssStyle = `
         .task-info > .task-name {
             display: -webkit-box;
             -webkit-box-orient: vertical;
-            -webkit-line-clamp: 2;
+            -webkit-line-clamp: 1;
             overflow: hidden;
             text-overflow: ellipsis;
         }
