@@ -108,7 +108,7 @@ async function handleSend(event) {
     }
     const getTaskId = () =>{
         const urlParams = new URLSearchParams(window.location.search);
-       return urlParams.get('Id');
+       return urlParams.get('id');
        }
     const taskID= getTaskId(); 
     try{
