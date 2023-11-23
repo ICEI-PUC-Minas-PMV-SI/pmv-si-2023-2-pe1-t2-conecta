@@ -277,10 +277,10 @@ Preencha a tabela com o plano dos testes. Para cada Caso de Teste (CT), associe 
 
 Esta seção deve apresentar o relatório com as evidências dos testes de software realizados no sistema pela equipe, baseado no plano de testes pré-definido. Documente cada caso de teste apresentando um vídeo ou animação que comprove o funcionamento da funcionalidade. Veja os exemplos a seguir.
 
-| *Caso de Teste*                   | *CT01 - Cadastrar ONG parte 1*                                                                                                         |
-|-----------------------------------|----------------------------------------------------------------------------------------------------------------------------------------|
-| Requisito Associado               | RF-001 - A aplicação deve permitir que as ONGs se cadastrem.                                                                           |
-| Link do vídeo do teste realizado: | https://sgapucminasbr-my.sharepoint.com/:v:/g/personal/1495429_sga_pucminas_br/EbJpWCagGU5IgUmZAM11URoBMQOmZesXdyZ1U29hznFgeQ?e=WatAM0 | 
+| *Caso de Teste*                   | *CT01 - Cadastrar ONG parte 1*                                                                                                |
+|-----------------------------------|-------------------------------------------------------------------------------------------------------------------------------|
+| Requisito Associado               | RF-001 - A aplicação deve permitir que as ONGs se cadastrem.                                                                  |
+| Link do vídeo do teste realizado: | https://sgapucminasbr-my.sharepoint.com/:v:/g/personal/1495429_sga_pucminas_br/EWjk2M7SOPFGhRe9AFkYyCABteRyOOtqhHQOyGaLlmS3ig | 
 
 | *Caso de Teste*                   | *CT02 - Cadastrar ONG parte 2*                                                                                                |
 |-----------------------------------|-------------------------------------------------------------------------------------------------------------------------------|
