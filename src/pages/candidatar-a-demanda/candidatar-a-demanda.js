@@ -110,7 +110,7 @@ async function handleSend(event) {
         const urlParams = new URLSearchParams(window.location.search);
        return urlParams.get('id');
        }
-    const taskID= getTaskId(); 
+    const taskID= parseInt(getTaskId()); 
     try{
         const candidate= new Candidate();
         candidate.name = candidatura.nome;
