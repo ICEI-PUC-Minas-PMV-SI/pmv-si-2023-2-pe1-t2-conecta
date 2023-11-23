@@ -13,3 +13,5 @@ export let LOCATION_REF_PAGINA_DEMANDAS = '../pagina-de-demandas/pagina-de-deman
 
 export const LOCAL_JSON_SERVER_URL = 'http://localhost:3001';
 export const PRODUCTION_JSON_SERVER_URL = 'https://json-server-vercel-eta-beige.vercel.app'
+
+export const CEP_API_URL = 'https://viacep.com.br/ws';
