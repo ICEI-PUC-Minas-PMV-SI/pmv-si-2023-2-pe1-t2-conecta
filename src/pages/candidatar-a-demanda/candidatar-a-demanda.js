@@ -6,6 +6,7 @@ import {
 } from "../../js/constants.js";
 import {Candidate}from "../../js/models/candidate.js";
 
+// adicionar máscara nos campos
 function formatInput(input, format) {
     const value = input.value.replace(/\D/g, "");
     let formattedValue = "";
@@ -70,7 +71,7 @@ async function handleSend(event) {
         phone : document.getElementById("phone").value,
         como : document.getElementById("como").value,
     }
-
+    //validar campos
     if (candidatura.cpf.length <= 0) {
         alert(Required("CPF"));
         return;
@@ -106,11 +107,13 @@ async function handleSend(event) {
         alert(Required("Como posso ajudar"));
         return;
     }
+    // pegar o id da demanda através da url
     const getTaskId = () =>{
         const urlParams = new URLSearchParams(window.location.search);
        return urlParams.get('id');
        }
     const taskID= parseInt(getTaskId()); 
+    // enviar candidatura
     try{
         const candidate= new Candidate();
         candidate.name = candidatura.nome;

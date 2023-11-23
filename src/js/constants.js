@@ -12,4 +12,4 @@ export let LOCATION_REF_ADMINISTRAR_DEMANDAS = '../administrar-demandas/administ
 export let LOCATION_REF_PAGINA_DEMANDAS = '../pagina-de-demandas/pagina-de-demandas.html';
 
 export const LOCAL_JSON_SERVER_URL = 'http://localhost:3001';
-export const PRODUCTION_JSON_SERVER_URL = 'http://24.144.87.219:3000'
+export const PRODUCTION_JSON_SERVER_URL = 'https://orca-app-fbvzt.ondigitalocean.app'
