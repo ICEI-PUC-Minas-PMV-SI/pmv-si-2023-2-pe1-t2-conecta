@@ -39,7 +39,7 @@ As tabelas que se seguem apresentam os requisitos funcionais e não-funcionais q
 ## ONG
 | **Nome** | **Tipo**         | **Descrição**                                   | **Exemplo**                                                      |
 |:--------:|------------------|-------------------------------------------------|------------------------------------------------------------------|
-|    Id    | UUID             | Identificador único da ONG                      | 95ddad92-c441-4e92-a34d-fcf328c69b78                             |
+|    Id    | Number             | Identificador único da ONG                      | 1                             |
 |   CNPJ   | Texto            | Número de CNPJ da ONG                           | 51948129000167                                                   |
 |  Email   | Texto            | Endereço de e-mail da ONG                       | ong@email.com                                                    |
 | Telefone | Texto            | Número de telefone da ONG                       | 3132700120                                                       |
@@ -56,21 +56,21 @@ As tabelas que se seguem apresentam os requisitos funcionais e não-funcionais q
 ## Demanda
 |     **Nome**      | **Tipo**                     | **Descrição**                                                             | **Exemplo**                                                                         |
 |:-----------------:|------------------------------|---------------------------------------------------------------------------|-------------------------------------------------------------------------------------|
-|        Id         | UUID                         | Identificador único da demanda                                            | 95ddad92-c441-4e92-a34d-fcf328c69b78                                                |
-|     Id da ONG     | UUID                         | Identificador da ONG relacionada                                          | 95ddad92-c441-4e92-a34d-fcf328c69b78                                                |
+|        Id         | Number                         | Identificador único da demanda                                            | 1                                                |
+|     Id da ONG     | Number                         | Identificador da ONG relacionada                                          | 1                                                |
 |       Nome        | Texto                        | Nome da demanda                                                           | Criar um site                                                                       |
 |     Descrição     | Texto                        | Descrição da demanda                                                      | Precisamos de um site que recolha doações e cadastre locais de coleta               |
 |     Criado em     | Timestamp                    | Data de criação da demanda                                                | 2023-10-28T22:41:38+00:00                                                           |
 |      Status       | Texto                        | Status da demanda (aberto, fechado, finalizada) Enum                      | Aberta                                                                              |
 |       Tipo        | Texto                        | Tipo da demanda (local, remoto)                                  | Remota                                                                              |
 | Dados de Pesquisa | Texto                        | Dados utilizados para pesquisa (nome e descrição da demanda concatenados) | Criar um site Precisamos de um site que recolha doações e cadastre locais de coleta |
-|    Candidatos     | Lista de UUIDs de candidatos | Lista com identificador de candidatos associados à demanda                | `[95ddad92-c441-4e92-a34d-fcf328c69b78, 95ddad92-c441-4e92-a34d-fcf328c69b78]`      |
+|    Candidatos     | Lista de IDs de candidatos | Lista com identificador de candidatos associados à demanda                | `[1,2,3]`      |
 
 ## Candidatos
 |   **Nome**    | **Tipo**         | **Descrição**                              | **Exemplo**                                       |
 |:-------------:|------------------|--------------------------------------------|---------------------------------------------------|
-|      Id       | UUID             | Identificador único do candidato           | 95ddad92-c441-4e92-a34d-fcf328c69b78              |
-| Id da demanda | UUID             | Identificador único da demanda relacionada | 95ddad92-c441-4e92-a34d-fcf328c69b78              |
+|      Id       | Number             | Identificador único do candidato           | 1              |
+| Id da demanda | Number             | Identificador único da demanda relacionada | 1              |
 |     Nome      | Texto            | Nome do candidato                          | João                                              |
 |     Email     | Texto            | Endereço de e-mail do candidato            | joao@email.com                                    |
 |     CPF     | Number            | Número do cadastro de pessoa física            | 123.456.78-90                                    |
@@ -81,9 +81,9 @@ As tabelas que se seguem apresentam os requisitos funcionais e não-funcionais q
 ## Depoimentos
 |      **Nome**      | **Tipo**  | **Descrição**                                           | **Exemplo**                          |
 |:------------------:|-----------|---------------------------------------------------------|--------------------------------------|
-|         Id         | UUID      | Identificador único do depoimento                       | 95ddad92-c441-4e92-a34d-fcf328c69b78 |
-|   Id da demanda    | UUID      | Identificador único da demanda relacionada              | 95ddad92-c441-4e92-a34d-fcf328c69b78 |
-|  Id do voluntario  | UUID      | Identificador único do voluntário relacionada           | 95ddad92-c441-4e92-a34d-fcf328c69b78 |
+|         Id         | Number      | Identificador único do depoimento                       | 1 |
+|   Id da demanda    | Number      | Identificador único da demanda relacionada              | 1 |
+|  Id do voluntario  | Number      | Identificador único do voluntário relacionada           | 1 |
 |     Depoimento     | Texto     | Depoimento escrito pelo candidato                       | Minha experiência sendo ....         |
 |       token        | Texto     | Seguimento que faz parte do link e o torna seguro       | e10adc3949ba59abbe56e057f20f883e     |
 |     expiração      | Timestamp | Data e hora limite em que o depoimento pode ser enviado | 2023-10-28T22:41:38+00:00            |
@@ -91,7 +91,7 @@ As tabelas que se seguem apresentam os requisitos funcionais e não-funcionais q
 ## Sessão
 |     **Nome**     | **Tipo**  | **Descrição**                                       | **Exemplo**                          |
 |:----------------:|-----------|-----------------------------------------------------|--------------------------------------|
-|        Id        | UUID      | Identificador único da sessão                       | 95ddad92-c441-4e92-a34d-fcf328c69b78 |
-|    Id da ONG     | UUID      | Identificador único da ONG                          | 95ddad92-c441-4e92-a34d-fcf328c69b78 |
+|        Id        | Number      | Identificador único da sessão                       | 1 |
+|    Id da ONG     | Number      | Identificador único da ONG                          | 1 |
 |      token       | Texto     | Token que é verificado a cada request se esta ativo | e10adc3949ba59abbe56e057f20f883e     |
 |    expiração     | Timestamp | Data e hora limite em que a sessão ficará ativa     | 2023-10-28T22:41:38+00:00            |
