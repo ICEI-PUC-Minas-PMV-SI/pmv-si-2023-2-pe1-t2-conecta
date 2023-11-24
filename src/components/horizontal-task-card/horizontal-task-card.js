@@ -20,7 +20,7 @@ const makeTemplate = () => {
     <div class="root">
     <div class="horizontal-task-card" onclick="modal($(this))">
     <div class="left-side">
-        <div class="task-info">
+        <div class="task-info" onclick="fotoClick(event)">
             <p class="task-name"></p>
             <p class="task-owner"></p>
         </div>
@@ -29,12 +29,12 @@ const makeTemplate = () => {
             </p>
             <p class="show-more">saber mais</p>
         </div>
-        <div class="location-button-wrapper">
+        <div class="location-button-wrapper" onclick="fotoClick(event)">
             <img class="image-location" src="${rootPath}/assets/icons/location.png" alt="Location">
             <div class="location-tag"></div>
         </div>
     </div>
-    <div class="right-side">
+    <div class="right-side" onclick="fotoClick(event)">
     <a href=${getPagePath("pagina-da-ong")}>
         <div class="profile-image-card-container">
             <img src="" alt="Profile image">
@@ -226,6 +226,7 @@ const cssStyle = `
             -webkit-line-clamp: 3;
             overflow: hidden;
             text-overflow: ellipsis;
+            cursor: pointer;
         }
     
         .task-info {

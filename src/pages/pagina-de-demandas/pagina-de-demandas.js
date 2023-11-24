@@ -15,10 +15,7 @@ $("#filtroSelect").click(function(){
 });
 
 
-$(".close").click(function(){
-        $('#myModal').css('display', 'none');
-});
-
+//modal.js
 function modal(item, event) {
         let title = item.find('.task-name').text()
         $('.job-title').html(title)
@@ -35,11 +32,16 @@ function modal(item, event) {
         $('#myModal').css('display', 'block');
 }
 
+$(".close").click(function(){
+        $('#myModal').css('display', 'none');
+});
+
 function fotoClick(event) {
         event.stopPropagation();
 }
+
+//filtro.js
 function buscaCidade(element) {
-        console.log(element);
         $('.cidades_selecionadas').remove();
         $.ajax({
                 url: "https://servicodados.ibge.gov.br/api/v1/localidades/estados/"+element+"/municipios?orderBy=nome",
@@ -56,7 +58,6 @@ $.ajax({
         url: "https://servicodados.ibge.gov.br/api/v1/localidades/estados?orderBy=nome",
         context: {}
 }).done(function(data) {
-        console.log(data)
         for (var uf in data) {
                 let html = "<option  value='"+data[uf].id+"'>"+data[uf].sigla+"</option>";
                 $('.state').append(html);
