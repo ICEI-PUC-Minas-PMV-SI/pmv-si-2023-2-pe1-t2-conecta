@@ -24,21 +24,21 @@ Nesta seção o grupo deverá documentar os testes de software que verificam a c
 
 Preencha a tabela com o plano dos testes. Para cada Caso de Teste (CT), associe qual o Requisito  Funcional ou não funcional que ele está verificando. Associe também a página (ou artefato) onde o teste será realizado e descreva o cenário do teste. Veja a tabela de exemplo.
 
-**Caso de Teste** | **CT01 - Cadastrar ONG parte 1**
- :--------------: | ------------
-**Procedimento**  | 1) #<br> 2) #
-**Requisitos associados** | RF-001
-**Resultado esperado** | Prosseguir para a parte 2 do cadastro.
-**Dados de entrada** | Inserção de dados válidos no formulário de cadastro.
-**Resultado obtido** | Sucesso.
+|     **Caso de Teste**     | **CT01 - Cadastrar ONG parte 1**                                                                                                                                                                                |
+|:-------------------------:|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|     **Procedimento**      | 1) Acessar [página de cadastro](https://icei-puc-minas-pmv-si.github.io/pmv-si-2023-2-pe1-t2-conecta/pages/login/login.html) <br> 2) Inserir os dados nos campos apresentados <br> 3) Clicar no botão `Próximo` |
+| **Requisitos associados** | RF-001                                                                                                                                                                                                          |
+|  **Resultado esperado**   | Prosseguir para a parte 2 do cadastro.                                                                                                                                                                          |
+|   **Dados de entrada**    | Inserção de dados válidos no formulário de cadastro.                                                                                                                                                            |
+|   **Resultado obtido**    | Sucesso.                                                                                                                                                                                                        |
 
-**Caso de Teste** | **CT02 - Cadastrar ONG parte 2**
- :--------------: | ------------
-**Procedimento**  | 1) # <br> 2) # <br> 3) #
-**Requisitos associados** | RF-001
-**Resultado esperado** | Criação de cadastro
-**Dados de entrada** | Inserção de dados válidos no formulário de cadastro.
-**Resultado obtido** | #
+|     **Caso de Teste**     | **CT02 - Cadastrar ONG parte 2**                                                                                                                                                                                                                                                                                                                                                                                               |
+|:-------------------------:|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|     **Procedimento**      | 1) Após inserir os dados solicitados na parte 2 <br> 2) Selecione uma imagem para ser utilizada como no perfil da ONG (opcional) # <br> 3) Forneça um texto sobre sua ONG <br> 4) Informe o link do perfil da sua ONG nas redes sociais (opcional) <br> 5) Clique no botão `Cadastrar` <br> 6) Confirme um alerta com a mensagem `Cadastro realizado com sucesso!` na sua tela <br> 7) Seja redirecionado para a tela de login |
+| **Requisitos associados** | RF-001                                                                                                                                                                                                                                                                                                                                                                                                                         |
+|  **Resultado esperado**   | Criação de cadastro                                                                                                                                                                                                                                                                                                                                                                                                            |
+|   **Dados de entrada**    | Inserção de dados válidos no formulário de cadastro.                                                                                                                                                                                                                                                                                                                                                                           |
+|   **Resultado obtido**    | Alerta na tela informando que o cadastro foi realizado com sucesso e redirecionamento para a [tela de login](http://localhost:63342/conecta/src/pages/login/login.html)                                                                                                                                                                                                                                                        |
 
 **Caso de Teste** | **CT03 - Autenticação de ONG (login)**
  :--------------: | ------------
@@ -277,11 +277,20 @@ Preencha a tabela com o plano dos testes. Para cada Caso de Teste (CT), associe 
 
 Esta seção deve apresentar o relatório com as evidências dos testes de software realizados no sistema pela equipe, baseado no plano de testes pré-definido. Documente cada caso de teste apresentando um vídeo ou animação que comprove o funcionamento da funcionalidade. Veja os exemplos a seguir.
 
+| *Caso de Teste*                   | *CT01 - Cadastrar ONG parte 1*                                                                                                |
+|-----------------------------------|-------------------------------------------------------------------------------------------------------------------------------|
+| Requisito Associado               | RF-001 - A aplicação deve permitir que as ONGs se cadastrem.                                                                  |
+| Link do vídeo do teste realizado: | https://sgapucminasbr-my.sharepoint.com/:v:/g/personal/1495429_sga_pucminas_br/EWjk2M7SOPFGhRe9AFkYyCABteRyOOtqhHQOyGaLlmS3ig | 
+
+| *Caso de Teste*                   | *CT02 - Cadastrar ONG parte 2*                                                                                                |
+|-----------------------------------|-------------------------------------------------------------------------------------------------------------------------------|
+| Requisito Associado               | RF-001 - A aplicação deve permitir que as ONGs se cadastrem.                                                                  |
+| Link do vídeo do teste realizado: | https://sgapucminasbr-my.sharepoint.com/:v:/g/personal/1495429_sga_pucminas_br/ETPyJhDTKtFGlsXYk-JS4U8BSvYlmz7U4DVQNa7jkLX9YA | 
+
 | *Caso de Teste*                   | *CT05 - Página da ONG*                                                                                                                                             |
 |-----------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Requisito Associado               | RF-004 - A aplicação deve apresentar uma página exclusiva para cada ONG, contendo informações sobre a organização, depoimentos dos voluntários e últimas demandas. |
 | Link do vídeo do teste realizado: | https://sgapucminasbr-my.sharepoint.com/:v:/g/personal/1495429_sga_pucminas_br/EQdVteszIbVBiSNzW09vTJcBByLxuz7jDdicpDkUfSL4pg                                      |
-
 
 ## Avaliação dos Testes de Software
 
