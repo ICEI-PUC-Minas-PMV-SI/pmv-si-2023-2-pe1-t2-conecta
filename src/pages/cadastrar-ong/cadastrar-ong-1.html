@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="cadastrar-ong.css">
     <script type="module" src="../../components/header/header.js" ></script>
     <script type="module" src="../../components/footer/footer.js"></script>
+    <script type="module" src="cadastrar-ong-1.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 
@@ -91,7 +92,7 @@
                     <label for="logradouro">Logradouro</label>
                 </div>
                 <div class="col-85">
-                    <input type="text" id="logradouro" name="logradouro">
+                    <input readonly type="text" id="logradouro" name="logradouro">
                 </div>
             </div>
             <div class="row">
@@ -107,7 +108,7 @@
                     <label for="estado">Estado</label>
                 </div>
                 <div class="col-85">
-                    <input type="text" id="estado" name="estado">
+                    <input readonly type="text" id="estado" name="estado">
                 </div>
             </div>
             <div class="row">
@@ -115,11 +116,11 @@
                     <label for="cidade">Cidade</label>
                 </div>
                 <div class="col-85">
-                    <input type="text" id="cidade" name="cidade">
+                    <input readonly type="text" id="cidade" name="cidade">
                 </div>
             </div>
             <div class="row-button">
-                <div><a href="cadastrar-ong-2.html"><input type="submit" name="proximo" value="Próximo"></a></div>
+                <div><a href="cadastrar-ong-2.html"><input id="next-page-signup-button" type="submit" name="proximo" value="Próximo"></a></div>
                 <div><a href="../../index.html"><input type="submit" name="cancelar" value="Cancelar"></a></div>
             </div>
         </div>
@@ -129,7 +130,6 @@
 </div>
 
 <script src="../../js/index.js"></script>
-<script src="pagina-da-ong.js"></script>
 </body>
 
 </html>
