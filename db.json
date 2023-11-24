@@ -153,16 +153,6 @@
       "id": 3
     }, 
     {
-      "organizationId": 1,
-      "name": "Professor de Informática",
-      "description": "Precisamos de professor voluntário para dar início à oficina de informática ministrando aulas em nível iniciante. O principal objetivo da oficina é a inclusão digital, permitindo as crianças o acesso às tecnologias.",
-      "createdAt": "07-04-2023",
-      "status": "open",
-      "type": "presencial",
-      "searchData": "Professor de Informática Precisamos de professor voluntário para dar início à oficina de informática ministrando aulas em nível iniciante. O principal objetivo da oficina é a inclusão digital, permitindo as crianças o acesso às tecnologias.",
-      "id": 4
-    },
-    {
       "organizationId": 2,
       "name": "Criar Website",
       "description": "Procuramos ajuda para criar um site impactante. Se você tem habilidades em design, programação ou conteúdo, junte-se a nós e seja parte da construção deste projeto online emocionante.",
@@ -170,7 +160,7 @@
       "status": "open",
       "type": "remoto",
       "searchData": "Criar Website Procuramos ajuda para criar um site impactante. Se você tem habilidades em design, programação ou conteúdo, junte-se a nós e seja parte da construção deste projeto online emocionante.",
-      "id": 5
+      "id": 4
     },
     {
       "organizationId": 2,
@@ -180,17 +170,7 @@
       "status": "open",
       "type": "presencial",
       "searchData": "Inclusão Digital Como voluntário, você será fundamental para capacitar membros da comunidade local na utilização eficaz da tecnologia. Suas responsabilidades incluem ministrar aulas básicas de informática, auxiliar na resolução de dúvidas relacionadas a dispositivos e aplicativos, e promover a inclusão digital. Seja parte da transformação, capacitando outros a navegar com confiança no mundo digital.",
-      "id": 6
-    },
-    {
-      "organizationId": 2,
-      "name": "Facilitador de Oficinas Tecnológicas",
-      "description": "Liderar oficinas interativas para capacitar membros da comunidade em habilidades tecnológicas. Suas responsabilidades incluem planejar e ministrar sessões práticas sobre temas como programação, ferramentas digitais e segurança online. Torne-se um agente de mudança, capacitando outros a prosperar na era digital através da educação tecnológica.",
-      "createdAt": " 25-06-2023",
-      "status": "finish",
-      "type": "presencial",
-      "searchData": "Facilitador de Oficinas Tecnológicas Liderar oficinas interativas para capacitar membros da comunidade em habilidades tecnológicas. Suas responsabilidades incluem planejar e ministrar sessões práticas sobre temas como programação, ferramentas digitais e segurança online. Torne-se um agente de mudança, capacitando outros a prosperar na era digital através da educação tecnológica.",
-      "id": 7
+      "id": 5
     },
     {
       "organizationId": 2,
@@ -200,7 +180,7 @@
       "status": "finish",
       "type": "remoto",
       "searchData": "Especialista em Infraestrutura A ONG enfrenta desafios na manutenção e atualização de sua infraestrutura tecnológica, comprometendo a eficiência operacional. A necessidade de um especialista em infraestrutura tornou-se crucial para resolver problemas persistentes, desde a integração de novas tecnologias até a otimização de sistemas existentes. A busca por um profissional qualificado visa fortalecer a resiliência tecnológica e garantir o pleno funcionamento das atividades da ONG.",
-      "id": 8
+      "id": 6
     },
     {
       "organizationId": 3,
@@ -210,17 +190,7 @@
       "status": "open",
       "type": "presencial",
       "searchData": "Conectar idosos com a tecnologia Buscamos voluntários para ajudar idosos a usar a tecnologia, promovendo a conexão e independência. Sua ajuda é essencial para tornar suas vidas mais enriquecedoras e inclusivas.",
-      "id": 9
-    },
-    {
-      "organizationId": 3,
-      "name": "Instrutor de Tecnologia para a Terceira Idade",
-      "description": "Buscamos alguém que terá o papel fundamental de proporcionar a adultos mais velhos uma introdução amigável e acessível ao mundo digital. Suas responsabilidades incluem ensinar o básico de dispositivos e aplicativos, promover a segurança online e incentivar a confiança no uso da tecnologia. Seja um agente de inclusão digital, capacitando a terceira idade a aproveitar os benefícios da era digital.",
-      "createdAt": "28-05-2023",
-      "status": "finish",
-      "type": "presencial",
-      "searchData": "Instrutor de Tecnologia para a Terceira Idade Buscamos voluntários para ajudar idosos a usar a tecnologia, promovendo a conexão e independência. Sua ajuda é essencial para tornar suas vidas mais enriquecedoras e inclusivas.",
-      "id": 10
+      "id": 7
     },
     {
       "organizationId": 3,
@@ -230,17 +200,17 @@
       "status": "open",
       "type": "presencial",
       "searchData": "Conectar idosos com a tecnologia Buscamos voluntários para ajudar idosos a usar a tecnologia, promovendo a conexão e independência. Sua ajuda é essencial para tornar suas vidas mais enriquecedoras e inclusivas.",
-      "id": 11
+      "id": 8
     },
     {
       "organizationId": 3,
       "name": "Organização de Arquivos Digitais",
       "description": "Estamos lidando com a dificuldade de organizar eficientemente seus arquivos digitais, resultando em desperdício de tempo na busca por informações cruciais. Estamos à procura de alguém que possa oferecer assistência na implementação de um sistema eficaz de gerenciamento de documentos digitais, otimizando assim nossas operações cotidianas. Junte-se a nós para tornar nossos processos mais eficientes!",
       "createdAt": "28-05-2023",
-      "status": "open",
+      "status": "finish",
       "type": "presencial",
       "searchData": "Organização de Arquivos Digitais Estamos lidando com a dificuldade de organizar eficientemente seus arquivos digitais, resultando em desperdício de tempo na busca por informações cruciais. Estamos à procura de alguém que possa oferecer assistência na implementação de um sistema eficaz de gerenciamento de documentos digitais, otimizando assim nossas operações cotidianas. Junte-se a nós para tornar nossos processos mais eficientes!",
-      "id": 12
+      "id": 9
     },
     {
       "organizationId": 4,
@@ -250,7 +220,7 @@
       "status": "open",
       "type": "presencial",
       "searchData": "Professor de Informática Estamos em busca de voluntários entusiastas e dedicados para ensinar informática para as crianças. Ajude-nos a inspirar os nossos pequenos curiosos! Junte-se a nós e faça a diferença.",
-      "id": 13
+      "id": 10
     },
     {
       "organizationId": 4,
@@ -260,8 +230,8 @@
       "status": "finish",
       "type": "remoto",
       "searchData": "Configurar E-mails Institucionais Buscamos alguém com conhecimentos em configuração de servidores de e-mail para otimizar nosso sistema, assegurando uma comunicação eficaz e confiável. Seja parte da solução para fortalecer nossa capacidade de impacto!",
-      "id": 14
-    }, 
+      "id": 11
+    },
     {
       "organizationId": 4,
       "name": "Instrutor de Alfabetização Tecnológica",
@@ -270,18 +240,8 @@
       "status": "open",
       "type": "presencial",
       "searchData": "Instrutor de Alfabetização Tecnológica Oferecer aulas introdutórias de informática e tecnologia. Suas responsabilidades incluem ensinar noções básicas de computação, navegação na internet, uso de aplicativos e ferramentas digitais. Seja um guia na jornada de alfabetização tecnológica, capacitando outros a explorar o mundo digital com confiança.",
-      "id": 15
+      "id": 12
     }, 
-    {
-      "organizationId": 4,
-      "name": "Mentor para Pequenos Inovadores",
-      "description": "Queremos guiar crianças em atividades lúdicas e educativas relacionadas à tecnologia. Suas responsabilidades incluem a facilitação de workshops, introdução à programação infantil e promoção de uma abordagem divertida para aprendizado tecnológico. Seja um mentor inspirador, ajudando a próxima geração a prosperar no mundo digital.",
-      "createdAt": "07-11-2023",
-      "status": "finish",
-      "type": "presencial",
-      "searchData": "Mentor para Pequenos Inovadores Queremos guiar crianças em atividades lúdicas e educativas relacionadas à tecnologia. Suas responsabilidades incluem a facilitação de workshops, introdução à programação infantil e promoção de uma abordagem divertida para aprendizado tecnológico. Seja um mentor inspirador, ajudando a próxima geração a prosperar no mundo digital.",
-      "id": 16
-    },
     {
       "organizationId": 5,
       "name": "Ajudar alunos a programar",
@@ -290,17 +250,7 @@
       "status": "open",
       "type": "presencial",
       "searchData": "Ajudar alunos a programar Você é apaixonado por programação e quer inspirar a nova geração? Junte-se a nós na jornada da educação tecnológica e compartilhe seu conhecimento com os nossos alunos!",
-      "id": 17
-    },
-    {
-      "organizationId": 5,
-      "name": "Instrutor de Alfabetização Digital",
-      "description": "Como voluntário, você será um instrutor vital na capacitação de indivíduos com pouca experiência tecnológica. Suas responsabilidades incluem ministrar aulas introdutórias sobre computadores, internet e aplicativos essenciais, além de oferecer suporte individualizado para garantir que todos possam aproveitar as oportunidades digitais. Junte-se a nós para promover a inclusão digital e construir uma comunidade conectada.",
-      "createdAt": " 17-09-2023",
-      "status": "finish",
-      "type": "presencial",
-      "searchData": "Instrutor de Alfabetização Digital Como voluntário, você será um instrutor vital na capacitação de indivíduos com pouca experiência tecnológica. Suas responsabilidades incluem ministrar aulas introdutórias sobre computadores, internet e aplicativos essenciais, além de oferecer suporte individualizado para garantir que todos possam aproveitar as oportunidades digitais. Junte-se a nós para promover a inclusão digital e construir uma comunidade conectada.",
-      "id": 18
+      "id": 13
     },
     {
       "organizationId": 5,
@@ -310,17 +260,17 @@
       "status": "finish",
       "type": "presencial",
       "searchData": "Mentor Digital para Comunidades Você liderará workshops interativos e sessões de treinamento para capacitar pessoas de todas as idades na utilização prática da tecnologia. Suas responsabilidades incluem ensinar habilidades básicas de informática, navegação na internet, e promover a conscientização sobre segurança online. Seja um catalisador de mudança, capacitando comunidades para prosperar na era digital.",
-      "id": 19
+      "id": 14
     },
     {
       "organizationId": 5,
       "name": "Desafio de Backup de Dados",
       "description": "Falta de um sistema eficaz de backup de dados. A perda acidental de informações cruciais pode comprometer o trabalho essencial da organização. Estamos em busca de alguém que possa oferecer expertise em soluções de backup, garantindo a segurança e a integridade dos dados fundamentais para nossas atividades.",
       "createdAt": " 17-09-2023",
-      "status": "open",
+      "status": "finish",
       "type": "remoto",
       "searchData": "Desafio de Backup de Dados Falta de um sistema eficaz de backup de dados. A perda acidental de informações cruciais pode comprometer o trabalho essencial da organização. Estamos em busca de alguém que possa oferecer expertise em soluções de backup, garantindo a segurança e a integridade dos dados fundamentais para nossas atividades.",
-      "id": 20
+      "id": 15
     },
     {
       "organizationId": 6,
@@ -330,7 +280,7 @@
       "status": "finish",
       "type": "remoto",
       "searchData": "Criar conteúdo para Web Procuramos voluntários com habilidades em criação de conteúdo web. Junte-se a nossa ONG e colabore na criação de conteúdo significativo e ajude nossos amigos de quatro patas.",
-      "id": 21
+      "id": 16
     },
     {
       "organizationId": 6,
@@ -340,7 +290,7 @@
       "status": "open",
       "type": "presencial",
       "searchData": "Ajuda para Resolver Problema de Wi-Fi Estamos com instabilidade na conexão Wi-Fi, prejudicando reuniões virtuais e a eficiência das operações diárias. Em busca de um especialista em redes, a organização procura resolver esse problema técnico básico para garantir uma comunicação online fluida e efetiva.",
-      "id": 22
+      "id": 17
     },
     {
       "organizationId": 6,
@@ -350,17 +300,7 @@
       "status": "open",
       "type": "remoto",
       "searchData": "Web Developer Precisamos desenvolver e manter um site dinâmico e atrativo dedicado à adoção responsável de animais. Suas responsabilidades incluem o design responsivo, a implementação de recursos de pesquisa avançada e a integração de formulários de adoção online. Junte-se a nós para construir uma plataforma digital que une animais resgatados a lares amorosos.",
-      "id": 23
-    },
-    {
-      "organizationId": 6,
-      "name": "Engenheiro de Sistemas",
-      "description": "Como voluntário, você será fundamental na criação de um sistema tecnológico eficiente para gerenciar doações destinadas ao resgate e cuidado de animais. Suas responsabilidades incluem o desenvolvimento de um sistema de rastreamento de doações, a implementação de um banco de dados para controle financeiro e a criação de relatórios automatizados.",
-      "createdAt": "06-10-2023",
-      "status": "finish",
-      "type": "remoto",
-      "searchData": "Engenheiro de Sistemas Como voluntário, você será fundamental na criação de um sistema tecnológico eficiente para gerenciar doações destinadas ao resgate e cuidado de animais. Suas responsabilidades incluem o desenvolvimento de um sistema de rastreamento de doações, a implementação de um banco de dados para controle financeiro e a criação de relatórios automatizados.",
-      "id": 24
+      "id": 18
     },
     {
       "organizationId": 7,
@@ -370,7 +310,7 @@
       "status": "open",
       "type": "remoto",
       "searchData": "Ajudar na manutenção do site Estamos buscando voluntárias com habilidades para fazer manutenção no nosso site. Sua contribuição é valiosa e fortalece a representatividade feminina na tecnologia.",
-      "id": 25
+      "id": 19
     },
     {
       "organizationId": 7,
@@ -380,7 +320,7 @@
       "status": "open",
       "type": "remoto",
       "searchData": "Assistência na Atualização de Software Estamos encontrando dificuldades na atualização de software essencial para suas operações diárias. A falta de expertise técnica está impactando o desempenho e a segurança dos sistemas. Buscamos voluntários com habilidades em atualização de software para garantir que nossa infraestrutura tecnológica esteja otimizada e segura.",
-      "id": 26
+      "id": 20
     },
     {
       "organizationId": 7,
@@ -390,17 +330,7 @@
       "status": "finish",
       "type": "presencial",
       "searchData": "Instrutora de Programação Buscamos alguém cuja missão será ministrar aulas de programação voltadas para mulheres na ONG. Suas responsabilidades incluem ensinar conceitos básicos e avançados de programação, oferecer suporte individualizado, e promover um ambiente inclusivo e encorajador.",
-      "id": 27
-    },
-    {
-      "organizationId": 7,
-      "name": "Voluntário em Tecnologia para Apoiar Mulheres",
-      "description": "Precisamos promover programas de capacitação em STEM, orientar em escolhas de carreira, e organizar eventos para criar uma comunidade acolhedora. Junte-se a nós para inspirar e capacitar mulheres a liderarem no cenário tecnológico.",
-      "createdAt": "15-10-2023",
-      "status": "finish",
-      "type": "presencial",
-      "searchData": "Voluntário em Tecnologia para Apoiar Mulheres Precisamos promover programas de capacitação em STEM, orientar em escolhas de carreira, e organizar eventos para criar uma comunidade acolhedora. Junte-se a nós para inspirar e capacitar mulheres a liderarem no cenário tecnológico.",
-      "id": 28
+      "id": 21
     },
     {
       "organizationId": 8,
@@ -410,17 +340,7 @@
       "status": "open",
       "type": "remoto",
       "searchData": "Assistente de inclusão digital Apoiar, à distância, pessoas +60 anos para que possam ler eBooks e ouvir audiolivros, no celular, computador ou tablet e participar de reuniões virtuais para conversar em grupo sobre o livro lido.",
-      "id": 29
-    },
-    {
-      "organizationId": 8,
-      "name": "Soluções para Desafios Digitais",
-      "description": "A ONG enfrenta obstáculos na integração eficaz de novas tecnologias, impactando a eficiência operacional e a entrega de serviços. A busca por um especialista em tecnologia é vital para superar barreiras, como a integração de sistemas, otimização de processos e aprimoramento da infraestrutura digital. O desafio é encontrar um profissional comprometido em impulsionar a capacidade tecnológica da organização social.",
-      "createdAt": "03-08-2023",
-      "status": "open",
-      "type": "remoto",
-      "searchData": "Soluções para Desafios Digitais A ONG enfrenta obstáculos na integração eficaz de novas tecnologias, impactando a eficiência operacional e a entrega de serviços. A busca por um especialista em tecnologia é vital para superar barreiras, como a integração de sistemas, otimização de processos e aprimoramento da infraestrutura digital. O desafio é encontrar um profissional comprometido em impulsionar a capacidade tecnológica da organização social.",
-      "id": 30
+      "id": 22
     },
     {
       "organizationId": 8,
@@ -430,40 +350,259 @@
       "status": "open",
       "type": "remoto",
       "searchData": "Assistente de Comunicação Ajudar a criar e gerenciar conteúdo para o site e as redes sociais da ONG, além de ajudar a escrever e enviar boletins informativos.",
-      "id": 31
+      "id": 23
     },
     {
       "organizationId": 8,
       "name": "Voluntário apaixonado por livros e tecnologia",
       "description": "Organizar e gerenciar a biblioteca ONLINE da ONG, ajudando a catalogar e classificar livros, além de ajudar os usuários a encontrar livros relevantes.",
       "createdAt": "03-08-2023",
-      "status": "open",
+      "status": "finish",
       "type": "remoto",
       "searchData": "Voluntário apaixonado por livros e tecnologia Organizar e gerenciar a biblioteca ONLINE da ONG, ajudando a catalogar e classificar livros, além de ajudar os usuários a encontrar livros relevantes.",
-      "id": 32
+      "id": 24
     }
   ],
   "candidates": [
     {
       "taskId": 1,
-      "name": "John Doe",
-      "email": "john.doe@email.com",
-      "active": true,
+      "name": "Marcelo Alves",
+      "email": "marceloalves@email.com",
+      "profile": "Sou um entusiasta da tecnologia e estou interessado em compartilhar meu conhecimento como voluntário na área de informática. Acredito que a educação em informática é fundamental no mundo atual e quero contribuir para capacitar outras pessoas a adquirirem habilidades digitais essenciais.",
+      "status": ["aprovado", "reprovado", "pendente"],
       "id": 1
     },
     {
       "taskId": 1,
-      "name": "Mark Colt",
-      "email": "mark.colt@email.com",
-      "active": true,
+      "name": "Elisa Silva",
+      "profile": "Sou apaixonada por tecnologia e estou interessada em compartilhar meu conhecimento como voluntária na área. Tenho uma sólida formação em Sistemas de Informação e estou ansiosa para inspirar e capacitar outras pessoas a explorar o mundo da tecnologia.",
+      "email": "elisasilva@email.com",
+      "status": ["aprovado", "reprovado", "pendente"],
       "id": 2
     },
     {
-      "taskId": 2,
-      "name": "Jane Smith",
-      "email": "jane.smith@email.com",
-      "active": true,
+      "taskId": 1,
+      "name": "Heitor Santos",
+      "email": "heitorsantos.com",
+      "profile": "Me considero um profissional experiente em desenvolvimento de software, estou interessado em contribuir como voluntário na vaga 'professor de informática'.",
+      "status": ["aprovado", "reprovado", "pendente"],
       "id": 3
+    },
+    {
+      "taskId": 2,
+      "name": "Marina Santos",
+      "email": "marinasantos@email.com",
+      "profile": "Profissional de tecnologia com expertise em desenvolvimento de software e paixão por causas sociais. Comprometida em aplicar habilidades técnicas para impactar positivamente a comunidade.",
+      "status": ["aprovado", "reprovado", "pendente"],
+      "id": 4
+    },
+    {
+      "taskId": 2,
+      "name": "Lucas Silva",
+      "profile": "Estudante dedicado de Sistemas de Informação em busca de oportunidade voluntária. Apaixonado por programação e resolução de problemas, busco aplicar meus conhecimentos para contribuir positivamente. Proativo, colaborativo e ansioso para aprender e crescer nesta experiência.",
+      "email": "lucassilva@email.com",
+      "status": ["aprovado", "reprovado", "pendente"],
+      "id": 5
+    },
+    {
+      "taskId": 3,
+      "name": "Ana Torres",
+      "email": "anatorres@email.com",
+      "profile": " Profissional de tecnologia apaixonada por criar soluções inovadoras. Busco aplicar minha expertise em TI para ajudar comunidades por meio do voluntariado.",
+      "status": ["aprovado", "reprovado", "pendente"],
+      "id": 6
+    },
+    {
+      "taskId": 4,
+      "name": "Camila Santos",
+      "email": "camilasantos@email.com",
+      "profile": "Profissional de tecnologia com expertise em desenvolvimento de software. Busco aplicar minha experiência em um trabalho voluntário, contribuindo para causas sociais com soluções inovadoras.",
+      "status": ["aprovado", "reprovado", "pendente"],
+      "id": 7
+    },
+    {
+      "taskId": 4,
+      "name": "Amanda Santos",
+      "profile": "Profissional de tecnologia com expertise em desenvolvimento de software. Motivada a aplicar habilidades técnicas para causas sociais. Comprometida e entusiasta. ",
+      "email": "amandasantos@email.com",
+      "status": ["aprovado", "reprovado", "pendente"],
+      "id": 8
+    },
+    {
+      "taskId": 5,
+      "name": "Rafael Costa",
+      "email": "rafaelcosta@email.com",
+      "profile": "Profissional de tecnologia com expertise em desenvolvimento de software e interesse em compartilhar habilidades para causas sociais. Comprometido em aplicar conhecimentos em projetos voluntários.",
+      "status": ["aprovado", "reprovado", "pendente"],
+      "id": 9
+    },
+    {
+      "taskId": 6,
+      "name": "Isabella Pereira",
+      "email": "isabellapereira@email.com",
+      "profile": "Profissional de tecnologia com vasta experiência em desenvolvimento de software e análise de sistemas. Empenhada em aplicar minhas habilidades para causas sociais, busco oportunidades voluntárias para fazer a diferença.",
+      "status": ["aprovado", "reprovado", "pendente"],
+      "id": 10
+    },
+    {
+      "taskId": 7,
+      "name": "Carolina Pereira",
+      "email": "carolinapereira@email.com",
+      "profile": "Profissional de tecnologia inovadora e comprometida. Com ampla experiência em desenvolvimento de software, busco aplicar minhas habilidades em um trabalho voluntário.",
+      "status": ["aprovado", "reprovado", "pendente"],
+      "id": 11
+    },
+    {
+      "taskId": 8,
+      "name": "Sofia Mendes",
+      "profile": "Estudante de Sistemas de Informação apaixonada por tecnologia e resolução de problemas. Experiência em desenvolvimento web e interesse em contribuir para projetos inovadores. Comprometida, pró-ativa e ansiosa para aplicar habilidades em um ambiente colaborativo.",
+      "email": "sofiamendes@email.com",
+      "status": ["aprovado", "reprovado", "pendente"],
+      "id": 12
+    },
+    {
+      "taskId": 8,
+      "name": "Bianca Pereira",
+      "email": "biancapereira@email.com",
+      "profile": "Profissional de tecnologia entusiasmada, especialista em desenvolvimento de software. Busco aplicar minhas habilidades para causas sociais em um trabalho voluntário.",
+      "status": ["aprovado", "reprovado", "pendente"],
+      "id": 13
+    },
+    {
+      "taskId": 9,
+      "name": "Rafael Santos",
+      "email": "rafaelsantos@email.com",
+      "profile": "Profissional de tecnologia com vasta experiência em desenvolvimento de software e soluções inovadoras. Motivado a aplicar minhas habilidades em um trabalho voluntário, contribuindo para causas significativas.",
+      "status": ["aprovado", "reprovado", "pendente"],
+      "id": 14
+    },
+    {
+      "taskId": 10,
+      "name": "André Costa",
+      "profile": "Profissional de TI apaixonado por criar soluções inovadoras. Comprometido com a excelência, busco aplicar minhas habilidades em um trabalho voluntário para impactar positivamente a comunidade.",
+      "email": "andrecosta@email.com",
+      "status": ["aprovado", "reprovado", "pendente"],
+      "id": 15
+    },
+    {
+      "taskId": 11,
+      "name": "Anderson Martins",
+      "email": "andersonmartins@email.com",
+      "profile": "Profissional de TI com vasta experiência em desenvolvimento e gestão de projetos. Motivado a contribuir com minhas habilidades para causas sociais.",
+      "status": ["aprovado", "reprovado", "pendente"],
+      "id": 16
+    },
+    {
+      "taskId": 12,
+      "name": "Ana Costa",
+      "email": "ana.costa@email.com",
+      "profile": "Profissional de TI com expertise em desenvolvimento de software e administração de sistemas. Comprometida em aplicar habilidades técnicas para causas sociais. Busco oportunidade voluntária para impactar positivamente comunidades.",
+      "status": ["aprovado", "reprovado", "pendente"],
+      "id": 17
+    },
+    {
+      "taskId": 12,
+      "name": "Lucas Oliveira",
+      "profile": "Estudante dedicado de Sistemas de Informação apaixonado por solucionar desafios tecnológicos. Busco contribuir com minha paixão pela programação e inovação em um ambiente voluntário.",
+      "email": "lucasoliveira@email.com",
+      "status": ["aprovado", "reprovado", "pendente"],
+      "id": 18
+    },
+    {
+      "taskId": 14,
+      "name": "Andrei Rocha",
+      "email": "andreirocha@email.com",
+      "profile": "Profissional de TI comprometido e apaixonado por soluções inovadoras. Busco aplicar minhas habilidades para contribuir positivamente em projetos voluntários.",
+      "status": ["aprovado", "reprovado", "pendente"],
+      "id": 19
+    },
+    {
+      "taskId": 17,
+      "name": "Gabriela Santos",
+      "email": "gabrielasantos@email.com",
+      "profile": "Estudante dedicada de Sistemas de Informação, apaixonada por resolver problemas com códigos. Busco contribuir em projetos voluntários, aplicando meu conhecimento para causas que impactam positivamente a sociedade.",
+      "status": ["aprovado", "reprovado", "pendente"],
+      "id": 20
+    },
+    {
+      "taskId": 18,
+      "name": "Carolina Silva",
+      "profile": "Sou Carolina, estudante de Sistemas de Informação apaixonada por resolver problemas complexos através da tecnologia. Com habilidades em programação e análise de dados, estou empolgada para contribuir como voluntária, aplicando meu conhecimento para causas sociais e aprendendo de forma significativa.",
+      "email": "carolinasilva@email.com",
+      "status": ["aprovado", "reprovado", "pendente"],
+      "id": 21
+    },
+    {
+      "taskId": 19,
+      "name": "Beatriz Almeida",
+      "email": "beatrizalmeida@email.com",
+      "profile": "Profissional de TI com experiência em desenvolvimento de software e gerenciamento de sistemas. Comprometida com a transformação digital e motivada a contribuir em projetos voluntários.",
+      "status": ["aprovado", "reprovado", "pendente"],
+      "id": 22
+    },
+    {
+      "taskId": 20,
+      "name": "Sofia Almeida",
+      "email": "sofiaalmeida@email.com",
+      "profile": "Estudante de Sistemas de Informação apaixonada por tecnologia e voluntariado. Comprometida em aplicar habilidades em programação e análise para criar soluções inovadoras. Determinada a contribuir para causas sociais. ",
+      "status": ["aprovado", "reprovado", "pendente"],
+      "id": 23
+    },
+    {
+      "taskId": 20,
+      "name": "Lucas Pereira",
+      "profile": "Estudante apaixonado por Sistemas de Informação, comprometido e ávido por contribuir. Habilidades em programação e resolução de problemas. Busco aplicar meu conhecimento em um trabalho voluntário para impactar positivamente.",
+      "email": "lucaspereira@email.com",
+      "status": ["aprovado", "reprovado", "pendente"],
+      "id": 24
+    },
+    {
+      "taskId": 21,
+      "name": "Bruno Costa",
+      "email": "brunocosta@email.com",
+      "profile": "Profissional comprometido em utilizar tecnologia da informação para causas sociais. Minha experiência em sistemas e análise de dados visa agregar valor a projetos voluntários.",
+      "status": ["aprovado", "reprovado", "pendente"],
+      "id": 25
+    },
+    {
+      "taskId": 21,
+      "name": "Pedro Silva",
+      "email": "pedrosilva@email.com",
+      "profile": "Sou um entusiasta da tecnologia e estou interessado em compartilhar meu conhecimento como voluntário na área de informática. Acredito que a educação em informática é fundamental no mundo atual e quero contribuir para capacitar outras pessoas a adquirirem habilidades digitais essenciais.",
+      "status": ["aprovado", "reprovado", "pendente"],
+      "id": 26
+    },
+    {
+      "taskId": 22,
+      "name": "Pedro Santos",
+      "profile": "Sou estudante dedicado de Sistemas de Informação, apaixonado por resolver desafios tecnológicos. Comprometido com o aprendizado contínuo, estou pronto para contribuir com meu conhecimento em um trabalho voluntário.",
+      "email": "pedrosantos@email.com",
+      "status": ["aprovado", "reprovado", "pendente"],
+      "id": 27
+    },
+    {
+      "taskId": 23,
+      "name": "Bruno Mendonça",
+      "email": "brunomendonca@email.com",
+      "profile": "Profissional de TI com vasta experiência em desenvolvimento de software e gestão de projetos. Empenhado em contribuir com meu conhecimento tecnológico em um projeto voluntário.",
+      "status": ["aprovado", "reprovado", "pendente"],
+      "id": 28
+    },
+    {
+      "taskId": 24,
+      "name": "Luana Santos",
+      "email": "luana.santos@email.com",
+      "profile": "Estudante dedicada de Sistemas de Informação apaixonada por desenvolvimento web e análise de dados. Busco aplicar meu conhecimento em projetos que impactem positivamente a comunidade. Comprometimento e entusiasmo guiam minha jornada.",
+      "status": ["aprovado", "reprovado", "pendente"],
+      "id": 29
+    },
+    {
+      "taskId": 24,
+      "name": "Joana Silva",
+      "profile": "Estudante dedicada de Sistemas de Informação apaixonada por tecnologia e inovação. Busco aplicar meu conhecimento para impactar positivamente comunidades, oferecendo soluções criativas e eficientes. Pronta para contribuir com meu entusiasmo e habilidades técnicas.",
+      "email": "joanasilva@email.com",
+      "status": ["aprovado", "reprovado", "pendente"],
+      "id": 30
     }
   ],
   "reviews": [
@@ -490,6 +629,222 @@
       "token": "123",
       "expiresAt": "2023-11-11T20:17:36.966Z",
       "id": 3
+    },
+    {
+      "taskId": 1,
+      "candidateId": 1,
+      "comment": "good experience",
+      "token": "123",
+      "expiresAt": "2023-11-11T20:39:19.625Z",
+      "id": 4
+    },
+    {
+      "taskId": 1,
+      "candidateId": 1,
+      "comment": "bad experience",
+      "token": "123",
+      "expiresAt": "2023-11-11T20:17:36.152Z",
+      "id": 5
+    },
+    {
+      "taskId": 2,
+      "candidateId": 1,
+      "comment": "neutral experience",
+      "token": "123",
+      "expiresAt": "2023-11-11T20:17:36.966Z",
+      "id": 6
+    },
+    {
+      "taskId": 1,
+      "candidateId": 1,
+      "comment": "good experience",
+      "token": "123",
+      "expiresAt": "2023-11-11T20:39:19.625Z",
+      "id": 7
+    },
+    {
+      "taskId": 1,
+      "candidateId": 1,
+      "comment": "bad experience",
+      "token": "123",
+      "expiresAt": "2023-11-11T20:17:36.152Z",
+      "id": 8
+    },
+    {
+      "taskId": 2,
+      "candidateId": 1,
+      "comment": "neutral experience",
+      "token": "123",
+      "expiresAt": "2023-11-11T20:17:36.966Z",
+      "id": 9
+    },
+    {
+      "taskId": 1,
+      "candidateId": 1,
+      "comment": "good experience",
+      "token": "123",
+      "expiresAt": "2023-11-11T20:39:19.625Z",
+      "id": 10
+    },
+    {
+      "taskId": 1,
+      "candidateId": 1,
+      "comment": "bad experience",
+      "token": "123",
+      "expiresAt": "2023-11-11T20:17:36.152Z",
+      "id": 11
+    },
+    {
+      "taskId": 2,
+      "candidateId": 1,
+      "comment": "neutral experience",
+      "token": "123",
+      "expiresAt": "2023-11-11T20:17:36.966Z",
+      "id": 12
+    },
+    {
+      "taskId": 1,
+      "candidateId": 1,
+      "comment": "good experience",
+      "token": "123",
+      "expiresAt": "2023-11-11T20:39:19.625Z",
+      "id": 13
+    },
+    {
+      "taskId": 1,
+      "candidateId": 1,
+      "comment": "bad experience",
+      "token": "123",
+      "expiresAt": "2023-11-11T20:17:36.152Z",
+      "id": 14
+    },
+    {
+      "taskId": 2,
+      "candidateId": 1,
+      "comment": "neutral experience",
+      "token": "123",
+      "expiresAt": "2023-11-11T20:17:36.966Z",
+      "id": 15
+    },
+    {
+      "taskId": 1,
+      "candidateId": 1,
+      "comment": "good experience",
+      "token": "123",
+      "expiresAt": "2023-11-11T20:39:19.625Z",
+      "id": 16
+    },
+    {
+      "taskId": 1,
+      "candidateId": 1,
+      "comment": "bad experience",
+      "token": "123",
+      "expiresAt": "2023-11-11T20:17:36.152Z",
+      "id": 17
+    },
+    {
+      "taskId": 2,
+      "candidateId": 1,
+      "comment": "neutral experience",
+      "token": "123",
+      "expiresAt": "2023-11-11T20:17:36.966Z",
+      "id": 18
+    },
+    {
+      "taskId": 1,
+      "candidateId": 1,
+      "comment": "good experience",
+      "token": "123",
+      "expiresAt": "2023-11-11T20:39:19.625Z",
+      "id": 19
+    },
+    {
+      "taskId": 1,
+      "candidateId": 1,
+      "comment": "bad experience",
+      "token": "123",
+      "expiresAt": "2023-11-11T20:17:36.152Z",
+      "id": 20
+    },
+    {
+      "taskId": 2,
+      "candidateId": 1,
+      "comment": "neutral experience",
+      "token": "123",
+      "expiresAt": "2023-11-11T20:17:36.966Z",
+      "id": 21
+    },
+    {
+      "taskId": 1,
+      "candidateId": 1,
+      "comment": "good experience",
+      "token": "123",
+      "expiresAt": "2023-11-11T20:39:19.625Z",
+      "id": 22
+    },
+    {
+      "taskId": 1,
+      "candidateId": 1,
+      "comment": "bad experience",
+      "token": "123",
+      "expiresAt": "2023-11-11T20:17:36.152Z",
+      "id": 23
+    },
+    {
+      "taskId": 2,
+      "candidateId": 1,
+      "comment": "neutral experience",
+      "token": "123",
+      "expiresAt": "2023-11-11T20:17:36.966Z",
+      "id": 24
+    },
+    {
+      "taskId": 1,
+      "candidateId": 1,
+      "comment": "good experience",
+      "token": "123",
+      "expiresAt": "2023-11-11T20:39:19.625Z",
+      "id": 25
+    },
+    {
+      "taskId": 1,
+      "candidateId": 1,
+      "comment": "bad experience",
+      "token": "123",
+      "expiresAt": "2023-11-11T20:17:36.152Z",
+      "id": 26
+    },
+    {
+      "taskId": 2,
+      "candidateId": 1,
+      "comment": "neutral experience",
+      "token": "123",
+      "expiresAt": "2023-11-11T20:17:36.966Z",
+      "id": 27
+    },
+    {
+      "taskId": 1,
+      "candidateId": 1,
+      "comment": "good experience",
+      "token": "123",
+      "expiresAt": "2023-11-11T20:39:19.625Z",
+      "id": 28
+    },
+    {
+      "taskId": 1,
+      "candidateId": 1,
+      "comment": "bad experience",
+      "token": "123",
+      "expiresAt": "2023-11-11T20:17:36.152Z",
+      "id": 29
+    },
+    {
+      "taskId": 2,
+      "candidateId": 1,
+      "comment": "neutral experience",
+      "token": "123",
+      "expiresAt": "2023-11-11T20:17:36.966Z",
+      "id": 30
     }
   ]
 }
