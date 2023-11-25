@@ -17,3 +17,5 @@ export const PRODUCTION_JSON_SERVER_URL = "https://orca-app-fbvzt.ondigitalocean
 export const VALIDATE_PASSWORD_RESET_WORD = "thisIsAValidPasswordReset";
 
 export const PROJECT_URL = "https://icei-puc-minas-pmv-si.github.io/pmv-si-2023-2-pe1-t2-conecta"
+
+export const CEP_API_URL = 'https://viacep.com.br/ws';

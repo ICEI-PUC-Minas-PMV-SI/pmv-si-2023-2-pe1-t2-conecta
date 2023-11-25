@@ -1,11 +1,11 @@
 const getPagePath = (pageName) => {
     const currentPath = window.location.pathname;
 
-    if (currentPath.includes(`${pageName}.html`)) {
+    if(currentPath.includes(`${pageName}.html`)) {
         return `./${pageName}.html`
     }
 
-    if (currentPath.includes('/pages')) {
+    if(currentPath.includes('/pages')) {
         return `../${pageName}/${pageName}.html`;
     }
 
@@ -287,10 +287,10 @@ const cssStyle = `
 
 `
 
-class HorizontalTaskCard extends HTMLElement {
+export class HorizontalTaskCard extends HTMLElement {
     constructor() {
         super();
-        this.root = this.attachShadow({mode: 'closed'});
+        this.root = this.attachShadow({ mode: 'closed' });
 
         const stylesheet = new CSSStyleSheet();
         stylesheet.replaceSync(cssStyle);
@@ -302,33 +302,35 @@ class HorizontalTaskCard extends HTMLElement {
         const clone = template.content.cloneNode(true);
 
         this.root.append(clone);
+    }
 
-        if (this.name) {
+    connectedCallback() {
+        if(this.name) {
             const name = this.root.querySelector('.task-name');
             name.innerText = this.name;
         }
 
-        if (this.owner) {
+        if(this.owner) {
             const owner = this.root.querySelector('.task-owner');
             owner.innerText = this.owner;
         }
 
-        if (this.description) {
+        if(this.description) {
             const description = this.root.querySelector('.task-description-text');
             description.innerText = this.description;
         }
 
-        if (this.type) {
+        if(this.type) {
             const type = this.root.querySelector('.location-tag');
             type.innerText = this.type;
         }
 
-        if (this.image) {
+        if(this.image) {
             const image = this.root.querySelector('.profile-image-card-container > img');
             image.src = this.image;
         }
 
-        if (this.destination) {
+        if(this.destination) {
             const helpButton = this.root.querySelector('.help-button');
             helpButton.href = this.destination;
         }

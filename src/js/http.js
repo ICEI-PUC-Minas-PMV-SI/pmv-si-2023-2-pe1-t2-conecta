@@ -1,8 +1,8 @@
-import {PRODUCTION_JSON_SERVER_URL} from './constants.js'
+import { LOCAL_JSON_SERVER_URL, CEP_API_URL, PRODUCTION_JSON_SERVER_URL } from './constants.js'
 
 export async function makeRequest(url, method, data) {
     const upperCaseMethod = method.toUpperCase();
-    if (!['GET', 'POST', 'PUT', 'DELETE', 'PATCH'].includes(upperCaseMethod)) {
+    if(!['GET', 'POST', 'PUT', 'DELETE', 'PATCH'].includes(upperCaseMethod)) {
         throw new Error('Method not allowed');
     }
 
@@ -13,7 +13,7 @@ export async function makeRequest(url, method, data) {
         },
         body: data ? JSON.stringify(data) : undefined
     };
-    
+
     try {
         const response = await fetch(url, options);
         return await response.json();
@@ -25,4 +25,14 @@ export async function makeRequest(url, method, data) {
 
 export function getURL(route) {
     return `${PRODUCTION_JSON_SERVER_URL}/${route}`;
+}
+
+export async function getLocationData(cep) {
+    const url = `${CEP_API_URL}/${cep}/json`;
+    try {
+        const response = await fetch(url);
+        return await response.json();
+    } catch (err) {
+        console.error(err);
+    }
 }
