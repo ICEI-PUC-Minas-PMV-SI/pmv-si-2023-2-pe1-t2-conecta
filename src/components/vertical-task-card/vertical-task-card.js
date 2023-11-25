@@ -14,7 +14,7 @@ const getPagePath = (pageName) => {
 
 const makeTemplate = () => {
     const pathName = window.location.pathname;
-    const rootPath = pathName.includes('index.html') || pathName.endsWith("pmv-si-2023-2-pe1-t2-conecta/")  ? './' : '../../';
+    const rootPath = pathName.includes('index.html') || pathName.endsWith("pmv-si-2023-2-pe1-t2-conecta/") ? './' : '../../';
     const template = document.createElement('template');
     template.innerHTML = `
     <div class="root">
@@ -238,22 +238,24 @@ const cssStyle = `
             display: none;
         }
 `
-class VerticalTaskCard extends HTMLElement {
+
+export class VerticalTaskCard extends HTMLElement {
     constructor() {
         super();
-        this.root = this.attachShadow({mode: 'closed'});
+        this.root = this.attachShadow({ mode: 'closed' });
 
         const stylesheet = new CSSStyleSheet();
         stylesheet.replaceSync(cssStyle);
         this.root.adoptedStyleSheets = [stylesheet];
-
-
+        
         const template = makeTemplate(this.variant);
 
         const clone = template.content.cloneNode(true);
 
         this.root.append(clone);
+    }
 
+    connectedCallback() {
         if (this.name) {
             const name = this.root.querySelector('.task-name');
             name.innerText = this.name;
@@ -286,7 +288,8 @@ class VerticalTaskCard extends HTMLElement {
 
     }
 
-    static get observedAttributes() {
+    static
+    get observedAttributes() {
         return ['name', 'owner', 'description', 'type', 'image', 'destination'];
     }
 
