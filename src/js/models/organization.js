@@ -103,4 +103,13 @@ export class Organization {
     async deleteById(id) {
         return await makeRequest(getURL(`organizations/${id}`), 'DELETE');
     }
+    
+    async changePasswordById(id, newPassword) {
+        const newHashedPassword = await hashPassword(newPassword);
+        const data = {
+            password: newHashedPassword
+        }
+
+        return await makeRequest(getURL(`organizations/${id}`), 'PATCH', data);
+    }
 }
