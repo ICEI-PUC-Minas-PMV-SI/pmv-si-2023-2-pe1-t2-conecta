@@ -47,7 +47,7 @@ async function handleForgotPassword() {
         );
     }
 
-    alert("Recuperação de senha realizado com sucesso. Verifique seu e-mail.");
+    alert("Email de recuperação de senha enviado.");
     window.location.href = "../login/login.html";
 }
 
