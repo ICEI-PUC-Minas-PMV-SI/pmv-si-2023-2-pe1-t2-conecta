@@ -50,6 +50,10 @@ export class Organization {
         return await makeRequest(getURL(`organizations/${id}`), 'GET');
     }
 
+    async findByEmail(email) {
+        return await makeRequest(getURL(`organizations?email=${email}`), 'GET');
+    }
+
     async updateById(id) {
         const data = {
             name: this.name,
