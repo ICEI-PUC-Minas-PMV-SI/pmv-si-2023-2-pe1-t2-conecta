@@ -12,4 +12,8 @@ export let LOCATION_REF_ADMINISTRAR_DEMANDAS = '../administrar-demandas/administ
 export let LOCATION_REF_PAGINA_DEMANDAS = '../pagina-de-demandas/pagina-de-demandas.html';
 
 export const LOCAL_JSON_SERVER_URL = 'http://localhost:3001';
-export const PRODUCTION_JSON_SERVER_URL = 'https://json-server-vercel-eta-beige.vercel.app'
+export const PRODUCTION_JSON_SERVER_URL = "https://orca-app-fbvzt.ondigitalocean.app"
+
+export const VALIDATE_PASSWORD_RESET_WORD = "thisIsAValidPasswordReset";
+
+export const PROJECT_URL = "https://icei-puc-minas-pmv-si.github.io/pmv-si-2023-2-pe1-t2-conecta"
