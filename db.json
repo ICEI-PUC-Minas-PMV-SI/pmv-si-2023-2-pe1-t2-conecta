@@ -13,6 +13,9 @@
       "number": "567",
       "city": "Campo Grande",
       "state": "MS",
+      "facebook": "www.facebook.com/teachtech",
+      "instagram": "www.instagram.com/teachtech",
+      "twitter": "www.twitter.com/teachtech",
       "id": 1
     },
     {
@@ -28,6 +31,9 @@
       "number": "258",
       "city": "Fortaleza",
       "state": "CE",
+      "facebook": "www.facebook.com/wehelp",
+      "instagram": "www.instagram.com/wehelp",
+      "twitter": "www.twitter.com/wehelp",
       "id": 2
     },
     {
@@ -43,6 +49,9 @@
       "number": "123",
       "city": "Curitiba",
       "state": "PR",
+      "facebook": "www.facebook.com/ajudasenior",
+      "instagram": "www.instagram.com/ajudasenior",
+      "twitter": "www.twitter.com/ajudasenior",
       "id": 3
     },
     {
@@ -58,6 +67,9 @@
       "number": "123",
       "city": "Ouro Preto",
       "state": "MG",
+      "facebook": "www.facebook.com/happykids",
+      "instagram": "www.instagram.com/happykids",
+      "twitter": "www.twitter.com/happykids",
       "id": 4
     },
     {
@@ -73,6 +85,9 @@
       "number": "456",
       "city": "Rio de Janeiro",
       "state": "RJ",
+      "facebook": "www.facebook.com/ensinatech",
+      "instagram": "www.instagram.com/ensinatech",
+      "twitter": "www.twitter.com/ensinatech",
       "id": 5
     },
     {
@@ -88,6 +103,9 @@
       "number": "789",
       "city": "São Paulo",
       "state": "SP",
+      "facebook": "www.facebook.com/ajudapet",
+      "instagram": "www.instagram.com/ajudapet",
+      "twitter": "www.twitter.com/ajudapet",
       "id": 6
     },
     {
@@ -103,6 +121,9 @@
       "number": "789",
       "city": "São José",
       "state": "SP",
+      "facebook": "www.facebook.com/ongflorescer",
+      "instagram": "www.instagram.com/ongflorescer",
+      "twitter": "www.twitter.com/ongflorescer",
       "id": 7
     },
     {
@@ -118,6 +139,9 @@
       "number": "426",
       "city": "Salvador",
       "state": "BA",
+      "facebook": "www.facebook.com/leialivros",
+      "instagram": "www.instagram.com/leialivros",
+      "twitter": "www.twitter.com/leialivros",
       "id": 8
     }
   ],
