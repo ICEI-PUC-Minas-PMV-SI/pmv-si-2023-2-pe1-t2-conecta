@@ -29,7 +29,7 @@ export class Candidate {
     }
 
     async findByCpf(cpf) {
-        return await makeRequest(getURL(`candidates/${cpf}`), 'GET');
+        return await makeRequest(getURL(`candidates?cpf=${cpf}`), 'GET');
     }
     
     async findByTaskId(taskId) {

@@ -60,7 +60,18 @@ function handleCancel() {
         window.location.href = LOCATION_REF_ADMINISTRAR_DEMANDAS;
     }
 }
+async function countRegistrationsByCpf(cpf) {
+    try {
+        const candidates = await new Candidate().findByCpf(cpf);
 
+        // retorna o número de cadastros
+        return candidates.length;
+
+    } catch (error) {
+        // Se ocorrer um erro (por exemplo, candidato não encontrado), retorna 0
+        return 0;
+    }
+}
 async function handleSend(event) {
     event.preventDefault();
 
@@ -105,6 +116,14 @@ async function handleSend(event) {
 
     if (candidatura.como.length <= 0) {
         alert(Required("Como posso ajudar"));
+        return;
+    }
+    
+    const numberOfRegistrations = await countRegistrationsByCpf(candidatura.cpf);
+
+    // verifica se o número de registros for maior ou igual a 2
+    if (numberOfRegistrations >= 2) {
+        alert("Limite de dois cadastros atingido para o mesmo CPF.");
         return;
     }
     // pegar o id da demanda através da url
