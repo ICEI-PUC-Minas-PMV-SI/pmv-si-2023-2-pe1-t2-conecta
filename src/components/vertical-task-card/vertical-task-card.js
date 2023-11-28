@@ -343,4 +343,5 @@ export class VerticalTaskCard extends HTMLElement {
     }
 }
 
+
 customElements.define('vertical-task-card-component', VerticalTaskCard);
