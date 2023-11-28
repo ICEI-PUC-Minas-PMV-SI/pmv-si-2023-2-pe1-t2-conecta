@@ -111,6 +111,7 @@
     -webkit-line-clamp: 10;
     overflow: hidden;
     text-overflow: ellipsis;
+    max-height: 200px;
 }
 
 .horizontal-task-card {
@@ -303,7 +304,7 @@
     border: 1px solid #888;
     width: 80%;
     min-height: 550px;
-    max-height: 560px;
+    max-height: 620px;
     margin: 5% auto;
     max-width: 660px;
     border-radius: 15px;
@@ -513,8 +514,8 @@
         padding: 20px;
         border: 1px solid #888;
         width: 80%;
-        min-height: 550px;
-        max-height: 560px;
+        max-height: 880px;
+        height: auto;
         margin: 5% auto;
         max-width: 660px;
         border-radius: 15px;
@@ -533,6 +534,18 @@
 
     .status-wrapper {
         margin-top: 0px;
+    }
+
+    .modal-wrapper {
+        background-color: #fefefe;
+        padding: 20px;
+        border: 1px solid #888;
+        width: 80%;
+        max-height: 880px;
+        height: auto;
+        margin: 5% auto;
+        max-width: 660px;
+        border-radius: 15px;
     }
 }
 
@@ -555,21 +568,18 @@
         padding: 20px;
         border: 1px solid #888;
         width: 80%;
-        min-height: 550px;
-        max-height: 560px;
+        max-height: 2000px;
+        height: auto;
         margin: 5% auto;
         max-width: 660px;
         border-radius: 15px;
     }
+}
+
+@media screen and (max-width: 320px) {
 
     .modal-header {
-        display: flex;
-        -webkit-box-pack: justify;
-        justify-content: space-between;
-        -webkit-box-align: center;
-        align-items: center;
-        position: relative;
-        padding: 10px 24px 24px 24px;
-        border-bottom: 1px solid rgb(230, 234, 246);
+        padding: 0px;
     }
+
 }

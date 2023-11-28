@@ -92,7 +92,7 @@ vertical-task-card-component {
     border: 1px solid #888;
     width: 80%;
     min-height: 550px;
-    max-height: 560px;
+    max-height: 620px;
     margin: 5% auto;
     max-width: 660px;
     border-radius: 15px;
@@ -240,29 +240,27 @@ vertical-task-card-component {
     }
 }
 
-    @media screen and (max-width: 425px) {
+@media screen and (max-width: 425px) {
 
-        .modal-wrapper {
-            background-color: #fefefe;
-            padding: 20px;
-            border: 1px solid #888;
-            width: 80%;
-            height: auto;
-            margin: 5% auto;
-            max-width: 660px;
-            max-height: 880px;
-            height: auto;
-            border-radius: 15px;
-        }
-
-        .modal-header {
-            display: flex;
-            -webkit-box-pack: justify;
-            justify-content: space-between;
-            -webkit-box-align: center;
-            align-items: center;
-            position: relative;
-            padding: 10px 24px 24px 24px;
-            border-bottom: 1px solid rgb(230, 234, 246);
-        }
+    .modal-wrapper {
+        background-color: #fefefe;
+        padding: 20px;
+        border: 1px solid #888;
+        width: 80%;
+        max-height: 2000px;
+        height: auto;
+        margin: 5% auto;
+        max-width: 660px;
+        border-radius: 15px;
     }
+
+    .modal-header {
+        display: flex;
+        -webkit-box-pack: justify;
+        justify-content: space-between;
+        -webkit-box-align: center;
+        align-items: center;
+        position: relative;
+        border-bottom: 1px solid rgb(230, 234, 246);
+    }
+}
