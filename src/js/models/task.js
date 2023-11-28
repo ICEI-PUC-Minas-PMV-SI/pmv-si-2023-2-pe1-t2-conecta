@@ -33,6 +33,10 @@ export class Task {
     async findAll() {
         return await makeRequest(getURL('tasks'), 'GET');
     }
+    
+    async findAllFilteredByOpenStatus() {
+        return await makeRequest(getURL('tasks?status=Aberta'), 'GET');
+    }
 
     async updateById(id) {
         const data = {
