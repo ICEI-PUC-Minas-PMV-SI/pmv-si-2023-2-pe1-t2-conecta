@@ -387,6 +387,14 @@
       "id": 24
     }
   ],
+  "sessions": [
+    {
+      "ongId": 1,
+      "token": "8c17b3ab-5d58-45fb-9726-19ef26ba65ca",
+      "expirationDate": "2024-11-28T21:21:29.851Z",
+      "active": true
+    }
+  ],
   "candidates": [
     {
       "taskId": 1,
