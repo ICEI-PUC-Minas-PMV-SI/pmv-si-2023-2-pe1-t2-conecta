@@ -89,9 +89,10 @@ As tabelas que se seguem apresentam os requisitos funcionais e não-funcionais q
 |     expiração      | Timestamp | Data e hora limite em que o depoimento pode ser enviado | 2023-10-28T22:41:38+00:00            |
 
 ## Sessão
-|     **Nome**     | **Tipo**  | **Descrição**                                       | **Exemplo**                          |
-|:----------------:|-----------|-----------------------------------------------------|--------------------------------------|
-|        Id        | UUID      | Identificador único da sessão                       | 95ddad92-c441-4e92-a34d-fcf328c69b78 |
-|    Id da ONG     | UUID      | Identificador único da ONG                          | 95ddad92-c441-4e92-a34d-fcf328c69b78 |
-|      token       | Texto     | Token que é verificado a cada request se esta ativo | e10adc3949ba59abbe56e057f20f883e     |
-|    expiração     | Timestamp | Data e hora limite em que a sessão ficará ativa     | 2023-10-28T22:41:38+00:00            |
+| **Nome**  | **Tipo**  | **Descrição**                                       | **Exemplo**                      |
+|:---------:|-----------|-----------------------------------------------------|----------------------------------|
+|    Id     | Number    | Identificador único da sessão                       | 14123                            |
+| Id da ONG | Number    | Identificador único da ONG                          | 2345                             |
+|   token   | Texto     | Token que é verificado a cada request se esta ativo | e10adc3949ba59abbe56e057f20f883e |
+| expiração | Timestamp | Data e hora limite em que a sessão ficará ativa     | 2023-10-28T22:41:38+00:00        |
+|  active   | Boolean   | Data e hora limite em que a sessão ficará ativa     | 2023-10-28T22:41:38+00:00        |
