@@ -7,7 +7,7 @@ export class Candidate {
     cpf;
     phone;
     about;
-    active;
+    status;
     
     async create() {
         const data = {
@@ -17,7 +17,7 @@ export class Candidate {
             cpf: this.cpf,
             phone: this.phone,
             about: this.about,
-            active: this.active,
+            status: this.status,
             
         }
 
@@ -31,7 +31,9 @@ export class Candidate {
     async findByCpf(cpf) {
         return await makeRequest(getURL(`candidates?cpf=${cpf}`), 'GET');
     }
-    
+    async findByStatus(status) {
+        return await makeRequest(getURL(`candidates?status=${status}`), 'GET');
+    }
     async findByTaskId(taskId) {
         return await makeRequest(getURL(`candidates?taskId=${taskId}`), 'GET');
     }
@@ -48,7 +50,7 @@ export class Candidate {
             cpf: this.cpf,
             phone: this.phone,
             about: this.about,
-            active: this.active
+            status: this.status
         }
         
         return await makeRequest(getURL(`candidates/${id}`), 'PUT', data);

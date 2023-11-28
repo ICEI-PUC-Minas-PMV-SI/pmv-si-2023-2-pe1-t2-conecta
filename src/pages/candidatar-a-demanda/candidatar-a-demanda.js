@@ -63,9 +63,9 @@ function handleCancel() {
 async function countRegistrationsByCpf(cpf) {
     try {
         const candidates = await new Candidate().findByCpf(cpf);
-
-        // retorna o número de cadastros
-        return candidates.length;
+        const CandidatesStatus = candidates.filter(candidate => candidate.status === "pending" || candidate.status === "approved");
+        // retorna o número de cadastros ativos ou aprovados
+        return CandidatesStatus.length;
 
     } catch (error) {
         // Se ocorrer um erro (por exemplo, candidato não encontrado), retorna 0
@@ -123,7 +123,7 @@ async function handleSend(event) {
 
     // verifica se o número de registros for maior ou igual a 2
     if (numberOfRegistrations >= 2) {
-        alert("Limite de dois cadastros atingido para o mesmo CPF.");
+        alert("Limite de dois cadastros ativos atingido para o mesmo CPF, aguarde.");
         return;
     }
     // pegar o id da demanda através da url
@@ -141,7 +141,7 @@ async function handleSend(event) {
         candidate.phone = candidatura.phone;
         candidate.about = candidatura.como;
         candidate.taskId = taskID;
-        candidate.active = true;
+        candidate.status = "approved";
         
         await candidate.create();
 
