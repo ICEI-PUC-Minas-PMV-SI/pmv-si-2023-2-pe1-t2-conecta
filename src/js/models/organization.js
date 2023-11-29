@@ -90,6 +90,10 @@ export class Organization {
     }
 }
 
+export async function findById(id) {
+    return await makeRequest(getURL(`organizations/${id}`), 'GET');
+}
+
 export async function findByEmail(email) {
     return await makeRequest(getURL(`organizations?email=${email}`), 'GET');
 }
