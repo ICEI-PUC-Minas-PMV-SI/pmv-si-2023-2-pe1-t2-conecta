@@ -63,7 +63,7 @@ function handleCancel() {
 async function countRegistrationsByCpf(cpf) {
     try {
         const candidates = await new Candidate().findByCpf(cpf);
-        const CandidatesStatus = candidates.filter(candidate => candidate.status === "pending" || candidate.status === "approved");
+        const CandidatesStatus = candidates.filter(candidate => candidate.status === "pendente" || candidate.status === "aprovado");
 
         // retorna o número de cadastros ativos ou aprovados
         return CandidatesStatus.length;
