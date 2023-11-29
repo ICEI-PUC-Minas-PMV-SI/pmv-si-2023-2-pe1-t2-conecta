@@ -23,7 +23,8 @@ export class Session {
             active: this.active
         }
 
-        return await makeRequest(getURL('sessions'), 'POST', data);
+        await makeRequest(getURL('sessions'), 'POST', data);
+        return makeRequest(getURL(`sessions?token=${this.token}`), 'GET');
     }
 
     async inactivateByToken(token) {
@@ -34,4 +35,21 @@ export class Session {
         return await makeRequest(getURL(`sessions/${token}`), 'PATCH', data);
     }
 
+}
+
+export async function getSession(token) {
+    const options = {
+        method: 'GET',
+        headers: {
+            'Content-Type': 'application/json',
+        },
+        body: undefined
+    };
+
+    try {
+        const response = await fetch(getURL(`sessions?token=${token}`), options);
+        return await response.json();
+    } catch (err) {
+        console.error(err);
+    }
 }
