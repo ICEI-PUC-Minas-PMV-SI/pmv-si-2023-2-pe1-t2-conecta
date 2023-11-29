@@ -24,16 +24,15 @@
 
         <div class="content">
             <div class="headline">
-                <h1 class="title">
-                    Professor de Informática
-                </h1>
+                <h1 class="title">Professor de Informática</h1>
+                <p class="task-owner">TeachTech</p>
             </div>
 
             <div class="tasks-wrapper">
-                <div class="vertical-task-card">
+                <div class="vertical-task-card" onclick="modal($(this), event);">
                     <div class="card-section-wrapper">
-                        <div class="card-header">
-                            <div class="person-info">
+                        <div class="card-header" onclick="fotoClick(event)">
+                            <div class="person-info" onclick="fotoClick(event)">
                                 <p class="person-name">Marcelo Alves</p>
                             </div>
                         </div>
@@ -46,17 +45,17 @@
                             </p>
                             <p class="show-more">saber mais</p>
                         </div>
-                        <div class="cards-button">
+                        <div class="cards-button" onclick="fotoClick(event)">
                             <div class="message-button-wrapper">
                                 <a href="#"><img class="message-button" src="../../assets/icons/message.png" alt="Message"></a>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="vertical-task-card">
+                <div class="vertical-task-card" onclick="modal($(this), event);">
                     <div class="card-section-wrapper">
-                        <div class="card-header">
-                            <div class="person-info">
+                        <div class="card-header" onclick="fotoClick(event)">
+                            <div class="person-info" onclick="fotoClick(event)">
                                 <p class="person-name">Elisa Silva</p>
                             </div>
                         </div>
@@ -68,17 +67,17 @@
                             </p>
                             <p class="show-more">saber mais</p>
                         </div>
-                        <div class="cards-button">
+                        <div class="cards-button" onclick="fotoClick(event)">
                             <div class="message-button-wrapper">
                                 <a href="#"><img class="message-button" src="../../assets/icons/message.png" alt="Message"></a>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="vertical-task-card">
+                <div class="vertical-task-card" onclick="modal($(this), event);">
                     <div class="card-section-wrapper">
-                        <div class="card-header">
-                            <div class="person-info">
+                        <div class="card-header" onclick="fotoClick(event)">
+                            <div class="person-info" onclick="fotoClick(event)">
                                 <p class="person-name">Heitor Santos</p>
                             </div>
                         </div>
@@ -89,17 +88,17 @@
                             </p>
                             <p class="show-more">saber mais</p>
                         </div>
-                        <div class="cards-button">
+                        <div class="cards-button" onclick="fotoClick(event)">
                             <div class="message-button-wrapper">
                                 <a href="#"><img class="message-button" src="../../assets/icons/message.png" alt="Message"></a>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="vertical-task-card">
+                <div class="vertical-task-card" onclick="modal($(this), event);">
                     <div class="card-section-wrapper">
-                        <div class="card-header">
-                            <div class="person-info">
+                        <div class="card-header" onclick="fotoClick(event)">
+                            <div class="person-info" onclick="fotoClick(event)">
                                 <p class="person-name">Carla Machado</p>
                             </div>
                         </div>
@@ -111,7 +110,7 @@
                             </p>
                             <p class="show-more">saber mais</p>
                         </div>
-                        <div class="cards-button">
+                        <div class="cards-button" onclick="fotoClick(event)">
                             <div class="message-button-wrapper">
                                 <a href="#"><img class="message-button" src="../../assets/icons/message.png" alt="Message"></a>
                             </div>
@@ -119,13 +118,13 @@
                     </div>
                 </div>
 
-                <div class="horizontal-task-card">
+                <div class="horizontal-task-card" onclick="modal($(this), event);">
                     <div class="left-side">
-                        <div class="person-info">
+                        <div class="person-info" onclick="fotoClick(event)">
                             <p class="person-name">Marcelo Alves</p>
                         </div>
                         <div class="person-description">
-                            <p>
+                            <p class="person-description-text">
                                 Sou um entusiasta da tecnologia e estou interessado em compartilhar meu conhecimento
                                 como voluntário na área de informática. Acredito que a educação em informática é
                                 fundamental no mundo atual e quero contribuir para capacitar outras pessoas a adquirirem
@@ -134,7 +133,7 @@
                             <p class="show-more">saber mais</p>
                         </div>
                     </div>
-                    <div class="right-side">
+                    <div class="right-side" onclick="fotoClick(event)">
                         <div class="cards-button">
                             <div class="message-button-wrapper">
                                 <a href="#"><img class="message-button" src="../../assets/icons/message.png" alt="Message"></a>
@@ -142,13 +141,13 @@
                         </div>
                     </div>
                 </div>
-                <div class="horizontal-task-card">
+                <div class="horizontal-task-card" onclick="modal($(this), event);">
                     <div class="left-side">
-                        <div class="person-info">
+                        <div class="person-info" onclick="fotoClick(event)">
                             <p class="person-name">Elisa Silva</p>
                         </div>
                         <div class="person-description">
-                            <p>
+                            <p class="person-description-text">
                                 Sou apaixonada por tecnologia e estou interessada em compartilhar meu conhecimento como
                                 voluntária na área. Tenho uma sólida formação em Sistemas de Informação e estou
                                 ansiosa para inspirar e capacitar outras pessoas a explorar o mundo da tecnologia.
@@ -156,7 +155,7 @@
                             <p class="show-more">saber mais</p>
                         </div>
                     </div>
-                    <div class="right-side">
+                    <div class="right-side" onclick="fotoClick(event)">
                         <div class="cards-button">
                             <div class="message-button-wrapper">
                                 <a href="#"><img class="message-button" src="../../assets/icons/message.png" alt="Message"></a>
@@ -164,20 +163,20 @@
                         </div>
                     </div>
                 </div>
-                <div class="horizontal-task-card">
+                <div class="horizontal-task-card" onclick="modal($(this), event);">
                     <div class="left-side">
-                        <div class="person-info">
+                        <div class="person-info" onclick="fotoClick(event)">
                             <p class="person-name">Heitor Santos</p>
                         </div>
                         <div class="person-description">
-                            <p>
+                            <p class="person-description-text">
                                 Me considero um profissional experiente em desenvolvimento de software, estou
                                 interessado em contribuir como voluntário na vaga "professor de informática".
                             </p>
                             <p class="show-more">saber mais</p>
                         </div>
                     </div>
-                    <div class="right-side">
+                    <div class="right-side" onclick="fotoClick(event)">
                         <div class="cards-button">
                             <div class="message-button-wrapper">
                                 <a href="#"><img class="message-button" src="../../assets/icons/message.png" alt="Message"></a>
@@ -185,13 +184,13 @@
                         </div>
                     </div>
                 </div>
-                <div class="horizontal-task-card">
+                <div class="horizontal-task-card" onclick="modal($(this), event);">
                     <div class="left-side">
                         <div class="person-info">
                             <p class="person-name">Carla Machado</p>
                         </div>
                         <div class="person-description">
-                            <p>
+                            <p class="person-description-text">
                                 Possuo uma sólida formação acadêmica em Ciência da Computação e mais de 5 anos de
                                 experiência em desenvolvimento de software, incluindo aplicações web, móveis e sistemas
                                 de grande escala.
@@ -199,7 +198,7 @@
                             <p class="show-more">saber mais</p>
                         </div>
                     </div>
-                    <div class="right-side">
+                    <div class="right-side" onclick="fotoClick(event)">
                         <div class="cards-button">
                             <div class="message-button-wrapper">
                                 <a href="#"><img class="message-button" src="../../assets/icons/message.png" alt="Message"></a>
@@ -216,30 +215,37 @@
                     </div>
                 </div>
             </div>
+        </div>
 
+        <div id="myModal" class="modal">
+            <div class="modal-wrapper">
+                    <div class="modal-text">
+                            <div class="modal-header">
+                                    <img class="image-modal" src="../../assets/icons/voluntary.png" alt="Ajuda">
+                                    <p class="modal-title">VOLUNTÁRIOS</p>
+                                    <div class="close">&times;</div>
+                            </div>
+                            <div class="task-name"></div>
+                            <div class="NGO"></div>
+                            <div class="modal-content">
+                                <div>
+                                    <h1 class="text-tiltle">Nome do Voluntário</h1>
+                                    <div class="name"></div>
+                                </div>
+                                <div>
+                                            <h1 class="text-tiltle">Perfil</h1>
+                                            <div class="text"></div>
+                                    </div>
+                            </div>
+                    </div>
+            </div>
         </div>
 
         <footer-component></footer-component>
     </div>
 
     <script src="../../js/index.js"></script>
-    <script>
-        $("#filtroSelect").click(function () {
-            if ($('.filterButton').hasClass('visible')) {
-                $('.filterButton').addClass('invisible')
-                $('.filterButton').removeClass('visible')
-                $('.filterButton').css('display', 'none')
-                $('.icon_black').css('display', 'none')
-                $('.icon_white').css('display', 'block')
-            } else {
-                $('.filterButton').addClass('visible')
-                $('.filterButton').removeClass('invisible')
-                $('.filterButton').css('display', 'block')
-                $('.icon_black').css('display', 'block')
-                $('.icon_white').css('display', 'none')
-            }
-        });
-    </script>
+    <script src="./administrar-demanda-finalizada.js"></script>
 </body>
 
 </html>

@@ -65,7 +65,7 @@ function showSlidesMobile(n) {
 }
 
 
-// muda sozinho
+// auto change slides
 function showSlidesMobile_auto() {
     let i;
     let slides = document.getElementsByClassName("mySlides-mobile");

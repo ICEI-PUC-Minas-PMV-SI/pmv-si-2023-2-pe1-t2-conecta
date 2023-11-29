@@ -11,6 +11,8 @@
     <script type="module" src="../../components/footer/footer.js"></script>
     <script type="module" src="../../components/vertical-task-card/vertical-task-card.js"></script>
     <script type="module" src="../../components/horizontal-task-card/horizontal-task-card.js"></script>
+    <script type="module" src="../../js/models/organization.js"></script>
+    <script type="module" src="pagina-da-ong.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 
@@ -25,7 +27,7 @@
     </header>
 
     <div class="content">
-        <h1 class="title" id="organization-name">TeachTech</h1>
+        <h1 class="title" id="organization-name"></h1>
 
         <div class="section-wrapper">
 
@@ -33,18 +35,18 @@
                 <div class="wrapper-about">
                     <h2 class="subtitle">Sobre</h2>
                     <div class="social-media-wrapper">
-                        <a href="#" class="social-media-item">
+                        <a href="#" class="social-media-item" id="facebook-link">
                             <img src="../../assets/icons/logo-facebook.svg" alt="Facebook">
                         </a>
-                        <a href="#" class="social-media-item">
+                        <a href="#" class="social-media-item" id="instagram-link">
                             <img src="../../assets/icons/logo-instagram.svg" alt="Instagram">
                         </a>
-                        <a href="#" class="social-media-item">
+                        <a href="#" class="social-media-item" id="twitter-link">
                             <img src="../../assets/icons/logo-twitter.svg" alt="X">
                         </a>
                     </div>
                 </div>
-                <p class="text">TeachTech é uma ONG dedicada a transformar vidas por meio da educação digital e
+                <p id="about-text" class="text">TeachTech é uma ONG dedicada a transformar vidas por meio da educação digital e
                     inclusão tecnológica. Nosso objetivo é capacitar jovens e idosos em comunidades carentes,
                     proporcionando-lhes habilidades digitais essenciais para um futuro melhor. Acreditamos que a
                     tecnologia pode abrir portas para oportunidades incríveis e enriquecer vidas, independentemente da
@@ -55,99 +57,48 @@
             <div class="feedbacks section">
                 <h2 class="subtitle">Depoimentos</h2>
                 <div class="feedback-wrapper">
-                    <div class="feedback-item">
-                        <div class="feedback-header">
-                            <p class="feedback-name">Maria Santos</p>
-                            <p class="feedback-date">Fevereiro, 2023</p>
-                        </div>
-                        <p class="feedback-text">
-                            Minha experiência como voluntária na TeachTech foi incrivelmente gratificante. Ensinar
-                            jovens sobre tecnologia não é apenas sobre clicar em botões; é sobre abrir portas para um
-                            mundo de oportunidades. Ver o brilho nos olhos desses jovens quando eles entendem algo novo
-                            é impagável. Estou profundamente orgulhosa de fazer parte dessa organização maravilhosa
-                        </p>
-                    </div>
-                    <div class="feedback-item">
-                        <div class="feedback-header">
-                            <p class="feedback-name">Carlos Oliveira</p>
-                            <p class="feedback-date">Agosto, 2023</p>
-                        </div>
-                        <p class="feedback-text">
-                            A TeachTech me deu a oportunidade de compartilhar meu conhecimento em tecnologia com
-                            idosos que estavam inicialmente intimidados por smartphones e computadores. A paciência e o
-                            carinho que esses idosos mostraram enquanto aprendiam foram inspiradoras. A cada aula,
-                            víamos como a inclusão digital fazia uma diferença real em suas vidas, conectando-os com
-                            suas famílias e o mundo ao seu redor. Estou emocionado por fazer parte deste movimento de
-                            inclusão.
-                        </p>
-                    </div>
                 </div>
 
             </div>
 
             <div class="tasks section">
                 <h2 class="subtitle">Oportunidades</h2>
-                <div class="tasks-wrapper">
-
-                    <vertical-task-card-component
-                            name="Ensinar HTML"
-                            owner="TeachTech"
-                            description="Procuramos voluntários para ensinar HTML a jovens interessados em tecnologia. Sua contribuição pode abrir portas para o mundo da programação. Junte-se a nós e inspire o futuro digital!"
-                            type="PRESENCIAL"
-                            image="../../assets/logos/techteach-logo.png"
-                            destination="#"
-                    ></vertical-task-card-component>
-                    <vertical-task-card-component
-                            name="Criar Website"
-                            owner="TeachTech"
-                            description="Procuramos ajuda para criar um site impactante. Se você tem habilidades em design, programação ou conteúdo, junte-se a nós e seja parte da construção deste projeto online emocionante."
-                            type="REMOTO"
-                            image="../../assets/logos/techteach-logo.png"
-                            destination="#"
-                    ></vertical-task-card-component>
-                    <vertical-task-card-component
-                            name="Conectar idosos com a tecnologia"
-                            owner="TeachTech"
-                            description="Buscamos voluntários para ajudar idosos a usar a tecnologia, promovendo a conexão e independência. Sua ajuda é essencial para tornar suas vidas mais enriquecedoras e inclusivas."
-                            type="PRESENCIAL"
-                            image="../../assets/logos/techteach-logo.png"
-                            destination="#"
-                    ></vertical-task-card-component>
-
-                    <horizontal-task-card-component
-                            name="Ensinar HTML"
-                            owner="TeachTech"
-                            description="Procuramos voluntários para ensinar HTML a jovens interessados em tecnologia. Sua contribuição pode abrir portas para o mundo da programação. Junte-se a nós e inspire o futuro digital!"
-                            type="PRESENCIAL"
-                            image="../../assets/logos/techteach-logo.png"
-                            destination="#"
-                    ></horizontal-task-card-component>
-                    <horizontal-task-card-component
-                            name="Criar Website"
-                            owner="WeHelp"
-                            description="Procuramos ajuda para criar um site impactante. Se você tem habilidades em design, programação ou conteúdo, junte-se a nós e seja parte da construção deste projeto online emocionante."
-                            type="REMOTO"
-                            image="../../assets/logos/techteach-logo.png"
-                            destination="#"
-                    ></horizontal-task-card-component>
-                    <horizontal-task-card-component
-                            name="Conectar idosos com a tecnologia"
-                            owner="Ajuda Senior"
-                            description="Buscamos voluntários para ajudar idosos a usar a tecnologia, promovendo a conexão e independência. Sua ajuda é essencial para tornar suas vidas mais enriquecedoras e inclusivas."
-                            type="PRESENCIAL"
-                            image="../../assets/logos/techteach-logo.png"
-                            destination="#"
-                    ></horizontal-task-card-component>
+                <div class="tasks-wrapper" id="task-wrapper">
                 </div>
             </div>
         </div>
+    </div>
+
+    <div id="myModal" class="modal">
+                <div class="modal-wrapper">
+                        <div class="modal-text">
+                                <div class="modal-header">
+                                        <img class="image-modal" src="../../assets/icons/NGO.png" alt="Ajuda">
+                                        <p class="modal-title">VAGA DE VOLUNTARIADO</p>
+                                        <div class="close">&times;</div>
+                                </div>
+                                <div class="job-title"></div>
+                                <div class="NGO"></div>
+                                <div class="modal-content">
+                                        <div>
+                                                <h1 class="text-tiltle">Descrição</h1>
+                                                <div class="text"></div>
+                                        </div>
+                                        <div>
+                                                <h1 class="text-tiltle">Localização</h1>
+                                                <div class="city"></div>
+                                                <p class="addres">Addres</p>
+                                        </div>
+                                </div>
+                        </div>
+                </div>
     </div>
 
     <footer-component></footer-component>
 </div>
 
 <script src="../../js/index.js"></script>
-<script src="pagina-da-ong.js"></script>
+<script src="../../js/modal.js"></script>
 </body>
 
 </html>
