@@ -142,7 +142,7 @@ async function handleSend(event) {
         candidate.phone = candidatura.phone;
         candidate.about = candidatura.como;
         candidate.taskId = taskID;
-        candidate.status = "pending";
+        candidate.status = "pendente";
         candidate.timestamp = new Date();
         
         await candidate.create();

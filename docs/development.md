@@ -79,7 +79,8 @@ As tabelas que se seguem apresentam os requisitos funcionais e não-funcionais q
 |     CPF     | Number            | Número do cadastro de pessoa física            | 123.456.78-90                                    |
 |     Telefone     | Number            | Número de contato do candidato            | (47) 9 8765-4321                                    |
 |     Descrição     | Texto            | Descrição de como ajudar.            | "Sou designer gráfico com 5 anos de experiência. Estou interessado em ajudar a criar um site impactante que transmita a mensagem da ONG de forma clara e eficaz."                                    |
-|    Active     | Boolean          | Status do candidato (aprovado, reprovado)  | `true ou false`                                   |
+|    status     | texto          | Status do candidato  | "Pendente", "Aprovado", "Concluido", "Reprovado"                                  |
+|     Momento de Criação      | Timestamp | Data e hora de candidatura | "2023-03-27T03:05:18.345Z"            |
 
 ## Depoimentos
 |      **Nome**      | **Tipo**  | **Descrição**                                           | **Exemplo**                          |
