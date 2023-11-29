@@ -16,6 +16,7 @@ document.getElementById('foto').addEventListener('change', function(event) {
 });
 
 window.addEventListener("load", async () => {
+    document.getElementById("title").innerText = "perfil da ONG";
 
     const token = window.localStorage.getItem("token")
     const session = await getSession(token);

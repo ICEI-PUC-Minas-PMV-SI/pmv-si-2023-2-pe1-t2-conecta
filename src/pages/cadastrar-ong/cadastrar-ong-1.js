@@ -6,6 +6,7 @@ document.getElementById("next-page-signup-button").addEventListener("click", han
 document.getElementById("cep").addEventListener("blur", handleZipCodeInput);
 
 window.addEventListener("load", async () => {
+    document.getElementById("title").innerText = "perfil da ONG";
 
     const token = window.localStorage.getItem("token")
     const session = await getSession(token);
