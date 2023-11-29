@@ -64,6 +64,7 @@ async function countRegistrationsByCpf(cpf) {
     try {
         const candidates = await new Candidate().findByCpf(cpf);
         const CandidatesStatus = candidates.filter(candidate => candidate.status === "pending" || candidate.status === "approved");
+
         // retorna o número de cadastros ativos ou aprovados
         return CandidatesStatus.length;
 
@@ -141,7 +142,8 @@ async function handleSend(event) {
         candidate.phone = candidatura.phone;
         candidate.about = candidatura.como;
         candidate.taskId = taskID;
-        candidate.status = "approved";
+        candidate.status = "pending";
+        candidate.timestamp = new Date();
         
         await candidate.create();
 

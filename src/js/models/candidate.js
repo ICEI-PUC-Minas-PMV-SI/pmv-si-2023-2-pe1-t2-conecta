@@ -8,6 +8,7 @@ export class Candidate {
     phone;
     about;
     status;
+    timestamp;
     
     async create() {
         const data = {
@@ -18,6 +19,7 @@ export class Candidate {
             phone: this.phone,
             about: this.about,
             status: this.status,
+            timestamp: this.timestamp
             
         }
 
@@ -50,7 +52,8 @@ export class Candidate {
             cpf: this.cpf,
             phone: this.phone,
             about: this.about,
-            status: this.status
+            status: this.status,
+            timestamp: this.timestamp,
         }
         
         return await makeRequest(getURL(`candidates/${id}`), 'PUT', data);
