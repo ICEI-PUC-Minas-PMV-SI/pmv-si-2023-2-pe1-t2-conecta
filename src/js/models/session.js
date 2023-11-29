@@ -22,7 +22,6 @@ export class Session {
             expirationDate: this.expirationDate,
             active: this.active
         }
-
         await makeRequest(getURL('sessions'), 'POST', data);
         return makeRequest(getURL(`sessions?token=${this.token}`), 'GET');
     }
