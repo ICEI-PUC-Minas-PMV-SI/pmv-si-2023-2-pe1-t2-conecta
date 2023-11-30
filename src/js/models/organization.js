@@ -100,3 +100,7 @@ export class Organization {
         return await makeRequest(getURL(`organizations/${id}`), 'DELETE');
     }
 }
+
+export async function findById(id) {
+    return await makeRequest(getURL(`organizations/${id}`), 'GET');
+}

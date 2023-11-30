@@ -8,11 +8,10 @@ import { findById as findOngById} from "../../js/models/organization.js";
 import { Candidate } from "../../js/models/candidate.js";
 
 window.addEventListener("load", async () => {
-    var ongName = document.getElementById("ongName");
-    var ongId = parseInt(getOrganizationId());
-   const organization = await findOngById(ongId);
+    const ongName = document.getElementById("ongName");
+    const ongId = getOrganizationId();
+    const organization = await findOngById(ongId);
     ongName.innerHTML = organization.name;
-    ongName.innerHTML = 'teste';
 });
 /*async  findOngById(ongId) {
     try {
