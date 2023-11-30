@@ -72,7 +72,7 @@ Preencha a tabela com o plano dos testes. Para cada Caso de Teste (CT), associe 
 **Dados de entrada** | #
 **Resultado obtido** | #
 
-**Caso de Teste** | **CT07 - Divulgação de Solicitações de Ajuda pelas ONGs**
+**Caso de Teste** | **CT07 - Solicitações de Ajuda pelas ONGs**
  :--------------: | ------------
 **Procedimento**  | 1) # <br> 2) # <br> 3) #
 **Requisitos associados** | RF-006
@@ -299,7 +299,7 @@ Esta seção deve apresentar o relatório com as evidências dos testes de softw
 | Requisito Associado               | RF-005 - A aplicação deve permitir que as ONGs gerenciem suas informações de perfil (alterar, excluir e consultar os dados) a qualquer momento. |
 | Link do vídeo do teste realizado: | COLOQUE SEU VIDEO AQUI                                   |
 
-| *Caso de Teste*                   | *CT07 - Divulgação de Solicitações de Ajuda pelas ONGs*                                                                                                                                             |
+| *Caso de Teste*                   | *CT07 - Solicitações de Ajuda pelas ONGs*                                                                                                                                             |
 |-----------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Requisito Associado               | RF-006 - A aplicação deve possibilitar que as ONGs divulguem solicitações de ajuda técnica, descrevendo os projetos ou desafios específicos que precisam ser abordados. |
 | Link do vídeo do teste realizado: | COLOQUE SEU VIDEO AQUI                                   |
