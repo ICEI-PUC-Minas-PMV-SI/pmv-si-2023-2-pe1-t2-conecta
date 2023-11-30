@@ -13,15 +13,6 @@ window.addEventListener("load", async () => {
     const organization = await findOngById(ongId);
     ongName.innerHTML = organization.name;
 });
-/*async  findOngById(ongId) {
-    try {
-        const organization = await new Organization().findOngById(ongId);
-        return organization;
-    } catch (error) {
-        console.error(error.message);
-        return null;=
-    }
-}*/
 
 addInputFormatListener("cpf", "###.###.###-##");
 addInputFormatListener("phone", "(##) # ####-####");
