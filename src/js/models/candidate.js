@@ -39,7 +39,6 @@ export class Candidate {
     async findByTaskId(taskId) {
         return await makeRequest(getURL(`candidates?taskId=${taskId}`), 'GET');
     }
-    
     async findAll() {
         return await makeRequest(getURL('candidates'), 'GET');
     }

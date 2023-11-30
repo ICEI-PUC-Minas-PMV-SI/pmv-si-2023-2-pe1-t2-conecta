@@ -4,13 +4,25 @@ import {
     CONFIRM_CANCELAR_CANDIDATURA,
     LOCATION_REF_ADMINISTRAR_DEMANDAS,
 } from "../../js/constants.js";
-//import { findById as findOngById} from "../../js/models/organization.js";
+import { findById as findOngById} from "../../js/models/organization.js";
 import { Candidate } from "../../js/models/candidate.js";
 
-window.addEventListener("load", () => {
+window.addEventListener("load", async () => {
     var ongName = document.getElementById("ongName");
-    ongName.innerHTML = parseInt(getOrganizationId());
+    var ongId = parseInt(getOrganizationId());
+   const organization = await findOngById(ongId);
+    ongName.innerHTML = organization.name;
+    ongName.innerHTML = 'teste';
 });
+/*async  findOngById(ongId) {
+    try {
+        const organization = await new Organization().findOngById(ongId);
+        return organization;
+    } catch (error) {
+        console.error(error.message);
+        return null;=
+    }
+}*/
 
 addInputFormatListener("cpf", "###.###.###-##");
 addInputFormatListener("phone", "(##) # ####-####");
