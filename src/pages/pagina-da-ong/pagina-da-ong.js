@@ -1,9 +1,10 @@
-import { Organization } from "../../js/models/organization.js";
-import { Task } from "../../js/models/task.js";
-import { Review } from "../../js/models/review.js";
-import { Candidate } from "../../js/models/candidate.js";
-import { VerticalTaskCard } from "../../components/vertical-task-card/vertical-task-card.js";
-import { HorizontalTaskCard } from "../../components/horizontal-task-card/horizontal-task-card.js";
+import {Organization} from "../../js/models/organization.js";
+import {Task} from "../../js/models/task.js";
+import {Review} from "../../js/models/review.js";
+import {Candidate} from "../../js/models/candidate.js";
+import {VerticalTaskCard} from "../../components/vertical-task-card/vertical-task-card.js";
+import {HorizontalTaskCard} from "../../components/horizontal-task-card/horizontal-task-card.js";
+import {getSession} from "../../js/models/session.js";
 
 const descriptions = document.querySelectorAll('.task-description > p');
 
@@ -16,13 +17,14 @@ descriptions.forEach(description => {
     }
 });
 
-const getOrganizationId = () => {
-    const urlParams = new URLSearchParams(window.location.search);
-    return urlParams.get('id');
+const getOrganizationId = async () => {
+    const token = window.localStorage.getItem("token");
+    const session = await getSession(token);
+    return await session[0].ongId;
 }
 
 const getOrganizationData = async () => {
-    const id = getOrganizationId();
+    const id = await getOrganizationId();
     const ong = new Organization();
     return await ong.findById(id);
 }

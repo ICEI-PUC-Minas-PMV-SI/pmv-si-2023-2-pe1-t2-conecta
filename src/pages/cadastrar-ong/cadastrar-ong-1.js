@@ -6,12 +6,12 @@ document.getElementById("next-page-signup-button").addEventListener("click", han
 document.getElementById("cep").addEventListener("blur", handleZipCodeInput);
 
 window.addEventListener("load", async () => {
-    document.getElementById("title").innerText = "perfil da ONG";
-
     const token = window.localStorage.getItem("token")
     const session = await getSession(token);
 
     await findById(session[0].id).then(ong => {
+        document.getElementById("title").innerText = "perfil da ONG";
+
         document.getElementById("cnpj").value = ong.cnpj;
         document.getElementById("nome").value = ong.name;
         document.getElementById("email").value = ong.email;

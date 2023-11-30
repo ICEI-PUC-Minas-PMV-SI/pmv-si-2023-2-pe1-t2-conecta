@@ -26,14 +26,10 @@ export class Session {
         return makeRequest(getURL(`sessions?token=${this.token}`), 'GET');
     }
 
-    async inactivateByToken(token) {
-        const data = {
-            active: false
-        }
+}
 
-        return await makeRequest(getURL(`sessions/${token}`), 'PATCH', data);
-    }
-
+export async function deleteSession(tokenId) {
+    return await makeRequest(getURL(`sessions/${tokenId}`), 'DELETE');
 }
 
 export async function getSession(token) {
