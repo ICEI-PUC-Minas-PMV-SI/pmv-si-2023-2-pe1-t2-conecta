@@ -227,11 +227,11 @@ Preencha a tabela com o plano dos testes. Para cada Caso de Teste (CT), associe 
 
 **Caso de Teste** | **CT26 - Responsividade**
  :--------------: | ------------
-**Procedimento**  | 1) # <br> 2) # <br> 3) #
-**Requisitos associados** | RNF-001
-**Resultado esperado** | #
-**Dados de entrada** | #
-**Resultado obtido** | #
+**Procedimento**  | 1) O usuário acessa a aplicação por meio de um dispositivo móvel, como um smartphone ou tablet. <br> 2) O usuário navega pelas diferentes funcionalidades da aplicação utilizando o dispositivo móvel. <br>
+**Requisitos associados** | RNF-001 A aplicação deve oferecer uma interface com design responsivo que se adapte aos dispositivos móveis e desktops.
+**Resultado esperado** | A aplicação é responsiva e se adapta adequadamente ao tamanho da tela em dispositivos móveis, mantendo todas as funcionalidades acessíveis e funcionais.
+**Dados de entrada** | Acesso à aplicação por meio de um dispositivo móvel.
+**Resultado obtido** | Sucesso. A aplicação é responsiva e se adapta corretamente ao tamanho da tela em dispositivos móveis, permitindo o acesso e funcionamento adequados de todas as funcionalidades.
 
 **Caso de Teste** | **CT27 - Interface simples**
  :--------------: | ------------
@@ -291,6 +291,49 @@ Esta seção deve apresentar o relatório com as evidências dos testes de softw
 |-----------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Requisito Associado               | RF-004 - A aplicação deve apresentar uma página exclusiva para cada ONG, contendo informações sobre a organização, depoimentos dos voluntários e últimas demandas. |
 | Link do vídeo do teste realizado: | https://sgapucminasbr-my.sharepoint.com/:v:/g/personal/1495429_sga_pucminas_br/EQdVteszIbVBiSNzW09vTJcBByLxuz7jDdicpDkUfSL4pg                                      |
+
+| *Caso de Teste*                   | *CT06 - Gerenciamento de Perfil da ONG*                                                                                                                                             |
+|-----------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Requisito Associado               | RF-005 - A aplicação deve permitir que as ONGs gerenciem suas informações de perfil (alterar, excluir e consultar os dados) a qualquer momento. |
+| Link do vídeo do teste realizado: | COLOQUE SEU VIDEO AQUI                                   |
+
+| *Caso de Teste*                   | *CT07 - Divulgação de Solicitações de Ajuda pelas ONGs*                                                                                                                                             |
+|-----------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Requisito Associado               | RF-006 - A aplicação deve possibilitar que as ONGs divulguem solicitações de ajuda técnica, descrevendo os projetos ou desafios específicos que precisam ser abordados. |
+| Link do vídeo do teste realizado: | COLOQUE SEU VIDEO AQUI                                   |
+
+| *Caso de Teste*                   | *CT08 - Administrar Demandas*                                                                                                                                             |
+|-----------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Requisito Associado               | RF-007 - A aplicação deve permitir que as ONG vejam e administrem suas demandas, podendo filtrar por status (aberta, finalizada), cadastrar ou excluir. |
+| Link do vídeo do teste realizado: | COLOQUE SEU VIDEO AQUI                                   |
+
+| *Caso de Teste*                   | *CT09 - Edição de Demandas pelas ONGs*                                                                                                                                             |
+|-----------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Requisito Associado               | RF-008 - As ONGs devem poder editar suas demandas (alterar, excluir e editar os dados) a qualquer momento. |
+| Link do vídeo do teste realizado: | COLOQUE SEU VIDEO AQUI                                   |
+
+| *Caso de Teste*                   | *CT10 - Visualização de Solicitações por Voluntários*                                                                                                                                             |
+|-----------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Requisito Associado               | RF-009 - A aplicação deve permitir que os voluntários visualizem as solicitações de ajuda técnica feitas pelas ONGs. |
+| Link do vídeo do teste realizado: | COLOQUE SEU VIDEO AQUI                                   |
+
+| *Caso de Teste*                   | *CT10 - Visualização de Solicitações por Voluntários*                                                                                                                                             |
+|-----------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Requisito Associado               | RF-009 - A aplicação deve permitir que os voluntários visualizem as solicitações de ajuda técnica feitas pelas ONGs. |
+| Link do vídeo do teste realizado: | COLOQUE SEU VIDEO AQUI                                   |
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 ## Avaliação dos Testes de Software
 
