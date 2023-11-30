@@ -4,8 +4,105 @@ import {
     CONFIRM_CANCELAR_CANDIDATURA,
     LOCATION_REF_ADMINISTRAR_DEMANDAS,
 } from "../../js/constants.js";
-import {Candidate}from "../../js/models/candidate.js";
+//import { findById as findOngById} from "../../js/models/organization.js";
+import { Candidate } from "../../js/models/candidate.js";
 
+window.addEventListener("load", () => {
+    var ongName = document.getElementById("ongName");
+    ongName.innerHTML = parseInt(getOrganizationId());
+});
+
+addInputFormatListener("cpf", "###.###.###-##");
+addInputFormatListener("phone", "(##) # ####-####");
+
+document.getElementById("cancelar").addEventListener("click", handleCancel);
+document.getElementById("enviar").addEventListener("click", handleSend);
+
+function handleCancel() {
+    if (confirm(CONFIRM_CANCELAR_CANDIDATURA)) {
+        window.location.href = LOCATION_REF_ADMINISTRAR_DEMANDAS;
+    }
+}
+
+async function handleSend(event) {
+    event.preventDefault();
+
+    const candidatura = {
+        cpf: document.getElementById("cpf").value,
+        nome: document.getElementById("nome").value,
+        email: document.getElementById("email").value,
+        phone: document.getElementById("phone").value,
+        como: document.getElementById("como").value,
+    }
+    //validar campos
+    if (candidatura.cpf.length <= 0) {
+        alert(Required("CPF"));
+        return;
+    }
+
+    if (!candidatura.cpf.match(/^[0-9]{3}\.?[0-9]{3}\.?[0-9]{3}\-?[0-9]{2}$/)) {
+        alert("CPF inválido");
+        return;
+    }
+
+    if (candidatura.nome.length <= 0) {
+        alert(Required("Nome"));
+        return;
+    }
+
+    if (candidatura.email.length <= 0) {
+        alert(Required("E-mail"));
+        return;
+    }
+
+    const regex = /\S+@\S+\.\S+/;
+    if (!regex.test(candidatura.email)) {
+        alert("Email inválido.");
+        return;
+    }
+
+    if (candidatura.phone.length <= 0) {
+        alert(Required("Telefone"));
+        return;
+    }
+
+    if (candidatura.como.length <= 0) {
+        alert(Required("Como posso ajudar"));
+        return;
+    }
+
+    const numberOfRegistrations = await countRegistrationsByCpf(candidatura.cpf);
+
+    // verifica se o número de registros for maior ou igual a 2
+    if (numberOfRegistrations >= 2) {
+        alert("Limite de dois cadastros ativos atingido para o mesmo CPF, aguarde.");
+        return;
+    }
+
+
+    const taskID = parseInt(getTaskId());
+    // enviar candidatura
+    try {
+        const candidate = new Candidate();
+        candidate.name = candidatura.nome;
+        candidate.email = candidatura.email;
+        candidate.cpf = candidatura.cpf;
+        candidate.phone = candidatura.phone;
+        candidate.about = candidatura.como;
+        candidate.taskId = taskID;
+        candidate.status = "pendente";
+        candidate.timestamp = new Date();
+
+        await candidate.create();
+
+        alert(SUCESSO_ENVIAR_CANDIDATURA);
+        window.location.href = LOCATION_REF_ADMINISTRAR_DEMANDAS;
+    } catch (error) {
+        alert("Erro ao enviar candidatura." + error.message);
+    }
+}
+
+/* Funções auxiliares */
 // adicionar máscara nos campos
 function formatInput(input, format) {
     const value = input.value.replace(/\D/g, "");
@@ -49,17 +146,17 @@ function isSpecialKey(event) {
         (event.ctrlKey && event.key === "V")
     );
 }
-addInputFormatListener("cpf", "###.###.###-##");
-addInputFormatListener("phone", "(##) # ####-####");
-
-document.getElementById("cancelar").addEventListener("click", handleCancel);
-document.getElementById("enviar").addEventListener("click", handleSend);
-
-function handleCancel() {
-    if (confirm(CONFIRM_CANCELAR_CANDIDATURA)) {
-        window.location.href = LOCATION_REF_ADMINISTRAR_DEMANDAS;
-    }
+// pegar a ongId da demanda através da url
+const getOrganizationId = () => {
+    const urlParams = new URLSearchParams(window.location.search);
+    return urlParams.get('ongId');
 }
+// pegar o id da demanda através da url
+const getTaskId = () => {
+    const urlParams = new URLSearchParams(window.location.search);
+    return urlParams.get('taskId');
+}
+// contar o número de cadastros ativos ou aprovados pelo cpf
 async function countRegistrationsByCpf(cpf) {
     try {
         const candidates = await new Candidate().findByCpf(cpf);
@@ -71,85 +168,5 @@ async function countRegistrationsByCpf(cpf) {
     } catch (error) {
         // Se ocorrer um erro (por exemplo, candidato não encontrado), retorna 0
         return 0;
-    }
-}
-async function handleSend(event) {
-    event.preventDefault();
-
-    const candidatura = {
-        cpf: document.getElementById("cpf").value,
-        nome : document.getElementById("nome").value,
-        email : document.getElementById("email").value,
-        phone : document.getElementById("phone").value,
-        como : document.getElementById("como").value,
-    }
-    //validar campos
-    if (candidatura.cpf.length <= 0) {
-        alert(Required("CPF"));
-        return;
-    }
-
-    if (!candidatura.cpf.match(/^[0-9]{3}\.?[0-9]{3}\.?[0-9]{3}\-?[0-9]{2}$/)) {
-        alert("CPF inválido");
-        return;
-    }
-
-    if (candidatura.nome.length <= 0) {
-        alert(Required("Nome"));
-        return;
-    }
-
-    if (candidatura.email.length <= 0) {
-        alert(Required("E-mail"));
-        return;
-    }
-
-    const regex = /\S+@\S+\.\S+/;
-    if (!regex.test(candidatura.email)) {
-        alert("Email inválido.");
-        return;
-    }
-
-    if (candidatura.phone.length <= 0) {
-        alert(Required("Telefone"));
-        return;
-    }
-
-    if (candidatura.como.length <= 0) {
-        alert(Required("Como posso ajudar"));
-        return;
-    }
-    
-    const numberOfRegistrations = await countRegistrationsByCpf(candidatura.cpf);
-
-    // verifica se o número de registros for maior ou igual a 2
-    if (numberOfRegistrations >= 2) {
-        alert("Limite de dois cadastros ativos atingido para o mesmo CPF, aguarde.");
-        return;
-    }
-    // pegar o id da demanda através da url
-    const getTaskId = () =>{
-        const urlParams = new URLSearchParams(window.location.search);
-       return urlParams.get('id');
-       }
-    const taskID= parseInt(getTaskId()); 
-    // enviar candidatura
-    try{
-        const candidate= new Candidate();
-        candidate.name = candidatura.nome;
-        candidate.email = candidatura.email;
-        candidate.cpf = candidatura.cpf;
-        candidate.phone = candidatura.phone;
-        candidate.about = candidatura.como;
-        candidate.taskId = taskID;
-        candidate.status = "pendente";
-        candidate.timestamp = new Date();
-        
-        await candidate.create();
-
-        alert(SUCESSO_ENVIAR_CANDIDATURA);
-        window.location.href = LOCATION_REF_ADMINISTRAR_DEMANDAS;
-    } catch (error) {
-        alert("Erro ao enviar candidatura." + error.message);
     }
 }
