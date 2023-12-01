@@ -2,6 +2,10 @@ import { VALIDATE_PASSWORD_RESET_WORD, PROJECT_URL } from "../../js/constants.js
 import { Organization } from "../../js/models/organization.js";
 import { sendEmail } from "../../js/envio-email.js";
 
+import {hashPassword} from "../../js/utils.js";
+import {findByEmail} from "../../js/models/organization.js";
+import {Session} from "../../js/models/session.js";
+
 document.getElementById("entrar").addEventListener("click", handleGetIn);
 document.getElementById("esqueceu-senha").addEventListener("click", handleForgotPassword);
 
@@ -51,7 +55,7 @@ async function handleForgotPassword() {
     window.location.href = "../login/login.html";
 }
 
-function handleGetIn(event) {
+async function handleGetIn(event) {
     event.preventDefault();
 
     const email = document.getElementById("email").value;
@@ -73,7 +77,33 @@ function handleGetIn(event) {
         return;
     }
 
-    alert("Login realizado com sucesso.");
-    window.location.href = "../administrar-demandas/administrar-demandas.html";
+    await authenticate(email, password).then(async isAuthenticated => {
+        if (isAuthenticated) {
+            const ong = await findByEmail(email);
+            const domain = new Session(ong[0].id);
+            const session = await domain.create();
+
+            window.localStorage.setItem("token", session[0].token);
+
+            alert("Login realizado com sucesso.")
+            window.location.href = "../administrar-demandas/administrar-demandas.html";
+        } else {
+            alert("Email ou senha incorretos.");
+            window.location.href = "login.html";
+        }
+    });
+
 }
 
+async function authenticate(email, password) {
+    return await findByEmail(email).then(ong => ong)
+        .then(async ong => {
+            if (ong.length <= 0) {
+                return false;
+            } else {
+                const hashedProvidedPassword = await hashPassword(password);
+                return ong[0].password === hashedProvidedPassword;
+            }
+        })
+        .catch(error => error.message);
+}
