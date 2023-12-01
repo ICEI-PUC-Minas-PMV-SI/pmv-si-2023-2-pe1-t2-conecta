@@ -259,11 +259,11 @@ Preencha a tabela com o plano dos testes. Para cada Caso de Teste (CT), associe 
 
 **Caso de Teste** | **CT30 - Compatibilidade com Navegadores**
  :--------------: | ------------
-**Procedimento**  | 1) # <br> 2) # <br> 3) #
+**Procedimento**  | 1) O usuário acessa a aplicação por meio dos navegadores Google Chrome, Mozilla Firefox, Microsoft Edge e Safari. <br> 2) O usuário navega pelas diferentes funcionalidades da aplicação em cada um dos navegadores. <br> 3) O usuário verifica se o layout da aplicação é intuitivo e de fácil entendimento em cada um dos navegadores.
 **Requisitos associados** | RNF-006
-**Resultado esperado** | #
-**Dados de entrada** | #
-**Resultado obtido** | #
+**Resultado esperado** | A aplicação é compatível e funciona corretamente nos navegadores Google Chrome, Mozilla Firefox, Microsoft Edge e Safari.
+**Dados de entrada** | Nenhum.
+**Resultado obtido** | Sucesso.
 
 ## Registro dos Testes de Software
 
@@ -417,7 +417,7 @@ Esta seção deve apresentar o relatório com as evidências dos testes de softw
 | *Caso de Teste*                   | *CT30 - Compatibilidade com Navegadores*                                                                                                                                             |
 |-----------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Requisito Associado               | RNF-006 O sistema deve ser capaz de ser executado nas versões mais recentes dos principais navegadores do mercado, como: Chrome, Firefox, Edge e Safari. |
-| Link do vídeo do teste realizado: | COLOQUE SEU VIDEO AQUI                                   |
+| Link do vídeo do teste realizado: | Google Chrome (https://sgapucminasbr-my.sharepoint.com/:v:/g/personal/954530_sga_pucminas_br/EY-z6ZowptVGsfrGlXmflekBmXeqN6eKZYgyVgsJYr6ZqQ?e=GxYJJJ)<br>  Mozilla Firefox (https://sgapucminasbr-my.sharepoint.com/:v:/g/personal/954530_sga_pucminas_br/EcaH_zL7IBpIkR8U_nHOMvsBa-8Amb47AqPtMluHAWEgxg?e=aYd0rw)  <br> Microsoft Edge (https://sgapucminasbr-my.sharepoint.com/:v:/g/personal/954530_sga_pucminas_br/EVJmyWSHHE5JimkdWgo3YwEBfVJ948MpBwClxtqcV9g88w?e=eNDJzH)  <br> Safari (https://sgapucminasbr-my.sharepoint.com/:v:/g/personal/954530_sga_pucminas_br/ETJOh6A52lxEsoUVuqWKiBQBhTVA0SoR21PxkkcClgv7XA?e=D4KOjo)                         | 
 
 
 
