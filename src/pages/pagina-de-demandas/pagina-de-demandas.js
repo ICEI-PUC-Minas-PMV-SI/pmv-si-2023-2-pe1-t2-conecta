@@ -30,10 +30,15 @@ const getTasks = async (filterBy = 'all') => {
 
         verticalTaskCard.name = task.name;
         verticalTaskCard.description = task.description;
-        verticalTaskCard.type = task.type.toUpperCase();
+        if(task.type == 'Presencial') {
+                verticalTaskCard.type = organizationData.city+', '+organizationData.state;
+        } else {
+                verticalTaskCard.type = task.type;
+        }
         verticalTaskCard.destination = `../candidatar-a-demanda/candidatar-a-demanda.html?id=${task.id}`;
         verticalTaskCard.owner = organizationData.name;
         verticalTaskCard.image = organizationData.image;
+        verticalTaskCard.addres = organizationData.street+', '+organizationData.number
 
         tasksWrapper.appendChild(verticalTaskCard);
     }
@@ -45,10 +50,15 @@ const getTasks = async (filterBy = 'all') => {
 
         horizontalTaskCard.name = task.name;
         horizontalTaskCard.description = task.description;
-        horizontalTaskCard.type = task.type.toUpperCase();
+        if(task.type == 'Presencial') {
+                horizontalTaskCard.type = organizationData.city+', '+organizationData.state;
+        } else {
+            horizontalTaskCard.type = task.type;
+        }
         horizontalTaskCard.destination = `../candidatar-a-demanda/candidatar-a-demanda.html?id=${task.id}`;
         horizontalTaskCard.owner = organizationData.name;
         horizontalTaskCard.image = organizationData.image
+        horizontalTaskCard.addres = organizationData.street+', '+organizationData.number
 
         tasksWrapper.appendChild(horizontalTaskCard);
 

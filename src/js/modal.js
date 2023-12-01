@@ -11,6 +11,13 @@ function modal(item, event) {
     let city = item.find('.location-tag').text()
     $('.city').html(city)
 
+    if (city != 'Remoto') {
+        let addres = item.find('.addres').text()
+        $('.addres').html(addres)
+    } else {
+        $('.addres').html('')
+    }
+
     $('#myModal').css('display', 'block');
 }
 
