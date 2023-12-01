@@ -208,13 +208,13 @@ Preencha a tabela com o plano dos testes. Para cada Caso de Teste (CT), associe 
 **Dados de entrada** | #
 **Resultado obtido** | #
 
-**Caso de Teste** | **CT24 - Disponibilização de Depoimentos no Perfil da ONG**
- :--------------: | ------------
-**Procedimento**  | 1) # <br> 2) # <br> 3) #
-**Requisitos associados** | RF-023
-**Resultado esperado** | #
-**Dados de entrada** | #
-**Resultado obtido** | #
+|     **Caso de Teste**     | **CT24 - Disponibilização de Depoimentos no Perfil da ONG**                                                                                                                                                                                                                                                                                |
+|:-------------------------:|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|     **Procedimento**      | 1) Acessar [página da ONG](https://icei-puc-minas-pmv-si.github.io/pmv-si-2023-2-pe1-t2-conecta/pages/pagina-da-ong/pagina-da-ong.html?id=1) <br> 2) Validar que os depoimentos são carregados corretamente <br> 3) Alterar `id=1` para `id=2` ao final da URL <br> 4) Validar que os depoimentos de outra ONG são carregados corretamente |
+| **Requisitos associados** | RF-023                                                                                                                                                                                                                                                                                                                                     |
+|  **Resultado esperado**   | Depoimentos enviados por voluntários exibidos corretamente                                                                                                                                                                                                                                                                                 |
+|   **Dados de entrada**    | Nenhum                                                                                                                                                                                                                                                                                                                                     |
+|   **Resultado obtido**    | Sucesso                                                                                                                                                                                                                                                                                                                                    |
 
 **Caso de Teste** | **CT25 - Responsividade**
  :--------------: | ------------
@@ -383,10 +383,10 @@ Esta seção deve apresentar o relatório com as evidências dos testes de softw
 | Requisito Associado               | RF-022 - A aplicação deve apresentar uma página para depoimento da solicitação que o voluntário participou, que só poderá ser acessada através do link recebido via e-mail, com um formulário para preenchimento. |
 | Link do vídeo do teste realizado: | COLOQUE SEU VIDEO AQUI                                   |
 
-| *Caso de Teste*                   | *CT24 - Disponibilização de Depoimentos no Perfil da ONG*                                                                                                                                             |
-|-----------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| *Caso de Teste*                   | *CT24 - Disponibilização de Depoimentos no Perfil da ONG*                                                |
+|-----------------------------------|----------------------------------------------------------------------------------------------------------|
 | Requisito Associado               | RF-023 Os depoimentos dos voluntários devem ser disponibilizados no perfil da ONG que fez a solicitação. |
-| Link do vídeo do teste realizado: | COLOQUE SEU VIDEO AQUI                                   |
+| Link do vídeo do teste realizado: | https://sgapucminasbr-my.sharepoint.com/personal/1495429_sga_pucminas_br/_layouts/15/stream.aspx?id=%2Fpersonal%2F1495429%5Fsga%5Fpucminas%5Fbr%2FDocuments%2Fpagina%2Dda%2Dong%2Emp4&ga=1&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview                                                                                   |
 
 | *Caso de Teste*                   | *CT25 Responsividade*                                                                                                                                             |
 |-----------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------|
