@@ -27,8 +27,6 @@ const populateDemanda = async () => {
         let random = Math.floor(Math.random() * 10) + 1;
         tasks = await task.findById(parseInt(random));
     
-        console.log(tasks);
-    // tasks.forEach(async task => {
         const verticalTaskCard = new VerticalTaskCard();
         let organizationData = await getOrganizationData(parseInt(random));
         verticalTaskCard.name = tasks.name;
@@ -36,7 +34,7 @@ const populateDemanda = async () => {
         if(tasks.type == 'Presencial') {
                 verticalTaskCard.type = organizationData.city+', '+organizationData.state;
         } else {
-                verticalTaskCard.type = tasks.type.toUpperCase();
+                verticalTaskCard.type = tasks.type;
         }
         verticalTaskCard.destination = `../candidatar-a-demanda/candidatar-a-demanda.html?id=${tasks.id}`;
         verticalTaskCard.owner = organizationData.name
@@ -44,22 +42,24 @@ const populateDemanda = async () => {
         verticalTaskCard.addres = organizationData.street+', '+organizationData.number
 
         tasksWrapper.appendChild(verticalTaskCard);
-    // });
-
-    // tasks.forEach(task => {
+   
         const horizontalTaskCard = new HorizontalTaskCard();
 
         horizontalTaskCard.name = tasks.name;
         horizontalTaskCard.description = tasks.description;
-        horizontalTaskCard.type = tasks.type.toUpperCase();
+        if(tasks.type == 'Presencial') {
+                horizontalTaskCard.type = organizationData.city+', '+organizationData.state;
+        } else {
+                horizontalTaskCard.type = tasks.type;
+        }
         horizontalTaskCard.destination = `../candidatar-a-demanda/candidatar-a-demanda.html?id=${tasks.id}`;
         horizontalTaskCard.owner = organizationData.name
         horizontalTaskCard.image = organizationData.image;
+        horizontalTaskCard.addres = organizationData.street+', '+organizationData.number
 
 
         tasksWrapper.appendChild(horizontalTaskCard);
     }
-    // });
 }
 
 populateDemanda().then().catch(err => console.log(err));
