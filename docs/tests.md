@@ -146,9 +146,9 @@ Preencha a tabela com o plano dos testes. Para cada Caso de Teste (CT), associe 
 
 **Caso de Teste** | **CT16 - Página "Sobre o Voluntariado"**
  :--------------: | ------------
-**Procedimento**  | 1) Acessar o site <br> 2) Ir para o footer da página inicial <br> 3) Clicar em "Sobre o Voluntariado"
+**Procedimento**  | 1)  Acessar a [página sobre o voluntariado] https://icei-puc-minas-pmv-si.github.io/pmv-si-2023-2-pe1-t2-conecta/pages/sobre-o-voluntariado/sobre-o-voluntariado.html <br> 2) Verificar se texto e imagem são exibidos <br>
 **Requisitos associados** | RF-015
-**Resultado esperado** | Visualizar a página "Sobre o Voluntariado".
+**Resultado esperado** | Visualizar a página "Sobre o Voluntariado" com texto e imagem.
 **Dados de entrada** | Nenhum
 **Resultado obtido** | Sucesso.
 
@@ -162,9 +162,9 @@ Preencha a tabela com o plano dos testes. Para cada Caso de Teste (CT), associe 
 
 **Caso de Teste** | **CT18 - Página "Histórias de Sucesso"**
  :--------------: | ------------
-**Procedimento**  | 1) Acessar o site <br> 2) Ir para o footer da página inicial <br> 3) Clicar em "Histórias de Sucesso"
+**Procedimento**  | 1)  Acessar a [página histórias de sucesso] https://icei-puc-minas-pmv-si.github.io/pmv-si-2023-2-pe1-t2-conecta/pages/historias-sucesso/historias-sucesso.html <br> 2) Verificar se texto e imagem são exibidos <br>
 **Requisitos associados** | RF-017
-**Resultado esperado** | Visualizar a página "Histórias de Sucesso".
+**Resultado esperado** | Visualizar a página "Histórias de Sucesso" com texto e imagem.
 **Dados de entrada** | Nenhum.
 **Resultado obtido** | Sucesso.
 
