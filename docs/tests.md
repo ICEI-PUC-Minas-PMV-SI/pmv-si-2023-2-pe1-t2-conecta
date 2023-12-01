@@ -136,13 +136,13 @@ Preencha a tabela com o plano dos testes. Para cada Caso de Teste (CT), associe 
 **Dados de entrada** | #
 **Resultado obtido** | #
 
-**Caso de Teste** | **CT15 - Página "Perguntas Frequentes"**
- :--------------: | ------------
-**Procedimento**  | 1) # <br> 2) # <br> 3) #
-**Requisitos associados** | RF-014
-**Resultado esperado** | #
-**Dados de entrada** | #
-**Resultado obtido** | #
+|     **Caso de Teste**     | **CT15 - Página "Perguntas Frequentes"**                                                                                                                                                                                                                                       |
+|:-------------------------:|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|     **Procedimento**      | 1) Acessar a [página de perguntas frequentes](https://icei-puc-minas-pmv-si.github.io/pmv-si-2023-2-pe1-t2-conecta/pages/perguntas-frequentes/perguntas-frequentes.html) <br> 2) Clicar nas setas ao lado das perguntas <br> 3) Validar que a resposta das perguntas é exibida |
+| **Requisitos associados** | RF-014                                                                                                                                                                                                                                                                         |
+|  **Resultado esperado**   | Página carregada e texto exibido                                                                                                                                                                                                                                               |
+|   **Dados de entrada**    | Nenhum                                                                                                                                                                                                                                                                         |
+|   **Resultado obtido**    | Sucesso                                                                                                                                                                                                                                                                        |
 
 **Caso de Teste** | **CT16 - Página "Sobre o Voluntariado"**
  :--------------: | ------------
@@ -215,7 +215,6 @@ Preencha a tabela com o plano dos testes. Para cada Caso de Teste (CT), associe 
 **Resultado esperado** | #
 **Dados de entrada** | #
 **Resultado obtido** | #
-
 
 **Caso de Teste** | **CT25 - Responsividade**
  :--------------: | ------------
@@ -339,10 +338,10 @@ Esta seção deve apresentar o relatório com as evidências dos testes de softw
 | Requisito Associado               | RF-013 - Deve existir uma página inicial (landing page) informativa que apresenta o propósito da plataforma e incentiva tanto as ONGs quanto os voluntários a utilizar a aplicação. |
 | Link do vídeo do teste realizado: | COLOQUE SEU VIDEO AQUI                                   |
 
-| *Caso de Teste*                   | *CT15 - Página "Perguntas Frequentes"*                                                                                                                                             |
-|-----------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| *Caso de Teste*                   | *CT15 - Página "Perguntas Frequentes"*                                                                                                                               |
+|-----------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Requisito Associado               | RF-014 - A aplicação deve conter a página “Perguntas Frequentes” que aborda as dúvidas mais comuns dos visitantes em relação ao voluntariado e ao uso da plataforma. |
-| Link do vídeo do teste realizado: | COLOQUE SEU VIDEO AQUI                                   |
+| Link do vídeo do teste realizado: | https://sgapucminasbr-my.sharepoint.com/:v:/g/personal/1495429_sga_pucminas_br/EToUbUHz80ZJijlp55wDmp4B5dv7tqAwpvK5SNnfMaVfDQ?e=dWPv04                               |
 
 | *Caso de Teste*                   | *CT16 - Página "Sobre o Voluntariado"*                                                                                                                                             |
 |-----------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------|
