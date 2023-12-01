@@ -63,6 +63,10 @@ export class Organization {
         return await makeRequest(getURL(`organizations/${id}`), 'GET');
     }
 
+    async findByEmail(email) {
+        return await makeRequest(getURL(`organizations?email=${email}`), 'GET');
+    }
+
     async updateById(id) {
         const data = {
             name: this.name,
@@ -87,6 +91,15 @@ export class Organization {
 
     async deleteById(id) {
         return await makeRequest(getURL(`organizations/${id}`), 'DELETE');
+    }
+    
+    async changePasswordById(id, newPassword) {
+        const newHashedPassword = await hashPassword(newPassword);
+        const data = {
+            password: newHashedPassword
+        }
+
+        return await makeRequest(getURL(`organizations/${id}`), 'PATCH', data);
     }
 }
 
