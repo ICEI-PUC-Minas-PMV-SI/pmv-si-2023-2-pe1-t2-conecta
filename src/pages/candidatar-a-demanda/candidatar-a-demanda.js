@@ -19,7 +19,9 @@ addInputFormatListener("phone", "(##) # ####-####");
 
 document.getElementById("cancelar").addEventListener("click", handleCancel);
 document.getElementById("enviar").addEventListener("click", handleSend);
+
 const dataAtual = new Date();
+
 function handleCancel() {
     if (confirm(CONFIRM_CANCELAR_CANDIDATURA)) {
         window.location.href = LOCATION_REF_ADMINISTRAR_DEMANDAS;
@@ -177,11 +179,11 @@ const getTaskId = () => {
 async function countRegistrationsByCpf(cpf) {
     try {
         const candidates = await new Candidate().findByCpf(cpf);
-        const CandidatesStatus = candidates.filter(candidate => candidate.status === "aprovado" );
+        const aprovedCandidates = candidates.filter(candidate => candidate.status === "aprovado" );
         const pendingCandidate = candidates.filter(candidate => candidate.status === "pendente" && countPendingActive(candidate.timestamp) > dataAtual );
 
         // retorna o número de cadastros ativos ou aprovados
-        return CandidatesStatus.length + pendingCandidate.length;
+        return aprovedCandidates.length + pendingCandidate.length;
 
     } catch (error) {
         // Se ocorrer um erro (por exemplo, candidato não encontrado), retorna 0
