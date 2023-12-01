@@ -11,6 +11,8 @@
     <script type="module" src="./components/footer/footer.js"></script>
     <script type="module" src="./components/vertical-task-card/vertical-task-card.js"></script>
     <script type="module" src="./components/horizontal-task-card/horizontal-task-card.js"></script>
+    <script type="module" src="./js/landing-page.js"></script>
+    <script src="./js/index.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
 </head>
@@ -84,73 +86,9 @@
                     </div>
                 </div>
 
-                <div class="tasks-wrapper">
-
-                    <vertical-task-card-component
-                        name="Ensinar HTML"
-                        owner="TeachTech"
-                        description="Procuramos voluntários para ensinar HTML a jovens interessados em tecnologia. Sua contribuição pode abrir portas para o mundo da programação. Junte-se a nós e inspire o futuro digital!"
-                        type="Remoto"
-                        image="./assets/logos/techteach-logo.png"
-                        destination="./pages/candidatar-a-demanda/candidatar-a-demanda.html"
-                    ></vertical-task-card-component>
-                    <vertical-task-card-component
-                            name="Criar Website"
-                            owner="WeHelp"
-                            description="Procuramos ajuda para criar um site impactante. Se você tem habilidades em design, programação ou conteúdo, junte-se a nós e seja parte da construção deste projeto online emocionante."
-                            type="Remoto"
-                            image="./assets/logos/we-help-logo.png"
-                            destination="./pages/candidatar-a-demanda/candidatar-a-demanda.html"
-                    ></vertical-task-card-component>
-                    <vertical-task-card-component
-                            name="Conectar idosos com a tecnologia"
-                            owner="Ajuda Senior"
-                            description="Buscamos voluntários para ajudar idosos a usar a tecnologia, promovendo a conexão e independência. Sua ajuda é essencial para tornar suas vidas mais enriquecedoras e inclusivas."
-                            type="Curitiba, PR"
-                            image="./assets/logos/ajuda-senior-logo.png"
-                            destination="./pages/candidatar-a-demanda/candidatar-a-demanda.html"
-                    ></vertical-task-card-component>
-                    <vertical-task-card-component
-                            name="Professor de Informática"
-                            owner="Happy Kids"
-                            description="Estamos em busca de voluntários entusiastas e dedicados para ensinar informática para as crianças. Ajude-nos a inspirar os nossos pequenos curiosos! Junte-se a nós e faça a diferença."
-                            type="Ouro Preto, MG"
-                            image="./assets/logos/happy-kids-logo.png"
-                            destination="./pages/candidatar-a-demanda/candidatar-a-demanda.html"
-                    ></vertical-task-card-component>
-
-                    <horizontal-task-card-component
-                        name="Ensinar HTML"
-                        owner="TeachTech"
-                        description="Procuramos voluntários para ensinar HTML a jovens interessados em tecnologia. Sua contribuição pode abrir portas para o mundo da programação. Junte-se a nós e inspire o futuro digital!"
-                        type="Remoto"
-                        image="./assets/logos/techteach-logo.png"
-                        destination="./pages/candidatar-a-demanda/candidatar-a-demanda.html"
-                    ></horizontal-task-card-component>
-                    <horizontal-task-card-component
-                            name="Criar Website"
-                            owner="WeHelp"
-                            description="Procuramos ajuda para criar um site impactante. Se você tem habilidades em design, programação ou conteúdo, junte-se a nós e seja parte da construção deste projeto online emocionante."
-                            type="Remoto"
-                            image="./assets/logos/we-help-logo.png"
-                            destination="./pages/candidatar-a-demanda/candidatar-a-demanda.html"
-                    ></horizontal-task-card-component>
-                    <horizontal-task-card-component
-                            name="Conectar idosos com a tecnologia"
-                            owner="Ajuda Senior"
-                            description="Buscamos voluntários para ajudar idosos a usar a tecnologia, promovendo a conexão e independência. Sua ajuda é essencial para tornar suas vidas mais enriquecedoras e inclusivas."
-                            type="Curitiba, PR"
-                            image="./assets/logos/ajuda-senior-logo.png"
-                            destination="./pages/candidatar-a-demanda/candidatar-a-demanda.html"
-                    ></horizontal-task-card-component>
-                    <horizontal-task-card-component
-                            name="Professor de Informática"
-                            owner="Happy Kids"
-                            description="Estamos em busca de voluntários entusiastas e dedicados para ensinar informática para as crianças. Ajude-nos a inspirar os nossos pequenos curiosos! Junte-se a nós e faça a diferença."
-                            type="Ouro Preto, MG"
-                            image="./assets/logos/happy-kids-logo.png"
-                            destination="./pages/candidatar-a-demanda/candidatar-a-demanda.html"
-                    ></horizontal-task-card-component>
+                <div class="tasks section">
+                    <div class="tasks-wrapper" id="task-wrapper">
+                </div>
                     
                 </div>
 
@@ -207,7 +145,7 @@
                                     <div>
                                             <h1 class="text-tiltle">Localização</h1>
                                             <div class="city"></div>
-                                            <p class="addres">Addres</p>
+                                            <p class="addres"></p>
                                     </div>
                             </div>
                     </div>
@@ -217,9 +155,8 @@
         <footer-component></footer-component>
     </div>
     
-    <script src="./js/index.js"></script>
-    <script  src="./js/landing-page.js"></script>
     <script src="./js/modal.js"></script>
+    <script src="./js/slide.js"></script>
 </body>
 
 </html>

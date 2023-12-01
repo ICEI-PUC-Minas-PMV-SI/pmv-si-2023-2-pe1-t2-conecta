@@ -4,7 +4,6 @@ import { getSession, deleteSession } from "./models/session.js";
 export async function makeRequest(url, method, data) {
 
     const token = window.localStorage.getItem("token");
-
     await getSession(token).then(async session => {
         if (session.length > 0 && Date.now() > session[0].expirationDate) {
             window.localStorage.removeItem("token");

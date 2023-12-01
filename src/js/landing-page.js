@@ -1,94 +1,65 @@
-let slideIndex = 1;
-let slideIndex2 = 0;
-$(window).resize(function() {
-    if ($('body').width() < 768) {
-        showSlidesMobile(slideIndex);
-    } else {
-        showSlides(slideIndex);
+import { Organization } from "./models/organization.js";
+import { Task } from "./models/task.js";
+import { VerticalTaskCard } from "../components/vertical-task-card/vertical-task-card.js";
+import { HorizontalTaskCard } from "../components/horizontal-task-card/horizontal-task-card.js";
+
+const descriptions = document.querySelectorAll('.task-description > p');
+
+descriptions.forEach(description => {
+    const showMoreButton = description.nextElementSibling; // Assuming the button is a sibling element
+
+    // check if the description needs a 'Show More' button
+    if(description.offsetHeight < description.scrollHeight) {
+        showMoreButton.style.display = 'block';
     }
 });
 
-if ($('body').width() < 768) {
-    showSlidesMobile(slideIndex);
-} else {
-    showSlides(slideIndex);
+const getOrganizationData = async (id) => {
+    const ong = new Organization();
+    return await ong.findById(id);
 }
 
-// Next/previous controls
-function plusSlides(n) {
-    if ($('body').width() < 768) {
-        showSlidesMobile(slideIndex += n);
-    } else {
-        showSlides(slideIndex += n);
+const populateDemanda = async () => {
+    const tasksWrapper = document.getElementById('task-wrapper');
+    const task = new Task();
+    let tasks = {};
+    for (let i = 0; i < 4; i++) {
+        let random = Math.floor(Math.random() * 10) + 1;
+        tasks = await task.findById(parseInt(random));
+    
+        console.log(tasks);
+    // tasks.forEach(async task => {
+        const verticalTaskCard = new VerticalTaskCard();
+        let organizationData = await getOrganizationData(parseInt(random));
+        verticalTaskCard.name = tasks.name;
+        verticalTaskCard.description = tasks.description;
+        if(tasks.type == 'Presencial') {
+                verticalTaskCard.type = organizationData.city+', '+organizationData.state;
+        } else {
+                verticalTaskCard.type = tasks.type.toUpperCase();
+        }
+        verticalTaskCard.destination = `../candidatar-a-demanda/candidatar-a-demanda.html?id=${tasks.id}`;
+        verticalTaskCard.owner = organizationData.name
+        verticalTaskCard.image = organizationData.image;
+        verticalTaskCard.addres = organizationData.street+', '+organizationData.number
+
+        tasksWrapper.appendChild(verticalTaskCard);
+    // });
+
+    // tasks.forEach(task => {
+        const horizontalTaskCard = new HorizontalTaskCard();
+
+        horizontalTaskCard.name = tasks.name;
+        horizontalTaskCard.description = tasks.description;
+        horizontalTaskCard.type = tasks.type.toUpperCase();
+        horizontalTaskCard.destination = `../candidatar-a-demanda/candidatar-a-demanda.html?id=${tasks.id}`;
+        horizontalTaskCard.owner = organizationData.name
+        horizontalTaskCard.image = organizationData.image;
+
+
+        tasksWrapper.appendChild(horizontalTaskCard);
     }
+    // });
 }
 
-// Thumbnail image controls
-function currentSlide(n) {
-    if ($('body').width() < 768) {
-        showSlidesMobile(slideIndex = n);
-    } else {
-        showSlides(slideIndex = n);
-    }
-}
-
-function showSlides(n) {
-    let i;
-    let slides = document.getElementsByClassName("mySlides");
-    let dots = document.getElementsByClassName("dot");
-    if (n > slides.length) { slideIndex = 1 }
-    if (n < 1) { slideIndex = slides.length }
-    for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";
-    }
-    for (i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(" active", "");
-    }
-    slides[slideIndex - 1].style.display = "block";
-    dots[slideIndex - 1].className += " active";
-}
-
-function showSlidesMobile(n) {
-    let i;
-    let slides = document.getElementsByClassName("mySlides-mobile");
-    let dots = document.getElementsByClassName("dot");
-    if (n > slides.length) { slideIndex = 1 }
-    if (n < 1) { slideIndex = slides.length }
-    for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";
-    }
-    for (i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(" active", "");
-    }
-    slides[slideIndex - 1].style.display = "block";
-    dots[slideIndex - 1].className += " active";
-}
-
-
-// auto change slides
-function showSlidesMobile_auto() {
-    let i;
-    let slides = document.getElementsByClassName("mySlides-mobile");
-    for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";
-    }
-    slideIndex2++;
-    if (slideIndex2 > slides.length) {slideIndex2 = 1}
-    slides[slideIndex2-1].style.display = "block";
-    setTimeout(showSlidesMobile_auto, 4000); // Change image every 2 seconds
-}
-
-showSlides_auto();
-showSlidesMobile_auto()
-
-function showSlides_auto() {
-  let i;
-  let slides = document.getElementsByClassName("mySlides");
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-  }
-  slideIndex2++;
-  if (slideIndex2 > slides.length) {slideIndex2 = 1}
-  slides[slideIndex2-1].style.display = "block";
-  setTimeout(showSlides_auto, 4000); // Change image every 2 seconds
-}
+populateDemanda().then().catch(err => console.log(err));
