@@ -1,16 +1,5 @@
 import {getURL, makeRequest} from "../http.js";
-
-async function hashPassword(password) {
-    const encoder = new TextEncoder();
-    const data = encoder.encode(password);
-    const hash = await window.crypto.subtle.digest('SHA-256', data);
-    return Array.from(new Uint8Array(hash)).map(b => b.toString(16).padStart(2, '0')).join('');
-}
-
-async function isPasswordCorrect(providedPassword, storedHashedPassword) {
-    const hashedProvidedPassword = await hashPassword(providedPassword);
-    return hashedProvidedPassword === storedHashedPassword;
-}
+import {hashPassword} from "../utils.js";
 
 export class Address {
     cep;
@@ -99,4 +88,12 @@ export class Organization {
     async deleteById(id) {
         return await makeRequest(getURL(`organizations/${id}`), 'DELETE');
     }
+}
+
+export async function findById(id) {
+    return await makeRequest(getURL(`organizations/${id}`), 'GET');
+}
+
+export async function findByEmail(email) {
+    return await makeRequest(getURL(`organizations?email=${email}`), 'GET');
 }

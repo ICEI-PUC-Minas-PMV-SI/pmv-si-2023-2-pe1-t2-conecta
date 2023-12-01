@@ -22,16 +22,29 @@ export class Session {
             expirationDate: this.expirationDate,
             active: this.active
         }
-
-        return await makeRequest(getURL('sessions'), 'POST', data);
+        await makeRequest(getURL('sessions'), 'POST', data);
+        return makeRequest(getURL(`sessions?token=${this.token}`), 'GET');
     }
 
-    async inactivateByToken(token) {
-        const data = {
-            active: false
-        }
+}
 
-        return await makeRequest(getURL(`sessions/${token}`), 'PATCH', data);
+export async function deleteSession(tokenId) {
+    return await makeRequest(getURL(`sessions/${tokenId}`), 'DELETE');
+}
+
+export async function getSession(token) {
+    const options = {
+        method: 'GET',
+        headers: {
+            'Content-Type': 'application/json',
+        },
+        body: undefined
+    };
+
+    try {
+        const response = await fetch(getURL(`sessions?token=${token}`), options);
+        return await response.json();
+    } catch (err) {
+        console.error(err);
     }
-
 }
