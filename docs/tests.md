@@ -130,7 +130,7 @@ Preencha a tabela com o plano dos testes. Para cada Caso de Teste (CT), associe 
 
 **Caso de Teste** | **CT14 - Página Inicial (Landing Page)**
  :--------------: | ------------
-**Procedimento**  | 1) O usuário deve acessar o site e visualizar a landing page. <br> 2) Navegar pela landing page. <br>
+**Procedimento**  | 1) O usuário deve acessar o site e visualizar a landing page (https://icei-puc-minas-pmv-si.github.io/pmv-si-2023-2-pe1-t2-conecta/) <br> 2) Navegar pela landing page <br>
 **Requisitos associados** | RF-013
 **Resultado esperado** | Páginal inicial da aplicação contendo diversas informações relevantes sobre o site.
 **Dados de entrada** | Nenhum.
