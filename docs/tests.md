@@ -233,13 +233,13 @@ Preencha a tabela com o plano dos testes. Para cada Caso de Teste (CT), associe 
 **Dados de entrada** | #
 **Resultado obtido** | #
 
-**Caso de Teste** | **CT27 - Criptografia de senha**
- :--------------: | ------------
-**Procedimento**  | 1) # <br> 2) # <br> 3) #
-**Requisitos associados** | RNF-003
-**Resultado esperado** | #
-**Dados de entrada** | #
-**Resultado obtido** | #
+|     **Caso de Teste**     | **CT27 - Criptografia de senha**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
+|:-------------------------:|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|     **Procedimento**      | 1) Acessar [página de cadastro](https://icei-puc-minas-pmv-si.github.io/pmv-si-2023-2-pe1-t2-conecta/pages/login/login.html) <br> 2) Inserir os dados nos campos apresentados <br> 3) Clicar no botão `Próximo`  <br> 4) Selecione uma imagem para ser utilizada como no perfil da ONG (opcional) # <br> 5) Forneça um texto sobre sua ONG <br> 6) Informe o link do perfil da sua ONG nas redes sociais (opcional) <br> 7) Clique no botão `Cadastrar` <br> 8) Confirme um alerta com a mensagem `Cadastro realizado com sucesso!` na sua tela <br> 9) Verifique no banco de dados que a senha foi salva criptografada |
+| **Requisitos associados** | RNF-003                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
+|  **Resultado esperado**   | Senha criptografada salva no banco de dados                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
+|   **Dados de entrada**    | Dados para cadastro de ONG                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
+|   **Resultado obtido**    | Sucesso.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
 
 **Caso de Teste** | **CT28 - Feedback visual**
  :--------------: | ------------
@@ -399,10 +399,10 @@ Esta seção deve apresentar o relatório com as evidências dos testes de softw
 | Requisito Associado               | RNF-002 A aplicação deve apresentar um layout simples e de fácil utilização. |
 | Link do vídeo do teste realizado: | COLOQUE SEU VIDEO AQUI                                   |
 
-| *Caso de Teste*                   | *CT27 - Criptografia de senha*                                                                                                                                             |
-|-----------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Requisito Associado               | RNF-003 As senhas dos usuários devem ser criptografadas antes de serem armazenadas. |
-| Link do vídeo do teste realizado: | COLOQUE SEU VIDEO AQUI                                   |
+| *Caso de Teste*                   | *CT27 - Criptografia de senha*                                                                                                |
+|-----------------------------------|-------------------------------------------------------------------------------------------------------------------------------|
+| Requisito Associado               | RNF-003 As senhas dos usuários devem ser criptografadas antes de serem armazenadas.                                           |
+| Link do vídeo do teste realizado: | https://sgapucminasbr-my.sharepoint.com/:v:/g/personal/1495429_sga_pucminas_br/EWpPPFFZqpdAknnEfdKDBY0BQaStf1vyLK8UtivnaQsJxQ |
 
 | *Caso de Teste*                   | *CT28 - Feedback visual*                                                                                                                                             |
 |-----------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------|
