@@ -337,7 +337,7 @@ Esta seção deve apresentar o relatório com as evidências dos testes de softw
 | *Caso de Teste*                   | *CT14 - Página Inicial (Landing Page)*                                                                                                                                             |
 |-----------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Requisito Associado               | RF-013 - Deve existir uma página inicial (landing page) informativa que apresenta o propósito da plataforma e incentiva tanto as ONGs quanto os voluntários a utilizar a aplicação. |
-| Link do vídeo do teste realizado: |https://sgapucminasbr-my.sharepoint.com/personal/954530_sga_pucminas_br/_layouts/15/stream.aspx?id=%2Fpersonal%2F954530%5Fsga%5Fpucminas%5Fbr%2FDocuments%2FLanding%20Page%2Ewebm&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview                                   |
+| Link do vídeo do teste realizado: |https://sgapucminasbr-my.sharepoint.com/:v:/g/personal/954530_sga_pucminas_br/EZjvZghuoPxFg_UrBrsA_SoBJf27dddKeMgGc5fY5tE5AQ?e=j4cBwt                                   |
 
 | *Caso de Teste*                   | *CT15 - Página "Perguntas Frequentes"*                                                                                                                                             |
 |-----------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------|
