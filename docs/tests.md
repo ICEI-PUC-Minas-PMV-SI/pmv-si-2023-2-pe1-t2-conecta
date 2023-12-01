@@ -72,7 +72,7 @@ Preencha a tabela com o plano dos testes. Para cada Caso de Teste (CT), associe 
 **Dados de entrada** | #
 **Resultado obtido** | #
 
-**Caso de Teste** | **CT07 - Divulgação de Solicitações de Ajuda pelas ONGs**
+**Caso de Teste** | **CT07 - Solicitações de Ajuda pelas ONGs**
  :--------------: | ------------
 **Procedimento**  | 1) # <br> 2) # <br> 3) #
 **Requisitos associados** | RF-006
@@ -120,7 +120,7 @@ Preencha a tabela com o plano dos testes. Para cada Caso de Teste (CT), associe 
 **Dados de entrada** | #
 **Resultado obtido** | #
 
-**Caso de Teste** | **CT13 - Página com Últimas Demandas**
+**Caso de Teste** | **CT13 - Página "Como Começar"**
  :--------------: | ------------
 **Procedimento**  | 1) # <br> 2) # <br> 3) #
 **Requisitos associados** | RF-012
@@ -128,7 +128,7 @@ Preencha a tabela com o plano dos testes. Para cada Caso de Teste (CT), associe 
 **Dados de entrada** | #
 **Resultado obtido** | #
 
-**Caso de Teste** | **CT14 - Página "Como Começar"**
+**Caso de Teste** | **CT14 - Página Inicial (Landing Page)**
  :--------------: | ------------
 **Procedimento**  | 1) # <br> 2) # <br> 3) #
 **Requisitos associados** | RF-013
@@ -136,7 +136,7 @@ Preencha a tabela com o plano dos testes. Para cada Caso de Teste (CT), associe 
 **Dados de entrada** | #
 **Resultado obtido** | #
 
-**Caso de Teste** | **CT15 - Página Inicial (Landing Page)**
+**Caso de Teste** | **CT15 - Página "Perguntas Frequentes"**
  :--------------: | ------------
 **Procedimento**  | 1) # <br> 2) # <br> 3) #
 **Requisitos associados** | RF-014
@@ -144,7 +144,7 @@ Preencha a tabela com o plano dos testes. Para cada Caso de Teste (CT), associe 
 **Dados de entrada** | #
 **Resultado obtido** | #
 
-**Caso de Teste** | **CT16 - Página "Perguntas Frequentes"**
+**Caso de Teste** | **CT16 - Página "Sobre o Voluntariado"**
  :--------------: | ------------
 **Procedimento**  | 1) # <br> 2) # <br> 3) #
 **Requisitos associados** | RF-015
@@ -152,7 +152,7 @@ Preencha a tabela com o plano dos testes. Para cada Caso de Teste (CT), associe 
 **Dados de entrada** | #
 **Resultado obtido** | #
 
-**Caso de Teste** | **CT17 - Página "Sobre o Voluntariado"**
+**Caso de Teste** | **CT17 - Página "Por Que Ser Voluntário?"**
  :--------------: | ------------
 **Procedimento**  | 1) # <br> 2) # <br> 3) #
 **Requisitos associados** | RF-016
@@ -160,7 +160,7 @@ Preencha a tabela com o plano dos testes. Para cada Caso de Teste (CT), associe 
 **Dados de entrada** | #
 **Resultado obtido** | #
 
-**Caso de Teste** | **CT18 - Página "Por Que Ser Voluntário?"**
+**Caso de Teste** | **CT18 - Página "Histórias de Sucesso"**
  :--------------: | ------------
 **Procedimento**  | 1) # <br> 2) # <br> 3) #
 **Requisitos associados** | RF-017
@@ -168,7 +168,7 @@ Preencha a tabela com o plano dos testes. Para cada Caso de Teste (CT), associe 
 **Dados de entrada** | #
 **Resultado obtido** | #
 
-**Caso de Teste** | **CT19 - Página "Histórias de Sucesso"**
+**Caso de Teste** | **CT19 - Filtro de Demandas por Critérios**
  :--------------: | ------------
 **Procedimento**  | 1) # <br> 2) # <br> 3) #
 **Requisitos associados** | RF-018
@@ -176,7 +176,7 @@ Preencha a tabela com o plano dos testes. Para cada Caso de Teste (CT), associe 
 **Dados de entrada** | #
 **Resultado obtido** | #
 
-**Caso de Teste** | **CT20 - Filtro de Demandas por Critérios**
+**Caso de Teste** | **CT20 - E-mail de Notificação para Voluntários**
  :--------------: | ------------
 **Procedimento**  | 1) # <br> 2) # <br> 3) #
 **Requisitos associados** | RF-019
@@ -184,7 +184,7 @@ Preencha a tabela com o plano dos testes. Para cada Caso de Teste (CT), associe 
 **Dados de entrada** | #
 **Resultado obtido** | #
 
-**Caso de Teste** | **CT21 - E-mail de Notificação para Voluntários**
+**Caso de Teste** | **CT21 - Lista de Voluntários Aceitos na Demanda**
  :--------------: | ------------
 **Procedimento**  | 1) # <br> 2) # <br> 3) #
 **Requisitos associados** | RF-020
@@ -192,7 +192,23 @@ Preencha a tabela com o plano dos testes. Para cada Caso de Teste (CT), associe 
 **Dados de entrada** | #
 **Resultado obtido** | #
 
-**Caso de Teste** | **CT22 - Lista de Voluntários Aceitos na Demanda**
+**Caso de Teste** | **CT22 - Envio de Link para Comentários por E-mail**
+ :--------------: | ------------
+**Procedimento**  | 1) # <br> 2) # <br> 3) #
+**Requisitos associados** | RF-021
+**Resultado esperado** | #
+**Dados de entrada** | #
+**Resultado obtido** | #
+
+**Caso de Teste** | **CT23 - Página para Depoimentos de Voluntários**
+ :--------------: | ------------
+**Procedimento**  | 1) # <br> 2) # <br> 3) #
+**Requisitos associados** | RF-022
+**Resultado esperado** | #
+**Dados de entrada** | #
+**Resultado obtido** | #
+
+**Caso de Teste** | **CT24 - Disponibilização de Depoimentos no Perfil da ONG**
  :--------------: | ------------
 **Procedimento**  | 1) # <br> 2) # <br> 3) #
 **Requisitos associados** | RF-023
@@ -200,40 +216,16 @@ Preencha a tabela com o plano dos testes. Para cada Caso de Teste (CT), associe 
 **Dados de entrada** | #
 **Resultado obtido** | #
 
-**Caso de Teste** | **CT23 - Envio de Link para Comentários por E-mail**
- :--------------: | ------------
-**Procedimento**  | 1) # <br> 2) # <br> 3) #
-**Requisitos associados** | RF-024
-**Resultado esperado** | #
-**Dados de entrada** | #
-**Resultado obtido** | #
 
-**Caso de Teste** | **CT24 - Página para Depoimentos de Voluntários**
+**Caso de Teste** | **CT25 - Responsividade**
  :--------------: | ------------
-**Procedimento**  | 1) # <br> 2) # <br> 3) #
-**Requisitos associados** | RF-025
-**Resultado esperado** | #
-**Dados de entrada** | #
-**Resultado obtido** | #
-
-**Caso de Teste** | **CT25 - Disponibilização de Depoimentos no Perfil da ONG**
- :--------------: | ------------
-**Procedimento**  | 1) # <br> 2) # <br> 3) #
-**Requisitos associados** | RF-026
-**Resultado esperado** | #
-**Dados de entrada** | #
-**Resultado obtido** | #
-
-
-**Caso de Teste** | **CT26 - Responsividade**
- :--------------: | ------------
-**Procedimento**  | 1) # <br> 2) # <br> 3) #
+**Procedimento**  | 1) O usuário acessa a aplicação por meio de um dispositivo móvel, como um smartphone ou tablet. <br> 2) O usuário navega pelas diferentes funcionalidades da aplicação utilizando o dispositivo móvel. <br>
 **Requisitos associados** | RNF-001
-**Resultado esperado** | #
-**Dados de entrada** | #
-**Resultado obtido** | #
+**Resultado esperado** | A aplicação é responsiva e se adapta adequadamente ao tamanho da tela em dispositivos móveis, mantendo todas as funcionalidades acessíveis e funcionais.
+**Dados de entrada** | Acesso à aplicação por meio de um dispositivo móvel.
+**Resultado obtido** | Sucesso.
 
-**Caso de Teste** | **CT27 - Interface simples**
+**Caso de Teste** | **CT26 - Interface simples**
  :--------------: | ------------
 **Procedimento**  | 1) # <br> 2) # <br> 3) #
 **Requisitos associados** | RNF-002
@@ -241,7 +233,7 @@ Preencha a tabela com o plano dos testes. Para cada Caso de Teste (CT), associe 
 **Dados de entrada** | #
 **Resultado obtido** | #
 
-**Caso de Teste** | **CT28 - Criptografia de senha**
+**Caso de Teste** | **CT27 - Criptografia de senha**
  :--------------: | ------------
 **Procedimento**  | 1) # <br> 2) # <br> 3) #
 **Requisitos associados** | RNF-003
@@ -249,7 +241,7 @@ Preencha a tabela com o plano dos testes. Para cada Caso de Teste (CT), associe 
 **Dados de entrada** | #
 **Resultado obtido** | #
 
-**Caso de Teste** | **CT29 - Feedback visual**
+**Caso de Teste** | **CT28 - Feedback visual**
  :--------------: | ------------
 **Procedimento**  | 1) # <br> 2) # <br> 3) #
 **Requisitos associados** | RNF-004
@@ -257,7 +249,7 @@ Preencha a tabela com o plano dos testes. Para cada Caso de Teste (CT), associe 
 **Dados de entrada** | #
 **Resultado obtido** | #
 
-**Caso de Teste** | **CT30 - Tempo de carregamento**
+**Caso de Teste** | **CT29 - Tempo de carregamento**
  :--------------: | ------------
 **Procedimento**  | 1) # <br> 2) # <br> 3) #
 **Requisitos associados** | RNF-005
@@ -265,7 +257,7 @@ Preencha a tabela com o plano dos testes. Para cada Caso de Teste (CT), associe 
 **Dados de entrada** | #
 **Resultado obtido** | #
 
-**Caso de Teste** | **CT31 - Compatibilidade com Navegadores**
+**Caso de Teste** | **CT30 - Compatibilidade com Navegadores**
  :--------------: | ------------
 **Procedimento**  | 1) # <br> 2) # <br> 3) #
 **Requisitos associados** | RNF-006
@@ -287,15 +279,146 @@ Esta seção deve apresentar o relatório com as evidências dos testes de softw
 | Requisito Associado               | RF-001 - A aplicação deve permitir que as ONGs se cadastrem.                                                                  |
 | Link do vídeo do teste realizado: | https://sgapucminasbr-my.sharepoint.com/:v:/g/personal/1495429_sga_pucminas_br/ETPyJhDTKtFGlsXYk-JS4U8BSvYlmz7U4DVQNa7jkLX9YA | 
 
+| *Caso de Teste*                   | *CT03 - Autenticação de ONG (login)*                                                                                                |
+|-----------------------------------|-------------------------------------------------------------------------------------------------------------------------------|
+| Requisito Associado               | RF-002 - A aplicação deve fornecer um sistema de autenticação seguro, permitindo que as ONGs acessem suas contas por meio de um processo de login.                                                                  |
+| Link do vídeo do teste realizado: | COLOQUE SEU VIDEO AQUI | 
+
+| *Caso de Teste*                   | *CT04 - Recuperação de Senha*                                                                                                |
+|-----------------------------------|-------------------------------------------------------------------------------------------------------------------------------|
+| Requisito Associado               | RF-003 - A aplicação deve oferecer um processo de recuperação de senha, permitindo que usuários redefinam suas senhas em caso de esquecimento ou perda.                                                                  |
+| Link do vídeo do teste realizado: | COLOQUE SEU VIDEO AQUI | 
+
 | *Caso de Teste*                   | *CT05 - Página da ONG*                                                                                                                                             |
 |-----------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Requisito Associado               | RF-004 - A aplicação deve apresentar uma página exclusiva para cada ONG, contendo informações sobre a organização, depoimentos dos voluntários e últimas demandas. |
 | Link do vídeo do teste realizado: | https://sgapucminasbr-my.sharepoint.com/:v:/g/personal/1495429_sga_pucminas_br/EQdVteszIbVBiSNzW09vTJcBByLxuz7jDdicpDkUfSL4pg                                      |
 
+| *Caso de Teste*                   | *CT06 - Gerenciamento de Perfil da ONG*                                                                                                                                             |
+|-----------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Requisito Associado               | RF-005 - A aplicação deve permitir que as ONGs gerenciem suas informações de perfil (alterar, excluir e consultar os dados) a qualquer momento. |
+| Link do vídeo do teste realizado: | COLOQUE SEU VIDEO AQUI                                   |
+
+| *Caso de Teste*                   | *CT07 - Solicitações de Ajuda pelas ONGs*                                                                                                                                             |
+|-----------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Requisito Associado               | RF-006 - A aplicação deve possibilitar que as ONGs divulguem solicitações de ajuda técnica, descrevendo os projetos ou desafios específicos que precisam ser abordados. |
+| Link do vídeo do teste realizado: | COLOQUE SEU VIDEO AQUI                                   |
+
+| *Caso de Teste*                   | *CT08 - Administrar Demandas*                                                                                                                                             |
+|-----------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Requisito Associado               | RF-007 - A aplicação deve permitir que as ONG vejam e administrem suas demandas, podendo filtrar por status (aberta, finalizada), cadastrar ou excluir. |
+| Link do vídeo do teste realizado: | COLOQUE SEU VIDEO AQUI                                   |
+
+| *Caso de Teste*                   | *CT09 - Edição de Demandas pelas ONGs*                                                                                                                                             |
+|-----------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Requisito Associado               | RF-008 - As ONGs devem poder editar suas demandas (alterar, excluir e editar os dados) a qualquer momento. |
+| Link do vídeo do teste realizado: | COLOQUE SEU VIDEO AQUI                                   |
+
 | *Caso de Teste*                   | *CT10 - Visualização de Solicitações por Voluntários*                                                                                  |
 |-----------------------------------|----------------------------------------------------------------------------------------------------------------------------------------|
 | Requisito Associado               | RF-009 - A aplicação deve permitir que os voluntários visualizem as solicitações de ajuda técnica feitas pelas ONGs.                   |
 | Link do vídeo do teste realizado: | https://sgapucminasbr-my.sharepoint.com/:v:/g/personal/1495429_sga_pucminas_br/EQNgsGco83RDq0shdoI6BGYBA0kVVNbTrLcp_VOlT92o_Q?e=3St7br |
+
+| *Caso de Teste*                   | *CT11 - Voluntariar-se em Projetos Específicos*                                                                                                                                             |
+|-----------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Requisito Associado               | RF-010 - Os voluntários devem poder se voluntariar por meio de formulário de contato para trabalhar em projetos específicos das ONGs, indicando seu interesse e disponibilidade. |
+| Link do vídeo do teste realizado: | COLOQUE SEU VIDEO AQUI                                   |
+
+| *Caso de Teste*                   | *CT12 - Marcar Solicitações como Concluídas ou Encerradas*                                                                                                                                             |
+|-----------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Requisito Associado               | RF-011 - A aplicação deve permitir que as ONGs marquem as solicitações como concluídas ou encerradas. |
+| Link do vídeo do teste realizado: | COLOQUE SEU VIDEO AQUI                                   |
+
+| *Caso de Teste*                   | *CT13 - Página "Como Começar"*                                                                                                                                             |
+|-----------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Requisito Associado               | RF-012 - A aplicação deve apresentar a página “Como Começar” que orienta os visitantes sobre os passos necessários para se tornarem voluntários registrados na aplicação. |
+| Link do vídeo do teste realizado: | COLOQUE SEU VIDEO AQUI                                   |
+
+| *Caso de Teste*                   | *CT14 - Página Inicial (Landing Page)*                                                                                                                                             |
+|-----------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Requisito Associado               | RF-013 - Deve existir uma página inicial (landing page) informativa que apresenta o propósito da plataforma e incentiva tanto as ONGs quanto os voluntários a utilizar a aplicação. |
+| Link do vídeo do teste realizado: | COLOQUE SEU VIDEO AQUI                                   |
+
+| *Caso de Teste*                   | *CT15 - Página "Perguntas Frequentes"*                                                                                                                                             |
+|-----------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Requisito Associado               | RF-014 - A aplicação deve conter a página “Perguntas Frequentes” que aborda as dúvidas mais comuns dos visitantes em relação ao voluntariado e ao uso da plataforma. |
+| Link do vídeo do teste realizado: | COLOQUE SEU VIDEO AQUI                                   |
+
+| *Caso de Teste*                   | *CT16 - Página "Sobre o Voluntariado"*                                                                                                                                             |
+|-----------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Requisito Associado               | RF-015 - A aplicação deve apresentar a página “Sobre o Voluntariado” que fornece informações detalhadas sobre o conceito de trabalho voluntário, destacando seu impacto positivo na sociedade e nas comunidades. |
+| Link do vídeo do teste realizado: | COLOQUE SEU VIDEO AQUI                                   |
+
+| *Caso de Teste*                   |*CT17 - Página "Por Que Ser Voluntário?"*                                                                                                                                             |
+|-----------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Requisito Associado               | RF-016 A aplicação deve apresentar a página “Por Que Ser Voluntário?” que apresenta os benefícios pessoais que podem ser obtidos ao se envolver em ações voluntárias. |
+| Link do vídeo do teste realizado: | COLOQUE SEU VIDEO AQUI                                   |
+
+| *Caso de Teste*                   | *CT18 - Página "Histórias de Sucesso"*                                                                                                                                             |
+|-----------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Requisito Associado               | RF-017 A aplicação deve apresentar a página “Histórias de Sucesso” que destaca projetos anteriores realizados por meio da plataforma, com resultados, depoimentos de voluntários e o impacto positivo alcançado. |
+| Link do vídeo do teste realizado: | COLOQUE SEU VIDEO AQUI                                   |
+
+| *Caso de Teste*                   | *CT19 - Filtro de Demandas por Critérios*                                                                                                                                             |
+|-----------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Requisito Associado               | RF-018 A aplicação deve fornecer um mecanismo de filtro para que os usuários possam encontrar demandas com base em critérios como: remoto, presencial e estado do Brasil. |
+| Link do vídeo do teste realizado: | COLOQUE SEU VIDEO AQUI                                   |
+
+| *Caso de Teste*                   | *CT20 - E-mail de Notificação para Voluntários*                                                                                                                                             |
+|-----------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Requisito Associado               | RF-019 - Os voluntários devem receber um e-mail quando uma ONG expressa interesse em seu perfil. |
+| Link do vídeo do teste realizado: | COLOQUE SEU VIDEO AQUI                                   |
+
+| *Caso de Teste*                   | *CT21 - Lista de Voluntários Aceitos na Demanda*                                                                                                                                             |
+|-----------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Requisito Associado               | RF-020 A página da demanda cadastrada pela ONG deve exibir uma lista de todos os voluntários que tiveram a candidatura aceita. |
+| Link do vídeo do teste realizado: | COLOQUE SEU VIDEO AQUI                                   |
+
+| *Caso de Teste*                   | *CT22 - Envio de Link para Comentários por E-mail*                                                                                                                                             |
+|-----------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Requisito Associado               | RF-021 Na página da demanda cadastrada pela ONG, deve ter um botão com a finalidade de enviar um link via e-mail aos voluntários solicitando a eles que deixem um comentário sobre sua experiência. |
+| Link do vídeo do teste realizado: | COLOQUE SEU VIDEO AQUI                                   |
+
+| *Caso de Teste*                   | *CT23 - Página para Depoimentos de Voluntários*                                                                                                                                             |
+|-----------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Requisito Associado               | RF-022 - A aplicação deve apresentar uma página para depoimento da solicitação que o voluntário participou, que só poderá ser acessada através do link recebido via e-mail, com um formulário para preenchimento. |
+| Link do vídeo do teste realizado: | COLOQUE SEU VIDEO AQUI                                   |
+
+| *Caso de Teste*                   | *CT24 - Disponibilização de Depoimentos no Perfil da ONG*                                                                                                                                             |
+|-----------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Requisito Associado               | RF-023 Os depoimentos dos voluntários devem ser disponibilizados no perfil da ONG que fez a solicitação. |
+| Link do vídeo do teste realizado: | COLOQUE SEU VIDEO AQUI                                   |
+
+| *Caso de Teste*                   | *CT25 Responsividade*                                                                                                                                             |
+|-----------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Requisito Associado               | RNF-001 A aplicação deve oferecer uma interface com design responsivo que se adapte aos dispositivos móveis e desktops. |
+| Link do vídeo do teste realizado: | https://sgapucminasbr-my.sharepoint.com/personal/954530_sga_pucminas_br/_layouts/15/stream.aspx?id=%2Fpersonal%2F954530%5Fsga%5Fpucminas%5Fbr%2FDocuments%2Fresponsive%2Emp4&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview                                  |
+
+| *Caso de Teste*                   | *CT26 - Interface simples*                                                                                                                                             |
+|-----------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Requisito Associado               | RNF-002 A aplicação deve apresentar um layout simples e de fácil utilização. |
+| Link do vídeo do teste realizado: | COLOQUE SEU VIDEO AQUI                                   |
+
+| *Caso de Teste*                   | *CT27 - Criptografia de senha*                                                                                                                                             |
+|-----------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Requisito Associado               | RNF-003 As senhas dos usuários devem ser criptografadas antes de serem armazenadas. |
+| Link do vídeo do teste realizado: | COLOQUE SEU VIDEO AQUI                                   |
+
+| *Caso de Teste*                   | *CT28 - Feedback visual*                                                                                                                                             |
+|-----------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Requisito Associado               | RNF-004 A aplicação deve fornecer feedback visual claro para ações do usuário, como confirmações de envio e mensagens de erro. |
+| Link do vídeo do teste realizado: | COLOQUE SEU VIDEO AQUI                                   |
+
+| *Caso de Teste*                   | *CT29 - Tempo de carregamento*                                                                                                                                             |
+|-----------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Requisito Associado               | RNF-005 A aplicação deve responder às solicitações dos usuários com um tempo limite máximo de 3 segundos para carregar páginas ou processar ações. |
+| Link do vídeo do teste realizado: | COLOQUE SEU VIDEO AQUI                                   |
+
+| *Caso de Teste*                   | *CT30 - Compatibilidade com Navegadores*                                                                                                                                             |
+|-----------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Requisito Associado               | RNF-006 O sistema deve ser capaz de ser executado nas versões mais recentes dos principais navegadores do mercado, como: Chrome, Firefox, Edge e Safari. |
+| Link do vídeo do teste realizado: | COLOQUE SEU VIDEO AQUI                                   |
+
 
 
 ## Avaliação dos Testes de Software

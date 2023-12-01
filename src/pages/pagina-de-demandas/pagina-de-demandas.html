@@ -34,20 +34,53 @@
                 </h1>
             </div>
             <div class="filter">
-                <label  id="filtroSelect">
+                <label id="filtroSelect">
                     <img class="icon_white" src="../../assets/icons/filter.png" alt="">
                     <img class="icon_black" src="../../assets/icons/filter-filled.png" alt="">
                 </label>
-                <select class="filterButton" style="display: none;">
-                    <option value="all">Todos</option>
-                    <option value="remote">Remoto</option>
-                    <option value="on-site">Presencial</option>
-                </select>
+                <div class="filter-wrapper">
+                    <select class="filterButton" style="display: none;">
+                        <option value="all">Todos</option>
+                        <option value="remote">Remoto</option>
+                        <option value="on-site">Presencial</option>
+                    </select>
+                    <select onchange="buscaCidade(this.options[this.selectedIndex].value)" class="filterButton state" style="display: none;">
+                        <option value="todos">Estado</option>
+                    </select>
+
+                    <select class="filterButton cidade" style="display: none;">
+                        <option value="todos">Cidade</option>
+                    </select>
+                </div>
             </div>
 
             <div class="tasks-wrapper">
             </div>
+        </div>
 
+        <div id="myModal" class="modal">
+                <div class="modal-wrapper">
+                        <div class="modal-text">
+                                <div class="modal-header">
+                                        <img class="image-modal" src="../../assets/icons/NGO.png" alt="Ajuda">
+                                        <p class="modal-title">VAGA DE VOLUNTARIADO</p>
+                                        <div class="close">&times;</div>
+                                </div>
+                                <div class="job-title"></div>
+                                <div class="NGO"></div>
+                                <div class="modal-content">
+                                        <div>
+                                                <h1 class="text-tiltle">Descrição</h1>
+                                                <div class="text"></div>
+                                        </div>
+                                        <div>
+                                                <h1 class="text-tiltle">Localização</h1>
+                                                <div class="city"></div>
+                                                <p class="addres">Addres</p>
+                                        </div>
+                                </div>
+                        </div>
+                </div>
         </div>
 
         <footer-component></footer-component>
@@ -71,6 +104,8 @@
                     }
                 });
             </script>
+        <script src="../../js/index.js"></script>
+        <script src="../../js/modal.js"></script>
 </body>
 
 </html>
