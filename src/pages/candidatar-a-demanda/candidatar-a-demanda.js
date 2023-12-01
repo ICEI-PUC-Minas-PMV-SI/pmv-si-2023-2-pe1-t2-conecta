@@ -179,19 +179,20 @@ const getTaskId = () => {
 async function countRegistrationsByCpf(cpf) {
     try {
         const candidates = await new Candidate().findByCpf(cpf);
-        const aprovedCandidates = candidates.filter(candidate => candidate.status === "aprovado" );
-        const pendingCandidate = candidates.filter(candidate => candidate.status === "pendente" && countPendingActive(candidate.timestamp) > dataAtual );
+        const approvedCandidates = candidates.filter(candidate => candidate.status.toUpperCase() === "APROVADO" );
+        const pendingCandidate = candidates.filter(candidate => candidate.status.toUpperCase() === "PENDENTE" && countPendingActive(candidate.timestamp) > dataAtual );
 
         // retorna o número de cadastros ativos ou aprovados
-        return aprovedCandidates.length + pendingCandidate.length;
+        return approvedCandidates.length + pendingCandidate.length;
 
     } catch (error) {
+        console.log(error);
         // Se ocorrer um erro (por exemplo, candidato não encontrado), retorna 0
         return 0;
     }
 }
     function countPendingActive(candidateTimestamp){
-        const dataCadastrada = candidateTimestamp;
+        const dataCadastrada = new Date(candidateTimestamp);
         const numeroData = new Date().setDate(dataCadastrada.getDate() + 3);
         const dataLimite = new Date(numeroData);
         return dataLimite;
