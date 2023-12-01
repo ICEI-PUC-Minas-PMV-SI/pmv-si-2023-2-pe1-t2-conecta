@@ -19,7 +19,7 @@ addInputFormatListener("phone", "(##) # ####-####");
 
 document.getElementById("cancelar").addEventListener("click", handleCancel);
 document.getElementById("enviar").addEventListener("click", handleSend);
-
+const dataAtual = new Date();
 function handleCancel() {
     if (confirm(CONFIRM_CANCELAR_CANDIDATURA)) {
         window.location.href = LOCATION_REF_ADMINISTRAR_DEMANDAS;
@@ -93,7 +93,7 @@ async function handleSend(event) {
         candidate.about = candidatura.como;
         candidate.taskId = taskID;
         candidate.status = "pendente";
-        candidate.timestamp = new Date();
+        candidate.timestamp = dataAtual;
 
         await candidate.create();
 
@@ -158,8 +158,8 @@ const getTaskId = () => {
     const urlParams = new URLSearchParams(window.location.search);
     return urlParams.get('taskId');
 }
-// contar o número de cadastros ativos ou aprovados pelo cpf
-async function countRegistrationsByCpf(cpf) {
+// contar o número de cadastros ativos ou aprovados pelo cpf independente do tempo de candidatura
+/*async function countRegistrationsByCpf(cpf) {
     try {
         const candidates = await new Candidate().findByCpf(cpf);
         const CandidatesStatus = candidates.filter(candidate => candidate.status === "pendente" || candidate.status === "aprovado");
@@ -171,4 +171,27 @@ async function countRegistrationsByCpf(cpf) {
         // Se ocorrer um erro (por exemplo, candidato não encontrado), retorna 0
         return 0;
     }
+}*/
+
+//conta pendentes ou aprovados checando se a data limite do pendente é maior que a data atual
+async function countRegistrationsByCpf(cpf) {
+    try {
+        const candidates = await new Candidate().findByCpf(cpf);
+        const CandidatesStatus = candidates.filter(candidate => candidate.status === "aprovado" );
+        const pendingCandidate = candidates.filter(candidate => candidate.status === "pendente" && countPendingActive(candidate.timestamp) > dataAtual );
+
+        // retorna o número de cadastros ativos ou aprovados
+        return CandidatesStatus.length + pendingCandidate.length;
+
+    } catch (error) {
+        // Se ocorrer um erro (por exemplo, candidato não encontrado), retorna 0
+        return 0;
+    }
 }
+    function countPendingActive(candidateTimestamp){
+        const dataCadastrada = candidateTimestamp;
+        const numeroData = new Date().setDate(dataCadastrada.getDate() + 3);
+        const dataLimite = new Date(numeroData);
+        return dataLimite;
+
+    }
