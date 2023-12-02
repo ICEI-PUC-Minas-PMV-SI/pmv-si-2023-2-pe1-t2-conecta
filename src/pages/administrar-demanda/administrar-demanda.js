@@ -1,6 +1,8 @@
 import { getSession } from '../../js/models/session.js';
 import { Task } from "../../js/models/task.js";
+import { Organization } from "../../js/models/organization.js";
 import { Candidate } from "../../js/models/candidate.js";
+import { sendEmail } from "../../js/envio-email.js";
 
 const getTaskId = async () => {
     const urlParams = new URLSearchParams(window.location.search);
@@ -29,6 +31,10 @@ const populateCandidates = async (taskStatus) => {
     const candidatesWrapper = document.querySelector('.candidates-wrapper');
     candidatesWrapper.innerHTML = '';
     const filteredCandidates = candidates.filter(candidate => candidate.status !== 'Reprovado');
+
+    const taskData = await getTaskData();
+    const organization = new Organization();
+    const organizationData = await organization.findById(taskData.organizationId);
 
     const candidateManager = new Candidate();
 
@@ -86,6 +92,11 @@ const populateCandidates = async (taskStatus) => {
                 this.style.display = 'none';
                 rejectWrapper.style.display = 'none';
                 await candidateManager.updateStatusById(candidate.id, 'Aprovado');
+                await sendEmail(
+                    candidate.email,
+                    `${taskData.name}: candidatura aceita`,
+                    `Olá ${candidate.name}, sua candidatura para a demanda ${taskData.name} foi aceita! A ONG ${organizationData.name} entrará em contato com você em breve.`
+                );
             }
         };
         rejectWrapper.onclick = async function () {
@@ -100,7 +111,7 @@ const populateCandidates = async (taskStatus) => {
             alert('Depoimento solicitado.');
             this.style.display = 'none';
         };
-        
+
         card.onclick = function () {
             document.querySelector('.modal .task-name').innerText = candidate.name;
             document.querySelector('.modal .text').innerText = candidate.profile;
@@ -189,6 +200,11 @@ const populateCandidates = async (taskStatus) => {
                 this.style.display = 'none';
                 rejectWrapper.style.display = 'none';
                 await candidateManager.updateStatusById(candidate.id, 'Aprovado');
+                await sendEmail(
+                    candidate.email,
+                    `${taskData.name}: candidatura aceita`,
+                    `Olá ${candidate.name}, sua candidatura para a demanda ${taskData.name} foi aceita! A ONG ${organizationData.name} entrará em contato com você em breve.`
+                );
             }
         };
         rejectWrapper.onclick = async function () {
@@ -203,7 +219,7 @@ const populateCandidates = async (taskStatus) => {
             alert('Depoimento solicitado.')
             this.style.display = 'none'
         };
-        
+
         card.onclick = function () {
             document.querySelector('.modal .task-name').innerText = candidate.name;
             document.querySelector('.modal .text').innerText = candidate.profile;
@@ -248,7 +264,7 @@ const handleButtons = (taskStatus) => {
 
     if(taskStatus === 'Aberta') {
         editButton.style.display = 'flex';
-        
+
         finishOrReopenButton.style.display = 'flex';
         finishOrReopenButton.onclick = async function () {
             if(confirm('Deseja finalizar a demanda?')) {
