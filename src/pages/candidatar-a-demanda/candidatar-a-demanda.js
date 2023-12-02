@@ -4,7 +4,7 @@ import {
     CONFIRM_CANCELAR_CANDIDATURA,
     LOCATION_REF_ADMINISTRAR_DEMANDAS,
 } from "../../js/constants.js";
-import { findById as findOngById} from "../../js/models/organization.js";
+import { findById as findOngById } from "../../js/models/organization.js";
 import { Candidate } from "../../js/models/candidate.js";
 
 window.addEventListener("load", async () => {
@@ -14,14 +14,30 @@ window.addEventListener("load", async () => {
     ongName.innerHTML = organization.name;
 });
 
+const dataAtual = new Date();
+
+document.getElementById("cpf").addEventListener("input", async () => {
+    const cpf = document.getElementById("cpf").value;
+
+    // Validar se o CPF possui 11 dígitos
+    if (cpf.length === 14) {
+        // Verificar se o CPF já está cadastrado
+        const numberOfRegistrations = await countRegistrationsByCpf(cpf);
+
+        if (numberOfRegistrations >= 2) {
+            alert("Limite de dois cadastros ativos atingido para o mesmo CPF, Por Favor aguarde.");
+            document.getElementById("cpf").value = "";
+        }
+    }
+});
+
 addInputFormatListener("cpf", "###.###.###-##");
 addInputFormatListener("phone", "(##) # ####-####");
 
 document.getElementById("cancelar").addEventListener("click", handleCancel);
 document.getElementById("enviar").addEventListener("click", handleSend);
 
-const dataAtual = new Date();
-
+//funções de envio e cancelamento
 function handleCancel() {
     if (confirm(CONFIRM_CANCELAR_CANDIDATURA)) {
         window.location.href = LOCATION_REF_ADMINISTRAR_DEMANDAS;
@@ -79,7 +95,7 @@ async function handleSend(event) {
 
     // verifica se o número de registros for maior ou igual a 2
     if (numberOfRegistrations >= 2) {
-        alert("Limite de dois cadastros ativos atingido para o mesmo CPF, aguarde.");
+        alert("Limite de dois cadastros ativos atingido para o mesmo CPF, Por Favor aguarde.");
         return;
     }
 
@@ -160,28 +176,13 @@ const getTaskId = () => {
     const urlParams = new URLSearchParams(window.location.search);
     return urlParams.get('taskId');
 }
-// contar o número de cadastros ativos ou aprovados pelo cpf independente do tempo de candidatura
-/*async function countRegistrationsByCpf(cpf) {
-    try {
-        const candidates = await new Candidate().findByCpf(cpf);
-        const CandidatesStatus = candidates.filter(candidate => candidate.status === "pendente" || candidate.status === "aprovado");
-
-        // retorna o número de cadastros ativos ou aprovados
-        return CandidatesStatus.length;
-
-    } catch (error) {
-        // Se ocorrer um erro (por exemplo, candidato não encontrado), retorna 0
-        return 0;
-    }
-}*/
 
 //conta pendentes ou aprovados checando se a data limite do pendente é maior que a data atual
 async function countRegistrationsByCpf(cpf) {
     try {
         const candidates = await new Candidate().findByCpf(cpf);
-        const approvedCandidates = candidates.filter(candidate => candidate.status.toUpperCase() === "APROVADO" );
-        const pendingCandidate = candidates.filter(candidate => candidate.status.toUpperCase() === "PENDENTE" && countPendingActive(candidate.timestamp) > dataAtual );
-
+        const approvedCandidates = candidates.filter(candidate => candidate.status.toUpperCase() === "APROVADO" && candidate.cpf === cpf);
+        const pendingCandidate = candidates.filter(candidate => candidate.status.toUpperCase() === "PENDENTE" && countPendingActive(candidate.timestamp) > dataAtual);
         // retorna o número de cadastros ativos ou aprovados
         return approvedCandidates.length + pendingCandidate.length;
 
@@ -191,10 +192,10 @@ async function countRegistrationsByCpf(cpf) {
         return 0;
     }
 }
-    function countPendingActive(candidateTimestamp){
-        const dataCadastrada = new Date(candidateTimestamp);
-        const numeroData = new Date().setDate(dataCadastrada.getDate() + 3);
-        const dataLimite = new Date(numeroData);
-        return dataLimite;
+function countPendingActive(candidateTimestamp) {
+    const dataCadastrada = new Date(candidateTimestamp);
+    const numeroData = new Date().setDate(dataCadastrada.getDate() + 3);
+    const dataLimite = new Date(numeroData);
+    return dataLimite;
 
-    }
+}
