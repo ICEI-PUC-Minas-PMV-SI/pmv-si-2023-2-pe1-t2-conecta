@@ -26,6 +26,8 @@ const getPagePath = (pageName) => {
 const makeTemplate = (variant) => {
     const rootPath = variant === 'home' ? './' : '../../';
 
+    const token = window.localStorage.getItem("token");
+
     const template = document.createElement('template');
     template.innerHTML = `
     <div class="root">
@@ -51,10 +53,16 @@ const makeTemplate = (variant) => {
     </div>
 
     <div class="mobile-menu-content">
-        <div class="authentication-area">
+        <div class="authentication-area" style="${token == null ? "" : "display: none"}">
             <p class="text">área da ong</p>
             <a class="authentication-button" href=${getPagePath("cadastrar-ong")} >CADASTRE-SE</a>
             <a class="authentication-button" href=${getPagePath("login")}>LOGIN</a>
+        </div>
+
+        <div id="authenticated-menu" style="${token == null ? "display: none" : ""}" class="authentication-area">
+            <p class="text">área da ong</p>
+            <a class="authentication-button" href=${getPagePath("pagina-da-ong")} >PERFIL</a>
+            <a class="authentication-button" href=${getPagePath("administrar-demandas")}>DEMANDAS</a>
         </div>
 
         <div class="divider-line"></div>

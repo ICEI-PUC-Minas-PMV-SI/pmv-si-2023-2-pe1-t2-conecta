@@ -1,7 +1,17 @@
+import { Organization } from "../../js/models/organization.js";
+
 document.getElementById("password-reset-submit-button").addEventListener("click", handlePasswordReset);
 document.getElementById("password-reset-cancel-button").addEventListener("click", handlePasswordResetCancel);
 
-function handlePasswordReset(event) {
+const getToken = () => {
+    const urlParams = new URLSearchParams(window.location.search);
+    return urlParams.get('token');
+}
+
+const token = getToken();
+const organizationId = token.split("-")[0]
+
+async function handlePasswordReset(event) {
     event.preventDefault();
 
     const password = document.getElementById("senha").value;
@@ -22,8 +32,11 @@ function handlePasswordReset(event) {
         return;
     }
 
+    const organization = new Organization();
+    await organization.changePasswordById(organizationId, password );
+    
     alert("Senha alterada com sucesso");
-    window.location.href = "https://www.google.com.br";
+    window.location.href = "../login/login.html";
 }
 
 function handlePasswordResetCancel(event) {
