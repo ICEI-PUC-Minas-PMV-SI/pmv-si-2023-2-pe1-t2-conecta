@@ -1,5 +1,16 @@
 import {getURL, makeRequest} from "../http.js";
-import {hashPassword} from "../utils.js";
+
+async function hashPassword(password) {
+    const encoder = new TextEncoder();
+    const data = encoder.encode(password);
+    const hash = await window.crypto.subtle.digest('SHA-256', data);
+    return Array.from(new Uint8Array(hash)).map(b => b.toString(16).padStart(2, '0')).join('');
+}
+
+async function isPasswordCorrect(providedPassword, storedHashedPassword) {
+    const hashedProvidedPassword = await hashPassword(providedPassword);
+    return hashedProvidedPassword === storedHashedPassword;
+}
 
 export class Address {
     cep;
@@ -63,10 +74,6 @@ export class Organization {
         return await makeRequest(getURL(`organizations/${id}`), 'GET');
     }
 
-    async findByEmail(email) {
-        return await makeRequest(getURL(`organizations?email=${email}`), 'GET');
-    }
-
     async updateById(id) {
         const data = {
             name: this.name,
@@ -92,23 +99,6 @@ export class Organization {
     async deleteById(id) {
         return await makeRequest(getURL(`organizations/${id}`), 'DELETE');
     }
-    
-    async changePasswordById(id, newPassword) {
-        const newHashedPassword = await hashPassword(newPassword);
-        const data = {
-            password: newHashedPassword
-        }
-
-        return await makeRequest(getURL(`organizations/${id}`), 'PATCH', data);
-    }
-}
-
-export async function findById(id) {
-    return await makeRequest(getURL(`organizations/${id}`), 'GET');
-}
-
-export async function findByEmail(email) {
-    return await makeRequest(getURL(`organizations?email=${email}`), 'GET');
 }
 
 export async function findById(id) {

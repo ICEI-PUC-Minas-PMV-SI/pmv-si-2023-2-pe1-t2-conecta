@@ -48,12 +48,6 @@ const makeTemplate = () => {
                     </div>
                     
                 </div>
-
-                <div style="display:none">
-                    <div class="addres">
-                    </div>
-                </div>
-
             </div>
         </div>
     </div>
@@ -293,10 +287,6 @@ export class VerticalTaskCard extends HTMLElement {
             helpButton.href = this.destination;
         }
 
-        if (this.addres) {
-            const addres = this.root.querySelector('.addres');
-            addres.innerText = this.addres;
-        }
     }
 
     static
@@ -350,14 +340,6 @@ export class VerticalTaskCard extends HTMLElement {
 
     set destination(value) {
         this.setAttribute('destination', value);
-    }
-
-    get addres() {
-        return this.getAttribute('addres');
-    }
-
-    set addres(value) {
-        this.setAttribute('addres', value);
     }
 }
 

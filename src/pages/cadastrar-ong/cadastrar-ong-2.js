@@ -1,5 +1,4 @@
-import {Address, findById, Organization} from "../../js/models/organization.js";
-import {getSession} from "../../js/models/session.js";
+import { Address, Organization } from "../../js/models/organization.js";
 
 document.getElementById("submit-button").addEventListener("click", handleCreateOrganizationSecondForm);
 
@@ -13,20 +12,6 @@ document.getElementById('foto').addEventListener('change', function(event) {
     });
 
     reader.readAsDataURL(file);
-});
-
-window.addEventListener("load", async () => {
-    const token = window.localStorage.getItem("token")
-    const session = await getSession(token);
-
-    await findById(session[0].id).then(ong => {
-        document.getElementById("title").innerText = "perfil da ONG";
-
-        document.getElementById("sobre").value = ong.about;
-        document.getElementById("facebook").value = ong.facebook;
-        document.getElementById("instagram").value = ong.instagram;
-        document.getElementById("twitter").value = ong.twitter;
-    });
 });
 
 async function handleCreateOrganizationSecondForm(event) {

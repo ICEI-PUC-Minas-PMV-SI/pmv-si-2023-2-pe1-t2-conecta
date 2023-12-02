@@ -33,16 +33,6 @@ export class Task {
     async findAll() {
         return await makeRequest(getURL('tasks'), 'GET');
     }
-    
-    async findAllFilteredByOpenStatus(filterBy) {
-        if(filterBy === 'remote') {
-            return await makeRequest(getURL('tasks?status=Aberta&type=Remoto'), 'GET');
-        }
-        if(filterBy === 'on-site') {
-            return await makeRequest(getURL('tasks?status=Aberta&type=Presencial'), 'GET');
-        }
-        return await makeRequest(getURL('tasks?status=Aberta'), 'GET');
-    }
 
     async updateById(id) {
         const data = {
