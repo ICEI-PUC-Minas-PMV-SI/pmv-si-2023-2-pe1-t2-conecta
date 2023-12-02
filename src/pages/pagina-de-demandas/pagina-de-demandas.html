@@ -103,6 +103,18 @@
                         $('.icon_white').css('display', 'none')
                     }
                 });
+                function buscaCidade(element) {
+                    $('.cidades_selecionadas').remove();
+                    $.ajax({
+                        url: "https://servicodados.ibge.gov.br/api/v1/localidades/estados/"+element+"/municipios?orderBy=nome",
+                        context: {}
+                    }).done(function(data) {
+                        for (var uf in data) {
+                            let html = "<option class='cidades_selecionadas'>"+data[uf].nome+"</option>";
+                            $('.cidade').append(html);
+                        }
+                    });
+                }
             </script>
         <script src="../../js/index.js"></script>
         <script src="../../js/modal.js"></script>
