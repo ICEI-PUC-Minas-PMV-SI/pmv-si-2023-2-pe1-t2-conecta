@@ -22,11 +22,16 @@ const getCandidates = async () => {
     return await candidate.findByTaskId(id);
 }
 
-
-function appendCandidates(candidates) {
-    const candidatesWrapper = document.querySelector('.candidates-wrapper');
+const populateCandidates = async (taskStatus) => {
+    const isTaskFinished = taskStatus === 'Finalizada';
     
-    candidates.forEach(candidate => {
+    const candidates = await getCandidates();
+    const candidatesWrapper = document.querySelector('.candidates-wrapper');
+    const filteredCandidates = candidates.filter(candidate => candidate.status !== 'Reprovado');
+
+    filteredCandidates.forEach(candidate => {
+        const isCandidateApproved = candidate.status === 'Aprovado';
+        
         const card = document.createElement('div');
         const sectionWrapper = document.createElement('div');
         const header = document.createElement('div');
@@ -37,10 +42,13 @@ function appendCandidates(candidates) {
         const buttons = document.createElement('div');
         const acceptWrapper = document.createElement('div');
         const rejectWrapper = document.createElement('div');
+        const messageWrapper = document.createElement('div');
         const acceptLink = document.createElement('a');
         const rejectLink = document.createElement('a');
+        const messageLink = document.createElement('a');
         const acceptImg = document.createElement('img');
         const rejectImg = document.createElement('img');
+        const messageImg = document.createElement('img');
 
         card.className = 'vertical-task-card';
         sectionWrapper.className = 'card-section-wrapper';
@@ -52,22 +60,34 @@ function appendCandidates(candidates) {
         buttons.className = 'cards-button';
         acceptWrapper.className = 'accept-remove-button-wrapper';
         rejectWrapper.className = 'accept-remove-button-wrapper';
+        messageWrapper.className = 'message-button-wrapper';
         acceptImg.className = 'accept-button';
         rejectImg.className = 'remove-button';
+        messageImg.className = 'message-button';
 
         personName.innerText = candidate.name;
         descriptionText.innerText = candidate.profile;
         acceptImg.src = '../../assets/icons/accept.png';
         rejectImg.src = '../../assets/icons/remove.png';
+        messageImg.src = '../../assets/icons/message.png';
         acceptImg.alt = 'Accept';
         rejectImg.alt = 'Remove';
+        messageImg.alt = 'Message';
 
         buttons.onclick = fotoClick;
         acceptWrapper.onclick = function () {
             if(confirm('Deseja aceitar o voluntário?')) alert('Candidato aceito.')
+            this.style.display = 'none'
+            rejectWrapper.style.display = 'none'
         };
         rejectWrapper.onclick = function () {
             if(confirm('Deseja recusar o voluntário?')) alert('Candidato recusado.')
+            acceptWrapper.style.display = 'none'
+            this.style.display = 'none'
+        };
+        messageWrapper.onclick = function () {
+            alert('Depoimento solicitado.')
+            this.style.display = 'none'
         };
         card.onclick = function () {
             document.querySelector('.modal .task-name').innerText = candidate.name;
@@ -79,10 +99,13 @@ function appendCandidates(candidates) {
 
         acceptLink.appendChild(acceptImg);
         rejectLink.appendChild(rejectImg);
+        messageLink.appendChild(messageImg);
         acceptWrapper.appendChild(acceptLink);
         rejectWrapper.appendChild(rejectLink);
+        messageWrapper.appendChild(messageLink);
         buttons.appendChild(acceptWrapper);
         buttons.appendChild(rejectWrapper);
+        buttons.appendChild(messageWrapper);
         personInfo.appendChild(personName);
         header.appendChild(personInfo);
         description.appendChild(descriptionText);
@@ -90,11 +113,20 @@ function appendCandidates(candidates) {
         sectionWrapper.appendChild(description);
         sectionWrapper.appendChild(buttons);
         card.appendChild(sectionWrapper);
+        
+        if(!isTaskFinished && !isCandidateApproved) {
+            acceptLink.style.display = 'block';
+            rejectLink.style.display = 'block';
+        } else {
+            messageLink.style.display = 'block';
+        }
 
         candidatesWrapper.appendChild(card);
     });
 
-    candidates.forEach(candidate => {
+    filteredCandidates.forEach(candidate => {
+        const isCandidateApproved = candidate.status === 'Aprovado';
+        
         const card = document.createElement('div');
         const leftSide = document.createElement('div');
         const rightSide = document.createElement('div');
@@ -105,10 +137,13 @@ function appendCandidates(candidates) {
         const buttons = document.createElement('div');
         const acceptWrapper = document.createElement('div');
         const rejectWrapper = document.createElement('div');
+        const messageWrapper = document.createElement('div');
         const acceptLink = document.createElement('a');
         const rejectLink = document.createElement('a');
+        const messageLink = document.createElement('a');
         const acceptImg = document.createElement('img');
         const rejectImg = document.createElement('img');
+        const messageImg = document.createElement('img');
 
         card.className = 'horizontal-task-card';
         leftSide.className = 'left-side';
@@ -120,22 +155,34 @@ function appendCandidates(candidates) {
         buttons.className = 'cards-button';
         acceptWrapper.className = 'accept-remove-button-wrapper';
         rejectWrapper.className = 'accept-remove-button-wrapper';
+        messageWrapper.className = 'message-button-wrapper';
         acceptImg.className = 'accept-button';
         rejectImg.className = 'remove-button';
+        messageImg.className = 'message-button';
 
         personName.innerText = candidate.name;
         descriptionText.innerText = candidate.profile;
         acceptImg.src = '../../assets/icons/accept.png';
         rejectImg.src = '../../assets/icons/remove.png';
+        messageImg.src = '../../assets/icons/message.png';
         acceptImg.alt = 'Accept';
         rejectImg.alt = 'Remove';
+        messageImg.alt = 'Message';
 
         buttons.onclick = fotoClick;
         acceptWrapper.onclick = function () {
             if(confirm('Deseja aceitar o voluntário?')) alert('Candidato aceito.')
+            this.style.display = 'none'
+            rejectWrapper.style.display = 'none'
         };
         rejectWrapper.onclick = function () {
             if(confirm('Deseja recusar o voluntário?')) alert('Candidato recusado.')
+            acceptWrapper.style.display = 'none'
+            this.style.display = 'none'
+        };
+        messageWrapper.onclick = function () {
+            alert('Depoimento solicitado.')
+            this.style.display = 'none'
         };
         card.onclick = function () {
             document.querySelector('.modal .task-name').innerText = candidate.name;
@@ -147,10 +194,13 @@ function appendCandidates(candidates) {
 
         acceptLink.appendChild(acceptImg);
         rejectLink.appendChild(rejectImg);
+        messageLink.appendChild(messageImg);
         acceptWrapper.appendChild(acceptLink);
         rejectWrapper.appendChild(rejectLink);
+        messageWrapper.appendChild(messageLink);
         buttons.appendChild(acceptWrapper);
         buttons.appendChild(rejectWrapper);
+        buttons.appendChild(messageWrapper);
         personInfo.appendChild(personName);
         description.appendChild(descriptionText);
         leftSide.appendChild(personInfo);
@@ -159,16 +209,29 @@ function appendCandidates(candidates) {
         card.appendChild(leftSide);
         card.appendChild(rightSide);
 
+        if(!isTaskFinished && !isCandidateApproved) {
+            acceptLink.style.display = 'block';
+            rejectLink.style.display = 'block';
+        } else {
+            messageLink.style.display = 'block';
+        }
+
         candidatesWrapper.appendChild(card);
     });
 }
 
-const populateCandidates = async () => {
-    const candidatesWrapper = document.querySelector('.candidates-wrapper');
-    const candidates = await getCandidates();
-    appendCandidates(candidates);
-}
+const handleButtons = (taskStatus) => {
+    const editButton = document.querySelector('.page-button-edit');
+    const finishOrReopenButton = document.querySelector('.page-button-finish');
 
+    if(taskStatus === 'Aberta') {
+        editButton.style.display = 'flex';
+        finishOrReopenButton.style.display = 'flex';
+    } else {
+        editButton.style.display = 'none';
+        finishOrReopenButton.innerText = 'REABRIR DEMANDA';
+    }
+}
 window.addEventListener("load", async () => {
     const token = window.localStorage.getItem("token")
     const session = await getSession(token);
@@ -184,8 +247,10 @@ window.addEventListener("load", async () => {
         window.location.href = "../administrar-demandas/administrar-demandas.html";
     }
 
-    const candidates = await getCandidates();
-    await populateCandidates();
+    await getCandidates();
+    await populateCandidates(taskData.status);
+    
+    handleButtons(taskData.status);
 });
 
 $(".close").click(function () {
