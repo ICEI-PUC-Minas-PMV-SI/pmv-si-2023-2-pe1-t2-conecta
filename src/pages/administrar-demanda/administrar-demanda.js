@@ -3,6 +3,8 @@ import { Task } from "../../js/models/task.js";
 import { Organization } from "../../js/models/organization.js";
 import { Candidate } from "../../js/models/candidate.js";
 import { sendEmail } from "../../js/envio-email.js";
+import { PROJECT_URL } from "../../js/constants.js";
+
 
 const getTaskId = async () => {
     const urlParams = new URLSearchParams(window.location.search);
@@ -94,8 +96,8 @@ const populateCandidates = async (taskStatus) => {
                 await candidateManager.updateStatusById(candidate.id, 'Aprovado');
                 await sendEmail(
                     candidate.email,
-                    `${taskData.name}: candidatura aceita`,
-                    `Olá ${candidate.name}, sua candidatura para a demanda ${taskData.name} foi aceita! A ONG ${organizationData.name} entrará em contato com você em breve.`
+                    `${taskData.name}: candidatura aceita!`,
+                    `Olá ${candidate.name}, sua candidatura para a demanda ${taskData.name} foi aceita! <br> A ONG ${organizationData.name} entrará em contato com você em breve.`
                 );
             }
         };
@@ -107,9 +109,14 @@ const populateCandidates = async (taskStatus) => {
                 await candidateManager.updateStatusById(candidate.id, 'Reprovado');
             }
         };
-        messageWrapper.onclick = function () {
+        messageWrapper.onclick = async function () {
             alert('Depoimento solicitado.');
             this.style.display = 'none';
+            await sendEmail(
+                candidate.email,
+                `${taskData.name}: compartilhe sua experiência!`,
+                `Olá ${candidate.name}, a ONG ${organizationData.name} gostaria de saber como foi sua experiência de voluntariado. <br> <br> Compartilhe sua experiência através desse link: ${PROJECT_URL}/pages/cadastrar-depoimento/cadastrar-depoimento.html?id=${taskData.id}&candidateId=${candidate.id}`
+            );
         };
 
         card.onclick = function () {
@@ -140,7 +147,9 @@ const populateCandidates = async (taskStatus) => {
         if(!isTaskFinished && !isCandidateApproved) {
             acceptLink.style.display = 'block';
             rejectLink.style.display = 'block';
-        } else {
+        } 
+        
+        if(isTaskFinished) {
             messageLink.style.display = 'block';
         }
 
@@ -202,8 +211,8 @@ const populateCandidates = async (taskStatus) => {
                 await candidateManager.updateStatusById(candidate.id, 'Aprovado');
                 await sendEmail(
                     candidate.email,
-                    `${taskData.name}: candidatura aceita`,
-                    `Olá ${candidate.name}, sua candidatura para a demanda ${taskData.name} foi aceita! A ONG ${organizationData.name} entrará em contato com você em breve.`
+                    `${taskData.name}: candidatura aceita!`,
+                    `Olá ${candidate.name}, sua candidatura para a demanda ${taskData.name} foi aceita! <br> A ONG ${organizationData.name} entrará em contato com você em breve.`
                 );
             }
         };
@@ -215,9 +224,14 @@ const populateCandidates = async (taskStatus) => {
                 await candidateManager.updateStatusById(candidate.id, 'Reprovado');
             }
         };
-        messageWrapper.onclick = function () {
-            alert('Depoimento solicitado.')
-            this.style.display = 'none'
+        messageWrapper.onclick = async function () {
+            alert('Depoimento solicitado.');
+            this.style.display = 'none';
+            await sendEmail(
+                candidate.email,
+                `${taskData.name}: compartilhe sua experiência!`,
+                `Olá ${candidate.name}, a ONG ${organizationData.name} gostaria de saber como foi sua experiência de voluntariado. <br> <br> Compartilhe sua experiência através desse link: ${PROJECT_URL}/pages/cadastrar-depoimento/cadastrar-depoimento.html?id=${taskData.id}&candidateId=${candidate.id}`
+            );
         };
 
         card.onclick = function () {
