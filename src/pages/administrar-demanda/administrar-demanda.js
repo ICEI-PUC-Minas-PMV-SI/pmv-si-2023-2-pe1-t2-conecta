@@ -27,11 +27,14 @@ const populateCandidates = async (taskStatus) => {
 
     const candidates = await getCandidates();
     const candidatesWrapper = document.querySelector('.candidates-wrapper');
+    candidatesWrapper.innerHTML = '';
     const filteredCandidates = candidates.filter(candidate => candidate.status !== 'Reprovado');
 
     const candidateManager = new Candidate();
 
     for await (const candidate of filteredCandidates) {
+        if(isTaskFinished && candidate.status === 'Pendente') return;
+
         const isCandidateApproved = candidate.status === 'Aprovado';
 
         const card = document.createElement('div');
@@ -134,6 +137,7 @@ const populateCandidates = async (taskStatus) => {
     }
 
     for await (const candidate of filteredCandidates) {
+        if(isTaskFinished && candidate.status === 'Pendente') return;
         const isCandidateApproved = candidate.status === 'Aprovado';
 
         const card = document.createElement('div');
@@ -240,12 +244,31 @@ const handleButtons = (taskStatus) => {
     const editButton = document.querySelector('.page-button-edit');
     const finishOrReopenButton = document.querySelector('.page-button-finish');
 
+    const task = new Task();
+
     if(taskStatus === 'Aberta') {
         editButton.style.display = 'flex';
+        
         finishOrReopenButton.style.display = 'flex';
+        finishOrReopenButton.onclick = async function () {
+            if(confirm('Deseja finalizar a demanda?')) {
+                alert('Demanda finalizada.');
+                await task.updateStatusById(await getTaskId(), 'Finalizada');
+                await populateCandidates('Finalizada');
+                handleButtons('Finalizada');
+            }
+        }
     } else {
         editButton.style.display = 'none';
         finishOrReopenButton.innerText = 'REABRIR DEMANDA';
+        finishOrReopenButton.onclick = async function () {
+            if(confirm('Deseja reabrir a demanda?')) {
+                alert('Demanda reaberta.');
+                await task.updateStatusById(await getTaskId(), 'Aberta');
+                await populateCandidates('Aberta');
+                handleButtons('Aberta');
+            }
+        }
     }
 }
 window.addEventListener("load", async () => {

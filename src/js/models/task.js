@@ -57,6 +57,14 @@ export class Task {
 
         return await makeRequest(getURL(`tasks/${id}`), 'PUT', data);
     }
+    
+    async updateStatusById(id, newStatus) {
+        const data = {
+            status: newStatus
+        }
+        
+        return await makeRequest(getURL(`tasks/${id}`), 'PATCH', data);
+    }
 
     async deleteById(id) {
         return await makeRequest(getURL(`tasks/${id}`), 'DELETE');
