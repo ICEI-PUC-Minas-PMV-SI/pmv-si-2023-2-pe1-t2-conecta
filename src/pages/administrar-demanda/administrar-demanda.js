@@ -24,14 +24,16 @@ const getCandidates = async () => {
 
 const populateCandidates = async (taskStatus) => {
     const isTaskFinished = taskStatus === 'Finalizada';
-    
+
     const candidates = await getCandidates();
     const candidatesWrapper = document.querySelector('.candidates-wrapper');
     const filteredCandidates = candidates.filter(candidate => candidate.status !== 'Reprovado');
 
-    filteredCandidates.forEach(candidate => {
+    const candidateManager = new Candidate();
+
+    for await (const candidate of filteredCandidates) {
         const isCandidateApproved = candidate.status === 'Aprovado';
-        
+
         const card = document.createElement('div');
         const sectionWrapper = document.createElement('div');
         const header = document.createElement('div');
@@ -75,20 +77,27 @@ const populateCandidates = async (taskStatus) => {
         messageImg.alt = 'Message';
 
         buttons.onclick = fotoClick;
-        acceptWrapper.onclick = function () {
-            if(confirm('Deseja aceitar o voluntário?')) alert('Candidato aceito.')
-            this.style.display = 'none'
-            rejectWrapper.style.display = 'none'
+        acceptWrapper.onclick = async function () {
+            if(confirm('Deseja aceitar o voluntário?')) {
+                alert('Candidato aceito.');
+                this.style.display = 'none';
+                rejectWrapper.style.display = 'none';
+                await candidateManager.updateStatusById(candidate.id, 'Aprovado');
+            }
         };
-        rejectWrapper.onclick = function () {
-            if(confirm('Deseja recusar o voluntário?')) alert('Candidato recusado.')
-            acceptWrapper.style.display = 'none'
-            this.style.display = 'none'
+        rejectWrapper.onclick = async function () {
+            if(confirm('Deseja recusar o voluntário?')) {
+                alert('Candidato recusado.')
+                acceptWrapper.style.display = 'none';
+                this.style.display = 'none';
+                await candidateManager.updateStatusById(candidate.id, 'Reprovado');
+            }
         };
         messageWrapper.onclick = function () {
-            alert('Depoimento solicitado.')
-            this.style.display = 'none'
+            alert('Depoimento solicitado.');
+            this.style.display = 'none';
         };
+        
         card.onclick = function () {
             document.querySelector('.modal .task-name').innerText = candidate.name;
             document.querySelector('.modal .text').innerText = candidate.profile;
@@ -113,7 +122,7 @@ const populateCandidates = async (taskStatus) => {
         sectionWrapper.appendChild(description);
         sectionWrapper.appendChild(buttons);
         card.appendChild(sectionWrapper);
-        
+
         if(!isTaskFinished && !isCandidateApproved) {
             acceptLink.style.display = 'block';
             rejectLink.style.display = 'block';
@@ -122,11 +131,11 @@ const populateCandidates = async (taskStatus) => {
         }
 
         candidatesWrapper.appendChild(card);
-    });
+    }
 
-    filteredCandidates.forEach(candidate => {
+    for await (const candidate of filteredCandidates) {
         const isCandidateApproved = candidate.status === 'Aprovado';
-        
+
         const card = document.createElement('div');
         const leftSide = document.createElement('div');
         const rightSide = document.createElement('div');
@@ -170,20 +179,27 @@ const populateCandidates = async (taskStatus) => {
         messageImg.alt = 'Message';
 
         buttons.onclick = fotoClick;
-        acceptWrapper.onclick = function () {
-            if(confirm('Deseja aceitar o voluntário?')) alert('Candidato aceito.')
-            this.style.display = 'none'
-            rejectWrapper.style.display = 'none'
+        acceptWrapper.onclick = async function () {
+            if(confirm('Deseja aceitar o voluntário?')) {
+                alert('Candidato aceito.');
+                this.style.display = 'none';
+                rejectWrapper.style.display = 'none';
+                await candidateManager.updateStatusById(candidate.id, 'Aprovado');
+            }
         };
-        rejectWrapper.onclick = function () {
-            if(confirm('Deseja recusar o voluntário?')) alert('Candidato recusado.')
-            acceptWrapper.style.display = 'none'
-            this.style.display = 'none'
+        rejectWrapper.onclick = async function () {
+            if(confirm('Deseja recusar o voluntário?')) {
+                alert('Candidato recusado.')
+                acceptWrapper.style.display = 'none';
+                this.style.display = 'none';
+                await candidateManager.updateStatusById(candidate.id, 'Reprovado');
+            }
         };
         messageWrapper.onclick = function () {
             alert('Depoimento solicitado.')
             this.style.display = 'none'
         };
+        
         card.onclick = function () {
             document.querySelector('.modal .task-name').innerText = candidate.name;
             document.querySelector('.modal .text').innerText = candidate.profile;
@@ -217,7 +233,7 @@ const populateCandidates = async (taskStatus) => {
         }
 
         candidatesWrapper.appendChild(card);
-    });
+    }
 }
 
 const handleButtons = (taskStatus) => {
@@ -249,7 +265,7 @@ window.addEventListener("load", async () => {
 
     await getCandidates();
     await populateCandidates(taskData.status);
-    
+
     handleButtons(taskData.status);
 });
 
