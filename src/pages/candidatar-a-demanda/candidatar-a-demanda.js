@@ -7,6 +7,8 @@ import {
 import { findById as findOngById } from "../../js/models/organization.js";
 import { Candidate } from "../../js/models/candidate.js";
 
+const dataAtual = new Date();
+
 window.addEventListener("load", async () => {
     const ongName = document.getElementById("ongName");
     const ongId = getOrganizationId();
@@ -14,13 +16,15 @@ window.addEventListener("load", async () => {
     ongName.innerHTML = organization.name;
 });
 
-const dataAtual = new Date();
-
 document.getElementById("cpf").addEventListener("input", async () => {
     const cpf = document.getElementById("cpf").value;
 
     // Validar se o CPF possui 11 dígitos
     if (cpf.length === 14) {
+        if (!validaCPF(cpf)) {
+            alert("CPF inválido. Por favor, verifique o número e tente novamente.");
+            return;
+        }
         // Verificar se o CPF já está cadastrado
         const numberOfRegistrations = await countRegistrationsByCpf(cpf);
 
@@ -37,13 +41,13 @@ addInputFormatListener("phone", "(##) # ####-####");
 document.getElementById("cancelar").addEventListener("click", handleCancel);
 document.getElementById("enviar").addEventListener("click", handleSend);
 
-//funções de envio e cancelamento
+//função de cancelamento
 function handleCancel() {
     if (confirm(CONFIRM_CANCELAR_CANDIDATURA)) {
         window.location.href = LOCATION_REF_ADMINISTRAR_DEMANDAS;
     }
 }
-
+//função de envio
 async function handleSend(event) {
     event.preventDefault();
 
@@ -55,16 +59,6 @@ async function handleSend(event) {
         como: document.getElementById("como").value,
     }
     //validar campos
-    if (candidatura.cpf.length <= 0) {
-        alert(Required("CPF"));
-        return;
-    }
-
-    if (!candidatura.cpf.match(/^[0-9]{3}\.?[0-9]{3}\.?[0-9]{3}\-?[0-9]{2}$/)) {
-        alert("CPF inválido");
-        return;
-    }
-
     if (candidatura.nome.length <= 0) {
         alert(Required("Nome"));
         return;
@@ -81,11 +75,6 @@ async function handleSend(event) {
         return;
     }
 
-    if (candidatura.phone.length <= 0) {
-        alert(Required("Telefone"));
-        return;
-    }
-
     if (candidatura.como.length <= 0) {
         alert(Required("Como posso ajudar"));
         return;
@@ -99,8 +88,8 @@ async function handleSend(event) {
         return;
     }
 
-
     const taskID = parseInt(getTaskId());
+
     // enviar candidatura
     try {
         const candidate = new Candidate();
@@ -123,6 +112,24 @@ async function handleSend(event) {
 }
 
 /* Funções auxiliares */
+//valida cpf
+function validaCPF(cpf) {
+    cpf = cpf.replace(/\D/g, '');
+    if (cpf.toString().length != 11 || /^(\d)\1{10}$/.test(cpf)) return false;
+    let soma = 0, resto;
+    for (let i = 1; i <= 9; i++)
+        soma = soma + parseInt(cpf.substring(i - 1, i)) * (11 - i);
+    resto = (soma * 10) % 11;
+    if ((resto == 10) || (resto == 11)) resto = 0;
+    if (resto != parseInt(cpf.substring(9, 10))) return false;
+    soma = 0;
+    for (let i = 1; i <= 10; i++)
+        soma = soma + parseInt(cpf.substring(i - 1, i)) * (12 - i);
+    resto = (soma * 10) % 11;
+    if ((resto == 10) || (resto == 11)) resto = 0;
+    if (resto != parseInt(cpf.substring(10, 11))) return false;
+    return true;
+}
 // adicionar máscara nos campos
 function formatInput(input, format) {
     const value = input.value.replace(/\D/g, "");
@@ -192,6 +199,7 @@ async function countRegistrationsByCpf(cpf) {
         return 0;
     }
 }
+// conta a data limite do pendente
 function countPendingActive(candidateTimestamp) {
     const dataCadastrada = new Date(candidateTimestamp);
     const numeroData = new Date().setDate(dataCadastrada.getDate() + 3);
