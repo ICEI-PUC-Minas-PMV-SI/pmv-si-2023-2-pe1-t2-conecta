@@ -12,10 +12,10 @@ function modal(item, event) {
     $('.city').html(city)
 
     if (city != 'Remoto') {
-        let addres = item.find('.addres').text()
-        $('.addres').html(addres)
+        let address = item.find('.address').text()
+        $('.address').html(address)
     } else {
-        $('.addres').html('')
+        $('.address').html('')
     }
 
     $('#myModal').css('display', 'block');

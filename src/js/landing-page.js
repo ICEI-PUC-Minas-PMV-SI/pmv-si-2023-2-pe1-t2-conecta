@@ -39,7 +39,7 @@ const populateDemanda = async () => {
         verticalTaskCard.destination = `../candidatar-a-demanda/candidatar-a-demanda.html?id=${tasks.id}`;
         verticalTaskCard.owner = organizationData.name
         verticalTaskCard.image = organizationData.image;
-        verticalTaskCard.addres = organizationData.street+', '+organizationData.number
+        verticalTaskCard.address = organizationData.street+', '+organizationData.number
 
         tasksWrapper.appendChild(verticalTaskCard);
    
@@ -55,7 +55,7 @@ const populateDemanda = async () => {
         horizontalTaskCard.destination = `../candidatar-a-demanda/candidatar-a-demanda.html?id=${tasks.id}`;
         horizontalTaskCard.owner = organizationData.name
         horizontalTaskCard.image = organizationData.image;
-        horizontalTaskCard.addres = organizationData.street+', '+organizationData.number
+        horizontalTaskCard.address = organizationData.street+', '+organizationData.number
 
 
         tasksWrapper.appendChild(horizontalTaskCard);
