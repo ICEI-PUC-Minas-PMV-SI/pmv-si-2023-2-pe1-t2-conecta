@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="administrar-demandas.css">
     <script type="module" src="../../components/header/header.js"></script>
     <script type="module" src="../../components/footer/footer.js"></script>
-
+    <script type="module" src="./administrar-demanda.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 
@@ -87,6 +87,12 @@
                                 <div class="location-tag">São Paulo, SP
                                 </div>
                             </div>
+                            
+                            <div style="display:none">
+                                <div class="address">
+                                </div>
+                            </div>
+
                         </div>
                     </div>
                 </div>
@@ -126,6 +132,12 @@
                                 <div class="location-tag">Remoto
                                 </div>
                             </div>
+
+                            <div style="display:none">
+                                <div class="address">
+                                </div>
+                            </div>
+
                         </div>
                     </div>
                 </div>
@@ -166,6 +178,12 @@
                                 <div class="location-tag">Remoto
                                 </div>
                             </div>
+
+                            <div style="display:none">
+                                <div class="address">
+                                </div>
+                            </div>
+
                         </div>
                     </div>
                 </div>
@@ -206,6 +224,12 @@
                                 <div class="location-tag">São Paulo, SP
                                 </div>
                             </div>
+
+                            <div style="display:none">
+                                <div class="address">
+                                </div>
+                            </div>
+
                         </div>
                     </div>
                 </div>
@@ -229,6 +253,12 @@
                                 <div class="location-tag">São Paulo, SP
                                 </div>
                             </div>
+
+                            <div style="display:none">
+                                <div class="address">
+                                </div>
+                            </div>
+
                             <div class="status-wrapper">
                                 <div class="status-info">
                                     <img class="status-image" src="../../assets/icons/red-dot.png" alt="">
@@ -270,6 +300,12 @@
                                 <div class="location-tag">Remoto
                                 </div>
                             </div>
+
+                            <div style="display:none">
+                                <div class="address">
+                                </div>
+                            </div>
+
                             <div class="status-wrapper">
                                 <div class="status-info">
                                     <img class="status-image" src="../../assets/icons/green-dot.png" alt="">
@@ -312,6 +348,12 @@
                                 <div class="location-tag">Remoto
                                 </div>
                             </div>
+
+                            <div style="display:none">
+                                <div class="address">
+                                </div>
+                            </div>
+
                             <div class="status-wrapper">
                                 <div class="status-info">
                                     <img class="status-image" src="../../assets/icons/green-dot.png" alt="">
@@ -354,6 +396,12 @@
                                 <div class="location-tag"> São Paulo, SP
                                 </div>
                             </div>
+
+                            <div style="display:none">
+                                <div class="address">
+                                </div>
+                            </div>
+
                             <div class="status-wrapper">
                                 <div class="status-info">
                                     <img class="status-image" src="../../assets/icons/red-dot.png" alt="">
@@ -415,8 +463,25 @@
     </div>
 
     <script src="../../js/index.js"></script>
-    <script src="./administrar-demanda.js"></script>
     <script src="../../js/modal.js"></script>
+    <script>
+        $("#filtroSelect").click(function () {
+    if ($('.filterButton').hasClass('visible')) {
+        $('.filterButton').addClass('invisible')
+        $('.filterButton').removeClass('visible')
+        $('.filterButton').css('display', 'none')
+        $('.icon_black').css('display', 'none')
+        $('.icon_white').css('display', 'block')
+    } else {
+        $('.filterButton').addClass('visible')
+        $('.filterButton').removeClass('invisible')
+        $('.filterButton').css('display', 'block')
+        $('.icon_black').css('display', 'block')
+        $('.icon_white').css('display', 'none')
+    }
+});
+    </script>
+
 </body>
 
 </html>

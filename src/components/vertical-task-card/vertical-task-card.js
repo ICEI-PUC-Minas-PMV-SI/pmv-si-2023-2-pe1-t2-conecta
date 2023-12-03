@@ -50,15 +50,9 @@ const makeTemplate = () => {
                     <div style="display:none">
                         <div class="address">
                         </div>
-                </div>
-
-                </div>
-
-                <div style="display:none">
-                    <div class="addres">
                     </div>
-                </div>
 
+                </div>
             </div>
         </div>
     </div>
