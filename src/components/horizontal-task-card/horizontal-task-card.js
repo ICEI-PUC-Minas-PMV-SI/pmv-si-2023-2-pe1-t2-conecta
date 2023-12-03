@@ -33,6 +33,12 @@ const makeTemplate = () => {
             <img class="image-location" src="${rootPath}/assets/icons/location.png" alt="Location">
             <div class="location-tag"></div>
         </div>
+
+        <div style="display:none">
+            <div class="addres">
+            </div>
+         </div>
+
     </div>
     <div class="right-side" onclick="fotoClick(event)">
     <a href=${getPagePath("pagina-da-ong")}>
@@ -341,10 +347,15 @@ export class HorizontalTaskCard extends HTMLElement {
             helpButton.href = this.destination;
         }
 
+        if (this.addres) {
+            const addres = this.root.querySelector('.addres');
+            addres.innerText = this.addres;
+        }
+
     }
 
     static get observedAttributes() {
-        return ['name', 'owner', 'description', 'type', 'image', 'destination'];
+        return ['name', 'owner', 'description', 'type', 'image', 'destination', 'addres'];
     }
 
     get name() {
@@ -393,6 +404,14 @@ export class HorizontalTaskCard extends HTMLElement {
 
     set destination(value) {
         this.setAttribute('destination', value);
+    }
+
+    get addres() {
+        return this.getAttribute('addres');
+    }
+
+    set addres(value) {
+        this.setAttribute('addres', value);
     }
 }
 

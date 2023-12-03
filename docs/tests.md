@@ -48,20 +48,20 @@ Preencha a tabela com o plano dos testes. Para cada Caso de Teste (CT), associe 
 **Dados de entrada** | #
 **Resultado obtido** | #
 
-**Caso de Teste** | **CT04 - Recuperação de Senha**
- :--------------: | ------------
-**Procedimento**  | 1) # <br> 2) # <br> 3) #
-**Requisitos associados** | RF-003
-**Resultado esperado** | #
-**Dados de entrada** | #
-**Resultado obtido** | #
+|     **Caso de Teste**     | **CT04 - Recuperação de Senha**                                                                                                                                                                                                                                                                                                                                                                                                                  |
+|:-------------------------:|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|     **Procedimento**      | 1) Acessar a [página de login](https://icei-puc-minas-pmv-si.github.io/pmv-si-2023-2-pe1-t2-conecta/pages/login/login.html)  <br> 2) Insira o email de uma ONG previamente cadastrada <br> 3) Clique no botão `Esqueceu a senha?` <br> 4) Acesse o link enviado por email (verifique a caixa de spam) <br> 5) Iinsira a nova senha a a confirmação <br> 6) Clique no botão `Redefinir` <br> 7) Realize o login utilizando o email e a nova senha |
+| **Requisitos associados** | RF-003                                                                                                                                                                                                                                                                                                                                                                                                                                           |
+|  **Resultado esperado**   | Senha do usuário da ONG ser alterada                                                                                                                                                                                                                                                                                                                                                                                                             |
+|   **Dados de entrada**    | Email, nova senha e confirmação da nova senha                                                                                                                                                                                                                                                                                                                                                                                                    |
+|   **Resultado obtido**    | Sucesso.                                                                                                                                                                                                                                                                                                                                                                                                                                         |
 
 |     **Caso de Teste**     | **CT05 - Página da ONG**                                                                                                                                                                                                                                                                                                       |
 |:-------------------------:|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |     **Procedimento**      | 1) Acessar [página da ONG](https://icei-puc-minas-pmv-si.github.io/pmv-si-2023-2-pe1-t2-conecta/pages/pagina-da-ong/pagina-da-ong.html?id=1) <br> 2) Validar que os dados são carregados corretamente <br> 3) Alterar `id=1` para `id=2` ao final da URL <br> 4) Validar que os dados de outra ONG são carregados corretamente |
 | **Requisitos associados** | RF-004                                                                                                                                                                                                                                                                                                                         |
 |  **Resultado esperado**   | Página é carregada com os dados da ONG corretamente.                                                                                                                                                                                                                                                                           |
-|   **Dados de entrada**    | Nenhum                                                                                                                                                                                                                                                                                                                         |
+|   **Dados de entrada**    | Nenhum.                                                                                                                                                                                                                                                                                                                        |
 |   **Resultado obtido**    | Sucesso.                                                                                                                                                                                                                                                                                                                       |
 
 **Caso de Teste** | **CT06 - Gerenciamento de Perfil da ONG**
@@ -96,13 +96,13 @@ Preencha a tabela com o plano dos testes. Para cada Caso de Teste (CT), associe 
 **Dados de entrada** | #
 **Resultado obtido** | #
 
-**Caso de Teste** | **CT10 - Visualização de Solicitações por Voluntários**
- :--------------: | ------------
-**Procedimento**  | 1) # <br> 2) # <br> 3) #
-**Requisitos associados** | RF-009
-**Resultado esperado** | #
-**Dados de entrada** | #
-**Resultado obtido** | #
+|     **Caso de Teste**     | **CT10 - Visualização de Solicitações por Voluntários**                                                                                                                                                                                                                                                                                                                |
+|:-------------------------:|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|     **Procedimento**      | 1) Navegar até a [página de demandas](https://icei-puc-minas-pmv-si.github.io/pmv-si-2023-2-pe1-t2-conecta/pages/pagina-de-demandas/pagina-de-demandas.html) <br> 2) Observe que as demandas carregam automaticamente <br> 3) Clique no ícone de filtro <br> 4) Selecione uma opção <br> 5) Perceba que as demandas são recarregadas de acordo com a opção selecionada |
+| **Requisitos associados** | RF-009                                                                                                                                                                                                                                                                                                                                                                 |
+|  **Resultado esperado**   | Demandas são listadas na tela de acordo com o valor do filtro                                                                                                                                                                                                                                                                                                          |
+|   **Dados de entrada**    | Opção selecionada do filtro                                                                                                                                                                                                                                                                                                                                            |
+|   **Resultado obtido**    | Sucesso                                                                                                                                                                                                                                                                                                                                                                |
 
 **Caso de Teste** | **CT11 - Voluntariar-se em Projetos Específicos**
  :--------------: | ------------
@@ -122,11 +122,11 @@ Preencha a tabela com o plano dos testes. Para cada Caso de Teste (CT), associe 
 
 **Caso de Teste** | **CT13 - Página "Como Começar"**
  :--------------: | ------------
-**Procedimento**  | 1) # <br> 2) # <br> 3) #
+**Procedimento**  |  1) Acessar [página Como Começar](https://sgapucminasbr-my.sharepoint.com/:v:/g/personal/954530_sga_pucminas_br/EcG84oXGA2VNnPTVaXHQHZkBZArrmZzW7t3rukBfIAykTA?e=bmM92g) <br> 2) Validar que as informações são carregadas corretamente <br> 
 **Requisitos associados** | RF-012
-**Resultado esperado** | #
-**Dados de entrada** | #
-**Resultado obtido** | #
+**Resultado esperado** | Página carregada com imagens e textos.
+**Dados de entrada** | Nenhum.
+**Resultado obtido** | Sucesso.
 
 **Caso de Teste** | **CT14 - Página Inicial (Landing Page)**
  :--------------: | ------------
@@ -136,21 +136,21 @@ Preencha a tabela com o plano dos testes. Para cada Caso de Teste (CT), associe 
 **Dados de entrada** | Nenhum.
 **Resultado obtido** | Sucesso.
 
-**Caso de Teste** | **CT15 - Página "Perguntas Frequentes"**
- :--------------: | ------------
-**Procedimento**  | 1) # <br> 2) # <br> 3) #
-**Requisitos associados** | RF-014
-**Resultado esperado** | #
-**Dados de entrada** | #
-**Resultado obtido** | #
+|     **Caso de Teste**     | **CT15 - Página "Perguntas Frequentes"**                                                                                                                                                                                                                                       |
+|:-------------------------:|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|     **Procedimento**      | 1) Acessar a [página de perguntas frequentes](https://icei-puc-minas-pmv-si.github.io/pmv-si-2023-2-pe1-t2-conecta/pages/perguntas-frequentes/perguntas-frequentes.html) <br> 2) Clicar nas setas ao lado das perguntas <br> 3) Validar que a resposta das perguntas é exibida |
+| **Requisitos associados** | RF-014                                                                                                                                                                                                                                                                         |
+|  **Resultado esperado**   | Página carregada e texto exibido                                                                                                                                                                                                                                               |
+|   **Dados de entrada**    | Nenhum                                                                                                                                                                                                                                                                         |
+|   **Resultado obtido**    | Sucesso                                                                                                                                                                                                                                                                        |
 
 **Caso de Teste** | **CT16 - Página "Sobre o Voluntariado"**
  :--------------: | ------------
-**Procedimento**  | 1) # <br> 2) # <br> 3) #
+**Procedimento**  | 1)  Acessar a [página sobre o voluntariado](https://icei-puc-minas-pmv-si.github.io/pmv-si-2023-2-pe1-t2-conecta/pages/sobre-o-voluntariado/sobre-o-voluntariado.html)<br> 2) Verificar se texto e imagem são exibidos <br>
 **Requisitos associados** | RF-015
-**Resultado esperado** | #
-**Dados de entrada** | #
-**Resultado obtido** | #
+**Resultado esperado** | Visualizar a página "Sobre o Voluntariado" com texto e imagem carregados.
+**Dados de entrada** | Nenhum
+**Resultado obtido** | Sucesso.
 
 **Caso de Teste** | **CT17 - Página "Por Que Ser Voluntário?"**
  :--------------: | ------------
@@ -162,11 +162,11 @@ Preencha a tabela com o plano dos testes. Para cada Caso de Teste (CT), associe 
 
 **Caso de Teste** | **CT18 - Página "Histórias de Sucesso"**
  :--------------: | ------------
-**Procedimento**  | 1) # <br> 2) # <br> 3) #
+**Procedimento**  | 1)  Acessar a [página histórias de sucesso](https://icei-puc-minas-pmv-si.github.io/pmv-si-2023-2-pe1-t2-conecta/pages/historias-sucesso/historias-sucesso.html) <br> 2) Verificar se texto e imagem são exibidos <br>
 **Requisitos associados** | RF-017
-**Resultado esperado** | #
-**Dados de entrada** | #
-**Resultado obtido** | #
+**Resultado esperado** | Visualizar a página "Histórias de Sucesso" com texto e imagem carregados.
+**Dados de entrada** | Nenhum.
+**Resultado obtido** | Sucesso.
 
 **Caso de Teste** | **CT19 - Filtro de Demandas por Critérios**
  :--------------: | ------------
@@ -208,18 +208,17 @@ Preencha a tabela com o plano dos testes. Para cada Caso de Teste (CT), associe 
 **Dados de entrada** | #
 **Resultado obtido** | #
 
-**Caso de Teste** | **CT24 - Disponibilização de Depoimentos no Perfil da ONG**
- :--------------: | ------------
-**Procedimento**  | 1) # <br> 2) # <br> 3) #
-**Requisitos associados** | RF-023
-**Resultado esperado** | #
-**Dados de entrada** | #
-**Resultado obtido** | #
-
+|     **Caso de Teste**     | **CT24 - Disponibilização de Depoimentos no Perfil da ONG**                                                                                                                                                                                                                                                                                |
+|:-------------------------:|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|     **Procedimento**      | 1) Acessar [página da ONG](https://icei-puc-minas-pmv-si.github.io/pmv-si-2023-2-pe1-t2-conecta/pages/pagina-da-ong/pagina-da-ong.html?id=1) <br> 2) Validar que os depoimentos são carregados corretamente <br> 3) Alterar `id=1` para `id=2` ao final da URL <br> 4) Validar que os depoimentos de outra ONG são carregados corretamente |
+| **Requisitos associados** | RF-023                                                                                                                                                                                                                                                                                                                                     |
+|  **Resultado esperado**   | Depoimentos enviados por voluntários exibidos corretamente                                                                                                                                                                                                                                                                                 |
+|   **Dados de entrada**    | Nenhum                                                                                                                                                                                                                                                                                                                                     |
+|   **Resultado obtido**    | Sucesso                                                                                                                                                                                                                                                                                                                                    |
 
 **Caso de Teste** | **CT25 - Responsividade**
  :--------------: | ------------
-**Procedimento**  | 1) O usuário acessa a aplicação por meio de um dispositivo móvel, como um smartphone ou tablet. <br> 2) O usuário navega pelas diferentes funcionalidades da aplicação utilizando o dispositivo móvel. <br>
+**Procedimento**  | 1) O usuário acessa [a aplicação](https://icei-puc-minas-pmv-si.github.io/pmv-si-2023-2-pe1-t2-conecta/index.html) por meio de um dispositivo móvel, como um smartphone ou tablet. <br> 2) O usuário navega pelas diferentes funcionalidades da aplicação utilizando o dispositivo móvel. <br>
 **Requisitos associados** | RNF-001
 **Resultado esperado** | A aplicação é responsiva e se adapta adequadamente ao tamanho da tela em dispositivos móveis, mantendo todas as funcionalidades acessíveis e funcionais.
 **Dados de entrada** | Acesso à aplicação por meio de um dispositivo móvel.
@@ -259,11 +258,11 @@ Preencha a tabela com o plano dos testes. Para cada Caso de Teste (CT), associe 
 
 **Caso de Teste** | **CT30 - Compatibilidade com Navegadores**
  :--------------: | ------------
-**Procedimento**  | 1) # <br> 2) # <br> 3) #
+**Procedimento**  | 1) O usuário acessa a aplicação por meio dos navegadores Google Chrome, Mozilla Firefox, Microsoft Edge e Safari. <br> 2) O usuário navega pelas diferentes funcionalidades da aplicação em cada um dos navegadores. <br> 3) O usuário verifica se o layout da aplicação é intuitivo e de fácil entendimento em cada um dos navegadores.
 **Requisitos associados** | RNF-006
-**Resultado esperado** | #
-**Dados de entrada** | #
-**Resultado obtido** | #
+**Resultado esperado** | A aplicação é compatível e funciona corretamente nos navegadores Google Chrome, Mozilla Firefox, Microsoft Edge e Safari.
+**Dados de entrada** | Nenhum.
+**Resultado obtido** | Sucesso.
 
 ## Registro dos Testes de Software
 
@@ -284,10 +283,10 @@ Esta seção deve apresentar o relatório com as evidências dos testes de softw
 | Requisito Associado               | RF-002 - A aplicação deve fornecer um sistema de autenticação seguro, permitindo que as ONGs acessem suas contas por meio de um processo de login.                                                                  |
 | Link do vídeo do teste realizado: | COLOQUE SEU VIDEO AQUI | 
 
-| *Caso de Teste*                   | *CT04 - Recuperação de Senha*                                                                                                |
-|-----------------------------------|-------------------------------------------------------------------------------------------------------------------------------|
-| Requisito Associado               | RF-003 - A aplicação deve oferecer um processo de recuperação de senha, permitindo que usuários redefinam suas senhas em caso de esquecimento ou perda.                                                                  |
-| Link do vídeo do teste realizado: | COLOQUE SEU VIDEO AQUI | 
+| *Caso de Teste*                   | *CT04 - Recuperação de Senha*                                                                                                                           |
+|-----------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Requisito Associado               | RF-003 - A aplicação deve oferecer um processo de recuperação de senha, permitindo que usuários redefinam suas senhas em caso de esquecimento ou perda. |
+| Link do vídeo do teste realizado: | https://sgapucminasbr-my.sharepoint.com/:v:/g/personal/1495429_sga_pucminas_br/EaIh9-neGLxHmacLjqbBF_IBAASxVuGPyTV1nd5sQoJlWw                           |
 
 | *Caso de Teste*                   | *CT05 - Página da ONG*                                                                                                                                             |
 |-----------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -314,10 +313,10 @@ Esta seção deve apresentar o relatório com as evidências dos testes de softw
 | Requisito Associado               | RF-008 - As ONGs devem poder editar suas demandas (alterar, excluir e editar os dados) a qualquer momento. |
 | Link do vídeo do teste realizado: | COLOQUE SEU VIDEO AQUI                                   |
 
-| *Caso de Teste*                   | *CT10 - Visualização de Solicitações por Voluntários*                                                                                                                                             |
-|-----------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Requisito Associado               | RF-009 - A aplicação deve permitir que os voluntários visualizem as solicitações de ajuda técnica feitas pelas ONGs. |
-| Link do vídeo do teste realizado: | COLOQUE SEU VIDEO AQUI                                   |
+| *Caso de Teste*                   | *CT10 - Visualização de Solicitações por Voluntários*                                                                                  |
+|-----------------------------------|----------------------------------------------------------------------------------------------------------------------------------------|
+| Requisito Associado               | RF-009 - A aplicação deve permitir que os voluntários visualizem as solicitações de ajuda técnica feitas pelas ONGs.                   |
+| Link do vídeo do teste realizado: | https://sgapucminasbr-my.sharepoint.com/:v:/g/personal/1495429_sga_pucminas_br/EQNgsGco83RDq0shdoI6BGYBA0kVVNbTrLcp_VOlT92o_Q?e=3St7br |
 
 | *Caso de Teste*                   | *CT11 - Voluntariar-se em Projetos Específicos*                                                                                                                                             |
 |-----------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -332,22 +331,22 @@ Esta seção deve apresentar o relatório com as evidências dos testes de softw
 | *Caso de Teste*                   | *CT13 - Página "Como Começar"*                                                                                                                                             |
 |-----------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Requisito Associado               | RF-012 - A aplicação deve apresentar a página “Como Começar” que orienta os visitantes sobre os passos necessários para se tornarem voluntários registrados na aplicação. |
-| Link do vídeo do teste realizado: | COLOQUE SEU VIDEO AQUI                                   |
+| Link do vídeo do teste realizado: | https://sgapucminasbr-my.sharepoint.com/:v:/g/personal/954530_sga_pucminas_br/EcG84oXGA2VNnPTVaXHQHZkBZArrmZzW7t3rukBfIAykTA?e=bmM92g                                   |
 
 | *Caso de Teste*                   | *CT14 - Página Inicial (Landing Page)*                                                                                                                                             |
 |-----------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Requisito Associado               | RF-013 - Deve existir uma página inicial (landing page) informativa que apresenta o propósito da plataforma e incentiva tanto as ONGs quanto os voluntários a utilizar a aplicação. |
 | Link do vídeo do teste realizado: |https://sgapucminasbr-my.sharepoint.com/:v:/g/personal/954530_sga_pucminas_br/EZjvZghuoPxFg_UrBrsA_SoBJf27dddKeMgGc5fY5tE5AQ?e=j4cBwt                                   |
 
-| *Caso de Teste*                   | *CT15 - Página "Perguntas Frequentes"*                                                                                                                                             |
-|-----------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| *Caso de Teste*                   | *CT15 - Página "Perguntas Frequentes"*                                                                                                                               |
+|-----------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Requisito Associado               | RF-014 - A aplicação deve conter a página “Perguntas Frequentes” que aborda as dúvidas mais comuns dos visitantes em relação ao voluntariado e ao uso da plataforma. |
-| Link do vídeo do teste realizado: | COLOQUE SEU VIDEO AQUI                                   |
+| Link do vídeo do teste realizado: | https://sgapucminasbr-my.sharepoint.com/:v:/g/personal/1495429_sga_pucminas_br/EToUbUHz80ZJijlp55wDmp4B5dv7tqAwpvK5SNnfMaVfDQ?e=dWPv04                               |
 
 | *Caso de Teste*                   | *CT16 - Página "Sobre o Voluntariado"*                                                                                                                                             |
 |-----------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Requisito Associado               | RF-015 - A aplicação deve apresentar a página “Sobre o Voluntariado” que fornece informações detalhadas sobre o conceito de trabalho voluntário, destacando seu impacto positivo na sociedade e nas comunidades. |
-| Link do vídeo do teste realizado: | COLOQUE SEU VIDEO AQUI                                   |
+| Link do vídeo do teste realizado: | https://sgapucminasbr-my.sharepoint.com/:v:/g/personal/954530_sga_pucminas_br/EVorhCzAhtFMkyV2SYWY25QBD79JhwYVEws4H8xuQC8y6w?e=gKQ8oT                                   |
 
 | *Caso de Teste*                   |*CT17 - Página "Por Que Ser Voluntário?"*                                                                                                                                             |
 |-----------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -357,7 +356,7 @@ Esta seção deve apresentar o relatório com as evidências dos testes de softw
 | *Caso de Teste*                   | *CT18 - Página "Histórias de Sucesso"*                                                                                                                                             |
 |-----------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Requisito Associado               | RF-017 A aplicação deve apresentar a página “Histórias de Sucesso” que destaca projetos anteriores realizados por meio da plataforma, com resultados, depoimentos de voluntários e o impacto positivo alcançado. |
-| Link do vídeo do teste realizado: | COLOQUE SEU VIDEO AQUI                                   |
+| Link do vídeo do teste realizado: | https://sgapucminasbr-my.sharepoint.com/:v:/g/personal/954530_sga_pucminas_br/ESFLHyIh6OtAiM_auQisuD8B2Bb2desQSpKByEz_Yks2cw?e=LUM0he                                   |
 
 | *Caso de Teste*                   | *CT19 - Filtro de Demandas por Critérios*                                                                                                                                             |
 |-----------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -384,10 +383,10 @@ Esta seção deve apresentar o relatório com as evidências dos testes de softw
 | Requisito Associado               | RF-022 - A aplicação deve apresentar uma página para depoimento da solicitação que o voluntário participou, que só poderá ser acessada através do link recebido via e-mail, com um formulário para preenchimento. |
 | Link do vídeo do teste realizado: | COLOQUE SEU VIDEO AQUI                                   |
 
-| *Caso de Teste*                   | *CT24 - Disponibilização de Depoimentos no Perfil da ONG*                                                                                                                                             |
-|-----------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| *Caso de Teste*                   | *CT24 - Disponibilização de Depoimentos no Perfil da ONG*                                                |
+|-----------------------------------|----------------------------------------------------------------------------------------------------------|
 | Requisito Associado               | RF-023 Os depoimentos dos voluntários devem ser disponibilizados no perfil da ONG que fez a solicitação. |
-| Link do vídeo do teste realizado: | COLOQUE SEU VIDEO AQUI                                   |
+| Link do vídeo do teste realizado: | https://sgapucminasbr-my.sharepoint.com/personal/1495429_sga_pucminas_br/_layouts/15/stream.aspx?id=%2Fpersonal%2F1495429%5Fsga%5Fpucminas%5Fbr%2FDocuments%2Fpagina%2Dda%2Dong%2Emp4&ga=1&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview                                                                                   |
 
 | *Caso de Teste*                   | *CT25 Responsividade*                                                                                                                                             |
 |-----------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -417,7 +416,7 @@ Esta seção deve apresentar o relatório com as evidências dos testes de softw
 | *Caso de Teste*                   | *CT30 - Compatibilidade com Navegadores*                                                                                                                                             |
 |-----------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Requisito Associado               | RNF-006 O sistema deve ser capaz de ser executado nas versões mais recentes dos principais navegadores do mercado, como: Chrome, Firefox, Edge e Safari. |
-| Link do vídeo do teste realizado: | COLOQUE SEU VIDEO AQUI                                   |
+| Link do vídeo do teste realizado: | Google Chrome (https://sgapucminasbr-my.sharepoint.com/:v:/g/personal/954530_sga_pucminas_br/EY-z6ZowptVGsfrGlXmflekBmXeqN6eKZYgyVgsJYr6ZqQ?e=GxYJJJ)<br>  Mozilla Firefox (https://sgapucminasbr-my.sharepoint.com/:v:/g/personal/954530_sga_pucminas_br/EcaH_zL7IBpIkR8U_nHOMvsBa-8Amb47AqPtMluHAWEgxg?e=aYd0rw)  <br> Microsoft Edge (https://sgapucminasbr-my.sharepoint.com/:v:/g/personal/954530_sga_pucminas_br/EVJmyWSHHE5JimkdWgo3YwEBfVJ948MpBwClxtqcV9g88w?e=eNDJzH)  <br> Safari (https://sgapucminasbr-my.sharepoint.com/:v:/g/personal/954530_sga_pucminas_br/ETJOh6A52lxEsoUVuqWKiBQBhTVA0SoR21PxkkcClgv7XA?e=D4KOjo)                         | 
 
 
 
