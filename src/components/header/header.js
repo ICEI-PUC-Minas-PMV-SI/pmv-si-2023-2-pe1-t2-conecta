@@ -30,56 +30,58 @@ const makeTemplate = (variant) => {
 
     const template = document.createElement('template');
     template.innerHTML = `
-    <div class="root">
+        <div class="root">
+        
+        <div id="page-overlay"></div>
+        
+        <header class="header-desktop">
+            <div class="home-logo-wrapper">
+            <a href=${getPagePath("index")}><img src="${rootPath}/assets/images/logo-conecta.png" alt="Logo Conecta"></div></a>
+            <div class="buttons-header-wrapper">
+                <a href=${getPagePath("pagina-de-demandas")} class="header-button oportunidades-button">OPORTUNIDADES</a>
+                <a style="${token == null ? "" : "display: none"}" href=${getPagePath("login")}  class="header-button area-da-ong-button">ÁREA DA ONG</a>
+                <a id="logout-click" style="${token == null ? "display: none" : ""}" id="logout-click" href="#" class="header-button area-da-ong-button">SAIR</a>
+            </div>
     
-    <div id="page-overlay"></div>
-    
-    <header class="header-desktop">
-        <div class="home-logo-wrapper">
-        <a href=${getPagePath("index")}><img src="${rootPath}/assets/images/logo-conecta.png" alt="Logo Conecta"></div></a>
-        <div class="buttons-header-wrapper">
-            <a href=${getPagePath("login")}  class="header-button area-da-ong-button">ÁREA DA ONG</a>
-            <a href=${getPagePath("pagina-de-demandas")} class="header-button oportunidades-button">OPORTUNIDADES</a>
+        </header>
+        
+        <header class="header-mobile"></header>
+        
+        <nav class="mobile-menu" id="mobile-menu">
+        
+        <div class="header-menu">
+            <img class="menu-toggle open-menu" src="${rootPath}/assets/components/close-button.png" alt="Close menu">
         </div>
-
-    </header>
     
-    <header class="header-mobile"></header>
+        <div class="mobile-menu-content">
+            <div class="authentication-area" style="${token == null ? "" : "display: none"}">
+                <p class="text">área da ong</p>
+                <a class="authentication-button" href=${getPagePath("cadastrar-ong")} >CADASTRE-SE</a>
+                <a class="authentication-button" href=${getPagePath("login")}>LOGIN</a>
+            </div>
     
-    <nav class="mobile-menu" id="mobile-menu">
+            <div id="authenticated-menu" style="${token == null ? "display: none" : ""}" class="authentication-area">
+                <p class="text">área da ong</p>
+                <a class="authentication-button" href=${getPagePath("pagina-da-ong")} >PERFIL</a>
+                <a class="authentication-button" href=${getPagePath("administrar-demandas")}>DEMANDAS</a>
+                <a id="logout-mobile-click" class="authentication-button" href="#">SAIR</a>
+            </div>
     
-    <div class="header-menu">
-        <img class="menu-toggle open-menu" src="${rootPath}/assets/components/close-button.png" alt="Close menu">
-    </div>
-
-    <div class="mobile-menu-content">
-        <div class="authentication-area" style="${token == null ? "" : "display: none"}">
-            <p class="text">área da ong</p>
-            <a class="authentication-button" href=${getPagePath("cadastrar-ong")} >CADASTRE-SE</a>
-            <a class="authentication-button" href=${getPagePath("login")}>LOGIN</a>
+            <div class="divider-line"></div>
+    
+            <a class="navigation-button" href=${getPagePath("pagina-de-demandas")} >OPORTUNIDADES</a>
+            <ul>
+                <li><a class="navigation-button" href=${getPagePath("sobre-o-voluntariado")} >sobre o voluntariado</a></li>
+                <li><a class="navigation-button" href=${getPagePath("como-comecar")} >como começar?</a></li>
+                <li><a class="navigation-button" href=${getPagePath("por-que-ser-voluntario")} >por que ser voluntário?</a></li>
+                <li><a class="navigation-button" href=${getPagePath("historias-sucesso")} >histórias de sucesso</a></li>
+                <li><a class="navigation-button" href=${getPagePath("perguntas-frequentes")} >perguntas frequentes</a></li>
+            </ul>
         </div>
-
-        <div id="authenticated-menu" style="${token == null ? "display: none" : ""}" class="authentication-area">
-            <p class="text">área da ong</p>
-            <a class="authentication-button" href=${getPagePath("pagina-da-ong")} >PERFIL</a>
-            <a class="authentication-button" href=${getPagePath("administrar-demandas")}>DEMANDAS</a>
+        </nav>
+        
         </div>
-
-        <div class="divider-line"></div>
-
-        <a class="navigation-button" href=${getPagePath("pagina-de-demandas")} >OPORTUNIDADES</a>
-        <ul>
-            <li><a class="navigation-button" href=${getPagePath("sobre-o-voluntariado")} >sobre o voluntariado</a></li>
-            <li><a class="navigation-button" href=${getPagePath("como-comecar")} >como começar?</a></li>
-            <li><a class="navigation-button" href=${getPagePath("por-que-ser-voluntario")} >por que ser voluntário?</a></li>
-            <li><a class="navigation-button" href=${getPagePath("historias-sucesso")} >histórias de sucesso</a></li>
-            <li><a class="navigation-button" href=${getPagePath("perguntas-frequentes")} >perguntas frequentes</a></li>
-        </ul>
-    </div>
-    </nav>
-    
-    </div>
-`;
+    `;
 
     return template;
 }
@@ -364,6 +366,31 @@ const homeVariantCssStyle = `
 }
 `
 
+async function logout() {
+    const token = window.localStorage.getItem("token");
+
+    const options = {
+        method: 'GET',
+        headers: {'Content-Type': 'application/json'}
+    };
+
+    try {
+        await fetch(`https://orca-app-fbvzt.ondigitalocean.app/sessions?token=${token}`, options)
+            .then(async response => {
+                const session = await response.json().then(data => data[0])
+                await fetch(`https://orca-app-fbvzt.ondigitalocean.app/sessions/${session.id}`, {method: 'DELETE'})
+                    .then(response => {
+                        if (response.status === 200) {
+                            window.localStorage.removeItem("token");
+                            window.location.href = "../../index.html";
+                        }
+                    });
+            });
+    } catch (err) {
+        console.error(err);
+    }
+}
+
 class HeaderComponent extends HTMLElement {
     constructor() {
         super();
@@ -400,6 +427,20 @@ class HeaderComponent extends HTMLElement {
                 this.toggleMobileMenu(event);
             });
         });
+
+        let logoutButton = this.root.querySelector('#logout-click');
+        if (logoutButton) {
+            logoutButton.addEventListener('click', async () => {
+                await logout();
+            });
+        }
+
+        let logoutMobileButton = this.root.querySelector('#logout-mobile-click');
+        if (logoutMobileButton) {
+            logoutMobileButton.addEventListener('click', async () => {
+                await logout();
+            });
+        }
     }
 
     toggleMobileMenu() {
