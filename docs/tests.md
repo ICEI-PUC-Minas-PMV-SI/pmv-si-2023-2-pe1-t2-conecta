@@ -146,11 +146,11 @@ Preencha a tabela com o plano dos testes. Para cada Caso de Teste (CT), associe 
 
 **Caso de Teste** | **CT16 - Página "Sobre o Voluntariado"**
  :--------------: | ------------
-**Procedimento**  | 1) # <br> 2) # <br> 3) #
+**Procedimento**  | 1)  Acessar a [página sobre o voluntariado](https://icei-puc-minas-pmv-si.github.io/pmv-si-2023-2-pe1-t2-conecta/pages/sobre-o-voluntariado/sobre-o-voluntariado.html)<br> 2) Verificar se texto e imagem são exibidos <br>
 **Requisitos associados** | RF-015
-**Resultado esperado** | #
-**Dados de entrada** | #
-**Resultado obtido** | #
+**Resultado esperado** | Visualizar a página "Sobre o Voluntariado" com texto e imagem carregados.
+**Dados de entrada** | Nenhum
+**Resultado obtido** | Sucesso.
 
 **Caso de Teste** | **CT17 - Página "Por Que Ser Voluntário?"**
  :--------------: | ------------
@@ -162,11 +162,11 @@ Preencha a tabela com o plano dos testes. Para cada Caso de Teste (CT), associe 
 
 **Caso de Teste** | **CT18 - Página "Histórias de Sucesso"**
  :--------------: | ------------
-**Procedimento**  | 1) # <br> 2) # <br> 3) #
+**Procedimento**  | 1)  Acessar a [página histórias de sucesso](https://icei-puc-minas-pmv-si.github.io/pmv-si-2023-2-pe1-t2-conecta/pages/historias-sucesso/historias-sucesso.html) <br> 2) Verificar se texto e imagem são exibidos <br>
 **Requisitos associados** | RF-017
-**Resultado esperado** | #
-**Dados de entrada** | #
-**Resultado obtido** | #
+**Resultado esperado** | Visualizar a página "Histórias de Sucesso" com texto e imagem carregados.
+**Dados de entrada** | Nenhum.
+**Resultado obtido** | Sucesso.
 
 **Caso de Teste** | **CT19 - Filtro de Demandas por Critérios**
  :--------------: | ------------
@@ -218,7 +218,7 @@ Preencha a tabela com o plano dos testes. Para cada Caso de Teste (CT), associe 
 
 **Caso de Teste** | **CT25 - Responsividade**
  :--------------: | ------------
-**Procedimento**  | 1) O usuário acessa a aplicação por meio de um dispositivo móvel, como um smartphone ou tablet. <br> 2) O usuário navega pelas diferentes funcionalidades da aplicação utilizando o dispositivo móvel. <br>
+**Procedimento**  | 1) O usuário acessa [a aplicação](https://icei-puc-minas-pmv-si.github.io/pmv-si-2023-2-pe1-t2-conecta/index.html) por meio de um dispositivo móvel, como um smartphone ou tablet. <br> 2) O usuário navega pelas diferentes funcionalidades da aplicação utilizando o dispositivo móvel. <br>
 **Requisitos associados** | RNF-001
 **Resultado esperado** | A aplicação é responsiva e se adapta adequadamente ao tamanho da tela em dispositivos móveis, mantendo todas as funcionalidades acessíveis e funcionais.
 **Dados de entrada** | Acesso à aplicação por meio de um dispositivo móvel.
@@ -346,7 +346,7 @@ Esta seção deve apresentar o relatório com as evidências dos testes de softw
 | *Caso de Teste*                   | *CT16 - Página "Sobre o Voluntariado"*                                                                                                                                             |
 |-----------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Requisito Associado               | RF-015 - A aplicação deve apresentar a página “Sobre o Voluntariado” que fornece informações detalhadas sobre o conceito de trabalho voluntário, destacando seu impacto positivo na sociedade e nas comunidades. |
-| Link do vídeo do teste realizado: | COLOQUE SEU VIDEO AQUI                                   |
+| Link do vídeo do teste realizado: | https://sgapucminasbr-my.sharepoint.com/:v:/g/personal/954530_sga_pucminas_br/EVorhCzAhtFMkyV2SYWY25QBD79JhwYVEws4H8xuQC8y6w?e=gKQ8oT                                   |
 
 | *Caso de Teste*                   |*CT17 - Página "Por Que Ser Voluntário?"*                                                                                                                                             |
 |-----------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -356,7 +356,7 @@ Esta seção deve apresentar o relatório com as evidências dos testes de softw
 | *Caso de Teste*                   | *CT18 - Página "Histórias de Sucesso"*                                                                                                                                             |
 |-----------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Requisito Associado               | RF-017 A aplicação deve apresentar a página “Histórias de Sucesso” que destaca projetos anteriores realizados por meio da plataforma, com resultados, depoimentos de voluntários e o impacto positivo alcançado. |
-| Link do vídeo do teste realizado: | COLOQUE SEU VIDEO AQUI                                   |
+| Link do vídeo do teste realizado: | https://sgapucminasbr-my.sharepoint.com/:v:/g/personal/954530_sga_pucminas_br/ESFLHyIh6OtAiM_auQisuD8B2Bb2desQSpKByEz_Yks2cw?e=LUM0he                                   |
 
 | *Caso de Teste*                   | *CT19 - Filtro de Demandas por Critérios*                                                                                                                                             |
 |-----------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------|
