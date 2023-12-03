@@ -35,6 +35,7 @@ export class Task {
     }
     
     async findAllFilteredByOpenStatus(filterBy) {
+        console.log('filterBy', filterBy);
         if(filterBy === 'remote') {
             return await makeRequest(getURL('tasks?status=Aberta&type=Remoto'), 'GET');
         }

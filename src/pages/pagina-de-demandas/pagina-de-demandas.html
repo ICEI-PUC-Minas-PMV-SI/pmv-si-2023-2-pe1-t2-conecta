@@ -110,7 +110,7 @@
                         context: {}
                     }).done(function(data) {
                         for (var uf in data) {
-                            let html = "<option class='cidades_selecionadas'>"+data[uf].nome+"</option>";
+                            let html = "<option class='cidades_selecionadas' value='"+data[uf].nome+"'>"+data[uf].nome+"</option>";
                             $('.cidade').append(html);
                         }
                     });
