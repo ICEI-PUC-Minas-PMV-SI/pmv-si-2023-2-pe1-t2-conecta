@@ -130,11 +130,11 @@ Preencha a tabela com o plano dos testes. Para cada Caso de Teste (CT), associe 
 
 **Caso de Teste** | **CT14 - Página Inicial (Landing Page)**
  :--------------: | ------------
-**Procedimento**  | 1) # <br> 2) # <br> 3) #
+**Procedimento**  | 1) O usuário deve acessar o site e visualizar a landing page (https://icei-puc-minas-pmv-si.github.io/pmv-si-2023-2-pe1-t2-conecta/) <br> 2) Navegar pela landing page <br>
 **Requisitos associados** | RF-013
-**Resultado esperado** | #
-**Dados de entrada** | #
-**Resultado obtido** | #
+**Resultado esperado** | Páginal inicial da aplicação contendo diversas informações relevantes sobre o site.
+**Dados de entrada** | Nenhum.
+**Resultado obtido** | Sucesso.
 
 |     **Caso de Teste**     | **CT15 - Página "Perguntas Frequentes"**                                                                                                                                                                                                                                       |
 |:-------------------------:|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -336,7 +336,7 @@ Esta seção deve apresentar o relatório com as evidências dos testes de softw
 | *Caso de Teste*                   | *CT14 - Página Inicial (Landing Page)*                                                                                                                                             |
 |-----------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Requisito Associado               | RF-013 - Deve existir uma página inicial (landing page) informativa que apresenta o propósito da plataforma e incentiva tanto as ONGs quanto os voluntários a utilizar a aplicação. |
-| Link do vídeo do teste realizado: | COLOQUE SEU VIDEO AQUI                                   |
+| Link do vídeo do teste realizado: |https://sgapucminasbr-my.sharepoint.com/:v:/g/personal/954530_sga_pucminas_br/EZjvZghuoPxFg_UrBrsA_SoBJf27dddKeMgGc5fY5tE5AQ?e=j4cBwt                                   |
 
 | *Caso de Teste*                   | *CT15 - Página "Perguntas Frequentes"*                                                                                                                               |
 |-----------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -391,7 +391,7 @@ Esta seção deve apresentar o relatório com as evidências dos testes de softw
 | *Caso de Teste*                   | *CT25 Responsividade*                                                                                                                                             |
 |-----------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Requisito Associado               | RNF-001 A aplicação deve oferecer uma interface com design responsivo que se adapte aos dispositivos móveis e desktops. |
-| Link do vídeo do teste realizado: | https://sgapucminasbr-my.sharepoint.com/personal/954530_sga_pucminas_br/_layouts/15/stream.aspx?id=%2Fpersonal%2F954530%5Fsga%5Fpucminas%5Fbr%2FDocuments%2Fresponsive%2Emp4&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview                                  |
+| Link do vídeo do teste realizado: | https://sgapucminasbr-my.sharepoint.com/:v:/g/personal/954530_sga_pucminas_br/ERQck7q5eQdLpnwC7aXcoLEBQwBD-NIZvqNeqO-IT0UkDg?e=aXvqJt                                  |
 
 | *Caso de Teste*                   | *CT26 - Interface simples*                                                                                                                                             |
 |-----------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------|
