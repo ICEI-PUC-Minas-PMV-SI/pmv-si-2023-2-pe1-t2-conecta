@@ -35,7 +35,7 @@ const makeTemplate = () => {
         </div>
 
         <div style="display:none">
-            <div class="addres">
+            <div class="address">
             </div>
          </div>
 

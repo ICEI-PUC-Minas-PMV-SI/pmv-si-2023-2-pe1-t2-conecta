@@ -21,7 +21,7 @@ const makeTemplate = (variant) => {
         <div class="footer-wrapper">
             <a href=${getPagePath("como-comecar")} class="footer-item">Como começar?</a>
             <a href=${getPagePath("sobre-o-voluntariado")} class="footer-item">Sobre o voluntariado</a>
-            <a href=${getPagePath("por-que-ser-voluntário")} class="footer-item">Porque ser voluntario</a>
+            <a href=${getPagePath("por-que-ser-voluntário")} class="footer-item">Porque ser voluntário</a>
             <a href=${getPagePath("perguntas-frequentes")} class="footer-item">Perguntas frequentes</a>
             <a href=${getPagePath("historias-sucesso")} class="footer-item">Histórias de sucesso</a>
         </div>
