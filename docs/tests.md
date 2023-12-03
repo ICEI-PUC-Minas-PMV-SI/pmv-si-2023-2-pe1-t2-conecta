@@ -61,7 +61,7 @@ Preencha a tabela com o plano dos testes. Para cada Caso de Teste (CT), associe 
 |     **Procedimento**      | 1) Acessar [página da ONG](https://icei-puc-minas-pmv-si.github.io/pmv-si-2023-2-pe1-t2-conecta/pages/pagina-da-ong/pagina-da-ong.html?id=1) <br> 2) Validar que os dados são carregados corretamente <br> 3) Alterar `id=1` para `id=2` ao final da URL <br> 4) Validar que os dados de outra ONG são carregados corretamente |
 | **Requisitos associados** | RF-004                                                                                                                                                                                                                                                                                                                         |
 |  **Resultado esperado**   | Página é carregada com os dados da ONG corretamente.                                                                                                                                                                                                                                                                           |
-|   **Dados de entrada**    | Nenhum                                                                                                                                                                                                                                                                                                                         |
+|   **Dados de entrada**    | Nenhum.                                                                                                                                                                                                                                                                                                                        |
 |   **Resultado obtido**    | Sucesso.                                                                                                                                                                                                                                                                                                                       |
 
 **Caso de Teste** | **CT06 - Gerenciamento de Perfil da ONG**
@@ -122,11 +122,11 @@ Preencha a tabela com o plano dos testes. Para cada Caso de Teste (CT), associe 
 
 **Caso de Teste** | **CT13 - Página "Como Começar"**
  :--------------: | ------------
-**Procedimento**  | 1) # <br> 2) # <br> 3) #
+**Procedimento**  |  1) Acessar [página Como Começar](https://sgapucminasbr-my.sharepoint.com/:v:/g/personal/954530_sga_pucminas_br/EcG84oXGA2VNnPTVaXHQHZkBZArrmZzW7t3rukBfIAykTA?e=bmM92g) <br> 2) Validar que as informações são carregadas corretamente <br> 
 **Requisitos associados** | RF-012
-**Resultado esperado** | #
-**Dados de entrada** | #
-**Resultado obtido** | #
+**Resultado esperado** | Página carregada com imagens e textos.
+**Dados de entrada** | Nenhum.
+**Resultado obtido** | Sucesso.
 
 **Caso de Teste** | **CT14 - Página Inicial (Landing Page)**
  :--------------: | ------------
@@ -331,7 +331,7 @@ Esta seção deve apresentar o relatório com as evidências dos testes de softw
 | *Caso de Teste*                   | *CT13 - Página "Como Começar"*                                                                                                                                             |
 |-----------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Requisito Associado               | RF-012 - A aplicação deve apresentar a página “Como Começar” que orienta os visitantes sobre os passos necessários para se tornarem voluntários registrados na aplicação. |
-| Link do vídeo do teste realizado: | COLOQUE SEU VIDEO AQUI                                   |
+| Link do vídeo do teste realizado: | https://sgapucminasbr-my.sharepoint.com/:v:/g/personal/954530_sga_pucminas_br/EcG84oXGA2VNnPTVaXHQHZkBZArrmZzW7t3rukBfIAykTA?e=bmM92g                                   |
 
 | *Caso de Teste*                   | *CT14 - Página Inicial (Landing Page)*                                                                                                                                             |
 |-----------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------|
