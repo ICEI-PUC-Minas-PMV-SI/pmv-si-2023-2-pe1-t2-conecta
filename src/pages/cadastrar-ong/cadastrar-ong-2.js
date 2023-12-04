@@ -17,9 +17,9 @@ document.getElementById('foto').addEventListener('change', function(event) {
 
 window.addEventListener("load", async () => {
     const token = window.localStorage.getItem("token")
-    const session = await getSession(token);
+    const session = await getSession(token).then(session => session[0]);
 
-    await findById(session[0].id).then(ong => {
+    await findById(session.ongId).then(ong => {
         document.getElementById("title").innerText = "perfil da ONG";
 
         document.getElementById("sobre").value = ong.about;
