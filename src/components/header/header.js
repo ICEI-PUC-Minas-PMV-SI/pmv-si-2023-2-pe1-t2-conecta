@@ -39,7 +39,7 @@ const makeTemplate = (variant) => {
             <a href=${getPagePath("index")}><img src="${rootPath}/assets/images/logo-conecta.png" alt="Logo Conecta"></div></a>
             <div class="buttons-header-wrapper">
                 <a href=${getPagePath("pagina-de-demandas")} class="header-button oportunidades-button">OPORTUNIDADES</a>
-                <a style="${token == null ? "" : "display: none"}" href=${getPagePath("login")}  class="header-button area-da-ong-button">ÁREA DA ONG</a>
+                <a id="area-da-ong" href="#"  class="header-button area-da-ong-button">ÁREA DA ONG</a>
                 <a id="logout-click" style="${token == null ? "display: none" : ""}" id="logout-click" href="#" class="header-button area-da-ong-button">SAIR</a>
             </div>
     
@@ -426,6 +426,16 @@ class HeaderComponent extends HTMLElement {
             button.addEventListener('click', (event) => {
                 this.toggleMobileMenu(event);
             });
+        });
+
+        this.root.querySelector('#area-da-ong').addEventListener('click', async () => {
+            const token = window.localStorage.getItem("token");
+            if (token) {
+                window.location.href = getPagePath("pagina-da-ong");
+            } else {
+                alert("Você precisa estar logado para acessar a área da ONG.")
+                window.location.href = getPagePath("login");
+            }
         });
 
         let logoutButton = this.root.querySelector('#logout-click');
