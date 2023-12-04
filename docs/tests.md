@@ -42,11 +42,11 @@ Preencha a tabela com o plano dos testes. Para cada Caso de Teste (CT), associe 
 
 **Caso de Teste** | **CT03 - Autenticação de ONG (login)**
  :--------------: | ------------
-**Procedimento**  | 1) # <br> 2) # <br> 3) #
+**Procedimento**  | 1) Acessar a [página de login](https://icei-puc-minas-pmv-si.github.io/pmv-si-2023-2-pe1-t2-conecta/pages/login/login.html)  <br> 2) Insira o email e senha de uma ONG previamente cadastrada <br> 3) Clique no botão `Entrar` <br> 4) Confirme um alerta com a mensagem `Login realizado com sucesso.` na tela
 **Requisitos associados** | RF-002
-**Resultado esperado** | #
-**Dados de entrada** | #
-**Resultado obtido** | #
+**Resultado esperado** | Usuário consegue logar em sua conta
+**Dados de entrada** | Email e senha cadastradas anteriormente
+**Resultado obtido** | Sucesso.
 
 |     **Caso de Teste**     | **CT04 - Recuperação de Senha**                                                                                                                                                                                                                                                                                                                                                                                                                  |
 |:-------------------------:|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -281,7 +281,7 @@ Esta seção deve apresentar o relatório com as evidências dos testes de softw
 | *Caso de Teste*                   | *CT03 - Autenticação de ONG (login)*                                                                                                |
 |-----------------------------------|-------------------------------------------------------------------------------------------------------------------------------|
 | Requisito Associado               | RF-002 - A aplicação deve fornecer um sistema de autenticação seguro, permitindo que as ONGs acessem suas contas por meio de um processo de login.                                                                  |
-| Link do vídeo do teste realizado: | COLOQUE SEU VIDEO AQUI | 
+| Link do vídeo do teste realizado: | https://sgapucminasbr-my.sharepoint.com/:v:/g/personal/1484182_sga_pucminas_br/EYgbAmKeBdxDsw4VTKNOEcQBEftvZRCh77z336iNBhydng?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=aQSWm3 | 
 
 | *Caso de Teste*                   | *CT04 - Recuperação de Senha*                                                                                                                           |
 |-----------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------|
