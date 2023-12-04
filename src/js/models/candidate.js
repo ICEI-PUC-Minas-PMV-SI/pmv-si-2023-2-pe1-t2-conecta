@@ -4,14 +4,23 @@ export class Candidate {
     taskId;
     name;
     email;
-    active;
+    cpf;
+    phone;
+    about;
+    status;
+    timestamp;
     
     async create() {
         const data = {
             taskId: this.taskId,
             name: this.name,
             email: this.email,
-            active: this.active
+            cpf: this.cpf,
+            phone: this.phone,
+            about: this.about,
+            status: this.status,
+            timestamp: this.timestamp
+            
         }
 
         return await makeRequest(getURL('candidates'), 'POST', data);
@@ -20,11 +29,16 @@ export class Candidate {
     async findById(id) {
         return await makeRequest(getURL(`candidates/${id}`), 'GET');
     }
-    
+
+    async findByCpf(cpf) {
+        return await makeRequest(getURL(`candidates?cpf=${cpf}`), 'GET');
+    }
+    async findByStatus(status) {
+        return await makeRequest(getURL(`candidates?status=${status}`), 'GET');
+    }
     async findByTaskId(taskId) {
         return await makeRequest(getURL(`candidates?taskId=${taskId}`), 'GET');
     }
-    
     async findAll() {
         return await makeRequest(getURL('candidates'), 'GET');
     }
@@ -34,7 +48,11 @@ export class Candidate {
             taskId: this.taskId,
             name: this.name,
             email: this.email,
-            active: this.active
+            cpf: this.cpf,
+            phone: this.phone,
+            about: this.about,
+            status: this.status,
+            timestamp: this.timestamp,
         }
         
         return await makeRequest(getURL(`candidates/${id}`), 'PUT', data);
