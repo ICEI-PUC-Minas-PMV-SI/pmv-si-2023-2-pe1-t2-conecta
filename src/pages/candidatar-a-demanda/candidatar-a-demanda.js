@@ -13,7 +13,7 @@ window.addEventListener("load", async () => {
     const ongName = document.getElementById("ongName");
     const ongId = getOrganizationId();
     const organization = await findOngById(ongId);
-    ongName.innerHTML = organization.name;
+    ongName.textContent = organization.name;
 });
 
 document.getElementById("cpf").addEventListener("input", async () => {
