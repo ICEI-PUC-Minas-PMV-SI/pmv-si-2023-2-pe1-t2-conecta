@@ -443,11 +443,11 @@ Você administra uma ONG e deseja fazer seu cadastro na aplicação.
 
 | Usuário | Taxa de sucesso | Satisfação subjetiva | Tempo para conclusão do cenário |
 |---------|-----------------|----------------------|---------------------------------|
-| 1       | SIM/NÃO             | NOTA 0 - 5                    | 0 segundos                  |
-| 2       | SIM/NÃO             | NOTA 0 - 5                    | 0 segundos                  |
+| 1       | SIM/NÃO             | NOTA 4 - 5                    | 0 segundos                  |
+| 2       | SIM/NÃO             | NOTA 4 - 5                    | 0 segundos                  |
 |  |  |  |  |
 | **Média**     | 0%           | 0                | 0 segundos                           |
-| **Tempo para conclusão pelo especialista** | SIM/NÃO | NOTA 0 - 5 | 0 segundos |
+| **Tempo para conclusão pelo especialista** | SIM/NÃO | NOTA 4 - 5 | 0 segundos |
 
 
     Comentários dos usuários: DESCREVA AQUI O COMENTÁRIO DO USUÁRIO
@@ -457,11 +457,11 @@ Você deseja fazer o login no site.
 
 | Usuário | Taxa de sucesso | Satisfação subjetiva | Tempo para conclusão do cenário |
 |---------|-----------------|----------------------|---------------------------------|
-| 1       | SIM/NÃO             | NOTA 0 - 5                    | 0 segundos                  |
-| 2       | SIM/NÃO             | NOTA 0 - 5                    | 0 segundos                  |
+| 1       | SIM/NÃO             | NOTA 4 - 5                    | 0 segundos                  |
+| 2       | SIM/NÃO             | NOTA 4 - 5                    | 0 segundos                  |
 |  |  |  |  |
 | **Média**     | 0%           | 0                | 0 segundos                           |
-| **Tempo para conclusão pelo especialista** | SIM/NÃO | NOTA 0 - 5 | 0 segundos |
+| **Tempo para conclusão pelo especialista** | SIM/NÃO | NOTA 4 - 5 | 0 segundos |
 
 
     Comentários dos usuários: DESCREVA AQUI O COMENTÁRIO DO USUÁRIO
@@ -471,11 +471,11 @@ Você precisa cadastrar as informações de perfil.
 
 | Usuário | Taxa de sucesso | Satisfação subjetiva | Tempo para conclusão do cenário |
 |---------|-----------------|----------------------|---------------------------------|
-| 1       | SIM/NÃO             | NOTA 0 - 5                    | 0 segundos                  |
-| 2       | SIM/NÃO             | NOTA 0 - 5                    | 0 segundos                  |
+| 1       | SIM/NÃO             | NOTA 4 - 5                    | 0 segundos                  |
+| 2       | SIM/NÃO             | NOTA 4 - 5                    | 0 segundos                  |
 |  |  |  |  |
 | **Média**     | 0%           | 0                | 0 segundos                           |
-| **Tempo para conclusão pelo especialista** | SIM/NÃO | NOTA 0 - 5 | 0 segundos |
+| **Tempo para conclusão pelo especialista** | SIM/NÃO | NOTA 4 - 5 | 0 segundos |
 
 
     Comentários dos usuários: DESCREVA AQUI O COMENTÁRIO DO USUÁRIO
@@ -485,11 +485,11 @@ Você esqueceu a senha e precisa recuperá-la.
 
 | Usuário | Taxa de sucesso | Satisfação subjetiva | Tempo para conclusão do cenário |
 |---------|-----------------|----------------------|---------------------------------|
-| 1       | SIM/NÃO             | NOTA 0 - 5                    | 0 segundos                  |
-| 2       | SIM/NÃO             | NOTA 0 - 5                    | 0 segundos                  |
+| 1       | SIM/NÃO             | NOTA 4 - 5                    | 0 segundos                  |
+| 2       | SIM/NÃO             | NOTA 4 - 5                    | 0 segundos                  |
 |  |  |  |  |
 | **Média**     | 0%           | 0                | 0 segundos                           |
-| **Tempo para conclusão pelo especialista** | SIM/NÃO | NOTA 0 - 5 | 0 segundos |
+| **Tempo para conclusão pelo especialista** | SIM/NÃO | NOTA 4 - 5 | 0 segundos |
 
 
     Comentários dos usuários: DESCREVA AQUI O COMENTÁRIO DO USUÁRIO
@@ -499,11 +499,11 @@ Você quer cadastrar uma demanda.
 
 | Usuário | Taxa de sucesso | Satisfação subjetiva | Tempo para conclusão do cenário |
 |---------|-----------------|----------------------|---------------------------------|
-| 1       | SIM/NÃO             | NOTA 0 - 5                    | 0 segundos                  |
-| 2       | SIM/NÃO             | NOTA 0 - 5                    | 0 segundos                  |
+| 1       | SIM/NÃO             | NOTA 4 - 5                    | 0 segundos                  |
+| 2       | SIM/NÃO             | NOTA 4 - 5                    | 0 segundos                  |
 |  |  |  |  |
 | **Média**     | 0%           | 0                | 0 segundos                           |
-| **Tempo para conclusão pelo especialista** | SIM/NÃO | NOTA 0 - 5 | 0 segundos |
+| **Tempo para conclusão pelo especialista** | SIM/NÃO | NOTA 4 - 5 | 0 segundos |
 
 
     Comentários dos usuários: DESCREVA AQUI O COMENTÁRIO DO USUÁRIO
@@ -513,11 +513,11 @@ Você precisa administrar as demandas. Sendo possível editar os dados da demand
 
 | Usuário | Taxa de sucesso | Satisfação subjetiva | Tempo para conclusão do cenário |
 |---------|-----------------|----------------------|---------------------------------|
-| 1       | SIM/NÃO             | NOTA 0 - 5                    | 0 segundos                  |
-| 2       | SIM/NÃO             | NOTA 0 - 5                    | 0 segundos                  |
+| 1       | SIM/NÃO             | NOTA 4 - 5                    | 0 segundos                  |
+| 2       | SIM/NÃO             | NOTA 4 - 5                    | 0 segundos                  |
 |  |  |  |  |
 | **Média**     | 0%           | 0                | 0 segundos                           |
-| **Tempo para conclusão pelo especialista** | SIM/NÃO | NOTA 0 - 5 | 0 segundos |
+| **Tempo para conclusão pelo especialista** | SIM/NÃO | NOTA 4 - 5 | 0 segundos |
 
 
     Comentários dos usuários: DESCREVA AQUI O COMENTÁRIO DO USUÁRIO
@@ -527,11 +527,11 @@ Você deseja verificar quais voluntários se candidataram aquela demanda, aceita
 
 | Usuário | Taxa de sucesso | Satisfação subjetiva | Tempo para conclusão do cenário |
 |---------|-----------------|----------------------|---------------------------------|
-| 1       | SIM/NÃO             | NOTA 0 - 5                    | 0 segundos                  |
-| 2       | SIM/NÃO             | NOTA 0 - 5                    | 0 segundos                  |
+| 1       | SIM/NÃO             | NOTA 4 - 5                    | 0 segundos                  |
+| 2       | SIM/NÃO             | NOTA 4 - 5                    | 0 segundos                  |
 |  |  |  |  |
 | **Média**     | 0%           | 0                | 0 segundos                           |
-| **Tempo para conclusão pelo especialista** | SIM/NÃO | NOTA 0 - 5 | 0 segundos |
+| **Tempo para conclusão pelo especialista** | SIM/NÃO | NOTA 4 - 5 | 0 segundos |
 
 
     Comentários dos usuários: DESCREVA AQUI O COMENTÁRIO DO USUÁRIO
@@ -541,11 +541,11 @@ Após o término daquela demanda é preciso finalizá-la e pedir o feedback do v
 
 | Usuário | Taxa de sucesso | Satisfação subjetiva | Tempo para conclusão do cenário |
 |---------|-----------------|----------------------|---------------------------------|
-| 1       | SIM/NÃO             | NOTA 0 - 5                    | 0 segundos                  |
-| 2       | SIM/NÃO             | NOTA 0 - 5                    | 0 segundos                  |
+| 1       | SIM/NÃO             | NOTA 4 - 5                    | 0 segundos                  |
+| 2       | SIM/NÃO             | NOTA 4 - 5                    | 0 segundos                  |
 |  |  |  |  |
 | **Média**     | 0%           | 0                | 0 segundos                           |
-| **Tempo para conclusão pelo especialista** | SIM/NÃO | NOTA 0 - 5 | 0 segundos |
+| **Tempo para conclusão pelo especialista** | SIM/NÃO | NOTA 4 - 5 | 0 segundos |
 
 
     Comentários dos usuários: DESCREVA AQUI O COMENTÁRIO DO USUÁRIO
@@ -555,11 +555,11 @@ Você quer se voluntariar em uma ONG e acessa a aplicação, entra no Home Page 
 
 | Usuário | Taxa de sucesso | Satisfação subjetiva | Tempo para conclusão do cenário |
 |---------|-----------------|----------------------|---------------------------------|
-| 1       | SIM/NÃO             | NOTA 0 - 5                    | 0 segundos                  |
-| 2       | SIM/NÃO             | NOTA 0 - 5                    | 0 segundos                  |
+| 1       | SIM/NÃO             | NOTA 4 - 5                    | 0 segundos                  |
+| 2       | SIM/NÃO             | NOTA 4 - 5                    | 0 segundos                  |
 |  |  |  |  |
 | **Média**     | 0%           | 0                | 0 segundos                           |
-| **Tempo para conclusão pelo especialista** | SIM/NÃO | NOTA 0 - 5 | 0 segundos |
+| **Tempo para conclusão pelo especialista** | SIM/NÃO | NOTA 4 - 5 | 0 segundos |
 
 
     Comentários dos usuários: DESCREVA AQUI O COMENTÁRIO DO USUÁRIO
@@ -569,11 +569,11 @@ Na Home Page tem algumas opções de oportunidades, você deseja visualizar e ex
 
 | Usuário | Taxa de sucesso | Satisfação subjetiva | Tempo para conclusão do cenário |
 |---------|-----------------|----------------------|---------------------------------|
-| 1       | SIM/NÃO             | NOTA 0 - 5                    | 0 segundos                  |
-| 2       | SIM/NÃO             | NOTA 0 - 5                    | 0 segundos                  |
+| 1       | SIM/NÃO             | NOTA 4 - 5                    | 0 segundos                  |
+| 2       | SIM/NÃO             | NOTA 4 - 5                    | 0 segundos                  |
 |  |  |  |  |
 | **Média**     | 0%           | 0                | 0 segundos                           |
-| **Tempo para conclusão pelo especialista** | SIM/NÃO | NOTA 0 - 5 | 0 segundos |
+| **Tempo para conclusão pelo especialista** | SIM/NÃO | NOTA 4 - 5 | 0 segundos |
 
 
     Comentários dos usuários: DESCREVA AQUI O COMENTÁRIO DO USUÁRIO
@@ -583,11 +583,11 @@ Você deseja filtrar a demanda por tipo e localização.
 
 | Usuário | Taxa de sucesso | Satisfação subjetiva | Tempo para conclusão do cenário |
 |---------|-----------------|----------------------|---------------------------------|
-| 1       | SIM/NÃO             | NOTA 0 - 5                    | 0 segundos                  |
-| 2       | SIM/NÃO             | NOTA 0 - 5                    | 0 segundos                  |
+| 1       | SIM/NÃO             | NOTA 4 - 5                    | 0 segundos                  |
+| 2       | SIM/NÃO             | NOTA 4 - 5                    | 0 segundos                  |
 |  |  |  |  |
 | **Média**     | 0%           | 0                | 0 segundos                           |
-| **Tempo para conclusão pelo especialista** | SIM/NÃO | NOTA 0 - 5 | 0 segundos |
+| **Tempo para conclusão pelo especialista** | SIM/NÃO | NOTA 4 - 5 | 0 segundos |
 
 
     Comentários dos usuários: DESCREVA AQUI O COMENTÁRIO DO USUÁRIO
@@ -597,11 +597,11 @@ Encontra uma oportunidade que deseja se candidatar clica em “Quero Ajudar”.
 
 | Usuário | Taxa de sucesso | Satisfação subjetiva | Tempo para conclusão do cenário |
 |---------|-----------------|----------------------|---------------------------------|
-| 1       | SIM/NÃO             | NOTA 0 - 5                    | 0 segundos                  |
-| 2       | SIM/NÃO             | NOTA 0 - 5                    | 0 segundos                  |
+| 1       | SIM/NÃO             | NOTA 4 - 5                    | 0 segundos                  |
+| 2       | SIM/NÃO             | NOTA 4 - 5                    | 0 segundos                  |
 |  |  |  |  |
 | **Média**     | 0%           | 0                | 0 segundos                           |
-| **Tempo para conclusão pelo especialista** | SIM/NÃO | NOTA 0 - 5 | 0 segundos |
+| **Tempo para conclusão pelo especialista** | SIM/NÃO | NOTA 4 - 5 | 0 segundos |
 
 
     Comentários dos usuários: DESCREVA AQUI O COMENTÁRIO DO USUÁRIO
@@ -611,11 +611,11 @@ Acessa a página “Quero Ajudar” e preencha o formulário com as informaçõe
 
 | Usuário | Taxa de sucesso | Satisfação subjetiva | Tempo para conclusão do cenário |
 |---------|-----------------|----------------------|---------------------------------|
-| 1       | SIM/NÃO             | NOTA 0 - 5                    | 0 segundos                  |
-| 2       | SIM/NÃO             | NOTA 0 - 5                    | 0 segundos                  |
+| 1       | SIM/NÃO             | NOTA 4 - 5                    | 0 segundos                  |
+| 2       | SIM/NÃO             | NOTA 4 - 5                    | 0 segundos                  |
 |  |  |  |  |
 | **Média**     | 0%           | 0                | 0 segundos                           |
-| **Tempo para conclusão pelo especialista** | SIM/NÃO | NOTA 0 - 5 | 0 segundos |
+| **Tempo para conclusão pelo especialista** | SIM/NÃO | NOTA 4 - 5 | 0 segundos |
 
 
     Comentários dos usuários: DESCREVA AQUI O COMENTÁRIO DO USUÁRIO
@@ -625,11 +625,11 @@ Aguarda receber o e-mail da ONG com a confirmação da candidatura.
 
 | Usuário | Taxa de sucesso | Satisfação subjetiva | Tempo para conclusão do cenário |
 |---------|-----------------|----------------------|---------------------------------|
-| 1       | SIM/NÃO             | NOTA 0 - 5                    | 0 segundos                  |
-| 2       | SIM/NÃO             | NOTA 0 - 5                    | 0 segundos                  |
+| 1       | SIM/NÃO             | NOTA 4 - 5                    | 0 segundos                  |
+| 2       | SIM/NÃO             | NOTA 4 - 5                    | 0 segundos                  |
 |  |  |  |  |
 | **Média**     | 0%           | 0                | 0 segundos                           |
-| **Tempo para conclusão pelo especialista** | SIM/NÃO | NOTA 0 - 5 | 0 segundos |
+| **Tempo para conclusão pelo especialista** | SIM/NÃO | NOTA 4 - 5 | 0 segundos |
 
 
     Comentários dos usuários: DESCREVA AQUI O COMENTÁRIO DO USUÁRIO
@@ -639,11 +639,11 @@ Quando finalizado o voluntariado você pode enviar uma mensagem com o seu feedba
 
 | Usuário | Taxa de sucesso | Satisfação subjetiva | Tempo para conclusão do cenário |
 |---------|-----------------|----------------------|---------------------------------|
-| 1       | SIM/NÃO             | NOTA 0 - 5                    | 0 segundos                  |
-| 2       | SIM/NÃO             | NOTA 0 - 5                    | 0 segundos                  |
+| 1       | SIM/NÃO             | NOTA 4 - 5                    | 0 segundos                  |
+| 2       | SIM/NÃO             | NOTA 4 - 5                    | 0 segundos                  |
 |  |  |  |  |
 | **Média**     | 0%           | 0                | 0 segundos                           |
-| **Tempo para conclusão pelo especialista** | SIM/NÃO | NOTA 0 - 5 | 0 segundos |
+| **Tempo para conclusão pelo especialista** | SIM/NÃO | NOTA 4 - 5 | 0 segundos |
 
 
     Comentários dos usuários: DESCREVA AQUI O COMENTÁRIO DO USUÁRIO
