@@ -25,7 +25,7 @@ const getPagePath = (pageName) => {
 
 const makeTemplate = (variant) => {
     const rootPath = variant === 'home' ? './' : '../../';
-
+    const pathName = window.location.pathname;
     const token = window.localStorage.getItem("token");
 
     const template = document.createElement('template');
@@ -39,7 +39,8 @@ const makeTemplate = (variant) => {
             <a href=${getPagePath("index")}><img src="${rootPath}/assets/images/logo-conecta.png" alt="Logo Conecta"></div></a>
             <div class="buttons-header-wrapper">
                 <a href=${getPagePath("pagina-de-demandas")} class="header-button oportunidades-button">OPORTUNIDADES</a>
-                <a id="area-da-ong" href="#"  class="header-button area-da-ong-button">ÁREA DA ONG</a>
+                <a id="area-da-ong" style="${pathName.includes('pagina-da-ong.html') ? "display: none": ""}" href="#"  class="header-button area-da-ong-button">ÁREA DA ONG</a>
+                <a id="perfil-da-ong" style="${pathName.includes('pagina-da-ong.html') ? "": "display: none"}" href=${getPagePath("cadastrar-ong")}  class="header-button area-da-ong-button">PERFIL</a>
                 <a id="logout-click" style="${token == null ? "display: none" : ""}" id="logout-click" href="#" class="header-button area-da-ong-button">SAIR</a>
             </div>
     
