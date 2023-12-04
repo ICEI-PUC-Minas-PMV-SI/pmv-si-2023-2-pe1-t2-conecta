@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Administrar Demanda</title>
+    <link rel="stylesheet" href="../../css/index.css">
+    <link rel="stylesheet" href="administrar-demanda.css">
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script type="module" src="../../components/header/header.js"></script>
+    <script type="module" src="../../components/footer/footer.js"></script>
+    <script type="module" src="administrar-demanda.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div id="page-overlay"></div>
+
+        <header>
+            <header-component action="toggleOverlay"></header-component>
+        </header>
+
+        <div class="content">
+            <div class="headline">
+                <h1 class="title">Professor de Informática</h1>
+                <p class="task-owner">TeachTech</p>
+            </div>
+            <div class="headline">
+                <h2 class="subtitle">Voluntários</h2>
+            </div>
+
+            <div class="candidates-wrapper">
+            </div>
+
+            <div class="buttons-wrapper">
+                <div class="button-finish">
+                    <div class="page-button-finish" onclick="if (confirm('Deseja finalizar a demanda?')) window.location.href = '../administrar-demandas/administrar-demandas.html'">
+                        <a href="#" class="page-button">FINALIZAR DEMANDA</a>
+                    </div>
+                </div>
+                <div class="button-edit" onclick="window.location.href = '../cadastrar-demanda/cadastrar-demanda.html'">
+                    <div class="page-button-edit">
+                        <a href="#" class="page-button">EDITAR DEMANDA</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div id="myModal" class="modal">
+                <div class="modal-wrapper">
+                        <div class="modal-text">
+                                <div class="modal-header">
+                                        <img class="image-modal" src="../../assets/icons/voluntary.png" alt="Ajuda">
+                                        <p class="modal-title">VOLUNTÁRIOS</p>
+                                        <div class="close">&times;</div>
+                                </div>
+                                <div class="task-name"></div>
+                                <div class="NGO"></div>
+                                <div class="modal-content">
+                                    <div>
+                                        <h1 class="text-tiltle">Nome do Voluntário</h1>
+                                        <div class="name"></div>
+                                    </div>
+                                    <div>
+                                                <h1 class="text-tiltle">Perfil</h1>
+                                                <div class="text"></div>
+                                        </div>
+                                </div>
+                        </div>
+                </div>
+        </div>
+
+        <footer-component></footer-component>
+    </div>
+
+    <script src="../../js/index.js"></script>
+    <script>
+        function modal(item, event) {
+            let task_name = $('.headline .title').text()
+            $('.task-name').html(task_name)
+
+            let text = item.find('.person-description-text').text()
+            $('.text').html(text)
+
+            let NGO = $('.headline .task-owner').text()
+            $('.NGO').html(NGO)
+
+            let name = item.find('.person-name').text()
+            $('.name').html(name)
+
+            $('#myModal').css('display', 'block');
+        }
+    </script>
+</body>
+
+</html>
