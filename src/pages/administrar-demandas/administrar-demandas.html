@@ -9,7 +9,9 @@
     <link rel="stylesheet" href="administrar-demandas.css">
     <script type="module" src="../../components/header/header.js"></script>
     <script type="module" src="../../components/footer/footer.js"></script>
-    <script type="module" src="./administrar-demanda.js"></script>
+    <script type="module" src="../../js/models/task.js"></script>
+    <script type="module" src="../../js/models/organization.js"></script>
+    <script type="module" src="./administrar-demandas.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 
@@ -37,394 +39,19 @@
                 </label>
                 <div class="filter-wrapper">
                     <select class="filterButton" style="display: none;">
-                        <option value="todos">Tipo</option>
-                        <option value="opcao1">Remoto</option>
-                        <option value="opcao2">Presencial</option>
+                        <option value="all">Tipo</option>
+                        <option value="remote">Remoto</option>
+                        <option value="on-site">Presencial</option>
                     </select>
-                    <select class="filterButton" style="display: none;">
-                        <option value="todos">Status</option>
-                        <option value="todos">Aberta</option>
-                        <option value="opcao1">Finalizada</option>
+                    <select class="filterButton status" style="display: none;">
+                        <option value="all">Status</option>
+                        <option value="Aberta">Aberta</option>
+                        <option value="Finalizada">Finalizada</option>
                     </select>
                 </div>
             </div>
 
             <div class="tasks-wrapper">
-                <div class="vertical-task-card" onclick="modal($(this), event);">
-                    <div class="card-section-wrapper">
-                        <div class="card-header" onclick="fotoClick(event)">
-                            <div class="task-info">
-                                <p class="task-name">Ensinar HTML</p>
-                                <p class="task-owner">TeachTech</p>
-                                <div class="status-wrapper" onclick="fotoClick(event)">
-                                    <div class="status-info">
-                                        <img class="status-image" src="../../assets/icons/red-dot.png" alt="">
-                                    </div>
-                                    <div>
-                                        <p class="status-name">Finalizada</p>
-                                    </div>
-                                </div> 
-                            </div>
-                        </div>
-                        <div class="task-description">
-                            <p class="task-description-text">
-                                Procuramos voluntários para ensinar HTML a jovens interessados em tecnologia. Sua
-                                contribuição pode abrir portas para o mundo da programação. Junte-se a nós e inspire o
-                                futuro digital!
-                            </p>
-                        </div>
-                        <div class="cards-button" onclick="fotoClick(event)">
-                            <div class="card-button-wrapper" onclick="fotoClick(event)">
-                                <div class="manage-delete-button-wrapper" onclick="window.location.href = '../administrar-demanda-em-progresso/administrar-demanda-em-progresso.html'">
-                                    <a href="#"><img class="manage-button" src="../../assets/icons/manage.png" alt="manage"></a>
-                                </div>
-                                <div class="manage-delete-button-wrapper" onclick="if (confirm('Tem certeza que deseja excluir essa demanda?')) alert('Excluida com sucesso.')">
-                                    <a href="#"><img class="delete-button" src="../../assets/icons/delete.png" alt="Delete"></a>
-                                </div>
-                            </div> 
-                            <div class="location-button-wrapper">
-                                <img class="image-location" src="../../assets/icons/location-black.png" alt="Location">
-                                <div class="location-tag">São Paulo, SP
-                                </div>
-                            </div>
-                            
-                            <div style="display:none">
-                                <div class="address">
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-                <div class="vertical-task-card" onclick="modal($(this), event);">
-                    <div class="card-section-wrapper">
-                        <div class="card-header" onclick="fotoClick(event)">
-                            <div class="task-info">
-                                <p class="task-name">Criação de Software</p>
-                                <p class="task-owner">TeachTech</p>
-                                <div class="status-wrapper">
-                            <div class="status-info">
-                                <img class="status-image" src="../../assets/icons/green-dot.png" alt="">
-                            </div>
-                            <div>
-                                <p class="status-name">Aberta</p>
-                            </div>
-                        </div> 
-                            </div>
-                        </div>
-                        <div class="task-description">
-                            <p class="task-description-text">
-                                A nossa ONG busca apoio no desenvolvimento de um software educacional interativo. O objetivo é fornecer
-                                uma plataforma online que permita o acesso a conteúdo de qualidade.
-                            </p>
-                        </div>
-                       <div class="cards-button" onclick="fotoClick(event)">
-                            <div class="card-button-wrapper" onclick="fotoClick(event)">
-                                <div class="manage-delete-button-wrapper" onclick="window.location.href = '../administrar-demanda-finalizada/administrar-demanda-finalizada.html'">
-                                    <a href="#"><img class="manage-button" src="../../assets/icons/manage.png" alt="manage"></a>
-                                </div>
-                                <div class="manage-delete-button-wrapper" onclick="if (confirm('Tem certeza que deseja excluir essa demanda?')) alert('Excluida com sucesso.')">
-                                    <a href="#"><img class="delete-button" src="../../assets/icons/delete.png" alt="Delete"></a>
-                                </div>
-                            </div> 
-                            <div class="location-button-wrapper">
-                                <img class="image-location" src="../../assets/icons/location-black.png" alt="Location">
-                                <div class="location-tag">Remoto
-                                </div>
-                            </div>
-
-                            <div style="display:none">
-                                <div class="address">
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-                <div class="vertical-task-card" onclick="modal($(this), event);">
-                    <div class="card-section-wrapper">
-                        <div class="card-header" onclick="fotoClick(event)">
-                            <div class="task-info">
-                                <p class="task-name">Mentoria para Jovens</p>
-                                <p class="task-owner">TeachTech</p>
-                                <div class="status-wrapper">
-                                    <div class="status-info">
-                                        <img class="status-image" src="../../assets/icons/green-dot.png" alt="">
-                                    </div>
-                                    <div>
-                                        <p class="status-name">Aberta</p>
-                                    </div>
-                                </div> 
-                            </div>
-                        </div>
-                        <div class="task-description">
-                            <p class="task-description-text">
-                                Estamos buscando apoiadores e parceiros para desenvolver um programa de mentoria em
-                                tecnologia que irá ajudar os jovens a adquirirem habilidades relevantes, orientação e
-                                inspiração.
-                            </p>
-                        </div>
-                        <div class="cards-button" onclick="fotoClick(event)">
-                            <div class="card-button-wrapper" onclick="fotoClick(event)">
-                                <div class="manage-delete-button-wrapper" onclick="window.location.href = '../administrar-demanda-em-progresso/administrar-demanda-em-progresso.html'">
-                                    <a href="#"><img class="manage-button" src="../../assets/icons/manage.png" alt="manage"></a>
-                                </div>
-                                <div class="manage-delete-button-wrapper" onclick="if (confirm('Tem certeza que deseja excluir essa demanda?')) alert('Excluida com sucesso.')">
-                                    <a href="#"><img class="delete-button" src="../../assets/icons/delete.png" alt="Delete"></a>
-                                </div>
-                            </div> 
-                            <div class="location-button-wrapper">
-                                <img class="image-location" src="../../assets/icons/location-black.png" alt="Location">
-                                <div class="location-tag">Remoto
-                                </div>
-                            </div>
-
-                            <div style="display:none">
-                                <div class="address">
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-                <div class="vertical-task-card" onclick="modal($(this), event);">
-                    <div class="card-section-wrapper">
-                        <div class="card-header" onclick="fotoClick(event)">
-                            <div class="task-info">
-                                <p class="task-name">Professor de Informática</p>
-                                <p class="task-owner">TeachTech</p>
-                                <div class="status-wrapper">
-                                    <div class="status-info">
-                                        <img class="status-image" src="../../assets/icons/red-dot.png" alt="">
-                                    </div>
-                                    <div>
-                                        <p class="status-name">Finalizada</p>
-                                    </div>
-                                </div> 
-                            </div>
-                        </div>
-                        <div class="task-description">
-                            <p class="task-description-text">
-                                Precisamos de professor voluntário para dar início à oficina de informática ministrando
-                                aulas em nível iniciante. O principal objetivo da oficina é a inclusão digital,
-                                permitindo as crianças o acesso às tecnologias.
-                            </p>
-                        </div>
-                        <div class="cards-button" onclick="fotoClick(event)">
-                            <div class="card-button-wrapper" onclick="fotoClick(event)">
-                                <div class="manage-delete-button-wrapper" onclick="window.location.href = '../administrar-demanda-em-progresso/administrar-demanda-em-progresso.html'">
-                                    <a href="#"><img class="manage-button" src="../../assets/icons/manage.png" alt="manage"></a>
-                                </div>
-                                <div class="manage-delete-button-wrapper" onclick="if (confirm('Tem certeza que deseja excluir essa demanda?')) alert('Excluida com sucesso.')">
-                                    <a href="#"><img class="delete-button" src="../../assets/icons/delete.png" alt="Delete"></a>
-                                </div>
-                            </div> 
-                            <div class="location-button-wrapper">
-                                <img class="image-location" src="../../assets/icons/location-black.png" alt="Location">
-                                <div class="location-tag">São Paulo, SP
-                                </div>
-                            </div>
-
-                            <div style="display:none">
-                                <div class="address">
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-
-                <div class="horizontal-task-card" onclick="modal($(this), event);">
-                    <div class="left-side">
-                        <div class="task-info" onclick="fotoClick(event)">
-                            <p class="task-name">Ensinar HTML</p>
-                            <p class="task-owner">TeachTech</p>
-                        </div>
-                        <div class="task-description">
-                            <p class="task-description-text">
-                                Procuramos voluntários para ensinar HTML a jovens interessados em tecnologia.
-                                Sua contribuição pode abrir portas para o mundo da programação. Junte-se a nós e inspire
-                                o futuro digital!
-                            </p>
-                        </div>
-                        <div class="bottom-info" onclick="fotoClick(event)">
-                            <div class="location-button-wrapper">
-                                <img class="image-location" src="../../assets/icons/location-black.png" alt="Location">
-                                <div class="location-tag">São Paulo, SP
-                                </div>
-                            </div>
-
-                            <div style="display:none">
-                                <div class="address">
-                                </div>
-                            </div>
-
-                            <div class="status-wrapper">
-                                <div class="status-info">
-                                    <img class="status-image" src="../../assets/icons/red-dot.png" alt="">
-                                </div>
-                                <div>
-                                    <p class="status-name">Finalizada</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="right-side" onclick="fotoClick(event)">
-                        <div class="cards-button">
-                            <div class="manage-delete-button-wrapper" onclick="window.location.href = '../administrar-demanda-em-progresso/administrar-demanda-em-progresso.html'">
-                                <a href="#"><img class="manage-button" src="../../assets/icons/manage.png"
-                                        alt="manage"></a>
-                            </div>
-                            <div class="manage-delete-button-wrapper" onclick="if (confirm('Tem certeza que deseja excluir essa demanda?')) alert('Excluida com sucesso.')">
-                                <a href="#"><img class="delete-button" src="../../assets/icons/delete.png"
-                                        alt="Delete"></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="horizontal-task-card" onclick="modal($(this), event);">
-                    <div class="left-side">
-                        <div class="task-info"onclick="fotoClick(event)">
-                            <p class="task-name">Criação de Software</p>
-                            <p class="task-owner">TeachTech</p>
-                        </div>
-                        <div class="task-description">
-                            <p class="task-description-text">
-                                A nossa ONG busca apoio no desenvolvimento de um software educacional interativo. O objetivo é fornecer
-                                uma plataforma online que permita o acesso a conteúdo de qualidade.
-                            </p>
-                        </div>
-                        <div class="bottom-info" onclick="fotoClick(event)">
-                            <div class="location-button-wrapper">
-                                <img class="image-location" src="../../assets/icons/location-black.png" alt="Location">
-                                <div class="location-tag">Remoto
-                                </div>
-                            </div>
-
-                            <div style="display:none">
-                                <div class="address">
-                                </div>
-                            </div>
-
-                            <div class="status-wrapper">
-                                <div class="status-info">
-                                    <img class="status-image" src="../../assets/icons/green-dot.png" alt="">
-                                </div>
-                                <div>
-                                    <p class="status-name">Aberta</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="right-side">
-                        <div class="cards-button">
-                            <div class="manage-delete-button-wrapper" onclick="window.location.href = '../administrar-demanda-em-progresso/administrar-demanda-em-progresso.html'">
-                                <a href="#"><img class="manage-button" src="../../assets/icons/manage.png"
-                                        alt="manage"></a>
-                            </div>
-                            <div class="manage-delete-button-wrapper" onclick="if (confirm('Tem certeza que deseja excluir essa demanda?')) alert('Excluida com sucesso.')">
-                                <a href="#"><img class="delete-button" src="../../assets/icons/delete.png"
-                                        alt="Delete"></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="horizontal-task-card" onclick="modal($(this), event);">
-                    <div class="left-side">
-                        <div class="task-info" onclick="fotoClick(event)">
-                            <p class="task-name">Mentoria para Jovens</p>
-                            <p class="task-owner">TeachTech</p>
-                        </div>
-                        <div class="task-description">
-                            <p class="task-description-text">
-                                Estamos buscando apoiadores e parceiros para desenvolver um programa de mentoria em
-                                tecnologia que irá ajudar os jovens a adquirirem habilidades relevantes, orientação e
-                                inspiração.
-                            </p>
-                        </div>
-                        <div class="bottom-info" onclick="fotoClick(event)">
-                            <div class="location-button-wrapper">
-                                <img class="image-location" src="../../assets/icons/location-black.png" alt="Location">
-                                <div class="location-tag">Remoto
-                                </div>
-                            </div>
-
-                            <div style="display:none">
-                                <div class="address">
-                                </div>
-                            </div>
-
-                            <div class="status-wrapper">
-                                <div class="status-info">
-                                    <img class="status-image" src="../../assets/icons/green-dot.png" alt="">
-                                </div>
-                                <div>
-                                    <p class="status-name">Aberta</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="right-side">
-                        <div class="cards-button">
-                            <div class="manage-delete-button-wrapper" onclick="window.location.href = '../administrar-demanda-em-progresso/administrar-demanda-em-progresso.html'">
-                                <a href="#"><img class="manage-button" src="../../assets/icons/manage.png"
-                                        alt="manage"></a>
-                            </div>
-                            <div class="manage-delete-button-wrapper" onclick="if (confirm('Tem certeza que deseja excluir essa demanda?')) alert('Excluida com sucesso.')">
-                                <a href="#"><img class="delete-button" src="../../assets/icons/delete.png"
-                                        alt="Delete"></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="horizontal-task-card" onclick="modal($(this), event);">
-                    <div class="left-side">
-                        <div class="task-info" onclick="fotoClick(event)">
-                            <p class="task-name">Professor de Informática</p>
-                            <p class="task-owner">TeachTech</p>
-                        </div>
-                        <div class="task-description">
-                            <p class="task-description-text">
-                                Precisamos de professor voluntário para dar início à oficina de informática ministrando
-                                aulas em nível iniciante. O principal objetivo da oficina é a inclusão digital,
-                                permitindo aS crianças o acesso às tecnologias.
-                            </p>
-                        </div>
-                        <div class="bottom-info" onclick="fotoClick(event)">
-                            <div class="location-button-wrapper">
-                                <img class="image-location" src="../../assets/icons/location-black.png" alt="Location">
-                                <div class="location-tag"> São Paulo, SP
-                                </div>
-                            </div>
-
-                            <div style="display:none">
-                                <div class="address">
-                                </div>
-                            </div>
-
-                            <div class="status-wrapper">
-                                <div class="status-info">
-                                    <img class="status-image" src="../../assets/icons/red-dot.png" alt="">
-                                </div>
-                                <div>
-                                    <p class="status-name">Finalizada</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="right-side">
-                        <div class="cards-button">
-                            <div class="manage-delete-button-wrapper" onclick="window.location.href = '../administrar-demanda-em-progresso/administrar-demanda-em-progresso.html'">
-                                <a href="#"><img class="manage-button" src="../../assets/icons/manage.png"
-                                        alt="manage"></a>
-                            </div>
-                            <div class="manage-delete-button-wrapper" onclick="if (confirm('Tem certeza que deseja excluir essa demanda?')) alert('Excluida com sucesso.')">
-                                <a href="#"><img class="delete-button" src="../../assets/icons/delete.png"
-                                        alt="Delete"></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
 
             </div>
             <div class="button-cadastrar-demanda">
@@ -466,20 +93,29 @@
     <script src="../../js/modal.js"></script>
     <script>
         $("#filtroSelect").click(function () {
-    if ($('.filterButton').hasClass('visible')) {
-        $('.filterButton').addClass('invisible')
-        $('.filterButton').removeClass('visible')
-        $('.filterButton').css('display', 'none')
-        $('.icon_black').css('display', 'none')
-        $('.icon_white').css('display', 'block')
-    } else {
-        $('.filterButton').addClass('visible')
-        $('.filterButton').removeClass('invisible')
-        $('.filterButton').css('display', 'block')
-        $('.icon_black').css('display', 'block')
-        $('.icon_white').css('display', 'none')
-    }
-});
+            if ($('.filterButton').hasClass('visible')) {
+                $('.filterButton').addClass('invisible')
+                $('.filterButton').removeClass('visible')
+                $('.filterButton').css('display', 'none')
+                $('.filterButton.status').addClass('invisible')
+                $('.filterButton.status').removeClass('visible')
+                $('.filterButton.status').css('display', 'none')
+                $('.icon_black').css('display', 'none')
+                $('.icon_white').css('display', 'block')
+            } else {
+                $('.filterButton').addClass('visible')
+                $('.filterButton').removeClass('invisible')
+                $('.filterButton').css('display', 'block')
+                $('.filterButton.status').addClass('visible')
+                $('.filterButton.status').removeClass('invisible')
+                $('.filterButton.status').css('display', 'block')
+                $('.icon_black').css('display', 'block')
+                $('.icon_white').css('display', 'none')
+            }
+        });
+        function deleteTasks(id) {
+            window.location.href = "http://127.0.0.1:5502/src/pages/administrar-demandas/administrar-demandas.html?delete="+id;
+        }
     </script>
 
 </body>

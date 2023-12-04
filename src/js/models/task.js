@@ -44,6 +44,26 @@ export class Task {
         return await makeRequest(getURL('tasks?status=Aberta'), 'GET');
     }
 
+    async findAllFilteredByType(filterBy) {
+        if(filterBy === 'remote') {
+            return await makeRequest(getURL('tasks?type=Remoto'), 'GET');
+        }
+        if(filterBy === 'on-site') {
+            return await makeRequest(getURL('tasks?type=Presencial'), 'GET');
+        }
+        return await makeRequest(getURL('tasks'), 'GET');
+    }
+
+    async findAllFilteredByStatus(filterBy) {
+        if(filterBy === 'remote') {
+            return await makeRequest(getURL('tasks?status=Aberta'), 'GET');
+        }
+        if(filterBy === 'on-site') {
+            return await makeRequest(getURL('tasks?status=Finalizada'), 'GET');
+        }
+        return await makeRequest(getURL('tasks'), 'GET');
+    }
+
     async updateById(id) {
         const data = {
             organizationId: this.organizationId,
