@@ -35,13 +35,14 @@ export class Task {
     }
     
     async findAllFilteredByOpenStatus(filterBy) {
+        console.log('filterBy', filterBy);
         if(filterBy === 'remote') {
-            return await makeRequest(getURL('tasks?status=Aberta&type=Remoto'), 'GET');
+            return await makeRequest(getURL('tasks?status=aberta&type=remoto'), 'GET');
         }
         if(filterBy === 'on-site') {
-            return await makeRequest(getURL('tasks?status=Aberta&type=Presencial'), 'GET');
+            return await makeRequest(getURL('tasks?status=aberta&type=presencial'), 'GET');
         }
-        return await makeRequest(getURL('tasks?status=Aberta'), 'GET');
+        return await makeRequest(getURL('tasks?status=aberta'), 'GET');
     }
 
     async updateById(id) {

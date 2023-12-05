@@ -11,6 +11,24 @@ document.querySelector('.filterButton').addEventListener('change', (event) => {
     });
 });
 
+document.querySelector('.filterButton.state').addEventListener('change', (event) => {
+    console.log('event.target.value', event.target.value);
+    const tasksWrapper = document.querySelector('.tasks-wrapper');
+    tasksWrapper.innerHTML = '';
+    getTasksByState(event.target.value).then().catch((error) => {
+        console.log(error);
+    });
+});
+
+document.querySelector('.filterButton.cidade').addEventListener('change', (event) => {
+    console.log('event.target.value', event.target.value);
+    const tasksWrapper = document.querySelector('.tasks-wrapper');
+    tasksWrapper.innerHTML = '';
+    getTasksByState(event.target.value).then().catch((error) => {
+        console.log(error);
+    });
+});
+
 const task = new Task();
 
 const getOrganizationData = async (organizationId) => {
@@ -22,7 +40,13 @@ const getTasks = async (filterBy = 'all') => {
     const tasksWrapper = document.querySelector('.tasks-wrapper');
 
     const tasks = await task.findAllFilteredByOpenStatus(filterBy)
+    let count = 0;
 
+    if (tasks.length == 0) {
+        $('.loading-background ').css('display', 'none');
+        $("#loader").css("visibility", "hidden");
+        $('.tasks-empty').show();
+    }
     for await (const task of tasks) {
         const verticalTaskCard = new VerticalTaskCard();
 
@@ -41,6 +65,12 @@ const getTasks = async (filterBy = 'all') => {
         verticalTaskCard.address = organizationData.street+', '+organizationData.number
 
         tasksWrapper.appendChild(verticalTaskCard);
+        count++;
+
+        if (count >= tasks.length) {
+            $('.loading-background ').css('display', 'none');
+            $("#loader").css("visibility", "hidden");
+        }
     }
 
     for await (const task of tasks) {
@@ -65,8 +95,67 @@ const getTasks = async (filterBy = 'all') => {
     }
 }
 
-getTasks().then().catch((error) => {
-    console.log(error);
+const getTasksByState = async (location = null) => {
+    const tasksWrapper = document.querySelector('.tasks-wrapper');
+
+    const tasks = await task.findAllFilteredByOpenStatus('on-site')
+
+    let findTask = false;
+    for await (const task of tasks) {
+        const verticalTaskCard = new VerticalTaskCard();
+        const organizationData = await getOrganizationData(task.organizationId);
+        if (location && (organizationData.state == location || organizationData.city == location || location == 'todos')) {
+            verticalTaskCard.name = task.name;
+            verticalTaskCard.description = task.description;
+            if(task.type == 'Presencial') {
+                    verticalTaskCard.type = organizationData.city+', '+organizationData.state;
+            } else {
+                    verticalTaskCard.type = task.type;
+            }
+            verticalTaskCard.destination = `../candidatar-a-demanda/candidatar-a-demanda.html?id=${task.id}`;
+            verticalTaskCard.owner = organizationData.name;
+            verticalTaskCard.image = organizationData.image;
+            verticalTaskCard.address = organizationData.street+', '+organizationData.number
+
+            tasksWrapper.appendChild(verticalTaskCard);
+            findTask = true;
+        }
+    }
+
+    for await (const task of tasks) {
+        const horizontalTaskCard = new HorizontalTaskCard();
+        const organizationData = await getOrganizationData(task.organizationId);
+
+        if (location && (organizationData.state == location || organizationData.city == location || location == 'todos')) {
+            horizontalTaskCard.name = task.name;
+            horizontalTaskCard.description = task.description;
+            if(task.type == 'Presencial') {
+                    horizontalTaskCard.type = organizationData.city+', '+organizationData.state;
+            } else {
+                horizontalTaskCard.type = task.type;
+            }
+            horizontalTaskCard.destination = `../candidatar-a-demanda/candidatar-a-demanda.html?id=${task.id}`;
+            horizontalTaskCard.owner = organizationData.name;
+            horizontalTaskCard.image = organizationData.image
+            horizontalTaskCard.address = organizationData.street+', '+organizationData.number
+
+            tasksWrapper.appendChild(horizontalTaskCard);
+        }
+
+        if (!findTask) {
+            $('.tasks-empty').css('display', 'block');
+        } else {
+            $('.tasks-empty').css('display', 'none');
+        }
+    
+    }
+}
+
+
+getTasks().then(() => {
+    console.log("Tasks retrieved successfully");
+}).catch((error) => {
+    console.error("Error retrieving tasks:", error);
 });
 
 $.ajax({
@@ -74,7 +163,7 @@ $.ajax({
         context: {}
 }).done(function(data) {
         for (var uf in data) {
-                let html = "<option  value='"+data[uf].id+"'>"+data[uf].sigla+"</option>";
+                let html = "<option  value='"+data[uf].sigla+"'>"+data[uf].sigla+"</option>";
                 $('.state').append(html);
         }
 });
