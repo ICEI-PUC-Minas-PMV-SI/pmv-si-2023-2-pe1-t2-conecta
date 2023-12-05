@@ -49,7 +49,7 @@
                         <option value="todos">Estado</option>
                     </select>
 
-                    <select class="filterButton cidade" style="display: none;">
+                    <select class="filterButton cidade" style="display: none; max-width: 310px;">
                         <option value="todos">Cidade</option>
                     </select>
                 </div>
@@ -92,36 +92,39 @@
         <footer-component></footer-component>
 
     </div>
-            <script src="../../js/index.js"></script>
-            <script>
-                $("#filtroSelect").click(function(){
-                    if ($('.filterButton').hasClass('visible')) {
-                        $('.filterButton').addClass('invisible')
-                        $('.filterButton').removeClass('visible')
-                        $('.filterButton').css('display', 'none')
-                        $('.icon_black').css('display', 'none')
-                        $('.icon_white').css('display', 'block')
-                    } else {
-                        $('.filterButton').addClass('visible')
-                        $('.filterButton').removeClass('invisible')
-                        $('.filterButton').css('display', 'block')
-                        $('.icon_black').css('display', 'block')
-                        $('.icon_white').css('display', 'none')
+
+    <script src="../../js/modal.js"></script>
+    <script src="../../js/index.js"></script>
+        <script>
+            $("#filtroSelect").click(function(){
+                if ($('.filterButton').hasClass('visible')) {
+                    $('.filterButton').addClass('invisible')
+                    $('.filterButton').removeClass('visible')
+                    $('.filterButton').css('display', 'none')
+                    $('.icon_black').css('display', 'none')
+                    $('.icon_white').css('display', 'block')
+                } else {
+                    $('.filterButton').addClass('visible')
+                    $('.filterButton').removeClass('invisible')
+                    $('.filterButton').css('display', 'block')
+                    $('.icon_black').css('display', 'block')
+                    $('.icon_white').css('display', 'none')
+                }
+            });
+            function buscaCidade(element) {
+                $('.cidades_selecionadas').remove();
+                $.ajax({
+                    url: "https://servicodados.ibge.gov.br/api/v1/localidades/estados/"+element+"/municipios?orderBy=nome",
+                    context: {}
+                }).done(function(data) {
+                    for (var uf in data) {
+                        let html = "<option class='cidades_selecionadas' value='"+data[uf].nome+"'>"+data[uf].nome+"</option>";
+                        $('.cidade').append(html);
                     }
                 });
-                function buscaCidade(element) {
-                    $('.cidades_selecionadas').remove();
-                    $.ajax({
-                        url: "https://servicodados.ibge.gov.br/api/v1/localidades/estados/"+element+"/municipios?orderBy=nome",
-                        context: {}
-                    }).done(function(data) {
-                        for (var uf in data) {
-                            let html = "<option class='cidades_selecionadas' value='"+data[uf].nome+"'>"+data[uf].nome+"</option>";
-                            $('.cidade').append(html);
-                        }
-                    });
-                }
-            </script>
+            }
+        </script>
+
         <script src="../../js/index.js"></script>
         <script>
             function myFunction() {

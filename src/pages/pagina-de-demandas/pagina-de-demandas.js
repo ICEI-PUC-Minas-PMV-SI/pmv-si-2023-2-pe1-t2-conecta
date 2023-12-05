@@ -116,31 +116,32 @@ const getTasksByState = async (location = null) => {
         }
     }
 
-    if (!findTask) {
-        $('.tasks-empty').css('display', 'block');
-    } else {
-        $('.tasks-empty').css('display', 'none');
-    }
-
     for await (const task of tasks) {
         const horizontalTaskCard = new HorizontalTaskCard();
-
         const organizationData = await getOrganizationData(task.organizationId);
 
-        horizontalTaskCard.name = task.name;
-        horizontalTaskCard.description = task.description;
-        if(task.type == 'Presencial') {
-                horizontalTaskCard.type = organizationData.city+', '+organizationData.state;
-        } else {
-            horizontalTaskCard.type = task.type;
+        if (location && (organizationData.state == location || organizationData.city == location || location == 'todos')) {
+            horizontalTaskCard.name = task.name;
+            horizontalTaskCard.description = task.description;
+            if(task.type == 'Presencial') {
+                    horizontalTaskCard.type = organizationData.city+', '+organizationData.state;
+            } else {
+                horizontalTaskCard.type = task.type;
+            }
+            horizontalTaskCard.destination = `../candidatar-a-demanda/candidatar-a-demanda.html?id=${task.id}`;
+            horizontalTaskCard.owner = organizationData.name;
+            horizontalTaskCard.image = organizationData.image
+            horizontalTaskCard.address = organizationData.street+', '+organizationData.number
+
+            tasksWrapper.appendChild(horizontalTaskCard);
         }
-        horizontalTaskCard.destination = `../candidatar-a-demanda/candidatar-a-demanda.html?id=${task.id}`;
-        horizontalTaskCard.owner = organizationData.name;
-        horizontalTaskCard.image = organizationData.image
-        horizontalTaskCard.address = organizationData.street+', '+organizationData.number
 
-        tasksWrapper.appendChild(horizontalTaskCard);
-
+        if (!findTask) {
+            $('.tasks-empty').css('display', 'block');
+        } else {
+            $('.tasks-empty').css('display', 'none');
+        }
+    
     }
 }
 
