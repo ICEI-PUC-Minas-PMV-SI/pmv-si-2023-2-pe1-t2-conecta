@@ -361,7 +361,7 @@ Esta seção deve apresentar o relatório com as evidências dos testes de softw
 | *Caso de Teste*                   | *CT19 - Filtro de Demandas por Critérios*                                                                                                                                             |
 |-----------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Requisito Associado               | RF-018 A aplicação deve fornecer um mecanismo de filtro para que os usuários possam encontrar demandas com base em critérios como: remoto, presencial e estado do Brasil. |
-| Link do vídeo do teste realizado: | https://sgapucminasbr-my.sharepoint.com/:v:/g/personal/954530_sga_pucminas_br/EXEnKKwVcFJNsKhEIUylSOIBy-_PyEEVFTfueydkqQBBag?e=TINcVh                                   |
+| Link do vídeo do teste realizado: | https://sgapucminasbr-my.sharepoint.com/:v:/g/personal/954530_sga_pucminas_br/EXEnKKwVcFJNsKhEIUylSOIBy-_PyEEVFTfueydkqQBBag?e=gNIxNP                                   |
 
 | *Caso de Teste*                   | *CT20 - E-mail de Notificação para Voluntários*                                                                                                                                             |
 |-----------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------|
