@@ -48,6 +48,13 @@ const getTasks = async (filterTipo = 'all', filterStatus = 'all') => {
             if (task.status == 'Aberta') {
                 statusTask = 'green-dot.png';
             }
+            console.log(task);
+
+
+            let endereco = organizationData.city+', '+ organizationData.state;
+            if (task.type == "Remoto") { 
+                endereco = "Remoto"
+            }
             let html = 
                 `<div class="vertical-task-card" onclick="modal($(this), event);">`+
                 `    <div class="card-section-wrapper">`+
@@ -80,7 +87,7 @@ const getTasks = async (filterTipo = 'all', filterStatus = 'all') => {
                 `            </div> `+
                 `            <div class="location-button-wrapper">`+
                 `                <img class="image-location" src="../../assets/icons/location-black.png" alt="Location">`+
-                `                <div class="location-tag">`+organizationData.city+', '+ organizationData.state+
+                `                <div class="location-tag">`+endereco+ 
                 `                </div>`+
                 `            </div>`+
                 `            `+
@@ -135,6 +142,7 @@ const getTasks = async (filterTipo = 'all', filterStatus = 'all') => {
                 `     </div>`+
                 `</div>`;
             $('.tasks-wrapper').append(html);
+
         }
     }
 }
