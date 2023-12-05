@@ -31,7 +31,7 @@
     margin: 0 auto;
 }
 
-.tasks-wrapper {
+.candidates-wrapper {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -129,6 +129,11 @@
     display: flex;
     max-width: 120px;
     flex-shrink: 0;
+    cursor: pointer;
+}
+
+.accept-remove-button-wrapper > * {
+    display: none;
 }
 
 .accept-button {
@@ -142,6 +147,23 @@
     width: 25px;
     padding: 8px;
 
+}
+
+.message-button-wrapper {
+    display: flex;
+    max-width: 120px;
+    flex-shrink: 0;
+    cursor: pointer;
+}
+
+.message-button-wrapper > * {
+    display: none;
+}
+
+.message-button {
+    height: 25px;
+    width: 25px;
+    padding: 8px;
 }
 
 .profile-image-card-container {
@@ -179,6 +201,7 @@
     align-items: center;
     justify-content: center;
     float: right;
+    font-size: 12px;
 }
 
 .page-button-edit {
@@ -193,6 +216,8 @@
     align-items: center;
     justify-content: center;
     float: right;
+    font-size: 12px;
+
 }
 
 .page-button {
@@ -339,7 +364,7 @@
         display: none;
     }
 
-    .tasks-wrapper{
+    .candidates-wrapper{
         padding: 15px;
     }
 

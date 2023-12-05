@@ -58,6 +58,14 @@ export class Candidate {
         return await makeRequest(getURL(`candidates/${id}`), 'PUT', data);
     }
     
+    async updateStatusById(id, newStatus) {
+        const data = {
+            status: newStatus
+        }
+        
+        return await makeRequest(getURL(`candidates/${id}`), 'PATCH', data);
+    }
+    
     async deleteById(id) {
         return await makeRequest(getURL(`candidates/${id}`), 'DELETE');
     }
