@@ -53,7 +53,7 @@ const getTasks = async (filterTipo = 'all', filterStatus = 'all') => {
 
 
             let endereco = organizationData.city+', '+ organizationData.state;
-            if (task.type == "Remoto") { 
+            if (task.type == "Remoto" || task.type == "remoto") { 
                 endereco = "Remoto"
             }
             let html = 
