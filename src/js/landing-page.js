@@ -24,19 +24,27 @@ const populateDemanda = async () => {
     const task = new Task();
     let tasks = {};
     for (let i = 0; i < 4; i++) {
-        let random = Math.floor(Math.random() * 10) + 1;
+        let random = Math.floor(Math.random() * 50) + 1;
         tasks = await task.findById(parseInt(random));
+        while (tasks.name == undefined) {
+            random = Math.floor(Math.random() * 10) + 1;
+            tasks = await task.findById(parseInt(random));
+            console.log(tasks);
+        }
     
         const verticalTaskCard = new VerticalTaskCard();
-        let organizationData = await getOrganizationData(parseInt(random));
+        let organizationData = await getOrganizationData(tasks.organizationId);
         verticalTaskCard.name = tasks.name;
         verticalTaskCard.description = tasks.description;
-        if(tasks.type == 'Presencial') {
+        if(tasks.type == 'presencial'|| task.status == 'Presencial') {
                 verticalTaskCard.type = organizationData.city+', '+organizationData.state;
         } else {
-                verticalTaskCard.type = tasks.type;
+                verticalTaskCard.type = tasks.type ;
+                let upperCaseType = verticalTaskCard.type;
+                verticalTaskCard.type = upperCaseType.charAt(0).toUpperCase() + upperCaseType.slice(1)
         }
-        verticalTaskCard.destination = `../candidatar-a-demanda/candidatar-a-demanda.html?id=${tasks.id}`;
+
+        verticalTaskCard.destination = `./pages/candidatar-a-demanda/candidatar-a-demanda.html?id=${tasks.id}`;
         verticalTaskCard.owner = organizationData.name
         verticalTaskCard.image = organizationData.image;
         verticalTaskCard.address = organizationData.street+', '+organizationData.number
@@ -47,12 +55,14 @@ const populateDemanda = async () => {
 
         horizontalTaskCard.name = tasks.name;
         horizontalTaskCard.description = tasks.description;
-        if(tasks.type == 'Presencial') {
+        if(tasks.type == 'presencial' || task.status == 'Presencial') {
                 horizontalTaskCard.type = organizationData.city+', '+organizationData.state;
         } else {
                 horizontalTaskCard.type = tasks.type;
+                let upperCaseType = horizontalTaskCard.type;
+                horizontalTaskCard.type = upperCaseType.charAt(0).toUpperCase() + upperCaseType.slice(1)
         }
-        horizontalTaskCard.destination = `../candidatar-a-demanda/candidatar-a-demanda.html?id=${tasks.id}`;
+        horizontalTaskCard.destination = `./pages/candidatar-a-demanda/candidatar-a-demanda.html?id=${tasks.id}`;
         horizontalTaskCard.owner = organizationData.name
         horizontalTaskCard.image = organizationData.image;
         horizontalTaskCard.address = organizationData.street+', '+organizationData.number

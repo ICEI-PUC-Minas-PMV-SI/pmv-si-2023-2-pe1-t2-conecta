@@ -62,11 +62,11 @@
 
 **Caso de Teste** | **CT08 - Administrar Demandas**
  :--------------: | ------------
-**Procedimento**  | 1) # <br> 2) # <br> 3) #
+**Procedimento**  | 1) Faça [login](https://icei-puc-minas-pmv-si.github.io/pmv-si-2023-2-pe1-t2-conecta/pages/login/login.html) <br> 2) Acesse a página [Administrar Demanda](https://icei-puc-minas-pmv-si.github.io/pmv-si-2023-2-pe1-t2-conecta/pages/administrar-demandas/administrar-demandas.html) <br> 3) Gerencie sua demandas nessa página.
 **Requisitos associados** | RF-007
-**Resultado esperado** | #
-**Dados de entrada** | #
-**Resultado obtido** | #
+**Resultado esperado** | Demandas específcas de cada ONG carregadas com todas informações. Função de filtro para filtrar as demandas, botões para excluir a demanda e para direcionar para página com os canditados.
+**Dados de entrada** | E-mail, senha.
+**Resultado obtido** | Sucesso.
 
 **Caso de Teste** | **CT09 - Edição de Demandas pelas ONGs**
  :--------------: | ------------
@@ -150,11 +150,11 @@
 
 **Caso de Teste** | **CT19 - Filtro de Demandas por Critérios**
  :--------------: | ------------
-**Procedimento**  | 1) # <br> 2) # <br> 3) #
+**Procedimento**  | 1) Acessar a [página de demandas](https://icei-puc-minas-pmv-si.github.io/pmv-si-2023-2-pe1-t2-conecta/pages/pagina-de-demandas/pagina-de-demandas.html) <br> 2) Selecionar as opções de filtros desejadas <br>
 **Requisitos associados** | RF-018
-**Resultado esperado** | #
-**Dados de entrada** | #
-**Resultado obtido** | #
+**Resultado esperado** | Página carregada de acordo com os filtros selecionados.
+**Dados de entrada** | Selecionar filtro.
+**Resultado obtido** | Sucesso.
 
 **Caso de Teste** | **CT20 - E-mail de Notificação para Voluntários**
  :--------------: | ------------
@@ -285,7 +285,7 @@
 | *Caso de Teste*                   | *CT08 - Administrar Demandas*                                                                                                                                             |
 |-----------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Requisito Associado               | RF-007 - A aplicação deve permitir que as ONG vejam e administrem suas demandas, podendo filtrar por status (aberta, finalizada), cadastrar ou excluir. |
-| Link do vídeo do teste realizado: | COLOQUE SEU VIDEO AQUI                                   |
+| Link do vídeo do teste realizado: | https://sgapucminasbr-my.sharepoint.com/:v:/g/personal/954530_sga_pucminas_br/EeC-rLWbvjVBqqQCahtsG_EBNshRmH3OmiBQXXWjs3CGdA?e=qA6HqD                                   |
 
 | *Caso de Teste*                   | *CT09 - Edição de Demandas pelas ONGs*                                                                                                                                             |
 |-----------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -340,7 +340,7 @@
 | *Caso de Teste*                   | *CT19 - Filtro de Demandas por Critérios*                                                                                                                                             |
 |-----------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Requisito Associado               | RF-018 A aplicação deve fornecer um mecanismo de filtro para que os usuários possam encontrar demandas com base em critérios como: remoto, presencial e estado do Brasil. |
-| Link do vídeo do teste realizado: | COLOQUE SEU VIDEO AQUI                                   |
+| Link do vídeo do teste realizado: | https://sgapucminasbr-my.sharepoint.com/:v:/g/personal/954530_sga_pucminas_br/EXEnKKwVcFJNsKhEIUylSOIBy-_PyEEVFTfueydkqQBBag?e=gNIxNP                                   |
 
 | *Caso de Teste*                   | *CT20 - E-mail de Notificação para Voluntários*                                                                                                                                             |
 |-----------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------|

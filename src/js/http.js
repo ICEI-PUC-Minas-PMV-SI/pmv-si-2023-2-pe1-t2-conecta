@@ -25,7 +25,6 @@ export async function makeRequest(url, method, data) {
         },
         body: data ? JSON.stringify(data) : undefined
     };
-
     try {
         const response = await fetch(url, options);
         return await response.json();
