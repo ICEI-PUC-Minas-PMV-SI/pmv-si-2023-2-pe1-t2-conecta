@@ -13,8 +13,8 @@ export class Task {
             organizationId: this.organizationId,
             name: this.name,
             description: this.description,
-            createdAt: this.createdAt,
-            status: this.status,
+            createdAt: Date.now(),
+            status: 'aberta',
             type: this.type,
             searchData: this.name + ' ' + this.description,
         }
@@ -69,4 +69,8 @@ export class Task {
     async deleteById(id) {
         return await makeRequest(getURL(`tasks/${id}`), 'DELETE');
     }
+}
+
+export async function findById(id) {
+    return await makeRequest(getURL(`tasks/${id}`), 'GET');
 }
