@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="cadastrar-depoimento.css">
     <script type="module" src="../../components/header/header.js"></script>
     <script type="module" src="../../components/footer/footer.js"></script>
+    <script type="module" src="cadastrar-depoimento.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 
@@ -25,7 +26,7 @@
     <div class="content">
 
         <div class="headline">
-            <h1 class="title">[NOME DA ONG AQUI]</h1>
+            <h1 id="title" class="title">Carregando...</h1>
         </div>
 
         <div class="section-wrapper">
@@ -35,7 +36,7 @@
                     <label for="demanda">Nome da Demanda</label>
                 </div>
                 <div class="col-78">
-                    <input type="text" value="Formatação e Configuração de Rede" id="demanda" name="demanda" disabled>
+                    <input type="text" value="Carregando..." id="demanda" name="demanda" disabled>
                 </div>
             </div>
             <div class="row">
@@ -45,7 +46,7 @@
                 <div class="col-78">
                     <input type="radio" id="presencial" name="tipo" value="presencial" disabled>
                     <label for="presencial">Presencial</label>
-                    <input type="radio" id="remoto" name="tipo" value="remoto" checked disabled>
+                    <input type="radio" id="remoto" name="tipo" value="remoto" disabled>
                     <label for="remoto">Remoto</label>
                 </div>
             </div>
@@ -58,8 +59,8 @@
                 </div>
             </div>
             <div class="row-button">
-                <div><input onclick="alert('Depoimento cadastrado com sucesso.')" type="submit" name="enviar" value="Enviar"></div>
-                <div><a href="#"><input type="submit" name="cancelar" value="Cancelar"></a></div>
+                <div><input id="send-review" type="submit" name="enviar" value="Enviar"></div>
+                <div><input id="cancel-review" type="submit" name="cancelar" value="Cancelar"></div>
             </div>
         </div>
     </div>
