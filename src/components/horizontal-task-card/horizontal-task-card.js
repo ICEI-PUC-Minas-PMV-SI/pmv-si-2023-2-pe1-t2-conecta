@@ -35,13 +35,13 @@ const makeTemplate = () => {
         </div>
 
         <div style="display:none">
-            <div class="addres">
+            <div class="address">
             </div>
-         </div>
+        </div>
 
     </div>
     <div class="right-side" onclick="fotoClick(event)">
-    <a href=${getPagePath("pagina-da-ong")}>
+    <a href=${getPagePath("pagina-da-ong")}>    
         <div class="profile-image-card-container">
             <img src="" alt="Profile image">
         </div>
