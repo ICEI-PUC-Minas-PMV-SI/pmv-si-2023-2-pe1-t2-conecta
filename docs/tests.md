@@ -154,9 +154,9 @@ Preencha a tabela com o plano dos testes. Para cada Caso de Teste (CT), associe 
 
 **Caso de Teste** | **CT17 - Página "Por Que Ser Voluntário?"**
  :--------------: | ------------
-**Procedimento**  | 1) Acessar [página por que ser voluntario?](https://icei-puc-minas-pmv-si.github.io/pmv-si-2023-2-pe1-t2-conecta/pages/por-que-ser-voluntario/por-que-ser-voluntario.html) <br> 2) acessa as informações da pagina
+**Procedimento**  | 1) Acessar [página por que ser voluntario?](https://icei-puc-minas-pmv-si.github.io/pmv-si-2023-2-pe1-t2-conecta/pages/por-que-ser-voluntario/por-que-ser-voluntario.html) <br> 2) acessa as informações da página
 **Requisitos associados** | RF-016
-**Resultado esperado** | acessa a pagina instrutiva.
+**Resultado esperado** | Acessa a página com texto e imagens carregados.
 **Dados de entrada** | Nenhum.
 **Resultado obtido** | Sucesso.
 
