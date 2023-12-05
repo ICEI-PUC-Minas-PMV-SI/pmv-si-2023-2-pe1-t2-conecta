@@ -97,7 +97,7 @@ async function handleSend(event) {
         candidate.email = candidatura.email;
         candidate.cpf = candidatura.cpf;
         candidate.phone = candidatura.phone;
-        candidate.about = candidatura.como;
+        candidate.profile = candidatura.como;
         candidate.taskId = taskID;
         candidate.status = "pendente";
         candidate.timestamp = dataAtual;

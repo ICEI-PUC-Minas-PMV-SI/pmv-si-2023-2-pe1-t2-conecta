@@ -6,7 +6,7 @@ export class Candidate {
     email;
     cpf;
     phone;
-    about;
+    profile;
     status;
     timestamp;
     
@@ -17,7 +17,7 @@ export class Candidate {
             email: this.email,
             cpf: this.cpf,
             phone: this.phone,
-            about: this.about,
+            profile: this.profile,
             status: this.status,
             timestamp: this.timestamp
             
@@ -50,7 +50,7 @@ export class Candidate {
             email: this.email,
             cpf: this.cpf,
             phone: this.phone,
-            about: this.about,
+            profile: this.profile,
             status: this.status,
             timestamp: this.timestamp,
         }

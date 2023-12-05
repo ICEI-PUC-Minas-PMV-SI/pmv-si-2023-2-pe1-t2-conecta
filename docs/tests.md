@@ -106,9 +106,9 @@ Preencha a tabela com o plano dos testes. Para cada Caso de Teste (CT), associe 
 
 **Caso de Teste** | **CT11 - Voluntariar-se em Projetos Específicos**
  :--------------: | ------------
-**Procedimento**  | 1) Acessar a página `candidatar a demanda`  <br> 2) Insere dados validos <br> 3) Clique no botão `Enviar` <br>
+**Procedimento**  | 1) Acessar a página [candidatar a demanda](https://icei-puc-minas-pmv-si.github.io/pmv-si-2023-2-pe1-t2-conecta/pages/candidatar-a-demanda/candidatar-a-demanda.html?id=2).  <br> 2) Insere dados válidos <br> 3) Clique no botão `Enviar` <br>
 **Requisitos associados** | RF-010
-**Resultado esperado** | O usuario se candidata a demanda escolhida
+**Resultado esperado** | O usuário se candidata à demanda escolhida
 **Dados de entrada** | Inserção de dados válidos no formulário de candidatura.
 **Resultado obtido** | Sucesso.
 
