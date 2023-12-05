@@ -725,6 +725,7 @@
         {
             "taskId": 1,
             "candidateId": 1,
+            "comment": "",
             "token": "0c378196-1436-4c17-86d5-0f21c0a98761",
             "createdAt": "01-04-2023",
             "id": 1,
@@ -742,6 +743,7 @@
         {
             "taskId": 2,
             "candidateId": 4,
+            "comment": "",
             "token": "3b3a0e5e-df52-4ae1-928b-2c1e89a90d87",
             "createdAt": "11-23-2023",
             "id": 3,
@@ -750,6 +752,7 @@
         {
             "taskId": 4,
             "candidateId": 7,
+            "comment": "",
             "token": "dd577237-282c-4a27-b49c-7ff689855224",
             "createdAt": "05-20-2023",
             "id": 4,
@@ -794,6 +797,7 @@
         {
             "taskId": 8,
             "candidateId": 12,
+            "comment": "",
             "token": "1a7e264a-be82-4cec-a891-e4372287badb",
             "createdAt": "12-15-2023",
             "id": 9,
