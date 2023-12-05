@@ -82,11 +82,11 @@ Preencha a tabela com o plano dos testes. Para cada Caso de Teste (CT), associe 
 
 **Caso de Teste** | **CT08 - Administrar Demandas**
  :--------------: | ------------
-**Procedimento**  | 1) # <br> 2) # <br> 3) #
+**Procedimento**  | 1) Faça [login](https://icei-puc-minas-pmv-si.github.io/pmv-si-2023-2-pe1-t2-conecta/pages/login/login.html) <br> 2) Acesse a página [Administrar Demanda](https://icei-puc-minas-pmv-si.github.io/pmv-si-2023-2-pe1-t2-conecta/pages/administrar-demandas/administrar-demandas.html) <br> 3) Gerencie sua demandas nessa página.
 **Requisitos associados** | RF-007
-**Resultado esperado** | #
-**Dados de entrada** | #
-**Resultado obtido** | #
+**Resultado esperado** | Demandas específcas de cada ONG carregadas com todas informações. Função de filtro para filtrar as demandas, botões para excluir a demanda e para direcionar para página com os canditados.
+**Dados de entrada** | E-mail, senha.
+**Resultado obtido** | Sucesso.
 
 **Caso de Teste** | **CT09 - Edição de Demandas pelas ONGs**
  :--------------: | ------------
@@ -306,7 +306,7 @@ Esta seção deve apresentar o relatório com as evidências dos testes de softw
 | *Caso de Teste*                   | *CT08 - Administrar Demandas*                                                                                                                                             |
 |-----------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Requisito Associado               | RF-007 - A aplicação deve permitir que as ONG vejam e administrem suas demandas, podendo filtrar por status (aberta, finalizada), cadastrar ou excluir. |
-| Link do vídeo do teste realizado: | COLOQUE SEU VIDEO AQUI                                   |
+| Link do vídeo do teste realizado: | https://sgapucminasbr-my.sharepoint.com/:v:/g/personal/954530_sga_pucminas_br/EeC-rLWbvjVBqqQCahtsG_EBNshRmH3OmiBQXXWjs3CGdA?e=qA6HqD                                   |
 
 | *Caso de Teste*                   | *CT09 - Edição de Demandas pelas ONGs*                                                                                                                                             |
 |-----------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------|
