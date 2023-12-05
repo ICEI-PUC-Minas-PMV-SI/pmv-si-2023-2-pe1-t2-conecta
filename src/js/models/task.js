@@ -47,20 +47,20 @@ export class Task {
 
     async findAllFilteredByType(filterBy) {
         if(filterBy === 'remote') {
-            return await makeRequest(getURL('tasks?type=Remoto'), 'GET');
+            return await makeRequest(getURL('tasks?type=remoto'), 'GET');
         }
         if(filterBy === 'on-site') {
-            return await makeRequest(getURL('tasks?type=Presencial'), 'GET');
+            return await makeRequest(getURL('tasks?type=presencial'), 'GET');
         }
         return await makeRequest(getURL('tasks'), 'GET');
     }
 
     async findAllFilteredByStatus(filterBy) {
         if(filterBy === 'remote') {
-            return await makeRequest(getURL('tasks?status=Aberta'), 'GET');
+            return await makeRequest(getURL('tasks?status=aberta'), 'GET');
         }
         if(filterBy === 'on-site') {
-            return await makeRequest(getURL('tasks?status=Finalizada'), 'GET');
+            return await makeRequest(getURL('tasks?status=finalizada'), 'GET');
         }
         return await makeRequest(getURL('tasks'), 'GET');
     }

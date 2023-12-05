@@ -36,7 +36,7 @@ const populateDemanda = async () => {
         let organizationData = await getOrganizationData(tasks.organizationId);
         verticalTaskCard.name = tasks.name;
         verticalTaskCard.description = tasks.description;
-        if(tasks.type == 'Presencial'|| task.status == 'presencial') {
+        if(tasks.type == 'presencial'|| task.status == 'Presencial') {
                 verticalTaskCard.type = organizationData.city+', '+organizationData.state;
         } else {
                 verticalTaskCard.type = tasks.type ;
@@ -55,7 +55,7 @@ const populateDemanda = async () => {
 
         horizontalTaskCard.name = tasks.name;
         horizontalTaskCard.description = tasks.description;
-        if(tasks.type == 'Presencial' || task.status == 'presencial') {
+        if(tasks.type == 'presencial' || task.status == 'Presencial') {
                 horizontalTaskCard.type = organizationData.city+', '+organizationData.state;
         } else {
                 horizontalTaskCard.type = tasks.type;

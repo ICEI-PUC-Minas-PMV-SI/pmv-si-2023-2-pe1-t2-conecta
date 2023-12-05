@@ -46,14 +46,14 @@ const getTasks = async (filterTipo = 'all', filterStatus = 'all') => {
             let taskStatus = task.status;
             const organizationData = await getOrganizationData(session[0].ongId);
             let statusTask = 'red-dot.png';
-            if (task.status == 'Aberta' || task.status == 'aberta') {
+            if (task.status == 'aberta' || task.status == 'Aberta') {
                 statusTask = 'green-dot.png';
             }
             console.log(task);
 
 
             let endereco = organizationData.city+', '+ organizationData.state;
-            if (task.type == "Remoto" || task.type == "remoto") { 
+            if (task.type == "remoto" || task.type == "Remoto") { 
                 endereco = "Remoto"
             }
             let html = 
@@ -112,7 +112,7 @@ const getTasks = async (filterTipo = 'all', filterStatus = 'all') => {
                 `        <div class="bottom-info" onclick="fotoClick(event)">`+
                 `            <div class="location-button-wrapper">`+
                 `                <img class="image-location" src="../../assets/icons/location-black.png" alt="Location">`+
-                `                <div class="location-tag"> `+organizationData.city+', '+ organizationData.state+
+                `                <div class="location-tag"> `+endereco+
                 `                </div>`+
                 `            </div>`+
                 `            <div class="status-wrapper">`+
@@ -120,7 +120,7 @@ const getTasks = async (filterTipo = 'all', filterStatus = 'all') => {
                 `                    <img class="status-image" src="../../assets/icons/`+statusTask+`" alt="">`+
                 `                </div>`+
                 `                <div>`+
-                `                    <p class="status-name">`+task.status+`</p>`+
+                `                    <p class="status-name">`+taskStatus.charAt(0).toUpperCase() + taskStatus.slice(1)+`</p>`+
                 `                </div>`+
                 `            </div>`+
                 `        </div>`+
