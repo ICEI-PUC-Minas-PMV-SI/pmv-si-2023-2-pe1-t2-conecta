@@ -1,28 +1,8 @@
 # Testes
 
-Neste projeto serão realizados dois tipos de testes:
-
- - O **Teste de Software**, que utiliza uma abordadem de caixa preta, e tem por objetivo verificar a conformidade do software com os requisitos funcionais e não funcionais do sistema.
- - O **Teste de Usabilidade**, que busca avaliar a qualidade do uso do sistema por um usuário do público alvo. 
-
-Se quiser conhecer um pouco mais sobre os tipos de teste de software, leia o documento [Teste de Software: Conceitos e tipos de testes](https://blog.onedaytesting.com.br/teste-de-software/).
-
-A documentação dos testes é dividida nas seguintes seções:
-
- - [Plano de Testes de Software](#plano-de-testes-de-software)
- - [Registro dos Testes de Software](#registro-dos-testes-de-software)
- - [Avaliação dos Testes de Software](#avaliação-dos-testes-de-software)
- - [Cenários de Teste de Usabilidade](#cenários-de-teste-de-usabilidade)
- - [Registro dos Testes de Usabilidade](#registro-dos-testes-de-usabilidade)
- - [Avaliação dos Testes de Usabilidade](#avaliação-dos-testes-de-usabilidade)
-
 # Teste de Software
 
-Nesta seção o grupo deverá documentar os testes de software que verificam a correta implementação dos requisitos funcionais e não funcionais do software.
-
 ## Plano de Testes de Software
-
-Preencha a tabela com o plano dos testes. Para cada Caso de Teste (CT), associe qual o Requisito  Funcional ou não funcional que ele está verificando. Associe também a página (ou artefato) onde o teste será realizado e descreva o cenário do teste. Veja a tabela de exemplo.
 
 |     **Caso de Teste**     | **CT01 - Cadastrar ONG parte 1**                                                                                                                                                                                |
 |:-------------------------:|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -106,11 +86,11 @@ Preencha a tabela com o plano dos testes. Para cada Caso de Teste (CT), associe 
 
 **Caso de Teste** | **CT11 - Voluntariar-se em Projetos Específicos**
  :--------------: | ------------
-**Procedimento**  | 1) # <br> 2) # <br> 3) #
+**Procedimento**  | 1) Acessar a página `candidatar a demanda`  <br> 2) Insere dados validos <br> 3) Clique no botão `Enviar` <br>
 **Requisitos associados** | RF-010
-**Resultado esperado** | #
-**Dados de entrada** | #
-**Resultado obtido** | #
+**Resultado esperado** | O usuario se candidata a demanda escolhida
+**Dados de entrada** | Inserção de dados válidos no formulário de candidatura.
+**Resultado obtido** | Sucesso.
 
 **Caso de Teste** | **CT12 - Marcar Solicitações como Concluídas ou Encerradas**
  :--------------: | ------------
@@ -130,7 +110,7 @@ Preencha a tabela com o plano dos testes. Para cada Caso de Teste (CT), associe 
 
 **Caso de Teste** | **CT14 - Página Inicial (Landing Page)**
  :--------------: | ------------
-**Procedimento**  | 1) O usuário deve acessar o site e visualizar a landing page (https://icei-puc-minas-pmv-si.github.io/pmv-si-2023-2-pe1-t2-conecta/) <br> 2) Navegar pela landing page <br>
+**Procedimento**  | 1) O usuário deve acessar o site e visualizar a [landing page](https://icei-puc-minas-pmv-si.github.io/pmv-si-2023-2-pe1-t2-conecta/) <br> 2) Navegar pela landing page <br>
 **Requisitos associados** | RF-013
 **Resultado esperado** | Páginal inicial da aplicação contendo diversas informações relevantes sobre o site.
 **Dados de entrada** | Nenhum.
@@ -154,11 +134,11 @@ Preencha a tabela com o plano dos testes. Para cada Caso de Teste (CT), associe 
 
 **Caso de Teste** | **CT17 - Página "Por Que Ser Voluntário?"**
  :--------------: | ------------
-**Procedimento**  | 1) # <br> 2) # <br> 3) #
+**Procedimento**  | 1) Acessar [página por que ser voluntario?](https://icei-puc-minas-pmv-si.github.io/pmv-si-2023-2-pe1-t2-conecta/pages/por-que-ser-voluntario/por-que-ser-voluntario.html) <br> 2) acessa as informações da página
 **Requisitos associados** | RF-016
-**Resultado esperado** | #
-**Dados de entrada** | #
-**Resultado obtido** | #
+**Resultado esperado** | Acessa a página com texto e imagens carregados.
+**Dados de entrada** | Nenhum.
+**Resultado obtido** | Sucesso.
 
 **Caso de Teste** | **CT18 - Página "Histórias de Sucesso"**
  :--------------: | ------------
@@ -218,7 +198,7 @@ Preencha a tabela com o plano dos testes. Para cada Caso de Teste (CT), associe 
 
 **Caso de Teste** | **CT25 - Responsividade**
  :--------------: | ------------
-**Procedimento**  | 1) O usuário acessa [a aplicação](https://icei-puc-minas-pmv-si.github.io/pmv-si-2023-2-pe1-t2-conecta/index.html) por meio de um dispositivo móvel, como um smartphone ou tablet. <br> 2) O usuário navega pelas diferentes funcionalidades da aplicação utilizando o dispositivo móvel. <br>
+**Procedimento**  | 1) O usuário acessa [a aplicação](https://icei-puc-minas-pmv-si.github.io/pmv-si-2023-2-pe1-t2-conecta/index.html) por meio de um dispositivo móvel, como um smartphone ou tablet <br> 2) O usuário navega pelas diferentes funcionalidades da aplicação utilizando o dispositivo móvel <br>
 **Requisitos associados** | RNF-001
 **Resultado esperado** | A aplicação é responsiva e se adapta adequadamente ao tamanho da tela em dispositivos móveis, mantendo todas as funcionalidades acessíveis e funcionais.
 **Dados de entrada** | Acesso à aplicação por meio de um dispositivo móvel.
@@ -226,19 +206,19 @@ Preencha a tabela com o plano dos testes. Para cada Caso de Teste (CT), associe 
 
 **Caso de Teste** | **CT26 - Interface simples**
  :--------------: | ------------
-**Procedimento**  | 1) # <br> 2) # <br> 3) #
+**Procedimento**  | 1) O usuário acessa [a aplicação](https://icei-puc-minas-pmv-si.github.io/pmv-si-2023-2-pe1-t2-conecta/index.html) <br> 2) De acordo com as heurísticas de Nielsen foram implementadas interfaces simples e de fácil reconhecimento pelo usuário <br>
 **Requisitos associados** | RNF-002
-**Resultado esperado** | #
-**Dados de entrada** | #
-**Resultado obtido** | #
+**Resultado esperado** | Interface simples e de fácil entendimento.
+**Dados de entrada** | Nenhum.
+**Resultado obtido** | Sucesso.
 
-**Caso de Teste** | **CT27 - Criptografia de senha**
- :--------------: | ------------
-**Procedimento**  | 1) # <br> 2) # <br> 3) #
-**Requisitos associados** | RNF-003
-**Resultado esperado** | #
-**Dados de entrada** | #
-**Resultado obtido** | #
+|     **Caso de Teste**     | **CT27 - Criptografia de senha**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
+|:-------------------------:|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|     **Procedimento**      | 1) Acessar [página de cadastro](https://icei-puc-minas-pmv-si.github.io/pmv-si-2023-2-pe1-t2-conecta/pages/login/login.html) <br> 2) Inserir os dados nos campos apresentados <br> 3) Clicar no botão `Próximo`  <br> 4) Selecione uma imagem para ser utilizada como no perfil da ONG (opcional) # <br> 5) Forneça um texto sobre sua ONG <br> 6) Informe o link do perfil da sua ONG nas redes sociais (opcional) <br> 7) Clique no botão `Cadastrar` <br> 8) Confirme um alerta com a mensagem `Cadastro realizado com sucesso!` na sua tela <br> 9) Verifique no banco de dados que a senha foi salva criptografada |
+| **Requisitos associados** | RNF-003                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
+|  **Resultado esperado**   | Senha criptografada salva no banco de dados                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
+|   **Dados de entrada**    | Dados para cadastro de ONG                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
+|   **Resultado obtido**    | Sucesso.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
 
 **Caso de Teste** | **CT28 - Feedback visual**
  :--------------: | ------------
@@ -266,7 +246,6 @@ Preencha a tabela com o plano dos testes. Para cada Caso de Teste (CT), associe 
 
 ## Registro dos Testes de Software
 
-Esta seção deve apresentar o relatório com as evidências dos testes de software realizados no sistema pela equipe, baseado no plano de testes pré-definido. Documente cada caso de teste apresentando um vídeo ou animação que comprove o funcionamento da funcionalidade. Veja os exemplos a seguir.
 
 | *Caso de Teste*                   | *CT01 - Cadastrar ONG parte 1*                                                                                                |
 |-----------------------------------|-------------------------------------------------------------------------------------------------------------------------------|
@@ -321,7 +300,7 @@ Esta seção deve apresentar o relatório com as evidências dos testes de softw
 | *Caso de Teste*                   | *CT11 - Voluntariar-se em Projetos Específicos*                                                                                                                                             |
 |-----------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Requisito Associado               | RF-010 - Os voluntários devem poder se voluntariar por meio de formulário de contato para trabalhar em projetos específicos das ONGs, indicando seu interesse e disponibilidade. |
-| Link do vídeo do teste realizado: | COLOQUE SEU VIDEO AQUI                                   |
+| Link do vídeo do teste realizado: | https://sgapucminasbr-my.sharepoint.com/:v:/g/personal/1484182_sga_pucminas_br/ETIqspcljU5DufN1eSFVvvoBAHWSUY6oc659SuVNaajQwA?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=TdOx94                              |
 
 | *Caso de Teste*                   | *CT12 - Marcar Solicitações como Concluídas ou Encerradas*                                                                                                                                             |
 |-----------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -351,7 +330,7 @@ Esta seção deve apresentar o relatório com as evidências dos testes de softw
 | *Caso de Teste*                   |*CT17 - Página "Por Que Ser Voluntário?"*                                                                                                                                             |
 |-----------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Requisito Associado               | RF-016 A aplicação deve apresentar a página “Por Que Ser Voluntário?” que apresenta os benefícios pessoais que podem ser obtidos ao se envolver em ações voluntárias. |
-| Link do vídeo do teste realizado: | COLOQUE SEU VIDEO AQUI                                   |
+| Link do vídeo do teste realizado: | https://sgapucminasbr-my.sharepoint.com/:v:/g/personal/1484182_sga_pucminas_br/EUWZm9w979hMj3zO2buQEu0B7BE-Z_taNmsPD5HUw8L4UA?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=hcPCGi                                   |
 
 | *Caso de Teste*                   | *CT18 - Página "Histórias de Sucesso"*                                                                                                                                             |
 |-----------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -396,12 +375,12 @@ Esta seção deve apresentar o relatório com as evidências dos testes de softw
 | *Caso de Teste*                   | *CT26 - Interface simples*                                                                                                                                             |
 |-----------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Requisito Associado               | RNF-002 A aplicação deve apresentar um layout simples e de fácil utilização. |
-| Link do vídeo do teste realizado: | COLOQUE SEU VIDEO AQUI                                   |
+| Link do documento do teste realizado: | https://sgapucminasbr-my.sharepoint.com/:b:/g/personal/954530_sga_pucminas_br/EeXOOBWkW45OtuVZZcW9yhcBmLHYvtzI9aoSnEL6L8IfkQ?e=fxLJRW                                   |
 
-| *Caso de Teste*                   | *CT27 - Criptografia de senha*                                                                                                                                             |
-|-----------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Requisito Associado               | RNF-003 As senhas dos usuários devem ser criptografadas antes de serem armazenadas. |
-| Link do vídeo do teste realizado: | COLOQUE SEU VIDEO AQUI                                   |
+| *Caso de Teste*                   | *CT27 - Criptografia de senha*                                                                                                |
+|-----------------------------------|-------------------------------------------------------------------------------------------------------------------------------|
+| Requisito Associado               | RNF-003 As senhas dos usuários devem ser criptografadas antes de serem armazenadas.                                           |
+| Link do vídeo do teste realizado: | https://sgapucminasbr-my.sharepoint.com/:v:/g/personal/1495429_sga_pucminas_br/EWpPPFFZqpdAknnEfdKDBY0BQaStf1vyLK8UtivnaQsJxQ |
 
 | *Caso de Teste*                   | *CT28 - Feedback visual*                                                                                                                                             |
 |-----------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -422,7 +401,7 @@ Esta seção deve apresentar o relatório com as evidências dos testes de softw
 
 ## Avaliação dos Testes de Software
 
-Discorra sobre os resultados do teste. Ressaltando pontos fortes e fracos identificados na solução. Comente como o grupo pretende atacar esses pontos nas próximas iterações. Apresente as falhas detectadas e as melhorias geradas a partir dos resultados obtidos nos testes.
+DESCREVER AQUI AS CONSIDERACOES SOBRE O TESTE DE SOFTWARE.
 
 
 
@@ -433,76 +412,244 @@ Se o grupo tiver interesse em se aprofundar no desenvolvimento de testes de soft
 
 # Testes de Usabilidade
 
-O objetivo do Plano de Testes de Usabilidade é obter informações quanto à expectativa dos usuários em relação à  funcionalidade da aplicação de forma geral.
-
-Para tanto, elaboramos quatro cenários, cada um baseado na definição apresentada sobre as histórias dos usuários, definido na etapa das especificações do projeto.
-
-Foram convidadas quatro pessoas que os perfis se encaixassem nas definições das histórias apresentadas na documentação, visando averiguar os seguintes indicadores:
-
-Taxa de sucesso: responde se o usuário conseguiu ou não executar a tarefa proposta;
-
-Satisfação subjetiva: responde como o usuário avalia o sistema com relação à execução da tarefa proposta, conforme a seguinte escala:
-
-1. Péssimo; 
-2. Ruim; 
-3. Regular; 
-4. Bom; 
-5. Ótimo.
-
-Tempo para conclusão da tarefa: em segundos, e em comparação com o tempo utilizado quando um especialista (um desenvolvedor) realiza a mesma tarefa.
-
-Objetivando respeitar as diretrizes da Lei Geral de Proteção de Dados, as informações pessoais dos usuários que participaram do teste não foram coletadas, tendo em vista a ausência de Termo de Consentimento Livre e Esclarecido.
-
-
-Apresente os cenários de testes utilizados na realização dos testes de usabilidade da sua aplicação. Escolha cenários de testes que demonstrem as principais histórias de usuário sendo realizadas. Neste tópico o grupo deve detalhar quais funcionalidades avaliadas, o grupo de usuários que foi escolhido para participar do teste e as ferramentas utilizadas.
-
-> - [UX Tools](https://uxdesign.cc/ux-user-research-and-user-testing-tools-2d339d379dc7)
-
-
 ## Cenários de Teste de Usabilidade
 
-| Nº do Cenário | Descrição do cenário |
+| Nº do Cenário | Descrição do cenário - ONGs |
 |---------------|----------------------|
-| 1             | Você é uma pessoa que deseja comprar um iphone. Encontre no site um iphone e veja detalhes de localização e contato da loja que anunciando. |
-| 2             | Você é uma pessoa que deseja comprar um smartphone até R$ 2.000,00. Encontre no site smartphone's nessa faixa de preço. |
+| 1             | Você administra uma ONG e deseja fazer seu cadastro na aplicação.  |
+| 2             | Você deseja fazer o login no site.  |
+| 3             | Você precisa cadastrar as informações de perfil.  |
+| 4             | Você esqueceu a senha e precisa recuperá-la. |
+| 5             | Você quer cadastrar uma demanda.  |
+| 6             | Você precisa administrar as demandas. Sendo possível editar os dados da demanda ou excluí-la.  |
+| 7             | Você deseja verificar quais voluntários se candidataram aquela demanda, aceitando ou rejeitando a candidatura.  |
+| 8             | Após o término daquela demanda é preciso finalizá-la e pedir o feedback do voluntário.  |
 
+| Nº do Cenário | Descrição do cenário - Voluntários|
+|---------------|----------------------|
+| 1             | Você quer se voluntariar em uma ONG e acessa a aplicação, entra no Home Page e visualiza as opções de oportunidades.   |
+| 2             | Na Home Page tem algumas opções de oportunidades, você deseja visualizar e explorar todas as opções.   |
+| 3            | Você deseja filtrar a demanda por tipo e localização.  |
+| 4             | Encontra uma oportunidade que deseja se candidatar clica em “Quero Ajudar”. |
+| 5             | Acessa a página “Quero Ajudar” e preencha o formulário com as informações pessoais. |
+| 6             | Aguarda receber o e-mail da ONG com a confirmação da candidatura.   |
+| 7            | Quando finalizado o voluntariado você pode enviar uma mensagem com o seu feedback.     |
 
 
 ## Registro de Testes de Usabilidade
 
-Cenário 1: Você é uma pessoa que deseja comprar um iphone. Encontre no site um iphone e veja detalhes de localização e contato da loja que anunciando.
+Cenário 1 - ONGs:
+Você administra uma ONG e deseja fazer seu cadastro na aplicação.
 
 | Usuário | Taxa de sucesso | Satisfação subjetiva | Tempo para conclusão do cenário |
 |---------|-----------------|----------------------|---------------------------------|
-| 1       | SIM             | 5                    | 27.87 segundos                  |
-| 2       | SIM             | 5                    | 17.11 segundos                  |
-| 3       | SIM             | 5                    | 39.09 segundos                  |
+| 1       | SIM/NÃO             | NOTA 4 - 5                    | 0 segundos                  |
+| 2       | SIM/NÃO             | NOTA 4 - 5                    | 0 segundos                  |
 |  |  |  |  |
 | **Média**     | 0%           | 0                | 0 segundos                           |
-| **Tempo para conclusão pelo especialista** | SIM | 5 | 8.66 segundos |
+| **Tempo para conclusão pelo especialista** | SIM/NÃO | NOTA 4 - 5 | 0 segundos |
 
 
-    Comentários dos usuários: Achei o site muito bom e intuitivo. 
-    Não tive dificuldades e acho que ficou bem intuitivo.
+    Comentários dos usuários: DESCREVA AQUI O COMENTÁRIO DO USUÁRIO
 
-
-
-
-Cenário 2: Você é uma pessoa que deseja comprar um smartphone até R$ 2.000,00. Encontre no site smartphone's nessa faixa de preço.
+Cenário 2 - ONGs:
+Você deseja fazer o login no site. 
 
 | Usuário | Taxa de sucesso | Satisfação subjetiva | Tempo para conclusão do cenário |
 |---------|-----------------|----------------------|---------------------------------|
-| 1       | SIM             | 5                    | 22.54 segundos                          |
-| 2       | SIM             | 5                    | 31.42 segundos                          |
-| 3       | SIM             | 5                    | 36.21 segundos                          |
+| 1       | SIM/NÃO             | NOTA 4 - 5                    | 0 segundos                  |
+| 2       | SIM/NÃO             | NOTA 4 - 5                    | 0 segundos                  |
 |  |  |  |  |
 | **Média**     | 0%           | 0                | 0 segundos                           |
-| **Tempo para conclusão pelo especialista** | SIM | 5 | 13.57 segundos |
+| **Tempo para conclusão pelo especialista** | SIM/NÃO | NOTA 4 - 5 | 0 segundos |
 
 
-    Comentários dos usuários: O site é fácil de acessar, mas algumas páginas poderiam 
-    redirecionar a gente automaticamente para outras. Senti a falta de mais opções de filtros, 
-    tanto na hora da pesquisa, quanto depois dela, nos resultados.
+    Comentários dos usuários: DESCREVA AQUI O COMENTÁRIO DO USUÁRIO
+
+Cenário 3 - ONGs:
+Você precisa cadastrar as informações de perfil. 
+
+| Usuário | Taxa de sucesso | Satisfação subjetiva | Tempo para conclusão do cenário |
+|---------|-----------------|----------------------|---------------------------------|
+| 1       | SIM/NÃO             | NOTA 4 - 5                    | 0 segundos                  |
+| 2       | SIM/NÃO             | NOTA 4 - 5                    | 0 segundos                  |
+|  |  |  |  |
+| **Média**     | 0%           | 0                | 0 segundos                           |
+| **Tempo para conclusão pelo especialista** | SIM/NÃO | NOTA 4 - 5 | 0 segundos |
+
+
+    Comentários dos usuários: DESCREVA AQUI O COMENTÁRIO DO USUÁRIO
+
+Cenário 4 - ONGs:
+Você esqueceu a senha e precisa recuperá-la.
+
+| Usuário | Taxa de sucesso | Satisfação subjetiva | Tempo para conclusão do cenário |
+|---------|-----------------|----------------------|---------------------------------|
+| 1       | SIM/NÃO             | NOTA 4 - 5                    | 0 segundos                  |
+| 2       | SIM/NÃO             | NOTA 4 - 5                    | 0 segundos                  |
+|  |  |  |  |
+| **Média**     | 0%           | 0                | 0 segundos                           |
+| **Tempo para conclusão pelo especialista** | SIM/NÃO | NOTA 4 - 5 | 0 segundos |
+
+
+    Comentários dos usuários: DESCREVA AQUI O COMENTÁRIO DO USUÁRIO
+
+Cenário 5 - ONGs:
+Você quer cadastrar uma demanda.
+
+| Usuário | Taxa de sucesso | Satisfação subjetiva | Tempo para conclusão do cenário |
+|---------|-----------------|----------------------|---------------------------------|
+| 1       | SIM/NÃO             | NOTA 4 - 5                    | 0 segundos                  |
+| 2       | SIM/NÃO             | NOTA 4 - 5                    | 0 segundos                  |
+|  |  |  |  |
+| **Média**     | 0%           | 0                | 0 segundos                           |
+| **Tempo para conclusão pelo especialista** | SIM/NÃO | NOTA 4 - 5 | 0 segundos |
+
+
+    Comentários dos usuários: DESCREVA AQUI O COMENTÁRIO DO USUÁRIO
+
+Cenário 6 - ONGs:
+Você precisa administrar as demandas. Sendo possível editar os dados da demanda ou excluí-la.
+
+| Usuário | Taxa de sucesso | Satisfação subjetiva | Tempo para conclusão do cenário |
+|---------|-----------------|----------------------|---------------------------------|
+| 1       | SIM/NÃO             | NOTA 4 - 5                    | 0 segundos                  |
+| 2       | SIM/NÃO             | NOTA 4 - 5                    | 0 segundos                  |
+|  |  |  |  |
+| **Média**     | 0%           | 0                | 0 segundos                           |
+| **Tempo para conclusão pelo especialista** | SIM/NÃO | NOTA 4 - 5 | 0 segundos |
+
+
+    Comentários dos usuários: DESCREVA AQUI O COMENTÁRIO DO USUÁRIO
+
+Cenário 7 - ONGs:
+Você deseja verificar quais voluntários se candidataram aquela demanda, aceitando ou rejeitando a candidatura. 
+
+| Usuário | Taxa de sucesso | Satisfação subjetiva | Tempo para conclusão do cenário |
+|---------|-----------------|----------------------|---------------------------------|
+| 1       | SIM/NÃO             | NOTA 4 - 5                    | 0 segundos                  |
+| 2       | SIM/NÃO             | NOTA 4 - 5                    | 0 segundos                  |
+|  |  |  |  |
+| **Média**     | 0%           | 0                | 0 segundos                           |
+| **Tempo para conclusão pelo especialista** | SIM/NÃO | NOTA 4 - 5 | 0 segundos |
+
+
+    Comentários dos usuários: DESCREVA AQUI O COMENTÁRIO DO USUÁRIO
+
+Cenário 8 - ONGs:
+Após o término daquela demanda é preciso finalizá-la e pedir o feedback do voluntário. 
+
+| Usuário | Taxa de sucesso | Satisfação subjetiva | Tempo para conclusão do cenário |
+|---------|-----------------|----------------------|---------------------------------|
+| 1       | SIM/NÃO             | NOTA 4 - 5                    | 0 segundos                  |
+| 2       | SIM/NÃO             | NOTA 4 - 5                    | 0 segundos                  |
+|  |  |  |  |
+| **Média**     | 0%           | 0                | 0 segundos                           |
+| **Tempo para conclusão pelo especialista** | SIM/NÃO | NOTA 4 - 5 | 0 segundos |
+
+
+    Comentários dos usuários: DESCREVA AQUI O COMENTÁRIO DO USUÁRIO
+
+Cenário 1 - Voluntários:
+Você quer se voluntariar em uma ONG e acessa a aplicação, entra no Home Page e visualiza as opções de oportunidades.
+
+| Usuário | Taxa de sucesso | Satisfação subjetiva | Tempo para conclusão do cenário |
+|---------|-----------------|----------------------|---------------------------------|
+| 1       | SIM/NÃO             | NOTA 4 - 5                    | 0 segundos                  |
+| 2       | SIM/NÃO             | NOTA 4 - 5                    | 0 segundos                  |
+|  |  |  |  |
+| **Média**     | 0%           | 0                | 0 segundos                           |
+| **Tempo para conclusão pelo especialista** | SIM/NÃO | NOTA 4 - 5 | 0 segundos |
+
+
+    Comentários dos usuários: DESCREVA AQUI O COMENTÁRIO DO USUÁRIO
+
+Cenário 2 - Voluntários:
+Na Home Page tem algumas opções de oportunidades, você deseja visualizar e explorar todas as opções. 
+
+| Usuário | Taxa de sucesso | Satisfação subjetiva | Tempo para conclusão do cenário |
+|---------|-----------------|----------------------|---------------------------------|
+| 1       | SIM/NÃO             | NOTA 4 - 5                    | 0 segundos                  |
+| 2       | SIM/NÃO             | NOTA 4 - 5                    | 0 segundos                  |
+|  |  |  |  |
+| **Média**     | 0%           | 0                | 0 segundos                           |
+| **Tempo para conclusão pelo especialista** | SIM/NÃO | NOTA 4 - 5 | 0 segundos |
+
+
+    Comentários dos usuários: DESCREVA AQUI O COMENTÁRIO DO USUÁRIO
+
+Cenário 3 - Voluntários:
+Você deseja filtrar a demanda por tipo e localização. 
+
+| Usuário | Taxa de sucesso | Satisfação subjetiva | Tempo para conclusão do cenário |
+|---------|-----------------|----------------------|---------------------------------|
+| 1       | SIM/NÃO             | NOTA 4 - 5                    | 0 segundos                  |
+| 2       | SIM/NÃO             | NOTA 4 - 5                    | 0 segundos                  |
+|  |  |  |  |
+| **Média**     | 0%           | 0                | 0 segundos                           |
+| **Tempo para conclusão pelo especialista** | SIM/NÃO | NOTA 4 - 5 | 0 segundos |
+
+
+    Comentários dos usuários: DESCREVA AQUI O COMENTÁRIO DO USUÁRIO
+
+Cenário 4 - Voluntários:
+Encontra uma oportunidade que deseja se candidatar clica em “Quero Ajudar”.
+
+| Usuário | Taxa de sucesso | Satisfação subjetiva | Tempo para conclusão do cenário |
+|---------|-----------------|----------------------|---------------------------------|
+| 1       | SIM/NÃO             | NOTA 4 - 5                    | 0 segundos                  |
+| 2       | SIM/NÃO             | NOTA 4 - 5                    | 0 segundos                  |
+|  |  |  |  |
+| **Média**     | 0%           | 0                | 0 segundos                           |
+| **Tempo para conclusão pelo especialista** | SIM/NÃO | NOTA 4 - 5 | 0 segundos |
+
+
+    Comentários dos usuários: DESCREVA AQUI O COMENTÁRIO DO USUÁRIO
+
+Cenário 5 - Voluntários:
+Acessa a página “Quero Ajudar” e preencha o formulário com as informações pessoais.  
+
+| Usuário | Taxa de sucesso | Satisfação subjetiva | Tempo para conclusão do cenário |
+|---------|-----------------|----------------------|---------------------------------|
+| 1       | SIM/NÃO             | NOTA 4 - 5                    | 0 segundos                  |
+| 2       | SIM/NÃO             | NOTA 4 - 5                    | 0 segundos                  |
+|  |  |  |  |
+| **Média**     | 0%           | 0                | 0 segundos                           |
+| **Tempo para conclusão pelo especialista** | SIM/NÃO | NOTA 4 - 5 | 0 segundos |
+
+
+    Comentários dos usuários: DESCREVA AQUI O COMENTÁRIO DO USUÁRIO
+
+Cenário 6 - Voluntários:
+Aguarda receber o e-mail da ONG com a confirmação da candidatura.
+
+| Usuário | Taxa de sucesso | Satisfação subjetiva | Tempo para conclusão do cenário |
+|---------|-----------------|----------------------|---------------------------------|
+| 1       | SIM/NÃO             | NOTA 4 - 5                    | 0 segundos                  |
+| 2       | SIM/NÃO             | NOTA 4 - 5                    | 0 segundos                  |
+|  |  |  |  |
+| **Média**     | 0%           | 0                | 0 segundos                           |
+| **Tempo para conclusão pelo especialista** | SIM/NÃO | NOTA 4 - 5 | 0 segundos |
+
+
+    Comentários dos usuários: DESCREVA AQUI O COMENTÁRIO DO USUÁRIO
+
+Cenário 7 - Voluntários:
+Quando finalizado o voluntariado você pode enviar uma mensagem com o seu feedback.
+
+| Usuário | Taxa de sucesso | Satisfação subjetiva | Tempo para conclusão do cenário |
+|---------|-----------------|----------------------|---------------------------------|
+| 1       | SIM/NÃO             | NOTA 4 - 5                    | 0 segundos                  |
+| 2       | SIM/NÃO             | NOTA 4 - 5                    | 0 segundos                  |
+|  |  |  |  |
+| **Média**     | 0%           | 0                | 0 segundos                           |
+| **Tempo para conclusão pelo especialista** | SIM/NÃO | NOTA 4 - 5 | 0 segundos |
+
+
+    Comentários dos usuários: DESCREVA AQUI O COMENTÁRIO DO USUÁRIO
+
+
+
 
 
 

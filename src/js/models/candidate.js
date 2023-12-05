@@ -4,14 +4,15 @@ export class Candidate {
     taskId;
     name;
     email;
-    active;
+    profile;
+    status;
     
     async create() {
         const data = {
             taskId: this.taskId,
             name: this.name,
             email: this.email,
-            active: this.active
+            status: this.status
         }
 
         return await makeRequest(getURL('candidates'), 'POST', data);
@@ -34,10 +35,19 @@ export class Candidate {
             taskId: this.taskId,
             name: this.name,
             email: this.email,
-            active: this.active
+            profile: this.profile,
+            status: this.status
         }
         
         return await makeRequest(getURL(`candidates/${id}`), 'PUT', data);
+    }
+    
+    async updateStatusById(id, newStatus) {
+        const data = {
+            status: newStatus
+        }
+        
+        return await makeRequest(getURL(`candidates/${id}`), 'PATCH', data);
     }
     
     async deleteById(id) {

@@ -36,11 +36,14 @@ const populateDemanda = async () => {
         let organizationData = await getOrganizationData(tasks.organizationId);
         verticalTaskCard.name = tasks.name;
         verticalTaskCard.description = tasks.description;
-        if(tasks.type == 'Presencial') {
+        if(tasks.type == 'Presencial'|| task.status == 'presencial') {
                 verticalTaskCard.type = organizationData.city+', '+organizationData.state;
         } else {
-                verticalTaskCard.type = tasks.type;
+                verticalTaskCard.type = tasks.type ;
+                let upperCaseType = verticalTaskCard.type;
+                verticalTaskCard.type = upperCaseType.charAt(0).toUpperCase() + upperCaseType.slice(1)
         }
+
         verticalTaskCard.destination = `./pages/candidatar-a-demanda/candidatar-a-demanda.html?id=${tasks.id}`;
         verticalTaskCard.owner = organizationData.name
         verticalTaskCard.image = organizationData.image;
@@ -52,10 +55,12 @@ const populateDemanda = async () => {
 
         horizontalTaskCard.name = tasks.name;
         horizontalTaskCard.description = tasks.description;
-        if(tasks.type == 'Presencial') {
+        if(tasks.type == 'Presencial' || task.status == 'presencial') {
                 horizontalTaskCard.type = organizationData.city+', '+organizationData.state;
         } else {
                 horizontalTaskCard.type = tasks.type;
+                let upperCaseType = horizontalTaskCard.type;
+                horizontalTaskCard.type = upperCaseType.charAt(0).toUpperCase() + upperCaseType.slice(1)
         }
         horizontalTaskCard.destination = `./pages/candidatar-a-demanda/candidatar-a-demanda.html?id=${tasks.id}`;
         horizontalTaskCard.owner = organizationData.name
