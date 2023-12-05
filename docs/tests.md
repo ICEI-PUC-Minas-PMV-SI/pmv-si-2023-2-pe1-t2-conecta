@@ -134,11 +134,11 @@
 
 **Caso de Teste** | **CT17 - Página "Por Que Ser Voluntário?"**
  :--------------: | ------------
-**Procedimento**  | 1) # <br> 2) # <br> 3) #
+**Procedimento**  | 1) Acessar [página por que ser voluntario?](https://icei-puc-minas-pmv-si.github.io/pmv-si-2023-2-pe1-t2-conecta/pages/por-que-ser-voluntario/por-que-ser-voluntario.html) <br> 2) acessa as informações da página
 **Requisitos associados** | RF-016
-**Resultado esperado** | #
-**Dados de entrada** | #
-**Resultado obtido** | #
+**Resultado esperado** | Acessa a página com texto e imagens carregados.
+**Dados de entrada** | Nenhum.
+**Resultado obtido** | Sucesso.
 
 **Caso de Teste** | **CT18 - Página "Histórias de Sucesso"**
  :--------------: | ------------
@@ -330,7 +330,7 @@
 | *Caso de Teste*                   |*CT17 - Página "Por Que Ser Voluntário?"*                                                                                                                                             |
 |-----------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Requisito Associado               | RF-016 A aplicação deve apresentar a página “Por Que Ser Voluntário?” que apresenta os benefícios pessoais que podem ser obtidos ao se envolver em ações voluntárias. |
-| Link do vídeo do teste realizado: | COLOQUE SEU VIDEO AQUI                                   |
+| Link do vídeo do teste realizado: | https://sgapucminasbr-my.sharepoint.com/:v:/g/personal/1484182_sga_pucminas_br/EUWZm9w979hMj3zO2buQEu0B7BE-Z_taNmsPD5HUw8L4UA?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=hcPCGi                                   |
 
 | *Caso de Teste*                   | *CT18 - Página "Histórias de Sucesso"*                                                                                                                                             |
 |-----------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------|
