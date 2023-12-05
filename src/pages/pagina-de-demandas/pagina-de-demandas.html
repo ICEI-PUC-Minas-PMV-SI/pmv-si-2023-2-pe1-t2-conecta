@@ -28,6 +28,7 @@
         </header>
 
         <div class="content">
+            <div class="loading-background">*</div>
             <div class="headline">
                 <h1 class="title">
                     explore as oportunidades
@@ -57,6 +58,9 @@
             <div id="loader"></div>
 
             <div class="tasks-wrapper">
+            </div>
+            <div class="tasks-empty">
+                Nenhuma Demanda Encontrada
             </div>
         </div>
 
@@ -127,14 +131,8 @@
             document.onreadystatechange = function () {
                 if (document.readyState !== "complete") {
                     document.querySelector(
-                        "body").style.visibility = "hidden";
-                    document.querySelector(
                         "#loader").style.visibility = "visible";
-                } else {
-                    document.querySelector(
-                        "#loader").style.display = "none";
-                    document.querySelector(
-                        "body").style.visibility = "visible";
+                        $('.loading-background ').css('display', 'block');
                 }
             };
         </script>

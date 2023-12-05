@@ -40,7 +40,7 @@ const getTasks = async (filterBy = 'all') => {
     const tasksWrapper = document.querySelector('.tasks-wrapper');
 
     const tasks = await task.findAllFilteredByOpenStatus(filterBy)
-
+    let count = 0;
     for await (const task of tasks) {
         const verticalTaskCard = new VerticalTaskCard();
 
@@ -59,6 +59,12 @@ const getTasks = async (filterBy = 'all') => {
         verticalTaskCard.address = organizationData.street+', '+organizationData.number
 
         tasksWrapper.appendChild(verticalTaskCard);
+        count++;
+
+        if (count >= tasks.length) {
+            $('.loading-background ').css('display', 'none');
+            $("#loader").css("visibility", "hidden");
+        }
     }
 
     for await (const task of tasks) {
@@ -88,6 +94,7 @@ const getTasksByState = async (location = null) => {
 
     const tasks = await task.findAllFilteredByOpenStatus('on-site')
 
+    let findTask = false;
     for await (const task of tasks) {
         const verticalTaskCard = new VerticalTaskCard();
         const organizationData = await getOrganizationData(task.organizationId);
@@ -105,7 +112,14 @@ const getTasksByState = async (location = null) => {
             verticalTaskCard.address = organizationData.street+', '+organizationData.number
 
             tasksWrapper.appendChild(verticalTaskCard);
+            findTask = true;
         }
+    }
+
+    if (!findTask) {
+        $('.tasks-empty').css('display', 'block');
+    } else {
+        $('.tasks-empty').css('display', 'none');
     }
 
     for await (const task of tasks) {

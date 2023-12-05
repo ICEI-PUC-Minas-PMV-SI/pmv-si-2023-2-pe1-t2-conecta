@@ -63,17 +63,21 @@
 
 #loader {
     position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     left: 50%;
     top: 50%;
     z-index: 1;
-    width: 120px;
-    height: 120px;
+    width: 80px;
+    height: 80px;
     margin: -76px 0 0 -76px;
     border: 16px solid #f3f3f3;
     border-radius: 50%;
     border-top: 16px solid #3498db;
     -webkit-animation: spin 2s linear infinite;
     animation: spin 2s linear infinite;
+    z-index: 99;
 }
   
 .center {
@@ -223,6 +227,21 @@ vertical-task-card-component {
     overflow-wrap: break-word;
 }
 
+.loading-background {
+    width: 2000px;
+    height: 2000px;
+    position: fixed;
+    background-color: #00000036;
+    z-index: 999;
+    display: none;
+    color:transparent;
+}
+
+.tasks-empty {
+    display:none;
+    text-align: center;
+}
+
 @media screen and (max-width: 768px) {
 
     .content {
@@ -267,6 +286,12 @@ vertical-task-card-component {
         margin: 5% auto;
         max-width: 660px;
         border-radius: 15px;
+    }
+
+    #loader {
+        width: 50px;
+        height: 50px;
+        margin-left: -50px;
     }
 }
 
