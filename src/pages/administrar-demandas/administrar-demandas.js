@@ -45,7 +45,7 @@ const getTasks = async (filterTipo = 'all', filterStatus = 'all') => {
         if(session[0].ongId == task.organizationId && (filterStatus == 'all' || filterStatus == task.status)) {
             const organizationData = await getOrganizationData(session[0].ongId);
             let statusTask = 'red-dot.png';
-            if (task.status == 'Aberta') {
+            if (task.status == 'Aberta' || task.status == 'aberta') {
                 statusTask = 'green-dot.png';
             }
             console.log(task);
