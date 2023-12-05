@@ -41,6 +41,12 @@ const getTasks = async (filterBy = 'all') => {
 
     const tasks = await task.findAllFilteredByOpenStatus(filterBy)
     let count = 0;
+
+    if (tasks.length == 0) {
+        $('.loading-background ').css('display', 'none');
+        $("#loader").css("visibility", "hidden");
+        $('.tasks-empty').show();
+    }
     for await (const task of tasks) {
         const verticalTaskCard = new VerticalTaskCard();
 
@@ -146,8 +152,10 @@ const getTasksByState = async (location = null) => {
 }
 
 
-getTasks().then().catch((error) => {
-    console.log(error);
+getTasks().then(() => {
+    console.log("Tasks retrieved successfully");
+}).catch((error) => {
+    console.error("Error retrieving tasks:", error);
 });
 
 $.ajax({
