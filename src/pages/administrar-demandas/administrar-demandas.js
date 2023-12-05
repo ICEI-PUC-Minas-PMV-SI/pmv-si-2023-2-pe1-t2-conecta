@@ -43,6 +43,7 @@ const getTasks = async (filterTipo = 'all', filterStatus = 'all') => {
 
     for await (const task of tasks) {
         if(session[0].ongId == task.organizationId && (filterStatus == 'all' || filterStatus == task.status)) {
+            let taskStatus = task.status;
             const organizationData = await getOrganizationData(session[0].ongId);
             let statusTask = 'red-dot.png';
             if (task.status == 'Aberta' || task.status == 'aberta') {
@@ -67,7 +68,7 @@ const getTasks = async (filterTipo = 'all', filterStatus = 'all') => {
                 `                        <img class="status-image" src="../../assets/icons/`+statusTask+`" alt="">`+
                 `                    </div>`+
                 `                    <div>`+
-                `                        <p class="status-name">`+task.status+`</p>`+
+                `                        <p class="status-name">`+taskStatus.charAt(0).toUpperCase() + taskStatus.slice(1)+`</p>`+
                 `                    </div>`+
                 `                </div> `+
                 `            </div>`+
