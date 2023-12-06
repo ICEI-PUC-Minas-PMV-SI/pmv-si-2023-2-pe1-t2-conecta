@@ -59,6 +59,10 @@ async function handleSend(event) {
         como: document.getElementById("como").value,
     }
     //validar campos
+        if (!validaCPF(candidatura.cpf)) {
+            alert("CPF inválido. Por favor, verifique o número e tente novamente.");
+            return;
+        }
     if (candidatura.nome.length <= 0) {
         alert(Required("Nome"));
         return;
