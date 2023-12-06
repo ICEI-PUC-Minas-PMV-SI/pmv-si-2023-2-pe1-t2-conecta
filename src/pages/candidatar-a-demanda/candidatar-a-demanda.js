@@ -44,7 +44,7 @@ document.getElementById("enviar").addEventListener("click", handleSend);
 //função de cancelamento
 function handleCancel() {
     if (confirm(CONFIRM_CANCELAR_CANDIDATURA)) {
-        window.location.href = LOCATION_REF_ADMINISTRAR_DEMANDAS;
+        window.location.href = LOCATION_REF_PAGINA_DEMANDAS;
     }
 }
 //função de envio
