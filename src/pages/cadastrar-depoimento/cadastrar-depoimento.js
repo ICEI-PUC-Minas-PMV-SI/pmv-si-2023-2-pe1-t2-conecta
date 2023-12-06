@@ -4,7 +4,7 @@ import { findById as findOngById } from '../../js/models/organization.js';
 
 window.addEventListener("load", async () => {
     const urlParams = new URLSearchParams(window.location.search);
-    const token = urlParams.get('id');
+    const token = urlParams.get('token');
 
     const review = await getReviewByToken(token).then(review => review[0]);
 
