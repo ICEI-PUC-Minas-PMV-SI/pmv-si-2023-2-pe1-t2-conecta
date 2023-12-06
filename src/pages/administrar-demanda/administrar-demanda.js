@@ -4,6 +4,7 @@ import { Organization } from "../../js/models/organization.js";
 import { Candidate } from "../../js/models/candidate.js";
 import { sendEmail } from "../../js/envio-email.js";
 import { PROJECT_URL } from "../../js/constants.js";
+import { Review } from "../../js/models/review.js";
 
 
 const getTaskId = async () => {
@@ -110,13 +111,19 @@ const populateCandidates = async (taskStatus) => {
             }
         };
         messageWrapper.onclick = async function () {
-            alert('Depoimento solicitado.');
+            const review = new Review();
+            review.token = crypto.randomUUID();
+            review.candidateId = candidate.id;
+            review.taskId = taskData.id;
+            await review.create();
+
             this.style.display = 'none';
             await sendEmail(
                 candidate.email,
                 `${taskData.name}: compartilhe sua experiência!`,
-                `Olá ${candidate.name}, a ONG ${organizationData.name} gostaria de saber como foi sua experiência de voluntariado. <br> <br> Compartilhe sua experiência através desse link: ${PROJECT_URL}/pages/cadastrar-depoimento/cadastrar-depoimento.html?id=${taskData.id}&candidateId=${candidate.id}`
+                `Olá ${candidate.name}, a ONG ${organizationData.name} gostaria de saber como foi sua experiência de voluntariado. <br> <br> Compartilhe sua experiência através desse link: ${PROJECT_URL}/pages/cadastrar-depoimento/cadastrar-depoimento.html?token=${review.token}`
             );
+            alert('Depoimento solicitado.');
         };
 
         card.onclick = function () {
@@ -225,13 +232,20 @@ const populateCandidates = async (taskStatus) => {
             }
         };
         messageWrapper.onclick = async function () {
-            alert('Depoimento solicitado.');
+            const review = new Review();
+            review.token = crypto.randomUUID();
+            review.candidateId = candidate.id;
+            review.taskId = taskData.id;
+            await review.create();
+
             this.style.display = 'none';
             await sendEmail(
                 candidate.email,
                 `${taskData.name}: compartilhe sua experiência!`,
-                `Olá ${candidate.name}, a ONG ${organizationData.name} gostaria de saber como foi sua experiência de voluntariado. <br> <br> Compartilhe sua experiência através desse link: ${PROJECT_URL}/pages/cadastrar-depoimento/cadastrar-depoimento.html?id=${taskData.id}&candidateId=${candidate.id}`
+                `Olá ${candidate.name}, a ONG ${organizationData.name} gostaria de saber como foi sua experiência de voluntariado. <br> <br> Compartilhe sua experiência através desse link: ${PROJECT_URL}/pages/cadastrar-depoimento/cadastrar-depoimento.html?id=${review.token}`
             );
+
+            alert('Depoimento solicitado.');
         };
 
         card.onclick = function () {

@@ -7,14 +7,17 @@ export class Review {
     comment;
     token;
     expiresAt;
+    createdAt;
+    status;
     
     async create() {
         const data = {
             taskId: this.taskId,
             candidateId: this.candidateId,
-            comment: this.comment,
+            comment: "",
             token: this.token,
-            expiresAt: this.expiresAt
+            expiresAt: new Date(Date.now() + 7200000),
+            status: 'asked'
         }
 
         return await makeRequest(getURL('reviews'), 'POST', data);
@@ -63,4 +66,18 @@ export class Review {
     async deleteById(id) {
         return await makeRequest(getURL(`reviews/${id}`), 'DELETE');
     }
+}
+
+export async function getByToken(token) {
+    return await makeRequest(getURL(`reviews?token=${token}`), 'GET');
+}
+
+export async function saveReview(id, comment) {
+    const data = {
+        comment: comment,
+        createdAt: new Date(),
+        status: "answered"
+    }
+
+    return await makeRequest(getURL(`reviews/${id}`), 'PATCH', data);
 }
