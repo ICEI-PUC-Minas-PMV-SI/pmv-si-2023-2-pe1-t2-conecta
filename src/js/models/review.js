@@ -31,7 +31,7 @@ export class Review {
         return await makeRequest(getURL(`reviews?taskId=${taskId}`), 'GET');
     }
     
-    async findAllByOrganizationId(organizationId) {
+    async findAllAnsweredByOrganizationId(organizationId) {
         const task = new Task();
         const tasks = await task.findByOrganizationId(organizationId);
         
@@ -41,7 +41,7 @@ export class Review {
         
         const tasksIds = tasks.map(task => task.id);
         const reviews = await Promise.all(tasksIds.map(async id => {
-            return await makeRequest(getURL(`reviews?taskId=${id}`), 'GET');
+            return await makeRequest(getURL(`reviews?status=answered&taskId=${id}`), 'GET');
         }));
         
         return reviews.flat();

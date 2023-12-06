@@ -87,7 +87,7 @@ const populateOrganizationData = async () => {
     const candidate = new Candidate();
 
     const review = new Review();
-    const reviews = await review.findAllByOrganizationId(organizationData.id);
+    const reviews = await review.findAllAnsweredByOrganizationId(organizationData.id);
 
     for await (const review of reviews) {
         const candidateData = await candidate.findById(review.candidateId);
