@@ -102,7 +102,7 @@ const populateOrganizationData = async () => {
 
         verticalTaskCard.name = task.name;
         verticalTaskCard.description = task.description;
-        if(task.type == 'Presencial' || task.type == 'presencial') {
+        if(task.type.toLowerCase() === 'presencial') {
                 verticalTaskCard.type = organizationData.city+', '+organizationData.state;
         } else {
                 verticalTaskCard.type = task.type;
@@ -122,7 +122,7 @@ const populateOrganizationData = async () => {
 
         horizontalTaskCard.name = task.name;
         horizontalTaskCard.description = task.description;
-        if(task.type == 'Presencial') {
+        if(task.type.toLowerCase() === 'presencial') {
                 horizontalTaskCard.type = organizationData.city+', '+organizationData.state;
         } else {
             horizontalTaskCard.type = task.type;

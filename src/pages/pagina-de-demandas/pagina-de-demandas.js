@@ -56,7 +56,7 @@ const getTasks = async (filterBy = 'all') => {
         verticalTaskCard.description = task.description;
         verticalTaskCard.organizationId = task.organizationId;
 
-        if(task.type == 'presencial' || task.type == 'Presencial') {
+        if(task.type.toLowerCase() === 'presencial') {
                 verticalTaskCard.type = organizationData.city+', '+organizationData.state;
         } else {
                 verticalTaskCard.type = task.type ;
@@ -85,7 +85,7 @@ const getTasks = async (filterBy = 'all') => {
         horizontalTaskCard.name = task.name;
         horizontalTaskCard.description = task.description;
         horizontalTaskCard.organizationId = task.organizationId;
-        if(task.type == 'presencial' || task.type == 'Presencial') {
+        if(task.type.toLowerCase() === 'presencial') {
                 horizontalTaskCard.type = organizationData.city+', '+organizationData.state;
         } else {
             horizontalTaskCard.type = task.type;
@@ -115,7 +115,7 @@ const getTasksByState = async (location = null) => {
             verticalTaskCard.name = task.name;
             verticalTaskCard.organizationId = task.organizationId;
             verticalTaskCard.description = task.description;
-            if(task.type == 'presencial' || task.type == 'Presencial') {
+            if(task.type.toLowerCase() === 'presencial') {
                     verticalTaskCard.type = organizationData.city+', '+organizationData.state;
             } else {
                 verticalTaskCard.type = task.type ;
@@ -140,7 +140,7 @@ const getTasksByState = async (location = null) => {
             horizontalTaskCard.name = task.name;
             horizontalTaskCard.organizationId = task.organizationId;
             horizontalTaskCard.description = task.description;
-            if(task.type == 'presencial' || task.type == 'Presencial') {
+            if(task.type.toLowerCase() === 'presencial') {
                     horizontalTaskCard.type = organizationData.city+', '+organizationData.state;
             } else {
                 horizontalTaskCard.type = task.type;
