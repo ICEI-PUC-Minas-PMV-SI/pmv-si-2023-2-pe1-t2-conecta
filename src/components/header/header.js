@@ -65,6 +65,7 @@ const makeTemplate = (variant) => {
             <div id="authenticated-menu" style="${token == null ? "display: none" : ""}" class="authentication-area">
                 <p class="text">área da ong</p>
                 <a class="authentication-button" href=${getPagePath("pagina-da-ong")} >PERFIL</a>
+                <a class="authentication-button" href=${getPagePath("cadastrar-ong")} >EDITAR PERFIL</a>
                 <a class="authentication-button" href=${getPagePath("administrar-demandas")}>DEMANDAS</a>
                 <a id="logout-mobile-click" class="authentication-button" href="#">SAIR</a>
             </div>
