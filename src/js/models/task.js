@@ -95,3 +95,7 @@ export class Task {
 export async function findById(id) {
     return await makeRequest(getURL(`tasks/${id}`), 'GET');
 }
+
+export async function findRecentTasks(limit) {
+    return await makeRequest(getURL(`tasks?status=aberta&_sort=createdAt&_order=desc&_limit=${limit}`), 'GET');
+}
