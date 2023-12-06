@@ -14,7 +14,7 @@
 
 |     **Caso de Teste**     | **CT02 - Cadastrar ONG parte 2**                                                                                                                                                                                                                                                                                                                                                                                               |
 |:-------------------------:|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|     **Procedimento**      | 1) Após inserir os dados solicitados na parte 2 <br> 2) Selecione uma imagem para ser utilizada como no perfil da ONG (opcional) # <br> 3) Forneça um texto sobre sua ONG <br> 4) Informe o link do perfil da sua ONG nas redes sociais (opcional) <br> 5) Clique no botão `Cadastrar` <br> 6) Confirme um alerta com a mensagem `Cadastro realizado com sucesso!` na sua tela <br> 7) Seja redirecionado para a tela de login |
+|     **Procedimento**      | 1) Após inserir os dados solicitados na parte 2 <br> 2) Selecione uma imagem para ser utilizada como no perfil da ONG (opcional) <br> 3) Forneça um texto sobre sua ONG <br> 4) Informe o link do perfil da sua ONG nas redes sociais (opcional) <br> 5) Clique no botão `Cadastrar` <br> 6) Confirme um alerta com a mensagem `Cadastro realizado com sucesso!` na sua tela <br> 7) Seja redirecionado para a tela de login |
 | **Requisitos associados** | RF-001                                                                                                                                                                                                                                                                                                                                                                                                                         |
 |  **Resultado esperado**   | Criação de cadastro                                                                                                                                                                                                                                                                                                                                                                                                            |
 |   **Dados de entrada**    | Inserção de dados válidos no formulário de cadastro.                                                                                                                                                                                                                                                                                                                                                                           |
@@ -46,19 +46,19 @@
 
 **Caso de Teste** | **CT06 - Gerenciamento de Perfil da ONG**
  :--------------: | ------------
-**Procedimento**  | 1) # <br> 2) # <br> 3) #
+**Procedimento**  | 1) Navegar ate a página de [perfil](https://icei-puc-minas-pmv-si.github.io/pmv-si-2023-2-pe1-t2-conecta/pages/cadastrar-ong/cadastrar-ong-1.html) <br> 2) Visualizar e digitar dados, clicar no botão `próximo` para aletrar foto do perfil e redes sociais  <br> 3) Quando finalizada as alterações clique em `cadastrar` 
 **Requisitos associados** | RF-005
-**Resultado esperado** | #
-**Dados de entrada** | #
-**Resultado obtido** | #
+**Resultado esperado** | Cadastrar dados do perfil da ONG.
+**Dados de entrada** | Dados pessoais referentes ao perfil.
+**Resultado obtido** | Sucessp.
 
 **Caso de Teste** | **CT07 - Solicitações de Ajuda pelas ONGs**
  :--------------: | ------------
-**Procedimento**  | 1) # <br> 2) # <br> 3) #
+**Procedimento**  | 1) Entre na página [administrar demandas](https://icei-puc-minas-pmv-si.github.io/pmv-si-2023-2-pe1-t2-conecta/pages/administrar-demandas/administrar-demandas.html) <br> 2) Clique no botão `cadastrar demanda`<br> 3) Coloque as informações sobre a demanda e clique em `cadastrar`
 **Requisitos associados** | RF-006
-**Resultado esperado** | #
-**Dados de entrada** | #
-**Resultado obtido** | #
+**Resultado esperado** | Demanda cadastrada com sucesso.
+**Dados de entrada** | Informações sobre a demanda
+**Resultado obtido** | Sucesso.
 
 **Caso de Teste** | **CT08 - Administrar Demandas**
  :--------------: | ------------
@@ -260,7 +260,7 @@
 | *Caso de Teste*                   | *CT03 - Autenticação de ONG (login)*                                                                                                |
 |-----------------------------------|-------------------------------------------------------------------------------------------------------------------------------|
 | Requisito Associado               | RF-002 - A aplicação deve fornecer um sistema de autenticação seguro, permitindo que as ONGs acessem suas contas por meio de um processo de login.                                                                  |
-| Link do vídeo do teste realizado: | COLOQUE SEU VIDEO AQUI | 
+| Link do vídeo do teste realizado: | https://sgapucminasbr-my.sharepoint.com/:v:/g/personal/954530_sga_pucminas_br/EQmUCiXris9Cq9zIlRgYxwkBuKGsHFgimdIaIOR4Yun1mw?e=bPQ8rt&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D | 
 
 | *Caso de Teste*                   | *CT04 - Recuperação de Senha*                                                                                                                           |
 |-----------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -275,12 +275,12 @@
 | *Caso de Teste*                   | *CT06 - Gerenciamento de Perfil da ONG*                                                                                                                                             |
 |-----------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Requisito Associado               | RF-005 - A aplicação deve permitir que as ONGs gerenciem suas informações de perfil (alterar, excluir e consultar os dados) a qualquer momento. |
-| Link do vídeo do teste realizado: | COLOQUE SEU VIDEO AQUI                                   |
+| Link do vídeo do teste realizado: | https://sgapucminasbr-my.sharepoint.com/:v:/g/personal/954530_sga_pucminas_br/ETjhLAJlLOJAk0pQOehs50gBE9UT8ckY_HdkH7cs2jIRnw?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=5ZKaQu                                   |
 
 | *Caso de Teste*                   | *CT07 - Solicitações de Ajuda pelas ONGs*                                                                                                                                             |
 |-----------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Requisito Associado               | RF-006 - A aplicação deve possibilitar que as ONGs divulguem solicitações de ajuda técnica, descrevendo os projetos ou desafios específicos que precisam ser abordados. |
-| Link do vídeo do teste realizado: | COLOQUE SEU VIDEO AQUI                                   |
+| Link do vídeo do teste realizado: | https://sgapucminasbr-my.sharepoint.com/:v:/g/personal/954530_sga_pucminas_br/EUWb3WmRlktIubxvHVnPi2cBCow6uCi1_kKkBvB7DDJlqA?e=idN2Xu&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D                                   |
 
 | *Caso de Teste*                   | *CT08 - Administrar Demandas*                                                                                                                                             |
 |-----------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------|
