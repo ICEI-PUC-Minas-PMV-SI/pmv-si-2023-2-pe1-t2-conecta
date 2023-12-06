@@ -380,13 +380,18 @@ async function logout() {
         await fetch(`https://orca-app-fbvzt.ondigitalocean.app/sessions?token=${token}`, options)
             .then(async response => {
                 const session = await response.json().then(data => data[0])
-                await fetch(`https://orca-app-fbvzt.ondigitalocean.app/sessions/${session.id}`, {method: 'DELETE'})
-                    .then(response => {
-                        if (response.status === 200) {
-                            window.localStorage.removeItem("token");
-                            window.location.href = "../../index.html";
-                        }
-                    });
+                if (session) {
+                    await fetch(`https://orca-app-fbvzt.ondigitalocean.app/sessions/${session.id}`, {method: 'DELETE'})
+                        .then(response => {
+                            if (response.status === 200) {
+                                window.localStorage.removeItem("token");
+                                window.location.href = "../../index.html";
+                            }
+                        });
+                } else {
+                    window.localStorage.removeItem("token");
+                    window.location.href = getPagePath("index");
+                }
             });
     } catch (err) {
         console.error(err);
