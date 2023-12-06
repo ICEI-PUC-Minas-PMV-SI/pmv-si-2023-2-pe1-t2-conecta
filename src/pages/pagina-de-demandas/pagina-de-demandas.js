@@ -54,6 +54,8 @@ const getTasks = async (filterBy = 'all') => {
 
         verticalTaskCard.name = task.name;
         verticalTaskCard.description = task.description;
+        verticalTaskCard.organizationId = task.organizationId;
+
         if(task.type == 'presencial' || task.type == 'Presencial') {
                 verticalTaskCard.type = organizationData.city+', '+organizationData.state;
         } else {
@@ -82,6 +84,7 @@ const getTasks = async (filterBy = 'all') => {
 
         horizontalTaskCard.name = task.name;
         horizontalTaskCard.description = task.description;
+        horizontalTaskCard.organizationId = task.organizationId;
         if(task.type == 'presencial' || task.type == 'Presencial') {
                 horizontalTaskCard.type = organizationData.city+', '+organizationData.state;
         } else {
@@ -110,6 +113,7 @@ const getTasksByState = async (location = null) => {
         const organizationData = await getOrganizationData(task.organizationId);
         if (location && (organizationData.state == location || organizationData.city == location || location == 'todos')) {
             verticalTaskCard.name = task.name;
+            verticalTaskCard.organizationId = task.organizationId;
             verticalTaskCard.description = task.description;
             if(task.type == 'presencial' || task.type == 'Presencial') {
                     verticalTaskCard.type = organizationData.city+', '+organizationData.state;
@@ -134,6 +138,7 @@ const getTasksByState = async (location = null) => {
 
         if (location && (organizationData.state == location || organizationData.city == location || location == 'todos')) {
             horizontalTaskCard.name = task.name;
+            horizontalTaskCard.organizationId = task.organizationId;
             horizontalTaskCard.description = task.description;
             if(task.type == 'presencial' || task.type == 'Presencial') {
                     horizontalTaskCard.type = organizationData.city+', '+organizationData.state;

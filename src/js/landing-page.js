@@ -26,8 +26,10 @@ const populateDemanda = async () => {
     for (let i = 0; i < tasks.length; i++) {
         const task = tasks[i];
         const verticalTaskCard = new VerticalTaskCard();
+
         let organizationData = await getOrganizationData(task.organizationId);
         verticalTaskCard.name = task.name;
+        verticalTaskCard.organizationId = tasks.organizationId;
         verticalTaskCard.description = task.description;
         if(task.type.toLowerCase() === 'presencial') {
                 verticalTaskCard.type = organizationData.city+', '+organizationData.state;
@@ -47,6 +49,7 @@ const populateDemanda = async () => {
         const horizontalTaskCard = new HorizontalTaskCard();
 
         horizontalTaskCard.name = task.name;
+        horizontalTaskCard.organizationId = tasks.organizationId;
         horizontalTaskCard.description = task.description;
         if(task.type.toLowerCase() === 'presencial') {
                 horizontalTaskCard.type = organizationData.city+', '+organizationData.state;
