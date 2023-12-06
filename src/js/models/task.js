@@ -13,7 +13,7 @@ export class Task {
             organizationId: this.organizationId,
             name: this.name,
             description: this.description,
-            createdAt: Date.now(),
+            createdAt: new Date(),
             status: 'aberta',
             type: this.type,
             searchData: this.name + ' ' + this.description,
