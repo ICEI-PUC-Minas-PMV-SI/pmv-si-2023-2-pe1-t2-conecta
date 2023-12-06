@@ -5,15 +5,15 @@ import {
     LOCATION_REF_PAGINA_DEMANDAS
 } from "../../js/constants.js";
 import { findById as findOngById } from "../../js/models/organization.js";
+import { findById as findTaskById } from "../../js/models/task.js";
 import { Candidate } from "../../js/models/candidate.js";
 
 const dataAtual = new Date();
 
 window.addEventListener("load", async () => {
     const ongName = document.getElementById("ongName");
-    const ongId = getOrganizationId();
-    const organization = await findOngById(ongId);
-    ongName.textContent = organization.name;
+    const organization = await getOngName();
+    ongName.textContent = organization;
 });
 
 document.getElementById("cpf").addEventListener("input", async () => {
@@ -177,15 +177,19 @@ function isSpecialKey(event) {
         (event.ctrlKey && event.key === "V")
     );
 }
-// pegar a ongId da demanda através da url
-const getOrganizationId = () => {
-    const urlParams = new URLSearchParams(window.location.search);
-    return urlParams.get('ongId');
-}
+
 // pegar o id da demanda através da url
 const getTaskId = () => {
     const urlParams = new URLSearchParams(window.location.search);
-    return urlParams.get('taskId');
+    return urlParams.get('id');
+}
+
+// pegar o nome da ong pela id
+async function getOngName(){
+const taskId = parseInt(getTaskId());
+const task = await findTaskById(taskId);
+const ong = await findOngById(task.organizationId);
+return ong.name;
 }
 
 //conta pendentes ou aprovados checando se a data limite do pendente é maior que a data atual
