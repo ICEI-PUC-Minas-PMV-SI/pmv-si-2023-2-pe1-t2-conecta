@@ -29,7 +29,7 @@ const makeTemplate = () => {
                             <div class="location-tag"></div>
                         </div>
                     </div>
-                    <a href=${getPagePath("pagina-da-ong")} onclick="fotoClick(event)">
+                    <a class="image-org" href="" onclick="fotoClick(event)">
                         <div class="profile-image-card-container">
                             <img src="" alt="Profile image">
                         </div>
@@ -265,6 +265,11 @@ export class VerticalTaskCard extends HTMLElement {
         if (this.name) {
             const name = this.root.querySelector('.task-name');
             name.innerText = this.name;
+        }
+
+        if(this.organizationId) {
+            const organizationId = this.root.querySelector('.image-org');
+            organizationId.href = getPagePath("pagina-da-ong") +'?id='+ this.organizationId;
         }
 
         if (this.owner) {

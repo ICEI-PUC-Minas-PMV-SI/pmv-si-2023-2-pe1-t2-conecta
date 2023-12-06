@@ -41,7 +41,7 @@ const makeTemplate = () => {
 
     </div>
     <div class="right-side" onclick="fotoClick(event)">
-    <a href=${getPagePath("pagina-da-ong")}>    
+    <a class="image-org" href="">    
         <div class="profile-image-card-container">
             <img src="" alt="Profile image">
         </div>
@@ -320,6 +320,11 @@ export class HorizontalTaskCard extends HTMLElement {
         if(this.name) {
             const name = this.root.querySelector('.task-name');
             name.innerText = this.name;
+        }
+
+        if(this.organizationId) {
+            const organizationId = this.root.querySelector('.image-org');
+            organizationId.href = getPagePath("pagina-da-ong") +'?id='+ this.organizationId;
         }
 
         if(this.owner) {
