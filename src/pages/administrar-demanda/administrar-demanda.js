@@ -290,7 +290,7 @@ const handleButtons = (taskStatus) => {
 
     const task = new Task();
 
-    if(taskStatus === 'Aberta') {
+    if(taskStatus.toLowerCase() === 'aberta') {
         editButton.style.display = 'flex';
 
         finishOrReopenButton.style.display = 'flex';
@@ -308,9 +308,9 @@ const handleButtons = (taskStatus) => {
         finishOrReopenButton.onclick = async function () {
             if(confirm('Deseja reabrir a demanda?')) {
                 alert('Demanda reaberta.');
-                await task.updateStatusById(await getTaskId(), 'Aberta');
-                await populateCandidates('Aberta');
-                handleButtons('Aberta');
+                await task.updateStatusById(await getTaskId(), 'aberta');
+                await populateCandidates('aberta');
+                handleButtons('aberta');
             }
         }
     }

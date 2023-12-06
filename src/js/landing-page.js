@@ -1,5 +1,5 @@
 import { Organization } from "./models/organization.js";
-import { Task, findRecentTasks } from "./models/task.js";
+import { findRecentTasks } from "./models/task.js";
 import { VerticalTaskCard } from "../components/vertical-task-card/vertical-task-card.js";
 import { HorizontalTaskCard } from "../components/horizontal-task-card/horizontal-task-card.js";
 

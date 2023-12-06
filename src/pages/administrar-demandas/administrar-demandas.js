@@ -46,14 +46,14 @@ const getTasks = async (filterTipo = 'all', filterStatus = 'all') => {
             let taskStatus = task.status;
             const organizationData = await getOrganizationData(session[0].ongId);
             let statusTask = 'red-dot.png';
-            if (task.status == 'aberta' || task.status == 'Aberta') {
+            if (task.status.toLowerCase() === 'aberta') {
                 statusTask = 'green-dot.png';
             }
             console.log(task);
 
 
             let endereco = organizationData.city+', '+ organizationData.state;
-            if (task.type == "remoto" || task.type == "Remoto") { 
+            if (task.type.toLowerCase() === "remoto") {
                 endereco = "Remoto"
             }
             let html = 
