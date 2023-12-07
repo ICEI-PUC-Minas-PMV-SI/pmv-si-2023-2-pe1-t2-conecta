@@ -126,10 +126,15 @@ const populateCandidates = async (taskStatus) => {
             alert('Depoimento solicitado.');
         };
 
+        const options = { year: 'numeric', month: 'long', day: 'numeric', hour: 'numeric', minute: 'numeric' };
+
         card.onclick = function () {
             document.querySelector('.modal .task-name').innerText = candidate.name;
             document.querySelector('.modal .text').innerText = candidate.profile;
-            document.querySelector('.modal .NGO').innerText = candidate.email; // or any other field you want to display
+            document.querySelector('.modal .NGO').innerText = 'E-mail: ' + candidate.email; // or any other field you want to display
+            document.querySelector('.modal .phone').innerText = 'Telefone: ' +candidate.phone;
+            document.querySelector('.modal .cpf').innerText = 'CPF: ' + candidate.cpf;
+            document.querySelector('.modal .timestamp').innerText = 'Data do voluntariado: ' + new Date(candidate.timestamp).toLocaleDateString('pt-BR', options);
 
             $('#myModal').css('display', 'block');
         }
@@ -248,10 +253,15 @@ const populateCandidates = async (taskStatus) => {
             alert('Depoimento solicitado.');
         };
 
+        const options = { year: 'numeric', month: 'long', day: 'numeric', hour: 'numeric', minute: 'numeric' };
+
         card.onclick = function () {
             document.querySelector('.modal .task-name').innerText = candidate.name;
             document.querySelector('.modal .text').innerText = candidate.profile;
-            document.querySelector('.modal .NGO').innerText = candidate.email; // or any other field you want to display
+            document.querySelector('.modal .NGO').innerText = 'E-mail: ' + candidate.email; // or any other field you want to display
+            document.querySelector('.modal .phone').innerText = 'Telefone: ' +candidate.phone;
+            document.querySelector('.modal .cpf').innerText = 'CPF: ' + candidate.cpf;
+            document.querySelector('.modal .timestamp').innerText = 'Data do voluntariado: ' + new Date(candidate.timestamp).toLocaleDateString('pt-BR', options);
 
             $('#myModal').css('display', 'block');
         }
