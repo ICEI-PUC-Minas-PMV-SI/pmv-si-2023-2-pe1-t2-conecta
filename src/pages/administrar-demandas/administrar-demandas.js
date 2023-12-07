@@ -22,6 +22,12 @@ document.querySelector('.filterButton.status').addEventListener('change', (event
 
 const task = new Task();
 
+window.deleteTasks = async function(id) {
+    const task = new Task();
+    await task.deleteById(id);
+    window.location.reload();
+}
+
 const getOrganizationData = async (organizationId) => {
     const ong = new Organization();
     return await ong.findById(organizationId);
@@ -154,4 +160,5 @@ const deleteTask = async (id) => {
 getTasks().then().catch((error) => {
     console.log(error);
 });
+
 
