@@ -70,23 +70,23 @@
 
 **Caso de Teste** | **CT09 - Edição de Demandas pelas ONGs**
  :--------------: | ------------
-**Procedimento**  | 1) # <br> 2) # <br> 3) #
+**Procedimento**  | 1) Faça [login](https://icei-puc-minas-pmv-si.github.io/pmv-si-2023-2-pe1-t2-conecta/pages/login/login.html) <br> 2) Acesse a página [Administrar Demandas](https://icei-puc-minas-pmv-si.github.io/pmv-si-2023-2-pe1-t2-conecta/pages/administrar-demandas/administrar-demandas.html)<br> 3) Clique no ícone de Gerenciar Demanda, edite a demanda e clica no botão `Editar` <br> 4) Confirme um alerta com a mensagem `Demanda editada com sucesso!` na sua tela
 **Requisitos associados** | RF-008
-**Resultado esperado** | #
-**Dados de entrada** | #
-**Resultado obtido** | #
+**Resultado esperado** | Demanda com dados alterados salva.
+**Dados de entrada** | Informações editadas na demanda.
+**Resultado obtido** | Sucesso.
 
 |     **Caso de Teste**     | **CT10 - Visualização de Solicitações por Voluntários**                                                                                                                                                                                                                                                                                                                |
 |:-------------------------:|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |     **Procedimento**      | 1) Navegar até a [página de demandas](https://icei-puc-minas-pmv-si.github.io/pmv-si-2023-2-pe1-t2-conecta/pages/pagina-de-demandas/pagina-de-demandas.html) <br> 2) Observe que as demandas carregam automaticamente <br> 3) Clique no ícone de filtro <br> 4) Selecione uma opção <br> 5) Perceba que as demandas são recarregadas de acordo com a opção selecionada |
 | **Requisitos associados** | RF-009                                                                                                                                                                                                                                                                                                                                                                 |
 |  **Resultado esperado**   | Demandas são listadas na tela de acordo com o valor do filtro                                                                                                                                                                                                                                                                                                          |
-|   **Dados de entrada**    | Opção selecionada do filtro                                                                                                                                                                                                                                                                                                                                            |
-|   **Resultado obtido**    | Sucesso                                                                                                                                                                                                                                                                                                                                                                |
+|   **Dados de entrada**    | Opção selecionada do filtro.                                                                                                                                                                                                                                                                                                                                            |
+|   **Resultado obtido**    | Sucesso.                                                                                                                                                                                                                                                                                                                                                                |
 
 **Caso de Teste** | **CT11 - Voluntariar-se em Projetos Específicos**
  :--------------: | ------------
-**Procedimento**  | 1) Acessar a página [candidatar a demanda](https://icei-puc-minas-pmv-si.github.io/pmv-si-2023-2-pe1-t2-conecta/pages/candidatar-a-demanda/candidatar-a-demanda.html?id=2).  <br> 2) Insere dados válidos <br> 3) Clique no botão `Enviar` <br>
+**Procedimento**  | 1) Acessar a página [candidatar a demanda](https://icei-puc-minas-pmv-si.github.io/pmv-si-2023-2-pe1-t2-conecta/pages/candidatar-a-demanda/candidatar-a-demanda.html?id=2) <br> 2) Insere dados válidos <br> 3) Clique no botão `Enviar` <br>
 **Requisitos associados** | RF-010
 **Resultado esperado** | O usuário se candidata à demanda escolhida.
 **Dados de entrada** | Inserção de dados válidos no formulário de candidatura.
@@ -94,11 +94,11 @@
 
 **Caso de Teste** | **CT12 - Marcar Solicitações como Concluídas ou Encerradas**
  :--------------: | ------------
-**Procedimento**  | 1) # <br> 2) # <br> 3) #
+**Procedimento**  | 1) Faça [login](https://icei-puc-minas-pmv-si.github.io/pmv-si-2023-2-pe1-t2-conecta/pages/login/login.html) <br> 2) Acesse a página [Administrar Demandas](https://icei-puc-minas-pmv-si.github.io/pmv-si-2023-2-pe1-t2-conecta/pages/administrar-demandas/administrar-demandas.html)<br> 3) Clique no ícone de Gerenciar Demanda e clica no botão `Finalizar Demanda` <br> 4) Confirme um alerta com a mensagem `Demanda finalizada com sucesso!` na sua tela
 **Requisitos associados** | RF-011
-**Resultado esperado** | #
-**Dados de entrada** | #
-**Resultado obtido** | #
+**Resultado esperado** | Demanda com status de finalizada
+**Dados de entrada** | Nenhum.
+**Resultado obtido** | Sucesso.
 
 **Caso de Teste** | **CT13 - Página "Como Começar"**
  :--------------: | ------------
@@ -120,7 +120,7 @@
 |:-------------------------:|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |     **Procedimento**      | 1) Acessar a [página de perguntas frequentes](https://icei-puc-minas-pmv-si.github.io/pmv-si-2023-2-pe1-t2-conecta/pages/perguntas-frequentes/perguntas-frequentes.html) <br> 2) Clicar nas setas ao lado das perguntas <br> 3) Validar que a resposta das perguntas é exibida |
 | **Requisitos associados** | RF-014                                                                                                                                                                                                                                                                         |
-|  **Resultado esperado**   | Página carregada e texto exibido                                                                                                                                                                                                                                               |
+|  **Resultado esperado**   | Página carregada e texto exibido.                                                                                                                                                                                                                                               |
 |   **Dados de entrada**    | Nenhum                                                                                                                                                                                                                                                                         |
 |   **Resultado obtido**    | Sucesso                                                                                                                                                                                                                                                                        |
 
@@ -134,7 +134,7 @@
 
 **Caso de Teste** | **CT17 - Página "Por Que Ser Voluntário?"**
  :--------------: | ------------
-**Procedimento**  | 1) Acessar [página por que ser voluntario?](https://icei-puc-minas-pmv-si.github.io/pmv-si-2023-2-pe1-t2-conecta/pages/por-que-ser-voluntario/por-que-ser-voluntario.html) <br> 2) acessa as informações da página
+**Procedimento**  | 1) Acessar [página por que ser voluntário?](https://icei-puc-minas-pmv-si.github.io/pmv-si-2023-2-pe1-t2-conecta/pages/por-que-ser-voluntario/por-que-ser-voluntario.html) <br> 2) acessa as informações da página
 **Requisitos associados** | RF-016
 **Resultado esperado** | Acessa a página com texto e imagens carregados.
 **Dados de entrada** | Nenhum.
@@ -142,7 +142,7 @@
 
 **Caso de Teste** | **CT18 - Página "Histórias de Sucesso"**
  :--------------: | ------------
-**Procedimento**  | 1)  Acessar a [página histórias de sucesso](https://icei-puc-minas-pmv-si.github.io/pmv-si-2023-2-pe1-t2-conecta/pages/historias-sucesso/historias-sucesso.html) <br> 2) Verificar se texto e imagem são exibidos <br>
+**Procedimento**  | 1)  Acessar a [página histórias de sucesso](https://icei-puc-minas-pmv-si.github.io/pmv-si-2023-2-pe1-t2-conecta/pages/historias-sucesso/historias-sucesso.html) <br> 2) Verifica se texto e imagem são exibidos <br>
 **Requisitos associados** | RF-017
 **Resultado esperado** | Visualizar a página "Histórias de Sucesso" com texto e imagem carregados.
 **Dados de entrada** | Nenhum.
@@ -153,7 +153,7 @@
 **Procedimento**  | 1) Acessar a [página de demandas](https://icei-puc-minas-pmv-si.github.io/pmv-si-2023-2-pe1-t2-conecta/pages/pagina-de-demandas/pagina-de-demandas.html) <br> 2) Selecionar as opções de filtros desejadas <br>
 **Requisitos associados** | RF-018
 **Resultado esperado** | Página carregada de acordo com os filtros selecionados.
-**Dados de entrada** | Selecionar filtro.
+**Dados de entrada** | Selecionar filtro desejado.
 **Resultado obtido** | Sucesso.
 
 **Caso de Teste** | **CT20 - E-mail de Notificação para Voluntários**
@@ -166,11 +166,11 @@
 
 **Caso de Teste** | **CT21 - Lista de Voluntários Aceitos na Demanda**
  :--------------: | ------------
-**Procedimento**  | 1) # <br> 2) # <br> 3) #
+**Procedimento**  | Faça [login](https://icei-puc-minas-pmv-si.github.io/pmv-si-2023-2-pe1-t2-conecta/pages/login/login.html) <br> 2) Acesse a página [Administrar Demandas](https://icei-puc-minas-pmv-si.github.io/pmv-si-2023-2-pe1-t2-conecta/pages/administrar-demandas/administrar-demandas.html)<br> 3) Clique no ícone de Gerenciar Demanda e visualize os canditados que estão interessados no voluntariado
 **Requisitos associados** | RF-020
-**Resultado esperado** | #
-**Dados de entrada** | #
-**Resultado obtido** | #
+**Resultado esperado** | Lista de voluntários interessados.
+**Dados de entrada** | Nenhum.
+**Resultado obtido** | Sucesso. 
 
 **Caso de Teste** | **CT22 - Envio de Link para Comentários por E-mail**
  :--------------: | ------------
@@ -290,7 +290,7 @@
 | *Caso de Teste*                   | *CT09 - Edição de Demandas pelas ONGs*                                                                                                                                             |
 |-----------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Requisito Associado               | RF-008 - As ONGs devem poder editar suas demandas (alterar, excluir e editar os dados) a qualquer momento. |
-| Link do vídeo do teste realizado: | COLOQUE SEU VIDEO AQUI                                   |
+| Link do vídeo do teste realizado: | https://sgapucminasbr-my.sharepoint.com/:v:/g/personal/954530_sga_pucminas_br/ETRsKBxBi1RNupmc4UFOohEBG9Nf01Y1LQeWEgp6avQgKA?e=oMLEwZ&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D                                   |
 
 | *Caso de Teste*                   | *CT10 - Visualização de Solicitações por Voluntários*                                                                                  |
 |-----------------------------------|----------------------------------------------------------------------------------------------------------------------------------------|
@@ -305,7 +305,7 @@
 | *Caso de Teste*                   | *CT12 - Marcar Solicitações como Concluídas ou Encerradas*                                                                                                                                             |
 |-----------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Requisito Associado               | RF-011 - A aplicação deve permitir que as ONGs marquem as solicitações como concluídas ou encerradas. |
-| Link do vídeo do teste realizado: | COLOQUE SEU VIDEO AQUI                                   |
+| Link do vídeo do teste realizado: | https://sgapucminasbr-my.sharepoint.com/:v:/g/personal/954530_sga_pucminas_br/EQ20l_7QPOpHpeY-eHf0L-IB8rTtxmpwZn1EZB7XiTEhog?e=xacf0e&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D                                   |
 
 | *Caso de Teste*                   | *CT13 - Página "Como Começar"*                                                                                                                                             |
 |-----------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -350,7 +350,7 @@
 | *Caso de Teste*                   | *CT21 - Lista de Voluntários Aceitos na Demanda*                                                                                                                                             |
 |-----------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Requisito Associado               | RF-020 A página da demanda cadastrada pela ONG deve exibir uma lista de todos os voluntários que tiveram a candidatura aceita. |
-| Link do vídeo do teste realizado: | COLOQUE SEU VIDEO AQUI                                   |
+| Link do vídeo do teste realizado: | https://sgapucminasbr-my.sharepoint.com/:v:/g/personal/954530_sga_pucminas_br/EfqFJxHrkYVOs_u9hczZqYwBrT3nBGPFLditEtCpDVvWKg?e=fJrOmI&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D                                   |
 
 | *Caso de Teste*                   | *CT22 - Envio de Link para Comentários por E-mail*                                                                                                                                             |
 |-----------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -403,256 +403,91 @@
 
 DESCREVER AQUI AS CONSIDERACOES SOBRE O TESTE DE SOFTWARE.
 
-
-
-## Testes de unidade automatizados (Opcional)
-
-Se o grupo tiver interesse em se aprofundar no desenvolvimento de testes de software, ele podera desenvolver testes automatizados de software que verificam o funcionamento das funções JavaScript desenvolvidas. Para conhecer sobre testes unitários em JavaScript, leia 0 documento  [Ferramentas de Teste para Java Script](https://geekflare.com/javascript-unit-testing/).
-
-
 # Testes de Usabilidade
+O objetivo do Plano de Testes de Usabilidade é obter informações quanto à expectativa dos usuários em relação à  funcionalidade da aplicação de forma geral.
+
+Para tanto, elaboramos quatro cenários, cada um baseado na definição apresentada sobre as histórias dos usuários, definido na etapa das especificações do projeto.
+
+Foram convidadas quatro pessoas que os perfis se encaixassem nas definições das histórias apresentadas na documentação, visando averiguar os seguintes indicadores:
+
+Taxa de sucesso: responde se o usuário conseguiu ou não executar a tarefa proposta;
+
+Satisfação subjetiva: responde como o usuário avalia o sistema com relação à execução da tarefa proposta, conforme a seguinte escala:
+
+1. Péssimo; 
+2. Ruim; 
+3. Regular; 
+4. Bom; 
+5. Ótimo.
+
+Tempo para conclusão da tarefa: em segundos, e em comparação com o tempo utilizado quando um especialista (um desenvolvedor) realiza a mesma tarefa.
+
+Objetivando respeitar as diretrizes da Lei Geral de Proteção de Dados, as informações pessoais dos usuários que participaram do teste não foram coletadas, tendo em vista a ausência de Termo de Consentimento Livre e Esclarecido.
 
 ## Cenários de Teste de Usabilidade
 
 | Nº do Cenário | Descrição do cenário - ONGs |
 |---------------|----------------------|
-| 1             | Você administra uma ONG e deseja fazer seu cadastro na aplicação.  |
-| 2             | Você deseja fazer o login no site.  |
-| 3             | Você precisa cadastrar as informações de perfil.  |
-| 4             | Você esqueceu a senha e precisa recuperá-la. |
-| 5             | Você quer cadastrar uma demanda.  |
-| 6             | Você precisa administrar as demandas. Sendo possível editar os dados da demanda ou excluí-la.  |
-| 7             | Você deseja verificar quais voluntários se candidataram aquela demanda, aceitando ou rejeitando a candidatura.  |
-| 8             | Após o término daquela demanda é preciso finalizá-la e pedir o feedback do voluntário.  |
-
-| Nº do Cenário | Descrição do cenário - Voluntários|
-|---------------|----------------------|
-| 1             | Você quer se voluntariar em uma ONG e acessa a aplicação, entra no Home Page e visualiza as opções de oportunidades.   |
-| 2             | Na Home Page tem algumas opções de oportunidades, você deseja visualizar e explorar todas as opções.   |
-| 3            | Você deseja filtrar a demanda por tipo e localização.  |
-| 4             | Encontra uma oportunidade que deseja se candidatar clica em “Quero Ajudar”. |
-| 5             | Acessa a página “Quero Ajudar” e preencha o formulário com as informações pessoais. |
-| 6             | Aguarda receber o e-mail da ONG com a confirmação da candidatura.   |
-| 7            | Quando finalizado o voluntariado você pode enviar uma mensagem com o seu feedback.     |
+| 1             | Você é um estudante ou profissional da área da tecnologia e quer encontrar um trabalho para se voluntariar. No site acesse a página de oportunidades encontre um trabalho que seja de seu interesse e se candidata.   |
+| 2             | Você administra uma ONG e quer cadastrar sua organização em um site que divulga oportunidades de voluntariado. Você acessa o site entra em área da ONG, e na página de login você clica no link cadastrar e cadastra sua ONG.  |
+| 3             | Você tem sua ONG cadastrada no site e quer divulgar os trabalhos de voluntariado. Você então acessa o site, entra em àrea da ONG, faz o login e cadastra duas demandas.  |
+| 4             | Você administra uma ONG e vai fazer login no site para visualizar se algum candidato está interessado em uma demanda que você cadastrou. Ao acessar o site, ir para àrea da ONG e para login, você esqueceu a senha e precisa recuperá-la. Para isso clica no link esqueceu a senha, verifica se recebeu o e-mail de recuperação e registra nova senha. Faz login, acessa a página de administrar demandas e verifica se tem algum candidato interessado, se sim, aceita ou recusa sua candidatura.  |
+|
 
 
 ## Registro de Testes de Usabilidade
 
-Cenário 1 - ONGs:
-Você administra uma ONG e deseja fazer seu cadastro na aplicação.
+Cenário 1 - Você é um estudante ou profissional da área da tecnologia e quer encontrar um trabalho para se voluntariar. No site acesse a página de Oportunidades encontre um trabalho que seja de seu interesse e se voluntaria.
 
 | Usuário | Taxa de sucesso | Satisfação subjetiva | Tempo para conclusão do cenário |
 |---------|-----------------|----------------------|---------------------------------|
-| 1       | SIM/NÃO             | NOTA 4 - 5                    | 0 segundos                  |
-| 2       | SIM/NÃO             | NOTA 4 - 5                    | 0 segundos                  |
+| 1       | SIM/NÃO             | NOTA 1 - 5                    | 0 segundos                  |
+| 2       | SIM/NÃO             | NOTA 1 - 5                    | 0 segundos                  |
 |  |  |  |  |
 | **Média**     | 0%           | 0                | 0 segundos                           |
-| **Tempo para conclusão pelo especialista** | SIM/NÃO | NOTA 4 - 5 | 0 segundos |
+| **Tempo para conclusão pelo especialista** | SIM/NÃO | NOTA 1 - 5 | 0 segundos |
 
 
     Comentários dos usuários: DESCREVA AQUI O COMENTÁRIO DO USUÁRIO
 
-Cenário 2 - ONGs:
-Você deseja fazer o login no site. 
+Cenário 2 - Você administra uma ONG e quer cadastrar sua organização em um site que divulga oportunidades de voluntariado. Você acessa o site entra em Área da ONG, e na página de login você clica no link cadastrar e cadastra sua ONG.
 
 | Usuário | Taxa de sucesso | Satisfação subjetiva | Tempo para conclusão do cenário |
 |---------|-----------------|----------------------|---------------------------------|
-| 1       | SIM/NÃO             | NOTA 4 - 5                    | 0 segundos                  |
-| 2       | SIM/NÃO             | NOTA 4 - 5                    | 0 segundos                  |
+| 1       | SIM/NÃO             | NOTA 1 - 5                    | 0 segundos                  |
+| 2       | SIM/NÃO             | NOTA 1 - 5                    | 0 segundos                  |
 |  |  |  |  |
 | **Média**     | 0%           | 0                | 0 segundos                           |
-| **Tempo para conclusão pelo especialista** | SIM/NÃO | NOTA 4 - 5 | 0 segundos |
+| **Tempo para conclusão pelo especialista** | SIM/NÃO | NOTA 1 - 5 | 0 segundos |
 
 
     Comentários dos usuários: DESCREVA AQUI O COMENTÁRIO DO USUÁRIO
 
-Cenário 3 - ONGs:
-Você precisa cadastrar as informações de perfil. 
+Cenário 3 - Você tem sua ONG cadastrada no site e quer divulgar os trabalhos de voluntariado. Você então acessa o site, entra em àrea da ONG, faz o login e cadastra duas demandas. 
 
 | Usuário | Taxa de sucesso | Satisfação subjetiva | Tempo para conclusão do cenário |
 |---------|-----------------|----------------------|---------------------------------|
-| 1       | SIM/NÃO             | NOTA 4 - 5                    | 0 segundos                  |
-| 2       | SIM/NÃO             | NOTA 4 - 5                    | 0 segundos                  |
+| 1       | SIM/NÃO             | NOTA 1 - 5                    | 0 segundos                  |
+| 2       | SIM/NÃO             | NOTA 1 - 5                    | 0 segundos                  |
 |  |  |  |  |
 | **Média**     | 0%           | 0                | 0 segundos                           |
-| **Tempo para conclusão pelo especialista** | SIM/NÃO | NOTA 4 - 5 | 0 segundos |
+| **Tempo para conclusão pelo especialista** | SIM/NÃO | NOTA 1 - 5 | 0 segundos |
 
 
     Comentários dos usuários: DESCREVA AQUI O COMENTÁRIO DO USUÁRIO
 
-Cenário 4 - ONGs:
-Você esqueceu a senha e precisa recuperá-la.
+Cenário 4 - Você administra uma ONG e vai fazer login no site para visualizar se algum candidato está interessado em uma demanda que você cadastrou. Ao acessar o site, ir par àrea da ONG e para login, você esqueceu a senha e precisa recuperá-la. Para isso clica no link esqueceu a senha, verifica se recebeu o e-mail de recuperação e registra nova senha. Faz login, acessa a página de administrar demandas e verifica se tem algum candidato interessado, se sim, aceita ou recusa sua candidatura.
 
 | Usuário | Taxa de sucesso | Satisfação subjetiva | Tempo para conclusão do cenário |
 |---------|-----------------|----------------------|---------------------------------|
-| 1       | SIM/NÃO             | NOTA 4 - 5                    | 0 segundos                  |
-| 2       | SIM/NÃO             | NOTA 4 - 5                    | 0 segundos                  |
+| 1       | SIM/NÃO             | NOTA 1 - 5                    | 0 segundos                  |
+| 2       | SIM/NÃO             | NOTA 1 - 5                    | 0 segundos                  |
 |  |  |  |  |
 | **Média**     | 0%           | 0                | 0 segundos                           |
-| **Tempo para conclusão pelo especialista** | SIM/NÃO | NOTA 4 - 5 | 0 segundos |
+| **Tempo para conclusão pelo especialista** | SIM/NÃO | NOTA 1 - 5 | 0 segundos |
 
 
     Comentários dos usuários: DESCREVA AQUI O COMENTÁRIO DO USUÁRIO
-
-Cenário 5 - ONGs:
-Você quer cadastrar uma demanda.
-
-| Usuário | Taxa de sucesso | Satisfação subjetiva | Tempo para conclusão do cenário |
-|---------|-----------------|----------------------|---------------------------------|
-| 1       | SIM/NÃO             | NOTA 4 - 5                    | 0 segundos                  |
-| 2       | SIM/NÃO             | NOTA 4 - 5                    | 0 segundos                  |
-|  |  |  |  |
-| **Média**     | 0%           | 0                | 0 segundos                           |
-| **Tempo para conclusão pelo especialista** | SIM/NÃO | NOTA 4 - 5 | 0 segundos |
-
-
-    Comentários dos usuários: DESCREVA AQUI O COMENTÁRIO DO USUÁRIO
-
-Cenário 6 - ONGs:
-Você precisa administrar as demandas. Sendo possível editar os dados da demanda ou excluí-la.
-
-| Usuário | Taxa de sucesso | Satisfação subjetiva | Tempo para conclusão do cenário |
-|---------|-----------------|----------------------|---------------------------------|
-| 1       | SIM/NÃO             | NOTA 4 - 5                    | 0 segundos                  |
-| 2       | SIM/NÃO             | NOTA 4 - 5                    | 0 segundos                  |
-|  |  |  |  |
-| **Média**     | 0%           | 0                | 0 segundos                           |
-| **Tempo para conclusão pelo especialista** | SIM/NÃO | NOTA 4 - 5 | 0 segundos |
-
-
-    Comentários dos usuários: DESCREVA AQUI O COMENTÁRIO DO USUÁRIO
-
-Cenário 7 - ONGs:
-Você deseja verificar quais voluntários se candidataram aquela demanda, aceitando ou rejeitando a candidatura. 
-
-| Usuário | Taxa de sucesso | Satisfação subjetiva | Tempo para conclusão do cenário |
-|---------|-----------------|----------------------|---------------------------------|
-| 1       | SIM/NÃO             | NOTA 4 - 5                    | 0 segundos                  |
-| 2       | SIM/NÃO             | NOTA 4 - 5                    | 0 segundos                  |
-|  |  |  |  |
-| **Média**     | 0%           | 0                | 0 segundos                           |
-| **Tempo para conclusão pelo especialista** | SIM/NÃO | NOTA 4 - 5 | 0 segundos |
-
-
-    Comentários dos usuários: DESCREVA AQUI O COMENTÁRIO DO USUÁRIO
-
-Cenário 8 - ONGs:
-Após o término daquela demanda é preciso finalizá-la e pedir o feedback do voluntário. 
-
-| Usuário | Taxa de sucesso | Satisfação subjetiva | Tempo para conclusão do cenário |
-|---------|-----------------|----------------------|---------------------------------|
-| 1       | SIM/NÃO             | NOTA 4 - 5                    | 0 segundos                  |
-| 2       | SIM/NÃO             | NOTA 4 - 5                    | 0 segundos                  |
-|  |  |  |  |
-| **Média**     | 0%           | 0                | 0 segundos                           |
-| **Tempo para conclusão pelo especialista** | SIM/NÃO | NOTA 4 - 5 | 0 segundos |
-
-
-    Comentários dos usuários: DESCREVA AQUI O COMENTÁRIO DO USUÁRIO
-
-Cenário 1 - Voluntários:
-Você quer se voluntariar em uma ONG e acessa a aplicação, entra no Home Page e visualiza as opções de oportunidades.
-
-| Usuário | Taxa de sucesso | Satisfação subjetiva | Tempo para conclusão do cenário |
-|---------|-----------------|----------------------|---------------------------------|
-| 1       | SIM/NÃO             | NOTA 4 - 5                    | 0 segundos                  |
-| 2       | SIM/NÃO             | NOTA 4 - 5                    | 0 segundos                  |
-|  |  |  |  |
-| **Média**     | 0%           | 0                | 0 segundos                           |
-| **Tempo para conclusão pelo especialista** | SIM/NÃO | NOTA 4 - 5 | 0 segundos |
-
-
-    Comentários dos usuários: DESCREVA AQUI O COMENTÁRIO DO USUÁRIO
-
-Cenário 2 - Voluntários:
-Na Home Page tem algumas opções de oportunidades, você deseja visualizar e explorar todas as opções. 
-
-| Usuário | Taxa de sucesso | Satisfação subjetiva | Tempo para conclusão do cenário |
-|---------|-----------------|----------------------|---------------------------------|
-| 1       | SIM/NÃO             | NOTA 4 - 5                    | 0 segundos                  |
-| 2       | SIM/NÃO             | NOTA 4 - 5                    | 0 segundos                  |
-|  |  |  |  |
-| **Média**     | 0%           | 0                | 0 segundos                           |
-| **Tempo para conclusão pelo especialista** | SIM/NÃO | NOTA 4 - 5 | 0 segundos |
-
-
-    Comentários dos usuários: DESCREVA AQUI O COMENTÁRIO DO USUÁRIO
-
-Cenário 3 - Voluntários:
-Você deseja filtrar a demanda por tipo e localização. 
-
-| Usuário | Taxa de sucesso | Satisfação subjetiva | Tempo para conclusão do cenário |
-|---------|-----------------|----------------------|---------------------------------|
-| 1       | SIM/NÃO             | NOTA 4 - 5                    | 0 segundos                  |
-| 2       | SIM/NÃO             | NOTA 4 - 5                    | 0 segundos                  |
-|  |  |  |  |
-| **Média**     | 0%           | 0                | 0 segundos                           |
-| **Tempo para conclusão pelo especialista** | SIM/NÃO | NOTA 4 - 5 | 0 segundos |
-
-
-    Comentários dos usuários: DESCREVA AQUI O COMENTÁRIO DO USUÁRIO
-
-Cenário 4 - Voluntários:
-Encontra uma oportunidade que deseja se candidatar clica em “Quero Ajudar”.
-
-| Usuário | Taxa de sucesso | Satisfação subjetiva | Tempo para conclusão do cenário |
-|---------|-----------------|----------------------|---------------------------------|
-| 1       | SIM/NÃO             | NOTA 4 - 5                    | 0 segundos                  |
-| 2       | SIM/NÃO             | NOTA 4 - 5                    | 0 segundos                  |
-|  |  |  |  |
-| **Média**     | 0%           | 0                | 0 segundos                           |
-| **Tempo para conclusão pelo especialista** | SIM/NÃO | NOTA 4 - 5 | 0 segundos |
-
-
-    Comentários dos usuários: DESCREVA AQUI O COMENTÁRIO DO USUÁRIO
-
-Cenário 5 - Voluntários:
-Acessa a página “Quero Ajudar” e preencha o formulário com as informações pessoais.  
-
-| Usuário | Taxa de sucesso | Satisfação subjetiva | Tempo para conclusão do cenário |
-|---------|-----------------|----------------------|---------------------------------|
-| 1       | SIM/NÃO             | NOTA 4 - 5                    | 0 segundos                  |
-| 2       | SIM/NÃO             | NOTA 4 - 5                    | 0 segundos                  |
-|  |  |  |  |
-| **Média**     | 0%           | 0                | 0 segundos                           |
-| **Tempo para conclusão pelo especialista** | SIM/NÃO | NOTA 4 - 5 | 0 segundos |
-
-
-    Comentários dos usuários: DESCREVA AQUI O COMENTÁRIO DO USUÁRIO
-
-Cenário 6 - Voluntários:
-Aguarda receber o e-mail da ONG com a confirmação da candidatura.
-
-| Usuário | Taxa de sucesso | Satisfação subjetiva | Tempo para conclusão do cenário |
-|---------|-----------------|----------------------|---------------------------------|
-| 1       | SIM/NÃO             | NOTA 4 - 5                    | 0 segundos                  |
-| 2       | SIM/NÃO             | NOTA 4 - 5                    | 0 segundos                  |
-|  |  |  |  |
-| **Média**     | 0%           | 0                | 0 segundos                           |
-| **Tempo para conclusão pelo especialista** | SIM/NÃO | NOTA 4 - 5 | 0 segundos |
-
-
-    Comentários dos usuários: DESCREVA AQUI O COMENTÁRIO DO USUÁRIO
-
-Cenário 7 - Voluntários:
-Quando finalizado o voluntariado você pode enviar uma mensagem com o seu feedback.
-
-| Usuário | Taxa de sucesso | Satisfação subjetiva | Tempo para conclusão do cenário |
-|---------|-----------------|----------------------|---------------------------------|
-| 1       | SIM/NÃO             | NOTA 4 - 5                    | 0 segundos                  |
-| 2       | SIM/NÃO             | NOTA 4 - 5                    | 0 segundos                  |
-|  |  |  |  |
-| **Média**     | 0%           | 0                | 0 segundos                           |
-| **Tempo para conclusão pelo especialista** | SIM/NÃO | NOTA 4 - 5 | 0 segundos |
-
-
-    Comentários dos usuários: DESCREVA AQUI O COMENTÁRIO DO USUÁRIO
-
-
-
-
-
-
 
 ## Avaliação dos Testes de Usabilidade
 
