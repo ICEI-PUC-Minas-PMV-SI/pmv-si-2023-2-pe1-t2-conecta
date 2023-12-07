@@ -54,7 +54,7 @@ async function handleEdit(event) {
     const token = window.localStorage.getItem("token")
     const session = await getSession(token).then(session => session[0]);
     const task = new Task();
-    task.organizationId = session.id;
+    task.organizationId = session.ongId;
     task.name = demanda.nome;
     task.description = demanda.descricao;
     task.type = demanda.tipo;
