@@ -324,6 +324,9 @@ const handleButtons = (taskStatus) => {
 window.addEventListener("load", async () => {
     const token = window.localStorage.getItem("token")
     const session = await getSession(token);
+    
+    const taskName = document.getElementById('nomeDemanda');
+    taskName.innerText = await getTaskData().then(task => task.name);
 
     if(session.length <= 0) {
         alert("É necessário realizar o login para acessar essa página!");
@@ -341,6 +344,8 @@ window.addEventListener("load", async () => {
 
     handleButtons(taskData.status);
 });
+
+
 
 $(".close").click(function () {
     $('#myModal').css('display', 'none');
