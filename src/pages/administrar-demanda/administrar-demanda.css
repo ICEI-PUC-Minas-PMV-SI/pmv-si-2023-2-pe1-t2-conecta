@@ -310,6 +310,14 @@
     margin: 5px 24px 8px;
 }
 
+.cpf {
+    margin: 5px 24px 8px;
+}
+
+.timestamp {
+    margin: 5px 24px 8px;
+}
+
 .text {
     margin: 24px;
     text-align: justify;
