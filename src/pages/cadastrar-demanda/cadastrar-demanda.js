@@ -58,6 +58,7 @@ async function handleEdit(event) {
     task.name = demanda.nome;
     task.description = demanda.descricao;
     task.type = demanda.tipo;
+    task.status = 'aberta'
 
     await task.updateById(taskId).then(() => {
         alert("Demanda atualizada com sucesso.");
