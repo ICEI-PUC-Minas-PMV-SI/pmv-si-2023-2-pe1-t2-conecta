@@ -49,8 +49,6 @@ const getTasks = async (filterTipo = 'all', filterStatus = 'all') => {
             if (task.status.toLowerCase() === 'aberta') {
                 statusTask = 'green-dot.png';
             }
-            console.log(task);
-
 
             let endereco = organizationData.city+', '+ organizationData.state;
             if (task.type.toLowerCase() === "remoto") {
