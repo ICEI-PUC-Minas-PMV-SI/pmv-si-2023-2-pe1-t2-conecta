@@ -133,6 +133,7 @@ const cssStyle = `
         overflow: hidden;
         text-overflow: ellipsis;
         cursor: pointer;
+        word-break: break-word;
     }
     
     .task-info {

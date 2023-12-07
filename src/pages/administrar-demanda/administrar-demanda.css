@@ -81,6 +81,8 @@
     overflow: hidden;
     text-overflow: ellipsis;
     max-height: 200px;
+    cursor: pointer;
+    word-break: break-word;
 }
 
 .horizontal-task-card {
@@ -404,6 +406,7 @@
         text-overflow: ellipsis;
         margin-top: 20px;
         cursor: pointer;
+        word-break: break-word;
     }
 
     .horizontal-task-card > .right-side {
