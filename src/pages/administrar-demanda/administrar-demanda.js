@@ -130,6 +130,7 @@ const populateCandidates = async (taskStatus) => {
             document.querySelector('.modal .task-name').innerText = candidate.name;
             document.querySelector('.modal .text').innerText = candidate.profile;
             document.querySelector('.modal .NGO').innerText = candidate.email; // or any other field you want to display
+            document.querySelector('.modal .phone').innerText = candidate.phone;
 
             $('#myModal').css('display', 'block');
         }
@@ -252,6 +253,7 @@ const populateCandidates = async (taskStatus) => {
             document.querySelector('.modal .task-name').innerText = candidate.name;
             document.querySelector('.modal .text').innerText = candidate.profile;
             document.querySelector('.modal .NGO').innerText = candidate.email; // or any other field you want to display
+            document.querySelector('.modal .phone').innerText = candidate.phone;
 
             $('#myModal').css('display', 'block');
         }
