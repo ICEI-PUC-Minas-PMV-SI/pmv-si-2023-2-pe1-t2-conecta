@@ -58,6 +58,7 @@ async function handleEdit(event) {
     task.name = demanda.nome;
     task.description = demanda.descricao;
     task.type = demanda.tipo;
+    task.status = 'aberta'
 
     await task.updateById(taskId).then(() => {
         alert("Demanda atualizada com sucesso.");
@@ -87,10 +88,15 @@ async function handleSave(event) {
         return;
     }
 
+    if (demanda.descricao.length <= 100) {
+        alert("Informe uma descrição com no mínimo 100 caracteres.");
+        return;
+    }
+
     const token = window.localStorage.getItem("token")
     const session = await getSession(token).then(session => session[0]);
     const task = new Task();
-    task.organizationId = session.id;
+    task.organizationId = session.ongId;
     task.name = demanda.nome;
     task.description = demanda.descricao;
     task.type = demanda.tipo;

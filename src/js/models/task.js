@@ -13,7 +13,7 @@ export class Task {
             organizationId: this.organizationId,
             name: this.name,
             description: this.description,
-            createdAt: Date.now(),
+            createdAt: new Date(),
             status: 'aberta',
             type: this.type,
             searchData: this.name + ' ' + this.description,
@@ -94,4 +94,8 @@ export class Task {
 
 export async function findById(id) {
     return await makeRequest(getURL(`tasks/${id}`), 'GET');
+}
+
+export async function findRecentTasks(limit) {
+    return await makeRequest(getURL(`tasks?status=aberta&_sort=createdAt&_order=desc&_limit=${limit}`), 'GET');
 }

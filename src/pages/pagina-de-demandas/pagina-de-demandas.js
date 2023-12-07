@@ -54,7 +54,9 @@ const getTasks = async (filterBy = 'all') => {
 
         verticalTaskCard.name = task.name;
         verticalTaskCard.description = task.description;
-        if(task.type == 'presencial' || task.type == 'Presencial') {
+        verticalTaskCard.organizationId = task.organizationId;
+
+        if(task.type.toLowerCase() === 'presencial') {
                 verticalTaskCard.type = organizationData.city+', '+organizationData.state;
         } else {
                 verticalTaskCard.type = task.type ;
@@ -82,7 +84,8 @@ const getTasks = async (filterBy = 'all') => {
 
         horizontalTaskCard.name = task.name;
         horizontalTaskCard.description = task.description;
-        if(task.type == 'presencial' || task.type == 'Presencial') {
+        horizontalTaskCard.organizationId = task.organizationId;
+        if(task.type.toLowerCase() === 'presencial') {
                 horizontalTaskCard.type = organizationData.city+', '+organizationData.state;
         } else {
             horizontalTaskCard.type = task.type;
@@ -110,8 +113,9 @@ const getTasksByState = async (location = null) => {
         const organizationData = await getOrganizationData(task.organizationId);
         if (location && (organizationData.state == location || organizationData.city == location || location == 'todos')) {
             verticalTaskCard.name = task.name;
+            verticalTaskCard.organizationId = task.organizationId;
             verticalTaskCard.description = task.description;
-            if(task.type == 'presencial' || task.type == 'Presencial') {
+            if(task.type.toLowerCase() === 'presencial') {
                     verticalTaskCard.type = organizationData.city+', '+organizationData.state;
             } else {
                 verticalTaskCard.type = task.type ;
@@ -134,8 +138,9 @@ const getTasksByState = async (location = null) => {
 
         if (location && (organizationData.state == location || organizationData.city == location || location == 'todos')) {
             horizontalTaskCard.name = task.name;
+            horizontalTaskCard.organizationId = task.organizationId;
             horizontalTaskCard.description = task.description;
-            if(task.type == 'presencial' || task.type == 'Presencial') {
+            if(task.type.toLowerCase() === 'presencial') {
                     horizontalTaskCard.type = organizationData.city+', '+organizationData.state;
             } else {
                 horizontalTaskCard.type = task.type;

@@ -1,5 +1,5 @@
-import {getURL, makeRequest} from "../http.js";
-import {hashPassword} from "../utils.js";
+import { getURL, makeRequest } from "../http.js";
+import { hashPassword } from "../utils.js";
 
 export class Address {
     cep;
@@ -51,10 +51,10 @@ export class Organization {
         }
 
         const searchCNPJ = await makeRequest(getURL(`organizations?cnpj=${this.cnpj}`), 'GET');
-        if (searchCNPJ.length > 0) throw new Error("CNPJ já cadastrado")
+        if(searchCNPJ.length > 0) throw new Error("CNPJ já cadastrado")
 
         const searchEmail = await makeRequest(getURL(`organizations?email=${this.email}`), 'GET');
-        if (searchEmail.length > 0) throw new Error("Email já cadastrado")
+        if(searchEmail.length > 0) throw new Error("Email já cadastrado")
 
         return await makeRequest(getURL('organizations'), 'POST', data);
     }
@@ -75,7 +75,7 @@ export class Organization {
             image: this.image,
             cnpj: this.cnpj,
             phone: this.phoneNumber,
-            password: this.password,
+            password: await hashPassword(this.password),
             cep: this.address.cep,
             street: this.address.street,
             number: this.address.buildingNumber,
@@ -92,7 +92,7 @@ export class Organization {
     async deleteById(id) {
         return await makeRequest(getURL(`organizations/${id}`), 'DELETE');
     }
-    
+
     async changePasswordById(id, newPassword) {
         const newHashedPassword = await hashPassword(newPassword);
         const data = {

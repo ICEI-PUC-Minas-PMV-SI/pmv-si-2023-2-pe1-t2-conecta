@@ -22,6 +22,12 @@ document.querySelector('.filterButton.status').addEventListener('change', (event
 
 const task = new Task();
 
+window.deleteTasks = async function(id) {
+    const task = new Task();
+    await task.deleteById(id);
+    window.location.reload();
+}
+
 const getOrganizationData = async (organizationId) => {
     const ong = new Organization();
     return await ong.findById(organizationId);
@@ -46,14 +52,12 @@ const getTasks = async (filterTipo = 'all', filterStatus = 'all') => {
             let taskStatus = task.status;
             const organizationData = await getOrganizationData(session[0].ongId);
             let statusTask = 'red-dot.png';
-            if (task.status == 'aberta' || task.status == 'Aberta') {
+            if (task.status.toLowerCase() === 'aberta') {
                 statusTask = 'green-dot.png';
             }
-            console.log(task);
-
 
             let endereco = organizationData.city+', '+ organizationData.state;
-            if (task.type == "remoto" || task.type == "Remoto") { 
+            if (task.type.toLowerCase() === "remoto") {
                 endereco = "Remoto"
             }
             let html = 
@@ -156,4 +160,5 @@ const deleteTask = async (id) => {
 getTasks().then().catch((error) => {
     console.log(error);
 });
+
 

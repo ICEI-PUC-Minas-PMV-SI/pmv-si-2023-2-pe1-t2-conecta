@@ -4,6 +4,7 @@ import { Organization } from "../../js/models/organization.js";
 import { Candidate } from "../../js/models/candidate.js";
 import { sendEmail } from "../../js/envio-email.js";
 import { PROJECT_URL } from "../../js/constants.js";
+import { Review } from "../../js/models/review.js";
 
 
 const getTaskId = async () => {
@@ -110,13 +111,19 @@ const populateCandidates = async (taskStatus) => {
             }
         };
         messageWrapper.onclick = async function () {
-            alert('Depoimento solicitado.');
+            const review = new Review();
+            review.token = crypto.randomUUID();
+            review.candidateId = candidate.id;
+            review.taskId = taskData.id;
+            await review.create();
+
             this.style.display = 'none';
             await sendEmail(
                 candidate.email,
                 `${taskData.name}: compartilhe sua experiência!`,
-                `Olá ${candidate.name}, a ONG ${organizationData.name} gostaria de saber como foi sua experiência de voluntariado. <br> <br> Compartilhe sua experiência através desse link: ${PROJECT_URL}/pages/cadastrar-depoimento/cadastrar-depoimento.html?id=${taskData.id}&candidateId=${candidate.id}`
+                `Olá ${candidate.name}, a ONG ${organizationData.name} gostaria de saber como foi sua experiência de voluntariado. <br> <br> Compartilhe sua experiência através desse link: ${PROJECT_URL}/pages/cadastrar-depoimento/cadastrar-depoimento.html?token=${review.token}`
             );
+            alert('Depoimento solicitado.');
         };
 
         card.onclick = function () {
@@ -225,13 +232,20 @@ const populateCandidates = async (taskStatus) => {
             }
         };
         messageWrapper.onclick = async function () {
-            alert('Depoimento solicitado.');
+            const review = new Review();
+            review.token = crypto.randomUUID();
+            review.candidateId = candidate.id;
+            review.taskId = taskData.id;
+            await review.create();
+
             this.style.display = 'none';
             await sendEmail(
                 candidate.email,
                 `${taskData.name}: compartilhe sua experiência!`,
-                `Olá ${candidate.name}, a ONG ${organizationData.name} gostaria de saber como foi sua experiência de voluntariado. <br> <br> Compartilhe sua experiência através desse link: ${PROJECT_URL}/pages/cadastrar-depoimento/cadastrar-depoimento.html?id=${taskData.id}&candidateId=${candidate.id}`
+                `Olá ${candidate.name}, a ONG ${organizationData.name} gostaria de saber como foi sua experiência de voluntariado. <br> <br> Compartilhe sua experiência através desse link: ${PROJECT_URL}/pages/cadastrar-depoimento/cadastrar-depoimento.html?id=${review.token}`
             );
+
+            alert('Depoimento solicitado.');
         };
 
         card.onclick = function () {
@@ -276,8 +290,13 @@ const handleButtons = (taskStatus) => {
 
     const task = new Task();
 
-    if(taskStatus === 'Aberta') {
+    if(taskStatus.toLowerCase() === 'aberta') {
+        const urlParams = new URLSearchParams(window.location.search);
+        const taskId = urlParams.get('id');
         editButton.style.display = 'flex';
+        editButton.onclick = function () {
+            window.location.href = `../cadastrar-demanda/cadastrar-demanda.html?taskId=${taskId}`;
+        }
 
         finishOrReopenButton.style.display = 'flex';
         finishOrReopenButton.onclick = async function () {
@@ -294,16 +313,20 @@ const handleButtons = (taskStatus) => {
         finishOrReopenButton.onclick = async function () {
             if(confirm('Deseja reabrir a demanda?')) {
                 alert('Demanda reaberta.');
-                await task.updateStatusById(await getTaskId(), 'Aberta');
-                await populateCandidates('Aberta');
-                handleButtons('Aberta');
+                await task.updateStatusById(await getTaskId(), 'aberta');
+                await populateCandidates('aberta');
+                handleButtons('aberta');
             }
         }
     }
 }
+
 window.addEventListener("load", async () => {
     const token = window.localStorage.getItem("token")
     const session = await getSession(token);
+    
+    const taskName = document.getElementById('nomeDemanda');
+    taskName.innerText = await getTaskData().then(task => task.name);
 
     if(session.length <= 0) {
         alert("É necessário realizar o login para acessar essa página!");
@@ -321,6 +344,8 @@ window.addEventListener("load", async () => {
 
     handleButtons(taskData.status);
 });
+
+
 
 $(".close").click(function () {
     $('#myModal').css('display', 'none');
