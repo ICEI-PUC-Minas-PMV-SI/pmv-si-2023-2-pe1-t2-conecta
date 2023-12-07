@@ -242,7 +242,7 @@ const populateCandidates = async (taskStatus) => {
             await sendEmail(
                 candidate.email,
                 `${taskData.name}: compartilhe sua experiência!`,
-                `Olá ${candidate.name}, a ONG ${organizationData.name} gostaria de saber como foi sua experiência de voluntariado. <br> <br> Compartilhe sua experiência através desse link: ${PROJECT_URL}/pages/cadastrar-depoimento/cadastrar-depoimento.html?id=${review.token}`
+                `Olá ${candidate.name}, a ONG ${organizationData.name} gostaria de saber como foi sua experiência de voluntariado. <br> <br> Compartilhe sua experiência através desse link: ${PROJECT_URL}/pages/cadastrar-depoimento/cadastrar-depoimento.html?token=${review.token}`
             );
 
             alert('Depoimento solicitado.');
