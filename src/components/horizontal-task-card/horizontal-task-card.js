@@ -353,15 +353,15 @@ export class HorizontalTaskCard extends HTMLElement {
             helpButton.href = this.destination;
         }
 
-        if (this.addres) {
-            const addres = this.root.querySelector('.addres');
-            addres.innerText = this.addres;
+        if (this.address) {
+            const address = this.root.querySelector('.address');
+            address.innerText = this.address;
         }
 
     }
 
     static get observedAttributes() {
-        return ['name', 'owner', 'description', 'type', 'image', 'destination', 'addres'];
+        return ['name', 'owner', 'description', 'type', 'image', 'destination', 'address'];
     }
 
     get name() {
@@ -412,12 +412,12 @@ export class HorizontalTaskCard extends HTMLElement {
         this.setAttribute('destination', value);
     }
 
-    get addres() {
-        return this.getAttribute('addres');
+    get address() {
+        return this.getAttribute('address');
     }
 
-    set addres(value) {
-        this.setAttribute('addres', value);
+    set address(value) {
+        this.setAttribute('address', value);
     }
 }
 
