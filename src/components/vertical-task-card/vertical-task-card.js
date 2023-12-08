@@ -22,7 +22,7 @@ const makeTemplate = () => {
             <div class="card-section-wrapper">
                 <div class="card-header">
                     <div class="task-info">
-                        <p class="task-name" onclick="fotoClick(event)"></p>
+                        <p class="task-name" </p>
                         <p class="task-owner" onclick="fotoClick(event)"></p>
                         <div class="location-button-wrapper" onclick="fotoClick(event)">
                             <img class="image-location" src="${rootPath}/assets/icons/location.png" alt="Location">
@@ -120,6 +120,7 @@ const cssStyle = `
         -webkit-line-clamp: 1;
         overflow: hidden;
         text-overflow: ellipsis;
+        cursor: pointer;
     }
     
     .vertical-task-card > .card-section-wrapper > .help-button-wrapper {
