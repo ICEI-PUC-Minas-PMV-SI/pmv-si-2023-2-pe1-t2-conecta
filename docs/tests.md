@@ -449,7 +449,7 @@ Cenário 2 - Você administra uma ONG e quer cadastrar sua organização em um s
 | Usuário | Taxa de sucesso | Satisfação subjetiva | Tempo para conclusão do cenário |
 |---------|----------------|----------------------|---------------------------------|
 | 1  **JOÃO**     | SIM            | NOTA 4               | 150 segundos                    |
-| 2  **OMAR**     | SIM/NÃO           | NOTA 1 - 5           | 0 segundos                      |
+| 2  **OMAR**     | SIM           | NOTA  5           | 212 segundos                      |
 |  |  |                      |                                 |
 | **Média**     | 0%          | 0                    | 0 segundos                      |
 | **Tempo para conclusão pelo especialista** | SIM | NOTA 5               | 90 segundos                     |
@@ -458,13 +458,14 @@ Cenário 2 - Você administra uma ONG e quer cadastrar sua organização em um s
     Elementos visuais simples e objetivos, com poucas informações na tela, ajuda a não se perder.
     Não foi intuitivo onde fazer o cadastro, pois não estava claro que era um botão de cadastro.
     A parte de colocar o CEP e ter o edndereço puxado foi muito bom.
+    Achei intuitivo a aplicação, mesmo demorando um pouco consegui fazer o que queria.
 
 Cenário 3 - Você tem sua ONG cadastrada no site e quer divulgar as oportunidades de voluntariado. Você então acessa o site, clica em área da ONG, realiza o login e cadastra duas demandas.  
 
 | Usuário | Taxa de sucesso | Satisfação subjetiva | Tempo para conclusão do cenário |
 |---------|----------------|------------------|---------------------------------|
 | 1  **JOÃO**     | SIM            | NOTA 5                | 120 segundos                    |
-| 2   **OMAR**    | SIM/NÃO           | NOTA 1 - 5            | 0 segundos                      |
+| 2   **OMAR**    | SIM           | NOTA  4            | 130 segundos                      |
 |  |  |  |                                 |
 | **Média**     | 0%          | 0            | 0 segundos                      |
 | **Tempo para conclusão pelo especialista** | SIM | NOTA 5 | 80 segundos                     |
@@ -473,13 +474,14 @@ Cenário 3 - Você tem sua ONG cadastrada no site e quer divulgar as oportunidad
     Muito simples cadastrar uma demanda e isso é muito bom.
     Se eu tiver uma demanda que é presencial somente 1 ou 2 vezes por semana, como cadastrar?
     Se eu quiser colocar mais detalhes, mas não quero digitar tudo, pois tenho um arquivo com os detalhes, poderia ter uma local para anexar o arquivo na demanda.
+    Poderia ter mais opções para especificar a necessidade durante o cadastro da demanda.
 
 Cenário 4 - Você administra uma ONG e vai acessar o site para visualizar se algum candidato está interessado em uma demanda que você cadastrou. Você precisa fazer o login, acessar a página de administrar demandas e verificar se tem algum candidato interessado, se sim, poderá aceitar ou recusar sua candidatura.
 
 | Usuário | Taxa de sucesso | Satisfação subjetiva | Tempo para conclusão do cenário |
 |---------|----------------|----------------------|---------------------------------|
 | 1   **JOÃO**    | SIM            | NOTA 4               | 90 segundos                      |
-| 2   **OMAR**    | SIM/NÃO           | NOTA 1 - 5           | 0 segundos                      |
+| 2   **OMAR**    | SIM           | NOTA 5           | 78 segundos                      |
 |  |  |                      |                                 |
 | **Média**     | 0%          | 0                    | 0 segundos                      |
 | **Tempo para conclusão pelo especialista** | SIM | NOTA 5               | 30 segundos                     |
@@ -487,6 +489,8 @@ Cenário 4 - Você administra uma ONG e vai acessar o site para visualizar se al
 
     Onde vemos os candidatos, poderia estar mais fácil de encontrar.
     Aceitar ou recusar candidatos é muito fácil e isto é ótimo, mas eles também poderiam ter uma forma de enviar o currículo deles em anexo.
+    Achei que poderia ter mais detalhes sobre os voluntários.
+    
 
 ## Avaliação dos Testes de Usabilidade
 
