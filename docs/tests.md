@@ -427,16 +427,22 @@ Objetivando respeitar as diretrizes da Lei Geral de Proteção de Dados, as info
 
 Cenário 1 - Você é um estudante ou profissional da área da tecnologia e quer participar de um trabalho voluntário. No site acesse a página de oportunidades, encontre um trabalho que seja de seu interesse e se candidate.
 
-| Usuário | Taxa de sucesso | Satisfação subjetiva | Tempo para conclusão do cenário |
-|---------|-----------------|----------------------|---------------------------------|
-| 1 **ALICE**      | SIM/NÃO             | NOTA 1 - 5                    | 0 segundos                  |
-| 2  **GABRIEL**     | SIM/NÃO             | NOTA 1 - 5                    | 0 segundos                  |
-|  |  |  |  |
-| **Média**     | 0%           | 0                | 0 segundos                           |
-| **Tempo para conclusão pelo especialista** | SIM/NÃO | NOTA 1 - 5 | 0 segundos |
+| Usuário                                    | Taxa de sucesso | Satisfação subjetiva | Tempo para conclusão do cenário |
+|--------------------------------------------|-----------------|----------------------|---------------------------------|
+| 1 **ALICE**                                | SIM/NÃO         | NOTA 1 - 5           | 0 segundos                      |
+| 2 **GABRIEL**                              | SIM             | NOTA 4               | 57 segundos                     |
+|                                            |                 |                      |                                 |
+| **Média**                                  | 0%              | 0                    | 0 segundos                      |
+| **Tempo para conclusão pelo especialista** | SIM/NÃO         | NOTA 1 - 5           | 0 segundos                      |
 
+```
+Comentários dos usuários: 
 
-    Comentários dos usuários: DESCREVA AQUI O COMENTÁRIO DO USUÁRIO
+Ícone de carregamento da página de demandas fica muito tempo na tela.
+A descrição da demanda poderia aparecer na tela de candidatura.
+Bem fácil identificar botão que leva até a página de demandas.
+Não percebeu que é possível clicar nos cards para que seja aberto o modal
+```
 
 Cenário 2 - Você administra uma ONG e quer cadastrar sua organização em um site que divulga oportunidades de voluntariado. Você acessa o site entra na página como começar, clica no link cadastre sua ONG, preenche as informações de perfil e finaliza a candidatura. 
 
