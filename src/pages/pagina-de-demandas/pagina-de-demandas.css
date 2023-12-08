@@ -293,6 +293,15 @@ vertical-task-card-component {
         height: 50px;
         margin-left: -50px;
     }
+
+    .text {
+        margin: 24px;
+        font-size: 15px;
+        line-height: 1.25rem;
+        color: black;
+        text-align: left;
+        overflow-wrap: break-word;
+    }
 }
 
 @media screen and (max-width: 425px) {
@@ -319,12 +328,30 @@ vertical-task-card-component {
         border-bottom: 1px solid rgb(230, 234, 246);
         padding: 0px;
     }
+
+    .text {
+        margin: 24px;
+        font-size: 15px;
+        line-height: 1.25rem;
+        color: black;
+        text-align: left;
+        overflow-wrap: break-word;
+    }
 }
 
 @media screen and (max-width: 320px) {
 
     .modal-header {
         padding: 0px;
+    }
+
+    .text {
+        margin: 24px;
+        font-size: 15px;
+        line-height: 1.25rem;
+        color: black;
+        text-align: left;
+        overflow-wrap: break-word;
     }
 
 }
