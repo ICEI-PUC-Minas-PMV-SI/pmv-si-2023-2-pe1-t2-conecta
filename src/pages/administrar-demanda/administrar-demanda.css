@@ -514,6 +514,10 @@
         max-width: 660px;
         border-radius: 15px;
     }
+
+    .modal-header {
+        padding: 0px;
+    }
 }
 
 @media screen and (max-width: 320px) {

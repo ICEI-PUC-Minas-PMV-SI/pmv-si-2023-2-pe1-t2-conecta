@@ -449,7 +449,15 @@
         -webkit-box-align: center;
         align-items: center;
         position: relative;
-        padding: 10px 24px 24px 24px;
+        padding: 0px;
         border-bottom: 1px solid rgb(230, 234, 246);
     }
+}
+
+@media screen and (max-width: 320px) {
+
+    .modal-header {
+        padding: 0px;
+    }
+
 }

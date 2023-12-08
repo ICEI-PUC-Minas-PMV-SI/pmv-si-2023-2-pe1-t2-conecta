@@ -317,5 +317,14 @@ vertical-task-card-component {
         align-items: center;
         position: relative;
         border-bottom: 1px solid rgb(230, 234, 246);
+        padding: 0px;
     }
+}
+
+@media screen and (max-width: 320px) {
+
+    .modal-header {
+        padding: 0px;
+    }
+
 }
