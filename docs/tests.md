@@ -441,41 +441,46 @@ Cenário 1 - Você é um estudante ou profissional da área da tecnologia e quer
 Cenário 2 - Você administra uma ONG e quer cadastrar sua organização em um site que divulga oportunidades de voluntariado. Você acessa o site entra na página como começar, clica no link cadastre sua ONG, preenche as informações de perfil e finaliza a candidatura. 
 
 | Usuário | Taxa de sucesso | Satisfação subjetiva | Tempo para conclusão do cenário |
-|---------|-----------------|----------------------|---------------------------------|
-| 1  **JOÃO**     | SIM/NÃO             | NOTA 1 - 5                    | 0 segundos                  |
-| 2  **OMAR**     | SIM/NÃO             | NOTA 1 - 5                    | 0 segundos                  |
-|  |  |  |  |
-| **Média**     | 0%           | 0                | 0 segundos                           |
-| **Tempo para conclusão pelo especialista** | SIM/NÃO | NOTA 1 - 5 | 0 segundos |
+|---------|----------------|----------------------|---------------------------------|
+| 1  **JOÃO**     | SIM            | NOTA 4               | 150 segundos                    |
+| 2  **OMAR**     | SIM/NÃO           | NOTA 1 - 5           | 0 segundos                      |
+|  |  |                      |                                 |
+| **Média**     | 0%          | 0                    | 0 segundos                      |
+| **Tempo para conclusão pelo especialista** | SIM | NOTA 5               | 90 segundos                     |
 
 
-    Comentários dos usuários: DESCREVA AQUI O COMENTÁRIO DO USUÁRIO
+    Elementos visuais simples e objetivos, com poucas informações na tela, ajuda a não se perder.
+    Não foi intuitivo onde fazer o cadastro, pois não estava claro que era um botão de cadastro.
+    A parte de colocar o CEP e ter o edndereço puxado foi muito bom.
 
 Cenário 3 - Você tem sua ONG cadastrada no site e quer divulgar as oportunidades de voluntariado. Você então acessa o site, clica em área da ONG, realiza o login e cadastra duas demandas.  
 
 | Usuário | Taxa de sucesso | Satisfação subjetiva | Tempo para conclusão do cenário |
-|---------|-----------------|----------------------|---------------------------------|
-| 1  **JOÃO**     | SIM/NÃO             | NOTA 1 - 5                    | 0 segundos                  |
-| 2   **OMAR**    | SIM/NÃO             | NOTA 1 - 5                    | 0 segundos                  |
-|  |  |  |  |
-| **Média**     | 0%           | 0                | 0 segundos                           |
-| **Tempo para conclusão pelo especialista** | SIM/NÃO | NOTA 1 - 5 | 0 segundos |
+|---------|----------------|------------------|---------------------------------|
+| 1  **JOÃO**     | SIM            | NOTA 5                | 120 segundos                    |
+| 2   **OMAR**    | SIM/NÃO           | NOTA 1 - 5            | 0 segundos                      |
+|  |  |  |                                 |
+| **Média**     | 0%          | 0            | 0 segundos                      |
+| **Tempo para conclusão pelo especialista** | SIM | NOTA 5 | 80 segundos                     |
 
 
-    Comentários dos usuários: DESCREVA AQUI O COMENTÁRIO DO USUÁRIO
+    Muito simples cadastrar uma demanda e isso é muito bom.
+    Se eu tiver uma demanda que é presencial somente 1 ou 2 vezes por semana, como cadastrar?
+    Se eu quiser colocar mais detalhes, mas não quero digitar tudo, pois tenho um arquivo com os detalhes, poderia ter uma local para anexar o arquivo na demanda.
 
 Cenário 4 - Você administra uma ONG e vai acessar o site para visualizar se algum candidato está interessado em uma demanda que você cadastrou. Você precisa fazer o login, acessar a página de administrar demandas e verificar se tem algum candidato interessado, se sim, poderá aceitar ou recusar sua candidatura.
 
 | Usuário | Taxa de sucesso | Satisfação subjetiva | Tempo para conclusão do cenário |
-|---------|-----------------|----------------------|---------------------------------|
-| 1   **JOÃO**    | SIM/NÃO             | NOTA 1 - 5                    | 0 segundos                  |
-| 2   **OMAR**    | SIM/NÃO             | NOTA 1 - 5                    | 0 segundos                  |
-|  |  |  |  |
-| **Média**     | 0%           | 0                | 0 segundos                           |
-| **Tempo para conclusão pelo especialista** | SIM/NÃO | NOTA 1 - 5 | 0 segundos |
+|---------|----------------|----------------------|---------------------------------|
+| 1   **JOÃO**    | SIM            | NOTA 4               | 90 segundos                      |
+| 2   **OMAR**    | SIM/NÃO           | NOTA 1 - 5           | 0 segundos                      |
+|  |  |                      |                                 |
+| **Média**     | 0%          | 0                    | 0 segundos                      |
+| **Tempo para conclusão pelo especialista** | SIM | NOTA 5               | 30 segundos                     |
 
 
-    Comentários dos usuários: DESCREVA AQUI O COMENTÁRIO DO USUÁRIO
+    Onde vemos os candidatos, poderia estar mais fácil de encontrar.
+    Aceitar ou recusar candidatos é muito fácil e isto é ótimo, mas eles também poderiam ter uma forma de enviar o currículo deles em anexo.
 
 ## Avaliação dos Testes de Usabilidade
 
