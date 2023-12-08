@@ -46,7 +46,7 @@
 
 **Caso de Teste** | **CT06 - Gerenciamento de Perfil da ONG**
  :--------------: | ------------
-**Procedimento**  | 1) Navegar ate a página de [perfil](https://icei-puc-minas-pmv-si.github.io/pmv-si-2023-2-pe1-t2-conecta/pages/cadastrar-ong/cadastrar-ong-1.html) <br> 2) Visualizar e digitar dados, clicar no botão `próximo` para aletrar foto do perfil e redes sociais  <br> 3) Quando finalizada as alterações clique em `cadastrar` 
+**Procedimento**  | 1) Navegar ate a página de [perfil](https://icei-puc-minas-pmv-si.github.io/pmv-si-2023-2-pe1-t2-conecta/pages/cadastrar-ong/cadastrar-ong-1.html) <br> 2) Visualizar e digitar dados, clicar no botão `próximo` para aletrar foto do perfil e redes sociais  <br> 3) Quando finalizada as alterações clique em `salvar` 
 **Requisitos associados** | RF-005
 **Resultado esperado** | Cadastrar dados do perfil da ONG.
 **Dados de entrada** | Dados pessoais referentes ao perfil.
