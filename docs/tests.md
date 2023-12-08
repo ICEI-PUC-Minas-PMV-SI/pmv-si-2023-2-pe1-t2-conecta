@@ -429,11 +429,11 @@ Cenário 1 - Você é um estudante ou profissional da área da tecnologia e quer
 
 | Usuário                                    | Taxa de sucesso | Satisfação subjetiva | Tempo para conclusão do cenário |
 |--------------------------------------------|-----------------|----------------------|---------------------------------|
-| 1 **ALICE**                                | SIM/NÃO         | NOTA 1 - 5           | 0 segundos                      |
-| 2 **GABRIEL**                              | SIM             | NOTA 4               | 57 segundos                     |
+| 1                                | SIM         |  4           | 127 segundos                      |
+| 2                               | SIM             | 4               | 57 segundos                     |
 |                                            |                 |                      |                                 |
-| **Média**                                  | 0%              | 0                    | 0 segundos                      |
-| **Tempo para conclusão pelo especialista** | SIM/NÃO         | NOTA 1 - 5           | 0 segundos                      |
+| **Média**                                  | 100%              | 4                    | 92 segundos                      |
+| **Tempo para conclusão pelo especialista** | SIM         |  5           | 95 segundos                      |
 
 ```
 Comentários dos usuários: 
@@ -442,17 +442,19 @@ Comentários dos usuários:
 A descrição da demanda poderia aparecer na tela de candidatura.
 Bem fácil identificar botão que leva até a página de demandas.
 Não percebeu que é possível clicar nos cards para que seja aberto o modal
+Layout simples e intuitivo
+Fácil acesso à página com as oportunidades de voluntariado
 ```
 
 Cenário 2 - Você administra uma ONG e quer cadastrar sua organização em um site que divulga oportunidades de voluntariado. Você acessa o site entra na página como começar, clica no link cadastre sua ONG, preenche as informações de perfil e finaliza a candidatura. 
 
 | Usuário | Taxa de sucesso | Satisfação subjetiva | Tempo para conclusão do cenário |
 |---------|----------------|----------------------|---------------------------------|
-| 1  **JOÃO**     | SIM            | NOTA 4               | 150 segundos                    |
-| 2  **OMAR**     | SIM           | NOTA  5           | 212 segundos                      |
+| 1      | SIM            |  4               | 150 segundos                    |
+| 2    | SIM           |   5           | 212 segundos                      |
 |  |  |                      |                                 |
-| **Média**     | 0%          | 0                    | 0 segundos                      |
-| **Tempo para conclusão pelo especialista** | SIM | NOTA 5               | 90 segundos                     |
+| **Média**     | 100%          | 4.5                    | 181 segundos                      |
+| **Tempo para conclusão pelo especialista** | SIM |  5               | 90 segundos                     |
 
 
     Elementos visuais simples e objetivos, com poucas informações na tela, ajuda a não se perder.
@@ -464,11 +466,11 @@ Cenário 3 - Você tem sua ONG cadastrada no site e quer divulgar as oportunidad
 
 | Usuário | Taxa de sucesso | Satisfação subjetiva | Tempo para conclusão do cenário |
 |---------|----------------|------------------|---------------------------------|
-| 1  **JOÃO**     | SIM            | NOTA 5                | 120 segundos                    |
-| 2   **OMAR**    | SIM           | NOTA  4            | 130 segundos                      |
+| 1  **JOÃO**     | SIM            |  5                | 120 segundos                    |
+| 2   **OMAR**    | SIM           |   4            | 130 segundos                      |
 |  |  |  |                                 |
-| **Média**     | 0%          | 0            | 0 segundos                      |
-| **Tempo para conclusão pelo especialista** | SIM | NOTA 5 | 80 segundos                     |
+| **Média**     | 1000%          | 4.5            | 125 segundos                      |
+| **Tempo para conclusão pelo especialista** | SIM |  5 | 80 segundos                     |
 
 
     Muito simples cadastrar uma demanda e isso é muito bom.
@@ -480,11 +482,11 @@ Cenário 4 - Você administra uma ONG e vai acessar o site para visualizar se al
 
 | Usuário | Taxa de sucesso | Satisfação subjetiva | Tempo para conclusão do cenário |
 |---------|----------------|----------------------|---------------------------------|
-| 1   **JOÃO**    | SIM            | NOTA 4               | 90 segundos                      |
-| 2   **OMAR**    | SIM           | NOTA 5           | 78 segundos                      |
+| 1       | SIM            |  4               | 90 segundos                      |
+| 2      | SIM           |  5           | 78 segundos                      |
 |  |  |                      |                                 |
-| **Média**     | 0%          | 0                    | 0 segundos                      |
-| **Tempo para conclusão pelo especialista** | SIM | NOTA 5               | 30 segundos                     |
+| **Média**     | 100%          | 4.5                    | 84 segundos                      |
+| **Tempo para conclusão pelo especialista** | SIM |  5               | 30 segundos                     |
 
 
     Onde vemos os candidatos, poderia estar mais fácil de encontrar.
