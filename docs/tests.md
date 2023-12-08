@@ -73,7 +73,7 @@
 **Procedimento**  | 1) Faça [login](https://icei-puc-minas-pmv-si.github.io/pmv-si-2023-2-pe1-t2-conecta/pages/login/login.html) <br> 2) Acesse a página [Administrar Demandas](https://icei-puc-minas-pmv-si.github.io/pmv-si-2023-2-pe1-t2-conecta/pages/administrar-demandas/administrar-demandas.html)<br> 3) Clique no ícone de Gerenciar Demanda, edite a demanda e clica no botão `Editar` <br> 4) Confirme um alerta com a mensagem `Demanda editada com sucesso!` na sua tela
 **Requisitos associados** | RF-008
 **Resultado esperado** | Demanda com dados alterados salva.
-**Dados de entrada** | Informações editadas na demanda.
+**Dados de entrada** | E-mail, senha. Informações editadas na demanda.
 **Resultado obtido** | Sucesso.
 
 |     **Caso de Teste**     | **CT10 - Visualização de Solicitações por Voluntários**                                                                                                                                                                                                                                                                                                                |
@@ -97,7 +97,7 @@
 **Procedimento**  | 1) Faça [login](https://icei-puc-minas-pmv-si.github.io/pmv-si-2023-2-pe1-t2-conecta/pages/login/login.html) <br> 2) Acesse a página [Administrar Demandas](https://icei-puc-minas-pmv-si.github.io/pmv-si-2023-2-pe1-t2-conecta/pages/administrar-demandas/administrar-demandas.html)<br> 3) Clique no ícone de Gerenciar Demanda e clica no botão `Finalizar Demanda` <br> 4) Confirme um alerta com a mensagem `Demanda finalizada com sucesso!` na sua tela
 **Requisitos associados** | RF-011
 **Resultado esperado** | Demanda com status de finalizada
-**Dados de entrada** | Nenhum.
+**Dados de entrada** | E-mail, senha.
 **Resultado obtido** | Sucesso.
 
 **Caso de Teste** | **CT13 - Página "Como Começar"**
@@ -158,35 +158,35 @@
 
 **Caso de Teste** | **CT20 - E-mail de Notificação para Voluntários**
  :--------------: | ------------
-**Procedimento**  | 1) # <br> 2) # <br> 3) #
+**Procedimento**  | 1) Faça [login](https://icei-puc-minas-pmv-si.github.io/pmv-si-2023-2-pe1-t2-conecta/pages/login/login.html) <br> 2) Acesse a página [Administrar Demandas](https://icei-puc-minas-pmv-si.github.io/pmv-si-2023-2-pe1-t2-conecta/pages/administrar-demandas/administrar-demandas.html)<br> 3) Clique no ícone de Gerenciar Demanda e visualize os canditados que estão interessados no voluntariado <br> 4) Clique no ícone verde para aceitar a candidatura do voluntário e ele receberá um e-mail com a confirmação
 **Requisitos associados** | RF-019
-**Resultado esperado** | #
-**Dados de entrada** | #
-**Resultado obtido** | #
+**Resultado esperado** | E-mail com a confirmação da ONG.
+**Dados de entrada** | E-mail, senha.
+**Resultado obtido** | Sucesso.
 
 **Caso de Teste** | **CT21 - Lista de Voluntários Aceitos na Demanda**
  :--------------: | ------------
 **Procedimento**  | Faça [login](https://icei-puc-minas-pmv-si.github.io/pmv-si-2023-2-pe1-t2-conecta/pages/login/login.html) <br> 2) Acesse a página [Administrar Demandas](https://icei-puc-minas-pmv-si.github.io/pmv-si-2023-2-pe1-t2-conecta/pages/administrar-demandas/administrar-demandas.html)<br> 3) Clique no ícone de Gerenciar Demanda e visualize os canditados que estão interessados no voluntariado
 **Requisitos associados** | RF-020
 **Resultado esperado** | Lista de voluntários interessados.
-**Dados de entrada** | Nenhum.
+**Dados de entrada** | E-mail, senha.
 **Resultado obtido** | Sucesso. 
 
 **Caso de Teste** | **CT22 - Envio de Link para Comentários por E-mail**
  :--------------: | ------------
-**Procedimento**  | 1) # <br> 2) # <br> 3) #
+**Procedimento**  | Faça [login](https://icei-puc-minas-pmv-si.github.io/pmv-si-2023-2-pe1-t2-conecta/pages/login/login.html) <br> 2) Acesse a página [Administrar Demandas](https://icei-puc-minas-pmv-si.github.io/pmv-si-2023-2-pe1-t2-conecta/pages/administrar-demandas/administrar-demandas.html)<br> 3) Clique no ícone de Gerenciar Demanda e visualize os canditados que estão interessados no voluntariado <br> 4) Clique no botão `Finalizar Demanda` <br> 5) Visualize os canditados que deseja pedir o feedback e clique no ícone de chat
 **Requisitos associados** | RF-021
-**Resultado esperado** | #
-**Dados de entrada** | #
-**Resultado obtido** | #
+**Resultado esperado** | Candaidato receber por e-mail o link para deixar o feedback na página da ONG.
+**Dados de entrada** | E-mail, senha.
+**Resultado obtido** | Sucesso.
 
 **Caso de Teste** | **CT23 - Página para Depoimentos de Voluntários**
  :--------------: | ------------
-**Procedimento**  | 1) # <br> 2) # <br> 3) #
+**Procedimento**  | 1) Faça [login](https://icei-puc-minas-pmv-si.github.io/pmv-si-2023-2-pe1-t2-conecta/pages/login/login.html) <br> 2) Acesse a página [Administrar Demandas](https://icei-puc-minas-pmv-si.github.io/pmv-si-2023-2-pe1-t2-conecta/pages/administrar-demandas/administrar-demandas.html)<br> 3) Clique no ícone de Gerenciar Demanda e visualize os canditados que estão interessados no voluntariado <br> 4) Clique no botão `Finalizar Demanda` <br> 5) Visualize os canditados que deseja pedir o feedback e clique no ícone de chat <br> 6) No e-mail irá receber um link que redirecionará para a página em que deverá escrever o feedback
 **Requisitos associados** | RF-022
-**Resultado esperado** | #
-**Dados de entrada** | #
-**Resultado obtido** | #
+**Resultado esperado** | Receber o link no e-mail que redirecionará para página de depoimento.
+**Dados de entrada** | E-mail, senha. Texto com o feedback sobre a ONG.
+**Resultado obtido** | Sucesso.
 
 |     **Caso de Teste**     | **CT24 - Disponibilização de Depoimentos no Perfil da ONG**                                                                                                                                                                                                                                                                                |
 |:-------------------------:|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -222,19 +222,12 @@
 
 **Caso de Teste** | **CT28 - Feedback visual**
  :--------------: | ------------
-**Procedimento**  | 1) # <br> 2) # <br> 3) #
+**Procedimento**  | 1) Em diversas páginas da [aplicação](https://icei-puc-minas-pmv-si.github.io/pmv-si-2023-2-pe1-t2-conecta/index.html) existe uma mensagem de alerta ao usuário 
 **Requisitos associados** | RNF-004
-**Resultado esperado** | #
-**Dados de entrada** | #
-**Resultado obtido** | #
+**Resultado esperado** | Mensagem de alerta com confirmações e mensagens de erro
+**Dados de entrada** | Nenhum.
+**Resultado obtido** | Sucesso.
 
-**Caso de Teste** | **CT29 - Tempo de carregamento**
- :--------------: | ------------
-**Procedimento**  | 1) # <br> 2) # <br> 3) #
-**Requisitos associados** | RNF-005
-**Resultado esperado** | #
-**Dados de entrada** | #
-**Resultado obtido** | #
 
 **Caso de Teste** | **CT30 - Compatibilidade com Navegadores**
  :--------------: | ------------
@@ -345,7 +338,7 @@
 | *Caso de Teste*                   | *CT20 - E-mail de Notificação para Voluntários*                                                                                                                                             |
 |-----------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Requisito Associado               | RF-019 - Os voluntários devem receber um e-mail quando uma ONG expressa interesse em seu perfil. |
-| Link do vídeo do teste realizado: | COLOQUE SEU VIDEO AQUI                                   |
+| Link do vídeo do teste realizado: | https://sgapucminasbr-my.sharepoint.com/:v:/g/personal/954530_sga_pucminas_br/EWdgaIjr4TRAn6xupKj_Yx0ByxActuTGJs-rSK7jx-Akww?e=Yt4YhK&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D                                   |
 
 | *Caso de Teste*                   | *CT21 - Lista de Voluntários Aceitos na Demanda*                                                                                                                                             |
 |-----------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -355,12 +348,12 @@
 | *Caso de Teste*                   | *CT22 - Envio de Link para Comentários por E-mail*                                                                                                                                             |
 |-----------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Requisito Associado               | RF-021 Na página da demanda cadastrada pela ONG, deve ter um botão com a finalidade de enviar um link via e-mail aos voluntários solicitando a eles que deixem um comentário sobre sua experiência. |
-| Link do vídeo do teste realizado: | COLOQUE SEU VIDEO AQUI                                   |
+| Link do vídeo do teste realizado: | https://sgapucminasbr-my.sharepoint.com/:v:/g/personal/954530_sga_pucminas_br/Ecl0FwI1BBtAvyGqb1v8nwUBpCf8qrZZls3c5seJNtPQow?e=ACr5lA&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D                                   |
 
 | *Caso de Teste*                   | *CT23 - Página para Depoimentos de Voluntários*                                                                                                                                             |
 |-----------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Requisito Associado               | RF-022 - A aplicação deve apresentar uma página para depoimento da solicitação que o voluntário participou, que só poderá ser acessada através do link recebido via e-mail, com um formulário para preenchimento. |
-| Link do vídeo do teste realizado: | COLOQUE SEU VIDEO AQUI                                   |
+| Link do vídeo do teste realizado: | https://sgapucminasbr-my.sharepoint.com/:v:/g/personal/954530_sga_pucminas_br/Ecl0FwI1BBtAvyGqb1v8nwUBpCf8qrZZls3c5seJNtPQow?e=ACr5lA&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D                                   |
 
 | *Caso de Teste*                   | *CT24 - Disponibilização de Depoimentos no Perfil da ONG*                                                |
 |-----------------------------------|----------------------------------------------------------------------------------------------------------|
@@ -385,12 +378,7 @@
 | *Caso de Teste*                   | *CT28 - Feedback visual*                                                                                                                                             |
 |-----------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Requisito Associado               | RNF-004 A aplicação deve fornecer feedback visual claro para ações do usuário, como confirmações de envio e mensagens de erro. |
-| Link do vídeo do teste realizado: | COLOQUE SEU VIDEO AQUI                                   |
-
-| *Caso de Teste*                   | *CT29 - Tempo de carregamento*                                                                                                                                             |
-|-----------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Requisito Associado               | RNF-005 A aplicação deve responder às solicitações dos usuários com um tempo limite máximo de 3 segundos para carregar páginas ou processar ações. |
-| Link do vídeo do teste realizado: | COLOQUE SEU VIDEO AQUI                                   |
+| Link do vídeo do teste realizado: | https://sgapucminasbr-my.sharepoint.com/:v:/g/personal/954530_sga_pucminas_br/EXBl1MNdXuRBnNQuHRhUUTMBT2pA08oz4A0noySo_v8U0g?e=yy4vun&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D                                   |
 
 | *Caso de Teste*                   | *CT30 - Compatibilidade com Navegadores*                                                                                                                                             |
 |-----------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------|
