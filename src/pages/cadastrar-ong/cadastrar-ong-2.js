@@ -47,9 +47,9 @@ async function handleCreateOrganizationSecondForm(event) {
     }
 
     const about = document.getElementById("sobre").value;
-    const facebook = document.getElementById("facebook").value;
-    const instagram = document.getElementById("instagram").value;
-    const twitter = document.getElementById("twitter").value;
+    const facebook = document.getElementById("facebook").value === 'https://facebook.com/' ? null : document.getElementById("facebook").value;
+    const instagram = document.getElementById("instagram").value === 'https://instagram.com/' ? null : document.getElementById("instagram").value;
+    const twitter = document.getElementById("twitter").value === 'https://x.com/' ? null : document.getElementById("twitter").value;
 
     if(about.length <= 0) {
         alert("Sobre não pode ser vazio");
