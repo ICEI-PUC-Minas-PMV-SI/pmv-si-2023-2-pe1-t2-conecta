@@ -59,25 +59,23 @@ RF-008 - As ONGs devem poder editar suas demandas (alterar, excluir e editar os 
 
 Wireframe que atende ao: 
 
-RF-010 - Os voluntários devem poder se voluntariar por meio de formulário de contato para trabalhar em projetos específicos das ONGs, indicando seu interesse e disponibilidade.
+RF-009 - Os voluntários devem poder se voluntariar por meio de formulário de contato para trabalhar em projetos específicos das ONGs, indicando seu interesse e disponibilidade.
 
-![wireframe-como-comecar](./img/wireframes/candidatar-se-a-uma-demanda.png)
+![wireframe-candidatar-a-demanda](./img/wireframes/candidatar-se-a-uma-demanda.png)
 
 ### Página de demandas:
 
 Wireframe que atende aos: 
 
-RF-009 - A aplicação deve permitir que os voluntários visualizem as solicitações de ajuda técnica feitas pelas ONGs.
+RF-011 - A aplicação deve apresentar página contendo as últimas demandas criadas pelas ONGs.
 
-RF-012 - A aplicação deve apresentar página contendo as últimas demandas criadas pelas ONGs.
-
-![wireframe-como-comecar](./img/wireframes/página-de-demandas.png)
+![wireframe-pagina-de-demandas](./img/wireframes/página-de-demandas.png)
 
 ### Como Começar:
 
 Wireframe que atende ao:
 
-RF-013 - A aplicação deve apresentar a página “Como Começar” que orienta os visitantes sobre os passos necessários para se tornarem voluntários registrados na aplicação.
+RF-012 - A aplicação deve apresentar a página “Como Começar” que orienta os visitantes sobre os passos necessários para se tornarem voluntários registrados na aplicação.
 
 ![wireframe-como-comecar](./img/wireframes/como-comecar.png)
 
@@ -85,7 +83,7 @@ RF-013 - A aplicação deve apresentar a página “Como Começar” que orienta
 
 Wireframe que atende ao:
 
-RF-014 - Deve existir uma página inicial (landing page) informativa que apresenta o propósito da plataforma e incentiva tanto as ONGs quanto os voluntários a utilizar a aplicação.
+RF-013 - Deve existir uma página inicial (landing page) informativa que apresenta o propósito da plataforma e incentiva tanto as ONGs quanto os voluntários a utilizar a aplicação.
 
 ![wireframe-como-comecar](./img/wireframes/landing-page.png)
 
@@ -93,7 +91,7 @@ RF-014 - Deve existir uma página inicial (landing page) informativa que apresen
 
 Wireframe que atende ao: 
 
-RF-015 - A aplicação deve conter a página “Perguntas Frequentes” que aborda as dúvidas mais comuns dos visitantes em relação ao voluntariado e ao uso da plataforma.
+RF-014 - A aplicação deve conter a página “Perguntas Frequentes” que aborda as dúvidas mais comuns dos visitantes em relação ao voluntariado e ao uso da plataforma.
 
 ![wireframe-sobre-o-voluntariado](./img/wireframes/perguntas-frequentes.png)
 
@@ -101,7 +99,7 @@ RF-015 - A aplicação deve conter a página “Perguntas Frequentes” que abor
 
 Wireframe que atende ao:
 
-RF-016 - A aplicação deve apresentar a página “Sobre o Voluntariado” que fornece informações detalhadas sobre o conceito de trabalho voluntário, destacando seu impacto positivo na sociedade e nas comunidades.
+RF-015 - A aplicação deve apresentar a página “Sobre o Voluntariado” que fornece informações detalhadas sobre o conceito de trabalho voluntário, destacando seu impacto positivo na sociedade e nas comunidades.
 
 ![wireframe-sobre-o-voluntariado](./img/wireframes/sobre-o-voluntariado.png)
 
@@ -109,7 +107,7 @@ RF-016 - A aplicação deve apresentar a página “Sobre o Voluntariado” que 
 
 Wireframe que atende ao: 
 
-RF-017	A aplicação deve apresentar a página “Por Que Ser Voluntário?” que apresenta os benefícios pessoais que podem ser obtidos ao se envolver em ações voluntárias.
+RF-016	A aplicação deve apresentar a página “Por Que Ser Voluntário?” que apresenta os benefícios pessoais que podem ser obtidos ao se envolver em ações voluntárias.
 
 ![wireframe-sobre-o-voluntariado](./img/wireframes/por-que-ser-voluntário_.png)
 
@@ -117,7 +115,7 @@ RF-017	A aplicação deve apresentar a página “Por Que Ser Voluntário?” qu
 
 Wireframe que atende ao: 
 
-RF-018 - A aplicação deve apresentar a página “Histórias de Sucesso” que destaca projetos anteriores realizados por meio da plataforma, com resultados, depoimentos de voluntários e o impacto positivo alcançado.
+RF-017 - A aplicação deve apresentar a página “Histórias de Sucesso” que destaca projetos anteriores realizados por meio da plataforma, com resultados, depoimentos de voluntários e o impacto positivo alcançado.
 
 ![wireframe-sobre-o-voluntariado](./img/wireframes/histórias-de-sucesso.png)
 
@@ -127,7 +125,7 @@ Wireframe que atende ao:
 
 RF-007 A aplicação deve permitir que as ONG vejam e administrem suas demandas, podendo filtrar por status (aberta, finalizada), cadastrar ou excluir.
 
-RF-019	A aplicação deve fornecer um mecanismo de filtro para que os usuários possam encontrar demandas com base em critérios como: remoto, presencial e estado do Brasil.
+RF-018	A aplicação deve fornecer um mecanismo de filtro para que os usuários possam encontrar demandas com base em critérios como: remoto, presencial e estado do Brasil.
 
 ![wireframe-sobre-o-voluntariado](./img/wireframes/filtro.png)
 
@@ -135,13 +133,13 @@ RF-019	A aplicação deve fornecer um mecanismo de filtro para que os usuários 
 
 Wireframe que atende aos:
 
-RF-011 - A aplicação deve permitir que as ONGs marquem as solicitações como concluídas ou encerradas.
+RF-010 - A aplicação deve permitir que as ONGs marquem as solicitações como concluídas ou encerradas.
 
-RF-020 - Os voluntários devem receber um e-mail quando uma ONG expressa interesse em seu perfil.
+RF-019 - Os voluntários devem receber um e-mail quando uma ONG expressa interesse em seu perfil.
 
-RF-023 - A página da demanda cadastrada pela ONG deve exibir uma lista de todos os voluntários que tiveram a candidatura aceita.
+RF-020 - A página da demanda cadastrada pela ONG deve exibir uma lista de todos os voluntários que tiveram a candidatura aceita.
 
-RF-024 - Na página da demanda cadastrada pela ONG, deve ter um botão com a finalidade de enviar um link via e-mail aos voluntários solicitando a eles que deixem um comentário sobre sua experiência.
+RF-021 - Na página da demanda cadastrada pela ONG, deve ter um botão com a finalidade de enviar um link via e-mail aos voluntários solicitando a eles que deixem um comentário sobre sua experiência.
 
 ![wireframe-sobre-o-voluntariado](./img/wireframes/administrar-uma-demanda-progresso.png)
 
@@ -151,7 +149,7 @@ RF-024 - Na página da demanda cadastrada pela ONG, deve ter um botão com a fin
 
 Wireframe que atende ao:
 
-RF-025 - A aplicação deve apresentar uma página para depoimento da solicitação que o voluntário participou, que só poderá ser acessada através do link recebido via e-mail, com um formulário para preenchimento.
+RF-022 - A aplicação deve apresentar uma página para depoimento da solicitação que o voluntário participou, que só poderá ser acessada através do link recebido via e-mail, com um formulário para preenchimento.
 
 ![wireframe-sobre-o-voluntariado](./img/wireframes/depoimento-do-voluntário.png)
 
@@ -161,6 +159,6 @@ Wireframe que atende ao:
 
 RF-004 A aplicação deve apresentar uma página exclusiva para cada ONG, contendo informações sobre a organização, depoimentos dos voluntários e últimas demandas.
 
-RF-026	Os depoimentos dos voluntários devem ser disponibilizados no perfil da ONG que fez a solicitação.
+RF-023	Os depoimentos dos voluntários devem ser disponibilizados no perfil da ONG que fez a solicitação.
 
 ![wireframe-sobre-o-voluntariado](./img/wireframes/página-da-ONG.png)
