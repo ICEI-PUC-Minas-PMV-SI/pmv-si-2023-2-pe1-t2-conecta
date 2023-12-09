@@ -515,7 +515,7 @@ Sobre o tempo levado para a realização dos cenários propostos notou-se uma di
 
 Os pontos a serem melhorados segundo os usuários são em relação ao tempo de carregamento da página de oportunidades, sobre a dificuldade de encontrar informações sobre a demanda e sobre os voluntários, já que não está claro que é preciso abrir um modal para visualização e sobre a possibilidade de anexar um arquivo com as informações e as mesmas serem registradas nos campos de descrição do voluntariado.
 
-Em relação aos pontos positivos, os usuários relataram a boa intuitividade e navegabilidade do site, design simples e layout agradável, fácil acesso às páginas de maior relevância para a aplicação.
+Em relação aos pontos positivos, os usuários relataram a boa intuitividade e navegabilidade do site, design simples e layout agradável, fácil acesso às páginas de maior relevância para a aplicação, etc.
 
 Em conclusão, pode-se dizer que a avaliação de teste de usuário não apenas valida a funcionalidade, mas também orienta o refinamento contínuo da aplicação, buscando tornar mais intuitivo e eficiente, adaptados às necessidades reais dos usuários.
 
