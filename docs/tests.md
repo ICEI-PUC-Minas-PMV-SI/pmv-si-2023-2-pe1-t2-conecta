@@ -398,10 +398,8 @@ Já os pontos que foram considerados positivos são principalmente em relação 
 
 Para as próximas etapas pretendemos deixar o projeto mais fluído e com mais opções que facilitem a navegabilidade do usuário.
 
-Em síntese, pode-se dizer que a avaliação de testes de software desempenha um papel fundamental na garantia da qualidade e eficiência de um projeto. Considerando que vários integrantes da equipe participaram dos testes, pode-se dizer que a confiabilidade do projeto é considerável.
+Em síntese, pode-se dizer que a avaliação de testes de software desempenha um papel fundamental na garantia da qualidade e eficiência de um projeto. Considerando que vários integrantes da equipe participaram dos testes, pode-se dizer que a confiabilidade do projeto é bastante considerável.
 ​
-
-
 # Testes de Usabilidade
 O objetivo do Plano de Testes de Usabilidade é obter informações quanto à expectativa dos usuários em relação à  funcionalidade da aplicação de forma geral.
 
