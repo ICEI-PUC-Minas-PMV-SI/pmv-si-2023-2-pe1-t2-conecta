@@ -229,10 +229,10 @@
 **Resultado obtido** | Sucesso.
 
 
-**Caso de Teste** | **CT30 - Compatibilidade com Navegadores**
+**Caso de Teste** | **CT29 - Compatibilidade com Navegadores**
  :--------------: | ------------
 **Procedimento**  | 1) O usuário acessa a aplicação por meio dos navegadores Google Chrome, Mozilla Firefox, Microsoft Edge e Safari. <br> 2) O usuário navega pelas diferentes funcionalidades da aplicação em cada um dos navegadores. <br> 3) O usuário verifica se o layout da aplicação é intuitivo e de fácil entendimento em cada um dos navegadores.
-**Requisitos associados** | RNF-006
+**Requisitos associados** | RNF-005
 **Resultado esperado** | A aplicação é compatível e funciona corretamente nos navegadores Google Chrome, Mozilla Firefox, Microsoft Edge e Safari.
 **Dados de entrada** | Nenhum.
 **Resultado obtido** | Sucesso.
@@ -380,16 +380,27 @@
 | Requisito Associado               | RNF-004 A aplicação deve fornecer feedback visual claro para ações do usuário, como confirmações de envio e mensagens de erro. |
 | Link do vídeo do teste realizado: | https://sgapucminasbr-my.sharepoint.com/:v:/g/personal/954530_sga_pucminas_br/EXBl1MNdXuRBnNQuHRhUUTMBT2pA08oz4A0noySo_v8U0g?e=yy4vun&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D                                   |
 
-| *Caso de Teste*                   | *CT30 - Compatibilidade com Navegadores*                                                                                                                                             |
+| *Caso de Teste*                   | *CT29 - Compatibilidade com Navegadores*                                                                                                                                             |
 |-----------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Requisito Associado               | RNF-006 O sistema deve ser capaz de ser executado nas versões mais recentes dos principais navegadores do mercado, como: Chrome, Firefox, Edge e Safari. |
+| Requisito Associado               | RNF-005 O sistema deve ser capaz de ser executado nas versões mais recentes dos principais navegadores do mercado, como: Chrome, Firefox, Edge e Safari. |
 | Link do vídeo do teste realizado: | Google Chrome (https://sgapucminasbr-my.sharepoint.com/:v:/g/personal/954530_sga_pucminas_br/EY-z6ZowptVGsfrGlXmflekBmXeqN6eKZYgyVgsJYr6ZqQ?e=GxYJJJ)<br>  Mozilla Firefox (https://sgapucminasbr-my.sharepoint.com/:v:/g/personal/954530_sga_pucminas_br/EcaH_zL7IBpIkR8U_nHOMvsBa-8Amb47AqPtMluHAWEgxg?e=aYd0rw)  <br> Microsoft Edge (https://sgapucminasbr-my.sharepoint.com/:v:/g/personal/954530_sga_pucminas_br/EVJmyWSHHE5JimkdWgo3YwEBfVJ948MpBwClxtqcV9g88w?e=eNDJzH)  <br> Safari (https://sgapucminasbr-my.sharepoint.com/:v:/g/personal/954530_sga_pucminas_br/ETJOh6A52lxEsoUVuqWKiBQBhTVA0SoR21PxkkcClgv7XA?e=D4KOjo)                         | 
 
 
 
 ## Avaliação dos Testes de Software
 
-DESCREVER AQUI AS CONSIDERACOES SOBRE O TESTE DE SOFTWARE.
+Ao realizar os testes de software, obtivemos resultados relevantes que oferecem informações valiosas sobre a aplicação em análise. Essas avaliações foram direcionadas para analisar a qualidade, funcionalidade e confiabilidade do software, identificando tanto seus pontos positivos quanto áreas que podem ser aprimoradas.
+
+Os testes evidenciaram consistência nos resultados segundo às expectativas, sinalizando que a solução está em conformidade com os requisitos estabelecidos. A cobertura dos principais cenários de uso da aplicação foi abrangente, assegurando uma avaliação das funcionalidades críticas. A equipe de testes demonstrou profissionalismo e competência na execução dos casos de teste, reforçando a confiabilidade dos resultados. 
+
+Alguns pontos a serem aprimorados foram: a página de demandas demora para carregar, poderia deixar mais claro que as informações nos cards estão dentro dos modais, as informações sobre o voluntário devem ser exibidas nos cards.
+Já os pontos que foram considerados positivos são principalmente em relação ao design escolhido, à organização do site, a escolha de cores e à disposição das informações.
+
+Para as próximas etapas pretendemos deixar o projeto mais fluído e com mais opções que facilitem a navegabilidade do usuário.
+
+Em síntese, pode-se dizer que a avaliação de testes de software desempenha um papel fundamental na garantia da qualidade e eficiência de um projeto. Considerando que vários integrantes da equipe participaram dos testes, pode-se dizer que a confiabilidade do projeto é considerável.
+​
+
 
 # Testes de Usabilidade
 O objetivo do Plano de Testes de Usabilidade é obter informações quanto à expectativa dos usuários em relação à  funcionalidade da aplicação de forma geral.
@@ -441,9 +452,9 @@ Comentários dos usuários:
 Ícone de carregamento da página de demandas fica muito tempo na tela.
 A descrição da demanda poderia aparecer na tela de candidatura.
 Bem fácil identificar botão que leva até a página de demandas.
-Não percebeu que é possível clicar nos cards para que seja aberto o modal
-Layout simples e intuitivo
-Fácil acesso à página com as oportunidades de voluntariado
+Não percebeu que é possível clicar nos cards para que seja aberto o modal.
+Layout simples e intuitivo.
+Fácil acesso à página com as oportunidades de voluntariado.
 ```
 
 Cenário 2 - Você administra uma ONG e quer cadastrar sua organização em um site que divulga oportunidades de voluntariado. Você acessa o site entra na página como começar, clica no link cadastre sua ONG, preenche as informações de perfil e finaliza a candidatura. 
@@ -459,15 +470,15 @@ Cenário 2 - Você administra uma ONG e quer cadastrar sua organização em um s
 
     Elementos visuais simples e objetivos, com poucas informações na tela, ajuda a não se perder.
     Não foi intuitivo onde fazer o cadastro, pois não estava claro que era um botão de cadastro.
-    A parte de colocar o CEP e ter o edndereço puxado foi muito bom.
+    A parte de colocar o CEP e ter o endereço puxado foi muito bom.
     Achei intuitivo a aplicação, mesmo demorando um pouco consegui fazer o que queria.
 
 Cenário 3 - Você tem sua ONG cadastrada no site e quer divulgar as oportunidades de voluntariado. Você então acessa o site, clica em área da ONG, realiza o login e cadastra duas demandas.  
 
 | Usuário | Taxa de sucesso | Satisfação subjetiva | Tempo para conclusão do cenário |
 |---------|----------------|------------------|---------------------------------|
-| 1  **JOÃO**     | SIM            |  5                | 120 segundos                    |
-| 2   **OMAR**    | SIM           |   4            | 130 segundos                      |
+| 1     | SIM            |  5                | 120 segundos                    |
+| 2     | SIM           |   4            | 130 segundos                      |
 |  |  |  |                                 |
 | **Média**     | 1000%          | 4.5            | 125 segundos                      |
 | **Tempo para conclusão pelo especialista** | SIM |  5 | 80 segundos                     |
@@ -496,14 +507,17 @@ Cenário 4 - Você administra uma ONG e vai acessar o site para visualizar se al
 
 ## Avaliação dos Testes de Usabilidade
 
+Com base nos resultados obtidos, constatou-se que a aplicação web teve um bom desempenho em termos de taxa de sucesso na interação do usuário, pois os cenários propostos foram concluídos com sucesso.
 
-Tomando como base os resultados obtidos, foi possível verificar que a aplicação web apresenta bons resultados quanto à taxa de sucesso na interação dos usuários, tendo em vista que os cenários propostos foram concluídos com sucesso.
+Além disso, o aplicativo também alcançou um alto nível de satisfação subjetiva do usuário ao realizar os cenários propostos. Prova disso são as notas médias em cada um dos cenários, que ficaram entre 4 (bom) e 5 (excelente).
 
-Além disso, a aplicação obteve também uma elevada satisfação subjetiva dos usuários no momento que realizavam os cenários propostos. Prova são as médias das avaliações em cada um dos cenários, que variou entre 4 (bom) e 5 (ótimo).
+Sobre o tempo levado para a realização dos cenários propostos notou-se uma diferença entre os usuários e o especialista, o que é aceitável, visto que o especialista está acostumado com a aplicação, enquanto que para o usuário, tendo o primeiro contato com o site, tende a explorar mais as informações.
 
-Com relação ao tempo para conclusão de cada tarefa/cenário, notamos discrepância entre a média de tempo dos usuários e o tempo do especialista/desenvolvedor em todos os cenários. Tal discrepância, em certa medida, é esperada, tendo em vista que o desenvolvedor já tem prévio conhecimento de toda a interface da aplicação, do posicionamento dos elementos, lógica de organização das páginas, etc.
+Os pontos a serem melhorados segundo os usuários são em relação ao tempo de carregamento da página de oportunidades, sobre a dificuldade de encontrar informações sobre a demanda e sobre os voluntários, já que não está claro que é preciso abrir um modal para visualização e sobre a possibilidade de anexar um arquivo com as informações e as mesmas serem registradas nos campos de descrição do voluntariado.
 
-Contudo, tendo em vista que a diferença foi relevante (por exemplo, 113 segundos — média usuários — contra 25 segundos — especialista — no cenário três), e ainda os comentários feitos por alguns usuários, entendemos haver oportunidades de melhoria na usabilidade da aplicação.
+Em relação aos pontos positivos, os usuários relataram a boa intuitividade e navegabilidade do site, design simples e layout agradável, fácil acesso às páginas de maior relevância para a aplicação.
+
+Em conclusão, pode-se dizer que a avaliação de teste de usuário não apenas valida a funcionalidade, mas também orienta o refinamento contínuo da aplicação, buscando tornar mais intuitivo e eficiente, adaptados às necessidades reais dos usuários.
 
 
 
