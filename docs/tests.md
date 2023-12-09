@@ -427,10 +427,10 @@ Objetivando respeitar as diretrizes da Lei Geral de Proteção de Dados, as info
 
 | Nº do Cenário | Descrição do cenário - ONGs |
 |---------------|----------------------|
-| 1             | Você é um estudante ou profissional da área da tecnologia e quer encontrar um trabalho para se voluntariar. No site acesse a página de oportunidades encontre um trabalho que seja de seu interesse e se candidata.   |
-| 2             | Você administra uma ONG e quer cadastrar sua organização em um site que divulga oportunidades de voluntariado. Você acessa o site entra em área da ONG, e na página de login você clica no link cadastrar e cadastra sua ONG.  |
-| 3             | Você tem sua ONG cadastrada no site e quer divulgar os trabalhos de voluntariado. Você então acessa o site, entra em àrea da ONG, faz o login e cadastra duas demandas.  |
-| 4             | Você administra uma ONG e vai fazer login no site para visualizar se algum candidato está interessado em uma demanda que você cadastrou. Ao acessar o site, ir para àrea da ONG e para login, você esqueceu a senha e precisa recuperá-la. Para isso clica no link esqueceu a senha, verifica se recebeu o e-mail de recuperação e registra nova senha. Faz login, acessa a página de administrar demandas e verifica se tem algum candidato interessado, se sim, aceita ou recusa sua candidatura.  |
+| 1             | Você é um estudante ou profissional da área da tecnologia e quer participar de um trabalho voluntário. No site acesse a página de oportunidades, encontre um trabalho que seja de seu interesse e se candidate.   |
+| 2             | Você administra uma ONG e quer cadastrar sua organização em um site que divulga oportunidades de voluntariado. Você acessa o site entra na página como começar, clica no link cadastre sua ONG, preenche as informações de perfil e finaliza a candidatura.  |
+| 3             | Você tem sua ONG cadastrada no site e quer divulgar as oportunidades de voluntariado. Você então acessa o site, clica em área da ONG, realiza o login e cadastra duas demandas.  |
+| 4             | Você administra uma ONG e vai acessar o site para visualizar se algum candidato está interessado em uma demanda que você cadastrou. Você precisa fazer o login, acessar a página de administrar demandas e verificar se tem algum candidato interessado, se sim, poderá aceitar ou recusar sua candidatura. |
 |
 
 
