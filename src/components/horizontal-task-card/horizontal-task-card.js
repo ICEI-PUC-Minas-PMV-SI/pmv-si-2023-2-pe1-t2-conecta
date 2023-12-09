@@ -20,9 +20,9 @@ const makeTemplate = () => {
     <div class="root">
     <div class="horizontal-task-card" onclick="modal($(this))">
     <div class="left-side">
-        <div class="task-info" onclick="fotoClick(event)">
-            <p class="task-name"></p>
-            <p class="task-owner"></p>
+        <div class="task-info">
+            <p class="task-name" </p>
+            <p class="task-owner" </p>
         </div>
         <div class="task-description">
             <p class="task-description-text">
@@ -101,6 +101,7 @@ const cssStyle = `
         -webkit-line-clamp: 1;
         overflow: hidden;
         text-overflow: ellipsis;
+        cursor: pointer;
     }
     
     .task-info > .task-owner {
@@ -291,6 +292,7 @@ const cssStyle = `
             -webkit-line-clamp: 1;
             overflow: hidden;
             text-overflow: ellipsis;
+            cursor: pointer;
         }
 
         .location-button-wrapper {
