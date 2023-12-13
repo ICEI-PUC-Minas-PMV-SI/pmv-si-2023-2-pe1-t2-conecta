@@ -1,3 +1,12 @@
+import { Organization } from "../../js/models/organization.js";
+import { getSession } from '../../js/models/session.js';
+
+const getOrganizationData = async (organizationId) => {
+    const ong = new Organization();
+    return await ong.findById(organizationId);
+}
+
+
 const getPagePath = (pageName) => {
     const currentPath = window.location.pathname;
 
@@ -38,11 +47,11 @@ const makeTemplate = (variant) => {
             <div class="home-logo-wrapper">
             <a href=${getPagePath("index")}><img src="${rootPath}/assets/images/logo-conecta.png" alt="Logo Conecta"></div></a>
             <div class="buttons-header-wrapper">
-                <a href=${getPagePath("pagina-de-demandas")} class="header-button oportunidades-button">OPORTUNIDADES</a>
-                <a id="area-da-ong" style="${pathName.includes('pagina-da-ong.html') ? "display: none": ""}" href="#"  class="header-button area-da-ong-button">ÁREA DA ONG</a>
-                <a id="adm-demandas" style="${token == null ? "display: none" : ""}" id="logout-click" href=${getPagePath("administrar-demandas")}  class="header-button area-da-ong-button">ADMINISTRAR DEMANDAS</a>
-                <a id="perfil-da-ong" style="${pathName.includes('pagina-da-ong.html') ? "": "display: none"}" href=${getPagePath("cadastrar-ong")}  class="header-button area-da-ong-button">PERFIL</a>
-                <a id="logout-click" style="${token == null ? "display: none" : ""}" id="logout-click" href="#" class="header-button area-da-ong-button">SAIR</a>
+                <a href=${getPagePath("pagina-de-demandas")} class="header-button oportunidades-button"><img class="dot-black" src="${rootPath}/assets/icons/dot-black.png">OPORTUNIDADES</a>
+                <a id="area-da-ong" style="${pathName.includes('pagina-da-ong.html') ? "display: none": ""}" href="#"  class="header-button area-da-ong-button"><img class="dot-black" src="${rootPath}/assets/icons/dot-black.png">ÁREA DA ONG</a>
+                <a id="adm-demandas" style="${token == null ? "display: none" : ""}" id="logout-click" href=${getPagePath("administrar-demandas")}  class="header-button area-da-ong-button"><img class="dot-black" src="${rootPath}/assets/icons/dot-black.png">ADMINISTRAR DEMANDAS</a>
+                <a id="perfil-da-ong" style="${pathName.includes('pagina-da-ong.html') ? "": "display: none"}" href=${getPagePath("cadastrar-ong")}  class="header-button area-da-ong-button"><img class="dot-black" src="${rootPath}/assets/icons/dot-black.png">PERFIL</a>
+                <a id="logout-click" style="${token == null ? "display: none" : ""}" id="logout-click" href="#" class="header-button area-da-ong-button"><img class="log-out" src="${rootPath}/assets/icons/log-out.png">SAIR</a>
             </div>
     
         </header>
@@ -64,10 +73,14 @@ const makeTemplate = (variant) => {
     
             <div id="authenticated-menu" style="${token == null ? "display: none" : ""}" class="authentication-area">
                 <p class="text">área da ong</p>
-                <a class="authentication-button" href=${getPagePath("pagina-da-ong")} >PERFIL</a>
-                <a class="authentication-button" href=${getPagePath("cadastrar-ong")} >EDITAR PERFIL</a>
-                <a class="authentication-button" href=${getPagePath("administrar-demandas")}>DEMANDAS</a>
-                <a id="logout-mobile-click" class="authentication-button" href="#">SAIR</a>
+                <a class="image-org">
+                    <div class="profile-image-card-container">
+                        <img src="" alt="Profile image">
+                    </div>
+                </a>
+                <a class="authentication-button" href=${getPagePath("cadastrar-ong")} ><img class="edit" src="${rootPath}/assets/icons/edit.png"> EDITAR PERFIL</a>
+                <a class="authentication-button" href=${getPagePath("administrar-demandas")}><img class="setting" src="${rootPath}/assets/icons/setting.png">DEMANDAS</a>
+                <a id="logout-mobile-click" class="authentication-button" href="#"><img class="setting" src="${rootPath}/assets/icons/log-out.png">SAIR</a>
             </div>
     
             <div class="divider-line"></div>
@@ -183,6 +196,22 @@ const cssStyle = `
         margin-left: 15px;
     }
     
+    .dot-black {
+        height: 5px;
+        width: 5px;
+        margin-right: 5px;
+        bottom: 2px;
+        position: relative;
+    }
+
+    .log-out {
+        height: 15px;
+        width: 15px;
+        margin-right: 5px;
+        top: 2px;
+        position: relative;
+    }
+
     header .buttons-header-wrapper {
         display: flex;
         grid-template-columns: 1fr 1fr;
@@ -195,7 +224,7 @@ const cssStyle = `
         margin-left: 20px;
         text-decoration: none;
         border-radius: 5px;
-        color: #FFF;
+        color: black;
         font-family: Open Sans, sans-serif;
         font-style: normal;
         font-weight: bold;
@@ -203,14 +232,12 @@ const cssStyle = `
     }
     
     header .buttons-header-wrapper .area-da-ong-button {
-        background-color: var(--cor-texto);
-        font-size: 15px;
+        font-size: 13px;
     }
     
     header .buttons-header-wrapper .oportunidades-button {
-        background-color: var(--cor-titulo);
         margin-right: 20px;
-        font-size: 15px;
+        font-size: 13px;
     }
     
     .header-mobile {
@@ -249,7 +276,6 @@ const cssStyle = `
         .header-mobile > .close-button {
             justify-self: end;
         }
-    
     
         .header-mobile-logo img {
             width: 100%;
@@ -318,6 +344,19 @@ const cssStyle = `
             padding-bottom: 24px;
         }
     
+        .edit {
+            height: 18px;
+            width: 18px;
+        }
+        
+        .setting {
+            height: 20px;
+            width: 20px;
+            top: 3px;
+            position: relative;
+            margin-right: 5px;
+        }
+
         .divider-line {
             border-top: solid 1px #716F6F;
             width: 100%;
@@ -342,7 +381,62 @@ const cssStyle = `
             padding: 0 0 24px 0;
             list-style: none;
         }
+
+        .profile-image-card-container {
+            max-width: 80px;
+            height: 80px;
+            overflow: hidden;
+            border-radius: 50%;
+            margin-bottom: 20px;
+            border: 0.5px solid #E7ECEF;
+        }
+        
+        .profile-image-card-container > img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center center;
+            max-width: 100%;
+            max-height: 100%;
+        }
     }
+
+    @media screen and (max-width: 1053px) {
+        header .buttons-header-wrapper .header-button {
+            padding: 12px 5px;
+        }
+
+        header .buttons-header-wrapper .oportunidades-button {
+            margin-right: 5px;
+            font-size: 12px;
+        }
+
+    @media screen and (max-width: 934px) {
+        header .buttons-header-wrapper .header-button {
+            padding: 12px 5px;
+            margin-left: 5px;
+        }
+
+        header .buttons-header-wrapper .oportunidades-button {
+            margin-right: 5px;
+            font-size: 12px;
+        }
+
+        @media screen and (max-width: 834px) {
+            header .buttons-header-wrapper .header-button {
+                padding: 12px 5px;
+                margin-left: 5px;
+                font-size: 9px;
+            }
+    
+            header .buttons-header-wrapper .oportunidades-button {
+                margin-right: 5px;
+                font-size: 9px;
+            } 
+        }
+    }
+    
+
 `
 const homeVariantCssStyle = `
 .header-mobile {
@@ -461,7 +555,7 @@ class HeaderComponent extends HTMLElement {
         }
     }
 
-    toggleMobileMenu() {
+    async toggleMobileMenu() {
         if (this.action && typeof window[this.action] === 'function') window[this.action]();
 
         const mobileMenu = this.root.querySelector('#mobile-menu');
@@ -477,6 +571,15 @@ class HeaderComponent extends HTMLElement {
         } else {
             pageOverlay.style.display = 'none';
         }
+        let token = window.localStorage.getItem("token");
+        const session = await getSession(token);
+
+        const organizationData = await getOrganizationData(session[0].ongId);
+        const organizationId = this.root.querySelector('.image-org img');
+        const urlImg = this.root.querySelector('.image-org');
+        urlImg.href = getPagePath("pagina-da-ong");
+        organizationId.src = organizationData.image;
+        
     }
 
     static get observedAttributes() {
