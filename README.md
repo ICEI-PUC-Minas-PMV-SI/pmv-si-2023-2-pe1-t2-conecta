@@ -1,5 +1,8 @@
 # Conecta
 
+![Untitled design (1)](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2023-2-pe1-t2-conecta/assets/141672388/e459bcb5-6767-4905-a76e-d771fce974f9)
+
+
 `CURSO: Sistemas de Informação`
 
 `DISCIPLINA: Projeto - Aplicações Web`
