@@ -10,6 +10,7 @@
 `SEMESTRE: 1º`
 
 Formar uma ponte entre ONGs e pessoas com conhecimento em TI dispostas a contribuir para solucionar as demandas dessas organizações.
+
 Acesse o site aqui: https://icei-puc-minas-pmv-si.github.io/pmv-si-2023-2-pe1-t2-conecta/index.html
 
 ## Integrantes
