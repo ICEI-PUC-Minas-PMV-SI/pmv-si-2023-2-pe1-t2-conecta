@@ -1,17 +1,16 @@
 # Apresentação
 
-Essa é a primeira apresetação do site que foi desenvolvido para esse projeto, Conecta.
+Essa é a primeira apresentação do site que foi desenvolvido para esse projeto, Conecta.
 
-Na apresentação inicial foram definidos o problema que seria abordado no projeto, os objetivos que gostaríamos de alcançar durante o desenvolvimento da aplicação e foram trazidos também os requistios funcionais. 
+Na apresentação inicial foram definidos o problema que seria abordado no projeto, os objetivos que gostaríamos de alcançar durante o desenvolvimento da aplicação e foram trazidos também os requistios funcionais.
 
-* [Conecta - Pitch inicial](./conecta-etapa-1.pdf)
 
-Essa é a apresnetção final do projeto
 
-* [Apresentação final](./sample-presentation.pdf) -- arquivo com os slides da apresentação final
-* [Vídeo de demonstração](./sample-video.mp4) -- arquivo com a demonstração do funcionamento do sistema
+* [Conecta - Pitch inicial](./conecta-primeira-apresentacao.pdf)
 
-O conjunto de slides deve ser apresentado em um arquivo PowerPoint ou PDF. A apresentação do projeto deve contemplar todos os itens trabalhados nos demais artefatos. Alguns aspectos que devem ser contemplados na apresentação são listados a seguir.
+* [Conecta - Apresentação final](./conecta-apresentacao-final.pdf)
+
+* [Vídeo de demonstração](./sample-video.mp4) 
 
 ## Título do Projeto
 
