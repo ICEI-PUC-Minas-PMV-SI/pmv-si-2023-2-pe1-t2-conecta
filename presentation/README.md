@@ -1,11 +1,13 @@
 # Apresentação
 
-Faça uma apresentação de um resumo de todos o processo de desenvolvimento e no final apresente a solução desenvolvida, usando um pequeno vídeo.
+Essa é a primeira apresetação do site que foi desenvolvido para esse projeto, Conecta.
 
-Liste os arquivos produzidos e postados nesta pasta, com suas localizaçãoes e descrição do conteúdo neste arquivo Readme.md.
+Na apresentação inicial foram definidos o problema que seria abordado no projeto, os objetivos que gostaríamos de alcançar durante o desenvolvimento da aplicação e foram trazidos também os requistios funcionais. 
 
+* [Conecta - Pitch inicial](./conecta-etapa-1.pdf)
 
-* [Pitch inicial](./sample-pitch.pdf) -- arquivo com os slides da apresentação inicial
+Essa é a apresnetção final do projeto
+
 * [Apresentação final](./sample-presentation.pdf) -- arquivo com os slides da apresentação final
 * [Vídeo de demonstração](./sample-video.mp4) -- arquivo com a demonstração do funcionamento do sistema
 
@@ -13,16 +15,12 @@ O conjunto de slides deve ser apresentado em um arquivo PowerPoint ou PDF. A apr
 
 ## Título do Projeto
 
-Nome e marca do projeto
+Conecta
 
 ## Identidade Visual (Marca, Design)
 
-O grupo deve ter o cuidado em utilizar figuras, imagens, e cores dentro do contexto da solução proposta, de forma a manter a temática do problema.
+![Logo](../docs/imagens_template/logo-conecta.png)
 
-> **Links Úteis**:
-> - [10 dicas de design para slides](https://rockcontent.com/blog/design-para-slides/)
-> - [7 dicas de design para criar apresentações de PowerPoint incríveis e eficientes](https://www.shutterstock.com/pt/blog/7-dicas-de-design-para-criar-apresentacoes-de-powerpoint-incriveis-e-eficientes)
-> - [Especialista do TED dá 10 dicas para criar slides eficazes e bonitos](https://soap.com.br/blog/especialista-do-ted-da-10-dicas-para-criar-slides-eficazes-e-bonitos)
 
 ## Conjunto de Slides (Estrutura)
 
