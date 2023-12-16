@@ -8,7 +8,7 @@ Na apresentação final, trazemos os objetivos e o problema que foram resolvidos
 
 * [Conecta - Pitch inicial](./conecta-primeira-apresentacao.pdf)
 
-* [Conecta - Apresentação final](./conecta-apresentacao-final.pdf)
+* [Conecta - Apresentação final](./conecta-apresentacao-final-slides.pdf)
 
 * [Conecta - Vídeo de demonstração](./conecta-apresentacao-final-video.mp4)
 
