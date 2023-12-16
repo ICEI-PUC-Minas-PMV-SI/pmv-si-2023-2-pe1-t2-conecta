@@ -1,7 +1,6 @@
 # Conecta
 
-![Untitled design (1)](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2023-2-pe1-t2-conecta/assets/141672388/e459bcb5-6767-4905-a76e-d771fce974f9)
-
+![Logo](/presentation/conecta-design.png)
 
 `CURSO: Sistemas de Informação`
 
@@ -10,8 +9,6 @@
 `SEMESTRE: 1º`
 
 Formar uma ponte entre ONGs e pessoas com conhecimento em TI dispostas a contribuir para solucionar as demandas dessas organizações.
-
-Acesse o site aqui: https://icei-puc-minas-pmv-si.github.io/pmv-si-2023-2-pe1-t2-conecta/index.html
 
 ## Integrantes
 
@@ -41,3 +38,7 @@ Acesse o site aqui: https://icei-puc-minas-pmv-si.github.io/pmv-si-2023-2-pe1-t2
 # Apresentação
 
 <li><a href="presentation/README.md"> Apresentação da solução</a></li>
+
+# Link da Aplicação
+
+https://icei-puc-minas-pmv-si.github.io/pmv-si-2023-2-pe1-t2-conecta/index.html
