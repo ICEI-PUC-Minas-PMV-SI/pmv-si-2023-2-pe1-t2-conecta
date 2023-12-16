@@ -2,27 +2,22 @@ cff-version: 1.0.1
 message: Please cite this software using these metadata.
 title:
 authors:
-  - family-names:
-    given-names:
-  - family-names:
-    given-names:
-  - family-names:
-    given-names:
-  - family-names:
-    given-names:
-  - family-names:
-    given-names:
-  - family-names:
-    given-names:
-  - family-names:
-    given-names:
-  - name-suffix: Professor XXXX
+  - family-names: Abreu dos Reis
+    given-names: Alice
+  - family-names: dos Reis Nascimento
+    given-names: Gabriel
+  - family-names: Luiz Zarate Teixeira
+    given-names: João
+  - family-names: Petronílio Martins de Abreu
+    given-names: Omar
+  - name-suffix: Professora
     affiliation: PUC Minas
-    family-names:
-    given-names:
+    family-names: De Nardin
+    given-names: Luciana 
 keywords:
-  -
-  -
+  - ONG
+  - Tecnologia
+  - Voluntariado
 repository-code:
 license: CC-BY-4.0
 version: 1.0.0
