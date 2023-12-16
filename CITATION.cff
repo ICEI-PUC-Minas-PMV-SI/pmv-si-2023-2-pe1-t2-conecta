@@ -1,6 +1,6 @@
 cff-version: 1.0.1
 message: Please cite this software using these metadata.
-title:
+title: Conecta
 authors:
   - family-names: Abreu dos Reis
     given-names: Alice
@@ -18,7 +18,7 @@ keywords:
   - ONG
   - Tecnologia
   - Voluntariado
-repository-code:
+repository-code: https://icei-puc-minas-pmv-si.github.io/pmv-si-2023-2-pe1-t2-conecta/index.html
 license: CC-BY-4.0
 version: 1.0.0
-date-released: 2023-06-30
+date-released: 2023-12-16

@@ -10,8 +10,6 @@
 
 Formar uma ponte entre ONGs e pessoas com conhecimento em TI dispostas a contribuir para solucionar as demandas dessas organizações.
 
-Acesse o site aqui: https://icei-puc-minas-pmv-si.github.io/pmv-si-2023-2-pe1-t2-conecta/index.html
-
 ## Integrantes
 
 * [Alice Abreu dos Reis](https://github.com/aliceabreu)
@@ -40,3 +38,7 @@ Acesse o site aqui: https://icei-puc-minas-pmv-si.github.io/pmv-si-2023-2-pe1-t2
 # Apresentação
 
 <li><a href="presentation/README.md"> Apresentação da solução</a></li>
+
+# Link da Aplicação
+
+https://icei-puc-minas-pmv-si.github.io/pmv-si-2023-2-pe1-t2-conecta/index.html
