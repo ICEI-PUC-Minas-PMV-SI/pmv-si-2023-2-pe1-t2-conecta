@@ -41,4 +41,4 @@ Formar uma ponte entre ONGs e pessoas com conhecimento em TI dispostas a contrib
 
 # Link da Aplicação
 
-https://icei-puc-minas-pmv-si.github.io/pmv-si-2023-2-pe1-t2-conecta/index.html
+https://icei-puc-minas-pmv-si.github.io/pmv-si-2023-2-pe1-t2-conecta/
